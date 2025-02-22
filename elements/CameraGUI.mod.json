@@ -1,0 +1,257 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 260,
+    "height": 160,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cameras",
+          "text": {
+            "fixedValue": "Cameras"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 96,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_page_enbtintegerplus2",
+          "text": {
+            "fixedValue": "",
+            "name": "CameraGUIValue"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_camera_1",
+          "text": "Camera 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cam1Pressed"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 105,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_camera_2",
+          "text": "Camera 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cam2Pressed"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 105,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_camera_3",
+          "text": "Camera 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cam3Pressed"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 105,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_camera_4",
+          "text": "Camera 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cam4Pressed"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 105,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_camera_5",
+          "text": "Camera 5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cam5Pressed"
+          },
+          "width": 66,
+          "height": 20,
+          "x": 105,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_set_a_camera",
+          "text": {
+            "fixedValue": "Right-click Cam"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 222,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_right_click_it",
+          "text": {
+            "fixedValue": "with monitor"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 222,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_with_the_monitor",
+          "text": {
+            "fixedValue": "for setup!"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 222,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_remove_a_camera",
+          "text": {
+            "fixedValue": "Remove Cam"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 222,
+          "y": 137
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_shift_click",
+          "text": {
+            "fixedValue": "With shift-click"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 222,
+          "y": 146
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_previous_page",
+          "text": "Previous Page",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Back2Pressed"
+          },
+          "width": 90,
+          "height": 20,
+          "x": 222,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_next_page",
+          "text": "Next Page",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Add2Pressed"
+          },
+          "width": 90,
+          "height": 20,
+          "x": 222,
+          "y": 85
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_press_z_to_exit_the_camera",
+          "text": {
+            "fixedValue": "Press Z to Exit"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 222,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cameratabletgui.png",
+          "use1Xscale": false,
+          "x": 83,
+          "y": 40
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

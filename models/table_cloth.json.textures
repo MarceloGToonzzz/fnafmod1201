@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "table_cloth"
+      },
+      "name": "default"
+    },
+    "fnaf2": {
+      "map": {
+        "0": "fnaf2_tablecloth"
+      },
+      "name": "fnaf2"
+    },
+    "purplestarred": {
+      "map": {
+        "0": "curtain_purple"
+      },
+      "name": "purplestarred"
+    }
+  }
+}

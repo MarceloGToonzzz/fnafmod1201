@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:smooth_sandstone"
+    },
+    "b": {
+      "item": "minecraft:dark_prismarine"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:fnaf_3_floor",
+    "count": 4
+  }
+}

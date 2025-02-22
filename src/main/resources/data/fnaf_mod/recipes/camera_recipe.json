@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:black_stained_glass"
+    },
+    "c": {
+      "item": "fnaf_mod:circuit_board"
+    },
+    "d": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:camera_spawn_egg",
+    "count": 1
+  }
+}

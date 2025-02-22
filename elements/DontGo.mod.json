@@ -1,0 +1,23 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "dont_go",
+    "description": "Don't Go - LordSmugDread",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MusicDiscs"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:dont_go"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:green_concrete"
+    },
+    "b": {
+      "item": "fnaf_mod:white_wall"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:white_black_wall_tile",
+    "count": 4
+  }
+}

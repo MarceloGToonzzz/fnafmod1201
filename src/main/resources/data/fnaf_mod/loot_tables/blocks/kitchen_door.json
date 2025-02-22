@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "fnaf_mod:blocks/kitchen_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fnaf_mod:kitchen_door",
+          "conditions": [
+            {
+              "block": "fnaf_mod:kitchen_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

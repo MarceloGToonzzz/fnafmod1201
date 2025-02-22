@@ -1,0 +1,35 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "BoothBench",
+    "blockstateList": [
+      {
+        "texture": "booth_bench",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "booth_bench2:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "booth_bench",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "booth_bench3:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

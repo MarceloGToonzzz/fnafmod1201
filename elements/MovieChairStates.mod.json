@@ -1,0 +1,35 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MovieChair",
+    "blockstateList": [
+      {
+        "texture": "moviechair",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "moviechair2:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "moviechair",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "moviechair3:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

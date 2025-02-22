@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:black_stained_glass_pane"
+    },
+    "c": {
+      "item": "fnaf_mod:circuit_board"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:camera_monitor",
+    "count": 1
+  }
+}

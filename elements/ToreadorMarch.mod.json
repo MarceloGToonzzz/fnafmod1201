@@ -1,0 +1,23 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "toreador",
+    "description": "Toreador March - LordSmugDread",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MusicDiscs"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:toreador_march"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

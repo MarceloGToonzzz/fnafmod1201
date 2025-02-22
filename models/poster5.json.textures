@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "9": "freddyhallposter"
+      },
+      "name": "default"
+    },
+    "hallposter_bonnie": {
+      "map": {
+        "9": "bonnieposter"
+      },
+      "name": "hallposter_bonnie"
+    },
+    "hallposter_chica": {
+      "map": {
+        "9": "chicaposter"
+      },
+      "name": "hallposter_chica"
+    },
+    "freddyrip": {
+      "map": {
+        "9": "freddyposterrippedhead"
+      },
+      "name": "freddyrip"
+    },
+    "hallposter_freddy": {
+      "map": {
+        "9": "newposters"
+      },
+      "name": "hallposter_freddy"
+    },
+    "foxy": {
+      "map": {
+        "9": "foxyposter"
+      },
+      "name": "foxy"
+    },
+    "rules": {
+      "map": {
+        "9": "rulesposter"
+      },
+      "name": "rules"
+    }
+  }
+}

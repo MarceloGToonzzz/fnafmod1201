@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "fnaf_mod:blocks/blue_black_tile_stairs_cracked",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fnaf_mod:blue_black_tile_stairs_cracked"
+        }
+      ]
+    }
+  ]
+}

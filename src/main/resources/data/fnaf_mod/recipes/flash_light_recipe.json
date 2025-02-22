@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cda",
+    "eae"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:black_plastic"
+    },
+    "b": {
+      "tag": "forge:stained_glass"
+    },
+    "c": {
+      "item": "minecraft:stone_button"
+    },
+    "d": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "e": {
+      "item": "fnaf_mod:battery"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:flash_light",
+    "count": 1
+  }
+}

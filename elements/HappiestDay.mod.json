@@ -1,0 +1,23 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "bad_ending",
+    "description": "Bad Ending - LordSmugDread",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MusicDiscs"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:happiest_day"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "minecraft:dark_oak_door"
+    }
+  ],
+  "result": {
+    "item": "fnaf_mod:fnaf_4_door",
+    "count": 1
+  }
+}

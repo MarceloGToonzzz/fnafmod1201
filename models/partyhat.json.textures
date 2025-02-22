@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "partyhatred"
+      },
+      "name": "default"
+    },
+    "green": {
+      "map": {
+        "0": "partyhatgreen"
+      },
+      "name": "green"
+    },
+    "blue": {
+      "map": {
+        "0": "partyhatblue"
+      },
+      "name": "blue"
+    },
+    "purple": {
+      "map": {
+        "0": "partyhatpurple"
+      },
+      "name": "purple"
+    }
+  }
+}

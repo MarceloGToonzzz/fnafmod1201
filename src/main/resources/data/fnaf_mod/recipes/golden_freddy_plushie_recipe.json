@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:chica_fabric"
+    },
+    "b": {
+      "item": "fnaf_mod:freddy_plushie"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:golden_freddy_plushie",
+    "count": 1
+  }
+}

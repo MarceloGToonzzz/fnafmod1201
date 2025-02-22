@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "fnaf_mod:movie_exterior_wall_stairs",
+    "fnaf_mod:movie_wall_stairs",
+    "fnaf_mod:yellow_wall_stairs",
+    "fnaf_mod:fancy_bricks_stairs",
+    "fnaf_mod:copper_shingles_stairs",
+    "fnaf_mod:white_wall_stairs",
+    "fnaf_mod:red_white_tile_stair",
+    "fnaf_mod:red_white_tile_stair_cracked",
+    "fnaf_mod:green_blue_tile_stair_cracked",
+    "fnaf_mod:green_blue_tile_stair",
+    "fnaf_mod:error_tile_stairs_cracked",
+    "fnaf_mod:blue_black_tile_stairs_cracked",
+    "fnaf_mod:red_black_tile_stairs_cracked",
+    "fnaf_mod:red_blue_tile_stairs_cracked",
+    "fnaf_mod:black_white_tile_stairs_cracked",
+    "fnaf_mod:error_tile_stair",
+    "fnaf_mod:blue_black_tile_stair",
+    "fnaf_mod:red_black_tile_stair",
+    "fnaf_mod:red_blue_tile_stair",
+    "fnaf_mod:black_white_tile_stair"
+  ]
+}

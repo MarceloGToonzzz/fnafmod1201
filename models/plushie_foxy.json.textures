@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "foxy_plushie"
+      },
+      "name": "default"
+    },
+    "blacklightfoxy": {
+      "map": {
+        "2": "blacklight_foxy_plushie"
+      },
+      "name": "blacklightfoxy"
+    },
+    "toyfoxy": {
+      "map": {
+        "2": "toy_foxy_plushie"
+      },
+      "name": "toyfoxy"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dark_prismarine"
+    },
+    "b": {
+      "item": "minecraft:sandstone"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:fnaf_3_wall",
+    "count": 4
+  }
+}

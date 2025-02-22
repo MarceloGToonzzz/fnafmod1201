@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "bonnie_plush"
+      },
+      "name": "default"
+    },
+    "blacklightbonnie": {
+      "map": {
+        "2": "blacklight_bonnie_plush"
+      },
+      "name": "blacklightbonnie"
+    },
+    "springbonnie": {
+      "map": {
+        "2": "spring_bonnie_plush"
+      },
+      "name": "springbonnie"
+    },
+    "blacklightspringbonnie": {
+      "map": {
+        "2": "blacklight_spring_bonnie_plush"
+      },
+      "name": "blacklightspringbonnie"
+    }
+  }
+}

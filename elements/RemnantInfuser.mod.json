@@ -1,0 +1,262 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "remnant_infuser_bbackground.png",
+          "use1Xscale": false,
+          "x": 125,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_low.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Remnant1"
+          },
+          "x": 134,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Remant2"
+          },
+          "x": 134,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Remant3"
+          },
+          "x": 134,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress1"
+          },
+          "x": 278,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_2nd.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress2"
+          },
+          "x": 278,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_3rd.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress3"
+          },
+          "x": 278,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_2nd_to_last.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress4"
+          },
+          "x": 278,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_last.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress5"
+          },
+          "x": 278,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "progress_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Progress6"
+          },
+          "x": 278,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkremnant.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DarkRemnant3"
+          },
+          "x": 134,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkremnant2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DarkRemnant2"
+          },
+          "x": 134,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "darkremnantlow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DarkRemnant1"
+          },
+          "x": 134,
+          "y": 46
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Remnant"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ProcedureSlot0Remnant"
+          },
+          "onTakenFromSlot": {
+            "name": "ProcedureSlot0Remnant"
+          },
+          "onStackTransfer": {
+            "name": "ProcedureSlot0Remnant"
+          },
+          "x": 205,
+          "y": 45
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ShadowRemnant"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "ProcedureSlot0Remnant"
+          },
+          "onTakenFromSlot": {
+            "name": "ProcedureSlot0Remnant"
+          },
+          "onStackTransfer": {
+            "name": "ProcedureSlot0Remnant"
+          },
+          "x": 133,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "RemnantInfuserRecipes"
+          },
+          "x": 183,
+          "y": 93
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 227,
+          "y": 93
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

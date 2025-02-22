@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_concrete"
+    },
+    "b": {
+      "item": "minecraft:blue_concrete"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:red_blue_tile",
+    "count": 4
+  }
+}

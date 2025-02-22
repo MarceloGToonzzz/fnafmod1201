@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/balloons",
+  "textures": {
+    "all": "fnaf_mod:block/balloons",
+    "particle": "fnaf_mod:block/balloons",
+    "0": "fnaf_mod:block/balloons"
+  },
+  "render_type": "cutout"
+}

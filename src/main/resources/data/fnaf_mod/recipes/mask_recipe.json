@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:brown_wool"
+    },
+    "b": {
+      "item": "minecraft:gray_wool"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:freddy_mask_helmet",
+    "count": 1
+  }
+}

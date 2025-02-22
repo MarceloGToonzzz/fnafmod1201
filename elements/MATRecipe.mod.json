@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PinkPlastic"
+      },
+      {
+        "value": "CUSTOM:PinkPlastic"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PinkPlastic"
+      },
+      {
+        "value": "Blocks.STAINED_GLASS_PANE#15"
+      },
+      {
+        "value": "CUSTOM:PinkPlastic"
+      },
+      {
+        "value": "CUSTOM:PinkPlastic"
+      },
+      {
+        "value": "CUSTOM:CircuitBoard"
+      },
+      {
+        "value": "Items.LEATHER"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MAT"
+    },
+    "name": "mat_recipe",
+    "namespace": "mod"
+  }
+}

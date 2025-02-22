@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:purple_curtain"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:thin_purple_curtain",
+    "count": 16
+  }
+}

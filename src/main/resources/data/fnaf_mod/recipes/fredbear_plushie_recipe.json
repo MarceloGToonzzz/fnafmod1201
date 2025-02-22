@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:chica_fabric"
+    },
+    "b": {
+      "item": "fnaf_mod:bonnie_fabric"
+    },
+    "c": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:fredbear_plushie",
+    "count": 1
+  }
+}

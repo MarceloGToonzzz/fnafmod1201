@@ -1,0 +1,23 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "showtime",
+    "description": "Fazbear Showtime - SomethingFunky",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MusicDiscs"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:showtimefunky"
+    },
+    "lengthInTicks": 100,
+    "analogOutput": 0
+  }
+}

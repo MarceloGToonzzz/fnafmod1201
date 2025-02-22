@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "fnaf_mod:blocks/big_checkered_wall_tile",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fnaf_mod:big_checkered_wall_tile"
+        }
+      ]
+    }
+  ]
+}

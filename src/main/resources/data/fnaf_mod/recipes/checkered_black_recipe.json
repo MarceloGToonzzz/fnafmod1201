@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "bb"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:black_wall"
+    },
+    "b": {
+      "item": "fnaf_mod:black_white_tile"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:checkered_wall_tile",
+    "count": 4
+  }
+}

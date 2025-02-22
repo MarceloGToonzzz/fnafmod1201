@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "fnaf_mod:black_plastic"
+    },
+    "c": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:fan",
+    "count": 1
+  }
+}

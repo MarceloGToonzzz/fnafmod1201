@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Microphone"
+      },
+      {
+        "value": "CUSTOM:Remnant"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ChicaFabric"
+      },
+      {
+        "value": "CUSTOM:Endo"
+      },
+      {
+        "value": "CUSTOM:ChicaFabric"
+      },
+      {
+        "value": "CUSTOM:ChicaFabric"
+      },
+      {
+        "value": "CUSTOM:ChicaFabric"
+      },
+      {
+        "value": "CUSTOM:ChicaFabric"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Yellowbear"
+    },
+    "name": "golden_freddy_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "aba",
+    "acd"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:pink_plastic"
+    },
+    "b": {
+      "item": "minecraft:black_stained_glass_pane"
+    },
+    "c": {
+      "item": "fnaf_mod:circuit_board"
+    },
+    "d": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:mat",
+    "count": 1
+  }
+}

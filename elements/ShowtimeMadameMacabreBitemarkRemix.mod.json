@@ -1,0 +1,23 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "RARE",
+    "texture": "showtime1",
+    "description": "Showtime Bitemark Remix - Original By Madame Macabre Remixed By Synoxsis",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MusicDiscs"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:showtimebitemarkremixbysynoxsis"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Ballpit",
+    "blockstateList": [
+      {
+        "texture": "ballpitside",
+        "textureTop": "bp2",
+        "textureLeft": "ballpitside",
+        "textureFront": "ballpitside",
+        "textureRight": "ballpitside",
+        "textureBack": "ballpitside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "ballpitside",
+        "textureTop": "bp3",
+        "textureLeft": "ballpitside",
+        "textureFront": "ballpitside",
+        "textureRight": "ballpitside",
+        "textureBack": "ballpitside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "ballpitside",
+        "textureTop": "bp6",
+        "textureLeft": "ballpitside",
+        "textureFront": "ballpitside",
+        "textureRight": "ballpitside",
+        "textureBack": "ballpitside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "ballpitside",
+        "textureTop": "bp5",
+        "textureLeft": "ballpitside",
+        "textureFront": "ballpitside",
+        "textureRight": "ballpitside",
+        "textureBack": "ballpitside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "ballpitside",
+        "textureTop": "bp4",
+        "textureLeft": "ballpitside",
+        "textureFront": "ballpitside",
+        "textureRight": "ballpitside",
+        "textureBack": "ballpitside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

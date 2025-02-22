@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:pink_plastic"
+    },
+    "b": {
+      "item": "fnaf_mod:fan"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:purple_fan",
+    "count": 1
+  }
+}

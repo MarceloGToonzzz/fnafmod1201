@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "fnaf_mod:pink_plastic"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:pizza_cutter",
+    "count": 1
+  }
+}

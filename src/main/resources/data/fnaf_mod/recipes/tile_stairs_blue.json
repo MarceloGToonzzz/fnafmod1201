@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:blue_black_tile"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:blue_black_tile_stair",
+    "count": 4
+  }
+}

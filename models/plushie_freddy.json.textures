@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "freddy_plush"
+      },
+      "name": "default"
+    },
+    "blacklightfreddy": {
+      "map": {
+        "1": "blacklight_freddy_plush"
+      },
+      "name": "blacklightfreddy"
+    },
+    "fredbear": {
+      "map": {
+        "1": "sanshee_fredbear_plush"
+      },
+      "name": "fredbear"
+    },
+    "goldenfreddy": {
+      "map": {
+        "1": "golden_freddy_plush"
+      },
+      "name": "goldenfreddy"
+    },
+    "blacklightfredbear": {
+      "map": {
+        "1": "blacklight_sanshee_fredbear_plush"
+      },
+      "name": "blacklightfredbear"
+    },
+    "goldenblacklight": {
+      "map": {
+        "1": "blacklight_golden_freddy_plush"
+      },
+      "name": "goldenblacklight"
+    }
+  }
+}

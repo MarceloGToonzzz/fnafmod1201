@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "fnaf_mod:red_black_tile"
+    }
+  },
+  "result": {
+    "item": "fnaf_mod:red_black_tile_slab_cracked",
+    "count": 6
+  }
+}
