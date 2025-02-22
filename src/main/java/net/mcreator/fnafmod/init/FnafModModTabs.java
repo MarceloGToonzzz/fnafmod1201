@@ -609,6 +609,11 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.FAZBEAR_SHOWTIME.get());
 				tabData.accept(FnafModModItems.ITS_BEEN_SO_LONG.get());
 				tabData.accept(FnafModModItems.NEVER_BE_ALONE.get());
+				tabData.accept(FnafModModItems.DARKNESS_AHEAD.get());
+				tabData.accept(FnafModModItems.THEYLL_FIND_YOU.get());
+				tabData.accept(FnafModModItems.MOVIE_THEME.get());
+				tabData.accept(FnafModModItems.BONNIE_LULLABY.get());
+				tabData.accept(FnafModModItems.HARD_TO_SAY_GOODBYE.get());
 			})
 
 					.build());

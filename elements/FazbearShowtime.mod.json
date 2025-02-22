@@ -14,10 +14,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:showtimefunky"
     },
-    "lengthInTicks": 100,
+    "lengthInTicks": 2980,
     "analogOutput": 0
   }
 }

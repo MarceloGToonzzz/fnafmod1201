@@ -1,0 +1,26 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music DIsc",
+    "rarity": "COMMON",
+    "texture": "darkness_ahead_disc",
+    "description": "Darkness Ahead - Lucas Burnett",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:MusicDiscs"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:darkness_ahead"
+    },
+    "lengthInTicks": 1960,
+    "analogOutput": 0
+  }
+}

@@ -571,5 +571,45 @@
         "stream": false
       }
     ]
+  },
+  "darkness_ahead": {
+    "sounds": [
+      {
+        "name": "fnaf_mod:darkness_ahead",
+        "stream": true
+      }
+    ]
+  },
+  "findyou": {
+    "sounds": [
+      {
+        "name": "fnaf_mod:findyou",
+        "stream": true
+      }
+    ]
+  },
+  "movietheme": {
+    "sounds": [
+      {
+        "name": "fnaf_mod:movietheme",
+        "stream": false
+      }
+    ]
+  },
+  "bonnielullaby": {
+    "sounds": [
+      {
+        "name": "fnaf_mod:bonnielullaby",
+        "stream": true
+      }
+    ]
+  },
+  "hardtosaygoodbye": {
+    "sounds": [
+      {
+        "name": "fnaf_mod:hardtosaygoodbye",
+        "stream": true
+      }
+    ]
   }
 }

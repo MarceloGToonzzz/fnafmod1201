@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class HappiestDayItem extends RecordItem {
 	public HappiestDayItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:happiest_day")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:happiest_day")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 900);
 	}
 }

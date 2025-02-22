@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class ToreadorMarchItem extends RecordItem {
 	public ToreadorMarchItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:toreador_march")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 0);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:toreador_march")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 720);
 	}
 }

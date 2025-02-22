@@ -14,10 +14,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:toreador_march"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 720,
     "analogOutput": 0
   }
 }

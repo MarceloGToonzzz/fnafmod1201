@@ -14,10 +14,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:ourlittlehorrorstory"
     },
-    "lengthInTicks": 100,
+    "lengthInTicks": 6220,
     "analogOutput": 0
   }
 }

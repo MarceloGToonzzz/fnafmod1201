@@ -14,10 +14,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:neverbealone"
     },
-    "lengthInTicks": 100,
+    "lengthInTicks": 3640,
     "analogOutput": 0
   }
 }

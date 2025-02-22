@@ -14,10 +14,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:showtimebitemarkremixbysynoxsis"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 4680,
     "analogOutput": 0
   }
 }

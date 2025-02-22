@@ -5,7 +5,7 @@
     "name": "Music Disc",
     "rarity": "RARE",
     "texture": "beensolong",
-    "description": "Its Been So Long - Remixed By TheHost",
+    "description": "Its Been So Long - Remixed By Lucas Burnett",
     "creativeTabs": [
       {
         "value": "CUSTOM:MusicDiscs"
@@ -14,10 +14,13 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:itsbeensolong"
     },
-    "lengthInTicks": 100,
+    "lengthInTicks": 3460,
     "analogOutput": 0
   }
 }

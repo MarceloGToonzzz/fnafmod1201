@@ -74,4 +74,9 @@ public class FnafModModSounds {
 	public static final RegistryObject<SoundEvent> ICE_CAVE = REGISTRY.register("ice_cave", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "ice_cave")));
 	public static final RegistryObject<SoundEvent> NIGHTMAREDAMAGE = REGISTRY.register("nightmaredamage", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "nightmaredamage")));
 	public static final RegistryObject<SoundEvent> SHOP = REGISTRY.register("shop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "shop")));
+	public static final RegistryObject<SoundEvent> DARKNESS_AHEAD = REGISTRY.register("darkness_ahead", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "darkness_ahead")));
+	public static final RegistryObject<SoundEvent> FINDYOU = REGISTRY.register("findyou", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "findyou")));
+	public static final RegistryObject<SoundEvent> MOVIETHEME = REGISTRY.register("movietheme", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "movietheme")));
+	public static final RegistryObject<SoundEvent> BONNIELULLABY = REGISTRY.register("bonnielullaby", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "bonnielullaby")));
+	public static final RegistryObject<SoundEvent> HARDTOSAYGOODBYE = REGISTRY.register("hardtosaygoodbye", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "hardtosaygoodbye")));
 }
