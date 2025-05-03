@@ -295,9 +295,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> WALL_PIZZA = block(FnafModModBlocks.WALL_PIZZA);
 	public static final RegistryObject<Item> SMALL_PIPES = block(FnafModModBlocks.SMALL_PIPES);
 	public static final RegistryObject<Item> PAT_PAT_SPAWN_EGG = REGISTRY.register("pat_pat_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.PAT_PAT, -256, -13421773, new Item.Properties()));
-	public static final RegistryObject<Item> DONT_GO = REGISTRY.register("dont_go", () -> new DontGoItem());
-	public static final RegistryObject<Item> HAPPIEST_DAY = REGISTRY.register("happiest_day", () -> new HappiestDayItem());
-	public static final RegistryObject<Item> TOREADOR_MARCH = REGISTRY.register("toreador_march", () -> new ToreadorMarchItem());
 	public static final RegistryObject<Item> DESK_3 = block(FnafModModBlocks.DESK_3);
 	public static final RegistryObject<Item> BLACK_WHITE_TILE_SLAB = block(FnafModModBlocks.BLACK_WHITE_TILE_SLAB);
 	public static final RegistryObject<Item> BLACK_WHITE_TILE_STAIR = block(FnafModModBlocks.BLACK_WHITE_TILE_STAIR);
@@ -487,7 +484,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BIG_WHITE_RED_WALL_TILE = block(FnafModModBlocks.BIG_WHITE_RED_WALL_TILE);
 	public static final RegistryObject<Item> RED_WHITE_TILE_CRACKED = block(FnafModModBlocks.RED_WHITE_TILE_CRACKED);
 	public static final RegistryObject<Item> BIG_WHITE_CHECKERED_WALL = block(FnafModModBlocks.BIG_WHITE_CHECKERED_WALL);
-	public static final RegistryObject<Item> SHOWTIME_MADAME_MACABRE_BITEMARK_REMIX = REGISTRY.register("showtime_madame_macabre_bitemark_remix", () -> new ShowtimeMadameMacabreBitemarkRemixItem());
 	public static final RegistryObject<Item> FLASH_LIGHT_LIGHT = block(FnafModModBlocks.FLASH_LIGHT_LIGHT);
 	public static final RegistryObject<Item> BATTERY = REGISTRY.register("battery", () -> new BatteryItem());
 	public static final RegistryObject<Item> BROKEN_FLASH_LIGHT = REGISTRY.register("broken_flash_light", () -> new BrokenFlashLightItem());
@@ -504,9 +500,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> ARCADE_MACHINE_FOXY_2 = block(FnafModModBlocks.ARCADE_MACHINE_FOXY_2);
 	public static final RegistryObject<Item> ARCADE_MACHINE_CHICA = block(FnafModModBlocks.ARCADE_MACHINE_CHICA);
 	public static final RegistryObject<Item> ARCADE_MACHINE_SHADOW_FREDDY = block(FnafModModBlocks.ARCADE_MACHINE_SHADOW_FREDDY);
-	public static final RegistryObject<Item> OUR_LITTLE_HORROR_STORY = REGISTRY.register("our_little_horror_story", () -> new OurLittleHorrorStoryItem());
-	public static final RegistryObject<Item> FAZBEAR_SHOWTIME = REGISTRY.register("fazbear_showtime", () -> new FazbearShowtimeItem());
-	public static final RegistryObject<Item> ITS_BEEN_SO_LONG = REGISTRY.register("its_been_so_long", () -> new ItsBeenSoLongItem());
 	public static final RegistryObject<Item> DINER_CHAIR = block(FnafModModBlocks.DINER_CHAIR);
 	public static final RegistryObject<Item> DINER_CHAIR_2 = block(FnafModModBlocks.DINER_CHAIR_2);
 	public static final RegistryObject<Item> DINER_CHAIR_3 = block(FnafModModBlocks.DINER_CHAIR_3);
@@ -683,7 +676,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> LURE = block(FnafModModBlocks.LURE);
 	public static final RegistryObject<Item> NIGHTMARE_BONNIE_STATUE_SPAWN_EGG = REGISTRY.register("nightmare_bonnie_statue_spawn_egg",
 			() -> new ForgeSpawnEggItem(FnafModModEntities.NIGHTMARE_BONNIE_STATUE, -14282920, -10919532, new Item.Properties()));
-	public static final RegistryObject<Item> NEVER_BE_ALONE = REGISTRY.register("never_be_alone", () -> new NeverBeAloneItem());
 	public static final RegistryObject<Item> NIGHTMARE_CHICA_STATUE_SPAWN_EGG = REGISTRY.register("nightmare_chica_statue_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.NIGHTMARE_CHICA_STATUE, -5269983, -5882725, new Item.Properties()));
 	public static final RegistryObject<Item> NIGHTMARE_FREDDY_STATUE_SPAWN_EGG = REGISTRY.register("nightmare_freddy_statue_spawn_egg",
 			() -> new ForgeSpawnEggItem(FnafModModEntities.NIGHTMARE_FREDDY_STATUE, -13032690, -16777216, new Item.Properties()));
@@ -944,6 +936,14 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MOVIE_WALL_SLAB = block(FnafModModBlocks.MOVIE_WALL_SLAB);
 	public static final RegistryObject<Item> MOVIE_EXTERIOR_WALL_STAIRS = block(FnafModModBlocks.MOVIE_EXTERIOR_WALL_STAIRS);
 	public static final RegistryObject<Item> MOVIE_EXTERIOR_WALL_SLAB = block(FnafModModBlocks.MOVIE_EXTERIOR_WALL_SLAB);
+	public static final RegistryObject<Item> DONT_GO = REGISTRY.register("dont_go", () -> new DontGoItem());
+	public static final RegistryObject<Item> HAPPIEST_DAY = REGISTRY.register("happiest_day", () -> new HappiestDayItem());
+	public static final RegistryObject<Item> TOREADOR_MARCH = REGISTRY.register("toreador_march", () -> new ToreadorMarchItem());
+	public static final RegistryObject<Item> SHOWTIME_MADAME_MACABRE_BITEMARK_REMIX = REGISTRY.register("showtime_madame_macabre_bitemark_remix", () -> new ShowtimeMadameMacabreBitemarkRemixItem());
+	public static final RegistryObject<Item> OUR_LITTLE_HORROR_STORY = REGISTRY.register("our_little_horror_story", () -> new OurLittleHorrorStoryItem());
+	public static final RegistryObject<Item> FAZBEAR_SHOWTIME = REGISTRY.register("fazbear_showtime", () -> new FazbearShowtimeItem());
+	public static final RegistryObject<Item> ITS_BEEN_SO_LONG = REGISTRY.register("its_been_so_long", () -> new ItsBeenSoLongItem());
+	public static final RegistryObject<Item> NEVER_BE_ALONE = REGISTRY.register("never_be_alone", () -> new NeverBeAloneItem());
 	public static final RegistryObject<Item> DARKNESS_AHEAD = REGISTRY.register("darkness_ahead", () -> new DarknessAheadItem());
 	public static final RegistryObject<Item> THEYLL_FIND_YOU = REGISTRY.register("theyll_find_you", () -> new TheyllFindYouItem());
 	public static final RegistryObject<Item> MOVIE_THEME = REGISTRY.register("movie_theme", () -> new MovieThemeItem());

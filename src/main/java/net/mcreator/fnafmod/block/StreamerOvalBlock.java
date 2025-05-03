@@ -22,7 +22,7 @@ public class StreamerOvalBlock extends IronBarsBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Infinity"));
+		list.add(Component.translatable("block.fnaf_mod.streamer_oval.description_0"));
 	}
 
 	@Override

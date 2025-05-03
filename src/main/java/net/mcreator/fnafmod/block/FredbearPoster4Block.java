@@ -35,7 +35,7 @@ public class FredbearPoster4Block extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Poster of ???"));
+		list.add(Component.translatable("block.fnaf_mod.fredbear_poster_4.description_0"));
 	}
 
 	@Override

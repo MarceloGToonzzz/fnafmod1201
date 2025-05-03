@@ -35,7 +35,7 @@ public class MoviePoster1Block extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("The Leaning Tower of Pizza!"));
+		list.add(Component.translatable("block.fnaf_mod.movie_poster_1.description_0"));
 	}
 
 	@Override

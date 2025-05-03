@@ -42,8 +42,8 @@ public class FNAF3PostersBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Posters from Fazbear's Fright"));
-		list.add(Component.literal("(Right Click to Change)"));
+		list.add(Component.translatable("block.fnaf_mod.fnaf_3_posters.description_0"));
+		list.add(Component.translatable("block.fnaf_mod.fnaf_3_posters.description_1"));
 	}
 
 	@Override

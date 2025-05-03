@@ -18,6 +18,6 @@ public class MATItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Maintainance Assisting Tablet"));
+		list.add(Component.translatable("item.fnaf_mod.mat.description_0"));
 	}
 }

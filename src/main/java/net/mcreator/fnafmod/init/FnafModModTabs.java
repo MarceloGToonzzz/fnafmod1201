@@ -54,9 +54,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_LEGGINGS.get());
 				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_BOOTS.get());
-			})
-
-					.build());
+			}).build());
 	public static final RegistryObject<CreativeModeTab> DRAWINGS_POSTERS = REGISTRY.register("drawings_posters",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.drawings_posters")).icon(() -> new ItemStack(FnafModModBlocks.CHILDREN_DRAWINGS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModBlocks.POSTER_8.get().asItem());
@@ -92,9 +90,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PAPER_PAL_BONNIE.get().asItem());
 				tabData.accept(FnafModModBlocks.PAPER_PAL_FREDDY.get().asItem());
 				tabData.accept(FnafModModBlocks.PAPER_PAL.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(SUITS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> DECORATIVE_BLOCKS = REGISTRY.register("decorative_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.decorative_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PHONE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModBlocks.SPEAKER.get().asItem());
@@ -125,9 +121,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.RETRO_FREDDY_SIGN.get().asItem());
 				tabData.accept(FnafModModBlocks.SPRING_BONNIE_DECOR.get().asItem());
 				tabData.accept(FnafModModBlocks.FREDBEAR_SIGN.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModItems.MAT.get());
@@ -160,9 +154,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.GUARD_HAT_HELMET.get());
 				tabData.accept(FnafModModItems.WAITER_HAT_HELMET.get());
 				tabData.accept(FnafModModItems.BATTERY.get());
-			})
-
-					.build());
+			}).withTabsBefore(DECORATIVE_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_MOBS = REGISTRY.register("fnaf_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_mobs")).icon(() -> new ItemStack(FnafModModItems.FREDDY.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModItems.FREDDY_SPAWN_ITEM.get());
@@ -247,28 +239,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.FREDDLES_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.SITTING_FREDBEAR_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.SITTING_SPRING_BONNIE_SPAWN_EGG.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_2.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_3.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_4.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_5.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_6.get().asItem());
-				tabData.accept(FnafModModBlocks.SHACK_RANDOMIZER.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_7.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_8.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_9.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_10.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_11.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_12.get().asItem());
-				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_13.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(FNAF_ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_BLOCKS = REGISTRY.register("fnaf_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PURPLE_CURTAIN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModBlocks.BLACK_WHITE_TILE.get().asItem());
@@ -596,9 +567,24 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.LOCKER_YELLOW.get().asItem());
 				tabData.accept(FnafModModBlocks.LOCKER_SILVER.get().asItem());
 				tabData.accept(FnafModModBlocks.VENDING_MACHINE.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(FNAF_MOBS.getId()).build());
+	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_2.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_3.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_4.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_5.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_6.get().asItem());
+				tabData.accept(FnafModModBlocks.SHACK_RANDOMIZER.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_7.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_8.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_9.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_10.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_11.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_12.get().asItem());
+				tabData.accept(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK_13.get().asItem());
+			}).withTabsBefore(FNAF_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> MUSIC_DISCS = REGISTRY.register("music_discs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.music_discs")).icon(() -> new ItemStack(FnafModModItems.TOREADOR_MARCH.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModItems.DONT_GO.get());
@@ -614,14 +600,11 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.MOVIE_THEME.get());
 				tabData.accept(FnafModModItems.BONNIE_LULLABY.get());
 				tabData.accept(FnafModModItems.HARD_TO_SAY_GOODBYE.get());
-			})
-
-					.build());
+			}).withTabsBefore(STRUCTURE_SPAWNERS.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-
 			tabData.accept(FnafModModItems.PAINT_BRUSH.get());
 			tabData.accept(FnafModModItems.ADVENTURE_LOLBIT_SPAWN_EGG.get());
 			tabData.accept(FnafModModItems.ADVENTURE_FREDDY_SPAWN_EGG.get());
@@ -629,27 +612,20 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModItems.ADVENTURE_WITHERED_CHICA_SPAWN_EGG.get());
 			tabData.accept(FnafModModItems.ADVENTURE_SPRINGTRAP_SPAWN_EGG.get());
 			tabData.accept(FnafModModItems.ADVENTURE_NIGHTMARE_FREDBEAR_SPAWN_EGG.get());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-
 			tabData.accept(FnafModModBlocks.FREDDY_SIGN_ON.get().asItem());
 			tabData.accept(FnafModModBlocks.CENTERED_FREDDY_SIGN_ON.get().asItem());
 			tabData.accept(FnafModModBlocks.TOY_FREDDY_SIGN_ON.get().asItem());
 			tabData.accept(FnafModModBlocks.RETRO_FREDDY_SIGN_ON.get().asItem());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
 			tabData.accept(FnafModModItems.ADV_FREDDY.get());
 			tabData.accept(FnafModModItems.ADV_WITHERED_CHICA.get());
 			tabData.accept(FnafModModItems.ADV_MANGLE.get());
 			tabData.accept(FnafModModItems.ADV_SPRINGTRAP.get());
 			tabData.accept(FnafModModItems.ADV_NIGHTMARE_FREDBEAR.get());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-
 			tabData.accept(FnafModModBlocks.GLITCHED_LOG.get().asItem());
 			tabData.accept(FnafModModBlocks.GLITCHED_LEAVES.get().asItem());
-
 		}
 	}
 }

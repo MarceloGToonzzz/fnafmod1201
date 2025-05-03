@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.Modelcamera_hanging_Converted;
 
 public class HangingCameraRenderer extends MobRenderer<HangingCameraEntity, Modelcamera_hanging_Converted<HangingCameraEntity>> {
 	public HangingCameraRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcamera_hanging_Converted(context.bakeLayer(Modelcamera_hanging_Converted.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcamera_hanging_Converted<HangingCameraEntity>(context.bakeLayer(Modelcamera_hanging_Converted.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

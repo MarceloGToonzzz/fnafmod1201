@@ -56,8 +56,6 @@ public class GlobalJumpscareProcedure {
 		if (entity instanceof Player && sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:jumpscare_animatronics")))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeAllEffects();

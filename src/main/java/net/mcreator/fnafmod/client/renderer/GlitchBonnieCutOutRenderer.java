@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.ModelCutoutSpringBonnie;
 
 public class GlitchBonnieCutOutRenderer extends MobRenderer<GlitchBonnieCutOutEntity, ModelCutoutSpringBonnie<GlitchBonnieCutOutEntity>> {
 	public GlitchBonnieCutOutRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCutoutSpringBonnie(context.bakeLayer(ModelCutoutSpringBonnie.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCutoutSpringBonnie<GlitchBonnieCutOutEntity>(context.bakeLayer(ModelCutoutSpringBonnie.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

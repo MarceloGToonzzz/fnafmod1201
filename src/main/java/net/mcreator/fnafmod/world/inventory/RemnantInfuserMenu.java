@@ -82,6 +82,8 @@ public class RemnantInfuserMenu extends AbstractContainerMenu implements Supplie
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 80, 9) {
 			private final int slot = 0;
+			private int x = RemnantInfuserMenu.this.x;
+			private int y = RemnantInfuserMenu.this.y;
 
 			@Override
 			public void setChanged() {
@@ -108,6 +110,8 @@ public class RemnantInfuserMenu extends AbstractContainerMenu implements Supplie
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 8, 57) {
 			private final int slot = 3;
+			private int x = RemnantInfuserMenu.this.x;
+			private int y = RemnantInfuserMenu.this.y;
 
 			@Override
 			public void setChanged() {
@@ -134,6 +138,8 @@ public class RemnantInfuserMenu extends AbstractContainerMenu implements Supplie
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 58, 57) {
 			private final int slot = 1;
+			private int x = RemnantInfuserMenu.this.x;
+			private int y = RemnantInfuserMenu.this.y;
 
 			@Override
 			public void setChanged() {
@@ -143,6 +149,8 @@ public class RemnantInfuserMenu extends AbstractContainerMenu implements Supplie
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 102, 57) {
 			private final int slot = 2;
+			private int x = RemnantInfuserMenu.this.x;
+			private int y = RemnantInfuserMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {

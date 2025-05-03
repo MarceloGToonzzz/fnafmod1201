@@ -17,7 +17,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class PatPatRenderer extends MobRenderer<PatPatEntity, ModelPatPat<PatPatEntity>> {
 	public PatPatRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelPatPat(context.bakeLayer(ModelPatPat.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelPatPat<PatPatEntity>(context.bakeLayer(ModelPatPat.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<PatPatEntity, ModelPatPat<PatPatEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("fnaf_mod:textures/entities/patpat_e.png");
 

@@ -21,7 +21,7 @@ public class ThinCactusCurtainBlock extends IronBarsBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A72(Green Curtain)"));
+		list.add(Component.translatable("block.fnaf_mod.thin_cactus_curtain.description_0"));
 	}
 
 	@Override

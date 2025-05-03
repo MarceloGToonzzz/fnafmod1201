@@ -17,7 +17,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BonnieStandRenderer extends MobRenderer<BonnieStandEntity, ModelStandBonnie<BonnieStandEntity>> {
 	public BonnieStandRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelStandBonnie(context.bakeLayer(ModelStandBonnie.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelStandBonnie<BonnieStandEntity>(context.bakeLayer(ModelStandBonnie.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<BonnieStandEntity, ModelStandBonnie<BonnieStandEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("fnaf_mod:textures/entities/bonniestandemissive.png");
 

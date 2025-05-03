@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.ModelThe_Croobler;
 
 public class TheCrooblerRenderer extends MobRenderer<TheCrooblerEntity, ModelThe_Croobler<TheCrooblerEntity>> {
 	public TheCrooblerRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelThe_Croobler(context.bakeLayer(ModelThe_Croobler.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelThe_Croobler<TheCrooblerEntity>(context.bakeLayer(ModelThe_Croobler.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

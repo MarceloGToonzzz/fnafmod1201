@@ -137,6 +137,8 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<StageLightRedOnTileEntity>> STAGE_LIGHT_RED_ON = REGISTRY.register("stage_light_red_on",
 			() -> BlockEntityType.Builder.of(StageLightRedOnTileEntity::new, FnafModModBlocks.STAGE_LIGHT_RED_ON.get()).build(null));
 
+	// Start of user code block custom block entities
+	// End of user code block custom block entities
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}

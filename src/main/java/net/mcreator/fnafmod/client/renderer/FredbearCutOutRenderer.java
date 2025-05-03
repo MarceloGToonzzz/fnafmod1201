@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.ModelCutoutFredbear;
 
 public class FredbearCutOutRenderer extends MobRenderer<FredbearCutOutEntity, ModelCutoutFredbear<FredbearCutOutEntity>> {
 	public FredbearCutOutRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCutoutFredbear(context.bakeLayer(ModelCutoutFredbear.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCutoutFredbear<FredbearCutOutEntity>(context.bakeLayer(ModelCutoutFredbear.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

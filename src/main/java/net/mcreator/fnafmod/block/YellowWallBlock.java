@@ -22,7 +22,7 @@ public class YellowWallBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Empty"));
+		list.add(Component.translatable("block.fnaf_mod.yellow_wall.description_0"));
 	}
 
 	@Override

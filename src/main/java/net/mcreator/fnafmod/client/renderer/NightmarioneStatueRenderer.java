@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.Modelnightmarionne_statue;
 
 public class NightmarioneStatueRenderer extends MobRenderer<NightmarioneStatueEntity, Modelnightmarionne_statue<NightmarioneStatueEntity>> {
 	public NightmarioneStatueRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelnightmarionne_statue(context.bakeLayer(Modelnightmarionne_statue.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelnightmarionne_statue<NightmarioneStatueEntity>(context.bakeLayer(Modelnightmarionne_statue.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

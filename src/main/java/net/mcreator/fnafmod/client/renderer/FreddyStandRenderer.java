@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.ModelStandFreddly;
 
 public class FreddyStandRenderer extends MobRenderer<FreddyStandEntity, ModelStandFreddly<FreddyStandEntity>> {
 	public FreddyStandRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelStandFreddly(context.bakeLayer(ModelStandFreddly.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelStandFreddly<FreddyStandEntity>(context.bakeLayer(ModelStandFreddly.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

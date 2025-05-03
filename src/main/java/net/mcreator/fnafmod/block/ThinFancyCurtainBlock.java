@@ -21,8 +21,8 @@ public class ThinFancyCurtainBlock extends IronBarsBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7c(Red Curtain)"));
-		list.add(Component.literal("Striped"));
+		list.add(Component.translatable("block.fnaf_mod.thin_fancy_curtain.description_0"));
+		list.add(Component.translatable("block.fnaf_mod.thin_fancy_curtain.description_1"));
 	}
 
 	@Override

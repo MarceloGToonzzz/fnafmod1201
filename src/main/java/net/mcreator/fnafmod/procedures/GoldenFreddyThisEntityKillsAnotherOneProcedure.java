@@ -45,8 +45,6 @@ public class GoldenFreddyThisEntityKillsAnotherOneProcedure {
 		if (entity instanceof Player && sourceentity instanceof GoldenFreddyEntity) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeAllEffects();

@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.ModelPlushtrapSit;
 
 public class PlushtrapToyRenderer extends MobRenderer<PlushtrapToyEntity, ModelPlushtrapSit<PlushtrapToyEntity>> {
 	public PlushtrapToyRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelPlushtrapSit(context.bakeLayer(ModelPlushtrapSit.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelPlushtrapSit<PlushtrapToyEntity>(context.bakeLayer(ModelPlushtrapSit.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public class ThinSwampCurtainBlock extends IronBarsBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A73(Cyan Curtain)"));
+		list.add(Component.translatable("block.fnaf_mod.thin_swamp_curtain.description_0"));
 	}
 
 	@Override

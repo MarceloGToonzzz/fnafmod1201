@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.Modeloffice_chair_dark;
 
 public class SitEntityRenderer extends MobRenderer<SitEntityEntity, Modeloffice_chair_dark<SitEntityEntity>> {
 	public SitEntityRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeloffice_chair_dark(context.bakeLayer(Modeloffice_chair_dark.LAYER_LOCATION)), 0f);
+		super(context, new Modeloffice_chair_dark<SitEntityEntity>(context.bakeLayer(Modeloffice_chair_dark.LAYER_LOCATION)), 0f);
 	}
 
 	@Override

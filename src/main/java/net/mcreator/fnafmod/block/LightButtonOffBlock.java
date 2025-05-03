@@ -42,7 +42,7 @@ public class LightButtonOffBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("If you have this item place and break it again"));
+		list.add(Component.translatable("block.fnaf_mod.light_button_off.description_0"));
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.Modeltoybox;
 
 public class ToyBoxRenderer extends MobRenderer<ToyBoxEntity, Modeltoybox<ToyBoxEntity>> {
 	public ToyBoxRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeltoybox(context.bakeLayer(Modeltoybox.LAYER_LOCATION)), 1f);
+		super(context, new Modeltoybox<ToyBoxEntity>(context.bakeLayer(Modeltoybox.LAYER_LOCATION)), 1f);
 	}
 
 	@Override

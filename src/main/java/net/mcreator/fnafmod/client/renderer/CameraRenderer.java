@@ -10,7 +10,7 @@ import net.mcreator.fnafmod.client.model.Modelcamera;
 
 public class CameraRenderer extends MobRenderer<CameraEntity, Modelcamera<CameraEntity>> {
 	public CameraRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcamera(context.bakeLayer(Modelcamera.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcamera<CameraEntity>(context.bakeLayer(Modelcamera.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
