@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fnaf_mod:block/Pillar Line Base",
+    "particle": "fnaf_mod:block/Pillar Line Base"
+  },
+  "render_type": "solid"
+}

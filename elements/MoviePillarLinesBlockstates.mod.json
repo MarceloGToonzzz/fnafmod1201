@@ -1,0 +1,61 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MoviePillarLines",
+    "blockstateList": [
+      {
+        "texture": "Pillar Side",
+        "textureTop": "Pillar Side",
+        "textureLeft": "Pillar Line Middle",
+        "textureFront": "Pillar Line Middle",
+        "textureRight": "Pillar Line Middle",
+        "textureBack": "Pillar Line Middle",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "Pillar Side",
+        "textureTop": "Pillar Side",
+        "textureLeft": "Pillar Line Top",
+        "textureFront": "Pillar Line Top",
+        "textureRight": "Pillar Line Top",
+        "textureBack": "Pillar Line Top",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "Pillar Side",
+        "textureTop": "Pillar Side",
+        "textureLeft": "Pillar Line Bottom",
+        "textureFront": "Pillar Line Bottom",
+        "textureRight": "Pillar Line Bottom",
+        "textureBack": "Pillar Line Bottom",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "Pillar Line Base",
+        "textureTop": "Pillar Line Base",
+        "textureLeft": "Pillar Line Base",
+        "textureFront": "Pillar Line Base",
+        "textureRight": "Pillar Line Base",
+        "textureBack": "Pillar Line Base",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

@@ -952,6 +952,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SUN = block(FnafModModBlocks.SUN);
 	public static final RegistryObject<Item> SKEEBALL = block(FnafModModBlocks.SKEEBALL);
 	public static final RegistryObject<Item> FOOSBALL = block(FnafModModBlocks.FOOSBALL);
+	public static final RegistryObject<Item> MOVIE_PILLAR_LINES = block(FnafModModBlocks.MOVIE_PILLAR_LINES);
 
 	// Start of user code block custom items
 	// End of user code block custom items

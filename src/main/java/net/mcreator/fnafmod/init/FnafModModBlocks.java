@@ -190,6 +190,7 @@ import net.mcreator.fnafmod.block.MoviePoster4Block;
 import net.mcreator.fnafmod.block.MoviePoster3Block;
 import net.mcreator.fnafmod.block.MoviePoster2Block;
 import net.mcreator.fnafmod.block.MoviePoster1Block;
+import net.mcreator.fnafmod.block.MoviePillarLinesBlock;
 import net.mcreator.fnafmod.block.MovieExteriorWallTileBlock;
 import net.mcreator.fnafmod.block.MovieExteriorWallStairsBlock;
 import net.mcreator.fnafmod.block.MovieExteriorWallSlabBlock;
@@ -922,6 +923,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SUN = REGISTRY.register("sun", () -> new SunBlock());
 	public static final RegistryObject<Block> SKEEBALL = REGISTRY.register("skeeball", () -> new SkeeballBlock());
 	public static final RegistryObject<Block> FOOSBALL = REGISTRY.register("foosball", () -> new FoosballBlock());
+	public static final RegistryObject<Block> MOVIE_PILLAR_LINES = REGISTRY.register("movie_pillar_lines", () -> new MoviePillarLinesBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
