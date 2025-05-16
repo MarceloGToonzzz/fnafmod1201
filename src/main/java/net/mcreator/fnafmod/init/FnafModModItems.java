@@ -949,6 +949,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MOVIE_THEME = REGISTRY.register("movie_theme", () -> new MovieThemeItem());
 	public static final RegistryObject<Item> BONNIE_LULLABY = REGISTRY.register("bonnie_lullaby", () -> new BonnieLullabyItem());
 	public static final RegistryObject<Item> HARD_TO_SAY_GOODBYE = REGISTRY.register("hard_to_say_goodbye", () -> new HardToSayGoodbyeItem());
+	public static final RegistryObject<Item> SUN = block(FnafModModBlocks.SUN);
 
 	// Start of user code block custom items
 	// End of user code block custom items

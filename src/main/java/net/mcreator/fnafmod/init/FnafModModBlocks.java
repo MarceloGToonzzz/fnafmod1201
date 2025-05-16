@@ -69,6 +69,7 @@ import net.mcreator.fnafmod.block.ThinBerryCurtainBlock;
 import net.mcreator.fnafmod.block.ThinAshCurtainBlock;
 import net.mcreator.fnafmod.block.TableClothBlock;
 import net.mcreator.fnafmod.block.SwampCurtainBlock;
+import net.mcreator.fnafmod.block.SunBlock;
 import net.mcreator.fnafmod.block.StructureSpawningBlockBlock;
 import net.mcreator.fnafmod.block.StructureSpawningBlock9Block;
 import net.mcreator.fnafmod.block.StructureSpawningBlock8Block;
@@ -916,6 +917,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> MOVIE_WALL_SLAB = REGISTRY.register("movie_wall_slab", () -> new MovieWallSlabBlock());
 	public static final RegistryObject<Block> MOVIE_EXTERIOR_WALL_STAIRS = REGISTRY.register("movie_exterior_wall_stairs", () -> new MovieExteriorWallStairsBlock());
 	public static final RegistryObject<Block> MOVIE_EXTERIOR_WALL_SLAB = REGISTRY.register("movie_exterior_wall_slab", () -> new MovieExteriorWallSlabBlock());
+	public static final RegistryObject<Block> SUN = REGISTRY.register("sun", () -> new SunBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
