@@ -107,6 +107,7 @@ import net.mcreator.fnafmod.block.SpeakerLeftBlock;
 import net.mcreator.fnafmod.block.SpeakerBlock;
 import net.mcreator.fnafmod.block.SmallPipesBlock;
 import net.mcreator.fnafmod.block.SkyCurtainBlock;
+import net.mcreator.fnafmod.block.SkeeballBlock;
 import net.mcreator.fnafmod.block.ShelfBlock;
 import net.mcreator.fnafmod.block.ShackRandomizerBlock;
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
@@ -235,6 +236,7 @@ import net.mcreator.fnafmod.block.FredbearFloorBlock;
 import net.mcreator.fnafmod.block.FoxyPlushieBlock;
 import net.mcreator.fnafmod.block.FoxyHeadDecorationBlock;
 import net.mcreator.fnafmod.block.FoxyHeadBlock;
+import net.mcreator.fnafmod.block.FoosballBlock;
 import net.mcreator.fnafmod.block.Fnaf4DoorBlock;
 import net.mcreator.fnafmod.block.FlashLightLightBlock;
 import net.mcreator.fnafmod.block.FancyCandyCurtainCleanBlock;
@@ -918,6 +920,8 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> MOVIE_EXTERIOR_WALL_STAIRS = REGISTRY.register("movie_exterior_wall_stairs", () -> new MovieExteriorWallStairsBlock());
 	public static final RegistryObject<Block> MOVIE_EXTERIOR_WALL_SLAB = REGISTRY.register("movie_exterior_wall_slab", () -> new MovieExteriorWallSlabBlock());
 	public static final RegistryObject<Block> SUN = REGISTRY.register("sun", () -> new SunBlock());
+	public static final RegistryObject<Block> SKEEBALL = REGISTRY.register("skeeball", () -> new SkeeballBlock());
+	public static final RegistryObject<Block> FOOSBALL = REGISTRY.register("foosball", () -> new FoosballBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

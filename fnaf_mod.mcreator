@@ -25387,6 +25387,40 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Skeeball",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeeball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/skeeball.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/skeeball.json",
+          "src/main/java/net/mcreator/fnafmod/block/SkeeballBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/skeeball.json",
+          "src/main/resources/assets/fnaf_mod/models/block/skeeball.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Foosball",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foosball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/FoosballBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/foosball.json",
+          "src/main/resources/assets/fnaf_mod/models/item/foosball.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/foosball.json",
+          "src/main/resources/assets/fnaf_mod/models/block/foosball.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
     }
   ],
   "variable_elements": [
@@ -26878,7 +26912,9 @@
       "ToyFreddySignOff",
       "RetroFreddySign",
       "SpringBonnieDecor",
-      "FredbearSign"
+      "FredbearSign",
+      "Skeeball",
+      "Foosball"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -27541,8 +27577,8 @@
       "subtitles.c2": "Honk",
       "item.fnaf_mod.statue_chica_spawn_egg": "Chica Statue Spawn Egg",
       "subtitles.ice_cave": "",
-      "item.fnaf_mod.full_hostile_freddy_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.black_light_fredbear_plush": "Blacklight Fredbear Plushie",
+      "item.fnaf_mod.full_hostile_freddy_spawn_egg": "Freddy Fazbear Spawn Egg",
       "gui.fnaf_mod.camera_gui.label_to_remove_a_camera": "Remove Cam",
       "entity.fnaf_mod.phantom_foxy": "Phantom Foxy",
       "gui.fnaf_mod.wall_change_2.label_one_hall_face_rest_room_faces": "One Hall Face Rest Room Faces",
@@ -27770,6 +27806,7 @@
       "block.fnaf_mod.wires": "Wires",
       "entity.fnaf_mod.toy_chica": "DayTime Toy Chica",
       "block.fnaf_mod.closet_right_open_top": "Closet Door Right",
+      "block.fnaf_mod.skeeball": "Skeeball Machine",
       "item.fnaf_mod.nightmare_freddy_statue_spawn_item": "Nightmare Freddy (Statue)",
       "block.fnaf_mod.big_white_black_striped_wall_tile": "Big White Black Striped Wall Tiles",
       "block.fnaf_mod.poster_3": "Wall Poster 3",
@@ -28331,6 +28368,7 @@
       "block.fnaf_mod.structure_spawning_block_10": "Structure Spawning Block (Arcade A)",
       "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.ballpit": "Ball Pit",
+      "block.fnaf_mod.foosball": "Foosball Machine",
       "block.fnaf_mod.poster_1.description_0": "Poster of Bonnie the Bunny!",
       "item.fnaf_mod.nightmare_bb_spawn_item": "Nightmare BB",
       "block.fnaf_mod.movie_poster_2.description_0": "Smile For The Camera!",

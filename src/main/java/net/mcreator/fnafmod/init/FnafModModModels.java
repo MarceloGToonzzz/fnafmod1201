@@ -48,39 +48,39 @@ import net.mcreator.fnafmod.client.model.ModelBonnieMask;
 public class FnafModModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(Modelfredbearstand.LAYER_LOCATION, Modelfredbearstand::createBodyLayer);
-		event.registerLayerDefinition(ModelFredbearMask.LAYER_LOCATION, ModelFredbearMask::createBodyLayer);
 		event.registerLayerDefinition(ModelBonnieStand.LAYER_LOCATION, ModelBonnieStand::createBodyLayer);
 		event.registerLayerDefinition(ModelGlitchtrap_Mask.LAYER_LOCATION, ModelGlitchtrap_Mask::createBodyLayer);
-		event.registerLayerDefinition(ModelSpringBonnieBody.LAYER_LOCATION, ModelSpringBonnieBody::createBodyLayer);
 		event.registerLayerDefinition(ModelFredbearFNAF4.LAYER_LOCATION, ModelFredbearFNAF4::createBodyLayer);
 		event.registerLayerDefinition(Modeloffice_chair_dark.LAYER_LOCATION, Modeloffice_chair_dark::createBodyLayer);
-		event.registerLayerDefinition(ModelStandBonnie.LAYER_LOCATION, ModelStandBonnie::createBodyLayer);
 		event.registerLayerDefinition(ModelNightmareFredbear.LAYER_LOCATION, ModelNightmareFredbear::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(ModelCutoutFredbear.LAYER_LOCATION, ModelCutoutFredbear::createBodyLayer);
-		event.registerLayerDefinition(ModelNightmare_Bonnie_Statue.LAYER_LOCATION, ModelNightmare_Bonnie_Statue::createBodyLayer);
-		event.registerLayerDefinition(Modelnightmarionne_statue.LAYER_LOCATION, Modelnightmarionne_statue::createBodyLayer);
 		event.registerLayerDefinition(Modelcamera.LAYER_LOCATION, Modelcamera::createBodyLayer);
-		event.registerLayerDefinition(ModelNighmare_Foxy_Statue.LAYER_LOCATION, ModelNighmare_Foxy_Statue::createBodyLayer);
-		event.registerLayerDefinition(ModelFreddyHead.LAYER_LOCATION, ModelFreddyHead::createBodyLayer);
-		event.registerLayerDefinition(ModelGuard_hat.LAYER_LOCATION, ModelGuard_hat::createBodyLayer);
 		event.registerLayerDefinition(ModelFreddyStand.LAYER_LOCATION, ModelFreddyStand::createBodyLayer);
 		event.registerLayerDefinition(ModelNightmare_Freddy_Statue.LAYER_LOCATION, ModelNightmare_Freddy_Statue::createBodyLayer);
 		event.registerLayerDefinition(ModelSpringBonnieMask.LAYER_LOCATION, ModelSpringBonnieMask::createBodyLayer);
 		event.registerLayerDefinition(ModelUnwitheredChica_Posed.LAYER_LOCATION, ModelUnwitheredChica_Posed::createBodyLayer);
 		event.registerLayerDefinition(Modeltoybox.LAYER_LOCATION, Modeltoybox::createBodyLayer);
-		event.registerLayerDefinition(Modelcamera_hanging_Converted.LAYER_LOCATION, Modelcamera_hanging_Converted::createBodyLayer);
-		event.registerLayerDefinition(ModelFreddy_Mask.LAYER_LOCATION, ModelFreddy_Mask::createBodyLayer);
 		event.registerLayerDefinition(ModelCutoutSpringBonnie.LAYER_LOCATION, ModelCutoutSpringBonnie::createBodyLayer);
 		event.registerLayerDefinition(Modelbullet.LAYER_LOCATION, Modelbullet::createBodyLayer);
-		event.registerLayerDefinition(ModelStandFreddly.LAYER_LOCATION, ModelStandFreddly::createBodyLayer);
 		event.registerLayerDefinition(ModelBonnieMask.LAYER_LOCATION, ModelBonnieMask::createBodyLayer);
 		event.registerLayerDefinition(ModelChicaMask.LAYER_LOCATION, ModelChicaMask::createBodyLayer);
 		event.registerLayerDefinition(ModelPatPat.LAYER_LOCATION, ModelPatPat::createBodyLayer);
 		event.registerLayerDefinition(ModelNightmare_Chica_Statue.LAYER_LOCATION, ModelNightmare_Chica_Statue::createBodyLayer);
+		event.registerLayerDefinition(ModelThe_Croobler.LAYER_LOCATION, ModelThe_Croobler::createBodyLayer);
+		event.registerLayerDefinition(Modelfredbearstand.LAYER_LOCATION, Modelfredbearstand::createBodyLayer);
+		event.registerLayerDefinition(ModelFredbearMask.LAYER_LOCATION, ModelFredbearMask::createBodyLayer);
+		event.registerLayerDefinition(ModelSpringBonnieBody.LAYER_LOCATION, ModelSpringBonnieBody::createBodyLayer);
+		event.registerLayerDefinition(ModelStandBonnie.LAYER_LOCATION, ModelStandBonnie::createBodyLayer);
+		event.registerLayerDefinition(ModelNightmare_Bonnie_Statue.LAYER_LOCATION, ModelNightmare_Bonnie_Statue::createBodyLayer);
+		event.registerLayerDefinition(Modelnightmarionne_statue.LAYER_LOCATION, Modelnightmarionne_statue::createBodyLayer);
+		event.registerLayerDefinition(ModelNighmare_Foxy_Statue.LAYER_LOCATION, ModelNighmare_Foxy_Statue::createBodyLayer);
+		event.registerLayerDefinition(ModelFreddyHead.LAYER_LOCATION, ModelFreddyHead::createBodyLayer);
+		event.registerLayerDefinition(ModelGuard_hat.LAYER_LOCATION, ModelGuard_hat::createBodyLayer);
+		event.registerLayerDefinition(Modelcamera_hanging_Converted.LAYER_LOCATION, Modelcamera_hanging_Converted::createBodyLayer);
+		event.registerLayerDefinition(ModelFreddy_Mask.LAYER_LOCATION, ModelFreddy_Mask::createBodyLayer);
+		event.registerLayerDefinition(ModelStandFreddly.LAYER_LOCATION, ModelStandFreddly::createBodyLayer);
 		event.registerLayerDefinition(ModelFoxyMask.LAYER_LOCATION, ModelFoxyMask::createBodyLayer);
 		event.registerLayerDefinition(ModelPlushtrapSit.LAYER_LOCATION, ModelPlushtrapSit::createBodyLayer);
-		event.registerLayerDefinition(ModelThe_Croobler.LAYER_LOCATION, ModelThe_Croobler::createBodyLayer);
 	}
 }

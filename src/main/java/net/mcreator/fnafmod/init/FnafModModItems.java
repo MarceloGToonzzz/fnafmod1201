@@ -950,6 +950,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BONNIE_LULLABY = REGISTRY.register("bonnie_lullaby", () -> new BonnieLullabyItem());
 	public static final RegistryObject<Item> HARD_TO_SAY_GOODBYE = REGISTRY.register("hard_to_say_goodbye", () -> new HardToSayGoodbyeItem());
 	public static final RegistryObject<Item> SUN = block(FnafModModBlocks.SUN);
+	public static final RegistryObject<Item> SKEEBALL = block(FnafModModBlocks.SKEEBALL);
+	public static final RegistryObject<Item> FOOSBALL = block(FnafModModBlocks.FOOSBALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items
