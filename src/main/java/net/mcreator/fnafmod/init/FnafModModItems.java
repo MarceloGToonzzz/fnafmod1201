@@ -953,6 +953,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SKEEBALL = block(FnafModModBlocks.SKEEBALL);
 	public static final RegistryObject<Item> FOOSBALL = block(FnafModModBlocks.FOOSBALL);
 	public static final RegistryObject<Item> MOVIE_PILLAR_LINES = block(FnafModModBlocks.MOVIE_PILLAR_LINES);
+	public static final RegistryObject<Item> AWNING_RED = block(FnafModModBlocks.AWNING_RED);
+	public static final RegistryObject<Item> AWNING_GREEN = block(FnafModModBlocks.AWNING_GREEN);
+	public static final RegistryObject<Item> AWNING_BLUE = block(FnafModModBlocks.AWNING_BLUE);
+	public static final RegistryObject<Item> AWNING_YELLOW = block(FnafModModBlocks.AWNING_YELLOW);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -432,6 +432,10 @@ import net.mcreator.fnafmod.block.BalloonGreenBlock;
 import net.mcreator.fnafmod.block.BalloonBlueBlock;
 import net.mcreator.fnafmod.block.BalloonBlock;
 import net.mcreator.fnafmod.block.BackstageDoorBlock;
+import net.mcreator.fnafmod.block.AwningYellowBlock;
+import net.mcreator.fnafmod.block.AwningRedBlock;
+import net.mcreator.fnafmod.block.AwningGreenBlock;
+import net.mcreator.fnafmod.block.AwningBlueBlock;
 import net.mcreator.fnafmod.block.AshCurtainBlock;
 import net.mcreator.fnafmod.block.ArcadeMachineShadowFreddyBlock;
 import net.mcreator.fnafmod.block.ArcadeMachineFreddyBlock;
@@ -924,6 +928,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SKEEBALL = REGISTRY.register("skeeball", () -> new SkeeballBlock());
 	public static final RegistryObject<Block> FOOSBALL = REGISTRY.register("foosball", () -> new FoosballBlock());
 	public static final RegistryObject<Block> MOVIE_PILLAR_LINES = REGISTRY.register("movie_pillar_lines", () -> new MoviePillarLinesBlock());
+	public static final RegistryObject<Block> AWNING_RED = REGISTRY.register("awning_red", () -> new AwningRedBlock());
+	public static final RegistryObject<Block> AWNING_GREEN = REGISTRY.register("awning_green", () -> new AwningGreenBlock());
+	public static final RegistryObject<Block> AWNING_BLUE = REGISTRY.register("awning_blue", () -> new AwningBlueBlock());
+	public static final RegistryObject<Block> AWNING_YELLOW = REGISTRY.register("awning_yellow", () -> new AwningYellowBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

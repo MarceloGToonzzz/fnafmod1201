@@ -11,9 +11,6 @@
     },
     "blockstate=3": {
       "model": "fnaf_mod:block/movie_pillar_lines_blockstates_blockstate_2"
-    },
-    "blockstate=4": {
-      "model": "fnaf_mod:block/movie_pillar_lines_blockstates_blockstate_3"
     }
   }
 }

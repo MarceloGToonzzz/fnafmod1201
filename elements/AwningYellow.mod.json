@@ -2,15 +2,15 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "pillar_side",
-    "textureTop": "pillar_side",
-    "textureLeft": "pillar_line_base",
-    "textureFront": "pillar_line_base",
-    "textureRight": "pillar_line_base",
-    "textureBack": "pillar_line_base",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "texture": "awning_yellow",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "awning:yellow",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,28 +18,39 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 8.0,
+        "mz": 8.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
       {
         "mx": 0.0,
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "My": 8.0,
+        "Mz": 8.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Movie Pillar Lines",
+    "name": "Awning",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Yellow"
+      ]
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.2,
+    "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -57,7 +68,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "NONE"
     },
@@ -84,7 +95,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "CLOTH"
     },
     "breakSound": {
       "value": ""
@@ -121,12 +132,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "MoviePillarLinesBlockIsPlacedBy"
-    },
-    "onNeighbourBlockChanges": {
-      "name": "MoviePillarLinesBlockIsPlacedBy"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

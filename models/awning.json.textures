@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "awning_red"
+      },
+      "name": "default"
+    },
+    "green": {
+      "map": {
+        "0": "awning_green"
+      },
+      "name": "green"
+    },
+    "blue": {
+      "map": {
+        "0": "awning_blue"
+      },
+      "name": "blue"
+    },
+    "yellow": {
+      "map": {
+        "0": "awning_yellow"
+      },
+      "name": "yellow"
+    }
+  }
+}

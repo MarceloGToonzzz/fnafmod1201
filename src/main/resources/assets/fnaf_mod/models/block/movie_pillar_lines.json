@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "fnaf_mod:block/Pillar Line Base",
-    "particle": "fnaf_mod:block/Pillar Line Base"
+    "down": "fnaf_mod:block/pillar_side",
+    "up": "fnaf_mod:block/pillar_side",
+    "north": "fnaf_mod:block/pillar_line_base",
+    "east": "fnaf_mod:block/pillar_line_base",
+    "south": "fnaf_mod:block/pillar_line_base",
+    "west": "fnaf_mod:block/pillar_line_base",
+    "particle": "fnaf_mod:block/pillar_side"
   },
   "render_type": "solid"
 }
