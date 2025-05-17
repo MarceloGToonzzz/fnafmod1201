@@ -5,9 +5,11 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.init.FnafModModBlocks;
+
 public class MoviePillarLinesBlockIsPlacedByProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if ((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == blockstate.getBlock() && !((world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == blockstate.getBlock())) {
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		if ((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get() && !((world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get())) {
 			{
 				int _value = 3;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -16,7 +18,7 @@ public class MoviePillarLinesBlockIsPlacedByProcedure {
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}
-		if ((world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == blockstate.getBlock() && !((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == blockstate.getBlock())) {
+		if ((world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get() && !((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get())) {
 			{
 				int _value = 2;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -25,7 +27,7 @@ public class MoviePillarLinesBlockIsPlacedByProcedure {
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}
-		if ((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == blockstate.getBlock() && (world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == blockstate.getBlock()) {
+		if ((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get() && (world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get()) {
 			{
 				int _value = 1;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -34,7 +36,7 @@ public class MoviePillarLinesBlockIsPlacedByProcedure {
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}
-		if (!((world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == blockstate.getBlock()) && !((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == blockstate.getBlock())) {
+		if (!((world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get()) && !((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == FnafModModBlocks.MOVIE_PILLAR_LINES.get())) {
 			{
 				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
