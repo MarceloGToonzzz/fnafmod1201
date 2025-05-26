@@ -127,6 +127,9 @@
     "onNeighbourBlockChanges": {
       "name": "MoviePillarLinesBlockIsPlacedBy"
     },
+    "onBlockPlayedBy": {
+      "name": "MoviePillarLinesBlockIsPlacedBy"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

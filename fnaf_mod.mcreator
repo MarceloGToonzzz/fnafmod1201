@@ -15996,7 +15996,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "BonniePlushieOnBlockRightClicked",
@@ -16963,11 +16964,11 @@
       "registry_name": "sconce",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/sconce.json",
-          "src/main/resources/assets/fnaf_mod/models/block/sconce.json",
           "src/main/java/net/mcreator/fnafmod/block/SconceBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/sconce.json",
-          "src/main/resources/assets/fnaf_mod/models/item/sconce.json"
+          "src/main/resources/assets/fnaf_mod/models/block/sconce.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/sconce.json",
+          "src/main/resources/assets/fnaf_mod/models/item/sconce.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/sconce.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -18226,7 +18227,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "CutStageBricks",
@@ -20410,7 +20412,8 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/BreadbearSpawnProcedure.java"
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "Breadbear",
@@ -20458,7 +20461,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "BreadbearOnInitialEntitySpawn",
@@ -20488,7 +20492,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "BreadbearEntityDies",
@@ -20518,7 +20523,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "KitchenDoor",
@@ -20606,7 +20612,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "ToyBonniePlushie",
@@ -20653,7 +20660,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "ToyFoxyPlushie",
@@ -20700,7 +20708,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "ToyChicaPlushie",
@@ -20747,7 +20756,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Code Stuff"
     },
     {
       "name": "FazbearHillTree1",
@@ -25437,7 +25447,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/movie_pillar_lines.json"
         ]
       },
-      "path": "~/meph testing"
+      "path": "~/Blocks/Pillar Lines"
     },
     {
       "name": "MoviePillarLinesBlockstates",
@@ -25452,7 +25462,7 @@
           "src/main/resources/assets/fnaf_mod/models/block/movie_pillar_lines_blockstates_blockstate_0.json"
         ]
       },
-      "path": "~/meph testing"
+      "path": "~/Blocks/Pillar Lines"
     },
     {
       "name": "MoviePillarLinesBlockIsPlacedBy",
@@ -25483,7 +25493,7 @@
           }
         ]
       },
-      "path": "~/meph testing"
+      "path": "~/Blocks/Pillar Lines"
     },
     {
       "name": "AwningRed",
@@ -28678,6 +28688,10 @@
           },
           {
             "name": "Ball Pit",
+            "children": []
+          },
+          {
+            "name": "Pillar Lines",
             "children": []
           }
         ]
