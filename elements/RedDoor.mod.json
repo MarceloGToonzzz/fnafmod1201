@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "kitchendoorbottom",
-    "textureTop": "kitchendoortop",
+    "texture": "itp_door_bottom",
+    "textureTop": "itp_door_top",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
@@ -14,14 +14,14 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "kitchen_door",
+    "itemTexture": "itp_door_clear",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -35,7 +35,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Kitchen Door",
+    "name": "Red Establishment Door",
     "specialInformation": {
       "fixedValue": []
     },

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:red_door_windowed",
+    "fnaf_mod:red_door",
+    "fnaf_mod:dual_colour_entrance_door",
     "fnaf_mod:movie_exterior_wall_slab",
     "fnaf_mod:movie_exterior_wall_stairs",
     "fnaf_mod:movie_wall_slab",

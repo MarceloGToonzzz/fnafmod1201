@@ -575,6 +575,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.AWNING_GREEN.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_BLUE.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_YELLOW.get().asItem());
+				tabData.accept(FnafModModBlocks.DUAL_COLOUR_ENTRANCE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.RED_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.RED_DOOR_WINDOWED.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

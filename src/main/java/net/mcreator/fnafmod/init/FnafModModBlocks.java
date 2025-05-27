@@ -125,6 +125,8 @@ import net.mcreator.fnafmod.block.RedWhiteTileSlabCrackedBlock;
 import net.mcreator.fnafmod.block.RedWhiteTileSlabBlock;
 import net.mcreator.fnafmod.block.RedWhiteTileCrackedBlock;
 import net.mcreator.fnafmod.block.RedWhiteTileBlock;
+import net.mcreator.fnafmod.block.RedDoorWindowedBlock;
+import net.mcreator.fnafmod.block.RedDoorBlock;
 import net.mcreator.fnafmod.block.RedBlueTileStairsCrackedBlock;
 import net.mcreator.fnafmod.block.RedBlueTileStairBlock;
 import net.mcreator.fnafmod.block.RedBlueTileSlabCrackedBlock;
@@ -279,6 +281,7 @@ import net.mcreator.fnafmod.block.ErrorTileSlabBlock;
 import net.mcreator.fnafmod.block.ErrorTileCrackedBlock;
 import net.mcreator.fnafmod.block.ErrorTileBlock;
 import net.mcreator.fnafmod.block.EndoBlockBlock;
+import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
 import net.mcreator.fnafmod.block.DinerChairBlock;
@@ -932,6 +935,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> AWNING_GREEN = REGISTRY.register("awning_green", () -> new AwningGreenBlock());
 	public static final RegistryObject<Block> AWNING_BLUE = REGISTRY.register("awning_blue", () -> new AwningBlueBlock());
 	public static final RegistryObject<Block> AWNING_YELLOW = REGISTRY.register("awning_yellow", () -> new AwningYellowBlock());
+	public static final RegistryObject<Block> DUAL_COLOUR_ENTRANCE_DOOR = REGISTRY.register("dual_colour_entrance_door", () -> new DualColourEntranceDoorBlock());
+	public static final RegistryObject<Block> RED_DOOR = REGISTRY.register("red_door", () -> new RedDoorBlock());
+	public static final RegistryObject<Block> RED_DOOR_WINDOWED = REGISTRY.register("red_door_windowed", () -> new RedDoorWindowedBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

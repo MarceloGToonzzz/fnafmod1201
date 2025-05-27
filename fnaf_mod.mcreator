@@ -290,10 +290,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/blockstates/door_button_off.json",
+          "src/main/resources/assets/fnaf_mod/models/block/door_button_off.json",
           "src/main/java/net/mcreator/fnafmod/block/DoorButtonOffBlock.java",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/door_button_off.json",
           "src/main/resources/assets/fnaf_mod/models/item/door_button_off.json",
-          "src/main/resources/assets/fnaf_mod/models/block/door_button_off.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/door_button_off.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -20534,18 +20534,18 @@
       "registry_name": "kitchen_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left.json",
           "src/main/resources/assets/fnaf_mod/models/item/kitchen_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/kitchen_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_right.json",
           "src/main/resources/assets/fnaf_mod/blockstates/kitchen_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/KitchenDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left.json",
           "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_right.json",
-          "src/main/java/net/mcreator/fnafmod/block/KitchenDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right.json"
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left_open.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -25562,6 +25562,78 @@
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "DualColourEntranceDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dual_colour_entrance_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_right.json",
+          "src/main/java/net/mcreator/fnafmod/block/DualColourEntranceDoorBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/dual_colour_entrance_door.json",
+          "src/main/resources/assets/fnaf_mod/models/item/dual_colour_entrance_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/dual_colour_entrance_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_left.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "RedDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/red_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_left.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_left.json",
+          "src/main/java/net/mcreator/fnafmod/block/RedDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/red_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_right_open.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "RedDoorWindowed",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_door_windowed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door_windowed.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/red_door_windowed.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right.json",
+          "src/main/java/net/mcreator/fnafmod/block/RedDoorWindowedBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/red_door_windowed.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
     }
   ],
   "variable_elements": [
@@ -26684,6 +26756,9 @@
       "~CUSTOM:BlackWhiteTile"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:RedDoorWindowed",
+      "~CUSTOM:RedDoor",
+      "~CUSTOM:DualColourEntranceDoor",
       "~CUSTOM:GlitchedLog",
       "~CUSTOM:KitchenDoor",
       "~CUSTOM:CyanDoor",
@@ -26737,6 +26812,9 @@
       "~CUSTOM:BlackWhiteTileSlab"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:RedDoorWindowed",
+      "~CUSTOM:RedDoor",
+      "~CUSTOM:DualColourEntranceDoor",
       "~CUSTOM:MovieExteriorWallSlab",
       "~CUSTOM:MovieExteriorWallStairs",
       "~CUSTOM:MovieWallSlab",
@@ -27504,7 +27582,10 @@
       "AwningRed",
       "AwningGreen",
       "AwningBlue",
-      "AwningYellow"
+      "AwningYellow",
+      "DualColourEntranceDoor",
+      "RedDoor",
+      "RedDoorWindowed"
     ]
   },
   "language_map": {
@@ -28044,6 +28125,7 @@
       "block.fnaf_mod.alternate_big_movie_wall_tile": "Alternate Big Movie Wall Tiles",
       "block.fnaf_mod.yellow_wall_middle.description_0": "Middle",
       "block.fnaf_mod.center_big_white_black_green_wall_tile": "Center Big White Green Wall Tiles",
+      "block.fnaf_mod.red_door": "Red Establishment Door",
       "item.fnaf_mod.pat_pat_spawn_egg": "PatPat Spawn Egg",
       "itemGroup.tabdecorative_blocks": "Decorative Blocks",
       "entity.fnaf_mod.springtrap": "Springtrap",
@@ -28216,6 +28298,7 @@
       "entity.fnaf_mod.unwithered_freddy": "Un-Withered Freddy",
       "item.fnaf_mod.nightmare_chica_statue_spawn_egg": "Nightmare Chica Statue Spawn Egg",
       "block.fnaf_mod.rose_curtain.description_0": "§d(Hot Pink Curtain)",
+      "block.fnaf_mod.dual_colour_entrance_door": "Dual Coloured Entrance Door",
       "entity.fnaf_mod.full_hostile_chica": "Chica",
       "block.fnaf_mod.alternate_stage_black_stripe_tiles": "Alternate Etched Black Stripe Brick Tiles",
       "block.fnaf_mod.cobalt_curtain": "Cobalt Curtain",
@@ -28312,6 +28395,7 @@
       "item.fnaf_mod.phantom_freddy_spawn_egg": "Phantom Freddy Spawn Egg",
       "item.fnaf_mod.tameable_springtrap_spawn_egg": "Adventure Springtrap Spawn Egg",
       "block.fnaf_mod.center_big_white_purple_wall_tile": "Center Big White Purple Stripe Wall Tiles",
+      "block.fnaf_mod.red_door_windowed": "Red Establishment Windowed Door",
       "block.fnaf_mod.bubblegum_curtain": "Bubblegum Curtain",
       "block.fnaf_mod.endo_block": "Endo Block",
       "itemGroup.tabdrawings_posters": "Drawings and Posters",

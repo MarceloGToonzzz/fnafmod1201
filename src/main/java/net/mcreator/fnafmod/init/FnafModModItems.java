@@ -957,6 +957,9 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> AWNING_GREEN = block(FnafModModBlocks.AWNING_GREEN);
 	public static final RegistryObject<Item> AWNING_BLUE = block(FnafModModBlocks.AWNING_BLUE);
 	public static final RegistryObject<Item> AWNING_YELLOW = block(FnafModModBlocks.AWNING_YELLOW);
+	public static final RegistryObject<Item> DUAL_COLOUR_ENTRANCE_DOOR = doubleBlock(FnafModModBlocks.DUAL_COLOUR_ENTRANCE_DOOR);
+	public static final RegistryObject<Item> RED_DOOR = doubleBlock(FnafModModBlocks.RED_DOOR);
+	public static final RegistryObject<Item> RED_DOOR_WINDOWED = doubleBlock(FnafModModBlocks.RED_DOOR_WINDOWED);
 
 	// Start of user code block custom items
 	// End of user code block custom items

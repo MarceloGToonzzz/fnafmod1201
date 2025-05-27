@@ -10,20 +10,20 @@ public class MoviePillarLinesBlockIsPlacedByProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		Direction direct = Direction.NORTH;
 		double State = 0;
-		if (!((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock())
-				&& !((world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock())) {
+		if (!((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock())
+				&& !((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock())) {
 			State = 1;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock()
-				&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock())) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock()
+				&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock())) {
 			State = 2;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock()
-				&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock())) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()
+				&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock())) {
 			State = 4;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, 1 - y, z))).getBlock()
-				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, 1 + y, z))).getBlock()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()
+				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock()) {
 			State = 3;
 		}
 		if (State == 4) {

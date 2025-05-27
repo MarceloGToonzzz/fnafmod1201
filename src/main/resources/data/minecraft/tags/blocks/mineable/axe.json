@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:red_door_windowed",
+    "fnaf_mod:red_door",
+    "fnaf_mod:dual_colour_entrance_door",
     "fnaf_mod:glitched_log",
     "fnaf_mod:kitchen_door",
     "fnaf_mod:cyan_door",

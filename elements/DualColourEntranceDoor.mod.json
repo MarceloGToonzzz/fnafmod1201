@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "kitchendoorbottom",
-    "textureTop": "kitchendoortop",
+    "texture": "flaf_door_bottom",
+    "textureTop": "flaf_door_top",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "kitchen_door",
+    "itemTexture": "flaf_door",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",
@@ -35,7 +35,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Kitchen Door",
+    "name": "Dual Coloured Entrance Door",
     "specialInformation": {
       "fixedValue": []
     },
