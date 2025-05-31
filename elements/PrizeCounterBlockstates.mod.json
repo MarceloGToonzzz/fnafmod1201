@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PrizeCounter",
+    "blockstateList": [
+      {
+        "texture": "l_counter",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "counter_block:left",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "m_counter",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "counter_block:middle",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "r_counter",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "counter_block:right",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

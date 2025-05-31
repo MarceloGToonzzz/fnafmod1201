@@ -145,6 +145,7 @@ import net.mcreator.fnafmod.block.PurpleStageBrickTilesBlock;
 import net.mcreator.fnafmod.block.PurpleFanBlock;
 import net.mcreator.fnafmod.block.PurpleCurtainBlock;
 import net.mcreator.fnafmod.block.PuppetMaskBlock;
+import net.mcreator.fnafmod.block.PrizeCounterBlock;
 import net.mcreator.fnafmod.block.PrizeCornerPosterBlock;
 import net.mcreator.fnafmod.block.PresentsBlock;
 import net.mcreator.fnafmod.block.Poster9Block;
@@ -938,6 +939,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DUAL_COLOUR_ENTRANCE_DOOR = REGISTRY.register("dual_colour_entrance_door", () -> new DualColourEntranceDoorBlock());
 	public static final RegistryObject<Block> RED_DOOR = REGISTRY.register("red_door", () -> new RedDoorBlock());
 	public static final RegistryObject<Block> RED_DOOR_WINDOWED = REGISTRY.register("red_door_windowed", () -> new RedDoorWindowedBlock());
+	public static final RegistryObject<Block> PRIZE_COUNTER = REGISTRY.register("prize_counter", () -> new PrizeCounterBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

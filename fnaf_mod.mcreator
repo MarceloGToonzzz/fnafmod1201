@@ -25634,6 +25634,73 @@
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "PrizeCounterBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "prize_counter_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/prize_counter_blockstates_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/prize_counter_blockstates_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/prize_counter_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Prize Counter"
+    },
+    {
+      "name": "PrizeCounterBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prize_counter_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PrizeCounterBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Prize Counter"
+    },
+    {
+      "name": "PrizeCounter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prize_counter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/prize_counter.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/prize_counter.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/prize_counter.json",
+          "src/main/resources/assets/fnaf_mod/models/block/prize_counter.json",
+          "src/main/java/net/mcreator/fnafmod/block/PrizeCounterBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Prize Counter"
     }
   ],
   "variable_elements": [
@@ -28663,6 +28730,7 @@
       "item.fnaf_mod.puppet_spawn_item": "Puppet",
       "gui.fnaf_mod.party_system.button_reset": "Reset",
       "block.fnaf_mod.balloon_purple": "Purple  Balloon",
+      "block.fnaf_mod.prize_counter": "Prize Counter",
       "item.fnaf_mod.withered_foxy_spawn_item": "Withered Foxy",
       "itemGroup.tabfnaf_items": "FNAF Items",
       "entity.fnaf_mod.toy_foxy": "Toy Foxy",
@@ -28776,6 +28844,10 @@
           },
           {
             "name": "Pillar Lines",
+            "children": []
+          },
+          {
+            "name": "Prize Counter",
             "children": []
           }
         ]

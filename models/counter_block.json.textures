@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "1_counter"
+      },
+      "name": "default"
+    },
+    "middle": {
+      "map": {
+        "1": "m_counter"
+      },
+      "name": "middle"
+    },
+    "left": {
+      "map": {
+        "1": "l_counter"
+      },
+      "name": "left"
+    },
+    "right": {
+      "map": {
+        "1": "r_counter"
+      },
+      "name": "right"
+    }
+  }
+}

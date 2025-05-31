@@ -960,6 +960,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> DUAL_COLOUR_ENTRANCE_DOOR = doubleBlock(FnafModModBlocks.DUAL_COLOUR_ENTRANCE_DOOR);
 	public static final RegistryObject<Item> RED_DOOR = doubleBlock(FnafModModBlocks.RED_DOOR);
 	public static final RegistryObject<Item> RED_DOOR_WINDOWED = doubleBlock(FnafModModBlocks.RED_DOOR_WINDOWED);
+	public static final RegistryObject<Item> PRIZE_COUNTER = block(FnafModModBlocks.PRIZE_COUNTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items
