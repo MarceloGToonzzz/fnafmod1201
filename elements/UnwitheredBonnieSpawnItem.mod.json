@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Unwithered Freddy",
+    "name": "Unwithered Bonnie",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -56,6 +56,10 @@
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

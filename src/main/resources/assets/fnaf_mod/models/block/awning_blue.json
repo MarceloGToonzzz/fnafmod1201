@@ -3,8 +3,7 @@
   "textures": {
     "all": "fnaf_mod:block/awning_blue",
     "particle": "fnaf_mod:block/awning_blue",
-    "0": "fnaf_mod:block/awning_blue",
-    "missing": "fnaf_mod:block/"
+    "0": "fnaf_mod:block/awning_blue"
   },
   "render_type": "cutout"
 }
