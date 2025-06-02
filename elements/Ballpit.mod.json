@@ -3,14 +3,14 @@
   "_type": "block",
   "definition": {
     "texture": "ballpitside",
-    "textureTop": "bp1",
+    "textureTop": "bp10",
     "textureLeft": "ballpitside",
     "textureFront": "ballpitside",
     "textureRight": "",
     "textureBack": "",
     "renderType": 14,
     "customModelName": "Grass block",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -122,10 +122,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onBlockAdded": {
-      "name": "ConnectBalls"
+      "name": "PondersBalls"
     },
     "onNeighbourBlockChanges": {
-      "name": "ConnectBalls"
+      "name": "PondersBalls"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

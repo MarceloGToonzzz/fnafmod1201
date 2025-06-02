@@ -1,8 +1,8 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "fnaf_mod:block/ballpitside",
-    "up": "fnaf_mod:block/bp2",
+    "down": "fnaf_mod:block/ballpitbottom",
+    "up": "fnaf_mod:block/bp1",
     "north": "fnaf_mod:block/ballpitside",
     "east": "fnaf_mod:block/ballpitside",
     "south": "fnaf_mod:block/ballpitside",
