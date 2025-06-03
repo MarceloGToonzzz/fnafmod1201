@@ -25775,6 +25775,151 @@
         ]
       },
       "path": "~/Blocks/Ball Pit"
+    },
+    {
+      "name": "PurpleStripedTableCode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_striped_table_code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PurpleStripedTableCodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/PurpleStripeTable"
+    },
+    {
+      "name": "PurpleStripeTable",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_stripe_table",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/PurpleStripeTableBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/PurpleStripeTableDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_14.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/PurpleStripeTableDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_15.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/PurpleStripeTableBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_3.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/PurpleStripeTableTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_7.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_4.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_13.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/purple_stripe_table.json",
+          "src/main/resources/assets/fnaf_mod/models/item/purple_stripe_table.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/purple_stripe_table_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/PurpleStripeTableTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/PurpleStripeTableDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stripe_table_blockstate_10.json"
+        ]
+      },
+      "path": "~/Blocks/PurpleStripeTable"
+    },
+    {
+      "name": "PurpleStarTable",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_star_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_15.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_6.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/PurpleStarTableDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_4.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_7.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/purple_star_table_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/PurpleStarTableDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/PurpleStarTableBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_10.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_3.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/PurpleStarTableDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_13.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/purple_star_table.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/PurpleStarTableBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/PurpleStarTableTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/PurpleStarTableTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_14.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/item/purple_star_table.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_star_table_blockstate_8.json"
+        ]
+      },
+      "path": "~/Blocks/PurpleStripeTable"
+    },
+    {
+      "name": "WhiteClothTable",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_cloth_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/WhiteClothTableTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/WhiteClothTableDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_14.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_13.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/white_cloth_table_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/WhiteClothTableDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/white_cloth_table.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_10.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_5.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/WhiteClothTableBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/white_cloth_table.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_12.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/WhiteClothTableDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_15.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/WhiteClothTableTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_7.json",
+          "src/main/java/net/mcreator/fnafmod/block/WhiteClothTableBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/white_cloth_table_blockstate_4.json"
+        ]
+      },
+      "path": "~/Blocks/PurpleStripeTable"
     }
   ],
   "variable_elements": [
@@ -27277,7 +27422,10 @@
       "SpringBonnieDecor",
       "FredbearSign",
       "Skeeball",
-      "Foosball"
+      "Foosball",
+      "PurpleStripeTable",
+      "PurpleStarTable",
+      "WhiteClothTable"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -27804,8 +27952,8 @@
       "block.fnaf_mod.pin_ball_machine_3": "Pinball Machine Blacklight Cupcake",
       "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "entity.fnaf_mod.puppet": "Puppet",
-      "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
+      "effect.fnaf_mod.bleeding": "Bleeding",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
       "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
       "block.fnaf_mod.speaker": "Speaker",
@@ -27922,9 +28070,10 @@
       "subtitles.neverbealone": "Never Be Alone Funky Mix",
       "block.fnaf_mod.speaker_left": "Speaker",
       "block.fnaf_mod.movie_poster_1": "Movie Poster 1",
+      "block.fnaf_mod.purple_star_table": "Purple Stripe Table",
       "block.fnaf_mod.thin_berry_curtain": "Thin Berry Curtain",
-      "block.fnaf_mod.black_stripe_dark_wall_tile": "Black Stripe Dark Wall Tiles",
       "block.fnaf_mod.movie_poster_4": "Movie Poster 4",
+      "block.fnaf_mod.black_stripe_dark_wall_tile": "Black Stripe Dark Wall Tiles",
       "block.fnaf_mod.movie_poster_5": "Movie Poster 5",
       "block.fnaf_mod.movie_poster_2": "Movie Poster 2",
       "block.fnaf_mod.fancy_candy_curtain_clean.description_0": "§c(Red Curtain)",
@@ -28291,6 +28440,7 @@
       "gui.fnaf_mod.locker.label_locker": "Locker",
       "gui.fnaf_mod.wall_change_2.label_two_room_and_hall_faces": "Two Room and Hall Faces ",
       "item.fnaf_mod.day_time_toy_freddy_spawn_egg": "DayTime Toy Freddy Spawn Egg",
+      "block.fnaf_mod.white_cloth_table": "Purple Stripe Table",
       "block.fnaf_mod.blue_black_tile": "Blue Black Tile",
       "item.fnaf_mod.sitting_withered_chica_spawn_egg": "Withered Chica Spawn Egg",
       "item.fnaf_mod.day_time_toy_foxy_spawn_egg": "DayTime Toy Foxy Spawn Egg",
@@ -28859,6 +29009,7 @@
       "block.fnaf_mod.center_light_dark_black_wall_tile": "Center White-Black Black Stripe Wall Tiles",
       "subtitles.movietheme": "",
       "block.fnaf_mod.fnaf_3_wall": "Rancid Wall",
+      "block.fnaf_mod.purple_stripe_table": "Purple Stripe Table",
       "item.fnaf_mod.fazbear_showtime": "Music Disc",
       "block.fnaf_mod.thin_lime_curtain": "Thin Lime Curtain"
     }
@@ -28925,6 +29076,10 @@
           },
           {
             "name": "Prize Counter",
+            "children": []
+          },
+          {
+            "name": "PurpleStripeTable",
             "children": []
           }
         ]

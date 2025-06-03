@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.fnafmod.block.entity.WhiteClothTableTileEntity;
 import net.mcreator.fnafmod.block.entity.VendingMachineBlockEntity;
 import net.mcreator.fnafmod.block.entity.VassDollTileEntity;
 import net.mcreator.fnafmod.block.entity.UnWitheredFreddyHeadTileEntity;
@@ -34,6 +35,8 @@ import net.mcreator.fnafmod.block.entity.ShelfTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.RemantInfuserBlockEntity;
+import net.mcreator.fnafmod.block.entity.PurpleStripeTableTileEntity;
+import net.mcreator.fnafmod.block.entity.PurpleStarTableTileEntity;
 import net.mcreator.fnafmod.block.entity.PlushFreddyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFredbearBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
@@ -136,6 +139,12 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(StageLightOrangeOnTileEntity::new, FnafModModBlocks.STAGE_LIGHT_ORANGE_ON.get()).build(null));
 	public static final RegistryObject<BlockEntityType<StageLightRedOnTileEntity>> STAGE_LIGHT_RED_ON = REGISTRY.register("stage_light_red_on",
 			() -> BlockEntityType.Builder.of(StageLightRedOnTileEntity::new, FnafModModBlocks.STAGE_LIGHT_RED_ON.get()).build(null));
+	public static final RegistryObject<BlockEntityType<PurpleStripeTableTileEntity>> PURPLE_STRIPE_TABLE = REGISTRY.register("purple_stripe_table",
+			() -> BlockEntityType.Builder.of(PurpleStripeTableTileEntity::new, FnafModModBlocks.PURPLE_STRIPE_TABLE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<PurpleStarTableTileEntity>> PURPLE_STAR_TABLE = REGISTRY.register("purple_star_table",
+			() -> BlockEntityType.Builder.of(PurpleStarTableTileEntity::new, FnafModModBlocks.PURPLE_STAR_TABLE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<WhiteClothTableTileEntity>> WHITE_CLOTH_TABLE = REGISTRY.register("white_cloth_table",
+			() -> BlockEntityType.Builder.of(WhiteClothTableTileEntity::new, FnafModModBlocks.WHITE_CLOTH_TABLE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

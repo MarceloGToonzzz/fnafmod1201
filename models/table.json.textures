@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "purplestripedtable10"
+      },
+      "name": "default"
+    }
+  }
+}

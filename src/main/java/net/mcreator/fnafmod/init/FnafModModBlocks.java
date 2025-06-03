@@ -21,6 +21,7 @@ import net.mcreator.fnafmod.block.WhiteWallSlabBlock;
 import net.mcreator.fnafmod.block.WhiteWallBlock;
 import net.mcreator.fnafmod.block.WhiteRedWallTileBlock;
 import net.mcreator.fnafmod.block.WhitePurpleWallTileBlock;
+import net.mcreator.fnafmod.block.WhiteClothTableBlock;
 import net.mcreator.fnafmod.block.WhiteBlackWallTileBlock;
 import net.mcreator.fnafmod.block.WhiteBlackStripeWallTileBlock;
 import net.mcreator.fnafmod.block.WarningSignBlock;
@@ -140,7 +141,9 @@ import net.mcreator.fnafmod.block.RedBlackTileSlabBlock;
 import net.mcreator.fnafmod.block.RedBlackTileCrackedBlock;
 import net.mcreator.fnafmod.block.RedBlackTileBlock;
 import net.mcreator.fnafmod.block.PurpleTableClothBlock;
+import net.mcreator.fnafmod.block.PurpleStripeTableBlock;
 import net.mcreator.fnafmod.block.PurpleStarTableClothBlock;
+import net.mcreator.fnafmod.block.PurpleStarTableBlock;
 import net.mcreator.fnafmod.block.PurpleStageBrickTilesBlock;
 import net.mcreator.fnafmod.block.PurpleFanBlock;
 import net.mcreator.fnafmod.block.PurpleCurtainBlock;
@@ -940,6 +943,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> RED_DOOR = REGISTRY.register("red_door", () -> new RedDoorBlock());
 	public static final RegistryObject<Block> RED_DOOR_WINDOWED = REGISTRY.register("red_door_windowed", () -> new RedDoorWindowedBlock());
 	public static final RegistryObject<Block> PRIZE_COUNTER = REGISTRY.register("prize_counter", () -> new PrizeCounterBlock());
+	public static final RegistryObject<Block> PURPLE_STRIPE_TABLE = REGISTRY.register("purple_stripe_table", () -> new PurpleStripeTableBlock());
+	public static final RegistryObject<Block> PURPLE_STAR_TABLE = REGISTRY.register("purple_star_table", () -> new PurpleStarTableBlock());
+	public static final RegistryObject<Block> WHITE_CLOTH_TABLE = REGISTRY.register("white_cloth_table", () -> new WhiteClothTableBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

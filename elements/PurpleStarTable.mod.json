@@ -1,0 +1,276 @@
+{
+  "_fv": 73,
+  "_type": "animatedblock",
+  "definition": {
+    "texture": "purplestartable10",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 0,
+    "rotationMode": 0,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "animateBlockItem": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Purple Stripe Table",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:DecorativeBlocks"
+      }
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 1,
+    "material": {
+      "value": "NONE"
+    },
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "animationCount": 1,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "WOOD"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "breakHarvestLevel": 0,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "generateFeature": false,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "PurpleStripedTableCode"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "PurpleStripedTableCode"
+    },
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64,
+    "normal": "table.geo.json",
+    "displaySettings": "freddyhead.item.json",
+    "vanillaToolTier": "NONE",
+    "blockstateList": [
+      {
+        "texture": "purplestartable1",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable2",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable3",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable4",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable5",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable6",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable7",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable8",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable9",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable10",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable11",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable12",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable13",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable14",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable15",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "purplestartable16",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "table.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

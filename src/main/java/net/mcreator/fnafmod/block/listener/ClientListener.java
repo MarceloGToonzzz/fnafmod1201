@@ -7,6 +7,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
+import net.mcreator.fnafmod.block.renderer.WhiteClothTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.VassDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.UnWitheredFreddyHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.UnWitheredFoxyHeadTileRenderer;
@@ -28,6 +29,8 @@ import net.mcreator.fnafmod.block.renderer.SpringBonnieDecorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ShelfTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroFreddySignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
+import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
+import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOffTileRenderer;
@@ -86,5 +89,8 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.STAGE_LIGHT_PINK_ON.get(), context -> new StageLightPinkOnTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.STAGE_LIGHT_ORANGE_ON.get(), context -> new StageLightOrangeOnTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.STAGE_LIGHT_RED_ON.get(), context -> new StageLightRedOnTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.PURPLE_STRIPE_TABLE.get(), context -> new PurpleStripeTableTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.PURPLE_STAR_TABLE.get(), context -> new PurpleStarTableTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.WHITE_CLOTH_TABLE.get(), context -> new WhiteClothTableTileRenderer());
 	}
 }
