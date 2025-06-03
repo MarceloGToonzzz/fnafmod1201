@@ -151,7 +151,7 @@ public class WhiteClothTableTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Purple Stripe Table");
+		return Component.literal("White Cloth Table");
 	}
 
 	@Override

@@ -40,6 +40,7 @@ import net.mcreator.fnafmod.block.renderer.FredbearHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
+import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CenteredFreddySignTileRenderer;
@@ -92,5 +93,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.PURPLE_STRIPE_TABLE.get(), context -> new PurpleStripeTableTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.PURPLE_STAR_TABLE.get(), context -> new PurpleStarTableTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.WHITE_CLOTH_TABLE.get(), context -> new WhiteClothTableTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CONNECTING_TABLE.get(), context -> new ConnectingTableTileRenderer());
 	}
 }

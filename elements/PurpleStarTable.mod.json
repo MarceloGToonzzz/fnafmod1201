@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Purple Stripe Table",
+    "name": "Purple Star Table",
     "specialInformation": {
       "fixedValue": []
     },
@@ -41,11 +41,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:DecorativeBlocks"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -104,7 +100,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 0,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -122,6 +118,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "TableClothSwapping"
+    },
     "onBlockAdded": {
       "name": "PurpleStripedTableCode"
     },

@@ -307,6 +307,7 @@ import net.mcreator.fnafmod.block.CopperShinglesWallBlock;
 import net.mcreator.fnafmod.block.CopperShinglesStairsBlock;
 import net.mcreator.fnafmod.block.CopperShinglesSlabBlock;
 import net.mcreator.fnafmod.block.CopperShinglesBlock;
+import net.mcreator.fnafmod.block.ConnectingTableBlock;
 import net.mcreator.fnafmod.block.CobaltCurtainBlock;
 import net.mcreator.fnafmod.block.CloudsBlock;
 import net.mcreator.fnafmod.block.CloudCurtainBlock;
@@ -946,6 +947,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> PURPLE_STRIPE_TABLE = REGISTRY.register("purple_stripe_table", () -> new PurpleStripeTableBlock());
 	public static final RegistryObject<Block> PURPLE_STAR_TABLE = REGISTRY.register("purple_star_table", () -> new PurpleStarTableBlock());
 	public static final RegistryObject<Block> WHITE_CLOTH_TABLE = REGISTRY.register("white_cloth_table", () -> new WhiteClothTableBlock());
+	public static final RegistryObject<Block> CONNECTING_TABLE = REGISTRY.register("connecting_table", () -> new ConnectingTableBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

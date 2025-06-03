@@ -32,31 +32,31 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
-import net.mcreator.fnafmod.block.PurpleStarTableBlock;
+import net.mcreator.fnafmod.block.ConnectingTableBlock;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class PurpleStarTableTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
+public class ConnectingTableTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-	public int blockstateNew = this.getBlockState().getValue(PurpleStarTableBlock.BLOCKSTATE);
-	private int blockstateOld = this.getBlockState().getValue(PurpleStarTableBlock.BLOCKSTATE);
+	public int blockstateNew = this.getBlockState().getValue(ConnectingTableBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(ConnectingTableBlock.BLOCKSTATE);
 
-	public PurpleStarTableTileEntity(BlockPos pos, BlockState state) {
-		super(FnafModModBlockEntities.PURPLE_STAR_TABLE.get(), pos, state);
+	public ConnectingTableTileEntity(BlockPos pos, BlockState state) {
+		super(FnafModModBlockEntities.CONNECTING_TABLE.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
-		blockstateNew = this.getBlockState().getValue(PurpleStarTableBlock.BLOCKSTATE);
+		blockstateNew = this.getBlockState().getValue(ConnectingTableBlock.BLOCKSTATE);
 		if (blockstateOld != blockstateNew) {
 			event.getController().forceAnimationReset();
 			blockstateOld = blockstateNew;
 			return PlayState.STOP;
 		}
-		String animationprocedure = ("" + this.getBlockState().getValue(PurpleStarTableBlock.ANIMATION));
+		String animationprocedure = ("" + this.getBlockState().getValue(ConnectingTableBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));
 		}
@@ -66,7 +66,7 @@ public class PurpleStarTableTileEntity extends RandomizableContainerBlockEntity 
 	String prevAnim = "0";
 
 	private PlayState procedurePredicate(AnimationState event) {
-		String animationprocedure = ("" + this.getBlockState().getValue(PurpleStarTableBlock.ANIMATION));
+		String animationprocedure = ("" + this.getBlockState().getValue(ConnectingTableBlock.ANIMATION));
 		if (!animationprocedure.equals("0") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!animationprocedure.equals(prevAnim) && !animationprocedure.equals("0"))) {
 			if (!animationprocedure.equals(prevAnim))
 				event.getController().forceAnimationReset();
@@ -86,8 +86,8 @@ public class PurpleStarTableTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
-		data.add(new AnimationController<PurpleStarTableTileEntity>(this, "controller", 0, this::predicate));
-		data.add(new AnimationController<PurpleStarTableTileEntity>(this, "procedurecontroller", 0, this::procedurePredicate));
+		data.add(new AnimationController<ConnectingTableTileEntity>(this, "controller", 0, this::predicate));
+		data.add(new AnimationController<ConnectingTableTileEntity>(this, "procedurecontroller", 0, this::procedurePredicate));
 	}
 
 	@Override
@@ -136,7 +136,7 @@ public class PurpleStarTableTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("purple_star_table");
+		return Component.literal("connecting_table");
 	}
 
 	@Override
@@ -151,7 +151,7 @@ public class PurpleStarTableTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Purple Star Table");
+		return Component.literal("Table");
 	}
 
 	@Override

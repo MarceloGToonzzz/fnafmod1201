@@ -33,18 +33,18 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.fnafmod.procedures.TableClothSwappingProcedure;
 import net.mcreator.fnafmod.procedures.PurpleStripedTableCodeProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
-import net.mcreator.fnafmod.block.entity.WhiteClothTableTileEntity;
+import net.mcreator.fnafmod.block.entity.ConnectingTableTileEntity;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 import java.util.Collections;
 
-public class WhiteClothTableBlock extends BaseEntityBlock implements EntityBlock {
+public class ConnectingTableBlock extends BaseEntityBlock implements EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 16);
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 1);
 
-	public WhiteClothTableBlock() {
+	public ConnectingTableBlock() {
 		super(BlockBehaviour.Properties.of()
 
 				.sound(SoundType.WOOD).strength(1f, 10f).lightLevel(s -> (new Object() {
@@ -94,7 +94,7 @@ public class WhiteClothTableBlock extends BaseEntityBlock implements EntityBlock
 	@Nullable
 	@Override
 	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-		return FnafModModBlockEntities.WHITE_CLOTH_TABLE.get().create(blockPos, blockState);
+		return FnafModModBlockEntities.CONNECTING_TABLE.get().create(blockPos, blockState);
 	}
 
 	@Override
@@ -170,7 +170,7 @@ public class WhiteClothTableBlock extends BaseEntityBlock implements EntityBlock
 	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
 		if (state.getBlock() != newState.getBlock()) {
 			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof WhiteClothTableTileEntity be) {
+			if (blockEntity instanceof ConnectingTableTileEntity be) {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
@@ -186,7 +186,7 @@ public class WhiteClothTableBlock extends BaseEntityBlock implements EntityBlock
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof WhiteClothTableTileEntity be)
+		if (tileentity instanceof ConnectingTableTileEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;

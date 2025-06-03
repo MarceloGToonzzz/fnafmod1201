@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "purplestripedtable10",
+    "texture": "connectingtable",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Purple Stripe Table",
+    "name": "Table",
     "specialInformation": {
       "fixedValue": []
     },
@@ -41,7 +41,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:DecorativeBlocks"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -143,7 +147,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "purplestripedtable1",
+        "texture": "connectingtable1",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -151,7 +155,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable2",
+        "texture": "connectingtable5",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -159,7 +163,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable3",
+        "texture": "connectingtable3",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -167,7 +171,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable4",
+        "texture": "connectingtable5",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -175,7 +179,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable5",
+        "texture": "connectingtable5",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -183,7 +187,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable6",
+        "texture": "connectingtable5",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -191,7 +195,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable7",
+        "texture": "connectingtable7",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -199,7 +203,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable8",
+        "texture": "connectingtable5",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -207,7 +211,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable9",
+        "texture": "connectingtable9",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -215,7 +219,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable10",
+        "texture": "connectingtable",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -223,7 +227,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable11",
+        "texture": "connectingtable11",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -231,7 +235,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable12",
+        "texture": "connectingtable5",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -239,7 +243,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable13",
+        "texture": "connectingtable13",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -247,7 +251,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable14",
+        "texture": "connectingtable14",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -255,7 +259,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable15",
+        "texture": "connectingtable15",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",
@@ -263,7 +267,7 @@
         "boundingBoxes": []
       },
       {
-        "texture": "purplestripedtable16",
+        "texture": "connectingtable16",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "table.geo.json",

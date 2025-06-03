@@ -57,6 +57,7 @@ import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
+import net.mcreator.fnafmod.block.entity.ConnectingTableTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
@@ -145,6 +146,8 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(PurpleStarTableTileEntity::new, FnafModModBlocks.PURPLE_STAR_TABLE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<WhiteClothTableTileEntity>> WHITE_CLOTH_TABLE = REGISTRY.register("white_cloth_table",
 			() -> BlockEntityType.Builder.of(WhiteClothTableTileEntity::new, FnafModModBlocks.WHITE_CLOTH_TABLE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ConnectingTableTileEntity>> CONNECTING_TABLE = REGISTRY.register("connecting_table",
+			() -> BlockEntityType.Builder.of(ConnectingTableTileEntity::new, FnafModModBlocks.CONNECTING_TABLE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

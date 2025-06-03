@@ -183,6 +183,7 @@ import net.mcreator.fnafmod.block.display.FredbearHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
+import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
@@ -967,6 +968,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_STRIPE_TABLE = REGISTRY.register(FnafModModBlocks.PURPLE_STRIPE_TABLE.getId().getPath(), () -> new PurpleStripeTableDisplayItem(FnafModModBlocks.PURPLE_STRIPE_TABLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE = REGISTRY.register(FnafModModBlocks.PURPLE_STAR_TABLE.getId().getPath(), () -> new PurpleStarTableDisplayItem(FnafModModBlocks.PURPLE_STAR_TABLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WHITE_CLOTH_TABLE = REGISTRY.register(FnafModModBlocks.WHITE_CLOTH_TABLE.getId().getPath(), () -> new WhiteClothTableDisplayItem(FnafModModBlocks.WHITE_CLOTH_TABLE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CONNECTING_TABLE = REGISTRY.register(FnafModModBlocks.CONNECTING_TABLE.getId().getPath(), () -> new ConnectingTableDisplayItem(FnafModModBlocks.CONNECTING_TABLE.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

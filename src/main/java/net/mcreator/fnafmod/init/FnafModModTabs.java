@@ -123,9 +123,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FREDBEAR_SIGN.get().asItem());
 				tabData.accept(FnafModModBlocks.SKEEBALL.get().asItem());
 				tabData.accept(FnafModModBlocks.FOOSBALL.get().asItem());
-				tabData.accept(FnafModModBlocks.PURPLE_STRIPE_TABLE.get().asItem());
-				tabData.accept(FnafModModBlocks.PURPLE_STAR_TABLE.get().asItem());
-				tabData.accept(FnafModModBlocks.WHITE_CLOTH_TABLE.get().asItem());
+				tabData.accept(FnafModModBlocks.CONNECTING_TABLE.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
