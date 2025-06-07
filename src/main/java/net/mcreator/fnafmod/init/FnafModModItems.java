@@ -150,6 +150,7 @@ import net.mcreator.fnafmod.item.AdvSpringtrapItem;
 import net.mcreator.fnafmod.item.AdvNightmareFredbearItem;
 import net.mcreator.fnafmod.item.AdvMangleItem;
 import net.mcreator.fnafmod.item.AdvFreddyItem;
+import net.mcreator.fnafmod.block.display.WhiteClothTableDisplayItem;
 import net.mcreator.fnafmod.block.display.VassDollDisplayItem;
 import net.mcreator.fnafmod.block.display.UnWitheredFreddyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.UnWitheredFoxyHeadDisplayItem;
@@ -171,6 +172,8 @@ import net.mcreator.fnafmod.block.display.SpringBonnieDecorDisplayItem;
 import net.mcreator.fnafmod.block.display.ShelfDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
+import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
+import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOffDisplayItem;
@@ -180,6 +183,7 @@ import net.mcreator.fnafmod.block.display.FredbearHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
+import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
@@ -961,6 +965,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> RED_DOOR = doubleBlock(FnafModModBlocks.RED_DOOR);
 	public static final RegistryObject<Item> RED_DOOR_WINDOWED = doubleBlock(FnafModModBlocks.RED_DOOR_WINDOWED);
 	public static final RegistryObject<Item> PRIZE_COUNTER = block(FnafModModBlocks.PRIZE_COUNTER);
+	public static final RegistryObject<Item> PURPLE_STRIPE_TABLE = REGISTRY.register(FnafModModBlocks.PURPLE_STRIPE_TABLE.getId().getPath(), () -> new PurpleStripeTableDisplayItem(FnafModModBlocks.PURPLE_STRIPE_TABLE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> PURPLE_STAR_TABLE = REGISTRY.register(FnafModModBlocks.PURPLE_STAR_TABLE.getId().getPath(), () -> new PurpleStarTableDisplayItem(FnafModModBlocks.PURPLE_STAR_TABLE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WHITE_CLOTH_TABLE = REGISTRY.register(FnafModModBlocks.WHITE_CLOTH_TABLE.getId().getPath(), () -> new WhiteClothTableDisplayItem(FnafModModBlocks.WHITE_CLOTH_TABLE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CONNECTING_TABLE = REGISTRY.register(FnafModModBlocks.CONNECTING_TABLE.getId().getPath(), () -> new ConnectingTableDisplayItem(FnafModModBlocks.CONNECTING_TABLE.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
