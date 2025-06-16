@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fnaf_mod:choppy_timber",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 23,
+    "separation": 3,
+    "salt": 886809767
+  }
+}

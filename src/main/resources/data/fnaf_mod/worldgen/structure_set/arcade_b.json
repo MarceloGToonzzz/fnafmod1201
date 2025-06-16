@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fnaf_mod:arcade_b",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 221,
+    "separation": 0,
+    "salt": 467342951
+  }
+}

@@ -41,6 +41,10 @@
       "radius": 2,
       "offset": 0
     },
-    "decorators": []
+    "decorators": [
+      {
+        "type": "fnaf_mod:blacktomb_yard_tree_fruit_decorator"
+      }
+    ]
   }
 }

@@ -13824,11 +13824,11 @@
       "registry_name": "arcade_machine_shadow_freddy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ArcadeMachineShadowFreddyBlock.java",
           "src/main/resources/assets/fnaf_mod/models/item/arcade_machine_shadow_freddy.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/arcade_machine_shadow_freddy.json",
           "src/main/resources/assets/fnaf_mod/models/block/arcade_machine_shadow_freddy.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/arcade_machine_shadow_freddy.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/arcade_machine_shadow_freddy.json"
+          "src/main/java/net/mcreator/fnafmod/block/ArcadeMachineShadowFreddyBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/arcade_machine_shadow_freddy.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -20079,12 +20079,12 @@
       "registry_name": "fazbear_hills",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/fazbear_hills_tree.json",
           "src/main/resources/data/fnaf_mod/worldgen/biome/fazbear_hills.json",
+          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/fazbear_hills_tree.json",
           "src/main/resources/data/fnaf_mod/worldgen/configured_feature/fazbear_hills_tree.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Biomes"
     },
     {
       "name": "FNAFWorld",
@@ -20095,8 +20095,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/world/dimension/FNAFWorldDimension.java",
-          "src/main/resources/data/fnaf_mod/dimension_type/fnaf_world.json",
-          "src/main/resources/data/fnaf_mod/dimension/fnaf_world.json"
+          "src/main/resources/data/fnaf_mod/dimension/fnaf_world.json",
+          "src/main/resources/data/fnaf_mod/dimension_type/fnaf_world.json"
         ]
       },
       "path": "~/FNAF World"
@@ -20118,7 +20118,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "ChoppyWoods",
@@ -20133,7 +20133,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/biome/choppy_woods.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Biomes"
     },
     {
       "name": "DustingFields",
@@ -20143,12 +20143,12 @@
       "registry_name": "dusting_fields",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/dusting_fields_tree.json",
           "src/main/resources/data/fnaf_mod/worldgen/placed_feature/dusting_fields_tree.json",
-          "src/main/resources/data/fnaf_mod/worldgen/biome/dusting_fields.json"
+          "src/main/resources/data/fnaf_mod/worldgen/biome/dusting_fields.json",
+          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/dusting_fields_tree.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Biomes"
     },
     {
       "name": "LiligearLake",
@@ -20161,7 +20161,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/biome/liligear_lake.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Biomes"
     },
     {
       "name": "BlacktombYard",
@@ -20171,12 +20171,13 @@
       "registry_name": "blacktomb_yard",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/worldgen/biome/blacktomb_yard.json",
+          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/blacktomb_yard_tree.json",
+          "src/main/java/net/mcreator/fnafmod/world/features/treedecorators/BlacktombYardFruitDecorator.java",
           "src/main/resources/data/fnaf_mod/worldgen/configured_feature/blacktomb_yard_tree.json",
-          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/blacktomb_yard_tree.json"
+          "src/main/resources/data/fnaf_mod/worldgen/biome/blacktomb_yard.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Biomes"
     },
     {
       "name": "PinwheelCircus",
@@ -20186,10 +20187,12 @@
       "registry_name": "pinwheel_circus",
       "metadata": {
         "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/pinwheel_circus_tree.json",
+          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/pinwheel_circus_tree.json",
           "src/main/resources/data/fnaf_mod/worldgen/biome/pinwheel_circus.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Biomes"
     },
     {
       "name": "AdventureLolbit",
@@ -20206,7 +20209,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/model/AdventureLolbitModel.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "AdventureFreddy",
@@ -20223,7 +20226,7 @@
           "src/main/resources/data/fnaf_mod/forge/biome_modifier/adventure_freddy_biome_modifier.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "AdventureMangle",
@@ -20240,7 +20243,7 @@
           "src/main/java/net/mcreator/fnafmod/client/renderer/AdventureMangleRenderer.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "VassDoll",
@@ -20292,8 +20295,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/FNAF World"
+      }
     },
     {
       "name": "RoseCurtain",
@@ -20348,7 +20350,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/AdventureWitheredChicaEntity.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "AdventureSpringtrap",
@@ -20365,7 +20367,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/adventure_springtrap_spawn_egg.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "AdventureNightmareFredbear",
@@ -20382,7 +20384,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/adventure_nightmare_fredbear_spawn_egg.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "BreadbearSpawn",
@@ -20772,7 +20774,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/template_pool/fazbear_hill_tree_1.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Structures"
     },
     {
       "name": "FazbearHillTree2",
@@ -20787,7 +20789,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/structure/fazbear_hill_tree_2.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Structures"
     },
     {
       "name": "FazbearHillTree3",
@@ -20802,7 +20804,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/structure_set/fazbear_hill_tree_3.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Structures"
     },
     {
       "name": "FazbearHillShrub",
@@ -20817,7 +20819,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/structure/fazbear_hill_shrub.json"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Structures"
     },
     {
       "name": "SecretNightmareFredbear",
@@ -21005,7 +21007,7 @@
           "src/main/java/net/mcreator/fnafmod/network/PartySystemButtonMessage.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "PartySelectorKeyBindOnKeyPressed",
@@ -21040,7 +21042,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "PartySelectorKeyBind",
@@ -21143,7 +21145,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AMangGUI",
@@ -21163,7 +21165,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AWChiGui",
@@ -21183,7 +21185,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "ASprGui",
@@ -21203,7 +21205,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AFredbGui",
@@ -21223,7 +21225,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "ResetButtonAction",
@@ -21242,7 +21244,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "PartyList",
@@ -21262,7 +21264,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "SpawnParty",
@@ -21310,7 +21312,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "Slot2",
@@ -21345,7 +21347,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "Slot3",
@@ -21380,7 +21382,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "Slot4",
@@ -21415,7 +21417,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "SummonParty",
@@ -21450,7 +21452,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "FreddySelect",
@@ -21469,7 +21471,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "WChicaSelect",
@@ -21488,7 +21490,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "SpringtrapSelect",
@@ -21507,7 +21509,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "FredbearSelect",
@@ -21526,7 +21528,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "MangleSelect",
@@ -21545,7 +21547,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "TameableAdventureFreddy",
@@ -21560,7 +21562,7 @@
           "src/main/java/net/mcreator/fnafmod/client/renderer/TameableAdventureFreddyRenderer.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "TameableAdventureFreddyOnInitialEntitySpawn",
@@ -21595,7 +21597,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "TameableMangle",
@@ -21610,7 +21612,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/model/TameableMangleModel.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "TameableChica",
@@ -21625,7 +21627,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/TameableChicaEntity.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "TameableSpringtrap",
@@ -21640,7 +21642,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/TameableSpringtrapEntity.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "TameableFredbear",
@@ -21655,7 +21657,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/model/TameableFredbearModel.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Mobs"
     },
     {
       "name": "Despawn",
@@ -21678,7 +21680,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AdvFreddyRightclicked",
@@ -21697,7 +21699,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AdvWitheredChicaRightclicked",
@@ -21716,7 +21718,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AdvMangleRightclicked",
@@ -21735,7 +21737,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AdvSpringtrapRightclicked",
@@ -21754,7 +21756,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AdvNightmareFredbearRightclicked",
@@ -21773,7 +21775,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "GlitchedLog",
@@ -21834,7 +21836,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "GlitchedLogOnBlockRightClicked",
@@ -21869,7 +21871,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "GlitchTree",
@@ -21879,9 +21881,9 @@
       "registry_name": "glitch_tree",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/glitch_tree.json",
+          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/glitch_tree.json",
           "src/main/resources/data/fnaf_mod/forge/biome_modifier/glitch_tree_biome_modifier.json",
-          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/glitch_tree.json"
+          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/glitch_tree.json"
         ]
       },
       "path": "~/FNAF World"
@@ -22709,7 +22711,7 @@
           "src/main/java/net/mcreator/fnafmod/client/gui/LolbitShopScreen.java"
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "AdventureLolbitRightClickedOnEntity",
@@ -22728,7 +22730,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "LolbitShopSong",
@@ -22747,7 +22749,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "LolbitShopThisGUIIsClosed",
@@ -22766,7 +22768,7 @@
           }
         ]
       },
-      "path": "~/FNAF World"
+      "path": "~/FNAF World/Code"
     },
     {
       "name": "PhantomCollide",
@@ -25362,8 +25364,8 @@
       "registry_name": "darkness_ahead",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/item/DarknessAheadItem.java",
-          "src/main/resources/assets/fnaf_mod/models/item/darkness_ahead.json"
+          "src/main/resources/assets/fnaf_mod/models/item/darkness_ahead.json",
+          "src/main/java/net/mcreator/fnafmod/item/DarknessAheadItem.java"
         ]
       },
       "path": "~/Discs"
@@ -25404,8 +25406,8 @@
       "registry_name": "bonnie_lullaby",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/bonnie_lullaby.json",
-          "src/main/java/net/mcreator/fnafmod/item/BonnieLullabyItem.java"
+          "src/main/java/net/mcreator/fnafmod/item/BonnieLullabyItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/bonnie_lullaby.json"
         ]
       },
       "path": "~/Discs"
@@ -25418,8 +25420,8 @@
       "registry_name": "hard_to_say_goodbye",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/hard_to_say_goodbye.json",
-          "src/main/java/net/mcreator/fnafmod/item/HardToSayGoodbyeItem.java"
+          "src/main/java/net/mcreator/fnafmod/item/HardToSayGoodbyeItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/hard_to_say_goodbye.json"
         ]
       },
       "path": "~/Discs"
@@ -25993,6 +25995,352 @@
         ]
       },
       "path": "~/Blocks/ConnectedTables"
+    },
+    {
+      "name": "SamsPizzeria",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sams_pizzeria",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/sams_pizzeria.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/sams_pizzeria.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/sams_pizzeria.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Vents",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vents",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/vents.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/vents.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/vents.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Classic",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "classic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/classic.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/classic.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/classic.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Retro",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/retro.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/retro.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/retro.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Fright",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fright",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/fright.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/fright.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/fright.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Afton",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "afton",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/afton.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/afton.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/afton.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Emily",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emily",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/emily.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/emily.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/emily.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Modern",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/modern.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/modern.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/modern.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ArcadeA",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arcade_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/arcade_a.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/arcade_a.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/arcade_a.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ArcadeB",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arcade_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/arcade_b.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/arcade_b.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/arcade_b.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Fancy",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/fancy.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/fancy.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/fancy.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "SilverFredbears",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_fredbears",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/silver_fredbears.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/silver_fredbears.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/silver_fredbears.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Diner",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diner",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/diner.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/diner.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/diner.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Tombstone",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tombstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/tombstone.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tombstone.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/tombstone.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Tent1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tent_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/tent_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tent_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tent_1_tents.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/tent_1.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mansion1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mansion_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mansion_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mansion_1.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mansion2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mansion_2.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mansion_2.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mansion_2.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mansion3",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mansion_3.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mansion_3.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mansion_3.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Windmill",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windmill",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/windmill.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/windmill.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/windmill.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "TownHall",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "town_hall",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/town_hall.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/town_hall.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/town_hall.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "FerrisWheel",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferris_wheel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/ferris_wheel.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/ferris_wheel.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/ferris_wheel.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "ChoppysTrees",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choppys_trees",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/choppys_trees.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/choppys_trees.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/choppys_trees.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "ChoppyTimber",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choppy_timber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/choppy_timber.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/choppy_timber.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/choppy_timber.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
     }
   ],
   "variable_elements": [
@@ -27964,17 +28312,17 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "block.fnaf_mod.movie_wall": "Movie Wall",
+      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
+      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
-      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
+      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -28003,16 +28351,16 @@
       "entity.fnaf_mod.secret_nightmare_fredbear": "Nightmare Fredbear",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
-      "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
+      "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
       "block.fnaf_mod.stage_light_orange": "Stage Light (Orange)",
       "block.fnaf_mod.alternate_black_purple_wall_tile": "Alternate Black Purple Wall Tiles",
       "entity.fnaf_mod.glitch_bonnie_cut_out": "Glitch Bonnie Cutout",
       "item.fnaf_mod.evil_bonnie": "Dark Remnant Infused Bonnie",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
-      "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
+      "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.center_white_black_wall_tile": "Center White Stripe Wall Tiles",
       "subtitles.ovdrhonk": "\"Honk\"",
       "gui.fnaf_mod.wall_change_2.label_opposing_each_other": " Opposing Each Other",
@@ -28023,11 +28371,11 @@
       "block.fnaf_mod.pin_ball_machine_3": "Pinball Machine Blacklight Cupcake",
       "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "entity.fnaf_mod.puppet": "Puppet",
-      "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
+      "effect.fnaf_mod.bleeding": "Bleeding",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
-      "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
+      "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
       "item.fnaf_mod.tameable_mangle_spawn_egg": "Adventure Mangle Spawn Egg",
@@ -28036,8 +28384,8 @@
       "item.fnaf_mod.statue_foxy_spawn_egg": "Foxy Statue Spawn Egg",
       "item.fnaf_mod.nightmare_freddy_statue_spawn_egg": "Nightmare Freddy Statue Spawn Egg",
       "block.fnaf_mod.glitched_leaves": "Glitched Leaves",
-      "block.fnaf_mod.kitchen_door": "Kitchen Door",
       "block.fnaf_mod.toy_freddy_sign_off": "Toy Freddy Sign",
+      "block.fnaf_mod.kitchen_door": "Kitchen Door",
       "block.fnaf_mod.paper_pal_bonnie": "Paper Pal Bonnie",
       "block.fnaf_mod.movie_poster_1.description_0": "The Leaning Tower of Pizza!",
       "block.fnaf_mod.top_normal": "White Black Wall ",
@@ -28048,15 +28396,15 @@
       "block.fnaf_mod.center_black_black_wall_tile": "Center Black Stripe Wall Tiles",
       "block.fnaf_mod.alternate_big_wall_tile": "Alternate Big Wall Tiles",
       "item.fnaf_mod.phantom_foxy_spawn_egg": "Phantom Foxy Spawn Egg",
-      "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "item.fnaf_mod.adv_springtrap": "Springtrap",
+      "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "block.fnaf_mod.thin_sky_curtain.description_0": "§b(Light Blue Curtain)",
-      "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "block.fnaf_mod.swamp_curtain": "Swamp Curtain",
+      "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "item.fnaf_mod.glitch_bonnie_animatronic_spawn_egg": "Spring Bonnie? Spawn Egg",
       "item.fnaf_mod.yellow_bear_suit_chestplate": "Yellowbear Body",
-      "entity.fnaf_mod.crawling_springtrap": "Crawling Springtrap",
       "item.fnaf_mod.showtime_madame_macabre_bitemark_remix": "Music Disc",
+      "entity.fnaf_mod.crawling_springtrap": "Crawling Springtrap",
       "block.fnaf_mod.big_white_black_wall_tile": "Big White Wall Tiles",
       "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
       "block.fnaf_mod.office_door": "Office Door",
@@ -28073,8 +28421,8 @@
       "block.fnaf_mod.toy_robot": "Toy Robot",
       "item.fnaf_mod.brown_plastic": "Brown Plastic",
       "block.fnaf_mod.white_wall_slab": "White Wall Slab",
-      "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
       "block.fnaf_mod.orange_speaker_left": "Speaker",
+      "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
       "item.fnaf_mod.phantom_puppet_spawn_item": "Phantom Puppet",
       "block.fnaf_mod.stage_brick_tiles": "Etched Brick Tiles",
       "entity.fnaf_mod.nightmare_fredbear": "Nightmare Fredbear",
@@ -28083,8 +28431,8 @@
       "item.fnaf_mod.crawling_toy_bonnie_spawn_egg": "Crawling Toy Bonnie Spawn Egg",
       "block.fnaf_mod.awning_blue": "Awning",
       "block.fnaf_mod.diner_chair": "Diner Chair {Red}",
-      "entity.fnaf_mod.endo_02": "Endo-02",
       "item.fnaf_mod.bonnie_suit_boots": "Bonnie Boots",
+      "entity.fnaf_mod.endo_02": "Endo-02",
       "entity.fnaf_mod.nightmarionne": "Nightmarionne",
       "item.fnaf_mod.waiter_hat_helmet": "Waiter Hat",
       "block.fnaf_mod.green_blue_tile_slab_cracked": "Cracked Green Blue Tile Slab",
@@ -28093,11 +28441,11 @@
       "block.fnaf_mod.red_black_tile_slab": "Red Black Tile Slab",
       "item.fnaf_mod.foxy_spawn": "Foxy The Pirate",
       "item.fnaf_mod.fredbear_spring_lock_suit_helmet": "Fredbear Spring Lock Head",
-      "block.fnaf_mod.vending_machine": "Vending Machine",
       "block.fnaf_mod.purple_stage_brick_tiles": "Purple Etched Brick Tiles",
-      "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
-      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "block.fnaf_mod.vending_machine": "Vending Machine",
       "block.fnaf_mod.cloud_curtain.description_0": "(White Curtain)",
+      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
       "block.fnaf_mod.fredbear_plush": "Fredbear Plushie?",
       "item.fnaf_mod.hanging_camera_spawn_egg": "Hanging Camera Spawn Egg",
       "block.fnaf_mod.berry_curtain": "Berry Curtain",
@@ -28125,8 +28473,8 @@
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "item.fnaf_mod.phantom_chica_spawn_item": "Phantom Chica",
       "block.fnaf_mod.vass_doll": "Vass Doll",
-      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "subtitles.a2": "Honk",
+      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "block.fnaf_mod.awning_blue.description_0": "Blue",
       "item.fnaf_mod.nightmare_fredbear_spawn_item": "Nightmare Fredbear",
       "gui.fnaf_mod.camera_gui.button_previous_page": "Previous Page",
@@ -28545,7 +28893,7 @@
       "item.fnaf_mod.happiest_day.desc": "Bad Ending - _ShadowDest_",
       "subtitles.breathing": "Breathing",
       "block.fnaf_mod.arcade_machine_shadow_freddy": "Arcade Machine ???",
-      "item.fnaf_mod.darkness_ahead": "Music DIsc",
+      "item.fnaf_mod.darkness_ahead": "Music Disc",
       "entity.fnaf_mod.bonnie_stand": "Bonnie Stand",
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_item": "Nightmare Bonnie (Statue)",
       "block.fnaf_mod.thin_fancy_candy_curtain_clean": "Thin Fancy Candy Curtain",
@@ -29296,7 +29644,24 @@
       },
       {
         "name": "FNAF World",
-        "children": []
+        "children": [
+          {
+            "name": "Biomes",
+            "children": []
+          },
+          {
+            "name": "Mobs",
+            "children": []
+          },
+          {
+            "name": "Structures",
+            "children": []
+          },
+          {
+            "name": "Code",
+            "children": []
+          }
+        ]
       },
       {
         "name": "meph testing",

@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Music DIsc",
-    "rarity": "COMMON",
+    "name": "Music Disc",
+    "rarity": "RARE",
     "creativeTabs": [
       {
         "value": "CUSTOM:MusicDiscs"
@@ -19,6 +19,9 @@
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -36,10 +39,16 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:BooletProjectile"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "none",

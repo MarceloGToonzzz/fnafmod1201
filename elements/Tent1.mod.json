@@ -1,0 +1,100 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "tent1",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      },
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "spacing": 10,
+    "separation": 3,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:PinwheelCircus"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "MOTION_BLOCKING_NO_LEAVES",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 7,
+    "maxDistanceFromCenter": 31,
+    "jigsawPools": [
+      {
+        "poolName": "tents",
+        "fallbackPool": "fnaf_mod:tent_1_tents",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "tent1",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "tent2",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "tent3",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "tent4",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "tent5",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "structure": "tent6",
+            "projection": "rigid",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

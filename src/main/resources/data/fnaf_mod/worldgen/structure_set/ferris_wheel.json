@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fnaf_mod:ferris_wheel",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 3,
+    "salt": 1508806890
+  }
+}

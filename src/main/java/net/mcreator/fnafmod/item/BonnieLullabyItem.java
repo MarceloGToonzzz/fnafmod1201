@@ -10,6 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 
 public class BonnieLullabyItem extends RecordItem {
 	public BonnieLullabyItem() {
-		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:bonnielullaby")), new Item.Properties().stacksTo(1).rarity(Rarity.COMMON), 1340);
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:bonnielullaby")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1340);
 	}
 }
