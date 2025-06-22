@@ -63,6 +63,7 @@ import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.CeilingLampBlockEntity;
+import net.mcreator.fnafmod.block.entity.CarouselTileEntity;
 import net.mcreator.fnafmod.block.entity.BonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.BephDollTileEntity;
 import net.mcreator.fnafmod.FnafModMod;
@@ -150,6 +151,7 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<ConnectingTableTileEntity>> CONNECTING_TABLE = REGISTRY.register("connecting_table",
 			() -> BlockEntityType.Builder.of(ConnectingTableTileEntity::new, FnafModModBlocks.CONNECTING_TABLE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> CEILING_LAMP = register("ceiling_lamp", FnafModModBlocks.CEILING_LAMP, CeilingLampBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<CarouselTileEntity>> CAROUSEL = REGISTRY.register("carousel", () -> BlockEntityType.Builder.of(CarouselTileEntity::new, FnafModModBlocks.CAROUSEL.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

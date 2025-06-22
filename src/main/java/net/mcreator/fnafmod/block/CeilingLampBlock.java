@@ -1,6 +1,8 @@
 
 package net.mcreator.fnafmod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -29,7 +31,7 @@ public class CeilingLampBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CeilingLampBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.LANTERN).strength(2f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.LANTERN).strength(2f, 10f).lightLevel(s -> 12).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -51,10 +53,10 @@ public class CeilingLampBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(-15, 0, 0, 31, 15, 16), box(0, 0, 0, 16, 16, 16));
-			case NORTH -> Shapes.or(box(-15, 0, 0, 31, 15, 16), box(0, 0, 0, 16, 16, 16));
-			case EAST -> Shapes.or(box(0, 0, -15, 16, 15, 31), box(0, 0, 0, 16, 16, 16));
-			case WEST -> Shapes.or(box(0, 0, -15, 16, 15, 31), box(0, 0, 0, 16, 16, 16));
+			default -> box(3, 0, 3, 13, 3, 13);
+			case NORTH -> box(3, 0, 3, 13, 3, 13);
+			case EAST -> box(3, 0, 3, 13, 3, 13);
+			case WEST -> box(3, 0, 3, 13, 3, 13);
 		};
 	}
 

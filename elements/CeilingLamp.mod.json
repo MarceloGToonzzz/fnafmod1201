@@ -24,21 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -15.0,
+        "mx": 3.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 31.0,
-        "My": 15.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 3.0,
+        "Mx": 13.0,
+        "My": 3.0,
+        "Mz": 13.0,
         "subtract": false
       }
     ],
@@ -110,7 +101,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 12,
     "unbreakable": false,
     "vanillaToolTier": "STONE",
     "isBonemealable": false,

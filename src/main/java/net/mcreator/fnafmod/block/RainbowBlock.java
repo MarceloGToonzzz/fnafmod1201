@@ -45,10 +45,10 @@ public class RainbowBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 32, 24, 2);
-			case NORTH -> box(-16, 0, 14, 16, 24, 16);
-			case EAST -> box(0, 0, -16, 2, 24, 16);
-			case WEST -> box(14, 0, 0, 16, 24, 32);
+			default -> box(-3, 5, 0, 19, 17, 1);
+			case NORTH -> box(-3, 5, 15, 19, 17, 16);
+			case EAST -> box(0, 5, -3, 1, 17, 19);
+			case WEST -> box(15, 5, -3, 16, 17, 19);
 		};
 	}
 

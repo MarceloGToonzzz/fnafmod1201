@@ -188,6 +188,7 @@ import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignDisplayItem;
+import net.mcreator.fnafmod.block.display.CarouselDisplayItem;
 import net.mcreator.fnafmod.block.display.BonnieHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.BephDollDisplayItem;
 import net.mcreator.fnafmod.FnafModMod;
@@ -979,6 +980,16 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> CEILING_LAMP = block(FnafModModBlocks.CEILING_LAMP);
 	public static final RegistryObject<Item> RAINBOW = block(FnafModModBlocks.RAINBOW);
 	public static final RegistryObject<Item> CONFETTI_WALL = block(FnafModModBlocks.CONFETTI_WALL);
+	public static final RegistryObject<Item> CAROUSEL = REGISTRY.register(FnafModModBlocks.CAROUSEL.getId().getPath(), () -> new CarouselDisplayItem(FnafModModBlocks.CAROUSEL.get(), new Item.Properties()));
+	public static final RegistryObject<Item> TOY_FREDDY_FIGURE = block(FnafModModBlocks.TOY_FREDDY_FIGURE);
+	public static final RegistryObject<Item> TOY_BONNIE_FIGURE = block(FnafModModBlocks.TOY_BONNIE_FIGURE);
+	public static final RegistryObject<Item> TOY_CHICA_FIGURE = block(FnafModModBlocks.TOY_CHICA_FIGURE);
+	public static final RegistryObject<Item> TOY_FOXY_FIGURE = block(FnafModModBlocks.TOY_FOXY_FIGURE);
+	public static final RegistryObject<Item> BB_FIGURE = block(FnafModModBlocks.BB_FIGURE);
+	public static final RegistryObject<Item> MARIONETTE_FIGURE = block(FnafModModBlocks.MARIONETTE_FIGURE);
+	public static final RegistryObject<Item> MURAL_FREDDYS = block(FnafModModBlocks.MURAL_FREDDYS);
+	public static final RegistryObject<Item> MURAL_STAGE_01 = block(FnafModModBlocks.MURAL_STAGE_01);
+	public static final RegistryObject<Item> MURAL_FREDBEARS = block(FnafModModBlocks.MURAL_FREDBEARS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

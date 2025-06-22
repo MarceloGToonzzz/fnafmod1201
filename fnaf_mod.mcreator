@@ -20625,11 +20625,11 @@
       "registry_name": "toy_bonnie_plushie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ToyBonniePlushieBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_plushie.json",
-          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_plushie.json",
           "src/main/resources/assets/fnaf_mod/models/block/toy_bonnie_plushie.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_plushie.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_plushie.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyBonniePlushieBlock.java"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks/Plushies"
@@ -25664,18 +25664,18 @@
       "registry_name": "red_door_windowed",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door_windowed.json",
-          "src/main/resources/assets/fnaf_mod/models/item/red_door_windowed.json",
-          "src/main/java/net/mcreator/fnafmod/block/RedDoorWindowedBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/red_door_windowed.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door_windowed.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right_open.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/red_door_windowed.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right.json",
+          "src/main/java/net/mcreator/fnafmod/block/RedDoorWindowedBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/red_door_windowed.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -26577,6 +26577,244 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Carousel",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carousel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CarouselTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/carousel_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/CarouselTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/carousel.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/CarouselDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/carousel.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CarouselDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/CarouselDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/CarouselBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/carousel_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/CarouselBlockModel.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Carousel"
+    },
+    {
+      "name": "CarouselRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carousel_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/CarouselRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Carousel"
+    },
+    {
+      "name": "CarouselRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carousel_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/CarouselRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Carousel"
+    },
+    {
+      "name": "ToyFreddyFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_freddy_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_figure.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_freddy_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFreddyFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_freddy_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ToyBonnieFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_bonnie_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_bonnie_figure.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyBonnieFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ToyChicaFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_chica_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_chica_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyChicaFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_chica_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ToyFoxyFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_figure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/ToyFoxyFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_foxy_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_figure.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_foxy_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "BBFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bb_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/bb_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/block/bb_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/BBFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/bb_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/bb_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "MarionetteFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marionette_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/marionette_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/MarionetteFigureBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/marionette_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/marionette_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/marionette_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "MuralFreddys",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mural_freddys",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/mural_freddys.json",
+          "src/main/resources/assets/fnaf_mod/models/block/mural_freddys.json",
+          "src/main/java/net/mcreator/fnafmod/block/MuralFreddysBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mural_freddys.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/mural_freddys.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "MuralStage01",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mural_stage_01",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mural_stage_01.json",
+          "src/main/resources/assets/fnaf_mod/models/item/mural_stage_01.json",
+          "src/main/java/net/mcreator/fnafmod/block/MuralStage01Block.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/mural_stage_01.json",
+          "src/main/resources/assets/fnaf_mod/models/block/mural_stage_01.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "MuralFredbears",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mural_fredbears",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/mural_fredbears.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mural_fredbears.json",
+          "src/main/java/net/mcreator/fnafmod/block/MuralFredbearsBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/mural_fredbears.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/mural_fredbears.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
     }
   ],
   "variable_elements": [
@@ -28061,7 +28299,10 @@
       "PaperPalFreddy",
       "PaperPal",
       "RulesPoster",
-      "RetroCelerbreatePoster"
+      "RetroCelerbreatePoster",
+      "MuralFreddys",
+      "MuralStage01",
+      "MuralFredbears"
     ],
     "CUSTOM:DecorativeBlocks": [
       "Speaker",
@@ -28095,7 +28336,14 @@
       "Skeeball",
       "Foosball",
       "ConnectingTable",
-      "PrizeCounter"
+      "PrizeCounter",
+      "Carousel",
+      "ToyFreddyFigure",
+      "ToyBonnieFigure",
+      "ToyChicaFigure",
+      "ToyFoxyFigure",
+      "BBFigure",
+      "MarionetteFigure"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -28561,27 +28809,28 @@
   "language_map": {
     "en_us": {
       "subtitles.bod2": "What Have you Brought in This World?",
+      "block.fnaf_mod.toy_bonnie_figure": "Toy Bonnie Figure",
       "block.fnaf_mod.black_light_foxy_plushie": "Blacklight Foxy Plushie",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
+      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "block.fnaf_mod.red_white_tile_stair": "Red White Tile Stairs",
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "block.fnaf_mod.movie_wall": "Movie Wall",
+      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
+      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
-      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
+      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -28598,8 +28847,8 @@
       "subtitles.blacktombyardtemp": "",
       "block.fnaf_mod.big_purple_stage_brick_tiles": "Big Purple Etched Brick Tiles",
       "entity.fnaf_mod.unwithered_foxy": "Un-Withered Foxy",
-      "entity.fnaf_mod.fredbear_animatronic": "Fredbear",
       "block.fnaf_mod.poster_8.description_0": "Let\u0027s Party!",
+      "entity.fnaf_mod.fredbear_animatronic": "Fredbear",
       "entity.fnaf_mod.crawling_toy_foxy": "Crawling Toy Foxy",
       "item.fnaf_mod.our_little_horror_story": "Music Disc",
       "item.fnaf_mod.spring_bonnie_cut_out_spawn_egg": "Spring Bonnie Cutout Spawn Egg",
@@ -28607,19 +28856,20 @@
       "item.fnaf_mod.bonnie": "Drone Bonnie",
       "entity.fnaf_mod.withered_bonnie": "Withered Bonnie",
       "block.fnaf_mod.awning_yellow.description_0": "Yellow",
+      "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "entity.fnaf_mod.secret_nightmare_fredbear": "Nightmare Fredbear",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
-      "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
+      "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
       "block.fnaf_mod.stage_light_orange": "Stage Light (Orange)",
       "block.fnaf_mod.alternate_black_purple_wall_tile": "Alternate Black Purple Wall Tiles",
       "entity.fnaf_mod.glitch_bonnie_cut_out": "Glitch Bonnie Cutout",
       "item.fnaf_mod.evil_bonnie": "Dark Remnant Infused Bonnie",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
-      "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
+      "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.center_white_black_wall_tile": "Center White Stripe Wall Tiles",
       "subtitles.ovdrhonk": "\"Honk\"",
       "gui.fnaf_mod.wall_change_2.label_opposing_each_other": " Opposing Each Other",
@@ -28630,11 +28880,11 @@
       "block.fnaf_mod.pin_ball_machine_3": "Pinball Machine Blacklight Cupcake",
       "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "entity.fnaf_mod.puppet": "Puppet",
-      "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
+      "effect.fnaf_mod.bleeding": "Bleeding",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
-      "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
+      "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
       "item.fnaf_mod.tameable_mangle_spawn_egg": "Adventure Mangle Spawn Egg",
@@ -28643,8 +28893,8 @@
       "item.fnaf_mod.statue_foxy_spawn_egg": "Foxy Statue Spawn Egg",
       "item.fnaf_mod.nightmare_freddy_statue_spawn_egg": "Nightmare Freddy Statue Spawn Egg",
       "block.fnaf_mod.glitched_leaves": "Glitched Leaves",
-      "block.fnaf_mod.kitchen_door": "Kitchen Door",
       "block.fnaf_mod.toy_freddy_sign_off": "Toy Freddy Sign",
+      "block.fnaf_mod.kitchen_door": "Kitchen Door",
       "block.fnaf_mod.paper_pal_bonnie": "Paper Pal Bonnie",
       "block.fnaf_mod.movie_poster_1.description_0": "The Leaning Tower of Pizza!",
       "block.fnaf_mod.top_normal": "White Black Wall ",
@@ -28655,18 +28905,20 @@
       "block.fnaf_mod.center_black_black_wall_tile": "Center Black Stripe Wall Tiles",
       "block.fnaf_mod.alternate_big_wall_tile": "Alternate Big Wall Tiles",
       "item.fnaf_mod.phantom_foxy_spawn_egg": "Phantom Foxy Spawn Egg",
-      "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "item.fnaf_mod.adv_springtrap": "Springtrap",
+      "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "block.fnaf_mod.thin_sky_curtain.description_0": "§b(Light Blue Curtain)",
-      "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "block.fnaf_mod.swamp_curtain": "Swamp Curtain",
+      "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "item.fnaf_mod.glitch_bonnie_animatronic_spawn_egg": "Spring Bonnie? Spawn Egg",
       "item.fnaf_mod.yellow_bear_suit_chestplate": "Yellowbear Body",
       "entity.fnaf_mod.crawling_springtrap": "Crawling Springtrap",
       "item.fnaf_mod.showtime_madame_macabre_bitemark_remix": "Music Disc",
+      "block.fnaf_mod.mural_stage_01": "Mural",
+      "block.fnaf_mod.mural_stage_01.description_0": "Fredbear\u0027s Family Diner 1972",
       "block.fnaf_mod.big_white_black_wall_tile": "Big White Wall Tiles",
-      "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
       "block.fnaf_mod.office_door": "Office Door",
+      "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
       "entity.fnaf_mod.withered_golden_freddy": "Withered Golden Freddy",
       "item.fnaf_mod.fredbear_animatronic_spawn_egg": "Fredbear Spawn Egg",
       "block.fnaf_mod.retro_freddy_sign_on": "Retro Freddy Sign",
@@ -28680,8 +28932,8 @@
       "block.fnaf_mod.toy_robot": "Toy Robot",
       "item.fnaf_mod.brown_plastic": "Brown Plastic",
       "block.fnaf_mod.white_wall_slab": "White Wall Slab",
-      "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
       "block.fnaf_mod.orange_speaker_left": "Speaker",
+      "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
       "item.fnaf_mod.phantom_puppet_spawn_item": "Phantom Puppet",
       "block.fnaf_mod.stage_brick_tiles": "Etched Brick Tiles",
       "entity.fnaf_mod.nightmare_fredbear": "Nightmare Fredbear",
@@ -28690,8 +28942,8 @@
       "item.fnaf_mod.crawling_toy_bonnie_spawn_egg": "Crawling Toy Bonnie Spawn Egg",
       "block.fnaf_mod.awning_blue": "Awning",
       "block.fnaf_mod.diner_chair": "Diner Chair {Red}",
-      "entity.fnaf_mod.endo_02": "Endo-02",
       "item.fnaf_mod.bonnie_suit_boots": "Bonnie Boots",
+      "entity.fnaf_mod.endo_02": "Endo-02",
       "entity.fnaf_mod.nightmarionne": "Nightmarionne",
       "item.fnaf_mod.waiter_hat_helmet": "Waiter Hat",
       "block.fnaf_mod.green_blue_tile_slab_cracked": "Cracked Green Blue Tile Slab",
@@ -28700,11 +28952,11 @@
       "block.fnaf_mod.red_black_tile_slab": "Red Black Tile Slab",
       "item.fnaf_mod.foxy_spawn": "Foxy The Pirate",
       "item.fnaf_mod.fredbear_spring_lock_suit_helmet": "Fredbear Spring Lock Head",
-      "block.fnaf_mod.vending_machine": "Vending Machine",
       "block.fnaf_mod.purple_stage_brick_tiles": "Purple Etched Brick Tiles",
-      "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
-      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "block.fnaf_mod.vending_machine": "Vending Machine",
       "block.fnaf_mod.cloud_curtain.description_0": "(White Curtain)",
+      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
       "block.fnaf_mod.fredbear_plush": "Fredbear Plushie?",
       "item.fnaf_mod.hanging_camera_spawn_egg": "Hanging Camera Spawn Egg",
       "block.fnaf_mod.berry_curtain": "Berry Curtain",
@@ -28733,8 +28985,8 @@
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "item.fnaf_mod.phantom_chica_spawn_item": "Phantom Chica",
       "block.fnaf_mod.vass_doll": "Vass Doll",
-      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "subtitles.a2": "Honk",
+      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "block.fnaf_mod.awning_blue.description_0": "Blue",
       "item.fnaf_mod.nightmare_fredbear_spawn_item": "Nightmare Fredbear",
       "gui.fnaf_mod.camera_gui.button_previous_page": "Previous Page",
@@ -28746,6 +28998,7 @@
       "entity.fnaf_mod.phantom_puppet": "Phantom Puppet",
       "item.fnaf_mod.mat.description_0": "Maintainance Assisting Tablet",
       "item.fnaf_mod.toy_bonnie_spawn_egg": "Toy Bonnie Spawn Egg",
+      "block.fnaf_mod.mural_freddys": "Mural",
       "subtitles.neverbealone": "Never Be Alone Funky Mix",
       "block.fnaf_mod.speaker_left": "Speaker",
       "block.fnaf_mod.movie_poster_1": "Movie Poster 1",
@@ -28777,6 +29030,7 @@
       "item.fnaf_mod.adv_withered_chica": "Withered Chica",
       "subtitles.c1": "Honk",
       "subtitles.c2": "Honk",
+      "block.fnaf_mod.carousel": "Carousel",
       "item.fnaf_mod.statue_chica_spawn_egg": "Chica Statue Spawn Egg",
       "subtitles.ice_cave": "",
       "block.fnaf_mod.black_light_fredbear_plush": "Blacklight Fredbear Plushie",
@@ -28874,6 +29128,7 @@
       "block.fnaf_mod.streamer_oval.description_0": "Infinity",
       "block.fnaf_mod.center_big_light_dark_purple_wall_tile": "Center Big White-Black Purple Stripe Wall Tiles",
       "block.fnaf_mod.purple_star_table_cloth": "Purple Star Table Cloth",
+      "block.fnaf_mod.marionette_figure": "Marionette Figure",
       "subtitles.nosehonk": "Honk",
       "itemGroup.tabstructure_spawners": "Structure Spawners",
       "block.fnaf_mod.fnaf_3_wall_slab": "Rancid Wall Slab",
@@ -28949,6 +29204,7 @@
       "block.fnaf_mod.center_big_rancid_wall_tiles": "Center Big Rancid Wall Tiles",
       "item.fnaf_mod.fredbears_freddy_spawn_item": "Diner Freddy",
       "item.fnaf_mod.golden_freddy_spawn_item": "Golden Freddy",
+      "block.fnaf_mod.mural_freddys.description_0": "Freddy Fazbear\u0027s Pizza",
       "block.fnaf_mod.clouds": "Clouds Decoration",
       "block.fnaf_mod.black_wall": "Black Wall",
       "item.fnaf_mod.springlocked_suit_leggings": "Springlocked Spring Lock Suit Legs",
@@ -29030,6 +29286,7 @@
       "block.fnaf_mod.candy_curtain": "Candy Curtain",
       "item.fnaf_mod.glitch_bonnie_cut_out_spawn_egg": "Glitch Bonnie Cutout Spawn Egg",
       "block.fnaf_mod.plush_bonnie": "Bonnie Plush",
+      "block.fnaf_mod.toy_chica_figure": "Toy Chica Figure",
       "item.fnaf_mod.yellow_bear_suit_boots": "Yellowbear Boots",
       "item.fnaf_mod.jj_spawn_egg": "JJ Spawn Egg",
       "item.fnaf_mod.nightmare_spawn_egg": "Nightmare Spawn Egg",
@@ -29079,7 +29336,7 @@
       "item.fnaf_mod.shadow_freddy_spawn_egg": "Shadow Freddy Spawn Egg",
       "block.fnaf_mod.thin_mint_curtain.description_0": "§b(Chartruce/Chartreuse Curtain)",
       "entity.fnaf_mod.sitting_withered_bonnie": "Withered Bonnie",
-      "block.fnaf_mod.toy_bonnie_plushie": "Bonnie Plushie",
+      "block.fnaf_mod.toy_bonnie_plushie": "Toy Bonnie Plushie",
       "entity.fnaf_mod.day_time_withered_foxy": "Withered Foxy",
       "itemGroup.tabsuits": "FNAF Suits",
       "entity.fnaf_mod.nightmare_chica_statue": "Nightmare Chica Statue",
@@ -29317,6 +29574,7 @@
       "item.fnaf_mod.toreador_march": "Music Disc",
       "item.fnaf_mod.toy_freddy_spawn_egg": "Toy Freddy  Spawn Egg",
       "block.fnaf_mod.checkered_white_wall_tile": "Checkered White Wall Tile",
+      "block.fnaf_mod.mural_fredbears": "Mural",
       "entity.fnaf_mod.day_time_freddy": "DaytimeFreddy",
       "block.fnaf_mod.thin_rose_curtain.description_0": "§d(Hot Pink Curtain)",
       "block.fnaf_mod.green_blue_tile_slab": "Green Blue Tile Slab",
@@ -29428,6 +29686,7 @@
       "block.fnaf_mod.diner_chair_2": "Diner Chair {Blue}",
       "block.fnaf_mod.diner_chair_5": "Diner Chair {Yellow}",
       "entity.fnaf_mod.passive_spring_bonnie": "Spring Bonnie",
+      "block.fnaf_mod.toy_freddy_figure": "Toy Freddy Figure",
       "block.fnaf_mod.diner_chair_4": "Diner Chair {Purple}",
       "block.fnaf_mod.plushtrap_chair": "Tall Chair",
       "block.fnaf_mod.un_withered_freddy_head": "Un-Withered Freddy Head",
@@ -29488,6 +29747,7 @@
       "block.fnaf_mod.fnaf_3_posters_7": "Fazbear\u0027s Fright Posters",
       "block.fnaf_mod.fnaf_3_posters_6": "Fazbear\u0027s Fright Posters",
       "item.fnaf_mod.bonnie_bunny_spawn_egg": "Bonnie the Bunny Spawn Egg",
+      "block.fnaf_mod.toy_foxy_figure": "Toy Foxy Figure",
       "block.fnaf_mod.fnaf_3_posters_8": "Fazbear\u0027s Fright Posters",
       "item.fnaf_mod.daytime_chica_spawn_egg": "DaytimeChica Spawn Egg",
       "block.fnaf_mod.movie_chair": "Movie Chair",
@@ -29599,6 +29859,7 @@
       "block.fnaf_mod.big_checkered_wall_tile": "Big Checkered Wall Tile",
       "block.fnaf_mod.white_red_wall_tile": "White Red Wall Tiles",
       "block.fnaf_mod.thin_bubble_gum_curtain.description_0": "§d(Pink Curtain)",
+      "block.fnaf_mod.bb_figure": "Balloon Boy Figure",
       "subtitles.nightmaredamage": "damage taken",
       "block.fnaf_mod.paper_pal_freddy": "Paper Pal Freddy",
       "item.fnaf_mod.cupcake": "Cupcake",
@@ -29610,6 +29871,7 @@
       "block.fnaf_mod.licorice_curtain.description_0": "§7(Black Curtain)",
       "entity.fnaf_mod.nightmare": "Nightmare",
       "item.fnaf_mod.chica_suit_chestplate": "Chica Body",
+      "block.fnaf_mod.mural_fredbears.description_0": "Fredbear\u0027s Family Diner 1980",
       "block.fnaf_mod.big_glass_movie_exterior_wall_tiles": "Big Movie Glass Exterior Wall Tiles",
       "block.fnaf_mod.cactus_curtain": "Cactus Curtain",
       "item.fnaf_mod.nightmare_fredbear_statue_spawn_item": "Nightmare Fredbear (Statue)",
@@ -29740,6 +30002,10 @@
               },
               {
                 "name": "Chairs",
+                "children": []
+              },
+              {
+                "name": "Carousel",
                 "children": []
               }
             ]
