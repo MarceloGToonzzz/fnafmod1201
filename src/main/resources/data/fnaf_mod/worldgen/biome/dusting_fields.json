@@ -61,9 +61,14 @@
       "minecraft:lake_lava_underground"
     ],
     [
-      "minecraft:forest_rock"
+      "minecraft:iceberg_packed",
+      "minecraft:iceberg_blue",
+      "minecraft:amethyst_geode"
     ],
-    [],
+    [
+      "minecraft:fossil_upper",
+      "minecraft:fossil_lower"
+    ],
     [],
     [],
     [

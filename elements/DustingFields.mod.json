@@ -83,7 +83,9 @@
       "Caves",
       "Ores",
       "FrozenTopLayer",
-      "TaigaRocks"
+      "AmethystGeodes",
+      "Fossils",
+      "Icebergs"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

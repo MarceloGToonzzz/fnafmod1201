@@ -5,6 +5,12 @@
         "1": "hanging_wires_main"
       },
       "name": "default"
+    },
+    "confetti": {
+      "map": {
+        "1": "textureconfetti"
+      },
+      "name": "confetti"
     }
   }
 }

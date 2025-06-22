@@ -98,7 +98,8 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "TaigaRocks"
+      "TaigaRocks",
+      "TaigaLargeFerns"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

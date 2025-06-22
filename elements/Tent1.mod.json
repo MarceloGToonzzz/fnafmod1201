@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "structure",
   "definition": {
-    "structure": "tent1",
+    "structure": "tent6",
     "projection": "rigid",
     "ignoredBlocks": [
       {
@@ -12,8 +12,8 @@
         "value": "Blocks.AIR"
       }
     ],
-    "spacing": 10,
-    "separation": 3,
+    "spacing": 42,
+    "separation": 2,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:PinwheelCircus"

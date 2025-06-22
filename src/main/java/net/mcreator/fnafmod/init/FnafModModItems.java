@@ -969,6 +969,16 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE = REGISTRY.register(FnafModModBlocks.PURPLE_STAR_TABLE.getId().getPath(), () -> new PurpleStarTableDisplayItem(FnafModModBlocks.PURPLE_STAR_TABLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WHITE_CLOTH_TABLE = REGISTRY.register(FnafModModBlocks.WHITE_CLOTH_TABLE.getId().getPath(), () -> new WhiteClothTableDisplayItem(FnafModModBlocks.WHITE_CLOTH_TABLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CONNECTING_TABLE = REGISTRY.register(FnafModModBlocks.CONNECTING_TABLE.getId().getPath(), () -> new ConnectingTableDisplayItem(FnafModModBlocks.CONNECTING_TABLE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> RULES_POSTER = block(FnafModModBlocks.RULES_POSTER);
+	public static final RegistryObject<Item> RETRO_CELERBREATE_POSTER = block(FnafModModBlocks.RETRO_CELERBREATE_POSTER);
+	public static final RegistryObject<Item> PURPLE_CHECKERED_CURTAIN = block(FnafModModBlocks.PURPLE_CHECKERED_CURTAIN);
+	public static final RegistryObject<Item> THIN_PURPLE_CHECKERED_CURTAIN = block(FnafModModBlocks.THIN_PURPLE_CHECKERED_CURTAIN);
+	public static final RegistryObject<Item> PURPLE_STAGE_BRICKS = block(FnafModModBlocks.PURPLE_STAGE_BRICKS);
+	public static final RegistryObject<Item> STOOL_1 = block(FnafModModBlocks.STOOL_1);
+	public static final RegistryObject<Item> STOOL_2 = block(FnafModModBlocks.STOOL_2);
+	public static final RegistryObject<Item> CEILING_LAMP = block(FnafModModBlocks.CEILING_LAMP);
+	public static final RegistryObject<Item> RAINBOW = block(FnafModModBlocks.RAINBOW);
+	public static final RegistryObject<Item> CONFETTI_WALL = block(FnafModModBlocks.CONFETTI_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items

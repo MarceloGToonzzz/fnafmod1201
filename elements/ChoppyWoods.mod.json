@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": "CUSTOM:eightbittravel"
+      "value": "CUSTOM:choppywoods"
     },
     "additionsSound": {
       "value": ""
@@ -66,9 +66,9 @@
     "treesPerChunk": 4,
     "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 3,
+    "minHeight": 1,
     "treeStem": {
-      "value": "Blocks.OAK_WOOD"
+      "value": "Blocks.LOG#0"
     },
     "treeBranch": {
       "value": "Blocks.AIR"

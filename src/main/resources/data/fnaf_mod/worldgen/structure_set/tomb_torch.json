@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fnaf_mod:tomb_torch",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 11,
+    "separation": 3,
+    "salt": 109871872
+  }
+}

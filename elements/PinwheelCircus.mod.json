@@ -81,7 +81,8 @@
     },
     "defaultFeatures": [
       "Caves",
-      "Ores"
+      "Ores",
+      "ReedsAndPumpkins"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

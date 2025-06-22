@@ -9,7 +9,7 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       },
       {
-        "value": "Blocks.CAVE_AIR"
+        "value": "Blocks.AIR"
       }
     ],
     "spacing": 100,
