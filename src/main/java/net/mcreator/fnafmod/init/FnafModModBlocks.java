@@ -172,6 +172,9 @@ import net.mcreator.fnafmod.block.Poster4Block;
 import net.mcreator.fnafmod.block.Poster3Block;
 import net.mcreator.fnafmod.block.Poster2Block;
 import net.mcreator.fnafmod.block.Poster1Block;
+import net.mcreator.fnafmod.block.Poster13Block;
+import net.mcreator.fnafmod.block.Poster12Block;
+import net.mcreator.fnafmod.block.Poster11Block;
 import net.mcreator.fnafmod.block.Poster10Block;
 import net.mcreator.fnafmod.block.PopgoesPlushieBlock;
 import net.mcreator.fnafmod.block.PlushtrapChairBlock;
@@ -186,6 +189,7 @@ import net.mcreator.fnafmod.block.PinBallMachine3Block;
 import net.mcreator.fnafmod.block.PinBallMachine2Block;
 import net.mcreator.fnafmod.block.PinBallMachine1Block;
 import net.mcreator.fnafmod.block.PhoneBlock;
+import net.mcreator.fnafmod.block.PartyTimeBannerBlock;
 import net.mcreator.fnafmod.block.PartyHatRedBlock;
 import net.mcreator.fnafmod.block.PartyHatPurpleBlock;
 import net.mcreator.fnafmod.block.PartyHatGreenBlock;
@@ -302,6 +306,7 @@ import net.mcreator.fnafmod.block.ErrorTileCrackedBlock;
 import net.mcreator.fnafmod.block.ErrorTileBlock;
 import net.mcreator.fnafmod.block.EndoBlockBlock;
 import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
+import net.mcreator.fnafmod.block.DrywallBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
 import net.mcreator.fnafmod.block.DinerChairBlock;
@@ -429,6 +434,7 @@ import net.mcreator.fnafmod.block.BlackLightFredbearPlushBlock;
 import net.mcreator.fnafmod.block.BlackLightFoxyPlushieBlock;
 import net.mcreator.fnafmod.block.BlackLightChicaPlushieBlock;
 import net.mcreator.fnafmod.block.BlackLightBonniePlushieBlock;
+import net.mcreator.fnafmod.block.BirthdayBannerBlock;
 import net.mcreator.fnafmod.block.BigWhiteRedWallTileBlock;
 import net.mcreator.fnafmod.block.BigWhitePurpleTileBlock;
 import net.mcreator.fnafmod.block.BigWhiteCheckeredWallBlock;
@@ -988,6 +994,12 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> MURAL_FREDDYS = REGISTRY.register("mural_freddys", () -> new MuralFreddysBlock());
 	public static final RegistryObject<Block> MURAL_STAGE_01 = REGISTRY.register("mural_stage_01", () -> new MuralStage01Block());
 	public static final RegistryObject<Block> MURAL_FREDBEARS = REGISTRY.register("mural_fredbears", () -> new MuralFredbearsBlock());
+	public static final RegistryObject<Block> POSTER_11 = REGISTRY.register("poster_11", () -> new Poster11Block());
+	public static final RegistryObject<Block> POSTER_12 = REGISTRY.register("poster_12", () -> new Poster12Block());
+	public static final RegistryObject<Block> BIRTHDAY_BANNER = REGISTRY.register("birthday_banner", () -> new BirthdayBannerBlock());
+	public static final RegistryObject<Block> PARTY_TIME_BANNER = REGISTRY.register("party_time_banner", () -> new PartyTimeBannerBlock());
+	public static final RegistryObject<Block> DRYWALL = REGISTRY.register("drywall", () -> new DrywallBlock());
+	public static final RegistryObject<Block> POSTER_13 = REGISTRY.register("poster_13", () -> new Poster13Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

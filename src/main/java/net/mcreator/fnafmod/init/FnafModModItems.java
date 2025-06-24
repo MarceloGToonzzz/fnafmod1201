@@ -990,6 +990,12 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MURAL_FREDDYS = block(FnafModModBlocks.MURAL_FREDDYS);
 	public static final RegistryObject<Item> MURAL_STAGE_01 = block(FnafModModBlocks.MURAL_STAGE_01);
 	public static final RegistryObject<Item> MURAL_FREDBEARS = block(FnafModModBlocks.MURAL_FREDBEARS);
+	public static final RegistryObject<Item> POSTER_11 = block(FnafModModBlocks.POSTER_11);
+	public static final RegistryObject<Item> POSTER_12 = block(FnafModModBlocks.POSTER_12);
+	public static final RegistryObject<Item> BIRTHDAY_BANNER = block(FnafModModBlocks.BIRTHDAY_BANNER);
+	public static final RegistryObject<Item> PARTY_TIME_BANNER = block(FnafModModBlocks.PARTY_TIME_BANNER);
+	public static final RegistryObject<Item> DRYWALL = block(FnafModModBlocks.DRYWALL);
+	public static final RegistryObject<Item> POSTER_13 = block(FnafModModBlocks.POSTER_13);
 
 	// Start of user code block custom items
 	// End of user code block custom items
