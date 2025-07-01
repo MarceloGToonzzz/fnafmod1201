@@ -14253,10 +14253,10 @@
       "registry_name": "unwithered_foxy",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/unwithered_foxy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/UnwitheredFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/UnwitheredFoxyEntity.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/UnwitheredFoxyModel.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/UnwitheredFoxyRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/unwithered_foxy_spawn_egg.json"
         ]
       },
       "path": "~/Entities"
@@ -14269,10 +14269,10 @@
       "registry_name": "unwithered_bonnie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/unwithered_bonnie_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/UnwitheredBonnieRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/UnwitheredBonnieEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/UnwitheredBonnieModel.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/UnwitheredBonnieModel.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/UnwitheredBonnieRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/unwithered_bonnie_spawn_egg.json"
         ]
       },
       "path": "~/Entities"
@@ -14285,9 +14285,9 @@
       "registry_name": "unwithered_chica",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/UnwitheredChicaRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/item/unwithered_chica_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/UnwitheredChicaModel.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/UnwitheredChicaRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/UnwitheredChicaEntity.java"
         ]
       },
@@ -15644,9 +15644,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFreddyRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java",
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsFreddyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15659,10 +15659,10 @@
       "registry_name": "fredbears_bonnie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBonnieRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBonnieModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15675,10 +15675,10 @@
       "registry_name": "fredbears_chica",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_chica_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsChicaModel.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsChicaRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsChicaEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsChicaRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_chica_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15691,10 +15691,10 @@
       "registry_name": "fredbears_foxy",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_foxy_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFoxyModel.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_foxy_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -22912,28 +22912,7 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/DaytimeTickProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Entities/Functions"
     },
