@@ -109,6 +109,7 @@ import net.mcreator.fnafmod.block.SpeakerBlock;
 import net.mcreator.fnafmod.block.SmallPipesBlock;
 import net.mcreator.fnafmod.block.SkyCurtainBlock;
 import net.mcreator.fnafmod.block.SkeeballBlock;
+import net.mcreator.fnafmod.block.ShelfTestBlock;
 import net.mcreator.fnafmod.block.ShelfBlock;
 import net.mcreator.fnafmod.block.ShackRandomizerBlock;
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
@@ -948,6 +949,36 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> PURPLE_STAR_TABLE = REGISTRY.register("purple_star_table", () -> new PurpleStarTableBlock());
 	public static final RegistryObject<Block> WHITE_CLOTH_TABLE = REGISTRY.register("white_cloth_table", () -> new WhiteClothTableBlock());
 	public static final RegistryObject<Block> CONNECTING_TABLE = REGISTRY.register("connecting_table", () -> new ConnectingTableBlock());
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<Block> RULES_POSTER = REGISTRY.register("rules_poster", () -> new RulesPosterBlock());
+	public static final RegistryObject<Block> RETRO_CELERBREATE_POSTER = REGISTRY.register("retro_celerbreate_poster", () -> new RetroCelerbreatePosterBlock());
+	public static final RegistryObject<Block> PURPLE_CHECKERED_CURTAIN = REGISTRY.register("purple_checkered_curtain", () -> new PurpleCheckeredCurtainBlock());
+	public static final RegistryObject<Block> THIN_PURPLE_CHECKERED_CURTAIN = REGISTRY.register("thin_purple_checkered_curtain", () -> new ThinPurpleCheckeredCurtainBlock());
+	public static final RegistryObject<Block> PURPLE_STAGE_BRICKS = REGISTRY.register("purple_stage_bricks", () -> new PurpleStageBricksBlock());
+	public static final RegistryObject<Block> STOOL_1 = REGISTRY.register("stool_1", () -> new Stool1Block());
+	public static final RegistryObject<Block> STOOL_2 = REGISTRY.register("stool_2", () -> new Stool2Block());
+	public static final RegistryObject<Block> CEILING_LAMP = REGISTRY.register("ceiling_lamp", () -> new CeilingLampBlock());
+	public static final RegistryObject<Block> RAINBOW = REGISTRY.register("rainbow", () -> new RainbowBlock());
+	public static final RegistryObject<Block> CONFETTI_WALL = REGISTRY.register("confetti_wall", () -> new ConfettiWallBlock());
+	public static final RegistryObject<Block> CAROUSEL = REGISTRY.register("carousel", () -> new CarouselBlock());
+	public static final RegistryObject<Block> TOY_FREDDY_FIGURE = REGISTRY.register("toy_freddy_figure", () -> new ToyFreddyFigureBlock());
+	public static final RegistryObject<Block> TOY_BONNIE_FIGURE = REGISTRY.register("toy_bonnie_figure", () -> new ToyBonnieFigureBlock());
+	public static final RegistryObject<Block> TOY_CHICA_FIGURE = REGISTRY.register("toy_chica_figure", () -> new ToyChicaFigureBlock());
+	public static final RegistryObject<Block> TOY_FOXY_FIGURE = REGISTRY.register("toy_foxy_figure", () -> new ToyFoxyFigureBlock());
+	public static final RegistryObject<Block> BB_FIGURE = REGISTRY.register("bb_figure", () -> new BBFigureBlock());
+	public static final RegistryObject<Block> MARIONETTE_FIGURE = REGISTRY.register("marionette_figure", () -> new MarionetteFigureBlock());
+	public static final RegistryObject<Block> MURAL_FREDDYS = REGISTRY.register("mural_freddys", () -> new MuralFreddysBlock());
+	public static final RegistryObject<Block> MURAL_STAGE_01 = REGISTRY.register("mural_stage_01", () -> new MuralStage01Block());
+	public static final RegistryObject<Block> MURAL_FREDBEARS = REGISTRY.register("mural_fredbears", () -> new MuralFredbearsBlock());
+	public static final RegistryObject<Block> POSTER_11 = REGISTRY.register("poster_11", () -> new Poster11Block());
+	public static final RegistryObject<Block> POSTER_12 = REGISTRY.register("poster_12", () -> new Poster12Block());
+	public static final RegistryObject<Block> BIRTHDAY_BANNER = REGISTRY.register("birthday_banner", () -> new BirthdayBannerBlock());
+	public static final RegistryObject<Block> PARTY_TIME_BANNER = REGISTRY.register("party_time_banner", () -> new PartyTimeBannerBlock());
+	public static final RegistryObject<Block> DRYWALL = REGISTRY.register("drywall", () -> new DrywallBlock());
+	public static final RegistryObject<Block> POSTER_13 = REGISTRY.register("poster_13", () -> new Poster13Block());
+	public static final RegistryObject<Block> SHELF_TEST = REGISTRY.register("shelf_test", () -> new ShelfTestBlock());
+>>>>>>> Stashed changes
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

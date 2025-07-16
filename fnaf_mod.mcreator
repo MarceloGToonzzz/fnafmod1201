@@ -25993,6 +25993,1079 @@
         ]
       },
       "path": "~/Blocks/ConnectedTables"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "name": "SamsPizzeria",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sams_pizzeria",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/sams_pizzeria.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/sams_pizzeria.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/sams_pizzeria.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Vents",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vents",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/vents.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/vents.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/vents.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Classic",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "classic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/classic.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/classic.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/classic.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Retro",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/retro.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/retro.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/retro.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Fright",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fright",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/fright.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/fright.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/fright.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Afton",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "afton",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/afton.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/afton.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/afton.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Emily",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emily",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/emily.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/emily.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/emily.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Modern",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/modern.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/modern.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/modern.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ArcadeA",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arcade_a",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/arcade_a.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/arcade_a.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/arcade_a.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "ArcadeB",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arcade_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/arcade_b.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/arcade_b.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/arcade_b.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Fancy",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fancy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/fancy.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/fancy.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/fancy.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "SilverFredbears",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_fredbears",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/silver_fredbears.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/silver_fredbears.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/silver_fredbears.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Diner",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diner",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/diner.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/diner.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/diner.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "Tombstone",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tombstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/tombstone.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tombstone.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/tombstone.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Tent1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tent_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/tent_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tent_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tent_1_tents.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/tent_1.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mansion1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mansion_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mansion_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mansion_1.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mansion2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mansion_2.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mansion_2.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mansion_2.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mansion3",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mansion_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mansion_3.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mansion_3.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mansion_3.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Windmill",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windmill",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/windmill.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/windmill.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/windmill.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "TownHall",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "town_hall",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/town_hall.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/town_hall.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/town_hall.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "FerrisWheel",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ferris_wheel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure/ferris_wheel.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/ferris_wheel.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/ferris_wheel.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "ChoppysTrees",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choppys_trees",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/choppys_trees.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/choppys_trees.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/choppys_trees.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "ChoppyTimber",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choppy_timber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/choppy_timber.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/choppy_timber.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/choppy_timber.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Tents",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tents",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/placed_feature/tents.json",
+          "src/main/resources/data/fnaf_mod/forge/biome_modifier/tents_biome_modifier.json",
+          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/tents.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mushroom1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mushroom_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mushroom_1.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mushroom_1.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "Mushroom2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/mushroom_2.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/mushroom_2.json",
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/mushroom_2.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "TombTorch",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomb_torch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/template_pool/tomb_torch.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure_set/tomb_torch.json",
+          "src/main/resources/data/fnaf_mod/worldgen/structure/tomb_torch.json"
+        ]
+      },
+      "path": "~/FNAF World/Structures"
+    },
+    {
+      "name": "RulesPoster",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rules_poster",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/rules_poster.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/rules_poster.json",
+          "src/main/java/net/mcreator/fnafmod/block/RulesPosterBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/rules_poster.json",
+          "src/main/resources/assets/fnaf_mod/models/item/rules_poster.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "RetroCelerbreatePoster",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retro_celerbreate_poster",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/retro_celerbreate_poster.json",
+          "src/main/resources/assets/fnaf_mod/models/item/retro_celerbreate_poster.json",
+          "src/main/resources/assets/fnaf_mod/models/block/retro_celerbreate_poster.json",
+          "src/main/java/net/mcreator/fnafmod/block/RetroCelerbreatePosterBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/retro_celerbreate_poster.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "PurpleCheckeredCurtain",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_checkered_curtain",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/purple_checkered_curtain.json",
+          "src/main/java/net/mcreator/fnafmod/block/PurpleCheckeredCurtainBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/purple_checkered_curtain.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_checkered_curtain.json",
+          "src/main/resources/assets/fnaf_mod/models/item/purple_checkered_curtain.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "ThinPurpleCheckeredCurtain",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thin_purple_checkered_curtain",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/ThinPurpleCheckeredCurtainBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/thin_purple_checkered_curtain_post.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/thin_purple_checkered_curtain.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/thin_purple_checkered_curtain.json",
+          "src/main/resources/assets/fnaf_mod/models/block/thin_purple_checkered_curtain_noside_alt.json",
+          "src/main/resources/assets/fnaf_mod/models/item/thin_purple_checkered_curtain.json",
+          "src/main/resources/assets/fnaf_mod/models/block/thin_purple_checkered_curtain_side.json",
+          "src/main/resources/assets/fnaf_mod/models/block/thin_purple_checkered_curtain_noside.json",
+          "src/main/resources/assets/fnaf_mod/models/block/thin_purple_checkered_curtain_side_alt.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "PurpleStageBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_stage_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/PurpleStageBricksBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/purple_stage_bricks.json",
+          "src/main/resources/assets/fnaf_mod/models/block/purple_stage_bricks.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/purple_stage_bricks.json",
+          "src/main/resources/assets/fnaf_mod/models/item/purple_stage_bricks.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "Stool1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stool_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/stool_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/stool_1.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/stool_1.json",
+          "src/main/resources/assets/fnaf_mod/models/item/stool_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/Stool1Block.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Chairs"
+    },
+    {
+      "name": "Stool2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stool_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/stool_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/Stool2Block.java",
+          "src/main/resources/assets/fnaf_mod/models/block/stool_2.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/stool_2.json",
+          "src/main/resources/assets/fnaf_mod/models/item/stool_2.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Chairs"
+    },
+    {
+      "name": "CeilingLamp",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ceiling_lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/entity/CeilingLampBlockEntity.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/ceiling_lamp.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/ceiling_lamp.json",
+          "src/main/resources/assets/fnaf_mod/models/block/ceiling_lamp.json",
+          "src/main/resources/assets/fnaf_mod/models/item/ceiling_lamp.json",
+          "src/main/java/net/mcreator/fnafmod/block/CeilingLampBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Rainbow",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/rainbow.json",
+          "src/main/resources/assets/fnaf_mod/models/item/rainbow.json",
+          "src/main/resources/assets/fnaf_mod/models/block/rainbow.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/rainbow.json",
+          "src/main/java/net/mcreator/fnafmod/block/RainbowBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "ConfettiWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "confetti_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/confetti_wall.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/confetti_wall.json",
+          "src/main/resources/assets/fnaf_mod/models/item/confetti_wall.json",
+          "src/main/resources/assets/fnaf_mod/models/block/confetti_wall.json",
+          "src/main/java/net/mcreator/fnafmod/block/ConfettiWallBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Carousel",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carousel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CarouselTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/carousel_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/CarouselTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/carousel.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/CarouselDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/carousel.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CarouselDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/CarouselDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/CarouselBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/carousel_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/CarouselBlockModel.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Carousel"
+    },
+    {
+      "name": "CarouselRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carousel_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/CarouselRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Carousel"
+    },
+    {
+      "name": "CarouselRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carousel_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/CarouselRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Carousel"
+    },
+    {
+      "name": "ToyFreddyFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_freddy_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_figure.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_freddy_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFreddyFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_freddy_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ToyBonnieFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_bonnie_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_bonnie_figure.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyBonnieFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ToyChicaFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_chica_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_chica_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyChicaFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_chica_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ToyFoxyFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_figure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/ToyFoxyFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_foxy_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_figure.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_foxy_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "BBFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bb_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/bb_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/block/bb_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/BBFigureBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/bb_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/bb_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "MarionetteFigure",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marionette_figure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/marionette_figure.json",
+          "src/main/java/net/mcreator/fnafmod/block/MarionetteFigureBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/marionette_figure.json",
+          "src/main/resources/assets/fnaf_mod/models/item/marionette_figure.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/marionette_figure.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "MuralFreddys",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mural_freddys",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/mural_freddys.json",
+          "src/main/resources/assets/fnaf_mod/models/block/mural_freddys.json",
+          "src/main/java/net/mcreator/fnafmod/block/MuralFreddysBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mural_freddys.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/mural_freddys.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "MuralStage01",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mural_stage_01",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mural_stage_01.json",
+          "src/main/resources/assets/fnaf_mod/models/item/mural_stage_01.json",
+          "src/main/java/net/mcreator/fnafmod/block/MuralStage01Block.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/mural_stage_01.json",
+          "src/main/resources/assets/fnaf_mod/models/block/mural_stage_01.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "MuralFredbears",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mural_fredbears",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/mural_fredbears.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mural_fredbears.json",
+          "src/main/java/net/mcreator/fnafmod/block/MuralFredbearsBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/mural_fredbears.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/mural_fredbears.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "Poster11",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poster_11",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/poster_11.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/poster_11.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/poster_11.json",
+          "src/main/java/net/mcreator/fnafmod/block/Poster11Block.java",
+          "src/main/resources/assets/fnaf_mod/models/item/poster_11.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "Poster12",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poster_12",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/Poster12Block.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/poster_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/poster_12.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/poster_12.json",
+          "src/main/resources/assets/fnaf_mod/models/item/poster_12.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "BirthdayBanner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birthday_banner",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/birthday_banner.json",
+          "src/main/java/net/mcreator/fnafmod/block/BirthdayBannerBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/birthday_banner.json",
+          "src/main/resources/assets/fnaf_mod/models/block/birthday_banner.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/birthday_banner.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "BirthdayBannerStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birthday_banner_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/birthday_banner_states_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "PartyTimeBanner",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_time_banner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/party_time_banner.json",
+          "src/main/java/net/mcreator/fnafmod/block/PartyTimeBannerBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/party_time_banner.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/party_time_banner.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_time_banner.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "PartyTimeBannerStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_time_banner_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/party_time_banner_states_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "BirthdayBannerOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birthday_banner_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BirthdayBannerOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "Drywall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drywall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/DrywallBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/drywall.json",
+          "src/main/resources/assets/fnaf_mod/models/block/drywall.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/drywall.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/drywall.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "Poster13",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poster_13",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/poster_13.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/poster_13.json",
+          "src/main/java/net/mcreator/fnafmod/block/Poster13Block.java",
+          "src/main/resources/assets/fnaf_mod/models/block/poster_13.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/poster_13.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "ShelfTestOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shelf_test_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ShelfTestOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShelfTest",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shelf_test",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/shelf_test_top.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/shelf_test.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ShelfTestBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/shelf_test.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/shelf_test.json",
+          "src/main/java/net/mcreator/fnafmod/block/ShelfTestBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/shelf_test_full.json",
+          "src/main/resources/assets/fnaf_mod/models/block/shelf_test.json"
+        ]
+      }
+    },
+    {
+      "name": "ShelfOnBlockBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shelf_on_block_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ShelfOnBlockBreakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -27148,6 +28221,7 @@
       "~CUSTOM:BackstageDoor"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:ShelfTest",
       "~CUSTOM:MovieExteriorWallSlab",
       "~CUSTOM:MovieWallSlab",
       "~CUSTOM:YellowWallSlab",
@@ -27956,25 +29030,25 @@
       "subtitles.bod2": "What Have you Brought in This World?",
       "block.fnaf_mod.black_light_foxy_plushie": "Blacklight Foxy Plushie",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
+      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "block.fnaf_mod.red_white_tile_stair": "Red White Tile Stairs",
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "block.fnaf_mod.movie_wall": "Movie Wall",
+      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
+      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
-      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
+      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -27991,8 +29065,8 @@
       "subtitles.blacktombyardtemp": "",
       "block.fnaf_mod.big_purple_stage_brick_tiles": "Big Purple Etched Brick Tiles",
       "entity.fnaf_mod.unwithered_foxy": "Un-Withered Foxy",
-      "entity.fnaf_mod.fredbear_animatronic": "Fredbear",
       "block.fnaf_mod.poster_8.description_0": "Let\u0027s Party!",
+      "entity.fnaf_mod.fredbear_animatronic": "Fredbear",
       "entity.fnaf_mod.crawling_toy_foxy": "Crawling Toy Foxy",
       "item.fnaf_mod.our_little_horror_story": "Music Disc",
       "item.fnaf_mod.spring_bonnie_cut_out_spawn_egg": "Spring Bonnie Cutout Spawn Egg",
@@ -28000,19 +29074,23 @@
       "item.fnaf_mod.bonnie": "Drone Bonnie",
       "entity.fnaf_mod.withered_bonnie": "Withered Bonnie",
       "block.fnaf_mod.awning_yellow.description_0": "Yellow",
+<<<<<<< Updated upstream
+=======
+      "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
+>>>>>>> Stashed changes
       "entity.fnaf_mod.secret_nightmare_fredbear": "Nightmare Fredbear",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
-      "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
+      "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
       "block.fnaf_mod.stage_light_orange": "Stage Light (Orange)",
       "block.fnaf_mod.alternate_black_purple_wall_tile": "Alternate Black Purple Wall Tiles",
       "entity.fnaf_mod.glitch_bonnie_cut_out": "Glitch Bonnie Cutout",
       "item.fnaf_mod.evil_bonnie": "Dark Remnant Infused Bonnie",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
-      "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
+      "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.center_white_black_wall_tile": "Center White Stripe Wall Tiles",
       "subtitles.ovdrhonk": "\"Honk\"",
       "gui.fnaf_mod.wall_change_2.label_opposing_each_other": " Opposing Each Other",
@@ -28023,11 +29101,11 @@
       "block.fnaf_mod.pin_ball_machine_3": "Pinball Machine Blacklight Cupcake",
       "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "entity.fnaf_mod.puppet": "Puppet",
-      "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
+      "effect.fnaf_mod.bleeding": "Bleeding",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
-      "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
+      "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
       "item.fnaf_mod.tameable_mangle_spawn_egg": "Adventure Mangle Spawn Egg",
@@ -28036,8 +29114,8 @@
       "item.fnaf_mod.statue_foxy_spawn_egg": "Foxy Statue Spawn Egg",
       "item.fnaf_mod.nightmare_freddy_statue_spawn_egg": "Nightmare Freddy Statue Spawn Egg",
       "block.fnaf_mod.glitched_leaves": "Glitched Leaves",
-      "block.fnaf_mod.kitchen_door": "Kitchen Door",
       "block.fnaf_mod.toy_freddy_sign_off": "Toy Freddy Sign",
+      "block.fnaf_mod.kitchen_door": "Kitchen Door",
       "block.fnaf_mod.paper_pal_bonnie": "Paper Pal Bonnie",
       "block.fnaf_mod.movie_poster_1.description_0": "The Leaning Tower of Pizza!",
       "block.fnaf_mod.top_normal": "White Black Wall ",
@@ -28048,8 +29126,8 @@
       "block.fnaf_mod.center_black_black_wall_tile": "Center Black Stripe Wall Tiles",
       "block.fnaf_mod.alternate_big_wall_tile": "Alternate Big Wall Tiles",
       "item.fnaf_mod.phantom_foxy_spawn_egg": "Phantom Foxy Spawn Egg",
-      "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "item.fnaf_mod.adv_springtrap": "Springtrap",
+      "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
       "block.fnaf_mod.thin_sky_curtain.description_0": "§b(Light Blue Curtain)",
       "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "block.fnaf_mod.swamp_curtain": "Swamp Curtain",
@@ -28058,8 +29136,8 @@
       "entity.fnaf_mod.crawling_springtrap": "Crawling Springtrap",
       "item.fnaf_mod.showtime_madame_macabre_bitemark_remix": "Music Disc",
       "block.fnaf_mod.big_white_black_wall_tile": "Big White Wall Tiles",
-      "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
       "block.fnaf_mod.office_door": "Office Door",
+      "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
       "entity.fnaf_mod.withered_golden_freddy": "Withered Golden Freddy",
       "item.fnaf_mod.fredbear_animatronic_spawn_egg": "Fredbear Spawn Egg",
       "block.fnaf_mod.retro_freddy_sign_on": "Retro Freddy Sign",
@@ -28073,8 +29151,8 @@
       "block.fnaf_mod.toy_robot": "Toy Robot",
       "item.fnaf_mod.brown_plastic": "Brown Plastic",
       "block.fnaf_mod.white_wall_slab": "White Wall Slab",
-      "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
       "block.fnaf_mod.orange_speaker_left": "Speaker",
+      "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
       "item.fnaf_mod.phantom_puppet_spawn_item": "Phantom Puppet",
       "block.fnaf_mod.stage_brick_tiles": "Etched Brick Tiles",
       "entity.fnaf_mod.nightmare_fredbear": "Nightmare Fredbear",
@@ -28083,8 +29161,8 @@
       "item.fnaf_mod.crawling_toy_bonnie_spawn_egg": "Crawling Toy Bonnie Spawn Egg",
       "block.fnaf_mod.awning_blue": "Awning",
       "block.fnaf_mod.diner_chair": "Diner Chair {Red}",
-      "entity.fnaf_mod.endo_02": "Endo-02",
       "item.fnaf_mod.bonnie_suit_boots": "Bonnie Boots",
+      "entity.fnaf_mod.endo_02": "Endo-02",
       "entity.fnaf_mod.nightmarionne": "Nightmarionne",
       "item.fnaf_mod.waiter_hat_helmet": "Waiter Hat",
       "block.fnaf_mod.green_blue_tile_slab_cracked": "Cracked Green Blue Tile Slab",
@@ -28093,11 +29171,11 @@
       "block.fnaf_mod.red_black_tile_slab": "Red Black Tile Slab",
       "item.fnaf_mod.foxy_spawn": "Foxy The Pirate",
       "item.fnaf_mod.fredbear_spring_lock_suit_helmet": "Fredbear Spring Lock Head",
-      "block.fnaf_mod.vending_machine": "Vending Machine",
       "block.fnaf_mod.purple_stage_brick_tiles": "Purple Etched Brick Tiles",
-      "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
-      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "block.fnaf_mod.vending_machine": "Vending Machine",
       "block.fnaf_mod.cloud_curtain.description_0": "(White Curtain)",
+      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
       "block.fnaf_mod.fredbear_plush": "Fredbear Plushie?",
       "item.fnaf_mod.hanging_camera_spawn_egg": "Hanging Camera Spawn Egg",
       "block.fnaf_mod.berry_curtain": "Berry Curtain",
@@ -28125,8 +29203,8 @@
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
       "item.fnaf_mod.phantom_chica_spawn_item": "Phantom Chica",
       "block.fnaf_mod.vass_doll": "Vass Doll",
-      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "subtitles.a2": "Honk",
+      "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "block.fnaf_mod.awning_blue.description_0": "Blue",
       "item.fnaf_mod.nightmare_fredbear_spawn_item": "Nightmare Fredbear",
       "gui.fnaf_mod.camera_gui.button_previous_page": "Previous Page",
@@ -28869,6 +29947,7 @@
       "block.fnaf_mod.fnaf_3_posters_5": "Fazbear\u0027s Fright Posters",
       "block.fnaf_mod.fnaf_3_posters_4": "Fazbear\u0027s Fright Posters",
       "block.fnaf_mod.fnaf_3_posters_7": "Fazbear\u0027s Fright Posters",
+      "block.fnaf_mod.shelf_test": "Shelf Test",
       "block.fnaf_mod.fnaf_3_posters_6": "Fazbear\u0027s Fright Posters",
       "item.fnaf_mod.bonnie_bunny_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "block.fnaf_mod.fnaf_3_posters_8": "Fazbear\u0027s Fright Posters",
