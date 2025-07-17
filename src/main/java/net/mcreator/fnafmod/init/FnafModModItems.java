@@ -969,36 +969,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE = REGISTRY.register(FnafModModBlocks.PURPLE_STAR_TABLE.getId().getPath(), () -> new PurpleStarTableDisplayItem(FnafModModBlocks.PURPLE_STAR_TABLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WHITE_CLOTH_TABLE = REGISTRY.register(FnafModModBlocks.WHITE_CLOTH_TABLE.getId().getPath(), () -> new WhiteClothTableDisplayItem(FnafModModBlocks.WHITE_CLOTH_TABLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CONNECTING_TABLE = REGISTRY.register(FnafModModBlocks.CONNECTING_TABLE.getId().getPath(), () -> new ConnectingTableDisplayItem(FnafModModBlocks.CONNECTING_TABLE.get(), new Item.Properties()));
-<<<<<<< Updated upstream
-=======
-	public static final RegistryObject<Item> RULES_POSTER = block(FnafModModBlocks.RULES_POSTER);
-	public static final RegistryObject<Item> RETRO_CELERBREATE_POSTER = block(FnafModModBlocks.RETRO_CELERBREATE_POSTER);
-	public static final RegistryObject<Item> PURPLE_CHECKERED_CURTAIN = block(FnafModModBlocks.PURPLE_CHECKERED_CURTAIN);
-	public static final RegistryObject<Item> THIN_PURPLE_CHECKERED_CURTAIN = block(FnafModModBlocks.THIN_PURPLE_CHECKERED_CURTAIN);
-	public static final RegistryObject<Item> PURPLE_STAGE_BRICKS = block(FnafModModBlocks.PURPLE_STAGE_BRICKS);
-	public static final RegistryObject<Item> STOOL_1 = block(FnafModModBlocks.STOOL_1);
-	public static final RegistryObject<Item> STOOL_2 = block(FnafModModBlocks.STOOL_2);
-	public static final RegistryObject<Item> CEILING_LAMP = block(FnafModModBlocks.CEILING_LAMP);
-	public static final RegistryObject<Item> RAINBOW = block(FnafModModBlocks.RAINBOW);
-	public static final RegistryObject<Item> CONFETTI_WALL = block(FnafModModBlocks.CONFETTI_WALL);
-	public static final RegistryObject<Item> CAROUSEL = REGISTRY.register(FnafModModBlocks.CAROUSEL.getId().getPath(), () -> new CarouselDisplayItem(FnafModModBlocks.CAROUSEL.get(), new Item.Properties()));
-	public static final RegistryObject<Item> TOY_FREDDY_FIGURE = block(FnafModModBlocks.TOY_FREDDY_FIGURE);
-	public static final RegistryObject<Item> TOY_BONNIE_FIGURE = block(FnafModModBlocks.TOY_BONNIE_FIGURE);
-	public static final RegistryObject<Item> TOY_CHICA_FIGURE = block(FnafModModBlocks.TOY_CHICA_FIGURE);
-	public static final RegistryObject<Item> TOY_FOXY_FIGURE = block(FnafModModBlocks.TOY_FOXY_FIGURE);
-	public static final RegistryObject<Item> BB_FIGURE = block(FnafModModBlocks.BB_FIGURE);
-	public static final RegistryObject<Item> MARIONETTE_FIGURE = block(FnafModModBlocks.MARIONETTE_FIGURE);
-	public static final RegistryObject<Item> MURAL_FREDDYS = block(FnafModModBlocks.MURAL_FREDDYS);
-	public static final RegistryObject<Item> MURAL_STAGE_01 = block(FnafModModBlocks.MURAL_STAGE_01);
-	public static final RegistryObject<Item> MURAL_FREDBEARS = block(FnafModModBlocks.MURAL_FREDBEARS);
-	public static final RegistryObject<Item> POSTER_11 = block(FnafModModBlocks.POSTER_11);
-	public static final RegistryObject<Item> POSTER_12 = block(FnafModModBlocks.POSTER_12);
-	public static final RegistryObject<Item> BIRTHDAY_BANNER = block(FnafModModBlocks.BIRTHDAY_BANNER);
-	public static final RegistryObject<Item> PARTY_TIME_BANNER = block(FnafModModBlocks.PARTY_TIME_BANNER);
-	public static final RegistryObject<Item> DRYWALL = block(FnafModModBlocks.DRYWALL);
-	public static final RegistryObject<Item> POSTER_13 = block(FnafModModBlocks.POSTER_13);
 	public static final RegistryObject<Item> SHELF_TEST = block(FnafModModBlocks.SHELF_TEST);
->>>>>>> Stashed changes
 
 	// Start of user code block custom items
 	// End of user code block custom items

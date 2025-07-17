@@ -11,6 +11,8 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
@@ -20,25 +22,30 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.ShelfTestOnBlockRightClickedProcedure;
-import net.mcreator.fnafmod.procedures.ShelfOnBlockBreakProcedure;
+import net.mcreator.fnafmod.procedures.ShelfTestBlockDestroyedProcedure;
 import net.mcreator.fnafmod.block.entity.ShelfTestBlockEntity;
 
 public class ShelfTestBlock extends SlabBlock implements EntityBlock {
 	public ShelfTestBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).dynamicShape());
+	}
+
+	@Override
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
+		return 0;
 	}
 
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		ShelfOnBlockBreakProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		ShelfTestBlockDestroyedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
 	}
 
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		ShelfOnBlockBreakProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		ShelfTestBlockDestroyedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -83,5 +90,19 @@ public class ShelfTestBlock extends SlabBlock implements EntityBlock {
 			}
 			super.onRemove(state, world, pos, newState, isMoving);
 		}
+	}
+
+	@Override
+	public boolean hasAnalogOutputSignal(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+		BlockEntity tileentity = world.getBlockEntity(pos);
+		if (tileentity instanceof ShelfTestBlockEntity be)
+			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
+		else
+			return 0;
 	}
 }

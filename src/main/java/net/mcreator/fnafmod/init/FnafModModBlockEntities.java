@@ -149,12 +149,7 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(WhiteClothTableTileEntity::new, FnafModModBlocks.WHITE_CLOTH_TABLE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ConnectingTableTileEntity>> CONNECTING_TABLE = REGISTRY.register("connecting_table",
 			() -> BlockEntityType.Builder.of(ConnectingTableTileEntity::new, FnafModModBlocks.CONNECTING_TABLE.get()).build(null));
-<<<<<<< Updated upstream
-=======
-	public static final RegistryObject<BlockEntityType<?>> CEILING_LAMP = register("ceiling_lamp", FnafModModBlocks.CEILING_LAMP, CeilingLampBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<CarouselTileEntity>> CAROUSEL = REGISTRY.register("carousel", () -> BlockEntityType.Builder.of(CarouselTileEntity::new, FnafModModBlocks.CAROUSEL.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> SHELF_TEST = register("shelf_test", FnafModModBlocks.SHELF_TEST, ShelfTestBlockEntity::new);
->>>>>>> Stashed changes
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

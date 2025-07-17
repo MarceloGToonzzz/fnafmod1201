@@ -611,5 +611,13 @@
         "stream": true
       }
     ]
+  },
+  "choppywoods": {
+    "sounds": [
+      {
+        "name": "fnaf_mod:choppys_woods",
+        "stream": true
+      }
+    ]
   }
 }
