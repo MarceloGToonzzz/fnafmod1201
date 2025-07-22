@@ -19,10 +19,6 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnGroupData;
@@ -51,7 +47,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.StatueSpawnProcedure;
 import net.mcreator.fnafmod.procedures.MatPickupProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
@@ -104,50 +99,7 @@ public class UnwitheredFreddyEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = UnwitheredFreddyEntity.this.getX();
-				double y = UnwitheredFreddyEntity.this.getY();
-				double z = UnwitheredFreddyEntity.this.getZ();
-				Entity entity = UnwitheredFreddyEntity.this;
-				Level world = UnwitheredFreddyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = UnwitheredFreddyEntity.this.getX();
-				double y = UnwitheredFreddyEntity.this.getY();
-				double z = UnwitheredFreddyEntity.this.getZ();
-				Entity entity = UnwitheredFreddyEntity.this;
-				Level world = UnwitheredFreddyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = UnwitheredFreddyEntity.this.getX();
-				double y = UnwitheredFreddyEntity.this.getY();
-				double z = UnwitheredFreddyEntity.this.getZ();
-				Entity entity = UnwitheredFreddyEntity.this;
-				Level world = UnwitheredFreddyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = UnwitheredFreddyEntity.this.getX();
-				double y = UnwitheredFreddyEntity.this.getY();
-				double z = UnwitheredFreddyEntity.this.getZ();
-				Entity entity = UnwitheredFreddyEntity.this;
-				Level world = UnwitheredFreddyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
+
 	}
 
 	@Override
@@ -232,7 +184,7 @@ public class UnwitheredFreddyEntity extends PathfinderMob implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
 		builder = builder.add(Attributes.MAX_HEALTH, 50);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);

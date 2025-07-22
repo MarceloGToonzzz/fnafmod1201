@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:brown_tan_tile_slab",
+    "fnaf_mod:brown_tan_tile_stair",
+    "fnaf_mod:brown_tan_tile",
+    "fnaf_mod:blueprint_tile_slab",
+    "fnaf_mod:blueprint_tile_stair",
+    "fnaf_mod:blueprint_tile",
     "fnaf_mod:drywall",
     "fnaf_mod:purple_stage_bricks",
     "fnaf_mod:red_door_windowed",

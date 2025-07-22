@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "mural_freddys",
+        "missing": "mural_freddys"
+      },
+      "name": "default"
+    },
+    "stage01": {
+      "map": {
+        "2": "mural_bw",
+        "missing": "mural_bw"
+      },
+      "name": "stage01"
+    },
+    "fredbears": {
+      "map": {
+        "2": "mural_fredbear",
+        "missing": "mural_fredbear"
+      },
+      "name": "fredbears"
+    }
+  }
+}

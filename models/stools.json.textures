@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "red": {
+      "map": {
+        "0": "red_stool"
+      },
+      "name": "red"
+    },
+    "default": {
+      "map": {
+        "0": "purple_stool"
+      },
+      "name": "default"
+    }
+  }
+}

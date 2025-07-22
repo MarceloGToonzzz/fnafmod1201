@@ -5,6 +5,12 @@
         "0": "stars"
       },
       "name": "default"
+    },
+    "colourfulstars": {
+      "map": {
+        "0": "rainbowstars"
+      },
+      "name": "colourfulstars"
     }
   }
 }

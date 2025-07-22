@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "fnaf_mod:shelf_test",
+    "fnaf_mod:brown_tan_tile_slab",
+    "fnaf_mod:blueprint_tile_slab",
     "fnaf_mod:movie_exterior_wall_slab",
     "fnaf_mod:movie_wall_slab",
     "fnaf_mod:yellow_wall_slab",

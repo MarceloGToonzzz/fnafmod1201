@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "fnaf_mod:vents",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 88,
+    "separation": 0,
+    "salt": 156937127
+  }
+}

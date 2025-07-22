@@ -57,6 +57,7 @@ public class FnafModModTabs {
 			}).build());
 	public static final RegistryObject<CreativeModeTab> DRAWINGS_POSTERS = REGISTRY.register("drawings_posters",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.drawings_posters")).icon(() -> new ItemStack(FnafModModBlocks.CHILDREN_DRAWINGS.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FnafModModBlocks.RULES_POSTER.get().asItem());
 				tabData.accept(FnafModModBlocks.POSTER_8.get().asItem());
 				tabData.accept(FnafModModBlocks.POSTER_9.get().asItem());
 				tabData.accept(FnafModModBlocks.POSTER_10.get().asItem());
@@ -70,6 +71,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.POSTER_5.get().asItem());
 				tabData.accept(FnafModModBlocks.POSTER_6.get().asItem());
 				tabData.accept(FnafModModBlocks.POSTER_7.get().asItem());
+				tabData.accept(FnafModModBlocks.POSTER_11.get().asItem());
+				tabData.accept(FnafModModBlocks.POSTER_12.get().asItem());
+				tabData.accept(FnafModModBlocks.POSTER_13.get().asItem());
 				tabData.accept(FnafModModBlocks.CHILDREN_DRAWINGS.get().asItem());
 				tabData.accept(FnafModModBlocks.CHILDREN_DRAWINGS_2.get().asItem());
 				tabData.accept(FnafModModBlocks.CHILDREN_DRAWINGS_3.get().asItem());
@@ -90,6 +94,12 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PAPER_PAL_BONNIE.get().asItem());
 				tabData.accept(FnafModModBlocks.PAPER_PAL_FREDDY.get().asItem());
 				tabData.accept(FnafModModBlocks.PAPER_PAL.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_FREDDYS.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_STAGE_01.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_FREDBEARS.get().asItem());
+				tabData.accept(FnafModModBlocks.RETRO_CELERBREATE_POSTER.get().asItem());
+				tabData.accept(FnafModModBlocks.BIRTHDAY_BANNER.get().asItem());
+				tabData.accept(FnafModModBlocks.PARTY_TIME_BANNER.get().asItem());
 			}).withTabsBefore(SUITS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> DECORATIVE_BLOCKS = REGISTRY.register("decorative_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.decorative_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PHONE.get())).displayItems((parameters, tabData) -> {
@@ -125,6 +135,13 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FOOSBALL.get().asItem());
 				tabData.accept(FnafModModBlocks.CONNECTING_TABLE.get().asItem());
 				tabData.accept(FnafModModBlocks.PRIZE_COUNTER.get().asItem());
+				tabData.accept(FnafModModBlocks.CAROUSEL.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FREDDY_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_BONNIE_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_CHICA_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FOXY_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.BB_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.MARIONETTE_FIGURE.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -357,6 +374,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.CHECKERED_WALL.get().asItem());
 				tabData.accept(FnafModModBlocks.STAGE_BRICKS.get().asItem());
 				tabData.accept(FnafModModBlocks.CUT_STAGE_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.PURPLE_STAGE_BRICKS.get().asItem());
 				tabData.accept(FnafModModBlocks.STAGE_BRICK_TILES.get().asItem());
 				tabData.accept(FnafModModBlocks.CENTER_STAGE_BRICK_TILES.get().asItem());
 				tabData.accept(FnafModModBlocks.ALTERNATE_STAGE_BRICK_TILES.get().asItem());
@@ -497,6 +515,8 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.THIN_CLOUD_CURTAIN.get().asItem());
 				tabData.accept(FnafModModBlocks.LICORICE_CURTAIN.get().asItem());
 				tabData.accept(FnafModModBlocks.THIN_LICORICE_CURTAIN.get().asItem());
+				tabData.accept(FnafModModBlocks.PURPLE_CHECKERED_CURTAIN.get().asItem());
+				tabData.accept(FnafModModBlocks.THIN_PURPLE_CHECKERED_CURTAIN.get().asItem());
 				tabData.accept(FnafModModBlocks.WIRES.get().asItem());
 				tabData.accept(FnafModModBlocks.WALL_WIRES.get().asItem());
 				tabData.accept(FnafModModBlocks.ORANGE_SPEAKER.get().asItem());
@@ -524,10 +544,13 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.DINER_CHAIR_3.get().asItem());
 				tabData.accept(FnafModModBlocks.DINER_CHAIR_4.get().asItem());
 				tabData.accept(FnafModModBlocks.DINER_CHAIR_5.get().asItem());
+				tabData.accept(FnafModModBlocks.STOOL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.STOOL_2.get().asItem());
 				tabData.accept(FnafModModBlocks.MOVIE_CHAIR.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSHTRAP_CHAIR.get().asItem());
 				tabData.accept(FnafModModBlocks.TRASH_CAN.get().asItem());
 				tabData.accept(FnafModModBlocks.MESH_TRASH_CAN.get().asItem());
+				tabData.accept(FnafModModBlocks.CEILING_LAMP.get().asItem());
 				tabData.accept(FnafModModBlocks.SCREEN.get().asItem());
 				tabData.accept(FnafModModBlocks.FREDDY_HEAD.get().asItem());
 				tabData.accept(FnafModModBlocks.BONNIE_HEAD.get().asItem());
@@ -546,6 +569,8 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.SHELF.get().asItem());
 				tabData.accept(FnafModModBlocks.CLOUDS.get().asItem());
 				tabData.accept(FnafModModBlocks.SUN.get().asItem());
+				tabData.accept(FnafModModBlocks.RAINBOW.get().asItem());
+				tabData.accept(FnafModModBlocks.CONFETTI_WALL.get().asItem());
 				tabData.accept(FnafModModBlocks.LURE.get().asItem());
 				tabData.accept(FnafModModBlocks.FREDDY_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.GOLDEN_FREDDY_PLUSHIE.get().asItem());
@@ -580,6 +605,18 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.AWNING_GREEN.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_BLUE.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_YELLOW.get().asItem());
+				tabData.accept(FnafModModBlocks.DRYWALL.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUEPRINT_TILE.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUEPRINT_TILE_STAIR.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUEPRINT_TILE_SLAB.get().asItem());
+				tabData.accept(FnafModModBlocks.BROWN_TAN_TILE.get().asItem());
+				tabData.accept(FnafModModBlocks.BROWN_TAN_TILE_STAIR.get().asItem());
+				tabData.accept(FnafModModBlocks.BROWN_TAN_TILE_SLAB.get().asItem());
+				tabData.accept(FnafModModBlocks.COLOUR_STARS.get().asItem());
+				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
+				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
+				tabData.accept(FnafModModBlocks.PIZZA_OVEN.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -639,8 +676,6 @@ public class FnafModModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(FnafModModBlocks.GLITCHED_LOG.get().asItem());
 			tabData.accept(FnafModModBlocks.GLITCHED_LEAVES.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(FnafModModBlocks.SHELF_TEST.get().asItem());
 		}
 	}
 }

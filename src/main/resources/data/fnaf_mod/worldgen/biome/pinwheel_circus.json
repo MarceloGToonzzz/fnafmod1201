@@ -65,7 +65,11 @@
     ],
     [],
     [],
-    [],
+    [
+      "fnaf_mod:pinwheel_circus_tree",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin"
+    ],
     []
   ]
 }

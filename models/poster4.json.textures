@@ -89,6 +89,24 @@
         "0": "springbonnie2"
       },
       "name": "fright8"
+    },
+    "toyfreddyready": {
+      "map": {
+        "0": "toy_freddy_poster_blue"
+      },
+      "name": "toyfreddyready"
+    },
+    "toyfoxy": {
+      "map": {
+        "0": "toy_foxy_poster"
+      },
+      "name": "toyfoxy"
+    },
+    "toyfreddygreen": {
+      "map": {
+        "0": "toy_freddy_poster_green"
+      },
+      "name": "toyfreddygreen"
     }
   }
 }

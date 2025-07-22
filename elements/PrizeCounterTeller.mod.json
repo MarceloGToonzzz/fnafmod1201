@@ -1,0 +1,16 @@
+{
+  "_fv": 73,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Prize Counter Teller",
+    "pointOfInterest": {
+      "value": "CUSTOM:PrizeCounter"
+    },
+    "actionSound": {
+      "value": "CUSTOM:nosehonk"
+    },
+    "hat": "Full",
+    "professionTextureFile": "prize_counter_teller.png",
+    "zombifiedProfessionTextureFile": "prize_counter_teller.png"
+  }
+}

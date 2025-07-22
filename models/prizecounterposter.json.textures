@@ -5,6 +5,12 @@
         "0": "prizecounterposter"
       },
       "name": "default"
+    },
+    "retroposter": {
+      "map": {
+        "0": "retro_celebrate"
+      },
+      "name": "retroposter"
     }
   }
 }
