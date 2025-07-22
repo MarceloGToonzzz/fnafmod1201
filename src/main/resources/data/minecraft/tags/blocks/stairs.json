@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:brown_tan_tile_stair",
+    "fnaf_mod:blueprint_tile_stair",
     "fnaf_mod:movie_exterior_wall_stairs",
     "fnaf_mod:movie_wall_stairs",
     "fnaf_mod:yellow_wall_stairs",

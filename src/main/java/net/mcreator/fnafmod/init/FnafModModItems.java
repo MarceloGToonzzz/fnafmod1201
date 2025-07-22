@@ -175,6 +175,7 @@ import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
+import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOffDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddyHeadDisplayItem;
@@ -184,6 +185,7 @@ import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
+import net.mcreator.fnafmod.block.display.ClownfulDollDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
@@ -996,6 +998,18 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PARTY_TIME_BANNER = block(FnafModModBlocks.PARTY_TIME_BANNER);
 	public static final RegistryObject<Item> DRYWALL = block(FnafModModBlocks.DRYWALL);
 	public static final RegistryObject<Item> POSTER_13 = block(FnafModModBlocks.POSTER_13);
+	public static final RegistryObject<Item> BLUEPRINT_TILE = block(FnafModModBlocks.BLUEPRINT_TILE);
+	public static final RegistryObject<Item> BLUEPRINT_TILE_STAIR = block(FnafModModBlocks.BLUEPRINT_TILE_STAIR);
+	public static final RegistryObject<Item> BLUEPRINT_TILE_SLAB = block(FnafModModBlocks.BLUEPRINT_TILE_SLAB);
+	public static final RegistryObject<Item> BROWN_TAN_TILE = block(FnafModModBlocks.BROWN_TAN_TILE);
+	public static final RegistryObject<Item> BROWN_TAN_TILE_STAIR = block(FnafModModBlocks.BROWN_TAN_TILE_STAIR);
+	public static final RegistryObject<Item> BROWN_TAN_TILE_SLAB = block(FnafModModBlocks.BROWN_TAN_TILE_SLAB);
+	public static final RegistryObject<Item> COLOUR_STARS = block(FnafModModBlocks.COLOUR_STARS);
+	public static final RegistryObject<Item> CLOWNFUL_DOLL = REGISTRY.register(FnafModModBlocks.CLOWNFUL_DOLL.getId().getPath(), () -> new ClownfulDollDisplayItem(FnafModModBlocks.CLOWNFUL_DOLL.get(), new Item.Properties()));
+	public static final RegistryObject<Item> PIZZA_OVEN = block(FnafModModBlocks.PIZZA_OVEN);
+	public static final RegistryObject<Item> FAZEERRAMICS_CONTROL_PANEL = block(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL);
+	public static final RegistryObject<Item> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.getId().getPath(),
+			() -> new FreddysCupcakeBonanzaDisplayItem(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

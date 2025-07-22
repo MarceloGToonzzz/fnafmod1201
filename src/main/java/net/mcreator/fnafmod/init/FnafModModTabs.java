@@ -606,6 +606,17 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.AWNING_BLUE.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_YELLOW.get().asItem());
 				tabData.accept(FnafModModBlocks.DRYWALL.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUEPRINT_TILE.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUEPRINT_TILE_STAIR.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUEPRINT_TILE_SLAB.get().asItem());
+				tabData.accept(FnafModModBlocks.BROWN_TAN_TILE.get().asItem());
+				tabData.accept(FnafModModBlocks.BROWN_TAN_TILE_STAIR.get().asItem());
+				tabData.accept(FnafModModBlocks.BROWN_TAN_TILE_SLAB.get().asItem());
+				tabData.accept(FnafModModBlocks.COLOUR_STARS.get().asItem());
+				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
+				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
+				tabData.accept(FnafModModBlocks.PIZZA_OVEN.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

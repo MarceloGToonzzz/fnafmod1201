@@ -45,6 +45,7 @@ import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
+import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOffTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddyHeadTileEntity;
@@ -58,6 +59,7 @@ import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
 import net.mcreator.fnafmod.block.entity.ConnectingTableTileEntity;
+import net.mcreator.fnafmod.block.entity.ClownfulDollTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
@@ -152,6 +154,9 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(ConnectingTableTileEntity::new, FnafModModBlocks.CONNECTING_TABLE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> CEILING_LAMP = register("ceiling_lamp", FnafModModBlocks.CEILING_LAMP, CeilingLampBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<CarouselTileEntity>> CAROUSEL = REGISTRY.register("carousel", () -> BlockEntityType.Builder.of(CarouselTileEntity::new, FnafModModBlocks.CAROUSEL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ClownfulDollTileEntity>> CLOWNFUL_DOLL = REGISTRY.register("clownful_doll", () -> BlockEntityType.Builder.of(ClownfulDollTileEntity::new, FnafModModBlocks.CLOWNFUL_DOLL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FreddysCupcakeBonanzaTileEntity>> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register("freddys_cupcake_bonanza",
+			() -> BlockEntityType.Builder.of(FreddysCupcakeBonanzaTileEntity::new, FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

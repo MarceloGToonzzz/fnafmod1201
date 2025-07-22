@@ -32,6 +32,7 @@ import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.FreddysCupcakeBonanzaTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOffTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddyHeadTileRenderer;
@@ -41,6 +42,7 @@ import net.mcreator.fnafmod.block.renderer.FoxyHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
+import net.mcreator.fnafmod.block.renderer.ClownfulDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CenteredFreddySignTileRenderer;
@@ -96,5 +98,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.WHITE_CLOTH_TABLE.get(), context -> new WhiteClothTableTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CONNECTING_TABLE.get(), context -> new ConnectingTableTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CAROUSEL.get(), context -> new CarouselTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CLOWNFUL_DOLL.get(), context -> new ClownfulDollTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.FREDDYS_CUPCAKE_BONANZA.get(), context -> new FreddysCupcakeBonanzaTileRenderer());
 	}
 }

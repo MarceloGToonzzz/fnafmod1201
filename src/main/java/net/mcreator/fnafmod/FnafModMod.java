@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.fnafmod.world.features.StructureFeature;
+import net.mcreator.fnafmod.init.FnafModModVillagerProfessions;
 import net.mcreator.fnafmod.init.FnafModModTabs;
 import net.mcreator.fnafmod.init.FnafModModSounds;
 import net.mcreator.fnafmod.init.FnafModModParticleTypes;
@@ -59,7 +60,7 @@ public class FnafModMod {
 		FnafModModMobEffects.REGISTRY.register(bus);
 
 		FnafModModParticleTypes.REGISTRY.register(bus);
-
+		FnafModModVillagerProfessions.PROFESSIONS.register(bus);
 		FnafModModMenus.REGISTRY.register(bus);
 
 		// Start of user code block mod init
