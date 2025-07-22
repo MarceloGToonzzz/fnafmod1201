@@ -32,7 +32,6 @@ import net.mcreator.fnafmod.block.entity.StageLightGreenOnTileEntity;
 import net.mcreator.fnafmod.block.entity.SpringBonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.SpringBonnieDecorTileEntity;
 import net.mcreator.fnafmod.block.entity.ShelfTileEntity;
-import net.mcreator.fnafmod.block.entity.ShelfTestBlockEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.RemantInfuserBlockEntity;
@@ -46,6 +45,7 @@ import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
+import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOffTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddyHeadTileEntity;
@@ -59,10 +59,13 @@ import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
 import net.mcreator.fnafmod.block.entity.ConnectingTableTileEntity;
+import net.mcreator.fnafmod.block.entity.ClownfulDollTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignOnTileEntity;
+import net.mcreator.fnafmod.block.entity.CeilingLampBlockEntity;
+import net.mcreator.fnafmod.block.entity.CarouselTileEntity;
 import net.mcreator.fnafmod.block.entity.BonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.BephDollTileEntity;
 import net.mcreator.fnafmod.FnafModMod;
@@ -149,7 +152,11 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(WhiteClothTableTileEntity::new, FnafModModBlocks.WHITE_CLOTH_TABLE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ConnectingTableTileEntity>> CONNECTING_TABLE = REGISTRY.register("connecting_table",
 			() -> BlockEntityType.Builder.of(ConnectingTableTileEntity::new, FnafModModBlocks.CONNECTING_TABLE.get()).build(null));
-	public static final RegistryObject<BlockEntityType<?>> SHELF_TEST = register("shelf_test", FnafModModBlocks.SHELF_TEST, ShelfTestBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CEILING_LAMP = register("ceiling_lamp", FnafModModBlocks.CEILING_LAMP, CeilingLampBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<CarouselTileEntity>> CAROUSEL = REGISTRY.register("carousel", () -> BlockEntityType.Builder.of(CarouselTileEntity::new, FnafModModBlocks.CAROUSEL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ClownfulDollTileEntity>> CLOWNFUL_DOLL = REGISTRY.register("clownful_doll", () -> BlockEntityType.Builder.of(ClownfulDollTileEntity::new, FnafModModBlocks.CLOWNFUL_DOLL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FreddysCupcakeBonanzaTileEntity>> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register("freddys_cupcake_bonanza",
+			() -> BlockEntityType.Builder.of(FreddysCupcakeBonanzaTileEntity::new, FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
