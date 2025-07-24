@@ -1,11 +1,21 @@
 package net.mcreator.fnafmod.block.entity;
 
+import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.GeoBlockEntity;
+
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -22,17 +32,67 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
+import net.mcreator.fnafmod.block.DisplayShelvesBlock;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class ShelfTestBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class DisplayShelvesTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
+	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(DisplayShelvesBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(DisplayShelvesBlock.BLOCKSTATE);
 
-	public ShelfTestBlockEntity(BlockPos position, BlockState state) {
-		super(FnafModModBlockEntities.SHELF_TEST.get(), position, state);
+	public DisplayShelvesTileEntity(BlockPos pos, BlockState state) {
+		super(FnafModModBlockEntities.DISPLAY_SHELVES.get(), pos, state);
+	}
+
+	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(DisplayShelvesBlock.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
+		String animationprocedure = ("" + this.getBlockState().getValue(DisplayShelvesBlock.ANIMATION));
+		if (animationprocedure.equals("0")) {
+			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));
+		}
+		return PlayState.STOP;
+	}
+
+	String prevAnim = "0";
+
+	private PlayState procedurePredicate(AnimationState event) {
+		String animationprocedure = ("" + this.getBlockState().getValue(DisplayShelvesBlock.ANIMATION));
+		if (!animationprocedure.equals("0") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!animationprocedure.equals(prevAnim) && !animationprocedure.equals("0"))) {
+			if (!animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
+			event.getController().setAnimation(RawAnimation.begin().thenPlay(animationprocedure));
+			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+				if (this.getBlockState().getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp)
+					level.setBlock(this.getBlockPos(), this.getBlockState().setValue(_integerProp, 0), 3);
+				event.getController().forceAnimationReset();
+			}
+		} else if (animationprocedure.equals("0")) {
+			prevAnim = "0";
+			return PlayState.STOP;
+		}
+		prevAnim = animationprocedure;
+		return PlayState.CONTINUE;
+	}
+
+	@Override
+	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
+		data.add(new AnimationController<DisplayShelvesTileEntity>(this, "controller", 0, this::predicate));
+		data.add(new AnimationController<DisplayShelvesTileEntity>(this, "procedurecontroller", 0, this::procedurePredicate));
+	}
+
+	@Override
+	public AnimatableInstanceCache getAnimatableInstanceCache() {
+		return this.cache;
 	}
 
 	@Override
@@ -76,7 +136,7 @@ public class ShelfTestBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("shelf_test");
+		return Component.literal("display_shelves");
 	}
 
 	@Override
@@ -91,7 +151,7 @@ public class ShelfTestBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Shelf Test");
+		return Component.literal("Display Shelves");
 	}
 
 	@Override

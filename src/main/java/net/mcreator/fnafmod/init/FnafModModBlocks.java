@@ -312,6 +312,7 @@ import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
 import net.mcreator.fnafmod.block.DrywallBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
+import net.mcreator.fnafmod.block.DisplayShelvesBlock;
 import net.mcreator.fnafmod.block.DinerChairBlock;
 import net.mcreator.fnafmod.block.DinerChair5Block;
 import net.mcreator.fnafmod.block.DinerChair4Block;
@@ -1022,6 +1023,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> PIZZA_OVEN = REGISTRY.register("pizza_oven", () -> new PizzaOvenBlock());
 	public static final RegistryObject<Block> FAZEERRAMICS_CONTROL_PANEL = REGISTRY.register("fazeerramics_control_panel", () -> new FazeerramicsControlPanelBlock());
 	public static final RegistryObject<Block> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register("freddys_cupcake_bonanza", () -> new FreddysCupcakeBonanzaBlock());
+	public static final RegistryObject<Block> DISPLAY_SHELVES = REGISTRY.register("display_shelves", () -> new DisplayShelvesBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

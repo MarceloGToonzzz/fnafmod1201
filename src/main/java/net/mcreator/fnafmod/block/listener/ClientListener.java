@@ -41,6 +41,7 @@ import net.mcreator.fnafmod.block.renderer.FredbearHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ClownfulDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadTileRenderer;
@@ -100,5 +101,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CAROUSEL.get(), context -> new CarouselTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CLOWNFUL_DOLL.get(), context -> new ClownfulDollTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FREDDYS_CUPCAKE_BONANZA.get(), context -> new FreddysCupcakeBonanzaTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_SHELVES.get(), context -> new DisplayShelvesTileRenderer());
 	}
 }

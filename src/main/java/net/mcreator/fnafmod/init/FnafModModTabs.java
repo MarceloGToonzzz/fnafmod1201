@@ -142,6 +142,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.TOY_FOXY_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.BB_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.MARIONETTE_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.DISPLAY_SHELVES.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {

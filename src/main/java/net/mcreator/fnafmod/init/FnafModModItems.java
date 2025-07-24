@@ -184,6 +184,7 @@ import net.mcreator.fnafmod.block.display.FredbearHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
+import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ClownfulDollDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
@@ -1010,6 +1011,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FAZEERRAMICS_CONTROL_PANEL = block(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL);
 	public static final RegistryObject<Item> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.getId().getPath(),
 			() -> new FreddysCupcakeBonanzaDisplayItem(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DISPLAY_SHELVES = REGISTRY.register(FnafModModBlocks.DISPLAY_SHELVES.getId().getPath(), () -> new DisplayShelvesDisplayItem(FnafModModBlocks.DISPLAY_SHELVES.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
