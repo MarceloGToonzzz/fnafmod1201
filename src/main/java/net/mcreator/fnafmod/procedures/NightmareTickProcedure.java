@@ -509,15 +509,13 @@ public class NightmareTickProcedure {
 				}
 				if (found == true) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 120, 8, false, false));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 120, 8, false, false));
 					entity.setShiftKeyDown(true);
 					FnafModMod.queueServerWork(120, () -> {
 						entity.setShiftKeyDown(false);
 					});
 				}
-				if (world instanceof Level _lvl184 && _lvl184.isDay()) {
+				if (world instanceof Level _lvl183 && _lvl183.isDay()) {
 					if (!entity.level().isClientSide())
 						entity.discard();
 					if (entity instanceof PlushtrapEntity) {
@@ -538,7 +536,7 @@ public class NightmareTickProcedure {
 				}
 			}
 			if (entity instanceof SittingNightmareBBEntity || entity instanceof SittingPlushtrapEntity) {
-				if (!(world instanceof Level _lvl192 && _lvl192.isDay())) {
+				if (!(world instanceof Level _lvl191 && _lvl191.isDay())) {
 					if (!entity.level().isClientSide())
 						entity.discard();
 					if (entity instanceof SittingPlushtrapEntity) {
