@@ -25,6 +25,8 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
+import net.mcreator.fnafmod.entity.PlushtrapEntity;
+import net.mcreator.fnafmod.entity.NightmareBBEntity;
 import net.mcreator.fnafmod.FnafModMod;
 
 import javax.annotation.Nullable;
@@ -78,6 +80,12 @@ public class PondersAngelsProcedure {
 											if (entityiterator instanceof WitheredFoxyEntity) {
 												((WitheredFoxyEntity) entityiterator).setAnimation("animation.witheredfoxy.sneak");
 											}
+											if (entityiterator instanceof PlushtrapEntity) {
+												((PlushtrapEntity) entityiterator).setAnimation("animation.plushtrap.sit");
+											}
+											if (entityiterator instanceof NightmareBBEntity) {
+												((NightmareBBEntity) entityiterator).setAnimation("animation.nightmare_balloon_boy.sit");
+											}
 										} else {
 											{
 												Entity _ent = entityiterator;
@@ -89,6 +97,12 @@ public class PondersAngelsProcedure {
 											}
 											if (entityiterator instanceof WitheredFoxyEntity) {
 												((WitheredFoxyEntity) entityiterator).setAnimation("empty");
+											}
+											if (entityiterator instanceof PlushtrapEntity) {
+												((PlushtrapEntity) entityiterator).setAnimation("empty");
+											}
+											if (entityiterator instanceof NightmareBBEntity) {
+												((NightmareBBEntity) entityiterator).setAnimation("empty");
 											}
 										}
 									});
