@@ -27178,6 +27178,159 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "PondersAngels",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponders_angels",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PondersAngelsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/extras"
+    },
+    {
+      "name": "DisplayShelvesOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_shelves_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DisplayShelvesOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "DisplayShelvesConnection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_shelves_connection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DisplayShelvesConnectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "DisplayShelves",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_shelves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/DisplayShelvesDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/DisplayShelvesTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_5.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/DisplayShelvesTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/display_shelves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/display_shelves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/DisplayShelvesBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_4.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/DisplayShelvesDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/DisplayShelvesBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/DisplayShelvesDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/display_shelves_particle.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "DisplayShelvesBreaking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_shelves_breaking",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DisplayShelvesBreakingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
     }
   ],
   "variable_elements": [
@@ -28376,6 +28529,11 @@
       "~CUSTOM:RedBlueTileSlab",
       "~CUSTOM:BlackWhiteTileSlab"
     ],
+    "ENTITIES:mod:angels": [
+      "CUSTOM:WitheredFoxy",
+      "CUSTOM:Plushtrap",
+      "CUSTOM:NightmareBB"
+    ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BrownTanTileSlab",
       "~CUSTOM:BrownTanTileStair",
@@ -28730,7 +28888,8 @@
       "ToyChicaFigure",
       "ToyFoxyFigure",
       "BBFigure",
-      "MarionetteFigure"
+      "MarionetteFigure",
+      "DisplayShelves"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -29724,6 +29883,7 @@
       "block.fnaf_mod.confetti_wall": "Wall Confetti",
       "block.fnaf_mod.red_black_tile_stair": "Red Black Tile Stairs",
       "block.fnaf_mod.error_tile_stairs_cracked": "Cracked Missing Texture Tile Stairs",
+      "block.fnaf_mod.display_shelves": "Display Shelves",
       "block.fnaf_mod.centered_freddy_sign": "Freddy Sign",
       "item.fnaf_mod.toy_freddy_spawn_item": "Toy Freddy",
       "block.fnaf_mod.center_exterior_movie_wall_tile": "Center Exterior Movie Wall Tiles",

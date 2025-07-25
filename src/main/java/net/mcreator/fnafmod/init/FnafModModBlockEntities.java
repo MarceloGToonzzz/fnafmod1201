@@ -55,6 +55,7 @@ import net.mcreator.fnafmod.block.entity.FoxyHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
+import net.mcreator.fnafmod.block.entity.DisplayShelvesTileEntity;
 import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
@@ -157,6 +158,8 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<ClownfulDollTileEntity>> CLOWNFUL_DOLL = REGISTRY.register("clownful_doll", () -> BlockEntityType.Builder.of(ClownfulDollTileEntity::new, FnafModModBlocks.CLOWNFUL_DOLL.get()).build(null));
 	public static final RegistryObject<BlockEntityType<FreddysCupcakeBonanzaTileEntity>> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register("freddys_cupcake_bonanza",
 			() -> BlockEntityType.Builder.of(FreddysCupcakeBonanzaTileEntity::new, FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DisplayShelvesTileEntity>> DISPLAY_SHELVES = REGISTRY.register("display_shelves",
+			() -> BlockEntityType.Builder.of(DisplayShelvesTileEntity::new, FnafModModBlocks.DISPLAY_SHELVES.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
