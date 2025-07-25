@@ -24,6 +24,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.fnafmod.init.FnafModModItems;
+import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.fnafmod.FnafModMod;
 
 import javax.annotation.Nullable;
@@ -51,7 +52,7 @@ public class PondersAngelsProcedure {
 		double Y_Val = 0;
 		double Z_Val = 0;
 		double X_Val = 0;
-		while (distance < 20) {
+		while (distance < 7) {
 			if (!(entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity))
 					.getType() == HitResult.Type.BLOCK)) {
 				distance = distance + 1;
@@ -74,6 +75,9 @@ public class PondersAngelsProcedure {
 															"data merge entity @s {NoAI:1}");
 												}
 											}
+											if (entityiterator instanceof WitheredFoxyEntity) {
+												((WitheredFoxyEntity) entityiterator).setAnimation("animation.witheredfoxy.sneak");
+											}
 										} else {
 											{
 												Entity _ent = entityiterator;
@@ -82,6 +86,9 @@ public class PondersAngelsProcedure {
 															_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent),
 															"data merge entity @s {NoAI:0}");
 												}
+											}
+											if (entityiterator instanceof WitheredFoxyEntity) {
+												((WitheredFoxyEntity) entityiterator).setAnimation("empty");
 											}
 										}
 									});

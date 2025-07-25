@@ -2,8 +2,8 @@ package net.mcreator.fnafmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ClipContext;
@@ -26,6 +26,9 @@ public class FlashLightOnItemInHandTickProcedure {
 		if (entity == null)
 			return;
 		double dmg = 0;
+		double Y_Val = 0;
+		double Z_Val = 0;
+		double X_Val = 0;
 		double distance = 0;
 		if ((entity.getCapability(FnafModModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FnafModModVariables.PlayerVariables())).FlashLightDamage != 0) {
 			{
@@ -90,47 +93,41 @@ public class FlashLightOnItemInHandTickProcedure {
 		} else {
 			itemstack.getOrCreateTag().putDouble("TimerFlashLightBatteryFNAFMOD", (itemstack.getOrCreateTag().getDouble("TimerFlashLightBatteryFNAFMOD") - 1));
 		}
-		if (!world.isClientSide()) {
-			distance = 1;
-			for (int index0 = 0; index0 < 10; index0++) {
-				if ((world.getBlockState(new BlockPos(
-						entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
-						entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
-						entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ())))
-						.getBlock() == FnafModModBlocks.FLASH_LIGHT_LIGHT.get() && new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, new BlockPos(
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()),
-								"Delay") < 5) {
-					if (!world.isClientSide()) {
-						BlockPos _bp = new BlockPos(
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ());
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("Delay", 5);
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-				} else {
-					if (false) {
-						world.setBlock(new BlockPos(
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
-								entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(distance)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()),
-								FnafModModBlocks.FLASH_LIGHT_LIGHT.get().defaultBlockState(), 3);
+		if (itemstack.getOrCreateTag().getDouble("distance") == 7
+				|| !((world.getBlockState(BlockPos.containing(X_Val, Y_Val, Z_Val))).getBlock() == Blocks.AIR) && !((world.getBlockState(BlockPos.containing(X_Val, Y_Val, Z_Val))).getBlock() == FnafModModBlocks.FLASH_LIGHT_LIGHT.get())) {
+			itemstack.getOrCreateTag().putDouble("distance", 0);
+		}
+		itemstack.getOrCreateTag().putDouble("distance", (itemstack.getOrCreateTag().getDouble("distance") + 1));
+		X_Val = entity.level()
+				.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((itemstack.getOrCreateTag().getDouble("distance")))), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity))
+				.getBlockPos().getX();
+		Y_Val = entity.level()
+				.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((itemstack.getOrCreateTag().getDouble("distance")))), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity))
+				.getBlockPos().getY();
+		Z_Val = entity.level()
+				.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((itemstack.getOrCreateTag().getDouble("distance")))), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity))
+				.getBlockPos().getZ();
+		if ((world.getBlockState(BlockPos.containing(X_Val, Y_Val, Z_Val))).getBlock() == Blocks.AIR) {
+			world.setBlock(BlockPos.containing(X_Val, Y_Val, Z_Val), FnafModModBlocks.FLASH_LIGHT_LIGHT.get().defaultBlockState(), 3);
+		}
+		int horizontalRadiusSquare = (int) 10 - 1;
+		int verticalRadiusSquare = (int) 10 - 1;
+		int yIterationsSquare = verticalRadiusSquare;
+		for (int i = -yIterationsSquare; i <= yIterationsSquare; i++) {
+			for (int xi = -horizontalRadiusSquare; xi <= horizontalRadiusSquare; xi++) {
+				for (int zi = -horizontalRadiusSquare; zi <= horizontalRadiusSquare; zi++) {
+					// Execute the desired statements within the square/cube
+					if ((world.getBlockState(BlockPos.containing(x + xi, y + i, z + zi))).getBlock() == FnafModModBlocks.FLASH_LIGHT_LIGHT.get() && new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x + xi, y + i, z + zi), "cooldown") == 0) {
+						world.setBlock(BlockPos.containing(x + xi, y + i, z + zi), Blocks.AIR.defaultBlockState(), 3);
 					}
 				}
-				distance = distance + 1;
 			}
 		}
 	}

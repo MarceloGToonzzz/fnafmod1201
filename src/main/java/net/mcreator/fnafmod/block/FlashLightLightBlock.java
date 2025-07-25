@@ -25,12 +25,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.fnafmod.procedures.FlashLightLightUpdateTickProcedure;
 import net.mcreator.fnafmod.procedures.FlashLightLightBlockAddedProcedure;
 import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 
@@ -95,18 +92,7 @@ public class FlashLightLightBlock extends Block implements SimpleWaterloggedBloc
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 1);
 		FlashLightLightBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		FlashLightLightUpdateTickProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

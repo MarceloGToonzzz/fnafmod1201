@@ -55,7 +55,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "FIRE"
+      "value": "NONE"
     },
     "tickRate": 1,
     "tickRandomly": false,
@@ -119,9 +119,6 @@
     "fluidRestrictions": [],
     "onBlockAdded": {
       "name": "FlashLightLightBlockAdded"
-    },
-    "onTickUpdate": {
-      "name": "FlashLightLightUpdateTick"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
