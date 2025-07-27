@@ -618,6 +618,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
 				tabData.accept(FnafModModBlocks.PIZZA_OVEN.get().asItem());
 				tabData.accept(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get().asItem());
+				tabData.accept(FnafModModBlocks.POPCORN_MACHINE.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -663,11 +664,6 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModItems.ADVENTURE_WITHERED_CHICA_SPAWN_EGG.get());
 			tabData.accept(FnafModModItems.ADVENTURE_SPRINGTRAP_SPAWN_EGG.get());
 			tabData.accept(FnafModModItems.ADVENTURE_NIGHTMARE_FREDBEAR_SPAWN_EGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(FnafModModBlocks.FREDDY_SIGN_ON.get().asItem());
-			tabData.accept(FnafModModBlocks.CENTERED_FREDDY_SIGN_ON.get().asItem());
-			tabData.accept(FnafModModBlocks.TOY_FREDDY_SIGN_ON.get().asItem());
-			tabData.accept(FnafModModBlocks.RETRO_FREDDY_SIGN_ON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(FnafModModItems.ADV_FREDDY.get());
 			tabData.accept(FnafModModItems.ADV_WITHERED_CHICA.get());

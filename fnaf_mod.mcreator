@@ -12287,8 +12287,8 @@
       "registry_name": "spring_bonnie_cut_out",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/spring_bonnie_cut_out_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/SpringBonnieCutOutEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/spring_bonnie_cut_out_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/client/renderer/SpringBonnieCutOutRenderer.java"
         ]
       },
@@ -18490,16 +18490,16 @@
       "registry_name": "freddy_sign_on",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/block/display/FreddySignOnDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/FreddySignOnBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/freddy_sign_on.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/FreddySignOnDisplayItemRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/FreddySignOnDisplayModel.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/FreddySignOnTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/FreddySignOnBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FreddySignOnDisplayItemRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/custom/freddy_sign_on_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/item/freddy_sign_on.json",
           "src/main/resources/assets/fnaf_mod/blockstates/freddy_sign_on.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/FreddySignOnDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/FreddySignOnTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/FreddySignOnBlockModel.java"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FreddySignOnTileRenderer.java"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -22314,15 +22314,15 @@
       "registry_name": "centered_freddy_sign_on",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/renderer/CenteredFreddySignOnTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/CenteredFreddySignOnBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/centered_freddy_sign_on_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/CenteredFreddySignOnBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/CenteredFreddySignOnTileEntity.java",
           "src/main/resources/assets/fnaf_mod/blockstates/centered_freddy_sign_on.json",
           "src/main/resources/assets/fnaf_mod/models/item/centered_freddy_sign_on.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/CenteredFreddySignOnBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/CenteredFreddySignOnBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/CenteredFreddySignOnDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/centered_freddy_sign_on_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/model/CenteredFreddySignOnDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CenteredFreddySignOnTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/CenteredFreddySignOnTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/display/CenteredFreddySignOnDisplayItem.java"
         ]
       },
@@ -22473,16 +22473,16 @@
       "registry_name": "toy_freddy_sign_on",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/display/ToyFreddySignOnDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_sign_on.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/toy_freddy_sign_on_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/ToyFreddySignOnBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ToyFreddySignOnTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/model/ToyFreddySignOnBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/ToyFreddySignOnDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFreddySignOnBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/ToyFreddySignOnTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/ToyFreddySignOnDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/toy_freddy_sign_on_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ToyFreddySignOnTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_sign_on.json",
           "src/main/java/net/mcreator/fnafmod/block/model/ToyFreddySignOnDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_sign_on.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_sign_on.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -22579,16 +22579,16 @@
       "registry_name": "retro_freddy_sign_on",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/display/RetroFreddySignOnDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/retro_freddy_sign_on.json",
           "src/main/java/net/mcreator/fnafmod/block/model/RetroFreddySignOnBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/model/RetroFreddySignOnDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/retro_freddy_sign_on.json",
-          "src/main/java/net/mcreator/fnafmod/block/RetroFreddySignOnBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/RetroFreddySignOnTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/retro_freddy_sign_on_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/RetroFreddySignOnDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/RetroFreddySignOnTileRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/RetroFreddySignOnBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/RetroFreddySignOnDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/RetroFreddySignOnTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/RetroFreddySignOnTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/retro_freddy_sign_on.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/retro_freddy_sign_on_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/item/retro_freddy_sign_on.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -27331,6 +27331,23 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "PopcornMachine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "popcorn_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/popcorn_machine.json",
+          "src/main/java/net/mcreator/fnafmod/block/PopcornMachineBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/popcorn_machine.json",
+          "src/main/resources/assets/fnaf_mod/models/block/popcorn_machine.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/popcorn_machine.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
     }
   ],
   "variable_elements": [
@@ -29361,7 +29378,8 @@
       "ClownfulDoll",
       "FazeerramicsControlPanel",
       "PizzaOven",
-      "FreddysCupcakeBonanza"
+      "FreddysCupcakeBonanza",
+      "PopcornMachine"
     ]
   },
   "language_map": {
@@ -29370,27 +29388,27 @@
       "block.fnaf_mod.toy_bonnie_figure": "Toy Bonnie Figure",
       "block.fnaf_mod.black_light_foxy_plushie": "Blacklight Foxy Plushie",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "block.fnaf_mod.red_white_tile_stair": "Red White Tile Stairs",
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
       "block.fnaf_mod.clownful_doll": "Clownfull Doll",
       "block.fnaf_mod.blueprint_tile": "Blueprint Tile",
-      "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
       "item.fnaf_mod.pizza_slice": "Pizza Slice",
+      "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -29407,8 +29425,8 @@
       "subtitles.blacktombyardtemp": "",
       "block.fnaf_mod.big_purple_stage_brick_tiles": "Big Purple Etched Brick Tiles",
       "entity.fnaf_mod.unwithered_foxy": "Un-Withered Foxy",
-      "block.fnaf_mod.poster_8.description_0": "Let\u0027s Party!",
       "entity.fnaf_mod.fredbear_animatronic": "Fredbear",
+      "block.fnaf_mod.poster_8.description_0": "Let\u0027s Party!",
       "entity.fnaf_mod.crawling_toy_foxy": "Crawling Toy Foxy",
       "item.fnaf_mod.our_little_horror_story": "Music Disc",
       "item.fnaf_mod.spring_bonnie_cut_out_spawn_egg": "Spring Bonnie Cutout Spawn Egg",
@@ -29416,20 +29434,20 @@
       "item.fnaf_mod.bonnie": "Drone Bonnie",
       "entity.fnaf_mod.withered_bonnie": "Withered Bonnie",
       "block.fnaf_mod.awning_yellow.description_0": "Yellow",
-      "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "entity.fnaf_mod.secret_nightmare_fredbear": "Nightmare Fredbear",
+      "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
-      "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
       "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
+      "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
       "block.fnaf_mod.stage_light_orange": "Stage Light (Orange)",
       "block.fnaf_mod.alternate_black_purple_wall_tile": "Alternate Black Purple Wall Tiles",
       "entity.fnaf_mod.glitch_bonnie_cut_out": "Glitch Bonnie Cutout",
       "item.fnaf_mod.evil_bonnie": "Dark Remnant Infused Bonnie",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
-      "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
       "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
+      "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
       "block.fnaf_mod.center_white_black_wall_tile": "Center White Stripe Wall Tiles",
       "subtitles.ovdrhonk": "\"Honk\"",
       "gui.fnaf_mod.wall_change_2.label_opposing_each_other": " Opposing Each Other",
@@ -29440,11 +29458,11 @@
       "block.fnaf_mod.pin_ball_machine_3": "Pinball Machine Blacklight Cupcake",
       "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "entity.fnaf_mod.puppet": "Puppet",
-      "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
       "effect.fnaf_mod.bleeding": "Bleeding",
+      "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
-      "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
       "block.fnaf_mod.speaker": "Speaker",
+      "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
       "item.fnaf_mod.tameable_mangle_spawn_egg": "Adventure Mangle Spawn Egg",
@@ -29453,8 +29471,8 @@
       "item.fnaf_mod.statue_foxy_spawn_egg": "Foxy Statue Spawn Egg",
       "item.fnaf_mod.nightmare_freddy_statue_spawn_egg": "Nightmare Freddy Statue Spawn Egg",
       "block.fnaf_mod.glitched_leaves": "Glitched Leaves",
-      "block.fnaf_mod.toy_freddy_sign_off": "Toy Freddy Sign",
       "block.fnaf_mod.kitchen_door": "Kitchen Door",
+      "block.fnaf_mod.toy_freddy_sign_off": "Toy Freddy Sign",
       "block.fnaf_mod.paper_pal_bonnie": "Paper Pal Bonnie",
       "block.fnaf_mod.movie_poster_1.description_0": "The Leaning Tower of Pizza!",
       "block.fnaf_mod.top_normal": "White Black Wall ",
@@ -29465,8 +29483,8 @@
       "block.fnaf_mod.center_black_black_wall_tile": "Center Black Stripe Wall Tiles",
       "block.fnaf_mod.alternate_big_wall_tile": "Alternate Big Wall Tiles",
       "item.fnaf_mod.phantom_foxy_spawn_egg": "Phantom Foxy Spawn Egg",
-      "item.fnaf_mod.adv_springtrap": "Springtrap",
       "block.fnaf_mod.golden_freddy_plushie": "Golden Freddy Plushie",
+      "item.fnaf_mod.adv_springtrap": "Springtrap",
       "block.fnaf_mod.thin_sky_curtain.description_0": "§b(Light Blue Curtain)",
       "item.fnaf_mod.passive_bonnie_spawn_egg": "Bonnie the Bunny Spawn Egg",
       "block.fnaf_mod.swamp_curtain": "Swamp Curtain",
@@ -29477,8 +29495,8 @@
       "block.fnaf_mod.mural_stage_01": "Mural",
       "block.fnaf_mod.mural_stage_01.description_0": "Fredbear\u0027s Family Diner 1972",
       "block.fnaf_mod.big_white_black_wall_tile": "Big White Wall Tiles",
-      "block.fnaf_mod.office_door": "Office Door",
       "block.fnaf_mod.fnaf_4_wall_top_room": "Tapestry Top Blue",
+      "block.fnaf_mod.office_door": "Office Door",
       "entity.fnaf_mod.withered_golden_freddy": "Withered Golden Freddy",
       "item.fnaf_mod.fredbear_animatronic_spawn_egg": "Fredbear Spawn Egg",
       "block.fnaf_mod.retro_freddy_sign_on": "Retro Freddy Sign",
@@ -29492,8 +29510,8 @@
       "block.fnaf_mod.toy_robot": "Toy Robot",
       "item.fnaf_mod.brown_plastic": "Brown Plastic",
       "block.fnaf_mod.white_wall_slab": "White Wall Slab",
-      "block.fnaf_mod.orange_speaker_left": "Speaker",
       "block.fnaf_mod.big_black_stripe_dark_wall_tile": "Big Black Stripe Dark Wall Tiles",
+      "block.fnaf_mod.orange_speaker_left": "Speaker",
       "item.fnaf_mod.phantom_puppet_spawn_item": "Phantom Puppet",
       "block.fnaf_mod.stage_brick_tiles": "Etched Brick Tiles",
       "entity.fnaf_mod.nightmare_fredbear": "Nightmare Fredbear",
@@ -29502,8 +29520,8 @@
       "item.fnaf_mod.crawling_toy_bonnie_spawn_egg": "Crawling Toy Bonnie Spawn Egg",
       "block.fnaf_mod.awning_blue": "Awning",
       "block.fnaf_mod.diner_chair": "Diner Chair {Red}",
-      "item.fnaf_mod.bonnie_suit_boots": "Bonnie Boots",
       "entity.fnaf_mod.endo_02": "Endo-02",
+      "item.fnaf_mod.bonnie_suit_boots": "Bonnie Boots",
       "entity.fnaf_mod.nightmarionne": "Nightmarionne",
       "item.fnaf_mod.waiter_hat_helmet": "Waiter Hat",
       "block.fnaf_mod.green_blue_tile_slab_cracked": "Cracked Green Blue Tile Slab",
@@ -29513,11 +29531,11 @@
       "block.fnaf_mod.birthday_banner": "Birthday Banner",
       "item.fnaf_mod.foxy_spawn": "Foxy The Pirate",
       "item.fnaf_mod.fredbear_spring_lock_suit_helmet": "Fredbear Spring Lock Head",
-      "block.fnaf_mod.purple_stage_brick_tiles": "Purple Etched Brick Tiles",
       "block.fnaf_mod.vending_machine": "Vending Machine",
-      "block.fnaf_mod.cloud_curtain.description_0": "(White Curtain)",
-      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "block.fnaf_mod.purple_stage_brick_tiles": "Purple Etched Brick Tiles",
       "item_group.fnaf_mod.structure_spawners": "Structure Spawners",
+      "block.fnaf_mod.remnant_infuser": "Remnant Infuser",
+      "block.fnaf_mod.cloud_curtain.description_0": "(White Curtain)",
       "block.fnaf_mod.fredbear_plush": "Fredbear Plushie?",
       "item.fnaf_mod.hanging_camera_spawn_egg": "Hanging Camera Spawn Egg",
       "block.fnaf_mod.berry_curtain": "Berry Curtain",
@@ -30405,6 +30423,7 @@
       "block.fnaf_mod.stage_bricks": "Etched Bricks",
       "item.fnaf_mod.pizza_cutter": "Pizza Cutter",
       "gui.fnaf_mod.camera_gui.label_with_the_monitor": "for setup!",
+      "block.fnaf_mod.popcorn_machine": "Popcorn Machine",
       "block.fnaf_mod.green_blue_tile_stair_cracked": "Cracked Green Blue Tile Stairs",
       "entity.fnaf_mod.fredbears_freddy": "Fredbear\u0027s Family Diner Freddy",
       "item.fnaf_mod.withered_bonnie_spawn_egg": "Withered Bonnie Spawn Egg",

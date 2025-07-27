@@ -177,6 +177,7 @@ import net.mcreator.fnafmod.block.Poster12Block;
 import net.mcreator.fnafmod.block.Poster11Block;
 import net.mcreator.fnafmod.block.Poster10Block;
 import net.mcreator.fnafmod.block.PopgoesPlushieBlock;
+import net.mcreator.fnafmod.block.PopcornMachineBlock;
 import net.mcreator.fnafmod.block.PlushtrapChairBlock;
 import net.mcreator.fnafmod.block.PlushFreddyBlock;
 import net.mcreator.fnafmod.block.PlushFredbearBlock;
@@ -1024,6 +1025,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> FAZEERRAMICS_CONTROL_PANEL = REGISTRY.register("fazeerramics_control_panel", () -> new FazeerramicsControlPanelBlock());
 	public static final RegistryObject<Block> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register("freddys_cupcake_bonanza", () -> new FreddysCupcakeBonanzaBlock());
 	public static final RegistryObject<Block> DISPLAY_SHELVES = REGISTRY.register("display_shelves", () -> new DisplayShelvesBlock());
+	public static final RegistryObject<Block> POPCORN_MACHINE = REGISTRY.register("popcorn_machine", () -> new PopcornMachineBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

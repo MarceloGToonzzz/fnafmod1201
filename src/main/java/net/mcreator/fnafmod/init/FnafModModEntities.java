@@ -185,11 +185,11 @@ public class FnafModModEntities {
 	public static final RegistryObject<EntityType<FredbearCutOutEntity>> FREDBEAR_CUT_OUT = register("fredbear_cut_out",
 			EntityType.Builder.<FredbearCutOutEntity>of(FredbearCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FredbearCutOutEntity::new)
 
-					.sized(0.5f, 1.8f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SpringBonnieCutOutEntity>> SPRING_BONNIE_CUT_OUT = register("spring_bonnie_cut_out",
 			EntityType.Builder.<SpringBonnieCutOutEntity>of(SpringBonnieCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringBonnieCutOutEntity::new)
 
-					.sized(0.6f, 1.95f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GlitchBonnieCutOutEntity>> GLITCH_BONNIE_CUT_OUT = register("glitch_bonnie_cut_out",
 			EntityType.Builder.<GlitchBonnieCutOutEntity>of(GlitchBonnieCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GlitchBonnieCutOutEntity::new)
 

@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.fnafmod.entity.FredbearCutOutEntity;
-import net.mcreator.fnafmod.client.model.ModelCutoutFredbear;
+import net.mcreator.fnafmod.client.model.ModelCutoutBase;
 
-public class FredbearCutOutRenderer extends MobRenderer<FredbearCutOutEntity, ModelCutoutFredbear<FredbearCutOutEntity>> {
+public class FredbearCutOutRenderer extends MobRenderer<FredbearCutOutEntity, ModelCutoutBase<FredbearCutOutEntity>> {
 	public FredbearCutOutRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCutoutFredbear<FredbearCutOutEntity>(context.bakeLayer(ModelCutoutFredbear.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCutoutBase<FredbearCutOutEntity>(context.bakeLayer(ModelCutoutBase.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -41,9 +41,6 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -102,7 +99,7 @@
     },
     "luminance": 15,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 0,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

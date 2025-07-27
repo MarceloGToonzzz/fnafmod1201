@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.fnafmod.entity.GlitchBonnieCutOutEntity;
-import net.mcreator.fnafmod.client.model.ModelCutoutSpringBonnie;
+import net.mcreator.fnafmod.client.model.ModelCutoutBase;
 
-public class GlitchBonnieCutOutRenderer extends MobRenderer<GlitchBonnieCutOutEntity, ModelCutoutSpringBonnie<GlitchBonnieCutOutEntity>> {
+public class GlitchBonnieCutOutRenderer extends MobRenderer<GlitchBonnieCutOutEntity, ModelCutoutBase<GlitchBonnieCutOutEntity>> {
 	public GlitchBonnieCutOutRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCutoutSpringBonnie<GlitchBonnieCutOutEntity>(context.bakeLayer(ModelCutoutSpringBonnie.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCutoutBase<GlitchBonnieCutOutEntity>(context.bakeLayer(ModelCutoutBase.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

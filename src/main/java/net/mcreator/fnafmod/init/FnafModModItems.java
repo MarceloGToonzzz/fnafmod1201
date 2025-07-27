@@ -1012,6 +1012,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.getId().getPath(),
 			() -> new FreddysCupcakeBonanzaDisplayItem(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DISPLAY_SHELVES = REGISTRY.register(FnafModModBlocks.DISPLAY_SHELVES.getId().getPath(), () -> new DisplayShelvesDisplayItem(FnafModModBlocks.DISPLAY_SHELVES.get(), new Item.Properties()));
+	public static final RegistryObject<Item> POPCORN_MACHINE = block(FnafModModBlocks.POPCORN_MACHINE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

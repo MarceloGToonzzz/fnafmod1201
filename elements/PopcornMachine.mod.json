@@ -1,60 +1,65 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "movie_sign_glow",
+    "texture": "popcornmachine",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
-    "rotationMode": 1,
+    "renderType": 2,
+    "customModelName": "popcorn_machine:default",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
-    "itemTexture": "freddysignitem",
-    "particleTexture": "movie_sign",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -32.0,
+        "mx": 2.0,
         "my": 0.0,
-        "mz": 9.0,
-        "Mx": 32.0,
-        "My": 40.0,
-        "Mz": 16.0,
+        "mz": 2.0,
+        "Mx": 14.0,
+        "My": 18.0,
+        "Mz": 14.0,
         "subtract": false
       }
     ],
-    "name": "Freddy Sign",
+    "customProperties": [],
+    "name": "Popcorn Machine",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 8.0,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
-    "destroyTool": "pickaxe",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:FNAFBlocks"
+      }
+    ],
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:FreddySignOff"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -65,7 +70,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:FreddySignOff"
+      "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -75,7 +80,6 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -97,17 +101,16 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 15,
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -118,19 +121,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRedstoneOff": {
-      "name": "FreddySignOnRedstoneOff"
-    },
+    "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "freddysign.geo.json",
-    "displaySettings": "freddyhead.item.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "maxGenerateHeight": 64
   }
 }

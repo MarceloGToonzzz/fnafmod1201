@@ -39,6 +39,7 @@ import net.mcreator.fnafmod.client.model.ModelFredbearFNAF4;
 import net.mcreator.fnafmod.client.model.ModelFoxyMask;
 import net.mcreator.fnafmod.client.model.ModelCutoutSpringBonnie;
 import net.mcreator.fnafmod.client.model.ModelCutoutFredbear;
+import net.mcreator.fnafmod.client.model.ModelCutoutBase;
 import net.mcreator.fnafmod.client.model.ModelCustomModel;
 import net.mcreator.fnafmod.client.model.ModelChicaMask;
 import net.mcreator.fnafmod.client.model.ModelBonnieStand;
@@ -61,6 +62,7 @@ public class FnafModModModels {
 		event.registerLayerDefinition(ModelSpringBonnieMask.LAYER_LOCATION, ModelSpringBonnieMask::createBodyLayer);
 		event.registerLayerDefinition(ModelUnwitheredChica_Posed.LAYER_LOCATION, ModelUnwitheredChica_Posed::createBodyLayer);
 		event.registerLayerDefinition(Modeltoybox.LAYER_LOCATION, Modeltoybox::createBodyLayer);
+		event.registerLayerDefinition(ModelCutoutBase.LAYER_LOCATION, ModelCutoutBase::createBodyLayer);
 		event.registerLayerDefinition(ModelCutoutSpringBonnie.LAYER_LOCATION, ModelCutoutSpringBonnie::createBodyLayer);
 		event.registerLayerDefinition(Modelbullet.LAYER_LOCATION, Modelbullet::createBodyLayer);
 		event.registerLayerDefinition(ModelBonnieMask.LAYER_LOCATION, ModelBonnieMask::createBodyLayer);

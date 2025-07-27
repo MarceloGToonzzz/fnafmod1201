@@ -1,6 +1,8 @@
 
 package net.mcreator.fnafmod.block;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -36,7 +38,7 @@ public class FreddysCupcakeBonanzaBlock extends BaseEntityBlock implements Entit
 	public FreddysCupcakeBonanzaBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.LANTERN).strength(6f, 5f));
+				.sound(SoundType.LANTERN).strength(6f, 5f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -59,6 +61,17 @@ public class FreddysCupcakeBonanzaBlock extends BaseEntityBlock implements Entit
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 32, 16);
+			case NORTH -> box(0, 0, 0, 16, 32, 16);
+			case EAST -> box(0, 0, 0, 16, 32, 16);
+			case WEST -> box(0, 0, 0, 16, 32, 16);
+		};
 	}
 
 	@Override

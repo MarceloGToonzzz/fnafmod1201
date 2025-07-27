@@ -4,15 +4,27 @@
   "definition": {
     "mobName": "Spring Bonnie Cutout",
     "mobLabel": "",
-    "mobModelName": "ModelCutoutSpringBonnie",
+    "mobModelName": "ModelCutoutBase",
     "mobModelTexture": "spring_bonnie_cutout.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "animations": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.95,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -66,6 +78,9 @@
     "breatheUnderwater": {
       "fixedValue": true
     },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -100,6 +115,9 @@
     },
     "stepSound": {
       "value": "CUSTOM:animatronic_step"
+    },
+    "raidCelebrationSound": {
+      "value": ""
     },
     "entityDataEntries": [],
     "onRightClickedOn": {

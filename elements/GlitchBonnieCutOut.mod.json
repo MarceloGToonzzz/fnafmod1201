@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Glitch Bonnie Cutout",
     "mobLabel": "",
-    "mobModelName": "ModelCutoutSpringBonnie",
+    "mobModelName": "ModelCutoutBase",
     "mobModelTexture": "glitch_bonnie_cutout.png",
     "transparentModelCondition": {
       "fixedValue": false
