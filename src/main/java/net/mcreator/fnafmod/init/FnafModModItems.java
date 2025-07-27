@@ -1013,6 +1013,14 @@ public class FnafModModItems {
 			() -> new FreddysCupcakeBonanzaDisplayItem(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DISPLAY_SHELVES = REGISTRY.register(FnafModModBlocks.DISPLAY_SHELVES.getId().getPath(), () -> new DisplayShelvesDisplayItem(FnafModModBlocks.DISPLAY_SHELVES.get(), new Item.Properties()));
 	public static final RegistryObject<Item> POPCORN_MACHINE = block(FnafModModBlocks.POPCORN_MACHINE);
+	public static final RegistryObject<Item> FREDDY_CUT_OUT_SPAWN_EGG = REGISTRY.register("freddy_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDDY_CUT_OUT, -13886698, -12835044, new Item.Properties()));
+	public static final RegistryObject<Item> BONNIE_CUT_OUT_SPAWN_EGG = REGISTRY.register("bonnie_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.BONNIE_CUT_OUT, -15918483, -13413243, new Item.Properties()));
+	public static final RegistryObject<Item> CHICA_CUT_OUT_SPAWN_EGG = REGISTRY.register("chica_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.CHICA_CUT_OUT, -4681450, -3780683, new Item.Properties()));
+	public static final RegistryObject<Item> FOXY_CUT_OUT_SPAWN_EGG = REGISTRY.register("foxy_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FOXY_CUT_OUT, -6808566, -2913445, new Item.Properties()));
+	public static final RegistryObject<Item> TOY_FREDDY_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_freddy_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_FREDDY_CUT_OUT, -6206952, -6216411, new Item.Properties()));
+	public static final RegistryObject<Item> TOY_BONNIE_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_bonnie_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_BONNIE_CUT_OUT, -14253378, -6156529, new Item.Properties()));
+	public static final RegistryObject<Item> TOY_CHICA_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_chica_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_CHICA_CUT_OUT, -2176696, -4511099, new Item.Properties()));
+	public static final RegistryObject<Item> TOY_FOXY_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_foxy_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_FOXY_CUT_OUT, -7440, -3316047, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

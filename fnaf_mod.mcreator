@@ -12277,7 +12277,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/FredbearCutOutEntity.java"
         ]
       },
-      "path": "~/Entities/StatueAnimatronics"
+      "path": "~/Entities/CutOuts"
     },
     {
       "name": "SpringBonnieCutOut",
@@ -12292,7 +12292,7 @@
           "src/main/java/net/mcreator/fnafmod/client/renderer/SpringBonnieCutOutRenderer.java"
         ]
       },
-      "path": "~/Entities/StatueAnimatronics"
+      "path": "~/Entities/CutOuts"
     },
     {
       "name": "GlitchBonnieCutOut",
@@ -12307,7 +12307,7 @@
           "src/main/java/net/mcreator/fnafmod/client/renderer/GlitchBonnieCutOutRenderer.java"
         ]
       },
-      "path": "~/Entities/StatueAnimatronics"
+      "path": "~/Entities/CutOuts"
     },
     {
       "name": "Phone",
@@ -27348,6 +27348,126 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "FreddyCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freddy_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/freddy_cut_out_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/FreddyCutOutEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FreddyCutOutRenderer.java"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "BonnieCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonnie_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/bonnie_cut_out_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/BonnieCutOutRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/BonnieCutOutEntity.java"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "ChicaCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chica_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/ChicaCutOutEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ChicaCutOutRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/chica_cut_out_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "FoxyCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "foxy_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/FoxyCutOutEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/foxy_cut_out_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FoxyCutOutRenderer.java"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "ToyFreddyCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_freddy_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_cut_out_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/ToyFreddyCutOutEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyFreddyCutOutRenderer.java"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "ToyBonnieCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_bonnie_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_cut_out_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/ToyBonnieCutOutEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyBonnieCutOutRenderer.java"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "ToyChicaCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/ToyChicaCutOutEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyChicaCutOutRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_cut_out_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "ToyFoxyCutOut",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_cut_out",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyFoxyCutOutRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/ToyFoxyCutOutEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_cut_out_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities/CutOuts"
     }
   ],
   "variable_elements": [
@@ -29022,7 +29142,15 @@
       "CryingChild",
       "Freddles",
       "SittingFredbear",
-      "SittingSpringBonnie"
+      "SittingSpringBonnie",
+      "FreddyCutOut",
+      "BonnieCutOut",
+      "ChicaCutOut",
+      "FoxyCutOut",
+      "ToyFreddyCutOut",
+      "ToyBonnieCutOut",
+      "ToyChicaCutOut",
+      "ToyFoxyCutOut"
     ],
     "CUSTOM:FNAFBlocks": [
       "BlackWhiteTile",
@@ -29460,6 +29588,7 @@
       "entity.fnaf_mod.puppet": "Puppet",
       "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
+      "entity.fnaf_mod.bonnie_cut_out": "Bonnie Cutout",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
       "block.fnaf_mod.speaker": "Speaker",
       "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
@@ -29515,6 +29644,7 @@
       "item.fnaf_mod.phantom_puppet_spawn_item": "Phantom Puppet",
       "block.fnaf_mod.stage_brick_tiles": "Etched Brick Tiles",
       "entity.fnaf_mod.nightmare_fredbear": "Nightmare Fredbear",
+      "entity.fnaf_mod.toy_foxy_cut_out": "Toy Foxy Cutout",
       "block.fnaf_mod.plush_freddy": "Freddy Plush",
       "entity.fnaf_mod.tameable_chica": "Adventure Withered Chica",
       "item.fnaf_mod.crawling_toy_bonnie_spawn_egg": "Crawling Toy Bonnie Spawn Egg",
@@ -29642,6 +29772,7 @@
       "entity.fnaf_mod.nightime_toy_chica": "Toy Chica",
       "block.fnaf_mod.fredbear_floor_clean": "Fredbear\u0027s Floor",
       "item.fnaf_mod.circuit_board": "Circuit Board",
+      "entity.fnaf_mod.freddy_cut_out": "Freddy Cutout",
       "entity.fnaf_mod.passive_goldie": "YellowBear",
       "item.fnaf_mod.nightmare_foxy_statue_spawn_item": "Nightmare Foxy (Statue)",
       "subtitles.f1": "Honk",
@@ -29674,6 +29805,7 @@
       "item.fnaf_mod.shadow_freddy_standing_spawn_egg": "Shadow Freddy Spawn Egg",
       "subtitles.itsbeensolong": "",
       "item.fnaf_mod.nightmare_fredbear_spawn_egg": "Nightmare Fredbear Spawn Egg",
+      "item.fnaf_mod.toy_freddy_cut_out_spawn_egg": "Toy Freddy Cutout Spawn Egg",
       "block.fnaf_mod.chain_fence": "Chain Gate",
       "block.fnaf_mod.backstage_door": "Backstage Door",
       "item_group.fnaf_mod.decorative_blocks": "Decorative Blocks",
@@ -29842,6 +29974,7 @@
       "item.fnaf_mod.our_little_horror_story.desc": "Our Little Horror Story Funky Mix - SomethingFunky",
       "item.fnaf_mod.springtrap_spawn_item": "Springtrap",
       "item.fnaf_mod.freddy": "Drone Freddy",
+      "item.fnaf_mod.chica_cut_out_spawn_egg": "Chica Cutout Spawn Egg",
       "block.fnaf_mod.alternate_white_purple_wall_tiles": "Alternate White Purple Wall Tiles",
       "item.fnaf_mod.nightmare_bonnie_spawn_egg": "Nightmare Bonnie Spawn Egg",
       "block.fnaf_mod.stage_light_green_on": "Stage Light (Green)",
@@ -29865,6 +29998,7 @@
       "block.fnaf_mod.big_black_striped_stage_brick_tiles": "Big Black Striped Etched Brick Tiles",
       "block.fnaf_mod.big_movie_exterior_wall_tiles": "Big Movie Exterior Wall Tiles",
       "item.fnaf_mod.nightmare_foxy_spawn_item": "Nightmare Foxy",
+      "entity.fnaf_mod.chica_cut_out": "Chica Cutout",
       "entity.fnaf_mod.jack_o_chica": "Jack-O Chica",
       "block.fnaf_mod.alternate_big_white_black_wall_tile": "Alternate Big White Wall Tiles",
       "block.fnaf_mod.balloon_yellow": "Yellow Balloon",
@@ -29917,6 +30051,7 @@
       "block.fnaf_mod.desk_3": "Desk (Bobble Heads)",
       "block.fnaf_mod.diagonal_wall_connector_top": "Diagonal Wall Connector Top",
       "item.fnaf_mod.day_time_toy_bonnie_spawn_egg": "DayTime Toy Bonnie Spawn Egg",
+      "item.fnaf_mod.foxy_cut_out_spawn_egg": "Foxy Cutout Spawn Egg",
       "entity.fnaf_mod.nightmare_foxy_statue": "Nightmare Foxy Statue",
       "item.fnaf_mod.withered_chica_spawn_egg": "Withered Chica Spawn Egg",
       "item.fnaf_mod.shadow_freddy_spawn_egg": "Shadow Freddy Spawn Egg",
@@ -29934,6 +30069,7 @@
       "block.fnaf_mod.fnaf_4_wall_bottom_rotable_4": "Tapestry Bottom Rotable Type D",
       "item.fnaf_mod.mangle_spawn_egg": "Mangle Spawn Egg",
       "block.fnaf_mod.poster_10.description_0": "It\u0027s Me",
+      "item.fnaf_mod.freddy_cut_out_spawn_egg": "Freddy Cutout Spawn Egg",
       "block.fnaf_mod.copper_shingles_stairs": "Copper Shingle Stairs",
       "item.fnaf_mod.tameable_adventure_freddy_spawn_egg": "Adventure Freddy Spawn Egg",
       "block.fnaf_mod.berry_curtain.description_0": "§d(Magenta Curtain)",
@@ -29943,6 +30079,7 @@
       "block.fnaf_mod.alternate_big_movie_wall_tile": "Alternate Big Movie Wall Tiles",
       "block.fnaf_mod.blueprint_tile_slab": "Blueprint Tile Slab",
       "block.fnaf_mod.yellow_wall_middle.description_0": "Middle",
+      "item.fnaf_mod.toy_foxy_cut_out_spawn_egg": "Toy Foxy Cutout Spawn Egg",
       "block.fnaf_mod.center_big_white_black_green_wall_tile": "Center Big White Green Wall Tiles",
       "block.fnaf_mod.red_door": "Red Establishment Door",
       "item.fnaf_mod.pat_pat_spawn_egg": "PatPat Spawn Egg",
@@ -29981,11 +30118,13 @@
       "item.fnaf_mod.tameable_chica_spawn_egg": "Adventure Withered Chica Spawn Egg",
       "block.fnaf_mod.alternate_big_white_red_wall_tile": "Alternate Big White Red Wall Tiles",
       "block.fnaf_mod.center_stage_black_brick_tiles": "Center Etched Black Stripe Brick Tiles",
+      "entity.fnaf_mod.toy_freddy_cut_out": "Toy Freddy Cutout",
       "block.fnaf_mod.red_wood_door": "Red Wood Door",
       "block.fnaf_mod.plush_chica": "Chica Plush",
       "block.fnaf_mod.streamer_oval": "Streamer",
       "gui.fnaf_mod.wall_change_2.label_forming_a_corner": "Forming a Corner",
       "item.fnaf_mod.freddy_mask_helmet": "Freddy Mask",
+      "item.fnaf_mod.bonnie_cut_out_spawn_egg": "Bonnie Cutout Spawn Egg",
       "subtitles.blacktombyard": "",
       "entity.fnaf_mod.foxy_pirate": "Foxy the Pirate",
       "item.fnaf_mod.spring_bonnie_animatronic_spawn_egg": "Spring Bonnie Spawn Egg",
@@ -29995,6 +30134,7 @@
       "subtitles.fnaf4scream": "jumpscare",
       "biome.fnaf_mod.fazbear_hills": "Fazbear Hills",
       "block.fnaf_mod.closet_left_top": "Closet Door",
+      "entity.fnaf_mod.foxy_cut_out": "Foxy Cutout",
       "item.fnaf_mod.white_plastic": "White Plastic",
       "block.fnaf_mod.black_light_bonnie_plushie": "Blacklight Bonnie Plushie",
       "item.fnaf_mod.happiest_day.desc": "Bad Ending - _ShadowDest_",
@@ -30007,6 +30147,7 @@
       "block.fnaf_mod.awning_red": "Awning",
       "item.fnaf_mod.nightmarione_statue_spawn_egg": "Nightmarionne Statue Spawn Egg",
       "subtitles.bod2intro": "What Have you Done?",
+      "entity.fnaf_mod.toy_bonnie_cut_out": "Toy Bonnie Cutout",
       "block.fnaf_mod.fancy_candy_curtain": "Fancy Candy Curtain",
       "item.fnaf_mod.unwithered_foxy_spawn_item": "Unwithered Foxy",
       "block.fnaf_mod.center_big_stage_purple_brick_tile": "Center Big Etched Purple Stripe Brick Tiles",
@@ -30370,6 +30511,7 @@
       "item.fnaf_mod.nightmare_fredbear_statue_spawn_egg": "Nightmare Fredbear Statue Spawn Egg",
       "block.fnaf_mod.center_white_red_wall_tile": "Center White Wall Tiles",
       "item.fnaf_mod.jack_o_chica_spawn_item": "Jack-o-Chica",
+      "item.fnaf_mod.toy_chica_cut_out_spawn_egg": "Toy Chica Cutout Spawn Egg",
       "block.fnaf_mod.purple_checkered_curtain": "Purple Checkered Curtain",
       "block.fnaf_mod.wall_pizza": "Wall Pizza",
       "entity.fnaf_mod.freddles": "Freddles",
@@ -30491,6 +30633,7 @@
       "entity.fnaf_mod.passive_bonnie": "Bonnie the Bunny",
       "death.attack.springlocked": "%s Bled out to Death",
       "block.fnaf_mod.thin_sky_curtain": "Thin Sky Curtain",
+      "item.fnaf_mod.toy_bonnie_cut_out_spawn_egg": "Toy Bonnie Cutout Spawn Egg",
       "subtitles.bod": "What Have you Brought in This World?",
       "entity.fnaf_mod.tameable_springtrap": "Adventure Springtrap",
       "block.fnaf_mod.checkered_tile": "Checkered Tile",
@@ -30530,6 +30673,7 @@
       "block.fnaf_mod.lime_curtain.description_0": "§a(Lime Curtain)",
       "subtitles.c1alt": "Honk",
       "block.fnaf_mod.toy_chica_plushie": "Toy Chica Plushie",
+      "entity.fnaf_mod.toy_chica_cut_out": "Toy Chica Cutout",
       "entity.fnaf_mod.nightmare_bb": "Nightmare Balloon Boy",
       "block.fnaf_mod.poster_3.description_0": "Poster of Chica the Chicken!",
       "block.fnaf_mod.vent": "Vent",
@@ -30758,6 +30902,10 @@
           },
           {
             "name": "Functions",
+            "children": []
+          },
+          {
+            "name": "CutOuts",
             "children": []
           }
         ]

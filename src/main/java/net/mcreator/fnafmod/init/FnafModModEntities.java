@@ -26,10 +26,14 @@ import net.mcreator.fnafmod.entity.UnwitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredChicaEntity;
 import net.mcreator.fnafmod.entity.UnwitheredBonnieEntity;
 import net.mcreator.fnafmod.entity.ToyFreddyEntity;
+import net.mcreator.fnafmod.entity.ToyFreddyCutOutEntity;
 import net.mcreator.fnafmod.entity.ToyFoxyEntity;
+import net.mcreator.fnafmod.entity.ToyFoxyCutOutEntity;
 import net.mcreator.fnafmod.entity.ToyChicaEntity;
+import net.mcreator.fnafmod.entity.ToyChicaCutOutEntity;
 import net.mcreator.fnafmod.entity.ToyBoxEntity;
 import net.mcreator.fnafmod.entity.ToyBonnieEntity;
+import net.mcreator.fnafmod.entity.ToyBonnieCutOutEntity;
 import net.mcreator.fnafmod.entity.TheCrooblerEntity;
 import net.mcreator.fnafmod.entity.TameableSpringtrapEntity;
 import net.mcreator.fnafmod.entity.TameableMangleEntity;
@@ -107,6 +111,7 @@ import net.mcreator.fnafmod.entity.FullHostileChicaEntity;
 import net.mcreator.fnafmod.entity.FullHostileBonnieEntity;
 import net.mcreator.fnafmod.entity.FreddyStandEntity;
 import net.mcreator.fnafmod.entity.FreddyFazbearEntity;
+import net.mcreator.fnafmod.entity.FreddyCutOutEntity;
 import net.mcreator.fnafmod.entity.FreddlesEntity;
 import net.mcreator.fnafmod.entity.FredbearsFreddyEntity;
 import net.mcreator.fnafmod.entity.FredbearsFoxyEntity;
@@ -115,6 +120,7 @@ import net.mcreator.fnafmod.entity.FredbearsBonnieEntity;
 import net.mcreator.fnafmod.entity.FredbearCutOutEntity;
 import net.mcreator.fnafmod.entity.FredbearAnimatronicEntity;
 import net.mcreator.fnafmod.entity.FoxyPirateEntity;
+import net.mcreator.fnafmod.entity.FoxyCutOutEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
@@ -134,11 +140,13 @@ import net.mcreator.fnafmod.entity.CrawlingToyChicaEntity;
 import net.mcreator.fnafmod.entity.CrawlingToyBonnieEntity;
 import net.mcreator.fnafmod.entity.CrawlingSpringtrapEntity;
 import net.mcreator.fnafmod.entity.CrawlingMangleEntity;
+import net.mcreator.fnafmod.entity.ChicaCutOutEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.CameraEntity;
 import net.mcreator.fnafmod.entity.BreadbearEntity;
 import net.mcreator.fnafmod.entity.BooletProjectileEntity;
 import net.mcreator.fnafmod.entity.BonnieStandEntity;
+import net.mcreator.fnafmod.entity.BonnieCutOutEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
 import net.mcreator.fnafmod.entity.BBEntity;
 import net.mcreator.fnafmod.entity.AdventureWitheredChicaEntity;
@@ -668,6 +676,38 @@ public class FnafModModEntities {
 			EntityType.Builder.<TameableFredbearEntity>of(TameableFredbearEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TameableFredbearEntity::new)
 
 					.sized(0.6f, 0.9f));
+	public static final RegistryObject<EntityType<FreddyCutOutEntity>> FREDDY_CUT_OUT = register("freddy_cut_out",
+			EntityType.Builder.<FreddyCutOutEntity>of(FreddyCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FreddyCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BonnieCutOutEntity>> BONNIE_CUT_OUT = register("bonnie_cut_out",
+			EntityType.Builder.<BonnieCutOutEntity>of(BonnieCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BonnieCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChicaCutOutEntity>> CHICA_CUT_OUT = register("chica_cut_out",
+			EntityType.Builder.<ChicaCutOutEntity>of(ChicaCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChicaCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FoxyCutOutEntity>> FOXY_CUT_OUT = register("foxy_cut_out",
+			EntityType.Builder.<FoxyCutOutEntity>of(FoxyCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FoxyCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToyFreddyCutOutEntity>> TOY_FREDDY_CUT_OUT = register("toy_freddy_cut_out",
+			EntityType.Builder.<ToyFreddyCutOutEntity>of(ToyFreddyCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToyFreddyCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToyBonnieCutOutEntity>> TOY_BONNIE_CUT_OUT = register("toy_bonnie_cut_out",
+			EntityType.Builder.<ToyBonnieCutOutEntity>of(ToyBonnieCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToyBonnieCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToyChicaCutOutEntity>> TOY_CHICA_CUT_OUT = register("toy_chica_cut_out",
+			EntityType.Builder.<ToyChicaCutOutEntity>of(ToyChicaCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToyChicaCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToyFoxyCutOutEntity>> TOY_FOXY_CUT_OUT = register("toy_foxy_cut_out",
+			EntityType.Builder.<ToyFoxyCutOutEntity>of(ToyFoxyCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToyFoxyCutOutEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -808,6 +848,14 @@ public class FnafModModEntities {
 			TameableChicaEntity.init();
 			TameableSpringtrapEntity.init();
 			TameableFredbearEntity.init();
+			FreddyCutOutEntity.init();
+			BonnieCutOutEntity.init();
+			ChicaCutOutEntity.init();
+			FoxyCutOutEntity.init();
+			ToyFreddyCutOutEntity.init();
+			ToyBonnieCutOutEntity.init();
+			ToyChicaCutOutEntity.init();
+			ToyFoxyCutOutEntity.init();
 		});
 	}
 
@@ -943,5 +991,13 @@ public class FnafModModEntities {
 		event.put(TAMEABLE_CHICA.get(), TameableChicaEntity.createAttributes().build());
 		event.put(TAMEABLE_SPRINGTRAP.get(), TameableSpringtrapEntity.createAttributes().build());
 		event.put(TAMEABLE_FREDBEAR.get(), TameableFredbearEntity.createAttributes().build());
+		event.put(FREDDY_CUT_OUT.get(), FreddyCutOutEntity.createAttributes().build());
+		event.put(BONNIE_CUT_OUT.get(), BonnieCutOutEntity.createAttributes().build());
+		event.put(CHICA_CUT_OUT.get(), ChicaCutOutEntity.createAttributes().build());
+		event.put(FOXY_CUT_OUT.get(), FoxyCutOutEntity.createAttributes().build());
+		event.put(TOY_FREDDY_CUT_OUT.get(), ToyFreddyCutOutEntity.createAttributes().build());
+		event.put(TOY_BONNIE_CUT_OUT.get(), ToyBonnieCutOutEntity.createAttributes().build());
+		event.put(TOY_CHICA_CUT_OUT.get(), ToyChicaCutOutEntity.createAttributes().build());
+		event.put(TOY_FOXY_CUT_OUT.get(), ToyFoxyCutOutEntity.createAttributes().build());
 	}
 }

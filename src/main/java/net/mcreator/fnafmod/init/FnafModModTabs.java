@@ -261,6 +261,14 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.FREDDLES_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.SITTING_FREDBEAR_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.SITTING_SPRING_BONNIE_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.FREDDY_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.BONNIE_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.CHICA_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.FOXY_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.TOY_FREDDY_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.TOY_BONNIE_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.TOY_CHICA_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.TOY_FOXY_CUT_OUT_SPAWN_EGG.get());
 			}).withTabsBefore(FNAF_ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_BLOCKS = REGISTRY.register("fnaf_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PURPLE_CURTAIN.get())).displayItems((parameters, tabData) -> {
