@@ -1,5 +1,6 @@
 {
   "subtitles.bod2": "What Have you Brought in This World?",
+  "block.fnaf_mod.empty_pizza_box": "Empty Pizza Box",
   "block.fnaf_mod.toy_bonnie_figure": "Toy Bonnie Figure",
   "block.fnaf_mod.black_light_foxy_plushie": "Blacklight Foxy Plushie",
   "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
@@ -974,6 +975,7 @@
   "item.fnaf_mod.daytime_chica_spawn_egg": "DaytimeChica Spawn Egg",
   "block.fnaf_mod.movie_chair": "Movie Chair",
   "subtitles.ballpit": "Walking in the Ball Pit",
+  "item.fnaf_mod.faz_coin": "Faz-Coin",
   "item.fnaf_mod.passive_spring_bonnie_spawn_egg": "Spring Bonnie Spawn Egg",
   "block.fnaf_mod.lined_wall": "Lined Wall ",
   "item.fnaf_mod.fredbears_foxy_spawn_item": "Diner Foxy",

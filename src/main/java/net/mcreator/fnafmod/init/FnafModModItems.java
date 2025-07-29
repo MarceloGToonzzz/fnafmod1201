@@ -117,6 +117,7 @@ import net.mcreator.fnafmod.item.FoxyFabricItem;
 import net.mcreator.fnafmod.item.FlashLightOnItem;
 import net.mcreator.fnafmod.item.FlashLightItem;
 import net.mcreator.fnafmod.item.FazbearShowtimeItem;
+import net.mcreator.fnafmod.item.FazCoinItem;
 import net.mcreator.fnafmod.item.EvilFreddyItemSpawnItem;
 import net.mcreator.fnafmod.item.EvilFoxyItemItem;
 import net.mcreator.fnafmod.item.EvilChicaItemItem;
@@ -1021,6 +1022,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> TOY_BONNIE_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_bonnie_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_BONNIE_CUT_OUT, -14253378, -6156529, new Item.Properties()));
 	public static final RegistryObject<Item> TOY_CHICA_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_chica_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_CHICA_CUT_OUT, -2176696, -4511099, new Item.Properties()));
 	public static final RegistryObject<Item> TOY_FOXY_CUT_OUT_SPAWN_EGG = REGISTRY.register("toy_foxy_cut_out_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.TOY_FOXY_CUT_OUT, -7440, -3316047, new Item.Properties()));
+	public static final RegistryObject<Item> EMPTY_PIZZA_BOX = block(FnafModModBlocks.EMPTY_PIZZA_BOX);
+	public static final RegistryObject<Item> FAZ_COIN = REGISTRY.register("faz_coin", () -> new FazCoinItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

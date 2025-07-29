@@ -13174,7 +13174,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Tags"
+      "path": "~/Trades"
     },
     {
       "name": "AlternateStageBrickTiles",
@@ -22685,16 +22685,16 @@
       "registry_name": "fredbear_sign",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/renderer/FredbearSignTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/FredbearSignDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/FredbearSignTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FredbearSignDisplayItemRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/fredbear_sign.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FredbearSignTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/FredbearSignTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/model/FredbearSignDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbear_sign.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/fredbear_sign_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/model/FredbearSignBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/FredbearSignDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/fredbear_sign_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/FredbearSignBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/FredbearSignDisplayItemRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbear_sign.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -27138,7 +27138,8 @@
         "files": [
           "src/main/resources/assets/fnaf_mod/textures/entity/villager/profession/prize_counter_teller.png.mcmeta"
         ]
-      }
+      },
+      "path": "~/Trades"
     },
     {
       "name": "FazeerramicsControlPanel",
@@ -27468,6 +27469,47 @@
         ]
       },
       "path": "~/Entities/CutOuts"
+    },
+    {
+      "name": "EmptyPizzaBox",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_pizza_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/empty_pizza_box.json",
+          "src/main/resources/assets/fnaf_mod/models/item/empty_pizza_box.json",
+          "src/main/java/net/mcreator/fnafmod/block/EmptyPizzaBoxBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/empty_pizza_box.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "FazCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faz_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/faz_coin.json",
+          "src/main/java/net/mcreator/fnafmod/item/FazCoinItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TellerTrades",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teller_trades",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Trades"
     }
   ],
   "variable_elements": [
@@ -29058,7 +29100,8 @@
       "PizzaSlice",
       "GuardHat",
       "WaiterHat",
-      "Battery"
+      "Battery",
+      "FazCoin"
     ],
     "CUSTOM:FNAFMobs": [
       "FreddySpawnItem",
@@ -29507,12 +29550,14 @@
       "FazeerramicsControlPanel",
       "PizzaOven",
       "FreddysCupcakeBonanza",
-      "PopcornMachine"
+      "PopcornMachine",
+      "EmptyPizzaBox"
     ]
   },
   "language_map": {
     "en_us": {
       "subtitles.bod2": "What Have you Brought in This World?",
+      "block.fnaf_mod.empty_pizza_box": "Empty Pizza Box",
       "block.fnaf_mod.toy_bonnie_figure": "Toy Bonnie Figure",
       "block.fnaf_mod.black_light_foxy_plushie": "Blacklight Foxy Plushie",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
@@ -30487,6 +30532,7 @@
       "item.fnaf_mod.daytime_chica_spawn_egg": "DaytimeChica Spawn Egg",
       "block.fnaf_mod.movie_chair": "Movie Chair",
       "subtitles.ballpit": "Walking in the Ball Pit",
+      "item.fnaf_mod.faz_coin": "Faz-Coin",
       "item.fnaf_mod.passive_spring_bonnie_spawn_egg": "Spring Bonnie Spawn Egg",
       "block.fnaf_mod.lined_wall": "Lined Wall ",
       "item.fnaf_mod.fredbears_foxy_spawn_item": "Diner Foxy",
@@ -30949,6 +30995,10 @@
       },
       {
         "name": "meph testing",
+        "children": []
+      },
+      {
+        "name": "Trades",
         "children": []
       }
     ]

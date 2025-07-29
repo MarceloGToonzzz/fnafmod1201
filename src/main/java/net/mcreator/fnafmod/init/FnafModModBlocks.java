@@ -309,6 +309,7 @@ import net.mcreator.fnafmod.block.ErrorTileSlabBlock;
 import net.mcreator.fnafmod.block.ErrorTileCrackedBlock;
 import net.mcreator.fnafmod.block.ErrorTileBlock;
 import net.mcreator.fnafmod.block.EndoBlockBlock;
+import net.mcreator.fnafmod.block.EmptyPizzaBoxBlock;
 import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
 import net.mcreator.fnafmod.block.DrywallBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
@@ -1026,6 +1027,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> FREDDYS_CUPCAKE_BONANZA = REGISTRY.register("freddys_cupcake_bonanza", () -> new FreddysCupcakeBonanzaBlock());
 	public static final RegistryObject<Block> DISPLAY_SHELVES = REGISTRY.register("display_shelves", () -> new DisplayShelvesBlock());
 	public static final RegistryObject<Block> POPCORN_MACHINE = REGISTRY.register("popcorn_machine", () -> new PopcornMachineBlock());
+	public static final RegistryObject<Block> EMPTY_PIZZA_BOX = REGISTRY.register("empty_pizza_box", () -> new EmptyPizzaBoxBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

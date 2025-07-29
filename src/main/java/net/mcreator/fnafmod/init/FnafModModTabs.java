@@ -176,6 +176,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.GUARD_HAT_HELMET.get());
 				tabData.accept(FnafModModItems.WAITER_HAT_HELMET.get());
 				tabData.accept(FnafModModItems.BATTERY.get());
+				tabData.accept(FnafModModItems.FAZ_COIN.get());
 			}).withTabsBefore(DECORATIVE_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_MOBS = REGISTRY.register("fnaf_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_mobs")).icon(() -> new ItemStack(FnafModModItems.FREDDY.get())).displayItems((parameters, tabData) -> {
@@ -627,6 +628,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PIZZA_OVEN.get().asItem());
 				tabData.accept(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get().asItem());
 				tabData.accept(FnafModModBlocks.POPCORN_MACHINE.get().asItem());
+				tabData.accept(FnafModModBlocks.EMPTY_PIZZA_BOX.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

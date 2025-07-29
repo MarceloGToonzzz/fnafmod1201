@@ -1,66 +1,67 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "bear",
+    "texture": "freddys_pizza_box",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
+    "renderType": 2,
+    "customModelName": "empty_pizza_box:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
-    "itemTexture": "fredbearsignitem",
-    "particleTexture": "bear",
+    "itemTexture": "pizza_open",
+    "particleTexture": "freddys_pizza_box",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -32.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 9.0,
-        "Mx": 32.0,
-        "My": 40.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 2.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Fredbear Sign",
+    "customProperties": [],
+    "name": "Empty Pizza Box",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.8,
+    "resistance": 0.8,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:DecorativeBlocks"
+        "value": "CUSTOM:FNAFBlocks"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:PizzaSlice"
     },
-    "dropAmount": 1,
-    "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "dropAmount": 8,
+    "useLootTableForDrops": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
-    "tickRate": 0,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -79,12 +80,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "LANTERN"
+      "value": "AZALEA_LEAVES"
     },
     "breakSound": {
       "value": ""
@@ -103,15 +103,14 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "STONE",
+    "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -122,16 +121,26 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "fredbearsign.geo.json",
-    "displaySettings": "freddyhead.item.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "maxGenerateHeight": 64
   }
 }
