@@ -2,14 +2,14 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "letsparty3",
+    "texture": "gfreddyhallposter",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "posterf1:goldenfreddy",
+    "customModelName": "poster5:hallposter_gfreddy",
     "rotationMode": 3,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -24,10 +24,10 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 15.0,
-        "Mx": 16.0,
+        "mx": 1.0,
+        "my": -2.0,
+        "mz": 15.9,
+        "Mx": 15.0,
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false

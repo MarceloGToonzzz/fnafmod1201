@@ -58,7 +58,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fnaf_mod:chica_fabric",
+          "name": "fnaf_mod:yellow_fabric",
           "weight": 1,
           "functions": [
             {

@@ -51,7 +51,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:FoxyFabric"
+              "value": "CUSTOM:RedFabric"
             },
             "weight": 1,
             "minCount": 1,
@@ -74,7 +74,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:FreddyFabric"
+              "value": "CUSTOM:BrownFabric"
             },
             "weight": 1,
             "minCount": 1,

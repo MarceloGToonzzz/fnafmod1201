@@ -39,7 +39,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fnaf_mod:bonnie_fabric",
+          "name": "fnaf_mod:purple_fabric",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fnaf_mod:blue_fabric",
           "weight": 1,
           "functions": [
             {

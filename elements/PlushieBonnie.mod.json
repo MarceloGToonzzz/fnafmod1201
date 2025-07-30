@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
         "value": "Blocks.WOOL"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       },
       {
-        "value": "CUSTOM:BonnieFabric"
+        "value": "TAG:mod:bonnie_fabrics"
       }
     ],
     "recipeReturnStack": {

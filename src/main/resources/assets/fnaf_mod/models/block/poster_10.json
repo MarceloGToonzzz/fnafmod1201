@@ -1,9 +1,9 @@
 {
-  "parent": "fnaf_mod:custom/posterf1",
+  "parent": "fnaf_mod:custom/poster5",
   "textures": {
-    "all": "fnaf_mod:block/letsparty3",
-    "particle": "fnaf_mod:block/letsparty3",
-    "0": "fnaf_mod:block/letsparty3"
+    "all": "fnaf_mod:block/gfreddyhallposter",
+    "particle": "fnaf_mod:block/gfreddyhallposter",
+    "9": "fnaf_mod:block/gfreddyhallposter"
   },
   "render_type": "solid"
 }

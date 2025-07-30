@@ -51,7 +51,21 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:BonnieFabric"
+              "value": "CUSTOM:PurpleFabric"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 5,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:BlueFabric"
             },
             "weight": 1,
             "minCount": 1,

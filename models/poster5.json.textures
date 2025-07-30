@@ -41,6 +41,12 @@
         "9": "rulesposter"
       },
       "name": "rules"
+    },
+    "hallposter_gfreddy": {
+      "map": {
+        "9": "gfreddyhallposter"
+      },
+      "name": "hallposter_gfreddy"
     }
   }
 }

@@ -68,6 +68,21 @@ import net.mcreator.fnafmod.block.entity.CenteredFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.CeilingLampBlockEntity;
 import net.mcreator.fnafmod.block.entity.CarouselTileEntity;
 import net.mcreator.fnafmod.block.entity.BonnieHeadTileEntity;
+import net.mcreator.fnafmod.block.entity.BigWideRedWindowedDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigWideRedEntranceDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigWideGlassEntranceDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigWideDualColourEntranceDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigWideCyanKitchenDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigWhiteDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigRedWindowedDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigRedEntranceDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigRedDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigGlassEntranceDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigDualColourEntranceDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigCyanKitchenDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigCyanBackstageDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigClosetDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigBackstageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BephDollTileEntity;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -160,6 +175,34 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(FreddysCupcakeBonanzaTileEntity::new, FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DisplayShelvesTileEntity>> DISPLAY_SHELVES = REGISTRY.register("display_shelves",
 			() -> BlockEntityType.Builder.of(DisplayShelvesTileEntity::new, FnafModModBlocks.DISPLAY_SHELVES.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigBackstageDoorTileEntity>> BIG_BACKSTAGE_DOOR = REGISTRY.register("big_backstage_door",
+			() -> BlockEntityType.Builder.of(BigBackstageDoorTileEntity::new, FnafModModBlocks.BIG_BACKSTAGE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigCyanBackstageDoorTileEntity>> BIG_CYAN_BACKSTAGE_DOOR = REGISTRY.register("big_cyan_backstage_door",
+			() -> BlockEntityType.Builder.of(BigCyanBackstageDoorTileEntity::new, FnafModModBlocks.BIG_CYAN_BACKSTAGE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigGlassEntranceDoorTileEntity>> BIG_GLASS_ENTRANCE_DOOR = REGISTRY.register("big_glass_entrance_door",
+			() -> BlockEntityType.Builder.of(BigGlassEntranceDoorTileEntity::new, FnafModModBlocks.BIG_GLASS_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigRedEntranceDoorTileEntity>> BIG_RED_ENTRANCE_DOOR = REGISTRY.register("big_red_entrance_door",
+			() -> BlockEntityType.Builder.of(BigRedEntranceDoorTileEntity::new, FnafModModBlocks.BIG_RED_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigRedDoorTileEntity>> BIG_RED_DOOR = REGISTRY.register("big_red_door", () -> BlockEntityType.Builder.of(BigRedDoorTileEntity::new, FnafModModBlocks.BIG_RED_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigRedWindowedDoorTileEntity>> BIG_RED_WINDOWED_DOOR = REGISTRY.register("big_red_windowed_door",
+			() -> BlockEntityType.Builder.of(BigRedWindowedDoorTileEntity::new, FnafModModBlocks.BIG_RED_WINDOWED_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigDualColourEntranceDoorTileEntity>> BIG_DUAL_COLOUR_ENTRANCE_DOOR = REGISTRY.register("big_dual_colour_entrance_door",
+			() -> BlockEntityType.Builder.of(BigDualColourEntranceDoorTileEntity::new, FnafModModBlocks.BIG_DUAL_COLOUR_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigWhiteDoorTileEntity>> BIG_WHITE_DOOR = REGISTRY.register("big_white_door", () -> BlockEntityType.Builder.of(BigWhiteDoorTileEntity::new, FnafModModBlocks.BIG_WHITE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigClosetDoorTileEntity>> BIG_CLOSET_DOOR = REGISTRY.register("big_closet_door",
+			() -> BlockEntityType.Builder.of(BigClosetDoorTileEntity::new, FnafModModBlocks.BIG_CLOSET_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigCyanKitchenDoorTileEntity>> BIG_CYAN_KITCHEN_DOOR = REGISTRY.register("big_cyan_kitchen_door",
+			() -> BlockEntityType.Builder.of(BigCyanKitchenDoorTileEntity::new, FnafModModBlocks.BIG_CYAN_KITCHEN_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigWideRedWindowedDoorTileEntity>> BIG_WIDE_RED_WINDOWED_DOOR = REGISTRY.register("big_wide_red_windowed_door",
+			() -> BlockEntityType.Builder.of(BigWideRedWindowedDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_RED_WINDOWED_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigWideDualColourEntranceDoorTileEntity>> BIG_WIDE_DUAL_COLOUR_ENTRANCE_DOOR = REGISTRY.register("big_wide_dual_colour_entrance_door",
+			() -> BlockEntityType.Builder.of(BigWideDualColourEntranceDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_DUAL_COLOUR_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigWideGlassEntranceDoorTileEntity>> BIG_WIDE_GLASS_ENTRANCE_DOOR = REGISTRY.register("big_wide_glass_entrance_door",
+			() -> BlockEntityType.Builder.of(BigWideGlassEntranceDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_GLASS_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigWideCyanKitchenDoorTileEntity>> BIG_WIDE_CYAN_KITCHEN_DOOR = REGISTRY.register("big_wide_cyan_kitchen_door",
+			() -> BlockEntityType.Builder.of(BigWideCyanKitchenDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_CYAN_KITCHEN_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigWideRedEntranceDoorTileEntity>> BIG_WIDE_RED_ENTRANCE_DOOR = REGISTRY.register("big_wide_red_entrance_door",
+			() -> BlockEntityType.Builder.of(BigWideRedEntranceDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_RED_ENTRANCE_DOOR.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -74,7 +74,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:ChicaFabric"
+              "value": "CUSTOM:YellowFabric"
             },
             "weight": 1,
             "minCount": 1,

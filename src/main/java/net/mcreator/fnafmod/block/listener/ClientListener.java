@@ -50,6 +50,21 @@ import net.mcreator.fnafmod.block.renderer.CenteredFreddySignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CenteredFreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CarouselTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BonnieHeadTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigWideRedWindowedDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigWideRedEntranceDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigWideGlassEntranceDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigWideDualColourEntranceDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigWideCyanKitchenDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigWhiteDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigRedWindowedDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigRedEntranceDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigRedDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigGlassEntranceDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigDualColourEntranceDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigCyanKitchenDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigCyanBackstageDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigClosetDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigBackstageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BephDollTileRenderer;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -102,5 +117,20 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CLOWNFUL_DOLL.get(), context -> new ClownfulDollTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FREDDYS_CUPCAKE_BONANZA.get(), context -> new FreddysCupcakeBonanzaTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_SHELVES.get(), context -> new DisplayShelvesTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_BACKSTAGE_DOOR.get(), context -> new BigBackstageDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_CYAN_BACKSTAGE_DOOR.get(), context -> new BigCyanBackstageDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_GLASS_ENTRANCE_DOOR.get(), context -> new BigGlassEntranceDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_RED_ENTRANCE_DOOR.get(), context -> new BigRedEntranceDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_RED_DOOR.get(), context -> new BigRedDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_RED_WINDOWED_DOOR.get(), context -> new BigRedWindowedDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_DUAL_COLOUR_ENTRANCE_DOOR.get(), context -> new BigDualColourEntranceDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WHITE_DOOR.get(), context -> new BigWhiteDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_CLOSET_DOOR.get(), context -> new BigClosetDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_CYAN_KITCHEN_DOOR.get(), context -> new BigCyanKitchenDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_RED_WINDOWED_DOOR.get(), context -> new BigWideRedWindowedDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_DUAL_COLOUR_ENTRANCE_DOOR.get(), context -> new BigWideDualColourEntranceDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_GLASS_ENTRANCE_DOOR.get(), context -> new BigWideGlassEntranceDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_CYAN_KITCHEN_DOOR.get(), context -> new BigWideCyanKitchenDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_RED_ENTRANCE_DOOR.get(), context -> new BigWideRedEntranceDoorTileRenderer());
 	}
 }

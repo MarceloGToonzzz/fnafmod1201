@@ -7,6 +7,10 @@ package net.mcreator.fnafmod.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -122,6 +126,7 @@ import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
 import net.mcreator.fnafmod.block.ScreenBlock;
 import net.mcreator.fnafmod.block.SconceBlock;
 import net.mcreator.fnafmod.block.RulesPosterBlock;
+import net.mcreator.fnafmod.block.RoundBushBlock;
 import net.mcreator.fnafmod.block.RoseCurtainBlock;
 import net.mcreator.fnafmod.block.RockCurtainBlock;
 import net.mcreator.fnafmod.block.RetroFreddySignOnBlock;
@@ -329,6 +334,9 @@ import net.mcreator.fnafmod.block.Desk3Block;
 import net.mcreator.fnafmod.block.Desk2Block;
 import net.mcreator.fnafmod.block.CyanDoorBlock;
 import net.mcreator.fnafmod.block.CutStageBricksBlock;
+import net.mcreator.fnafmod.block.CupcakeFlowerPinkBlock;
+import net.mcreator.fnafmod.block.CupcakeFlowerGoldenBlock;
+import net.mcreator.fnafmod.block.CupcakeFlowerBlueBlock;
 import net.mcreator.fnafmod.block.CornCurtainBlock;
 import net.mcreator.fnafmod.block.CopperShinglesWallBlock;
 import net.mcreator.fnafmod.block.CopperShinglesStairsBlock;
@@ -449,19 +457,34 @@ import net.mcreator.fnafmod.block.BlackLightFoxyPlushieBlock;
 import net.mcreator.fnafmod.block.BlackLightChicaPlushieBlock;
 import net.mcreator.fnafmod.block.BlackLightBonniePlushieBlock;
 import net.mcreator.fnafmod.block.BirthdayBannerBlock;
+import net.mcreator.fnafmod.block.BigWideRedWindowedDoorBlock;
+import net.mcreator.fnafmod.block.BigWideRedEntranceDoorBlock;
+import net.mcreator.fnafmod.block.BigWideGlassEntranceDoorBlock;
+import net.mcreator.fnafmod.block.BigWideDualColourEntranceDoorBlock;
+import net.mcreator.fnafmod.block.BigWideCyanKitchenDoorBlock;
 import net.mcreator.fnafmod.block.BigWhiteRedWallTileBlock;
 import net.mcreator.fnafmod.block.BigWhitePurpleTileBlock;
+import net.mcreator.fnafmod.block.BigWhiteDoorBlock;
 import net.mcreator.fnafmod.block.BigWhiteCheckeredWallBlock;
 import net.mcreator.fnafmod.block.BigWhiteBlackWallTileBlock;
 import net.mcreator.fnafmod.block.BigWhiteBlackStripedWallTileBlock;
 import net.mcreator.fnafmod.block.BigWallTileBlock;
 import net.mcreator.fnafmod.block.BigStageBrickTilesBlock;
+import net.mcreator.fnafmod.block.BigRedWindowedDoorBlock;
+import net.mcreator.fnafmod.block.BigRedEntranceDoorBlock;
+import net.mcreator.fnafmod.block.BigRedDoorBlock;
 import net.mcreator.fnafmod.block.BigRancidWallTilesBlock;
 import net.mcreator.fnafmod.block.BigPurpleStageBrickTilesBlock;
 import net.mcreator.fnafmod.block.BigMovieWallTileBlock;
 import net.mcreator.fnafmod.block.BigMovieExteriorWallTilesBlock;
 import net.mcreator.fnafmod.block.BigGlassMovieYellowWallTilesBlock;
 import net.mcreator.fnafmod.block.BigGlassMovieExteriorWallTilesBlock;
+import net.mcreator.fnafmod.block.BigGlassEntranceDoorBlock;
+import net.mcreator.fnafmod.block.BigDualColourEntranceDoorBlock;
+import net.mcreator.fnafmod.block.BigDoorHitboxBlock;
+import net.mcreator.fnafmod.block.BigCyanKitchenDoorBlock;
+import net.mcreator.fnafmod.block.BigCyanBackstageDoorBlock;
+import net.mcreator.fnafmod.block.BigClosetDoorBlock;
 import net.mcreator.fnafmod.block.BigCheckeredWhiteWallTileBlock;
 import net.mcreator.fnafmod.block.BigCheckeredWallTileBlock;
 import net.mcreator.fnafmod.block.BigCheckeredWallBlock;
@@ -469,6 +492,7 @@ import net.mcreator.fnafmod.block.BigCheckeredTilesBlock;
 import net.mcreator.fnafmod.block.BigBlackStripedStageBrickTilesBlock;
 import net.mcreator.fnafmod.block.BigBlackStripeDarkWallTileBlock;
 import net.mcreator.fnafmod.block.BigBlackPurpleWallTileBlock;
+import net.mcreator.fnafmod.block.BigBackstageDoorBlock;
 import net.mcreator.fnafmod.block.BerryCurtainBlock;
 import net.mcreator.fnafmod.block.BephDollBlock;
 import net.mcreator.fnafmod.block.BallpitBlock;
@@ -1028,6 +1052,39 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DISPLAY_SHELVES = REGISTRY.register("display_shelves", () -> new DisplayShelvesBlock());
 	public static final RegistryObject<Block> POPCORN_MACHINE = REGISTRY.register("popcorn_machine", () -> new PopcornMachineBlock());
 	public static final RegistryObject<Block> EMPTY_PIZZA_BOX = REGISTRY.register("empty_pizza_box", () -> new EmptyPizzaBoxBlock());
+	public static final RegistryObject<Block> BIG_BACKSTAGE_DOOR = REGISTRY.register("big_backstage_door", () -> new BigBackstageDoorBlock());
+	public static final RegistryObject<Block> BIG_DOOR_HITBOX = REGISTRY.register("big_door_hitbox", () -> new BigDoorHitboxBlock());
+	public static final RegistryObject<Block> BIG_CYAN_BACKSTAGE_DOOR = REGISTRY.register("big_cyan_backstage_door", () -> new BigCyanBackstageDoorBlock());
+	public static final RegistryObject<Block> BIG_GLASS_ENTRANCE_DOOR = REGISTRY.register("big_glass_entrance_door", () -> new BigGlassEntranceDoorBlock());
+	public static final RegistryObject<Block> BIG_RED_ENTRANCE_DOOR = REGISTRY.register("big_red_entrance_door", () -> new BigRedEntranceDoorBlock());
+	public static final RegistryObject<Block> BIG_RED_DOOR = REGISTRY.register("big_red_door", () -> new BigRedDoorBlock());
+	public static final RegistryObject<Block> BIG_RED_WINDOWED_DOOR = REGISTRY.register("big_red_windowed_door", () -> new BigRedWindowedDoorBlock());
+	public static final RegistryObject<Block> BIG_DUAL_COLOUR_ENTRANCE_DOOR = REGISTRY.register("big_dual_colour_entrance_door", () -> new BigDualColourEntranceDoorBlock());
+	public static final RegistryObject<Block> ROUND_BUSH = REGISTRY.register("round_bush", () -> new RoundBushBlock());
+	public static final RegistryObject<Block> CUPCAKE_FLOWER_PINK = REGISTRY.register("cupcake_flower_pink", () -> new CupcakeFlowerPinkBlock());
+	public static final RegistryObject<Block> CUPCAKE_FLOWER_BLUE = REGISTRY.register("cupcake_flower_blue", () -> new CupcakeFlowerBlueBlock());
+	public static final RegistryObject<Block> CUPCAKE_FLOWER_GOLDEN = REGISTRY.register("cupcake_flower_golden", () -> new CupcakeFlowerGoldenBlock());
+	public static final RegistryObject<Block> BIG_WHITE_DOOR = REGISTRY.register("big_white_door", () -> new BigWhiteDoorBlock());
+	public static final RegistryObject<Block> BIG_CLOSET_DOOR = REGISTRY.register("big_closet_door", () -> new BigClosetDoorBlock());
+	public static final RegistryObject<Block> BIG_CYAN_KITCHEN_DOOR = REGISTRY.register("big_cyan_kitchen_door", () -> new BigCyanKitchenDoorBlock());
+	public static final RegistryObject<Block> BIG_WIDE_RED_WINDOWED_DOOR = REGISTRY.register("big_wide_red_windowed_door", () -> new BigWideRedWindowedDoorBlock());
+	public static final RegistryObject<Block> BIG_WIDE_DUAL_COLOUR_ENTRANCE_DOOR = REGISTRY.register("big_wide_dual_colour_entrance_door", () -> new BigWideDualColourEntranceDoorBlock());
+	public static final RegistryObject<Block> BIG_WIDE_GLASS_ENTRANCE_DOOR = REGISTRY.register("big_wide_glass_entrance_door", () -> new BigWideGlassEntranceDoorBlock());
+	public static final RegistryObject<Block> BIG_WIDE_CYAN_KITCHEN_DOOR = REGISTRY.register("big_wide_cyan_kitchen_door", () -> new BigWideCyanKitchenDoorBlock());
+	public static final RegistryObject<Block> BIG_WIDE_RED_ENTRANCE_DOOR = REGISTRY.register("big_wide_red_entrance_door", () -> new BigWideRedEntranceDoorBlock());
+
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			RoundBushBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+			RoundBushBlock.itemColorLoad(event);
+		}
+	}
 }

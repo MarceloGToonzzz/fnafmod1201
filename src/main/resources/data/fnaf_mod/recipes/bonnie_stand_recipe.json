@@ -11,7 +11,7 @@
       "item": "fnaf_mod:bonnie_head"
     },
     "b": {
-      "item": "fnaf_mod:bonnie_fabric"
+      "tag": "fnaf_mod:bonnie_fabrics"
     },
     "c": {
       "item": "minecraft:iron_ingot"

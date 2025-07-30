@@ -39,7 +39,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fnaf_mod:freddy_fabric",
+          "name": "fnaf_mod:brown_fabric",
           "weight": 1,
           "functions": [
             {

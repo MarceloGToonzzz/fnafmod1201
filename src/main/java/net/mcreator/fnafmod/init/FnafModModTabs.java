@@ -143,6 +143,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BB_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.MARIONETTE_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.DISPLAY_SHELVES.get().asItem());
+				tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_PINK.get().asItem());
+				tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_BLUE.get().asItem());
+				tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_GOLDEN.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -156,17 +159,38 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.BANJO.get());
 				tabData.accept(FnafModModItems.CAMERA_MONITOR.get());
 				tabData.accept(FnafModModItems.CIRCUIT_BOARD.get());
-				tabData.accept(FnafModModItems.FREDDY_FABRIC.get());
-				tabData.accept(FnafModModItems.BONNIE_FABRIC.get());
-				tabData.accept(FnafModModItems.CHICA_FABRIC.get());
-				tabData.accept(FnafModModItems.FOXY_FABRIC.get());
-				tabData.accept(FnafModModItems.BLACK_PLASTIC.get());
-				tabData.accept(FnafModModItems.LIGHT_BLUE_PLASTIC.get());
-				tabData.accept(FnafModModItems.BROWN_PLASTIC.get());
-				tabData.accept(FnafModModItems.YELLOW_PLASTIC.get());
-				tabData.accept(FnafModModItems.PINK_PLASTIC.get());
+				tabData.accept(FnafModModItems.RED_FABRIC.get());
+				tabData.accept(FnafModModItems.ORANGE_FABRIC.get());
+				tabData.accept(FnafModModItems.YELLOW_FABRIC.get());
+				tabData.accept(FnafModModItems.LIME_FABRIC.get());
+				tabData.accept(FnafModModItems.GREEN_FABRIC.get());
+				tabData.accept(FnafModModItems.CYAN_FABRIC.get());
+				tabData.accept(FnafModModItems.LIGHT_BLUE_FABRIC.get());
+				tabData.accept(FnafModModItems.BLUE_FABRIC.get());
+				tabData.accept(FnafModModItems.PURPLE_FABRIC.get());
+				tabData.accept(FnafModModItems.MAGENTA_FABRIC.get());
+				tabData.accept(FnafModModItems.PINK_FABRIC.get());
+				tabData.accept(FnafModModItems.BROWN_FABRIC.get());
+				tabData.accept(FnafModModItems.LIGHT_GRAY_FABRIC.get());
+				tabData.accept(FnafModModItems.GRAY_FABRIC.get());
+				tabData.accept(FnafModModItems.WHITE_FABRIC.get());
+				tabData.accept(FnafModModItems.BLACK_FABRIC.get());
 				tabData.accept(FnafModModItems.RED_PLASTIC.get());
+				tabData.accept(FnafModModItems.YELLOW_PLASTIC.get());
+				tabData.accept(FnafModModItems.ORANGE_PLASTIC.get());
+				tabData.accept(FnafModModItems.LIME_PLASTIC.get());
+				tabData.accept(FnafModModItems.GREEN_PLASTIC.get());
+				tabData.accept(FnafModModItems.CYAN_PLASTIC.get());
+				tabData.accept(FnafModModItems.LIGHT_BLUE_PLASTIC.get());
+				tabData.accept(FnafModModItems.BLUE_PLASTIC.get());
+				tabData.accept(FnafModModItems.PURPLE_PLASTIC.get());
+				tabData.accept(FnafModModItems.MAGENTA_PLASTIC.get());
+				tabData.accept(FnafModModItems.PINK_PLASTIC.get());
+				tabData.accept(FnafModModItems.BROWN_PLASTIC.get());
+				tabData.accept(FnafModModItems.LIGHT_GRAY_PLASTIC.get());
+				tabData.accept(FnafModModItems.GRAY_PLASTIC.get());
 				tabData.accept(FnafModModItems.WHITE_PLASTIC.get());
+				tabData.accept(FnafModModItems.BLACK_PLASTIC.get());
 				tabData.accept(FnafModModItems.SHADOW_REMNANT.get());
 				tabData.accept(FnafModModItems.FREDDY_MASK_HELMET.get());
 				tabData.accept(FnafModModItems.FLASH_LIGHT.get());
@@ -629,6 +653,21 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FREDDYS_CUPCAKE_BONANZA.get().asItem());
 				tabData.accept(FnafModModBlocks.POPCORN_MACHINE.get().asItem());
 				tabData.accept(FnafModModBlocks.EMPTY_PIZZA_BOX.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_BACKSTAGE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_CYAN_BACKSTAGE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_CYAN_KITCHEN_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_GLASS_ENTRANCE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_RED_ENTRANCE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_RED_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_RED_WINDOWED_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_DUAL_COLOUR_ENTRANCE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_WHITE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_CLOSET_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_WIDE_CYAN_KITCHEN_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_WIDE_GLASS_ENTRANCE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_WIDE_RED_ENTRANCE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_WIDE_RED_WINDOWED_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_WIDE_DUAL_COLOUR_ENTRANCE_DOOR.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -683,6 +722,7 @@ public class FnafModModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(FnafModModBlocks.GLITCHED_LOG.get().asItem());
 			tabData.accept(FnafModModBlocks.GLITCHED_LEAVES.get().asItem());
+			tabData.accept(FnafModModBlocks.ROUND_BUSH.get().asItem());
 		}
 	}
 }
