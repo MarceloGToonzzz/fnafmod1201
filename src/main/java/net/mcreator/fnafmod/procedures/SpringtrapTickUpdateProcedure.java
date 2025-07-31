@@ -10,7 +10,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.init.FnafModModEntities;
-import net.mcreator.fnafmod.init.FnafModModBlocks;
 import net.mcreator.fnafmod.entity.SpringtrapEntity;
 
 import java.util.Random;
@@ -43,16 +42,6 @@ public class SpringtrapTickUpdateProcedure {
 							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 						}
 					}
-				}
-			}
-		}
-		if ((world.getBlockState(BlockPos.containing(x, entity.getY() - 1, z))).getBlock() == FnafModModBlocks.VENT.get()) {
-			if (!entity.level().isClientSide())
-				entity.discard();
-			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = FnafModModEntities.CRAWLING_SPRINGTRAP.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-				if (entityToSpawn != null) {
-					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
 		}

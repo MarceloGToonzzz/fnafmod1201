@@ -103,11 +103,6 @@ import net.mcreator.fnafmod.entity.DayTimeFoxyEntity;
 import net.mcreator.fnafmod.entity.DayTimeBonnieEntity;
 import net.mcreator.fnafmod.entity.DayTimeBBEntity;
 import net.mcreator.fnafmod.entity.CryingChildEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyFoxyEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyChicaEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyBonnieEntity;
-import net.mcreator.fnafmod.entity.CrawlingSpringtrapEntity;
-import net.mcreator.fnafmod.entity.CrawlingMangleEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.BreadbearEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
@@ -572,34 +567,6 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
-			if (event.getEntity() instanceof CrawlingToyBonnieEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof CrawlingMangleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof CrawlingToyFoxyEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof CrawlingToyChicaEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
 			if (event.getEntity() instanceof MangleSittingEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -783,13 +750,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof StandingDaytimeSpringtrapEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof CrawlingSpringtrapEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

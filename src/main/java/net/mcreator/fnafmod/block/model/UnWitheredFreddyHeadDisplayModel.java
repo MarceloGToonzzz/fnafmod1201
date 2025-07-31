@@ -9,16 +9,16 @@ import net.mcreator.fnafmod.block.display.UnWitheredFreddyHeadDisplayItem;
 public class UnWitheredFreddyHeadDisplayModel extends GeoModel<UnWitheredFreddyHeadDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(UnWitheredFreddyHeadDisplayItem animatable) {
-		return new ResourceLocation("fnaf_mod", "animations/unwitheredfreddyhead.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/head_unwithered-freddy.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(UnWitheredFreddyHeadDisplayItem animatable) {
-		return new ResourceLocation("fnaf_mod", "geo/unwitheredfreddyhead.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/head_unwithered-freddy.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(UnWitheredFreddyHeadDisplayItem entity) {
-		return new ResourceLocation("fnaf_mod", "textures/block/unwitheredfreddyhead.png");
+		return new ResourceLocation("fnaf_mod", "textures/block/unwithered-freddy.png");
 	}
 }

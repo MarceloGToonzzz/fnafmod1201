@@ -135,11 +135,6 @@ import net.mcreator.fnafmod.entity.DayTimeFoxyEntity;
 import net.mcreator.fnafmod.entity.DayTimeBonnieEntity;
 import net.mcreator.fnafmod.entity.DayTimeBBEntity;
 import net.mcreator.fnafmod.entity.CryingChildEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyFoxyEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyChicaEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyBonnieEntity;
-import net.mcreator.fnafmod.entity.CrawlingSpringtrapEntity;
-import net.mcreator.fnafmod.entity.CrawlingMangleEntity;
 import net.mcreator.fnafmod.entity.ChicaCutOutEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.CameraEntity;
@@ -470,22 +465,6 @@ public class FnafModModEntities {
 			EntityType.Builder.<Endo02Entity>of(Endo02Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Endo02Entity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<CrawlingToyBonnieEntity>> CRAWLING_TOY_BONNIE = register("crawling_toy_bonnie",
-			EntityType.Builder.<CrawlingToyBonnieEntity>of(CrawlingToyBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrawlingToyBonnieEntity::new)
-
-					.sized(0.8f, 0.8f));
-	public static final RegistryObject<EntityType<CrawlingMangleEntity>> CRAWLING_MANGLE = register("crawling_mangle",
-			EntityType.Builder.<CrawlingMangleEntity>of(CrawlingMangleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrawlingMangleEntity::new)
-
-					.sized(0.8f, 0.8f));
-	public static final RegistryObject<EntityType<CrawlingToyFoxyEntity>> CRAWLING_TOY_FOXY = register("crawling_toy_foxy",
-			EntityType.Builder.<CrawlingToyFoxyEntity>of(CrawlingToyFoxyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrawlingToyFoxyEntity::new)
-
-					.sized(0.8f, 0.8f));
-	public static final RegistryObject<EntityType<CrawlingToyChicaEntity>> CRAWLING_TOY_CHICA = register("crawling_toy_chica",
-			EntityType.Builder.<CrawlingToyChicaEntity>of(CrawlingToyChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrawlingToyChicaEntity::new)
-
-					.sized(0.8f, 0.8f));
 	public static final RegistryObject<EntityType<MangleSittingEntity>> MANGLE_SITTING = register("mangle_sitting",
 			EntityType.Builder.<MangleSittingEntity>of(MangleSittingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MangleSittingEntity::new)
 
@@ -588,10 +567,6 @@ public class FnafModModEntities {
 					.setCustomClientFactory(StandingDaytimeSpringtrapEntity::new)
 
 					.sized(0.6f, 2.2f));
-	public static final RegistryObject<EntityType<CrawlingSpringtrapEntity>> CRAWLING_SPRINGTRAP = register("crawling_springtrap",
-			EntityType.Builder.<CrawlingSpringtrapEntity>of(CrawlingSpringtrapEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrawlingSpringtrapEntity::new)
-
-					.sized(0.8f, 0.8f));
 	public static final RegistryObject<EntityType<NightmareBonnieStatueEntity>> NIGHTMARE_BONNIE_STATUE = register("nightmare_bonnie_statue",
 			EntityType.Builder.<NightmareBonnieStatueEntity>of(NightmareBonnieStatueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(NightmareBonnieStatueEntity::new)
@@ -797,10 +772,6 @@ public class FnafModModEntities {
 			ShadowBonnieEntity.init();
 			EndoSkeletonEntity.init();
 			Endo02Entity.init();
-			CrawlingToyBonnieEntity.init();
-			CrawlingMangleEntity.init();
-			CrawlingToyFoxyEntity.init();
-			CrawlingToyChicaEntity.init();
 			MangleSittingEntity.init();
 			DayTimeToyFreddyEntity.init();
 			DayTimeToyBonnieEntity.init();
@@ -828,7 +799,6 @@ public class FnafModModEntities {
 			SpringtrapEntity.init();
 			SittingDaytimeSpringtrapEntity.init();
 			StandingDaytimeSpringtrapEntity.init();
-			CrawlingSpringtrapEntity.init();
 			NightmareBonnieStatueEntity.init();
 			NightmareChicaStatueEntity.init();
 			NightmareFreddyStatueEntity.init();
@@ -940,10 +910,6 @@ public class FnafModModEntities {
 		event.put(SHADOW_BONNIE.get(), ShadowBonnieEntity.createAttributes().build());
 		event.put(ENDO_SKELETON.get(), EndoSkeletonEntity.createAttributes().build());
 		event.put(ENDO_02.get(), Endo02Entity.createAttributes().build());
-		event.put(CRAWLING_TOY_BONNIE.get(), CrawlingToyBonnieEntity.createAttributes().build());
-		event.put(CRAWLING_MANGLE.get(), CrawlingMangleEntity.createAttributes().build());
-		event.put(CRAWLING_TOY_FOXY.get(), CrawlingToyFoxyEntity.createAttributes().build());
-		event.put(CRAWLING_TOY_CHICA.get(), CrawlingToyChicaEntity.createAttributes().build());
 		event.put(MANGLE_SITTING.get(), MangleSittingEntity.createAttributes().build());
 		event.put(DAY_TIME_TOY_FREDDY.get(), DayTimeToyFreddyEntity.createAttributes().build());
 		event.put(DAY_TIME_TOY_BONNIE.get(), DayTimeToyBonnieEntity.createAttributes().build());
@@ -971,7 +937,6 @@ public class FnafModModEntities {
 		event.put(SPRINGTRAP.get(), SpringtrapEntity.createAttributes().build());
 		event.put(SITTING_DAYTIME_SPRINGTRAP.get(), SittingDaytimeSpringtrapEntity.createAttributes().build());
 		event.put(STANDING_DAYTIME_SPRINGTRAP.get(), StandingDaytimeSpringtrapEntity.createAttributes().build());
-		event.put(CRAWLING_SPRINGTRAP.get(), CrawlingSpringtrapEntity.createAttributes().build());
 		event.put(NIGHTMARE_BONNIE_STATUE.get(), NightmareBonnieStatueEntity.createAttributes().build());
 		event.put(NIGHTMARE_CHICA_STATUE.get(), NightmareChicaStatueEntity.createAttributes().build());
 		event.put(NIGHTMARE_FREDDY_STATUE.get(), NightmareFreddyStatueEntity.createAttributes().build());

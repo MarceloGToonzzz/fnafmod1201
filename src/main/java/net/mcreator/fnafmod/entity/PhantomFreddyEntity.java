@@ -34,6 +34,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
@@ -49,6 +50,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.PhantomDespawnProcedure;
 import net.mcreator.fnafmod.procedures.PhantomCollideProcedure;
+import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 import javax.annotation.Nullable;
@@ -183,7 +185,12 @@ public class PhantomFreddyEntity extends Monster implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) GetBoundaryScalesProcedure.execute(entity));
 	}
 
 	@Override

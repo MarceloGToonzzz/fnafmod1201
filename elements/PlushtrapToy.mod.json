@@ -16,10 +16,12 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "GetScales"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "GetBoundaryScales"
     },
     "modelLayers": [],
     "animations": [],

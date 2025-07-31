@@ -18,7 +18,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -46,6 +45,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.NighttimeTickProcedure;
 import net.mcreator.fnafmod.procedures.MaskProtectionTestForTickProcedure;
+import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FoxyPiratePlayerCollidesWithThisEntityProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
@@ -146,17 +146,6 @@ public class MangleEntity extends Monster implements GeoEntity {
 			}
 
 		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, true) {
-			@Override
-			public boolean canUse() {
-				double x = MangleEntity.this.getX();
-				double y = MangleEntity.this.getY();
-				double z = MangleEntity.this.getZ();
-				Entity entity = MangleEntity.this;
-				Level world = MangleEntity.this.level();
-				return super.canUse() && MaskProtectionTestForTickProcedure.execute(world, x, y, z);
-			}
-		});
 	}
 
 	@Override
@@ -225,7 +214,12 @@ public class MangleEntity extends Monster implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) GetBoundaryScalesProcedure.execute(entity));
 	}
 
 	@Override

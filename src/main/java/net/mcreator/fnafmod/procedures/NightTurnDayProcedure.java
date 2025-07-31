@@ -66,6 +66,7 @@ public class NightTurnDayProcedure {
 					registry = "sitting_daytime_springtrap";
 				} else {
 					registry = "standing_daytime_springtrap";
+					ai = "0";
 				}
 			}
 			command = (((((("summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd},NoAI:move,Rotation:[YAWf]}".replace("ZEZ", entity.getPersistentData().getDouble("z") + "d"))

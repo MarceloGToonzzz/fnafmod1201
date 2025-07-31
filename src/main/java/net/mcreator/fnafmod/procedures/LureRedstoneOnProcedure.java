@@ -13,7 +13,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.entity.SpringtrapEntity;
-import net.mcreator.fnafmod.entity.CrawlingSpringtrapEntity;
 
 import java.util.Comparator;
 
@@ -28,12 +27,6 @@ public class LureRedstoneOnProcedure {
 				}
 			}
 			if (((Entity) world.getEntitiesOfClass(SpringtrapEntity.class, AABB.ofSize(new Vec3(x, y, z), 20, 20, 20), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Mob _entity)
-				_entity.getNavigation().moveTo(x, y, z, 1);
-			if (((Entity) world.getEntitiesOfClass(CrawlingSpringtrapEntity.class, AABB.ofSize(new Vec3(x, y, z), 20, 20, 20), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}

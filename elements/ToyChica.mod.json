@@ -7,10 +7,12 @@
     "mobModelTexture": "toychica.png",
     "mobModelGlowTexture": "toychica-glow.png",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "GetScales"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "GetBoundaryScales"
     },
     "entityDataEntries": [],
     "modelWidth": 0.6,

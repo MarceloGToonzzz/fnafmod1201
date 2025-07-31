@@ -9,16 +9,16 @@ import net.mcreator.fnafmod.block.display.UnWitheredBonnieHeadDisplayItem;
 public class UnWitheredBonnieHeadDisplayModel extends GeoModel<UnWitheredBonnieHeadDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(UnWitheredBonnieHeadDisplayItem animatable) {
-		return new ResourceLocation("fnaf_mod", "animations/unwitheredbonniehead.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/head_unwithered-bonnie.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(UnWitheredBonnieHeadDisplayItem animatable) {
-		return new ResourceLocation("fnaf_mod", "geo/unwitheredbonniehead.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/head_unwithered-bonnie.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(UnWitheredBonnieHeadDisplayItem entity) {
-		return new ResourceLocation("fnaf_mod", "textures/block/unwitheredbonniehead.png");
+		return new ResourceLocation("fnaf_mod", "textures/block/unwithered-bonnie.png");
 	}
 }

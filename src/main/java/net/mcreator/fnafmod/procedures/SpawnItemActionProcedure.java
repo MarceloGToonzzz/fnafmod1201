@@ -80,20 +80,28 @@ public class SpawnItemActionProcedure {
 		}
 		if (itemstack.getItem() == FnafModModItems.TOY_FREDDY_SPAWN_ITEM.get()) {
 			spawned = "day_time_toy_freddy";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.TOY_BONNIE_SPAWN_ITEM.get()) {
 			spawned = "day_time_toy_bonnie";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.TOY_CHICA_SPAWN_ITEM.get()) {
 			spawned = "toy_chica";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.TOY_FOXY_SPAWN_ITEM.get()) {
 			spawned = "day_time_toy_foxy";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.MANGLE_SPAWN_ITEM.get()) {
 			spawned = "mangle_sitting";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.BB_SPAWN_ITEM.get()) {
 			spawned = "day_time_bb";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.JJ_SPAWN_ITEM.get()) {
 			spawned = "jj";
+			move = 0;
 		} else if (itemstack.getItem() == FnafModModItems.PUPPET_SPAWN_ITEM.get()) {
 			spawned = "day_time_puppet";
+			move = 0;
 		}
 		if (itemstack.getItem() == FnafModModItems.WITHERED_FREDDY_SPAWN_ITEM.get()) {
 			spawned = "ded_withered_freddy";
@@ -105,29 +113,21 @@ public class SpawnItemActionProcedure {
 			spawned = "day_time_withered_foxy";
 		}
 		if (itemstack.getItem() == FnafModModItems.UNWITHERED_FREDDY_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "unwithered_freddy";
 		} else if (itemstack.getItem() == FnafModModItems.UNWITHERED_BONNIE_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "unwithered_bonnie";
 		} else if (itemstack.getItem() == FnafModModItems.UNWITHERED_CHICA_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "unwithered_chica";
 		} else if (itemstack.getItem() == FnafModModItems.UNWITHERED_FOXY_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "unwithered_foxy";
 		}
 		if (itemstack.getItem() == FnafModModItems.FREDBEARS_FREDDY_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "fredbears_freddy";
 		} else if (itemstack.getItem() == FnafModModItems.FREDBEARS_BONNIE_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "fredbears_bonnie";
 		} else if (itemstack.getItem() == FnafModModItems.FREDBEARS_CHICA_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "fredbears_chica";
 		} else if (itemstack.getItem() == FnafModModItems.FREDBEARS_FOXY_SPAWN_ITEM.get()) {
-			move = 1;
 			spawned = "fredbears_foxy";
 		}
 		if (itemstack.getItem() == FnafModModItems.SPRINGTRAP_SPAWN_ITEM.get()) {

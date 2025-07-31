@@ -107,9 +107,11 @@ public class BigDoorPlaceHitboxesProcedure {
 					}
 				}
 			} else {
-				world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == FnafModModBlocks.BIG_DOOR_HITBOX.get()) {
+					world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
+				}
 			}
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip24 ? blockstate.getValue(_getip24) : -1) != 0) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip26 ? blockstate.getValue(_getip26) : -1) != 0) {
 				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.AIR) {
 					world.setBlock(BlockPos.containing(x, y - 1, z), block, 3);
 					{
@@ -137,9 +139,11 @@ public class BigDoorPlaceHitboxesProcedure {
 					}
 				}
 			} else {
-				world.setBlock(BlockPos.containing(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == FnafModModBlocks.BIG_DOOR_HITBOX.get()) {
+					world.setBlock(BlockPos.containing(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				}
 			}
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip33 ? blockstate.getValue(_getip33) : -1) != 0) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip37 ? blockstate.getValue(_getip37) : -1) != 0) {
 				if ((world.getBlockState(BlockPos.containing(sideX, y, sideZ))).getBlock() == Blocks.AIR) {
 					world.setBlock(BlockPos.containing(sideX, y, sideZ), block, 3);
 					{
@@ -219,13 +223,19 @@ public class BigDoorPlaceHitboxesProcedure {
 					}
 				}
 			} else {
-				world.setBlock(BlockPos.containing(sideX, y, sideZ), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(BlockPos.containing(sideX, y + 1, sideZ), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(BlockPos.containing(sideX, y - 1, sideZ), Blocks.AIR.defaultBlockState(), 3);
+				if ((world.getBlockState(BlockPos.containing(sideX, y, sideZ))).getBlock() == FnafModModBlocks.BIG_DOOR_HITBOX.get()) {
+					world.setBlock(BlockPos.containing(sideX, y, sideZ), Blocks.AIR.defaultBlockState(), 3);
+				}
+				if ((world.getBlockState(BlockPos.containing(sideX, y + 1, sideZ))).getBlock() == FnafModModBlocks.BIG_DOOR_HITBOX.get()) {
+					world.setBlock(BlockPos.containing(sideX, y + 1, sideZ), Blocks.AIR.defaultBlockState(), 3);
+				}
+				if ((world.getBlockState(BlockPos.containing(sideX, y - 1, sideZ))).getBlock() == FnafModModBlocks.BIG_DOOR_HITBOX.get()) {
+					world.setBlock(BlockPos.containing(sideX, y - 1, sideZ), Blocks.AIR.defaultBlockState(), 3);
+				}
 			}
 		} else {
 			wideDoorY = 0;
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip57 ? blockstate.getValue(_getip57) : -1) != 0) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip67 ? blockstate.getValue(_getip67) : -1) != 0) {
 				for (int index0 = 0; index0 < 3; index0++) {
 					if ((world.getBlockState(BlockPos.containing(x, y + wideDoorY, z))).getBlock() == Blocks.AIR) {
 						{

@@ -674,10 +674,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SHADOW_BONNIE_SPAWN_EGG = REGISTRY.register("shadow_bonnie_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.SHADOW_BONNIE, -16056302, -15794150, new Item.Properties()));
 	public static final RegistryObject<Item> ENDO_SKELETON_SPAWN_EGG = REGISTRY.register("endo_skeleton_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.ENDO_SKELETON, -6776939, -14606047, new Item.Properties()));
 	public static final RegistryObject<Item> ENDO_02_SPAWN_EGG = REGISTRY.register("endo_02_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.ENDO_02, -6776939, -14606047, new Item.Properties()));
-	public static final RegistryObject<Item> CRAWLING_TOY_BONNIE_SPAWN_EGG = REGISTRY.register("crawling_toy_bonnie_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.CRAWLING_TOY_BONNIE, -16737793, -1, new Item.Properties()));
-	public static final RegistryObject<Item> CRAWLING_MANGLE_SPAWN_EGG = REGISTRY.register("crawling_mangle_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.CRAWLING_MANGLE, -1, -26113, new Item.Properties()));
-	public static final RegistryObject<Item> CRAWLING_TOY_FOXY_SPAWN_EGG = REGISTRY.register("crawling_toy_foxy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.CRAWLING_TOY_FOXY, -1, -26113, new Item.Properties()));
-	public static final RegistryObject<Item> CRAWLING_TOY_CHICA_SPAWN_EGG = REGISTRY.register("crawling_toy_chica_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.CRAWLING_TOY_CHICA, -205, -39169, new Item.Properties()));
 	public static final RegistryObject<Item> MANGLE_SITTING_SPAWN_EGG = REGISTRY.register("mangle_sitting_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.MANGLE_SITTING, -1, -3514924, new Item.Properties()));
 	public static final RegistryObject<Item> DAY_TIME_TOY_FREDDY_SPAWN_EGG = REGISTRY.register("day_time_toy_freddy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAY_TIME_TOY_FREDDY, -9618409, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> DAY_TIME_TOY_BONNIE_SPAWN_EGG = REGISTRY.register("day_time_toy_bonnie_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAY_TIME_TOY_BONNIE, -16737793, -1, new Item.Properties()));
@@ -713,7 +709,6 @@ public class FnafModModItems {
 			() -> new ForgeSpawnEggItem(FnafModModEntities.SITTING_DAYTIME_SPRINGTRAP, -10066432, -6711040, new Item.Properties()));
 	public static final RegistryObject<Item> STANDING_DAYTIME_SPRINGTRAP_SPAWN_EGG = REGISTRY.register("standing_daytime_springtrap_spawn_egg",
 			() -> new ForgeSpawnEggItem(FnafModModEntities.STANDING_DAYTIME_SPRINGTRAP, -10066432, -6711040, new Item.Properties()));
-	public static final RegistryObject<Item> CRAWLING_SPRINGTRAP_SPAWN_EGG = REGISTRY.register("crawling_springtrap_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.CRAWLING_SPRINGTRAP, -10066432, -13421824, new Item.Properties()));
 	public static final RegistryObject<Item> LURE = block(FnafModModBlocks.LURE);
 	public static final RegistryObject<Item> NIGHTMARE_BONNIE_STATUE_SPAWN_EGG = REGISTRY.register("nightmare_bonnie_statue_spawn_egg",
 			() -> new ForgeSpawnEggItem(FnafModModEntities.NIGHTMARE_BONNIE_STATUE, -14282920, -10919532, new Item.Properties()));

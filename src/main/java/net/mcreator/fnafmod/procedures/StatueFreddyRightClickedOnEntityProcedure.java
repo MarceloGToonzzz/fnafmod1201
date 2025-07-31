@@ -13,7 +13,7 @@ public class StatueFreddyRightClickedOnEntityProcedure {
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FnafModModItems.MAT.get()) {
 			{
 				Entity _ent = entity;
-				_ent.setYRot((float) (entity.getYRot() + 45));
+				_ent.setYRot((float) (entity.getYRot() + 22.5));
 				_ent.setXRot(0);
 				_ent.setYBodyRot(_ent.getYRot());
 				_ent.setYHeadRot(_ent.getYRot());

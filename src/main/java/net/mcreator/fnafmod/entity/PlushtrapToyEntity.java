@@ -17,10 +17,12 @@ import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
@@ -33,6 +35,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.MatPickupProcedure;
+import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 public class PlushtrapToyEntity extends PathfinderMob {
@@ -138,6 +141,12 @@ public class PlushtrapToyEntity extends PathfinderMob {
 	}
 
 	@Override
+	public void baseTick() {
+		super.baseTick();
+		this.refreshDimensions();
+	}
+
+	@Override
 	public boolean checkSpawnObstruction(LevelReader world) {
 		return world.isUnobstructed(this);
 	}
@@ -150,6 +159,16 @@ public class PlushtrapToyEntity extends PathfinderMob {
 		Level world = this.level();
 		Entity entity = this;
 		return true;
+	}
+
+	@Override
+	public EntityDimensions getDimensions(Pose pose) {
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		return super.getDimensions(pose).scale((float) GetBoundaryScalesProcedure.execute(entity));
 	}
 
 	public static void init() {

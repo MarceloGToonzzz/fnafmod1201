@@ -50,6 +50,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.fnafmod.procedures.StatueSpawnProcedure;
 import net.mcreator.fnafmod.procedures.MatPickupProcedure;
 import net.mcreator.fnafmod.procedures.MaskProtectionTestForTickProcedure;
+import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 import net.mcreator.fnafmod.init.FnafModModBlocks;
@@ -205,7 +206,12 @@ public class WitheredGoldenFreddyEntity extends PathfinderMob implements GeoEnti
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) GetBoundaryScalesProcedure.execute(entity));
 	}
 
 	@Override

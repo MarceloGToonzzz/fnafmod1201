@@ -21,11 +21,9 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.control.MoveControl;
@@ -55,7 +53,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.ShadowFreddyOnInitialEntitySpawnProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
+import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 import javax.annotation.Nullable;
@@ -151,17 +149,6 @@ public class ShadowFreddyEntity extends Monster implements GeoEntity {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, true, false) {
-			@Override
-			public boolean canUse() {
-				double x = ShadowFreddyEntity.this.getX();
-				double y = ShadowFreddyEntity.this.getY();
-				double z = ShadowFreddyEntity.this.getZ();
-				Entity entity = ShadowFreddyEntity.this;
-				Level world = ShadowFreddyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
 	}
 
 	@Override
@@ -238,7 +225,12 @@ public class ShadowFreddyEntity extends Monster implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) GetBoundaryScalesProcedure.execute(entity));
 	}
 
 	@Override

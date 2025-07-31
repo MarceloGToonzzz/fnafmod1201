@@ -2683,18 +2683,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -2815,18 +2803,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -4841,18 +4817,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -4897,18 +4861,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -16681,72 +16633,6 @@
       "path": "~/Entities/extras"
     },
     {
-      "name": "CrawlingToyBonnie",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawling_toy_bonnie",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/CrawlingToyBonnieModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/crawling_toy_bonnie_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/CrawlingToyBonnieRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/CrawlingToyBonnieEntity.java"
-        ]
-      },
-      "path": "~/Entities/VentCrawler"
-    },
-    {
-      "name": "CrawlingMangle",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawling_mangle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/CrawlingMangleEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/crawling_mangle_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/CrawlingMangleModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/layer/CrawlingMangleLayer.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/CrawlingMangleRenderer.java"
-        ]
-      },
-      "path": "~/Entities/VentCrawler"
-    },
-    {
-      "name": "CrawlingToyFoxy",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawling_toy_foxy",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/crawling_toy_foxy_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/CrawlingToyFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/CrawlingToyFoxyRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/CrawlingToyFoxyModel.java"
-        ]
-      },
-      "path": "~/Entities/VentCrawler"
-    },
-    {
-      "name": "CrawlingToyChica",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawling_toy_chica",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/CrawlingToyChicaRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/crawling_toy_chica_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/CrawlingToyChicaEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/CrawlingToyChicaModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/layer/CrawlingToyChicaLayer.java"
-        ]
-      },
-      "path": "~/Entities/VentCrawler"
-    },
-    {
       "name": "MangleSitting",
       "type": "animatedentity",
       "compiles": true,
@@ -17316,23 +17202,6 @@
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
-    },
-    {
-      "name": "CrawlingSpringtrap",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crawling_springtrap",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/layer/CrawlingSpringtrapLayer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/CrawlingSpringtrapModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/crawling_springtrap_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/CrawlingSpringtrapRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/CrawlingSpringtrapEntity.java"
-        ]
-      },
-      "path": "~/Entities/VentCrawler"
     },
     {
       "name": "Lure",
@@ -23043,10 +22912,6 @@
             "type": "number"
           },
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
             "name": "z",
             "type": "number"
           },
@@ -28422,6 +28287,129 @@
           "src/main/java/net/mcreator/fnafmod/command/ToggleNbtPositionsCommand.java"
         ]
       }
+    },
+    {
+      "name": "GetScales",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_scales",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GetScalesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Scaling"
+    },
+    {
+      "name": "GetBoundaryScales",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_boundary_scales",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GetBoundaryScalesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Scaling"
+    },
+    {
+      "name": "FnafModConfigs",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fnaf_mod_configs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/configuration/FnafModConfigsConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "IsEntityBeingLookedAt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_entity_being_looked_at",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/IsEntityBeingLookedAtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "mob",
+            "type": "entity"
+          },
+          {
+            "name": "player",
+            "type": "entity"
+          },
+          {
+            "name": "height",
+            "type": "number"
+          },
+          {
+            "name": "range",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "GetNewTarget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_new_target",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GetNewTargetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Functions"
     }
   ],
   "variable_elements": [
@@ -29230,6 +29218,19 @@
       "CUSTOM:BlueFabric",
       "CUSTOM:PurpleFabric"
     ],
+    "ENTITIES:mod:animatronic-maskfoolers": [
+      "CUSTOM:NightimeToyChica",
+      "CUSTOM:ToyBonnie",
+      "CUSTOM:ToyFoxy",
+      "CUSTOM:ToyFreddy",
+      "CUSTOM:Mangle",
+      "CUSTOM:WitheredBonnie",
+      "CUSTOM:WitheredChica",
+      "CUSTOM:WitheredFreddy",
+      "CUSTOM:WitheredGoldenFreddy",
+      "CUSTOM:BB",
+      "CUSTOM:JJ"
+    ],
     "ENTITIES:mod:fnaf1": [
       "CUSTOM:BonnieBunny",
       "CUSTOM:ChicaChicken",
@@ -29237,32 +29238,28 @@
       "CUSTOM:FreddyFazbear"
     ],
     "ENTITIES:mod:fnaf2": [
-      "CUSTOM:CrawlingMangle",
-      "CUSTOM:CrawlingToyBonnie",
-      "CUSTOM:CrawlingToyChica",
-      "CUSTOM:CrawlingToyFoxy",
-      "CUSTOM:ToyBonnie",
-      "CUSTOM:ToyFoxy",
-      "CUSTOM:ToyFreddy",
       "CUSTOM:WitheredBonnie",
       "CUSTOM:WitheredChica",
       "CUSTOM:WitheredFoxy",
       "CUSTOM:WitheredFreddy",
-      "CUSTOM:NightimeToyChica",
-      "CUSTOM:Mangle"
+      "CUSTOM:WitheredGoldenFreddy",
+      "CUSTOM:ShadowBonnie",
+      "CUSTOM:ShadowFreddy",
+      "CUSTOM:Puppet",
+      "CUSTOM:Mangle",
+      "CUSTOM:BB",
+      "CUSTOM:JJ",
+      "CUSTOM:ToyBonnie",
+      "CUSTOM:ToyChica",
+      "CUSTOM:ToyFoxy",
+      "CUSTOM:ToyFreddy"
     ],
     "ENTITIES:mod:fnaf3": [
-      "CUSTOM:CrawlingSpringtrap",
       "CUSTOM:Springtrap"
     ],
     "ENTITIES:mod:jumpscare_animatronics": [
       "CUSTOM:BonnieBunny",
       "CUSTOM:ChicaChicken",
-      "CUSTOM:CrawlingMangle",
-      "CUSTOM:CrawlingSpringtrap",
-      "CUSTOM:CrawlingToyBonnie",
-      "CUSTOM:CrawlingToyChica",
-      "CUSTOM:CrawlingToyFoxy",
       "CUSTOM:FoxyPirate",
       "CUSTOM:FreddyFazbear",
       "CUSTOM:JackOBonnie",
@@ -29326,6 +29323,13 @@
       "~CUSTOM:RedBlackTileSlab",
       "~CUSTOM:RedBlueTileSlab",
       "~CUSTOM:BlackWhiteTileSlab"
+    ],
+    "ENTITIES:mod:animatronic-crawlers": [
+      "CUSTOM:NightimeToyChica",
+      "CUSTOM:ToyBonnie",
+      "CUSTOM:ToyFoxy",
+      "CUSTOM:Mangle",
+      "CUSTOM:Springtrap"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BrownTanTileSlab",
@@ -29602,6 +29606,12 @@
       "CUSTOM:Remnant",
       "CUSTOM:ShadowRemnant"
     ],
+    "ENTITIES:mod:fnafmod-animatronics": [
+      "#mod:fnaf1",
+      "#mod:fnaf2",
+      "#mod:fnaf3",
+      "#mod:fnaf4"
+    ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
@@ -29621,6 +29631,10 @@
       "~CUSTOM:ToreadorMarch",
       "~CUSTOM:HappiestDay",
       "~CUSTOM:DontGo"
+    ],
+    "ENTITIES:mod:fnafmod-passiveanimatronics": [
+      "CUSTOM:BB",
+      "CUSTOM:JJ"
     ],
     "BLOCKS:mod:states1": [
       "CUSTOM:BoothTable"
@@ -30561,7 +30575,6 @@
       "entity.fnaf_mod.unwithered_foxy": "Un-Withered Foxy",
       "entity.fnaf_mod.fredbear_animatronic": "Fredbear",
       "block.fnaf_mod.poster_8.description_0": "Let\u0027s Party!",
-      "entity.fnaf_mod.crawling_toy_foxy": "Crawling Toy Foxy",
       "item.fnaf_mod.our_little_horror_story": "Music Disc",
       "item.fnaf_mod.spring_bonnie_cut_out_spawn_egg": "Spring Bonnie Cutout Spawn Egg",
       "block.fnaf_mod.thin_ash_curtain.description_0": "§7(Light Gray Curtain)",
@@ -30625,7 +30638,6 @@
       "block.fnaf_mod.swamp_curtain": "Swamp Curtain",
       "item.fnaf_mod.glitch_bonnie_animatronic_spawn_egg": "Spring Bonnie? Spawn Egg",
       "item.fnaf_mod.yellow_bear_suit_chestplate": "Yellowbear Body",
-      "entity.fnaf_mod.crawling_springtrap": "Crawling Springtrap",
       "item.fnaf_mod.showtime_madame_macabre_bitemark_remix": "Music Disc",
       "block.fnaf_mod.mural_stage_01": "Mural",
       "block.fnaf_mod.mural_stage_01.description_0": "Fredbear\u0027s Family Diner 1972",
@@ -30653,7 +30665,6 @@
       "entity.fnaf_mod.toy_foxy_cut_out": "Toy Foxy Cutout",
       "block.fnaf_mod.plush_freddy": "Freddy Plush",
       "entity.fnaf_mod.tameable_chica": "Adventure Withered Chica",
-      "item.fnaf_mod.crawling_toy_bonnie_spawn_egg": "Crawling Toy Bonnie Spawn Egg",
       "block.fnaf_mod.awning_blue": "Awning",
       "block.fnaf_mod.diner_chair": "Diner Chair {Red}",
       "item.fnaf_mod.bonnie_suit_boots": "Bonnie Boots",
@@ -30697,7 +30708,6 @@
       "block.fnaf_mod.party_hat_blue": "Party Hat {Blue}",
       "item_group.fnaf_mod.suits": "FNAF Suits",
       "item.fnaf_mod.toy_bonnie_spawn_item": "Toy Bonnie",
-      "item.fnaf_mod.crawling_toy_foxy_spawn_egg": "Crawling Toy Foxy Spawn Egg",
       "block.fnaf_mod.big_red_door": "Big Red Establishment Door",
       "block.fnaf_mod.thin_purple_checkered_curtain": "Thin Purple Curtain",
       "itemGroup.tabfnaf_blocks": "FNAF Blocks",
@@ -30792,7 +30802,6 @@
       "itemGroup.tabfnaf_mobs": "FNAF Mobs",
       "block.fnaf_mod.white_wall_stairs": "White Wall Stairs",
       "item.fnaf_mod.fredbears_foxy_spawn_egg": "Fredbear\u0027s Family Diner Foxy Spawn Egg",
-      "entity.fnaf_mod.crawling_toy_chica": "Crawling Toy Chica",
       "item.fnaf_mod.endo_02_spawn_item": "Endo-02",
       "item.fnaf_mod.phantom_mangle_spawn_egg": "Phantom Mangle Spawn Egg",
       "item.fnaf_mod.foxy": "Drone Foxy",
@@ -30839,7 +30848,6 @@
       "block.fnaf_mod.thin_bubble_gum_curtain": "Thin Bubblegum Curtain",
       "block.fnaf_mod.fnaf_1_celebrate": "Celebrate Poster Classic",
       "key.fnaf_mod.spawn_party": "Spawn Party",
-      "entity.fnaf_mod.crawling_mangle": "Crawling Mangle",
       "entity.fnaf_mod.nightmarione_statue": "Nightmarionne Statue",
       "block.fnaf_mod.mesh_trash_can": "Mesh Trash Can",
       "item.fnaf_mod.light_gray_plastic": "Light Gray Plastic",
@@ -30921,7 +30929,6 @@
       "block.fnaf_mod.yellow_wall_slab": "Yellow  Wall Slab",
       "item.fnaf_mod.yellow_bear_suit_helmet": "Yellowbear Head",
       "block.fnaf_mod.diagonal_wall_top": "Diagonal Wall Top",
-      "item.fnaf_mod.crawling_springtrap_spawn_egg": "Crawling Springtrap Spawn Egg",
       "block.fnaf_mod.toy_telephone": "Toy Telephone",
       "item.fnaf_mod.unwithered_foxy_spawn_egg": "Un-Withered Foxy Spawn Egg",
       "block.fnaf_mod.error_tile": "Missing Texture Tile",
@@ -30986,7 +30993,6 @@
       "block.fnaf_mod.cut_stage_bricks": "Cut Etched Bricks",
       "block.fnaf_mod.poster_6.description_0": "Poster of Toy Chica!",
       "item.fnaf_mod.full_hostile_chica_spawn_egg": "Chica Spawn Egg",
-      "entity.fnaf_mod.crawling_toy_bonnie": "Crawling Toy Bonnie",
       "item.fnaf_mod.darkness_ahead.desc": "Darkness Ahead - Lucas Burnett",
       "block.fnaf_mod.fredbear_poster_3.description_0": "Poster of Fredbear!",
       "block.fnaf_mod.un_withered_chica_head": "Un-Withered Chica Head",
@@ -31193,7 +31199,6 @@
       "entity.fnaf_mod.nightmare_mangle": "Nightmare Mangle",
       "block.fnaf_mod.red_blue_tile_slab_cracked": "Cracked Red Blue Tile Slab",
       "block.fnaf_mod.fnaf_2_celebrate": "Celebrate Poster Retro",
-      "item.fnaf_mod.crawling_mangle_spawn_egg": "Crawling Mangle Spawn Egg",
       "gui.fnaf_mod.wall_change_2.button_c": "C",
       "block.fnaf_mod.music_box": "Music Box",
       "gui.fnaf_mod.wall_change_2.button_b": "B",
@@ -31503,7 +31508,6 @@
       "block.fnaf_mod.structure_spawning_block_4": "Structure Spawning Block (Family Diner)",
       "item.fnaf_mod.paint_brush": "Paint Brush",
       "item.fnaf_mod.toy_foxy_spawn_item": "Toy Foxy",
-      "item.fnaf_mod.crawling_toy_chica_spawn_egg": "Crawling Toy Chica Spawn Egg",
       "item.fnaf_mod.withered_chica_spawn_item": "Withered Chica",
       "block.fnaf_mod.stool_2": "Stool {Red}",
       "gui.fnaf_mod.camera_gui.label_page_enbtintegerplus2": "Page: \u003cENBT:integer:plus2\u003e",
@@ -32018,6 +32022,10 @@
       },
       {
         "name": "Trades",
+        "children": []
+      },
+      {
+        "name": "Scaling",
         "children": []
       }
     ]

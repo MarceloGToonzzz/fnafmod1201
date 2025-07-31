@@ -24,11 +24,6 @@ import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.fnafmod.entity.FoxyPirateEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyFoxyEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyChicaEntity;
-import net.mcreator.fnafmod.entity.CrawlingToyBonnieEntity;
-import net.mcreator.fnafmod.entity.CrawlingSpringtrapEntity;
-import net.mcreator.fnafmod.entity.CrawlingMangleEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
 
@@ -51,9 +46,6 @@ public class JumpscareAnimationsProcedure {
 		if (sourceentity instanceof SpringtrapEntity) {
 			((SpringtrapEntity) sourceentity).setAnimation("jumpscare");
 		}
-		if (sourceentity instanceof CrawlingSpringtrapEntity) {
-			((CrawlingSpringtrapEntity) sourceentity).setAnimation("jumpscare");
-		}
 		if (sourceentity instanceof ToyFreddyEntity) {
 			((ToyFreddyEntity) sourceentity).setAnimation("jumpscare");
 		}
@@ -68,18 +60,6 @@ public class JumpscareAnimationsProcedure {
 		}
 		if (sourceentity instanceof MangleEntity) {
 			((MangleEntity) sourceentity).setAnimation("jumpscare");
-		}
-		if (sourceentity instanceof CrawlingMangleEntity) {
-			((CrawlingMangleEntity) sourceentity).setAnimation("jumpscare");
-		}
-		if (sourceentity instanceof CrawlingToyBonnieEntity) {
-			((CrawlingToyBonnieEntity) sourceentity).setAnimation("jumpscare");
-		}
-		if (sourceentity instanceof CrawlingToyChicaEntity) {
-			((CrawlingToyChicaEntity) sourceentity).setAnimation("jumpscare");
-		}
-		if (sourceentity instanceof CrawlingToyFoxyEntity) {
-			((CrawlingToyFoxyEntity) sourceentity).setAnimation("jumpscare");
 		}
 		if (sourceentity instanceof WitheredBonnieEntity) {
 			((WitheredBonnieEntity) sourceentity).setAnimation("jumpscare");
