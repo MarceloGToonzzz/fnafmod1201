@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Un-Withered Foxy",
     "mobLabel": "",
-    "mobModelTexture": "unwithered_foxy.png",
+    "mobModelTexture": "unwithered-foxy.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -108,12 +108,12 @@
     "onInitialSpawn": {
       "name": "StatueSpawn"
     },
-    "hasAI": true,
+    "hasAI": false,
     "aiBase": "(none)",
-    "aixml": "",
-    "model": "unwitheredfoxy.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
+    "model": "unwithered-foxy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.unwitheredfoxy.showtime",
+    "animation1": "animation.foxy.perform",
     "animation2": "animation.unwitheredfoxy.walk",
     "animation3": "",
     "animation4": "",
@@ -123,7 +123,7 @@
     "animation8": "",
     "animation9": "",
     "animation10": "",
-    "enable2": true,
+    "enable2": false,
     "enable3": false,
     "enable4": false,
     "enable5": false,

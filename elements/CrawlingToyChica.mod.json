@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Crawling Toy Chica",
     "mobLabel": "",
-    "mobModelTexture": "toy_chica_night.png",
-    "mobModelGlowTexture": "toy_chica_night_eye_spooky.png",
+    "mobModelTexture": "toychica.png",
+    "mobModelGlowTexture": "toychica-glow.png",
     "visualScale": {
       "fixedValue": 1.0
     },
@@ -110,7 +110,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"757\" y=\"68\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "toychica.geo.json",
     "groupName": "",
-    "animation1": "animation.toychica.crawlidle",
+    "animation1": "animation.toychica.crawl_idle",
     "animation2": "animation.toychica.crawl",
     "animation3": "",
     "animation4": "",

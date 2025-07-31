@@ -83,7 +83,7 @@ public class WitheredGoldenFreddyEntity extends PathfinderMob implements GeoEnti
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "witheredgoldenfreddytexture");
+		this.entityData.define(TEXTURE, "withered-golden-freddy");
 	}
 
 	public void setTexture(String texture) {
@@ -230,7 +230,7 @@ public class WitheredGoldenFreddyEntity extends PathfinderMob implements GeoEnti
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfreddy.sit"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.sit"));
 		}
 		return PlayState.STOP;
 	}

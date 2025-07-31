@@ -78,7 +78,7 @@ public class SittingWitheredBonnieEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "witheredbonnietexture");
+		this.entityData.define(TEXTURE, "withered-bonnie");
 	}
 
 	public void setTexture(String texture) {
@@ -202,7 +202,7 @@ public class SittingWitheredBonnieEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredbonnie.sit"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.bonnie.day"));
 		}
 		return PlayState.STOP;
 	}

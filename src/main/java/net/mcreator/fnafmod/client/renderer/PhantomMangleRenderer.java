@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.fnafmod.entity.model.PhantomMangleModel;
+import net.mcreator.fnafmod.entity.layer.PhantomMangleLayer;
 import net.mcreator.fnafmod.entity.PhantomMangleEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -19,6 +20,7 @@ public class PhantomMangleRenderer extends GeoEntityRenderer<PhantomMangleEntity
 	public PhantomMangleRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PhantomMangleModel());
 		this.shadowRadius = 0.5f;
+		this.addRenderLayer(new PhantomMangleLayer(this));
 	}
 
 	@Override

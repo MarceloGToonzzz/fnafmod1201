@@ -15,7 +15,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CrawlingToyChicaLayer extends GeoRenderLayer<CrawlingToyChicaEntity> {
-	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/toy_chica_night_eye_spooky.png");
+	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/toychica-glow.png");
 
 	public CrawlingToyChicaLayer(GeoRenderer<CrawlingToyChicaEntity> entityRenderer) {
 		super(entityRenderer);

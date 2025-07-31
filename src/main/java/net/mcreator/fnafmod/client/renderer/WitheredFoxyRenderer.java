@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.fnafmod.entity.model.WitheredFoxyModel;
+import net.mcreator.fnafmod.entity.layer.WitheredFoxyLayer;
 import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -19,6 +20,7 @@ public class WitheredFoxyRenderer extends GeoEntityRenderer<WitheredFoxyEntity> 
 	public WitheredFoxyRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new WitheredFoxyModel());
 		this.shadowRadius = 0.5f;
+		this.addRenderLayer(new WitheredFoxyLayer(this));
 	}
 
 	@Override

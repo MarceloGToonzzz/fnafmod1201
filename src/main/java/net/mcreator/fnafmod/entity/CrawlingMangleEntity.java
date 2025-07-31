@@ -198,9 +198,9 @@ public class CrawlingMangleEntity extends PathfinderMob implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.crawl"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.crawl"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.crawlidle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.crawlidle"));
 		}
 		return PlayState.STOP;
 	}

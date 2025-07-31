@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Withered Golden Freddy",
     "mobLabel": "",
-    "mobModelTexture": "witheredgoldenfreddytexture.png",
+    "mobModelTexture": "withered-golden-freddy.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -111,9 +111,9 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"322\" y=\"405\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">FreddyFazbearOnEntityTickUpdate,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">MaskProtectionTestForTick,null</field></block></next></block></next></block></xml>",
-    "model": "witheredfreddy.geo.json",
+    "model": "withered-golden-freddy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.witheredfreddy.sit",
+    "animation1": "animation.freddy.sit",
     "animation2": "animation.witheredfreddy.walk",
     "animation3": "",
     "animation4": "",

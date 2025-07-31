@@ -119,7 +119,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"1422\" y=\"290\"></block></xml>",
     "model": "mangle.geo.json",
     "groupName": "",
-    "animation1": "animation.mangle.day",
+    "animation1": "animation.model.day",
     "animation2": "",
     "animation3": "",
     "animation4": "",

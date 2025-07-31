@@ -7,7 +7,7 @@ public class NighttimeTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		SetSpawnNbtProcedure.execute(entity);
+		SetSpawnNbtProcedure.execute(world, entity);
 		NightTurnDayProcedure.execute(world, x, y, z, entity);
 		CrawlingFunctionProcedure.execute(world, x, y, z, entity);
 	}

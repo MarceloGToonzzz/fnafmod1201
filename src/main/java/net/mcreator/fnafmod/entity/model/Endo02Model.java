@@ -9,12 +9,12 @@ import net.mcreator.fnafmod.entity.Endo02Entity;
 public class Endo02Model extends GeoModel<Endo02Entity> {
 	@Override
 	public ResourceLocation getAnimationResource(Endo02Entity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/witheredfreddy.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/endo02.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(Endo02Entity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/witheredfreddy.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/endo02.geo.json");
 	}
 
 	@Override

@@ -253,9 +253,9 @@ public class MangleEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.idle"));
 		}
 		return PlayState.STOP;
 	}

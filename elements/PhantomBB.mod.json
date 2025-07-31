@@ -5,7 +5,7 @@
     "mobName": "Phantom Balloon Boy",
     "mobLabel": "",
     "mobModelTexture": "phantom_bb.png",
-    "mobModelGlowTexture": "",
+    "mobModelGlowTexture": "phantom_bb-glow.png",
     "visualScale": {
       "fixedValue": 1.0
     },

@@ -88,7 +88,7 @@ public class NightimeToyChicaEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "toy_chica_night");
+		this.entityData.define(TEXTURE, "toychica");
 	}
 
 	public void setTexture(String texture) {
@@ -271,9 +271,9 @@ public class NightimeToyChicaEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.walk_night"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.idle_night"));
 		}
 		return PlayState.STOP;
 	}

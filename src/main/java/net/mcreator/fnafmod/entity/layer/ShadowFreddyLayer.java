@@ -15,7 +15,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ShadowFreddyLayer extends GeoRenderLayer<ShadowFreddyEntity> {
-	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/withered_shadow_freddy_white_eye_glow.png");
+	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/withered-shadow-freddy_glow.png");
 
 	public ShadowFreddyLayer(GeoRenderer<ShadowFreddyEntity> entityRenderer) {
 		super(entityRenderer);

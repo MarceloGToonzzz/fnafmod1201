@@ -79,7 +79,7 @@ public class PhantomFoxyEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "phantom_foxy");
+		this.entityData.define(TEXTURE, "phantom-foxy");
 	}
 
 	public void setTexture(String texture) {
@@ -211,9 +211,9 @@ public class PhantomFoxyEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.walkphantom"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_foxy.phantomwalk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.idlephantom"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_foxy.phantomidle"));
 		}
 		return PlayState.STOP;
 	}

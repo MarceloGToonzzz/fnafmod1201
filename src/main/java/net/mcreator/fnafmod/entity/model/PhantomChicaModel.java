@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.PhantomChicaEntity;
 public class PhantomChicaModel extends GeoModel<PhantomChicaEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(PhantomChicaEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/chica.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/phantom_chica.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(PhantomChicaEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/chica.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/phantom_chica.geo.json");
 	}
 
 	@Override

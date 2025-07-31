@@ -15,7 +15,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class MangleLayer extends GeoRenderLayer<MangleEntity> {
-	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/eyemangle.png");
+	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/mangle-glow.png");
 
 	public MangleLayer(GeoRenderer<MangleEntity> entityRenderer) {
 		super(entityRenderer);

@@ -210,9 +210,9 @@ public class PhantomPuppetEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.puppet.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.puppet.phantomwalk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.puppet.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.puppet.phantomidle"));
 		}
 		return PlayState.STOP;
 	}

@@ -256,7 +256,7 @@ public class MangleSittingEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.day"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.day"));
 		}
 		return PlayState.STOP;
 	}

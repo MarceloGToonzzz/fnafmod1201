@@ -69,7 +69,7 @@ public class UnwitheredChicaEntity extends PathfinderMob implements GeoEntity {
 	public UnwitheredChicaEntity(EntityType<UnwitheredChicaEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
-		setNoAi(false);
+		setNoAi(true);
 		setMaxUpStep(0.6f);
 		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FnafModModItems.MICROPHONE.get()));
@@ -80,7 +80,7 @@ public class UnwitheredChicaEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "unwithered_chica");
+		this.entityData.define(TEXTURE, "unwithered-chica");
 	}
 
 	public void setTexture(String texture) {
@@ -94,12 +94,6 @@ public class UnwitheredChicaEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
-	protected void registerGoals() {
-		super.registerGoals();
-
 	}
 
 	@Override
@@ -195,12 +189,7 @@ public class UnwitheredChicaEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
-
-			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.unwitheredchica.walk"));
-			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.unwitheredchica.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.perform"));
 		}
 		return PlayState.STOP;
 	}

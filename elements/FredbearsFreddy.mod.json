@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Fredbear's Family Diner Freddy",
     "mobLabel": "",
-    "mobModelTexture": "dinerfreddy.png",
+    "mobModelTexture": "diner-freddy.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -108,12 +108,12 @@
     "onInitialSpawn": {
       "name": "StatueSpawn"
     },
-    "hasAI": true,
+    "hasAI": false,
     "aiBase": "(none)",
-    "aixml": "",
-    "model": "dinerfreddy.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
+    "model": "diner-freddy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.dinerfreddy.stage",
+    "animation1": "animation.freddy.perform",
     "animation2": "animation.witheredfreddy.walk",
     "animation3": "",
     "animation4": "",

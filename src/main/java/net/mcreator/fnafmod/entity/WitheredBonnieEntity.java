@@ -83,7 +83,7 @@ public class WitheredBonnieEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "witheredbonnietexture");
+		this.entityData.define(TEXTURE, "withered-bonnie");
 	}
 
 	public void setTexture(String texture) {
@@ -260,9 +260,9 @@ public class WitheredBonnieEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredbonnie.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.bonnie.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredbonnie.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.bonnie.idle"));
 		}
 		return PlayState.STOP;
 	}

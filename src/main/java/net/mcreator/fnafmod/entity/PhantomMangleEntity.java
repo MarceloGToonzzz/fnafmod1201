@@ -79,7 +79,7 @@ public class PhantomMangleEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "phantom_mangle");
+		this.entityData.define(TEXTURE, "phantom-mangle");
 	}
 
 	public void setTexture(String texture) {
@@ -211,9 +211,9 @@ public class PhantomMangleEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.phantomwalk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mangle.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.phantomidle"));
 		}
 		return PlayState.STOP;
 	}

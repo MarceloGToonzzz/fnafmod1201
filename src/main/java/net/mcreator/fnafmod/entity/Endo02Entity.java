@@ -234,9 +234,9 @@ public class Endo02Entity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfreddy.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.endo.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfreddy.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.endo.idle"));
 		}
 		return PlayState.STOP;
 	}

@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.PhantomPuppetEntity;
 public class PhantomPuppetModel extends GeoModel<PhantomPuppetEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(PhantomPuppetEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/puppet.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/phantom-puppet.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(PhantomPuppetEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/puppet.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/phantom-puppet.geo.json");
 	}
 
 	@Override

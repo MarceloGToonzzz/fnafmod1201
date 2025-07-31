@@ -73,7 +73,7 @@ public class CrawlingToyChicaEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "toy_chica_night");
+		this.entityData.define(TEXTURE, "toychica");
 	}
 
 	public void setTexture(String texture) {
@@ -200,7 +200,7 @@ public class CrawlingToyChicaEntity extends PathfinderMob implements GeoEntity {
 			) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.crawl"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.crawlidle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.crawl_idle"));
 		}
 		return PlayState.STOP;
 	}

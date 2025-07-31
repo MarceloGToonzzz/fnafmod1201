@@ -213,9 +213,9 @@ public class ShadowBonnieEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toybonnie.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toybonnie.shadowwalk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toybonnie.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toybonnie.shadowidle"));
 		}
 		return PlayState.STOP;
 	}

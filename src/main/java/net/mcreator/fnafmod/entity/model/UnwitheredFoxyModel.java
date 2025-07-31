@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.UnwitheredFoxyEntity;
 public class UnwitheredFoxyModel extends GeoModel<UnwitheredFoxyEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(UnwitheredFoxyEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/unwitheredfoxy.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/unwithered-foxy.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(UnwitheredFoxyEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/unwitheredfoxy.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/unwithered-foxy.geo.json");
 	}
 
 	@Override

@@ -120,7 +120,7 @@ public class ShadowFreddyEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "shadowfreddytexture");
+		this.entityData.define(TEXTURE, "withered-shadow-freddy");
 	}
 
 	public void setTexture(String texture) {
@@ -273,7 +273,7 @@ public class ShadowFreddyEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfreddy.sit"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.sit"));
 		}
 		return PlayState.STOP;
 	}

@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
 public class WitheredBonnieModel extends GeoModel<WitheredBonnieEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(WitheredBonnieEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/witheredbonnie.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/withered-bonnie.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(WitheredBonnieEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/witheredbonnie.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/withered-bonnie.geo.json");
 	}
 
 	@Override

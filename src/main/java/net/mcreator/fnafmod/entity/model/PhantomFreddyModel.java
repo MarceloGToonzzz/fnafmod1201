@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.PhantomFreddyEntity;
 public class PhantomFreddyModel extends GeoModel<PhantomFreddyEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(PhantomFreddyEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/witheredfreddy.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/phantom-freddy.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(PhantomFreddyEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/witheredfreddy.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/phantom-freddy.geo.json");
 	}
 
 	@Override

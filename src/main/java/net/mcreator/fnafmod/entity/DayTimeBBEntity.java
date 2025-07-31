@@ -119,7 +119,7 @@ public class DayTimeBBEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "balloonboytexture");
+		this.entityData.define(TEXTURE, "bb");
 	}
 
 	public void setTexture(String texture) {

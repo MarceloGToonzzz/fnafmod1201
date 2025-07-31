@@ -15,7 +15,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class ShadowBonnieLayer extends GeoRenderLayer<ShadowBonnieEntity> {
-	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/shadow_bonnie_glow.png");
+	private static final ResourceLocation LAYER = new ResourceLocation("fnaf_mod", "textures/entities/shadow_bonnie-glow.png");
 
 	public ShadowBonnieLayer(GeoRenderer<ShadowBonnieEntity> entityRenderer) {
 		super(entityRenderer);

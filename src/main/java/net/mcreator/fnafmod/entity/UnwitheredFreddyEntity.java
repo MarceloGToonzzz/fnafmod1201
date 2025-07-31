@@ -80,7 +80,7 @@ public class UnwitheredFreddyEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "unwithered_freddy");
+		this.entityData.define(TEXTURE, "unwithered-freddy");
 	}
 
 	public void setTexture(String texture) {
@@ -195,12 +195,7 @@ public class UnwitheredFreddyEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
-
-			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.unwitheredfreddy.walk"));
-			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.unwitheredfreddy.stage"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.perform"));
 		}
 		return PlayState.STOP;
 	}

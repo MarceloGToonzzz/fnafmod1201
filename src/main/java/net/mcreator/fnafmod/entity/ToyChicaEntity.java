@@ -88,7 +88,7 @@ public class ToyChicaEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "toy_chica");
+		this.entityData.define(TEXTURE, "toychica");
 	}
 
 	public void setTexture(String texture) {
@@ -235,9 +235,9 @@ public class ToyChicaEntity extends PathfinderMob implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.daywalk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.walk_day"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.showtime"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toychica.idle_day"));
 		}
 		return PlayState.STOP;
 	}

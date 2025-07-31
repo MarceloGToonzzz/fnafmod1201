@@ -26,9 +26,13 @@ public class SpawnItemActionProcedure {
 		double yey = 0;
 		double zez = 0;
 		double yaw = 0;
+		double move = 0;
 		String command = "";
 		String spawned = "";
+		String registry = "";
+		String ai = "";
 		spawned = ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "")).replace("fnaf_mod:", "");
+		move = 1;
 		if (itemstack.getItem() == FnafModModItems.FREDDY.get()) {
 			spawned = "passive_freddy";
 		} else if (itemstack.getItem() == FnafModModItems.EVIL_FREDDY_ITEM_SPAWN.get()) {
@@ -62,43 +66,72 @@ public class SpawnItemActionProcedure {
 			spawned = "passive_spring_bonnie";
 		}
 		if (itemstack.getItem() == FnafModModItems.FREDDY_SPAWN_ITEM.get()) {
-			spawned = "freddy_fazbear";
+			spawned = "day_time_freddy";
 		} else if (itemstack.getItem() == FnafModModItems.BONNIE_SPAWN.get()) {
-			spawned = "bonnie_bunny";
+			spawned = "day_time_bonnie";
 		} else if (itemstack.getItem() == FnafModModItems.CHICA_SPAWN_ITEM.get()) {
-			spawned = "chica_chicken";
+			spawned = "daytime_chica";
 		} else if (itemstack.getItem() == FnafModModItems.FOXY_SPAWN.get()) {
-			spawned = "foxy_pirate";
+			spawned = "day_time_foxy";
 		} else if (itemstack.getItem() == FnafModModItems.ENDO.get()) {
 			spawned = "endo_skeleton";
 		} else if (itemstack.getItem() == FnafModModItems.GOLDEN_FREDDY_SPAWN_ITEM.get()) {
 			spawned = "golden_freddy";
 		}
 		if (itemstack.getItem() == FnafModModItems.TOY_FREDDY_SPAWN_ITEM.get()) {
-			spawned = "toy_freddy";
+			spawned = "day_time_toy_freddy";
 		} else if (itemstack.getItem() == FnafModModItems.TOY_BONNIE_SPAWN_ITEM.get()) {
-			spawned = "toy_bonnie";
+			spawned = "day_time_toy_bonnie";
 		} else if (itemstack.getItem() == FnafModModItems.TOY_CHICA_SPAWN_ITEM.get()) {
-			spawned = "nightime_toy_chica";
+			spawned = "toy_chica";
 		} else if (itemstack.getItem() == FnafModModItems.TOY_FOXY_SPAWN_ITEM.get()) {
-			spawned = "toy_foxy";
+			spawned = "day_time_toy_foxy";
 		} else if (itemstack.getItem() == FnafModModItems.MANGLE_SPAWN_ITEM.get()) {
-			spawned = "mangle";
+			spawned = "mangle_sitting";
 		} else if (itemstack.getItem() == FnafModModItems.BB_SPAWN_ITEM.get()) {
-			spawned = "bb";
+			spawned = "day_time_bb";
 		} else if (itemstack.getItem() == FnafModModItems.JJ_SPAWN_ITEM.get()) {
 			spawned = "jj";
 		} else if (itemstack.getItem() == FnafModModItems.PUPPET_SPAWN_ITEM.get()) {
-			spawned = "puppet";
+			spawned = "day_time_puppet";
 		}
 		if (itemstack.getItem() == FnafModModItems.WITHERED_FREDDY_SPAWN_ITEM.get()) {
-			spawned = "withered_freddy";
+			spawned = "ded_withered_freddy";
 		} else if (itemstack.getItem() == FnafModModItems.WITHERED_BONNIE_SPAWN_ITEM.get()) {
-			spawned = "withered_bonnie";
+			spawned = "sitting_withered_bonnie";
 		} else if (itemstack.getItem() == FnafModModItems.WITHERED_CHICA_SPAWN_ITEM.get()) {
-			spawned = "withered_chica";
+			spawned = "sitting_withered_chica";
 		} else if (itemstack.getItem() == FnafModModItems.WITHERED_FOXY_SPAWN_ITEM.get()) {
-			spawned = "withered_foxy";
+			spawned = "day_time_withered_foxy";
+		}
+		if (itemstack.getItem() == FnafModModItems.UNWITHERED_FREDDY_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "unwithered_freddy";
+		} else if (itemstack.getItem() == FnafModModItems.UNWITHERED_BONNIE_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "unwithered_bonnie";
+		} else if (itemstack.getItem() == FnafModModItems.UNWITHERED_CHICA_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "unwithered_chica";
+		} else if (itemstack.getItem() == FnafModModItems.UNWITHERED_FOXY_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "unwithered_foxy";
+		}
+		if (itemstack.getItem() == FnafModModItems.FREDBEARS_FREDDY_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "fredbears_freddy";
+		} else if (itemstack.getItem() == FnafModModItems.FREDBEARS_BONNIE_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "fredbears_bonnie";
+		} else if (itemstack.getItem() == FnafModModItems.FREDBEARS_CHICA_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "fredbears_chica";
+		} else if (itemstack.getItem() == FnafModModItems.FREDBEARS_FOXY_SPAWN_ITEM.get()) {
+			move = 1;
+			spawned = "fredbears_foxy";
+		}
+		if (itemstack.getItem() == FnafModModItems.SPRINGTRAP_SPAWN_ITEM.get()) {
+			spawned = "sitting_daytime_springtrap";
 		}
 		command = "summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd},NoAI:move,Rotation:[YAWf]}";
 		xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
@@ -108,12 +141,12 @@ public class SpawnItemActionProcedure {
 			yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 0.5;
 		}
 		zez = Math.round(Math.pow(10, 0) * z) / Math.pow(10, 0) + 0.5;
-		yaw = entity.getYRot() / 45;
+		yaw = entity.getYRot() / 22.5;
 		yaw = Math.round(yaw);
-		yaw = yaw * 45;
+		yaw = yaw * 22.5;
 		yaw = yaw + 180;
-		command = ((((("summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd},NoAI:move,Rotation:[YAWf]}".replace("YAW", "" + yaw)).replace("ZEZ", "" + zez)).replace("ZEY",
-				"" + yey)).replace("ZEX", "" + xex)).replace("XYZ", (xex + " ") + "" + (yey + " ") + zez)).replace("REGISTRY", "fnaf_mod:" + spawned);
+		command = ((("summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0,NoAI:move,Rotation:[YAWf]}".replace("move", "" + move)).replace("YAW", "" + yaw)).replace("XYZ", (xex + " ") + "" + (yey + " ") + zez)).replace("REGISTRY",
+				"fnaf_mod:" + spawned);
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = itemstack;

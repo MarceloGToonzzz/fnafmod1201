@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.JJEntity;
 public class JJModel extends GeoModel<JJEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(JJEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/balloonboy.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/jj.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(JJEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/balloonboy.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/jj.geo.json");
 	}
 
 	@Override

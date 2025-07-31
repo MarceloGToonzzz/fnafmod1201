@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.fnafmod.entity.model.PhantomFoxyModel;
+import net.mcreator.fnafmod.entity.layer.PhantomFoxyLayer;
 import net.mcreator.fnafmod.entity.PhantomFoxyEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -19,6 +20,7 @@ public class PhantomFoxyRenderer extends GeoEntityRenderer<PhantomFoxyEntity> {
 	public PhantomFoxyRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PhantomFoxyModel());
 		this.shadowRadius = 0.5f;
+		this.addRenderLayer(new PhantomFoxyLayer(this));
 	}
 
 	@Override

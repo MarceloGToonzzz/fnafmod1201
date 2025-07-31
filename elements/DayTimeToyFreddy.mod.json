@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "DayTime Toy Freddy",
     "mobLabel": "",
-    "mobModelTexture": "toy_freddy.png",
+    "mobModelTexture": "toyfreddy.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -119,8 +119,8 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"1258\" y=\"162\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "toyfreddy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.toyfreddy.showtime",
-    "animation2": "animation.toyfreddy.daywalk",
+    "animation1": "animation.toyfreddy.idle-day",
+    "animation2": "animation.toyfreddy.walk-day",
     "animation3": "",
     "animation4": "",
     "animation5": "",

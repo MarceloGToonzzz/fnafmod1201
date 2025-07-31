@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Fredbear's Family Diner Chica",
     "mobLabel": "",
-    "mobModelTexture": "dinerchica.png",
+    "mobModelTexture": "diner-chica.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -108,12 +108,12 @@
     "onInitialSpawn": {
       "name": "StatueSpawn"
     },
-    "hasAI": true,
+    "hasAI": false,
     "aiBase": "(none)",
-    "aixml": "",
-    "model": "dinerchica.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
+    "model": "diner-chica.geo.json",
     "groupName": "Head",
-    "animation1": "animation.dinerchica.idle",
+    "animation1": "animation.chica.perform",
     "animation2": "animation.unwitheredchica.walk",
     "animation3": "",
     "animation4": "",

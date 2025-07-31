@@ -78,7 +78,7 @@ public class DayTimeWitheredFoxyEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "witheredfoxytexture");
+		this.entityData.define(TEXTURE, "withered-foxy");
 	}
 
 	public void setTexture(String texture) {
@@ -202,7 +202,7 @@ public class DayTimeWitheredFoxyEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.lookdown"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_foxy.day"));
 		}
 		return PlayState.STOP;
 	}

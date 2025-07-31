@@ -9,12 +9,12 @@ import net.mcreator.fnafmod.entity.DayTimeWitheredFoxyEntity;
 public class DayTimeWitheredFoxyModel extends GeoModel<DayTimeWitheredFoxyEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(DayTimeWitheredFoxyEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/witheredfoxy.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/withered-foxy.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(DayTimeWitheredFoxyEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/witheredfoxy.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/withered-foxy.geo.json");
 	}
 
 	@Override

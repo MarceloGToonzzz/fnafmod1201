@@ -89,7 +89,7 @@ public class DayTimeToyFreddyEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "toy_freddy");
+		this.entityData.define(TEXTURE, "toyfreddy");
 	}
 
 	public void setTexture(String texture) {
@@ -242,9 +242,9 @@ public class DayTimeToyFreddyEntity extends PathfinderMob implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.daywalk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.walk-day"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.showtime"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.idle-day"));
 		}
 		return PlayState.STOP;
 	}

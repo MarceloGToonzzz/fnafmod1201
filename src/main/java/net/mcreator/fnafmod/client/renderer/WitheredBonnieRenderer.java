@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.fnafmod.entity.model.WitheredBonnieModel;
+import net.mcreator.fnafmod.entity.layer.WitheredBonnieLayer;
 import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -19,6 +20,7 @@ public class WitheredBonnieRenderer extends GeoEntityRenderer<WitheredBonnieEnti
 	public WitheredBonnieRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new WitheredBonnieModel());
 		this.shadowRadius = 0.5f;
+		this.addRenderLayer(new WitheredBonnieLayer(this));
 	}
 
 	@Override

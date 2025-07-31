@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Un-Withered Freddy",
     "mobLabel": "",
-    "mobModelTexture": "unwithered_freddy.png",
+    "mobModelTexture": "unwithered-freddy.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
@@ -110,10 +110,10 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "",
-    "model": "unwitheredfreddy.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
+    "model": "unwithered-freddy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.unwitheredfreddy.stage",
+    "animation1": "animation.freddy.perform",
     "animation2": "animation.unwitheredfreddy.walk",
     "animation3": "",
     "animation4": "",
@@ -123,7 +123,7 @@
     "animation8": "",
     "animation9": "",
     "animation10": "",
-    "enable2": true,
+    "enable2": false,
     "enable3": false,
     "enable4": false,
     "enable5": false,

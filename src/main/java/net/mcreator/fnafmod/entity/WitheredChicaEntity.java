@@ -83,7 +83,7 @@ public class WitheredChicaEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "witheredchicatexture");
+		this.entityData.define(TEXTURE, "withered-chica");
 	}
 
 	public void setTexture(String texture) {
@@ -260,9 +260,9 @@ public class WitheredChicaEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredchica.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredchica.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.idle"));
 		}
 		return PlayState.STOP;
 	}

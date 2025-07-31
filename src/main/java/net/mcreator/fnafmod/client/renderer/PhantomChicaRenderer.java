@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.fnafmod.entity.model.PhantomChicaModel;
+import net.mcreator.fnafmod.entity.layer.PhantomChicaLayer;
 import net.mcreator.fnafmod.entity.PhantomChicaEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -19,6 +20,7 @@ public class PhantomChicaRenderer extends GeoEntityRenderer<PhantomChicaEntity> 
 	public PhantomChicaRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PhantomChicaModel());
 		this.shadowRadius = 0.5f;
+		this.addRenderLayer(new PhantomChicaLayer(this));
 	}
 
 	@Override

@@ -3,7 +3,7 @@
 	"animations": {
 		"animation.toyfoxy.showtime": {
 			"loop": true,
-			"animation_length": 2.58333,
+			"animation_length": 2.5833,
 			"bones": {
 				"Body": {
 					"rotation": {
@@ -2295,7 +2295,7 @@
 			}
 		},
 		"jumpscare": {
-			"animation_length": 1.16667,
+			"animation_length": 1.1667,
 			"bones": {
 				"Body": {
 					"rotation": {
@@ -2514,42 +2514,6 @@
 						"vector": [0, 0.35, 0]
 					}
 				},
-				"RightEyelidBottom": {
-					"rotation": {
-						"0.2917": {
-							"vector": [0, 0, 0]
-						},
-						"0.5": {
-							"vector": [-57.5, 0, 0]
-						}
-					},
-					"position": {
-						"0.2917": {
-							"vector": [0, 0, 0]
-						},
-						"0.5": {
-							"vector": [0, 2.5, 2.5]
-						}
-					}
-				},
-				"LeftEyelidBottom": {
-					"rotation": {
-						"0.2917": {
-							"vector": [0, 0, 0]
-						},
-						"0.5": {
-							"vector": [-57.5, 0, 0]
-						}
-					},
-					"position": {
-						"0.2917": {
-							"vector": [0, 0, 0]
-						},
-						"0.5": {
-							"vector": [0, 2.5, 2.5]
-						}
-					}
-				},
 				"upperhead": {
 					"rotation": {
 						"0.2917": {
@@ -2650,7 +2614,7 @@
 				},
 				"Head": {
 					"rotation": {
-						"vector": [0, 0, -12.5]
+						"vector": [0, 0, -2.5]
 					}
 				},
 				"LeftArm": {

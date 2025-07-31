@@ -10,6 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.fnafmod.entity.model.WitheredFreddyModel;
+import net.mcreator.fnafmod.entity.layer.WitheredFreddyLayer;
 import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -19,6 +20,7 @@ public class WitheredFreddyRenderer extends GeoEntityRenderer<WitheredFreddyEnti
 	public WitheredFreddyRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new WitheredFreddyModel());
 		this.shadowRadius = 0.5f;
+		this.addRenderLayer(new WitheredFreddyLayer(this));
 	}
 
 	@Override

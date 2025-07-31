@@ -80,7 +80,7 @@ public class ToyBonnieEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "toy_bonnie");
+		this.entityData.define(TEXTURE, "toybonnie");
 	}
 
 	public void setTexture(String texture) {

@@ -78,7 +78,7 @@ public class PondersAngelsProcedure {
 												}
 											}
 											if (entityiterator instanceof WitheredFoxyEntity) {
-												((WitheredFoxyEntity) entityiterator).setAnimation("animation.witheredfoxy.sneak");
+												((WitheredFoxyEntity) entityiterator).setAnimation("animation.withered_foxy.stun");
 											}
 											if (entityiterator instanceof PlushtrapEntity) {
 												((PlushtrapEntity) entityiterator).setAnimation("animation.plushtrap.sit");

@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "DayTime BB",
     "mobLabel": "",
-    "mobModelTexture": "balloonboytexture.png",
+    "mobModelTexture": "bb.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0

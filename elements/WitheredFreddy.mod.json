@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Withered Freddy",
     "mobLabel": "",
-    "mobModelTexture": "witheredfreddytexture.png",
-    "mobModelGlowTexture": "",
+    "mobModelTexture": "withered-freddy.png",
+    "mobModelGlowTexture": "withered-freddy-glow.png",
     "visualScale": {
       "fixedValue": 1.0
     },
@@ -111,10 +111,10 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"243\" y=\"286\"><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">FreddyFazbearOnEntityTickUpdate,null</field><next><block type=\"look_around\"><field name=\"condition\">FreddyFazbearOnEntityTickUpdate,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">FreddyFazbearOnEntityTickUpdate,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">FreddyFazbearOnEntityTickUpdate,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">MaskProtectionTestForTick,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "witheredfreddy.geo.json",
+    "model": "withered-freddy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.witheredfreddy.idle",
-    "animation2": "animation.witheredfreddy.walk",
+    "animation1": "animation.freddy.idle",
+    "animation2": "animation.freddy.walk",
     "animation3": "",
     "animation4": "",
     "animation5": "",

@@ -14,12 +14,12 @@ import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
 public class ShadowBonnieModel extends GeoModel<ShadowBonnieEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(ShadowBonnieEntity entity) {
-		return new ResourceLocation("fnaf_mod", "animations/toybonnie.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/shadow-bonnie.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(ShadowBonnieEntity entity) {
-		return new ResourceLocation("fnaf_mod", "geo/toybonnie.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/shadow-bonnie.geo.json");
 	}
 
 	@Override

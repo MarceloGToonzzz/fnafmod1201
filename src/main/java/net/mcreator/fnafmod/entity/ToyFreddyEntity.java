@@ -81,7 +81,7 @@ public class ToyFreddyEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "toy_freddy");
+		this.entityData.define(TEXTURE, "toyfreddy");
 	}
 
 	public void setTexture(String texture) {
@@ -251,9 +251,9 @@ public class ToyFreddyEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.walk-night"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.idle-night"));
 		}
 		return PlayState.STOP;
 	}

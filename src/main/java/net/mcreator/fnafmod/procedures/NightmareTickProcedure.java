@@ -45,7 +45,7 @@ public class NightmareTickProcedure {
 		double rand3 = 0;
 		boolean found = false;
 		boolean Bright = false;
-		SetSpawnNbtProcedure.execute(entity);
+		SetSpawnNbtProcedure.execute(world, entity);
 		if (entity instanceof NightmareFreddyEntity || entity instanceof NightmareBonnieEntity || entity instanceof JackOBonnieEntity || entity instanceof NightmareChicaEntity || entity instanceof JackOChicaEntity) {
 			rand = Mth.nextInt(RandomSource.create(), 1, 300);
 			if (world instanceof Level _lvl6 && _lvl6.isDay()) {

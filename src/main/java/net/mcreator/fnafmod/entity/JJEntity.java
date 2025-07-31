@@ -236,7 +236,7 @@ public class JJEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.balloonboy.phantomwalk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.balloonboy.altwalk"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.balloonboy.altidle"));
 		}

@@ -81,7 +81,7 @@ public class WitheredFoxyEntity extends Monster implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "witheredfoxytexture");
+		this.entityData.define(TEXTURE, "withered-foxy");
 	}
 
 	public void setTexture(String texture) {
@@ -213,15 +213,12 @@ public class WitheredFoxyEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 					&& !this.isAggressive()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.walk"));
-			}
-			if (this.isShiftKeyDown()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.sneak"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_foxy.walk"));
 			}
 			if (this.isAggressive() && event.isMoving()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.run"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_foxy.run"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.witheredfoxy.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_foxy.idle"));
 		}
 		return PlayState.STOP;
 	}
