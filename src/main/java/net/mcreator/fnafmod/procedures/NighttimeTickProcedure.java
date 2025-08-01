@@ -10,5 +10,6 @@ public class NighttimeTickProcedure {
 		SetSpawnNbtProcedure.execute(world, entity);
 		NightTurnDayProcedure.execute(world, x, y, z, entity);
 		CrawlingFunctionProcedure.execute(world, x, z, entity);
+		SetTextureProcedure.execute(entity);
 	}
 }

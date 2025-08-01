@@ -16,5 +16,6 @@ public class DaytimeTickProcedure {
 			if (entity instanceof Mob _entity)
 				_entity.getNavigation().stop();
 		}
+		SetTextureProcedure.execute(entity);
 	}
 }
