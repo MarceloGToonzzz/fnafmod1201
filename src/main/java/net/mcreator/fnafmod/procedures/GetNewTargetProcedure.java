@@ -111,6 +111,11 @@ public class GetNewTargetProcedure {
 			} else if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 				entity.getPersistentData().putBoolean("had_target", true);
 				entity.getPersistentData().putBoolean("visited_targetspot", false);
+				if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-maskfoolers")))
+						&& ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == FnafModModItems.FREDDY_MASK_HELMET
+								.get()) {
+					entity.getPersistentData().putDouble("fnafmod-safetick", (entity.getPersistentData().getDouble("fnafmod-safetick") + 1));
+				}
 				if (new Object() {
 					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -137,10 +142,11 @@ public class GetNewTargetProcedure {
 						|| !(entity instanceof LivingEntity _liveEnt && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null
 								? _liveEnt.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))
 								: false)
-						|| ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 24
-								&& entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-maskfoolers")))
+						|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-maskfoolers")))
 								&& ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-										.getItem() == FnafModModItems.FREDDY_MASK_HELMET.get()) {
+										.getItem() == FnafModModItems.FREDDY_MASK_HELMET.get()
+								&& entity.getPersistentData().getDouble("fnafmod-safetick") < 40) {
+					entity.getPersistentData().putDouble("fnafmod-safetick", 0);
 					if (entity instanceof Mob) {
 						try {
 							((Mob) entity).setTarget(null);
