@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Fredbear",
     "mobLabel": "",
-    "mobModelTexture": "fredbear4.png",
+    "mobModelTexture": "fredbear-default.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0,

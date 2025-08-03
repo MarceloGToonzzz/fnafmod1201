@@ -211,7 +211,7 @@ public class DedWitheredFreddyEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.day"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_freddy.day"));
 		}
 		return PlayState.STOP;
 	}

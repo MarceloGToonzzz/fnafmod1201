@@ -241,10 +241,13 @@ public class WitheredFreddyEntity extends PathfinderMob implements GeoEntity {
 		if (this.animationprocedure.equals("empty")) {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
-			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.walk"));
+					&& !this.isAggressive()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_freddy.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.idle"));
+			if (this.isAggressive() && event.isMoving()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_freddy.chase"));
+			}
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.withered_freddy.idle"));
 		}
 		return PlayState.STOP;
 	}

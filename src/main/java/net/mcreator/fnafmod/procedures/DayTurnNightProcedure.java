@@ -56,8 +56,9 @@ public class DayTurnNightProcedure {
 			if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:sitting_daytime_springtrap") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:standing_daytime_springtrap")) {
 				registry = "springtrap";
 			}
-			command = ((((("summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd},NoAI:move,Rotation:[YAWf]}".replace("ZEZ", entity.getPersistentData().getDouble("z") + "d"))
-					.replace("ZEY", entity.getPersistentData().getDouble("y") + "d")).replace("ZEX", entity.getPersistentData().getDouble("x") + "d")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
+			command = (((((("summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd,fnafmod-skin: SKINNY},NoAI:move,Rotation:[YAWf]}".replace("SKINNY",
+					"" + entity.getPersistentData().getDouble("fnafmod-skin"))).replace("ZEZ", entity.getPersistentData().getDouble("z") + "d")).replace("ZEY", entity.getPersistentData().getDouble("y") + "d"))
+					.replace("ZEX", entity.getPersistentData().getDouble("x") + "d")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
 					.replace("XYZ", (entity.getPersistentData().getDouble("x") + " ") + "" + (entity.getPersistentData().getDouble("y") + " ") + ("" + entity.getPersistentData().getDouble("z")))).replace("REGISTRY", "fnaf_mod:" + registry);
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);

@@ -81,7 +81,7 @@ public class FredbearAnimatronicEntity extends PathfinderMob implements GeoEntit
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "fredbear4");
+		this.entityData.define(TEXTURE, "fredbear-default");
 	}
 
 	public void setTexture(String texture) {

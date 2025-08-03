@@ -229,7 +229,7 @@ public class ToyFreddyEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
 		builder = builder.add(Attributes.MAX_HEALTH, 50);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);
@@ -242,8 +242,11 @@ public class ToyFreddyEntity extends Monster implements GeoEntity {
 		if (this.animationprocedure.equals("empty")) {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
-			) {
+					&& !this.isAggressive()) {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.walk-night"));
+			}
+			if (this.isAggressive() && event.isMoving()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.chase"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.toyfreddy.idle-night"));
 		}

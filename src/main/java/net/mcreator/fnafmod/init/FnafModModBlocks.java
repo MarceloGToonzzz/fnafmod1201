@@ -319,6 +319,7 @@ import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
 import net.mcreator.fnafmod.block.DrywallBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
+import net.mcreator.fnafmod.block.DoorBoarderBlock;
 import net.mcreator.fnafmod.block.DisplayShelvesBlock;
 import net.mcreator.fnafmod.block.DinerChairBlock;
 import net.mcreator.fnafmod.block.DinerChair5Block;
@@ -1072,6 +1073,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> BIG_WIDE_GLASS_ENTRANCE_DOOR = REGISTRY.register("big_wide_glass_entrance_door", () -> new BigWideGlassEntranceDoorBlock());
 	public static final RegistryObject<Block> BIG_WIDE_CYAN_KITCHEN_DOOR = REGISTRY.register("big_wide_cyan_kitchen_door", () -> new BigWideCyanKitchenDoorBlock());
 	public static final RegistryObject<Block> BIG_WIDE_RED_ENTRANCE_DOOR = REGISTRY.register("big_wide_red_entrance_door", () -> new BigWideRedEntranceDoorBlock());
+	public static final RegistryObject<Block> DOOR_BOARDER = REGISTRY.register("door_boarder", () -> new DoorBoarderBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
