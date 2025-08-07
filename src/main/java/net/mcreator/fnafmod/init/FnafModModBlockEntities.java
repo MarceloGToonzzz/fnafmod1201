@@ -55,6 +55,7 @@ import net.mcreator.fnafmod.block.entity.FoxyHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
+import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
 import net.mcreator.fnafmod.block.entity.DisplayShelvesTileEntity;
 import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
@@ -203,6 +204,7 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(BigWideCyanKitchenDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_CYAN_KITCHEN_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigWideRedEntranceDoorTileEntity>> BIG_WIDE_RED_ENTRANCE_DOOR = REGISTRY.register("big_wide_red_entrance_door",
 			() -> BlockEntityType.Builder.of(BigWideRedEntranceDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_RED_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> DRUMSET = register("drumset", FnafModModBlocks.DRUMSET, DrumsetBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
