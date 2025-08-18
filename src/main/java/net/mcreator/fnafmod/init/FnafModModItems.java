@@ -1108,6 +1108,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BIG_WIDE_RED_ENTRANCE_DOOR = REGISTRY.register(FnafModModBlocks.BIG_WIDE_RED_ENTRANCE_DOOR.getId().getPath(),
 			() -> new BigWideRedEntranceDoorDisplayItem(FnafModModBlocks.BIG_WIDE_RED_ENTRANCE_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DOOR_BOARDER = block(FnafModModBlocks.DOOR_BOARDER);
+	public static final RegistryObject<Item> DRUMSET = block(FnafModModBlocks.DRUMSET);
+	public static final RegistryObject<Item> PRINTER = block(FnafModModBlocks.PRINTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items
