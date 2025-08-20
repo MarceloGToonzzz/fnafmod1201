@@ -167,6 +167,7 @@ import net.mcreator.fnafmod.block.PurpleCheckeredCurtainBlock;
 import net.mcreator.fnafmod.block.PuppetMaskBlock;
 import net.mcreator.fnafmod.block.PrizeCounterBlock;
 import net.mcreator.fnafmod.block.PrizeCornerPosterBlock;
+import net.mcreator.fnafmod.block.PrinterBlock;
 import net.mcreator.fnafmod.block.PresentsBlock;
 import net.mcreator.fnafmod.block.Poster9Block;
 import net.mcreator.fnafmod.block.Poster8Block;
@@ -359,6 +360,10 @@ import net.mcreator.fnafmod.block.ClosetLeftTopBlock;
 import net.mcreator.fnafmod.block.ClosetLeftOpenTopBlock;
 import net.mcreator.fnafmod.block.ClosetLeftOpenBottomBlock;
 import net.mcreator.fnafmod.block.ClosetLeftBottomBlock;
+import net.mcreator.fnafmod.block.CinematicSignToysBlock;
+import net.mcreator.fnafmod.block.CinematicSignFreddyBlock;
+import net.mcreator.fnafmod.block.CinematicSignBaseSequelBlock;
+import net.mcreator.fnafmod.block.CinematicSignBaseBlock;
 import net.mcreator.fnafmod.block.ChildrenDrawingsBlock;
 import net.mcreator.fnafmod.block.ChildrenDrawings7Block;
 import net.mcreator.fnafmod.block.ChildrenDrawings6Block;
@@ -1077,6 +1082,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DOOR_BOARDER = REGISTRY.register("door_boarder", () -> new DoorBoarderBlock());
 	public static final RegistryObject<Block> DRUMSET = REGISTRY.register("drumset", () -> new DrumsetBlock());
 	public static final RegistryObject<Block> PRINTER = REGISTRY.register("printer", () -> new PrinterBlock());
+	public static final RegistryObject<Block> CINEMATIC_SIGN_BASE = REGISTRY.register("cinematic_sign_base", () -> new CinematicSignBaseBlock());
+	public static final RegistryObject<Block> CINEMATIC_SIGN_BASE_SEQUEL = REGISTRY.register("cinematic_sign_base_sequel", () -> new CinematicSignBaseSequelBlock());
+	public static final RegistryObject<Block> CINEMATIC_SIGN_FREDDY = REGISTRY.register("cinematic_sign_freddy", () -> new CinematicSignFreddyBlock());
+	public static final RegistryObject<Block> CINEMATIC_SIGN_TOYS = REGISTRY.register("cinematic_sign_toys", () -> new CinematicSignToysBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

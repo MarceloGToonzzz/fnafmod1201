@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.6",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"texture_size": [64, 64],
@@ -49,7 +49,7 @@
 		{
 			"from": [2, 4.77049, 1.67794],
 			"to": [14, 7.77049, 7.67794],
-			"rotation": {"angle": -20, "axis": "x", "origin": [8, 4, 3]},
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 4, 3]},
 			"faces": {
 				"north": {"uv": [8.75, 5.25, 11.75, 6], "texture": "#0"},
 				"east": {"uv": [9, 3, 10.5, 3.75], "texture": "#0"},
@@ -60,9 +60,9 @@
 			}
 		},
 		{
-			"from": [4, 5.77049, 5.67794],
-			"to": [12, 8.77049, 11.67794],
-			"rotation": {"angle": -12.5, "axis": "x", "origin": [8, 5, 7]},
+			"from": [4, 6.02049, 6.17794],
+			"to": [12, 9.02049, 12.17794],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 5, 7]},
 			"faces": {
 				"north": {"uv": [9, 1.5, 11, 2.25], "texture": "#0"},
 				"east": {"uv": [9, 4.5, 10.5, 5.25], "texture": "#0"},

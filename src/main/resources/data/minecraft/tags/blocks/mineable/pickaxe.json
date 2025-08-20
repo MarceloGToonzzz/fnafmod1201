@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:cinematic_sign_toys",
+    "fnaf_mod:cinematic_sign_freddy",
+    "fnaf_mod:cinematic_sign_base_sequel",
+    "fnaf_mod:cinematic_sign_base",
     "fnaf_mod:pizza_oven",
     "fnaf_mod:brown_tan_tile_slab",
     "fnaf_mod:brown_tan_tile_stair",

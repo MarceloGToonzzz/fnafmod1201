@@ -209,6 +209,10 @@ import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ClownfulDollDisplayItem;
+import net.mcreator.fnafmod.block.display.CinematicSignToysDisplayItem;
+import net.mcreator.fnafmod.block.display.CinematicSignFreddyDisplayItem;
+import net.mcreator.fnafmod.block.display.CinematicSignBaseSequelDisplayItem;
+import net.mcreator.fnafmod.block.display.CinematicSignBaseDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
@@ -1110,6 +1114,12 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> DOOR_BOARDER = block(FnafModModBlocks.DOOR_BOARDER);
 	public static final RegistryObject<Item> DRUMSET = block(FnafModModBlocks.DRUMSET);
 	public static final RegistryObject<Item> PRINTER = block(FnafModModBlocks.PRINTER);
+	public static final RegistryObject<Item> CINEMATIC_SIGN_BASE = REGISTRY.register(FnafModModBlocks.CINEMATIC_SIGN_BASE.getId().getPath(), () -> new CinematicSignBaseDisplayItem(FnafModModBlocks.CINEMATIC_SIGN_BASE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CINEMATIC_SIGN_BASE_SEQUEL = REGISTRY.register(FnafModModBlocks.CINEMATIC_SIGN_BASE_SEQUEL.getId().getPath(),
+			() -> new CinematicSignBaseSequelDisplayItem(FnafModModBlocks.CINEMATIC_SIGN_BASE_SEQUEL.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CINEMATIC_SIGN_FREDDY = REGISTRY.register(FnafModModBlocks.CINEMATIC_SIGN_FREDDY.getId().getPath(),
+			() -> new CinematicSignFreddyDisplayItem(FnafModModBlocks.CINEMATIC_SIGN_FREDDY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CINEMATIC_SIGN_TOYS = REGISTRY.register(FnafModModBlocks.CINEMATIC_SIGN_TOYS.getId().getPath(), () -> new CinematicSignToysDisplayItem(FnafModModBlocks.CINEMATIC_SIGN_TOYS.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -56,12 +56,17 @@ import net.mcreator.fnafmod.block.entity.FoxyHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
+import net.mcreator.fnafmod.block.entity.DoorBoarderBlockEntity;
 import net.mcreator.fnafmod.block.entity.DisplayShelvesTileEntity;
 import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
 import net.mcreator.fnafmod.block.entity.ConnectingTableTileEntity;
 import net.mcreator.fnafmod.block.entity.ClownfulDollTileEntity;
+import net.mcreator.fnafmod.block.entity.CinematicSignToysTileEntity;
+import net.mcreator.fnafmod.block.entity.CinematicSignFreddyTileEntity;
+import net.mcreator.fnafmod.block.entity.CinematicSignBaseTileEntity;
+import net.mcreator.fnafmod.block.entity.CinematicSignBaseSequelTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
@@ -204,7 +209,16 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(BigWideCyanKitchenDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_CYAN_KITCHEN_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigWideRedEntranceDoorTileEntity>> BIG_WIDE_RED_ENTRANCE_DOOR = REGISTRY.register("big_wide_red_entrance_door",
 			() -> BlockEntityType.Builder.of(BigWideRedEntranceDoorTileEntity::new, FnafModModBlocks.BIG_WIDE_RED_ENTRANCE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> DOOR_BOARDER = register("door_boarder", FnafModModBlocks.DOOR_BOARDER, DoorBoarderBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DRUMSET = register("drumset", FnafModModBlocks.DRUMSET, DrumsetBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<CinematicSignBaseTileEntity>> CINEMATIC_SIGN_BASE = REGISTRY.register("cinematic_sign_base",
+			() -> BlockEntityType.Builder.of(CinematicSignBaseTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_BASE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CinematicSignBaseSequelTileEntity>> CINEMATIC_SIGN_BASE_SEQUEL = REGISTRY.register("cinematic_sign_base_sequel",
+			() -> BlockEntityType.Builder.of(CinematicSignBaseSequelTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_BASE_SEQUEL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CinematicSignFreddyTileEntity>> CINEMATIC_SIGN_FREDDY = REGISTRY.register("cinematic_sign_freddy",
+			() -> BlockEntityType.Builder.of(CinematicSignFreddyTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_FREDDY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CinematicSignToysTileEntity>> CINEMATIC_SIGN_TOYS = REGISTRY.register("cinematic_sign_toys",
+			() -> BlockEntityType.Builder.of(CinematicSignToysTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_TOYS.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -146,6 +146,10 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_PINK.get().asItem());
 				tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_BLUE.get().asItem());
 				tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_GOLDEN.get().asItem());
+				tabData.accept(FnafModModBlocks.CINEMATIC_SIGN_BASE.get().asItem());
+				tabData.accept(FnafModModBlocks.CINEMATIC_SIGN_BASE_SEQUEL.get().asItem());
+				tabData.accept(FnafModModBlocks.CINEMATIC_SIGN_FREDDY.get().asItem());
+				tabData.accept(FnafModModBlocks.CINEMATIC_SIGN_TOYS.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -670,6 +674,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BIG_WIDE_DUAL_COLOUR_ENTRANCE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BOARDER.get().asItem());
 				tabData.accept(FnafModModBlocks.DRUMSET.get().asItem());
+				tabData.accept(FnafModModBlocks.PRINTER.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

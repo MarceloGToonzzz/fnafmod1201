@@ -44,6 +44,10 @@ import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ClownfulDollTileRenderer;
+import net.mcreator.fnafmod.block.renderer.CinematicSignToysTileRenderer;
+import net.mcreator.fnafmod.block.renderer.CinematicSignFreddyTileRenderer;
+import net.mcreator.fnafmod.block.renderer.CinematicSignBaseTileRenderer;
+import net.mcreator.fnafmod.block.renderer.CinematicSignBaseSequelTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CenteredFreddySignTileRenderer;
@@ -132,5 +136,9 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_GLASS_ENTRANCE_DOOR.get(), context -> new BigWideGlassEntranceDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_CYAN_KITCHEN_DOOR.get(), context -> new BigWideCyanKitchenDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_WIDE_RED_ENTRANCE_DOOR.get(), context -> new BigWideRedEntranceDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_BASE.get(), context -> new CinematicSignBaseTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_BASE_SEQUEL.get(), context -> new CinematicSignBaseSequelTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_FREDDY.get(), context -> new CinematicSignFreddyTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_TOYS.get(), context -> new CinematicSignToysTileRenderer());
 	}
 }
