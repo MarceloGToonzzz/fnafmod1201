@@ -96,11 +96,18 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "isBonemealable": false,
-    "frequencyOnChunks": 5,
-    "generateFeature": false,
-    "restrictionBiomes": [],
+    "frequencyOnChunks": 2,
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:PinwheelCircus"
+      },
+      {
+        "value": "CUSTOM:ChoppyWoods"
+      }
+    ],
     "generationType": "Flower",
-    "patchSize": 64,
+    "patchSize": 20,
     "generateAtAnyHeight": false
   }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
-    "particle": "fnaf_mod:block/blueprint_tiles",
+    "particle": "fnaf_mod:block/orangebrowntiles",
     "bottom": "fnaf_mod:block/orangebrowntiles",
     "top": "fnaf_mod:block/orangebrowntiles",
     "side": "fnaf_mod:block/orangebrowntiles"

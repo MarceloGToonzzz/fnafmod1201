@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "blueprint_tiles",
+    "particleTexture": "orangebrowntiles",
     "blockBase": "Slab",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -35,7 +35,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Brown Tan Tile Slab",
+    "name": "Chess Tile Slab",
     "specialInformation": {
       "fixedValue": []
     },

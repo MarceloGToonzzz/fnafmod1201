@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:entrance_carpet",
+    "fnaf_mod:movie_exterior_top",
+    "fnaf_mod:white_tiled_wall",
     "fnaf_mod:brown_tan_tile_slab",
     "fnaf_mod:brown_tan_tile_stair",
     "fnaf_mod:brown_tan_tile",

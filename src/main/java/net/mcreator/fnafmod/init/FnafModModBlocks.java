@@ -23,6 +23,7 @@ import net.mcreator.fnafmod.block.WiresBlock;
 import net.mcreator.fnafmod.block.WhiteWallStairsBlock;
 import net.mcreator.fnafmod.block.WhiteWallSlabBlock;
 import net.mcreator.fnafmod.block.WhiteWallBlock;
+import net.mcreator.fnafmod.block.WhiteTiledWallBlock;
 import net.mcreator.fnafmod.block.WhiteRedWallTileBlock;
 import net.mcreator.fnafmod.block.WhitePurpleWallTileBlock;
 import net.mcreator.fnafmod.block.WhiteClothTableBlock;
@@ -228,6 +229,7 @@ import net.mcreator.fnafmod.block.MovieExteriorWallTileBlock;
 import net.mcreator.fnafmod.block.MovieExteriorWallStairsBlock;
 import net.mcreator.fnafmod.block.MovieExteriorWallSlabBlock;
 import net.mcreator.fnafmod.block.MovieExteriorWallBlock;
+import net.mcreator.fnafmod.block.MovieExteriorTopBlock;
 import net.mcreator.fnafmod.block.MovieChairBlock;
 import net.mcreator.fnafmod.block.MonitorsBlock;
 import net.mcreator.fnafmod.block.MintCurtainBlock;
@@ -314,6 +316,7 @@ import net.mcreator.fnafmod.block.ErrorTileSlabCrackedBlock;
 import net.mcreator.fnafmod.block.ErrorTileSlabBlock;
 import net.mcreator.fnafmod.block.ErrorTileCrackedBlock;
 import net.mcreator.fnafmod.block.ErrorTileBlock;
+import net.mcreator.fnafmod.block.EntranceCarpetBlock;
 import net.mcreator.fnafmod.block.EndoBlockBlock;
 import net.mcreator.fnafmod.block.EmptyPizzaBoxBlock;
 import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
@@ -1086,6 +1089,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> CINEMATIC_SIGN_BASE_SEQUEL = REGISTRY.register("cinematic_sign_base_sequel", () -> new CinematicSignBaseSequelBlock());
 	public static final RegistryObject<Block> CINEMATIC_SIGN_FREDDY = REGISTRY.register("cinematic_sign_freddy", () -> new CinematicSignFreddyBlock());
 	public static final RegistryObject<Block> CINEMATIC_SIGN_TOYS = REGISTRY.register("cinematic_sign_toys", () -> new CinematicSignToysBlock());
+	public static final RegistryObject<Block> WHITE_TILED_WALL = REGISTRY.register("white_tiled_wall", () -> new WhiteTiledWallBlock());
+	public static final RegistryObject<Block> MOVIE_EXTERIOR_TOP = REGISTRY.register("movie_exterior_top", () -> new MovieExteriorTopBlock());
+	public static final RegistryObject<Block> ENTRANCE_CARPET = REGISTRY.register("entrance_carpet", () -> new EntranceCarpetBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

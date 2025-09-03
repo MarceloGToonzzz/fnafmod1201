@@ -97,10 +97,23 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
-    "generateFeature": false,
-    "restrictionBiomes": [],
-    "generationType": "Flower",
-    "patchSize": 64,
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:ChoppyWoods"
+      },
+      {
+        "value": "CUSTOM:FazbearHills"
+      },
+      {
+        "value": "CUSTOM:LiligearLake"
+      },
+      {
+        "value": "CUSTOM:PinwheelCircus"
+      }
+    ],
+    "generationType": "Grass",
+    "patchSize": 10,
     "generateAtAnyHeight": false
   }
 }

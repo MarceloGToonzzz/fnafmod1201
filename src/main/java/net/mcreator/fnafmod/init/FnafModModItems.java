@@ -745,6 +745,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FOXY_SUIT_HELMET = REGISTRY.register("foxy_suit_helmet", () -> new FoxySuitItem.Helmet());
 	public static final RegistryObject<Item> FOXY_SUIT_CHESTPLATE = REGISTRY.register("foxy_suit_chestplate", () -> new FoxySuitItem.Chestplate());
 	public static final RegistryObject<Item> FOXY_SUIT_LEGGINGS = REGISTRY.register("foxy_suit_leggings", () -> new FoxySuitItem.Leggings());
+	public static final RegistryObject<Item> FOXY_SUIT_BOOTS = REGISTRY.register("foxy_suit_boots", () -> new FoxySuitItem.Boots());
 	public static final RegistryObject<Item> YELLOW_BEAR_SUIT_HELMET = REGISTRY.register("yellow_bear_suit_helmet", () -> new YellowBearSuitItem.Helmet());
 	public static final RegistryObject<Item> YELLOW_BEAR_SUIT_CHESTPLATE = REGISTRY.register("yellow_bear_suit_chestplate", () -> new YellowBearSuitItem.Chestplate());
 	public static final RegistryObject<Item> YELLOW_BEAR_SUIT_LEGGINGS = REGISTRY.register("yellow_bear_suit_leggings", () -> new YellowBearSuitItem.Leggings());
@@ -1120,6 +1121,9 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> CINEMATIC_SIGN_FREDDY = REGISTRY.register(FnafModModBlocks.CINEMATIC_SIGN_FREDDY.getId().getPath(),
 			() -> new CinematicSignFreddyDisplayItem(FnafModModBlocks.CINEMATIC_SIGN_FREDDY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CINEMATIC_SIGN_TOYS = REGISTRY.register(FnafModModBlocks.CINEMATIC_SIGN_TOYS.getId().getPath(), () -> new CinematicSignToysDisplayItem(FnafModModBlocks.CINEMATIC_SIGN_TOYS.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WHITE_TILED_WALL = block(FnafModModBlocks.WHITE_TILED_WALL);
+	public static final RegistryObject<Item> MOVIE_EXTERIOR_TOP = block(FnafModModBlocks.MOVIE_EXTERIOR_TOP);
+	public static final RegistryObject<Item> ENTRANCE_CARPET = block(FnafModModBlocks.ENTRANCE_CARPET);
 
 	// Start of user code block custom items
 	// End of user code block custom items

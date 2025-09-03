@@ -38,6 +38,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.FOXY_SUIT_HELMET.get());
 				tabData.accept(FnafModModItems.FOXY_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.FOXY_SUIT_LEGGINGS.get());
+				tabData.accept(FnafModModItems.FOXY_SUIT_BOOTS.get());
 				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_HELMET.get());
 				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_LEGGINGS.get());
@@ -675,6 +676,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.DOOR_BOARDER.get().asItem());
 				tabData.accept(FnafModModBlocks.DRUMSET.get().asItem());
 				tabData.accept(FnafModModBlocks.PRINTER.get().asItem());
+				tabData.accept(FnafModModBlocks.WHITE_TILED_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.MOVIE_EXTERIOR_TOP.get().asItem());
+				tabData.accept(FnafModModBlocks.ENTRANCE_CARPET.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

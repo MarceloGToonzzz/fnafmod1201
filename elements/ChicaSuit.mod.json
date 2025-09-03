@@ -10,18 +10,6 @@
     "textureLeggings": "chicapants",
     "enableBoots": true,
     "textureBoots": "chicafeet",
-    "onHelmetTick": {
-      "name": "Springlocked"
-    },
-    "onBodyTick": {
-      "name": "Springlocked"
-    },
-    "onLeggingsTick": {
-      "name": "Springlocked"
-    },
-    "onBootsTick": {
-      "name": "Springlocked"
-    },
     "creativeTabs": [
       {
         "value": "CUSTOM:Suits"
@@ -44,22 +32,22 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "ModelChicaMask",
-    "helmetModelPart": "Head",
-    "helmetModelTexture": "chica_head.png",
-    "bodyModelName": "ModelSpringBonnieBody",
+    "helmetModelName": "ModelChicaSuit",
+    "helmetModelPart": "Chica_Head",
+    "helmetModelTexture": "chicasuit.png",
+    "bodyModelName": "ModelChicaSuit",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
-    "bodyModelTexture": "chica_layer_1.png",
-    "leggingsModelName": "Default",
-    "leggingsModelPartL": "Leggings L",
-    "leggingsModelPartR": "Leggings R",
-    "leggingsModelTexture": "chica_layer_2.png",
-    "bootsModelName": "Default",
-    "bootsModelPartL": "Boots L",
-    "bootsModelPartR": "Boots R",
-    "bootsModelTexture": "chica_layer_1.png",
+    "bodyModelTexture": "chicasuit.png",
+    "leggingsModelName": "ModelChicaSuit",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "chicasuit.png",
+    "bootsModelName": "ModelChicaSuit",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "chicasuit.png",
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",
     "bodyItemRenderType": 0,
@@ -72,6 +60,30 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 0,
     "damageValueHelmet": 0,
     "damageValueBody": 0,

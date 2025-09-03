@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "fnaf_mod:pinwheel_circus",
+    "fnaf_mod:choppy_woods"
+  ],
+  "features": "fnaf_mod:cupcake_flower_pink",
+  "step": "vegetal_decoration"
+}

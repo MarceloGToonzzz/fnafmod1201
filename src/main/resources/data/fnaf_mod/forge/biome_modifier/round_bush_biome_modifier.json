@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "fnaf_mod:choppy_woods",
+    "fnaf_mod:fazbear_hills",
+    "fnaf_mod:liligear_lake",
+    "fnaf_mod:pinwheel_circus"
+  ],
+  "features": "fnaf_mod:round_bush",
+  "step": "vegetal_decoration"
+}

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:movie_exterior_top",
+    "fnaf_mod:white_tiled_wall",
     "fnaf_mod:cinematic_sign_toys",
     "fnaf_mod:cinematic_sign_freddy",
     "fnaf_mod:cinematic_sign_base_sequel",
