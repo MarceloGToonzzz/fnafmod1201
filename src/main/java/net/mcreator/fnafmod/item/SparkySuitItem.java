@@ -19,14 +19,14 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.fnafmod.client.model.ModelChicaSuit;
+import net.mcreator.fnafmod.client.model.ModelSparkySuit;
 
 import java.util.function.Consumer;
 import java.util.Map;
 import java.util.Collections;
 
-public abstract class ChicaSuitItem extends ArmorItem {
-	public ChicaSuitItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class SparkySuitItem extends ArmorItem {
+	public SparkySuitItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -55,7 +55,7 @@ public abstract class ChicaSuitItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "chica_suit";
+				return "sparky_suit";
 			}
 
 			@Override
@@ -70,7 +70,7 @@ public abstract class ChicaSuitItem extends ArmorItem {
 		}, type, properties);
 	}
 
-	public static class Helmet extends ChicaSuitItem {
+	public static class Helmet extends SparkySuitItem {
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}
@@ -81,7 +81,7 @@ public abstract class ChicaSuitItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -95,11 +95,11 @@ public abstract class ChicaSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/chicasuit.png";
+			return "fnaf_mod:textures/entities/sparkysuit.png";
 		}
 	}
 
-	public static class Chestplate extends ChicaSuitItem {
+	public static class Chestplate extends SparkySuitItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
 		}
@@ -110,9 +110,9 @@ public abstract class ChicaSuitItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).Body, "left_arm",
-							new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).LeftArm, "right_arm",
-							new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).Body, "left_arm",
+							new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).LeftArm, "right_arm",
+							new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -124,11 +124,11 @@ public abstract class ChicaSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/chicasuit.png";
+			return "fnaf_mod:textures/entities/sparkysuit.png";
 		}
 	}
 
-	public static class Leggings extends ChicaSuitItem {
+	public static class Leggings extends SparkySuitItem {
 		public Leggings() {
 			super(ArmorItem.Type.LEGGINGS, new Item.Properties());
 		}
@@ -140,8 +140,8 @@ public abstract class ChicaSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -154,11 +154,11 @@ public abstract class ChicaSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/chicasuit.png";
+			return "fnaf_mod:textures/entities/sparkysuit.png";
 		}
 	}
 
-	public static class Boots extends ChicaSuitItem {
+	public static class Boots extends SparkySuitItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties());
 		}
@@ -170,8 +170,8 @@ public abstract class ChicaSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).LeftBoot, "right_leg",
-									new ModelChicaSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelChicaSuit.LAYER_LOCATION)).RightBoot, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).LeftBoot, "right_leg",
+									new ModelSparkySuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSparkySuit.LAYER_LOCATION)).RightBoot, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -184,7 +184,7 @@ public abstract class ChicaSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/chicasuit.png";
+			return "fnaf_mod:textures/entities/sparkysuit.png";
 		}
 	}
 }

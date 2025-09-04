@@ -65,10 +65,10 @@ public class ModelFoxySuit<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, -1.0F));
+		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 		PartDefinition Head2 = Head.addOrReplaceChild("Head2",
 				CubeListBuilder.create().texOffs(38, 25).addBox(-1.0F, -2.95F, -1.3F, 2.0F, 0.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(72, 0).addBox(0.6F, -6.25F, -3.4F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.95F, 1.0F));
+				PartPose.offset(0.0F, 0.95F, 0.0F));
 		PartDefinition Jaw = Head2.addOrReplaceChild("Jaw", CubeListBuilder.create().texOffs(18, 36).addBox(-2.0F, -0.298F, -7.6374F, 4.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -1.95F, -0.9F));
 		PartDefinition bone = Jaw.addOrReplaceChild("bone",
 				CubeListBuilder.create().texOffs(0, 45).addBox(-2.5F, -2.75F, 1.0F, 5.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 35).addBox(-2.5F, -0.75F, -6.0F, 5.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)),

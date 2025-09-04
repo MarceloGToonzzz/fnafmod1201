@@ -47,6 +47,7 @@ import net.mcreator.fnafmod.item.SpringlockedFredbearSuitItem;
 import net.mcreator.fnafmod.item.SpringLockSuitItem;
 import net.mcreator.fnafmod.item.SpringBonnieItem;
 import net.mcreator.fnafmod.item.SpringBonnieAnimatronicSpawnItemItem;
+import net.mcreator.fnafmod.item.SparkySuitItem;
 import net.mcreator.fnafmod.item.ShowtimeMadameMacabreBitemarkRemixItem;
 import net.mcreator.fnafmod.item.ShadowRemnantItem;
 import net.mcreator.fnafmod.item.ShadowFreddySpawnItemItem;
@@ -1124,6 +1125,11 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> WHITE_TILED_WALL = block(FnafModModBlocks.WHITE_TILED_WALL);
 	public static final RegistryObject<Item> MOVIE_EXTERIOR_TOP = block(FnafModModBlocks.MOVIE_EXTERIOR_TOP);
 	public static final RegistryObject<Item> ENTRANCE_CARPET = block(FnafModModBlocks.ENTRANCE_CARPET);
+	public static final RegistryObject<Item> SPARKY_SUIT_HELMET = REGISTRY.register("sparky_suit_helmet", () -> new SparkySuitItem.Helmet());
+	public static final RegistryObject<Item> SPARKY_SUIT_CHESTPLATE = REGISTRY.register("sparky_suit_chestplate", () -> new SparkySuitItem.Chestplate());
+	public static final RegistryObject<Item> SPARKY_SUIT_LEGGINGS = REGISTRY.register("sparky_suit_leggings", () -> new SparkySuitItem.Leggings());
+	public static final RegistryObject<Item> SPARKY_SUIT_BOOTS = REGISTRY.register("sparky_suit_boots", () -> new SparkySuitItem.Boots());
+	public static final RegistryObject<Item> PIZZERIA_TRASH_CAN = block(FnafModModBlocks.PIZZERIA_TRASH_CAN);
 
 	// Start of user code block custom items
 	// End of user code block custom items

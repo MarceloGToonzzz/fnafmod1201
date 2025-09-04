@@ -65,11 +65,11 @@ public class ModelChicaSuit<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create(), PartPose.offset(0.0F, 5.0F, 0.0F));
+		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 		PartDefinition Chica_Head = Head.addOrReplaceChild("Chica_Head",
 				CubeListBuilder.create().texOffs(34, 117).addBox(-4.0F, -13.2F, -4.0F, 8.0F, 3.0F, 8.0F, new CubeDeformation(0.1F)).texOffs(0, 114).addBox(-4.5F, -10.0F, -4.0F, 9.0F, 6.0F, 8.0F, new CubeDeformation(0.1F)).texOffs(0, 3)
 						.addBox(-2.0F, -7.0F, -7.0F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-1.0F, -8.0F, -6.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, -0.3F, 0.0F));
+				PartPose.offset(0.0F, 4.7F, 0.0F));
 		PartDefinition Head_r1 = Chica_Head.addOrReplaceChild("Head_r1", CubeListBuilder.create().texOffs(15, 28).addBox(-4.0F, -1.9F, 0.3F, 8.0F, 1.0F, 0.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -10.4312F, -5.6113F, -0.8727F, 0.0F, 0.0F));
 		PartDefinition Jaw = Chica_Head.addOrReplaceChild("Jaw", CubeListBuilder.create(), PartPose.offset(0.0F, 0.55F, -1.3F));

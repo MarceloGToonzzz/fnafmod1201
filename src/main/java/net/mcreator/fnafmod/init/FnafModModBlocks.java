@@ -1092,6 +1092,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> WHITE_TILED_WALL = REGISTRY.register("white_tiled_wall", () -> new WhiteTiledWallBlock());
 	public static final RegistryObject<Block> MOVIE_EXTERIOR_TOP = REGISTRY.register("movie_exterior_top", () -> new MovieExteriorTopBlock());
 	public static final RegistryObject<Block> ENTRANCE_CARPET = REGISTRY.register("entrance_carpet", () -> new EntranceCarpetBlock());
+	public static final RegistryObject<Block> PIZZERIA_TRASH_CAN = REGISTRY.register("pizzeria_trash_can", () -> new PizzeriaTrashCanBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
