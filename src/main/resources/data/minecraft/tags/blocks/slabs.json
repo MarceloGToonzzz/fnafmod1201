@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:green_blue_diagonal_tile_slab",
+    "fnaf_mod:diagonal_tile_slab",
     "fnaf_mod:brown_tan_tile_slab",
     "fnaf_mod:blueprint_tile_slab",
     "fnaf_mod:movie_exterior_wall_slab",

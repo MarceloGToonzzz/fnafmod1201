@@ -195,6 +195,7 @@ import net.mcreator.fnafmod.block.display.SpringBonnieDecorDisplayItem;
 import net.mcreator.fnafmod.block.display.ShelfDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
+import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
@@ -206,6 +207,8 @@ import net.mcreator.fnafmod.block.display.FredbearSignDisplayItem;
 import net.mcreator.fnafmod.block.display.FredbearHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
+import net.mcreator.fnafmod.block.display.FluorescentLightDisplayItem;
+import net.mcreator.fnafmod.block.display.FloodLightsDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
@@ -1130,6 +1133,23 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SPARKY_SUIT_LEGGINGS = REGISTRY.register("sparky_suit_leggings", () -> new SparkySuitItem.Leggings());
 	public static final RegistryObject<Item> SPARKY_SUIT_BOOTS = REGISTRY.register("sparky_suit_boots", () -> new SparkySuitItem.Boots());
 	public static final RegistryObject<Item> PIZZERIA_TRASH_CAN = block(FnafModModBlocks.PIZZERIA_TRASH_CAN);
+	public static final RegistryObject<Item> DIAGONAL_TILE = block(FnafModModBlocks.DIAGONAL_TILE);
+	public static final RegistryObject<Item> DIAGONAL_TILE_STAIR = block(FnafModModBlocks.DIAGONAL_TILE_STAIR);
+	public static final RegistryObject<Item> DIAGONAL_TILE_SLAB = block(FnafModModBlocks.DIAGONAL_TILE_SLAB);
+	public static final RegistryObject<Item> GREEN_BLUE_DIAGONAL_TILE = block(FnafModModBlocks.GREEN_BLUE_DIAGONAL_TILE);
+	public static final RegistryObject<Item> GREEN_BLUE_DIAGONAL_TILE_STAIR = block(FnafModModBlocks.GREEN_BLUE_DIAGONAL_TILE_STAIR);
+	public static final RegistryObject<Item> GREEN_BLUE_DIAGONAL_TILE_SLAB = block(FnafModModBlocks.GREEN_BLUE_DIAGONAL_TILE_SLAB);
+	public static final RegistryObject<Item> BLACK_TILE = block(FnafModModBlocks.BLACK_TILE);
+	public static final RegistryObject<Item> WHITE_TILE = block(FnafModModBlocks.WHITE_TILE);
+	public static final RegistryObject<Item> RED_TILE = block(FnafModModBlocks.RED_TILE);
+	public static final RegistryObject<Item> BLUE_TILE = block(FnafModModBlocks.BLUE_TILE);
+	public static final RegistryObject<Item> BUFFET_FLOOR = block(FnafModModBlocks.BUFFET_FLOOR);
+	public static final RegistryObject<Item> BUFFET_FLOOR_CLEAN = block(FnafModModBlocks.BUFFET_FLOOR_CLEAN);
+	public static final RegistryObject<Item> BUFFET_WALL_LIGHT = block(FnafModModBlocks.BUFFET_WALL_LIGHT);
+	public static final RegistryObject<Item> BUFFET_WALL_DARK = block(FnafModModBlocks.BUFFET_WALL_DARK);
+	public static final RegistryObject<Item> FLUORESCENT_LIGHT = REGISTRY.register(FnafModModBlocks.FLUORESCENT_LIGHT.getId().getPath(), () -> new FluorescentLightDisplayItem(FnafModModBlocks.FLUORESCENT_LIGHT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> RETRO_COMPUTER = REGISTRY.register(FnafModModBlocks.RETRO_COMPUTER.getId().getPath(), () -> new RetroComputerDisplayItem(FnafModModBlocks.RETRO_COMPUTER.get(), new Item.Properties()));
+	public static final RegistryObject<Item> FLOOD_LIGHTS = REGISTRY.register(FnafModModBlocks.FLOOD_LIGHTS.getId().getPath(), () -> new FloodLightsDisplayItem(FnafModModBlocks.FLOOD_LIGHTS.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

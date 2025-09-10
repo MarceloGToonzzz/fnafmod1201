@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:buffet_wall_dark",
+    "fnaf_mod:buffet_wall_light",
+    "fnaf_mod:blue_tile",
+    "fnaf_mod:red_tile",
+    "fnaf_mod:white_tile",
+    "fnaf_mod:black_tile",
+    "fnaf_mod:green_blue_diagonal_tile_slab",
+    "fnaf_mod:green_blue_diagonal_tile_stair",
+    "fnaf_mod:green_blue_diagonal_tile",
+    "fnaf_mod:diagonal_tile_slab",
+    "fnaf_mod:diagonal_tile_stair",
+    "fnaf_mod:diagonal_tile",
     "fnaf_mod:movie_exterior_top",
     "fnaf_mod:white_tiled_wall",
     "fnaf_mod:cinematic_sign_toys",

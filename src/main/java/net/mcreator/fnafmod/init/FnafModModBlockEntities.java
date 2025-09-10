@@ -34,6 +34,7 @@ import net.mcreator.fnafmod.block.entity.SpringBonnieDecorTileEntity;
 import net.mcreator.fnafmod.block.entity.ShelfTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
+import net.mcreator.fnafmod.block.entity.RetroComputerTileEntity;
 import net.mcreator.fnafmod.block.entity.RemantInfuserBlockEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStripeTableTileEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStarTableTileEntity;
@@ -53,6 +54,8 @@ import net.mcreator.fnafmod.block.entity.FredbearSignTileEntity;
 import net.mcreator.fnafmod.block.entity.FredbearHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadDecorationTileEntity;
+import net.mcreator.fnafmod.block.entity.FluorescentLightTileEntity;
+import net.mcreator.fnafmod.block.entity.FloodLightsTileEntity;
 import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
@@ -219,6 +222,10 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(CinematicSignFreddyTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_FREDDY.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CinematicSignToysTileEntity>> CINEMATIC_SIGN_TOYS = REGISTRY.register("cinematic_sign_toys",
 			() -> BlockEntityType.Builder.of(CinematicSignToysTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_TOYS.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FluorescentLightTileEntity>> FLUORESCENT_LIGHT = REGISTRY.register("fluorescent_light",
+			() -> BlockEntityType.Builder.of(FluorescentLightTileEntity::new, FnafModModBlocks.FLUORESCENT_LIGHT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RetroComputerTileEntity>> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> BlockEntityType.Builder.of(RetroComputerTileEntity::new, FnafModModBlocks.RETRO_COMPUTER.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FloodLightsTileEntity>> FLOOD_LIGHTS = REGISTRY.register("flood_lights", () -> BlockEntityType.Builder.of(FloodLightsTileEntity::new, FnafModModBlocks.FLOOD_LIGHTS.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

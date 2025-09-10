@@ -28792,6 +28792,381 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "DiagonalTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diagonal_tile",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/diagonal_tile.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/diagonal_tile.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/diagonal_tile.json",
+          "src/main/java/net/mcreator/fnafmod/block/DiagonalTileBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "DiagonalTileStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diagonal_tile_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile_stair_outer.json",
+          "src/main/resources/assets/fnaf_mod/models/item/diagonal_tile_stair.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/diagonal_tile_stair.json",
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile_stair_inner.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/diagonal_tile_stair.json",
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile_stair.json",
+          "src/main/java/net/mcreator/fnafmod/block/DiagonalTileStairBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "DiagonalTileSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diagonal_tile_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile_slab.json",
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile_slab_full.json",
+          "src/main/resources/assets/fnaf_mod/models/item/diagonal_tile_slab.json",
+          "src/main/resources/assets/fnaf_mod/models/block/diagonal_tile_slab_top.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/diagonal_tile_slab.json",
+          "src/main/java/net/mcreator/fnafmod/block/DiagonalTileSlabBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/diagonal_tile_slab.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "GreenBlueDiagonalTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_blue_diagonal_tile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/GreenBlueDiagonalTileBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/green_blue_diagonal_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/item/green_blue_diagonal_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/green_blue_diagonal_tile.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "GreenBlueDiagonalTileStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_blue_diagonal_tile_stair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/green_blue_diagonal_tile_stair.json",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile_stair_outer.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/green_blue_diagonal_tile_stair.json",
+          "src/main/java/net/mcreator/fnafmod/block/GreenBlueDiagonalTileStairBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/green_blue_diagonal_tile_stair.json",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile_stair_inner.json",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile_stair.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "GreenBlueDiagonalTileSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_blue_diagonal_tile_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/green_blue_diagonal_tile_slab.json",
+          "src/main/java/net/mcreator/fnafmod/block/GreenBlueDiagonalTileSlabBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile_slab_full.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/green_blue_diagonal_tile_slab.json",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile_slab_top.json",
+          "src/main/resources/assets/fnaf_mod/models/item/green_blue_diagonal_tile_slab.json",
+          "src/main/resources/assets/fnaf_mod/models/block/green_blue_diagonal_tile_slab.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "BlackTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_tile",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/black_tile.json",
+          "src/main/java/net/mcreator/fnafmod/block/BlackTileBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/black_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/item/black_tile.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/black_tile.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "WhiteTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_tile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/WhiteTileBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/white_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/item/white_tile.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/white_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/block/white_tile.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "RedTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_tile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/RedTileBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/red_tile.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_tile.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/red_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/item/red_tile.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "BlueTile",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_tile",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/blue_tile.json",
+          "src/main/resources/assets/fnaf_mod/models/item/blue_tile.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/blue_tile.json",
+          "src/main/java/net/mcreator/fnafmod/block/BlueTileBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/blue_tile.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "BuffetFloor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffet_floor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_floor.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_floor.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_floor.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_floor.json",
+          "src/main/java/net/mcreator/fnafmod/block/BuffetFloorBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "BuffetFloorClean",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffet_floor_clean",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_floor_clean.json",
+          "src/main/java/net/mcreator/fnafmod/block/BuffetFloorCleanBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_floor_clean.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_floor_clean.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_floor_clean.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "BuffetWallLight",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffet_wall_light",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/BuffetWallLightBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_wall_light.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_wall_light.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_wall_light.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_wall_light.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "BuffetWallDark",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffet_wall_dark",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_wall_dark.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_wall_dark.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_wall_dark.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_wall_dark.json",
+          "src/main/java/net/mcreator/fnafmod/block/BuffetWallDarkBlock.java"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "FluorescentLight",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorescent_light",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/entity/FluorescentLightTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/FluorescentLightDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/FluorescentLightBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FluorescentLightDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/fluorescent_light.json",
+          "src/main/resources/assets/fnaf_mod/models/item/fluorescent_light.json",
+          "src/main/resources/assets/fnaf_mod/models/block/fluorescent_light_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/FluorescentLightBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FluorescentLightTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/FluorescentLightDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/fluorescent_light_particle.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "FluorescentLightRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorescent_light_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/FluorescentLightRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "FluorescentLightRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fluorescent_light_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/FluorescentLightRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "RetroComputer",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "retro_computer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/retro_computer.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/RetroComputerDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/retro_computer.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/RetroComputerDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/RetroComputerBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/RetroComputerDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/RetroComputerTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/RetroComputerBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/RetroComputerTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/retro_computer_particle.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "FloodLights",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flood_lights",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FloodLightsDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/FloodLightsDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/flood_lights.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/FloodLightsTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/flood_lights.json",
+          "src/main/java/net/mcreator/fnafmod/block/FloodLightsBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/flood_lights_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/FloodLightsBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/FloodLightsTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/FloodLightsDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
     }
   ],
   "variable_elements": [
@@ -29682,6 +30057,8 @@
       "CUSTOM:SecretNightmareFredbear"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:GreenBlueDiagonalTileSlab",
+      "~CUSTOM:DiagonalTileSlab",
       "~CUSTOM:BrownTanTileSlab",
       "~CUSTOM:BlueprintTileSlab",
       "~CUSTOM:MovieExteriorWallSlab",
@@ -29714,6 +30091,16 @@
       "CUSTOM:Springtrap"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:BuffetWallDark",
+      "~CUSTOM:BuffetWallLight",
+      "~CUSTOM:BuffetFloorClean",
+      "~CUSTOM:BuffetFloor",
+      "~CUSTOM:GreenBlueDiagonalTileSlab",
+      "~CUSTOM:GreenBlueDiagonalTileStair",
+      "~CUSTOM:GreenBlueDiagonalTile",
+      "~CUSTOM:DiagonalTileSlab",
+      "~CUSTOM:DiagonalTileStair",
+      "~CUSTOM:DiagonalTile",
       "~CUSTOM:EntranceCarpet",
       "~CUSTOM:MovieExteriorTop",
       "~CUSTOM:WhiteTiledWall",
@@ -29944,6 +30331,8 @@
       "CUSTOM:Ballpit"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:GreenBlueDiagonalTileStair",
+      "~CUSTOM:DiagonalTileStair",
       "~CUSTOM:BrownTanTileStair",
       "~CUSTOM:BlueprintTileStair",
       "~CUSTOM:MovieExteriorWallStairs",
@@ -30030,6 +30419,18 @@
       "CUSTOM:NightmareBB"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BuffetWallDark",
+      "~CUSTOM:BuffetWallLight",
+      "~CUSTOM:BlueTile",
+      "~CUSTOM:RedTile",
+      "~CUSTOM:WhiteTile",
+      "~CUSTOM:BlackTile",
+      "~CUSTOM:GreenBlueDiagonalTileSlab",
+      "~CUSTOM:GreenBlueDiagonalTileStair",
+      "~CUSTOM:GreenBlueDiagonalTile",
+      "~CUSTOM:DiagonalTileSlab",
+      "~CUSTOM:DiagonalTileStair",
+      "~CUSTOM:DiagonalTile",
       "~CUSTOM:MovieExteriorTop",
       "~CUSTOM:WhiteTiledWall",
       "~CUSTOM:CinematicSignToys",
@@ -30404,7 +30805,10 @@
       "CupcakeFlowerPink",
       "CupcakeFlowerBlue",
       "CupcakeFlowerGolden",
-      "PizzeriaTrashCan"
+      "PizzeriaTrashCan",
+      "FluorescentLight",
+      "RetroComputer",
+      "FloodLights"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -30929,7 +31333,21 @@
       "BigWideGlassEntranceDoor",
       "BigWideRedEntranceDoor",
       "BigWideRedWindowedDoor",
-      "BigWideDualColourEntranceDoor"
+      "BigWideDualColourEntranceDoor",
+      "DiagonalTile",
+      "DiagonalTileStair",
+      "DiagonalTileSlab",
+      "GreenBlueDiagonalTile",
+      "GreenBlueDiagonalTileStair",
+      "GreenBlueDiagonalTileSlab",
+      "BlackTile",
+      "WhiteTile",
+      "RedTile",
+      "BlueTile",
+      "BuffetFloor",
+      "BuffetFloorClean",
+      "BuffetWallLight",
+      "BuffetWallDark"
     ]
   },
   "language_map": {
@@ -30974,6 +31392,7 @@
       "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.balloon": "Red Balloon",
       "block.fnaf_mod.big_dual_colour_entrance_door": "Big Dual Coloured Entrance Door",
+      "block.fnaf_mod.green_blue_diagonal_tile_stair": "Green Blue Diagonal Tile Stairs",
       "subtitles.blacktombyardtemp": "",
       "block.fnaf_mod.big_purple_stage_brick_tiles": "Big Purple Etched Brick Tiles",
       "entity.fnaf_mod.unwithered_foxy": "Un-Withered Foxy",
@@ -30989,6 +31408,7 @@
       "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
       "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
+      "block.fnaf_mod.buffet_wall_dark": "Buffet Dark Wall",
       "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
       "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
@@ -31226,6 +31646,7 @@
       "block.fnaf_mod.balloon_blue": "Light Blue Balloon",
       "item.fnaf_mod.pink_fabric": "Pink Fabric",
       "block.fnaf_mod.ceiling_lamp": "Ceiling Lamp",
+      "block.fnaf_mod.black_tile": "Black Tile",
       "block.fnaf_mod.fan": "Fan",
       "entity.fnaf_mod.sit_entity": "Sit Entity",
       "item.fnaf_mod.glitchtrap_suit_chestplate": "Spring Bonnie Costume Body",
@@ -31366,6 +31787,7 @@
       "block.fnaf_mod.thin_rock_curtain.description_0": "§7(Gray Curtain)",
       "item.fnaf_mod.passive_goldie_spawn_egg": "YellowBear Spawn Egg",
       "gui.fnaf_mod.wall_change_1.label_two_room_and_hall_faces1": "Two Room and Hall Faces ",
+      "block.fnaf_mod.retro_computer": "Retro Computer",
       "entity.fnaf_mod.nightmare_chica": "Nightmare Chica",
       "block.fnaf_mod.pizza_box_open": "Pizza Box Open",
       "block.fnaf_mod.error_tile_slab": "Missing Texture Tile Slab",
@@ -31382,6 +31804,7 @@
       "block.fnaf_mod.alternate_big_white_black_striped_wall_tiles": "Alternate Big White Black Striped Wall Tiles",
       "gui.fnaf_mod.camera_gui.label_you_can_have_unlimited_cameras": "You Can Have Unlimited Cameras",
       "block.fnaf_mod.alternate_white_black_stripe_wall_tile": "Alternate White Black Stripe Wall Tiles",
+      "block.fnaf_mod.green_blue_diagonal_tile_slab": "Green Blue Diagonal Tile Slab",
       "item.fnaf_mod.red_plastic": "Red Plastic",
       "block.fnaf_mod.big_cyan_kitchen_door": "Big Cyan Kitchen Door",
       "block.fnaf_mod.poster_7": "Wall Poster 7",
@@ -31432,6 +31855,7 @@
       "block.fnaf_mod.big_black_striped_stage_brick_tiles": "Big Black Striped Etched Brick Tiles",
       "block.fnaf_mod.big_movie_exterior_wall_tiles": "Big Movie Exterior Wall Tiles",
       "item.fnaf_mod.nightmare_foxy_spawn_item": "Nightmare Foxy",
+      "block.fnaf_mod.diagonal_tile_stair": "Diagonal Tile Stairs",
       "entity.fnaf_mod.chica_cut_out": "Chica Cutout",
       "entity.fnaf_mod.jack_o_chica": "Jack-O Chica",
       "block.fnaf_mod.alternate_big_white_black_wall_tile": "Alternate Big White Wall Tiles",
@@ -31455,6 +31879,7 @@
       "block.fnaf_mod.balloons": "Balloons",
       "item.fnaf_mod.nightmare_freddy_spawn_egg": "Nightmare Freddy Spawn Egg",
       "block.fnaf_mod.alternate_stage_brick_tiles": "Alternate Etched Brick Tiles",
+      "block.fnaf_mod.buffet_floor": "Buffet Floor",
       "block.fnaf_mod.security_door_open": "Office Door",
       "block.fnaf_mod.thin_candy_curtain.description_0": "§c(Red Curtain)",
       "block.fnaf_mod.plush_fredbear": "Fredbear Plush",
@@ -31558,6 +31983,7 @@
       "entity.fnaf_mod.camera": "Camera",
       "subtitles.d1alt": "Honk",
       "gui.fnaf_mod.camera_gui.label_right_click_it": "with monitor",
+      "block.fnaf_mod.diagonal_tile_slab": "Diagonal Tile Slab",
       "item.fnaf_mod.tameable_chica_spawn_egg": "Adventure Withered Chica Spawn Egg",
       "block.fnaf_mod.alternate_big_white_red_wall_tile": "Alternate Big White Red Wall Tiles",
       "block.fnaf_mod.center_stage_black_brick_tiles": "Center Etched Black Stripe Brick Tiles",
@@ -31681,6 +32107,7 @@
       "gui.fnaf_mod.locker.label_inventory": "Inventory",
       "block.fnaf_mod.orange_speake_right": "Speaker",
       "block.fnaf_mod.spring_bonnie_plush": "Spring Bonnie Plushie?",
+      "block.fnaf_mod.red_tile": "Red Tile",
       "item.fnaf_mod.unwithered_freddy_spawn_item": "Unwithered Freddy",
       "entity.fnaf_mod.withered_freddy": "Withered Freddy",
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
@@ -31722,6 +32149,7 @@
       "item.fnaf_mod.springlocked_zombie_fredbear_spawn_egg": "Springlocked Zombie Fredbear Spawn Egg",
       "block.fnaf_mod.black_white_tile_cracked": "Cracked Black White Tile",
       "block.fnaf_mod.light_button_off": "Light Button Off",
+      "block.fnaf_mod.white_tile": "White Tile",
       "block.fnaf_mod.streamer_stars.description_0": "Stars",
       "block.fnaf_mod.prize_corner_poster": "Prize Counter Poster",
       "block.fnaf_mod.purple_stage_bricks": "Purple Etched Bricks",
@@ -31824,6 +32252,7 @@
       "block.fnaf_mod.center_big_white_purple_wall_tile": "Center Big White Purple Stripe Wall Tiles",
       "block.fnaf_mod.red_door_windowed": "Red Establishment Windowed Door",
       "block.fnaf_mod.bubblegum_curtain": "Bubblegum Curtain",
+      "block.fnaf_mod.diagonal_tile": "Diagonal Tile",
       "block.fnaf_mod.endo_block": "Endo Block",
       "block.fnaf_mod.pizzeria_trash_can": "Pizzeria Trash Can",
       "itemGroup.tabdrawings_posters": "Drawings and Posters",
@@ -31857,6 +32286,7 @@
       "subtitles.showtimefunky": "",
       "block.fnaf_mod.visit_nebraska_poster.description_0": "Pining For Fun? Visit Nebraska!",
       "item.fnaf_mod.movie_theme.desc": "Movie Theme - Something Funky",
+      "block.fnaf_mod.blue_tile": "Blue Tile",
       "block.fnaf_mod.party_hat_red": "Party Hat {Red}",
       "block.fnaf_mod.red_blue_tile_slab": "Red Blue Tile Slab",
       "subtitles.g1": "Honk",
@@ -31957,6 +32387,7 @@
       "block.fnaf_mod.center_big_dark_light_black_wall_tile": "Center Big Black-White Black Stripe Wall Tiles",
       "effect.bleeding": "Bleeding",
       "block.fnaf_mod.red_white_tile": "Red White Tile",
+      "block.fnaf_mod.fluorescent_light": "Fluorescent Light",
       "subtitles.fnaf2_scream": "Jumpscare Sound",
       "block.fnaf_mod.bonnie_plushie": "Bonnie Plushie",
       "block.fnaf_mod.door_button_on": "Door Button On",
@@ -31997,6 +32428,7 @@
       "block.fnaf_mod.children_drawings_4": "Pack of Children\u0027s Drawings 4",
       "block.fnaf_mod.children_drawings_5": "Pack of Children\u0027s Drawings 5",
       "block.fnaf_mod.children_drawings_6": "Pack of Children\u0027s Drawings 6",
+      "block.fnaf_mod.buffet_floor_clean": "Buffet Floor Clean",
       "block.fnaf_mod.children_drawings_2": "Pack of Children\u0027s Drawings 2",
       "item.fnaf_mod.plushtrap_toy_spawn_egg": "Plushtrap Toy Spawn Egg",
       "block.fnaf_mod.brown_tan_tile_slab": "Chess Tile Slab",
@@ -32075,6 +32507,7 @@
       "block.fnaf_mod.foxy_plushie": "Foxy Plushie",
       "entity.fnaf_mod.bonnie_bunny": "Bonnie the Bunny",
       "item.fnaf_mod.mangle_sitting_spawn_egg": "DayTime Mangle Spawn Egg",
+      "block.fnaf_mod.flood_lights": "Flood Lights",
       "block.fnaf_mod.licorice_curtain.description_0": "§7(Black Curtain)",
       "entity.fnaf_mod.nightmare": "Nightmare",
       "item.fnaf_mod.chica_suit_chestplate": "Chica Body",
@@ -32103,9 +32536,11 @@
       "death.attack.springlocked": "%s Bled out to Death",
       "block.fnaf_mod.thin_sky_curtain": "Thin Sky Curtain",
       "item.fnaf_mod.toy_bonnie_cut_out_spawn_egg": "Toy Bonnie Cutout Spawn Egg",
+      "block.fnaf_mod.green_blue_diagonal_tile": "Green Blue Diagonal Tile",
       "subtitles.bod": "What Have you Brought in This World?",
       "entity.fnaf_mod.tameable_springtrap": "Adventure Springtrap",
       "block.fnaf_mod.checkered_tile": "Checkered Tile",
+      "block.fnaf_mod.buffet_wall_light": "Buffet Light Wall",
       "item.fnaf_mod.pink_plastic": "Pink Plastic",
       "item.fnaf_mod.nightmare_chica_spawn_egg": "Nightmare Chica Spawn Egg",
       "subtitles.pinwheeltemp": "",

@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:buffet_wall_dark",
+    "fnaf_mod:buffet_wall_light",
+    "fnaf_mod:buffet_floor_clean",
+    "fnaf_mod:buffet_floor",
+    "fnaf_mod:green_blue_diagonal_tile_slab",
+    "fnaf_mod:green_blue_diagonal_tile_stair",
+    "fnaf_mod:green_blue_diagonal_tile",
+    "fnaf_mod:diagonal_tile_slab",
+    "fnaf_mod:diagonal_tile_stair",
+    "fnaf_mod:diagonal_tile",
     "fnaf_mod:entrance_carpet",
     "fnaf_mod:movie_exterior_top",
     "fnaf_mod:white_tiled_wall",

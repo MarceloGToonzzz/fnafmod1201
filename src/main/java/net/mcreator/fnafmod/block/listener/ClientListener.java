@@ -29,6 +29,7 @@ import net.mcreator.fnafmod.block.renderer.SpringBonnieDecorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ShelfTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroFreddySignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
+import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
@@ -40,6 +41,8 @@ import net.mcreator.fnafmod.block.renderer.FredbearSignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FredbearHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
+import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
+import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
@@ -140,5 +143,8 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_BASE_SEQUEL.get(), context -> new CinematicSignBaseSequelTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_FREDDY.get(), context -> new CinematicSignFreddyTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_TOYS.get(), context -> new CinematicSignToysTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLUORESCENT_LIGHT.get(), context -> new FluorescentLightTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.RETRO_COMPUTER.get(), context -> new RetroComputerTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLOOD_LIGHTS.get(), context -> new FloodLightsTileRenderer());
 	}
 }
