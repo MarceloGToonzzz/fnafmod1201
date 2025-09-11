@@ -159,6 +159,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FLUORESCENT_LIGHT.get().asItem());
 				tabData.accept(FnafModModBlocks.RETRO_COMPUTER.get().asItem());
 				tabData.accept(FnafModModBlocks.FLOOD_LIGHTS.get().asItem());
+				tabData.accept(FnafModModBlocks.CHANGE_MACHINE.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -708,6 +709,31 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.MINI_RANCID_WALL.get().asItem());
 				tabData.accept(FnafModModBlocks.BIG_SECURITY_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.BACKSTAGE_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.ALTERNATE_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.ALTERNATE_BIG_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.DARK_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.ALTERNATE_DARK_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.BIG_DARK_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.ALTERNATE_BIG_DARK_BUFFET_WALL.get().asItem());
+				tabData.accept(FnafModModBlocks.BLUE_ETCHED_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.CUT_BLUE_ETCHED_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.PURPLE_ETCHED_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.CUT_PURPLE_ETCHED_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.BLACK_ETCHED_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.CUT_BLACK_ETCHED_BRICKS.get().asItem());
+				tabData.accept(FnafModModBlocks.AVOCADO_CURTAIN.get().asItem());
+				tabData.accept(FnafModModBlocks.THIN_AVOCADO_CURTAIN.get().asItem());
+				tabData.accept(FnafModModBlocks.FANCY_AVOCADO_CURTAIN.get().asItem());
+				tabData.accept(FnafModModBlocks.THIN_FANCY_AVOCADO_CURTAIN.get().asItem());
+				tabData.accept(FnafModModBlocks.STAGE_WOOD.get().asItem());
+				tabData.accept(FnafModModBlocks.STAGE_WOOD_SLAB.get().asItem());
+				tabData.accept(FnafModModBlocks.STAGE_WOOD_STAIRS.get().asItem());
+				tabData.accept(FnafModModBlocks.STAGE_WOOD_FENCE.get().asItem());
+				tabData.accept(FnafModModBlocks.STAGE_WOOD_FENCE_GATE.get().asItem());
+				tabData.accept(FnafModModBlocks.GARAGE_DOOR.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

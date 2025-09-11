@@ -101,7 +101,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 7,
+    "luminance": 10,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "hasInventory": false,

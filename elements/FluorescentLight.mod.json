@@ -148,7 +148,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "hangingflourescentlights.geo.json",
-        "luminance": 10,
+        "luminance": 14,
         "boundingBoxes": []
       }
     ]

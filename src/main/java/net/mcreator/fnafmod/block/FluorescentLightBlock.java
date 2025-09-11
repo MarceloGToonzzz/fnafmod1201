@@ -47,7 +47,7 @@ public class FluorescentLightBlock extends BaseEntityBlock implements EntityBloc
 				.sound(SoundType.LANTERN).strength(1f, 10f).lightLevel(s -> (new Object() {
 					public int getLightLevel() {
 						if (s.getValue(BLOCKSTATE) == 1)
-							return 10;
+							return 14;
 						return 0;
 					}
 				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));

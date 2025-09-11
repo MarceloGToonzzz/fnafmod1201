@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:stage_wood_stairs",
     "fnaf_mod:green_blue_diagonal_tile_stair",
     "fnaf_mod:diagonal_tile_stair",
     "fnaf_mod:brown_tan_tile_stair",

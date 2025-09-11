@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "itp_door_clear",
+    "itemTexture": "buffet_door_clean_item",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",

@@ -33,6 +33,7 @@ import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.GarageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddysCupcakeBonanzaTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOffTileRenderer;
@@ -150,5 +151,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLOOD_LIGHTS.get(), context -> new FloodLightsTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_SECURITY_DOOR.get(), context -> new BigSecurityDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_HEAVY_DUTY_DOOR.get(), context -> new BigHeavyDutyDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GARAGE_DOOR.get(), context -> new GarageDoorTileRenderer());
 	}
 }

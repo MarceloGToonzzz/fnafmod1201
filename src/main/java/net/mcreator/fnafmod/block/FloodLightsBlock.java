@@ -38,7 +38,7 @@ public class FloodLightsBlock extends BaseEntityBlock implements EntityBlock {
 	public FloodLightsBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.LANTERN).strength(1f, 10f).lightLevel(s -> 7).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.LANTERN).strength(1f, 10f).lightLevel(s -> 10).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

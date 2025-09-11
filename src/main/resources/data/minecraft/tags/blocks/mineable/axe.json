@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:stage_wood_fence_gate",
+    "fnaf_mod:stage_wood_fence",
+    "fnaf_mod:stage_wood_stairs",
+    "fnaf_mod:stage_wood_slab",
+    "fnaf_mod:stage_wood",
     "fnaf_mod:buffet_door_empty",
     "fnaf_mod:buffet_door",
     "fnaf_mod:windowed_cyan_door",

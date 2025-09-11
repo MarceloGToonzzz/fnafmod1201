@@ -46,6 +46,7 @@ import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
+import net.mcreator.fnafmod.block.entity.GarageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOffTileEntity;
@@ -232,6 +233,7 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(BigSecurityDoorTileEntity::new, FnafModModBlocks.BIG_SECURITY_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigHeavyDutyDoorTileEntity>> BIG_HEAVY_DUTY_DOOR = REGISTRY.register("big_heavy_duty_door",
 			() -> BlockEntityType.Builder.of(BigHeavyDutyDoorTileEntity::new, FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GarageDoorTileEntity>> GARAGE_DOOR = REGISTRY.register("garage_door", () -> BlockEntityType.Builder.of(GarageDoorTileEntity::new, FnafModModBlocks.GARAGE_DOOR.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -199,6 +199,7 @@ import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
+import net.mcreator.fnafmod.block.display.GarageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOffDisplayItem;
@@ -1159,6 +1160,32 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MINI_RANCID_WALL = block(FnafModModBlocks.MINI_RANCID_WALL);
 	public static final RegistryObject<Item> BIG_SECURITY_DOOR = REGISTRY.register(FnafModModBlocks.BIG_SECURITY_DOOR.getId().getPath(), () -> new BigSecurityDoorDisplayItem(FnafModModBlocks.BIG_SECURITY_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BIG_HEAVY_DUTY_DOOR = REGISTRY.register(FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.getId().getPath(), () -> new BigHeavyDutyDoorDisplayItem(FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CHANGE_MACHINE = block(FnafModModBlocks.CHANGE_MACHINE);
+	public static final RegistryObject<Item> BACKSTAGE_WALL = block(FnafModModBlocks.BACKSTAGE_WALL);
+	public static final RegistryObject<Item> BUFFET_WALL = block(FnafModModBlocks.BUFFET_WALL);
+	public static final RegistryObject<Item> ALTERNATE_BUFFET_WALL = block(FnafModModBlocks.ALTERNATE_BUFFET_WALL);
+	public static final RegistryObject<Item> BIG_BUFFET_WALL = block(FnafModModBlocks.BIG_BUFFET_WALL);
+	public static final RegistryObject<Item> ALTERNATE_BIG_BUFFET_WALL = block(FnafModModBlocks.ALTERNATE_BIG_BUFFET_WALL);
+	public static final RegistryObject<Item> DARK_BUFFET_WALL = block(FnafModModBlocks.DARK_BUFFET_WALL);
+	public static final RegistryObject<Item> ALTERNATE_DARK_BUFFET_WALL = block(FnafModModBlocks.ALTERNATE_DARK_BUFFET_WALL);
+	public static final RegistryObject<Item> BIG_DARK_BUFFET_WALL = block(FnafModModBlocks.BIG_DARK_BUFFET_WALL);
+	public static final RegistryObject<Item> ALTERNATE_BIG_DARK_BUFFET_WALL = block(FnafModModBlocks.ALTERNATE_BIG_DARK_BUFFET_WALL);
+	public static final RegistryObject<Item> BLUE_ETCHED_BRICKS = block(FnafModModBlocks.BLUE_ETCHED_BRICKS);
+	public static final RegistryObject<Item> CUT_BLUE_ETCHED_BRICKS = block(FnafModModBlocks.CUT_BLUE_ETCHED_BRICKS);
+	public static final RegistryObject<Item> PURPLE_ETCHED_BRICKS = block(FnafModModBlocks.PURPLE_ETCHED_BRICKS);
+	public static final RegistryObject<Item> CUT_PURPLE_ETCHED_BRICKS = block(FnafModModBlocks.CUT_PURPLE_ETCHED_BRICKS);
+	public static final RegistryObject<Item> BLACK_ETCHED_BRICKS = block(FnafModModBlocks.BLACK_ETCHED_BRICKS);
+	public static final RegistryObject<Item> CUT_BLACK_ETCHED_BRICKS = block(FnafModModBlocks.CUT_BLACK_ETCHED_BRICKS);
+	public static final RegistryObject<Item> AVOCADO_CURTAIN = block(FnafModModBlocks.AVOCADO_CURTAIN);
+	public static final RegistryObject<Item> THIN_AVOCADO_CURTAIN = block(FnafModModBlocks.THIN_AVOCADO_CURTAIN);
+	public static final RegistryObject<Item> FANCY_AVOCADO_CURTAIN = block(FnafModModBlocks.FANCY_AVOCADO_CURTAIN);
+	public static final RegistryObject<Item> THIN_FANCY_AVOCADO_CURTAIN = block(FnafModModBlocks.THIN_FANCY_AVOCADO_CURTAIN);
+	public static final RegistryObject<Item> STAGE_WOOD = block(FnafModModBlocks.STAGE_WOOD);
+	public static final RegistryObject<Item> STAGE_WOOD_SLAB = block(FnafModModBlocks.STAGE_WOOD_SLAB);
+	public static final RegistryObject<Item> STAGE_WOOD_STAIRS = block(FnafModModBlocks.STAGE_WOOD_STAIRS);
+	public static final RegistryObject<Item> STAGE_WOOD_FENCE = block(FnafModModBlocks.STAGE_WOOD_FENCE);
+	public static final RegistryObject<Item> STAGE_WOOD_FENCE_GATE = block(FnafModModBlocks.STAGE_WOOD_FENCE_GATE);
+	public static final RegistryObject<Item> GARAGE_DOOR = REGISTRY.register(FnafModModBlocks.GARAGE_DOOR.getId().getPath(), () -> new GarageDoorDisplayItem(FnafModModBlocks.GARAGE_DOOR.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
