@@ -63,9 +63,11 @@ import net.mcreator.fnafmod.block.renderer.BigWideGlassEntranceDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigWideDualColourEntranceDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigWideCyanKitchenDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigWhiteDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigSecurityDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigRedWindowedDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigRedEntranceDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigRedDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.BigHeavyDutyDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigGlassEntranceDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigDualColourEntranceDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigCyanKitchenDoorTileRenderer;
@@ -146,5 +148,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLUORESCENT_LIGHT.get(), context -> new FluorescentLightTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.RETRO_COMPUTER.get(), context -> new RetroComputerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLOOD_LIGHTS.get(), context -> new FloodLightsTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_SECURITY_DOOR.get(), context -> new BigSecurityDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_HEAVY_DUTY_DOOR.get(), context -> new BigHeavyDutyDoorTileRenderer());
 	}
 }

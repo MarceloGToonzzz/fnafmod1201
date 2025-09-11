@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:buffet_door_empty",
+    "fnaf_mod:buffet_door",
+    "fnaf_mod:windowed_cyan_door",
     "fnaf_mod:stool_2",
     "fnaf_mod:stool_1",
     "fnaf_mod:red_door_windowed",

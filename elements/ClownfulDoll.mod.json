@@ -123,7 +123,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "BephDollOnBlockRightClicked"
+      "name": "ClownfulDollOnBlockRightClicked"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [],

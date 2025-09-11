@@ -83,9 +83,11 @@ import net.mcreator.fnafmod.block.entity.BigWideGlassEntranceDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigWideDualColourEntranceDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigWideCyanKitchenDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigWhiteDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigSecurityDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigRedWindowedDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigRedEntranceDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigRedDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.BigHeavyDutyDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigGlassEntranceDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigDualColourEntranceDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigCyanKitchenDoorTileEntity;
@@ -226,6 +228,10 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(FluorescentLightTileEntity::new, FnafModModBlocks.FLUORESCENT_LIGHT.get()).build(null));
 	public static final RegistryObject<BlockEntityType<RetroComputerTileEntity>> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> BlockEntityType.Builder.of(RetroComputerTileEntity::new, FnafModModBlocks.RETRO_COMPUTER.get()).build(null));
 	public static final RegistryObject<BlockEntityType<FloodLightsTileEntity>> FLOOD_LIGHTS = REGISTRY.register("flood_lights", () -> BlockEntityType.Builder.of(FloodLightsTileEntity::new, FnafModModBlocks.FLOOD_LIGHTS.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigSecurityDoorTileEntity>> BIG_SECURITY_DOOR = REGISTRY.register("big_security_door",
+			() -> BlockEntityType.Builder.of(BigSecurityDoorTileEntity::new, FnafModModBlocks.BIG_SECURITY_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigHeavyDutyDoorTileEntity>> BIG_HEAVY_DUTY_DOOR = REGISTRY.register("big_heavy_duty_door",
+			() -> BlockEntityType.Builder.of(BigHeavyDutyDoorTileEntity::new, FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

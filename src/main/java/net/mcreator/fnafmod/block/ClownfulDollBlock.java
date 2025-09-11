@@ -27,7 +27,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.fnafmod.procedures.BephDollOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.ClownfulDollOnBlockRightClickedProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -102,7 +102,7 @@ public class ClownfulDollBlock extends BaseEntityBlock implements EntityBlock {
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		BephDollOnBlockRightClickedProcedure.execute(world, x, y, z);
+		ClownfulDollOnBlockRightClickedProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}
 }

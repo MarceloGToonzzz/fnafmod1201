@@ -26942,16 +26942,16 @@
       "registry_name": "clownful_doll",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ClownfulDollBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/ClownfulDollBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/custom/clownful_doll_particle.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/clownful_doll.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ClownfulDollTileEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/ClownfulDollDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ClownfulDollDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ClownfulDollTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/ClownfulDollBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/model/ClownfulDollDisplayModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/clownful_doll.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ClownfulDollDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ClownfulDollTileRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/ClownfulDollBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ClownfulDollTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/clownful_doll.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ClownfulDollDisplayItem.java"
         ]
       },
       "path": "~/Blocks"
@@ -29167,6 +29167,259 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "WindowedCyanDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windowed_cyan_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_left_open.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/windowed_cyan_door.json",
+          "src/main/resources/assets/fnaf_mod/models/item/windowed_cyan_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_left.json",
+          "src/main/java/net/mcreator/fnafmod/block/WindowedCyanDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/windowed_cyan_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_left.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "BuffetDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffet_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_left_open.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_right.json",
+          "src/main/java/net/mcreator/fnafmod/block/BuffetDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_left_open.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "BuffetDoorEmpty",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buffet_door_empty",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_right_open.json",
+          "src/main/java/net/mcreator/fnafmod/block/BuffetDoorEmptyBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_door_empty.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_right.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_door_empty.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_door_empty.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "RancidTiles",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rancid_tiles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/RancidTilesBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/rancid_tiles.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/rancid_tiles.json",
+          "src/main/resources/assets/fnaf_mod/models/item/rancid_tiles.json",
+          "src/main/resources/assets/fnaf_mod/models/block/rancid_tiles.json"
+        ]
+      },
+      "path": "~/Blocks/Tiles"
+    },
+    {
+      "name": "MiniRancidWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mini_rancid_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/mini_rancid_wall.json",
+          "src/main/java/net/mcreator/fnafmod/block/MiniRancidWallBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/mini_rancid_wall.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/mini_rancid_wall.json",
+          "src/main/resources/assets/fnaf_mod/models/item/mini_rancid_wall.json"
+        ]
+      },
+      "path": "~/Blocks/BuildingBlockss"
+    },
+    {
+      "name": "BigSecurityDoorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_security_door_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BigSecurityDoorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "BigSecurityDoor",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_security_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_security_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_security_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigSecurityDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/BigSecurityDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigSecurityDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_security_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_security_door_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Big Doors"
+    },
+    {
+      "name": "ClownfulDollOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clownful_doll_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ClownfulDollOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BigHeavyDutyDoor",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_heavy_duty_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/BigHeavyDutyDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_heavy_duty_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigHeavyDutyDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_heavy_duty_door_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/item/big_heavy_duty_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigHeavyDutyDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_heavy_duty_door_particle.json"
+        ]
+      },
+      "path": "~/Blocks/Big Doors"
+    },
+    {
+      "name": "BigHeavyDutyDoorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_heavy_duty_door_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BigHeavyDutyDoorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
     }
   ],
   "variable_elements": [
@@ -30091,6 +30344,11 @@
       "CUSTOM:Springtrap"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:MiniRancidWall",
+      "~CUSTOM:RancidTiles",
+      "~CUSTOM:BuffetDoorEmpty",
+      "~CUSTOM:BuffetDoor",
+      "~CUSTOM:WindowedCyanDoor",
       "~CUSTOM:BuffetWallDark",
       "~CUSTOM:BuffetWallLight",
       "~CUSTOM:BuffetFloorClean",
@@ -30419,6 +30677,8 @@
       "CUSTOM:NightmareBB"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:MiniRancidWall",
+      "~CUSTOM:RancidTiles",
       "~CUSTOM:BuffetWallDark",
       "~CUSTOM:BuffetWallLight",
       "~CUSTOM:BlueTile",
@@ -30662,6 +30922,9 @@
       "~CUSTOM:BlackWhiteTile"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:BuffetDoorEmpty",
+      "~CUSTOM:BuffetDoor",
+      "~CUSTOM:WindowedCyanDoor",
       "~CUSTOM:Stool2",
       "~CUSTOM:Stool1",
       "~CUSTOM:RedDoorWindowed",
@@ -31347,7 +31610,14 @@
       "BuffetFloor",
       "BuffetFloorClean",
       "BuffetWallLight",
-      "BuffetWallDark"
+      "BuffetWallDark",
+      "WindowedCyanDoor",
+      "BuffetDoor",
+      "BuffetDoorEmpty",
+      "RancidTiles",
+      "MiniRancidWall",
+      "BigSecurityDoor",
+      "BigHeavyDutyDoor"
     ]
   },
   "language_map": {
@@ -31357,6 +31627,7 @@
       "block.fnaf_mod.toy_bonnie_figure": "Toy Bonnie Figure",
       "block.fnaf_mod.black_light_foxy_plushie": "Blacklight Foxy Plushie",
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
+      "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
@@ -31512,6 +31783,7 @@
       "block.fnaf_mod.fredbear_plush": "Fredbear Plushie?",
       "item.fnaf_mod.hanging_camera_spawn_egg": "Hanging Camera Spawn Egg",
       "block.fnaf_mod.berry_curtain": "Berry Curtain",
+      "block.fnaf_mod.windowed_cyan_door": "Windowed Cyan Door",
       "entity.fnaf_mod.toy_box": "Toy Box",
       "item.fnaf_mod.sitting_plushtrap_spawn_egg": "Plushtrap Spawn Egg",
       "item.fnaf_mod.bonnie_spawn": "Bonnie The Bunny",
@@ -31550,6 +31822,7 @@
       "entity.fnaf_mod.phantom_puppet": "Phantom Puppet",
       "item.fnaf_mod.mat.description_0": "Maintainance Assisting Tablet",
       "item.fnaf_mod.toy_bonnie_spawn_egg": "Toy Bonnie Spawn Egg",
+      "block.fnaf_mod.buffet_door_empty": "Buffet Door Clean",
       "block.fnaf_mod.mural_freddys": "Mural",
       "subtitles.neverbealone": "Never Be Alone Funky Mix",
       "block.fnaf_mod.speaker_left": "Speaker",
@@ -31571,6 +31844,7 @@
       "block.fnaf_mod.poster_11": "Wall Poster 11",
       "gui.fnaf_mod.wall_change_1.button_d": "D",
       "gui.fnaf_mod.wall_change_1.button_c": "C",
+      "block.fnaf_mod.big_heavy_duty_door": "Big Security Door",
       "item.fnaf_mod.fredbears_bonnie_spawn_item": "Diner Bonnie",
       "item.fnaf_mod.hook": "Hook",
       "gui.fnaf_mod.wall_change_1.button_b": "B",
@@ -32219,6 +32493,7 @@
       "block.fnaf_mod.glitched_log": "Glitched Log",
       "block.fnaf_mod.toy_foxy_plushie": "Toy Foxy Plushie",
       "block.fnaf_mod.rules_poster.description_0": "Poster of Bonnie the Bunny!",
+      "block.fnaf_mod.buffet_door": "Buffet Door",
       "block.fnaf_mod.big_door_hitbox": "Big Door Hitbox",
       "block.fnaf_mod.center_light_dark_purple_wall_tile": "Center White-Black Purple Stripe Wall Tiles",
       "item.fnaf_mod.adv_mangle": "Mangle",
@@ -32282,6 +32557,7 @@
       "entity.fnaf_mod.adventure_withered_chica": "Adventure Withered Chica",
       "block.fnaf_mod.center_big_white_black_wall_tile": "Center Big White Stripe Wall Tiles",
       "item.fnaf_mod.nightmare_mangle_spawn_egg": "Nightmare Mangle Spawn Egg",
+      "block.fnaf_mod.mini_rancid_wall": "Mini Rancid Wall",
       "block.fnaf_mod.alternate_big_rancid_wall_tiles": "Alternate Big Rancid Wall Tiles",
       "subtitles.showtimefunky": "",
       "block.fnaf_mod.visit_nebraska_poster.description_0": "Pining For Fun? Visit Nebraska!",
@@ -32399,6 +32675,7 @@
       "item.fnaf_mod.adventure_withered_chica_spawn_egg": "Adventure Withered Chica Spawn Egg",
       "item.fnaf_mod.statue_freddy_item": "Freddy (Statue)",
       "item.fnaf_mod.freddy_suit_helmet": "Freddy Head",
+      "block.fnaf_mod.big_security_door": "Big Security Door",
       "entity.fnaf_mod.phantom_chica": "Phantom Chica",
       "item.fnaf_mod.sparky_suit_leggings": "Sparky Legs",
       "gamerule.doPhantomsSpawn.description": "Determines if Phantom Animatronics Spawn from Hitting Springtrap",

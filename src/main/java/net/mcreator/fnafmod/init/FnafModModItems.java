@@ -229,9 +229,11 @@ import net.mcreator.fnafmod.block.display.BigWideGlassEntranceDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigWideDualColourEntranceDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigWideCyanKitchenDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigWhiteDoorDisplayItem;
+import net.mcreator.fnafmod.block.display.BigSecurityDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigRedWindowedDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigRedEntranceDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigRedDoorDisplayItem;
+import net.mcreator.fnafmod.block.display.BigHeavyDutyDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigGlassEntranceDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigDualColourEntranceDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigCyanKitchenDoorDisplayItem;
@@ -1150,6 +1152,13 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FLUORESCENT_LIGHT = REGISTRY.register(FnafModModBlocks.FLUORESCENT_LIGHT.getId().getPath(), () -> new FluorescentLightDisplayItem(FnafModModBlocks.FLUORESCENT_LIGHT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> RETRO_COMPUTER = REGISTRY.register(FnafModModBlocks.RETRO_COMPUTER.getId().getPath(), () -> new RetroComputerDisplayItem(FnafModModBlocks.RETRO_COMPUTER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FLOOD_LIGHTS = REGISTRY.register(FnafModModBlocks.FLOOD_LIGHTS.getId().getPath(), () -> new FloodLightsDisplayItem(FnafModModBlocks.FLOOD_LIGHTS.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WINDOWED_CYAN_DOOR = doubleBlock(FnafModModBlocks.WINDOWED_CYAN_DOOR);
+	public static final RegistryObject<Item> BUFFET_DOOR = doubleBlock(FnafModModBlocks.BUFFET_DOOR);
+	public static final RegistryObject<Item> BUFFET_DOOR_EMPTY = doubleBlock(FnafModModBlocks.BUFFET_DOOR_EMPTY);
+	public static final RegistryObject<Item> RANCID_TILES = block(FnafModModBlocks.RANCID_TILES);
+	public static final RegistryObject<Item> MINI_RANCID_WALL = block(FnafModModBlocks.MINI_RANCID_WALL);
+	public static final RegistryObject<Item> BIG_SECURITY_DOOR = REGISTRY.register(FnafModModBlocks.BIG_SECURITY_DOOR.getId().getPath(), () -> new BigSecurityDoorDisplayItem(FnafModModBlocks.BIG_SECURITY_DOOR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BIG_HEAVY_DUTY_DOOR = REGISTRY.register(FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.getId().getPath(), () -> new BigHeavyDutyDoorDisplayItem(FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

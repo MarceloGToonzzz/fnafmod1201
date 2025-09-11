@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:mini_rancid_wall",
+    "fnaf_mod:rancid_tiles",
+    "fnaf_mod:buffet_door_empty",
+    "fnaf_mod:buffet_door",
+    "fnaf_mod:windowed_cyan_door",
     "fnaf_mod:buffet_wall_dark",
     "fnaf_mod:buffet_wall_light",
     "fnaf_mod:buffet_floor_clean",
