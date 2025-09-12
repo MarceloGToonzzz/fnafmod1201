@@ -29,8 +29,8 @@ public class ChairRightClickProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FnafModModItems.MAT.get()) {
-			if (blockstate.getBlock() == FnafModModBlocks.BOOTH_BENCH.get() || blockstate.getBlock() == FnafModModBlocks.MOVIE_CHAIR.get()) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip7 ? blockstate.getValue(_getip7) : -1) == 0) {
+			if (blockstate.getBlock() == FnafModModBlocks.BOOTH_BENCH.get() || blockstate.getBlock() == FnafModModBlocks.MOVIE_CHAIR.get() || blockstate.getBlock() == FnafModModBlocks.TORTURE_CHAIR.get()) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip9 ? blockstate.getValue(_getip9) : -1) == 0) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -38,7 +38,7 @@ public class ChairRightClickProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip10 ? blockstate.getValue(_getip10) : -1) == 1) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip12 ? blockstate.getValue(_getip12) : -1) == 1) {
 					{
 						int _value = 2;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -46,7 +46,7 @@ public class ChairRightClickProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip13 ? blockstate.getValue(_getip13) : -1) == 2) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip15 ? blockstate.getValue(_getip15) : -1) == 2) {
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);

@@ -6,6 +6,7 @@ import org.checkerframework.checker.units.qual.s;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -24,12 +25,14 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.BigSecurityDoorOnTickUpdateProcedure;
+import net.mcreator.fnafmod.procedures.BigSecurityDoorBlockDestroyedByPlayerProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -128,5 +131,12 @@ public class BigSecurityDoorBlock extends BaseEntityBlock implements EntityBlock
 
 		BigSecurityDoorOnTickUpdateProcedure.execute(world, x, y, z, blockstate);
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		BigSecurityDoorBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		return retval;
 	}
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:tiled_wall_handle",
     "fnaf_mod:cut_black_etched_bricks",
     "fnaf_mod:black_etched_bricks",
     "fnaf_mod:cut_purple_etched_bricks",

@@ -21,6 +21,8 @@ import net.mcreator.fnafmod.block.entity.UnWitheredBonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.TrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.ToyFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.ToyFreddySignOffTileEntity;
+import net.mcreator.fnafmod.block.entity.TortureFreddyTileEntity;
+import net.mcreator.fnafmod.block.entity.TortureChairTileEntity;
 import net.mcreator.fnafmod.block.entity.StageLightRedTileEntity;
 import net.mcreator.fnafmod.block.entity.StageLightRedOnTileEntity;
 import net.mcreator.fnafmod.block.entity.StageLightPinkTileEntity;
@@ -46,6 +48,8 @@ import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
+import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
+import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
 import net.mcreator.fnafmod.block.entity.GarageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
@@ -96,6 +100,7 @@ import net.mcreator.fnafmod.block.entity.BigCyanBackstageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigClosetDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigBackstageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BephDollTileEntity;
+import net.mcreator.fnafmod.block.entity.AlternateGarageDoorTileEntity;
 import net.mcreator.fnafmod.FnafModMod;
 
 public class FnafModModBlockEntities {
@@ -234,6 +239,13 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<BigHeavyDutyDoorTileEntity>> BIG_HEAVY_DUTY_DOOR = REGISTRY.register("big_heavy_duty_door",
 			() -> BlockEntityType.Builder.of(BigHeavyDutyDoorTileEntity::new, FnafModModBlocks.BIG_HEAVY_DUTY_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GarageDoorTileEntity>> GARAGE_DOOR = REGISTRY.register("garage_door", () -> BlockEntityType.Builder.of(GarageDoorTileEntity::new, FnafModModBlocks.GARAGE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<AlternateGarageDoorTileEntity>> ALTERNATE_GARAGE_DOOR = REGISTRY.register("alternate_garage_door",
+			() -> BlockEntityType.Builder.of(AlternateGarageDoorTileEntity::new, FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<TortureFreddyTileEntity>> TORTURE_FREDDY = REGISTRY.register("torture_freddy", () -> BlockEntityType.Builder.of(TortureFreddyTileEntity::new, FnafModModBlocks.TORTURE_FREDDY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<TortureChairTileEntity>> TORTURE_CHAIR = REGISTRY.register("torture_chair", () -> BlockEntityType.Builder.of(TortureChairTileEntity::new, FnafModModBlocks.TORTURE_CHAIR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<LargeIndustrialDoorTileEntity>> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door",
+			() -> BlockEntityType.Builder.of(LargeIndustrialDoorTileEntity::new, FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<IndustrialFanTileEntity>> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> BlockEntityType.Builder.of(IndustrialFanTileEntity::new, FnafModModBlocks.INDUSTRIAL_FAN.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

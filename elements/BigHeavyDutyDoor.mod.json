@@ -125,6 +125,9 @@
     "onTickUpdate": {
       "name": "BigHeavyDutyDoorOnTickUpdate"
     },
+    "onDestroyedByPlayer": {
+      "name": "BigHeavyDutyDoorBlockDestroyedByPlayer"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

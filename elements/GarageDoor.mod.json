@@ -131,6 +131,9 @@
     "onTickUpdate": {
       "name": "GarageDoorOnTickUpdate"
     },
+    "onDestroyedByPlayer": {
+      "name": "GarageDoorNeighbourBlockChanges"
+    },
     "onRedstoneOn": {
       "name": "GarageDoorRedstoneOn"
     },

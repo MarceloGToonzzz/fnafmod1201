@@ -58,7 +58,10 @@ import net.mcreator.fnafmod.block.ToyChicaFigureBlock;
 import net.mcreator.fnafmod.block.ToyCaterpillarBlock;
 import net.mcreator.fnafmod.block.ToyBonniePlushieBlock;
 import net.mcreator.fnafmod.block.ToyBonnieFigureBlock;
+import net.mcreator.fnafmod.block.TortureFreddyBlock;
+import net.mcreator.fnafmod.block.TortureChairBlock;
 import net.mcreator.fnafmod.block.TopNormalBlock;
+import net.mcreator.fnafmod.block.TiledWallHandleBlock;
 import net.mcreator.fnafmod.block.ThinSwampCurtainBlock;
 import net.mcreator.fnafmod.block.ThinSkyCurtainBlock;
 import net.mcreator.fnafmod.block.ThinRoseCurtainBlock;
@@ -259,7 +262,9 @@ import net.mcreator.fnafmod.block.LightButtonOnBlock;
 import net.mcreator.fnafmod.block.LightButtonOffBlock;
 import net.mcreator.fnafmod.block.LightButtonBlock;
 import net.mcreator.fnafmod.block.LicoriceCurtainBlock;
+import net.mcreator.fnafmod.block.LargeIndustrialDoorBlock;
 import net.mcreator.fnafmod.block.KitchenDoorBlock;
+import net.mcreator.fnafmod.block.IndustrialFanBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileStairCrackedBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileStairBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileSlabCrackedBlock;
@@ -582,6 +587,7 @@ import net.mcreator.fnafmod.block.AlternateStageBlackStripeTilesBlock;
 import net.mcreator.fnafmod.block.AlternateRancidWallTilesBlock;
 import net.mcreator.fnafmod.block.AlternatePurpleStageBrickTilesBlock;
 import net.mcreator.fnafmod.block.AlternateMovieWallTileBlock;
+import net.mcreator.fnafmod.block.AlternateGarageDoorBlock;
 import net.mcreator.fnafmod.block.AlternateExteriorMovieWallTileBlock;
 import net.mcreator.fnafmod.block.AlternateDarkBuffetWallBlock;
 import net.mcreator.fnafmod.block.AlternateBuffetWallBlock;
@@ -1194,6 +1200,12 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> STAGE_WOOD_FENCE = REGISTRY.register("stage_wood_fence", () -> new StageWoodFenceBlock());
 	public static final RegistryObject<Block> STAGE_WOOD_FENCE_GATE = REGISTRY.register("stage_wood_fence_gate", () -> new StageWoodFenceGateBlock());
 	public static final RegistryObject<Block> GARAGE_DOOR = REGISTRY.register("garage_door", () -> new GarageDoorBlock());
+	public static final RegistryObject<Block> ALTERNATE_GARAGE_DOOR = REGISTRY.register("alternate_garage_door", () -> new AlternateGarageDoorBlock());
+	public static final RegistryObject<Block> TORTURE_FREDDY = REGISTRY.register("torture_freddy", () -> new TortureFreddyBlock());
+	public static final RegistryObject<Block> TORTURE_CHAIR = REGISTRY.register("torture_chair", () -> new TortureChairBlock());
+	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
+	public static final RegistryObject<Block> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> new IndustrialFanBlock());
+	public static final RegistryObject<Block> TILED_WALL_HANDLE = REGISTRY.register("tiled_wall_handle", () -> new TiledWallHandleBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

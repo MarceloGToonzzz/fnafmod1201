@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -37,6 +38,7 @@ import net.mcreator.fnafmod.procedures.GarageDoorRedstoneOnProcedure;
 import net.mcreator.fnafmod.procedures.GarageDoorRedstoneOffProcedure;
 import net.mcreator.fnafmod.procedures.GarageDoorOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.GarageDoorOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.GarageDoorNeighbourBlockChangesProcedure;
 import net.mcreator.fnafmod.procedures.GarageDoorBlockAddedProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 
@@ -147,6 +149,13 @@ public class GarageDoorBlock extends BaseEntityBlock implements EntityBlock {
 
 		GarageDoorOnTickUpdateProcedure.execute(world, x, y, z, blockstate);
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		GarageDoorNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		return retval;
 	}
 
 	@Override

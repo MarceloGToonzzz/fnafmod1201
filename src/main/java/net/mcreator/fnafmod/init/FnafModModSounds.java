@@ -80,4 +80,6 @@ public class FnafModModSounds {
 	public static final RegistryObject<SoundEvent> BONNIELULLABY = REGISTRY.register("bonnielullaby", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "bonnielullaby")));
 	public static final RegistryObject<SoundEvent> HARDTOSAYGOODBYE = REGISTRY.register("hardtosaygoodbye", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "hardtosaygoodbye")));
 	public static final RegistryObject<SoundEvent> CHOPPYWOODS = REGISTRY.register("choppywoods", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "choppywoods")));
+	public static final RegistryObject<SoundEvent> GARAGE_OPEN = REGISTRY.register("garage_open", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "garage_open")));
+	public static final RegistryObject<SoundEvent> GARAGE_CLOSE = REGISTRY.register("garage_close", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "garage_close")));
 }

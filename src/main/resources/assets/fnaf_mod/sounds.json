@@ -619,5 +619,23 @@
         "stream": true
       }
     ]
+  },
+  "garage_open": {
+    "subtitle": "subtitles.garage_open",
+    "sounds": [
+      {
+        "name": "fnaf_mod:garage_door_open",
+        "stream": false
+      }
+    ]
+  },
+  "garage_close": {
+    "subtitle": "subtitles.garage_close",
+    "sounds": [
+      {
+        "name": "fnaf_mod:garage_door_close",
+        "stream": false
+      }
+    ]
   }
 }

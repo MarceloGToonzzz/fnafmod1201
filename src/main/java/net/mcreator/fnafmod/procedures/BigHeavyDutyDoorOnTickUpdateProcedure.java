@@ -26,23 +26,24 @@ public class BigHeavyDutyDoorOnTickUpdateProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		sx = -1;
 		found = false;
-		for (int index0 = 0; index0 < 5; index0++) {
-			sy = -1;
-			for (int index1 = 0; index1 < 5; index1++) {
-				sz = -1;
-				for (int index2 = 0; index2 < 5; index2++) {
-					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == FnafModModBlocks.DOOR_BUTTON_ON.get()) {
-						found = true;
+		int horizontalRadiusSphere = (int) 5 - 1;
+		int verticalRadiusSphere = (int) 3 - 1;
+		int yIterationsSphere = verticalRadiusSphere;
+		for (int i = -yIterationsSphere; i <= yIterationsSphere; i++) {
+			for (int xi = -horizontalRadiusSphere; xi <= horizontalRadiusSphere; xi++) {
+				for (int zi = -horizontalRadiusSphere; zi <= horizontalRadiusSphere; zi++) {
+					double distanceSq = (xi * xi) / (double) (horizontalRadiusSphere * horizontalRadiusSphere) + (i * i) / (double) (verticalRadiusSphere * verticalRadiusSphere)
+							+ (zi * zi) / (double) (horizontalRadiusSphere * horizontalRadiusSphere);
+					if (distanceSq <= 1.0) {
+						if ((world.getBlockState(BlockPos.containing(x + xi, y + i, z + zi))).getBlock() == FnafModModBlocks.DOOR_BUTTON_ON.get()) {
+							found = true;
+						}
 					}
-					sz = sz + 1;
 				}
-				sy = sy + 1;
 			}
-			sx = sx + 1;
 		}
-		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 0) {
+		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip7 ? blockstate.getValue(_getip7) : -1) == 0) {
 			if (found == true) {
 				{
 					int _value = 1;
@@ -610,7 +611,7 @@ public class BigHeavyDutyDoorOnTickUpdateProcedure {
 				}
 			}
 		}
-		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip57 ? blockstate.getValue(_getip57) : -1) == 1) {
+		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip61 ? blockstate.getValue(_getip61) : -1) == 1) {
 			if (found == false) {
 				{
 					int _value = 1;

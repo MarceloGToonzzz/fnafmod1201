@@ -182,6 +182,8 @@ import net.mcreator.fnafmod.block.display.UnWitheredBonnieHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.TrashCanDisplayItem;
 import net.mcreator.fnafmod.block.display.ToyFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.ToyFreddySignOffDisplayItem;
+import net.mcreator.fnafmod.block.display.TortureFreddyDisplayItem;
+import net.mcreator.fnafmod.block.display.TortureChairDisplayItem;
 import net.mcreator.fnafmod.block.display.StageLightRedOnDisplayItem;
 import net.mcreator.fnafmod.block.display.StageLightRedDisplayItem;
 import net.mcreator.fnafmod.block.display.StageLightPinkOnDisplayItem;
@@ -199,6 +201,8 @@ import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
+import net.mcreator.fnafmod.block.display.LargeIndustrialDoorDisplayItem;
+import net.mcreator.fnafmod.block.display.IndustrialFanDisplayItem;
 import net.mcreator.fnafmod.block.display.GarageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
@@ -242,6 +246,7 @@ import net.mcreator.fnafmod.block.display.BigCyanBackstageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigClosetDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigBackstageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BephDollDisplayItem;
+import net.mcreator.fnafmod.block.display.AlternateGarageDoorDisplayItem;
 import net.mcreator.fnafmod.FnafModMod;
 
 public class FnafModModItems {
@@ -1186,6 +1191,14 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> STAGE_WOOD_FENCE = block(FnafModModBlocks.STAGE_WOOD_FENCE);
 	public static final RegistryObject<Item> STAGE_WOOD_FENCE_GATE = block(FnafModModBlocks.STAGE_WOOD_FENCE_GATE);
 	public static final RegistryObject<Item> GARAGE_DOOR = REGISTRY.register(FnafModModBlocks.GARAGE_DOOR.getId().getPath(), () -> new GarageDoorDisplayItem(FnafModModBlocks.GARAGE_DOOR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ALTERNATE_GARAGE_DOOR = REGISTRY.register(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.getId().getPath(),
+			() -> new AlternateGarageDoorDisplayItem(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> TORTURE_FREDDY = REGISTRY.register(FnafModModBlocks.TORTURE_FREDDY.getId().getPath(), () -> new TortureFreddyDisplayItem(FnafModModBlocks.TORTURE_FREDDY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> TORTURE_CHAIR = REGISTRY.register(FnafModModBlocks.TORTURE_CHAIR.getId().getPath(), () -> new TortureChairDisplayItem(FnafModModBlocks.TORTURE_CHAIR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> LARGE_INDUSTRIAL_DOOR = REGISTRY.register(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.getId().getPath(),
+			() -> new LargeIndustrialDoorDisplayItem(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> INDUSTRIAL_FAN = REGISTRY.register(FnafModModBlocks.INDUSTRIAL_FAN.getId().getPath(), () -> new IndustrialFanDisplayItem(FnafModModBlocks.INDUSTRIAL_FAN.get(), new Item.Properties()));
+	public static final RegistryObject<Item> TILED_WALL_HANDLE = block(FnafModModBlocks.TILED_WALL_HANDLE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

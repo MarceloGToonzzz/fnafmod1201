@@ -30087,6 +30087,550 @@
         ]
       },
       "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "AlternateGarageDoor",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alternate_garage_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/AlternateGarageDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/AlternateGarageDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/alternate_garage_door.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/alternate_garage_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/AlternateGarageDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/AlternateGarageDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/alternate_garage_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/AlternateGarageDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/AlternateGarageDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/alternate_garage_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/AlternateGarageDoorBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Big Doors"
+    },
+    {
+      "name": "GarageDoorNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "garage_door_neighbour_block_changes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GarageDoorNeighbourBlockChangesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "TortureFreddyOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torture_freddy_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/TortureFreddyOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Torture Freddy"
+    },
+    {
+      "name": "TortureFreddyRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torture_freddy_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/TortureFreddyRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Torture Freddy"
+    },
+    {
+      "name": "TortureFreddyRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torture_freddy_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/TortureFreddyRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Torture Freddy"
+    },
+    {
+      "name": "TortureFreddy",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torture_freddy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/torture_freddy.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/TortureFreddyTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/TortureFreddyDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/TortureFreddyBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/TortureFreddyDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/torture_freddy_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/TortureFreddyTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/torture_freddy.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/torture_freddy_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/torture_freddy_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/TortureFreddyBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/TortureFreddyDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Torture Freddy"
+    },
+    {
+      "name": "TortureChair",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torture_chair",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/torture_chair.json",
+          "src/main/resources/assets/fnaf_mod/models/block/torture_chair_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/TortureChairDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/TortureChairTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/torture_chair.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/torture_chair_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/TortureChairDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/torture_chair_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/TortureChairBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/TortureChairBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/TortureChairTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/TortureChairDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Torture Freddy"
+    },
+    {
+      "name": "LargeIndustrialDoor",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_industrial_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/LargeIndustrialDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/large_industrial_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/large_industrial_door_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/large_industrial_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/LargeIndustrialDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/LargeIndustrialDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/large_industrial_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/Big Doors"
+    },
+    {
+      "name": "LargeIndustrialDoorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_industrial_door_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LargeIndustrialDoorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "LargeIndustrialDoorBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_industrial_door_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LargeIndustrialDoorBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "LargeIndustrialDoorBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_industrial_door_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LargeIndustrialDoorBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "BigHeavyDutyDoorBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_heavy_duty_door_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BigHeavyDutyDoorBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "BigSecurityDoorBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_security_door_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BigSecurityDoorBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Big Doors/Technical"
+    },
+    {
+      "name": "IndustrialFanRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "industrial_fan_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/IndustrialFanRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Fan"
+    },
+    {
+      "name": "IndustrialFanRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "industrial_fan_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/IndustrialFanRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Fan"
+    },
+    {
+      "name": "IndustrialFanOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "industrial_fan_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/IndustrialFanOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Fan"
+    },
+    {
+      "name": "IndustrialFan",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "industrial_fan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/display/IndustrialFanDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/industrial_fan_blockstate_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/IndustrialFanBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/IndustrialFanTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/IndustrialFanTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/IndustrialFanBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/industrial_fan_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/IndustrialFanDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/IndustrialFanDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/industrial_fan.json",
+          "src/main/resources/assets/fnaf_mod/models/item/industrial_fan.json",
+          "src/main/resources/assets/fnaf_mod/models/block/industrial_fan_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/industrial_fan_particle.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Fan"
+    },
+    {
+      "name": "TiledWallHandle",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiled_wall_handle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/tiled_wall_handle.json",
+          "src/main/java/net/mcreator/fnafmod/block/TiledWallHandleBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/tiled_wall_handle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/tiled_wall_handle.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/tiled_wall_handle.json"
+        ]
+      },
+      "path": "~/Blocks/WallTiles"
     }
   ],
   "variable_elements": [
@@ -30878,6 +31422,22 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "garage_open",
+      "files": [
+        "garage_door_open"
+      ],
+      "category": "block",
+      "subtitle": "Garage Door Opens"
+    },
+    {
+      "name": "garage_close",
+      "files": [
+        "garage_door_close"
+      ],
+      "category": "block",
+      "subtitle": "Garage Door Closes"
     }
   ],
   "tag_elements": {
@@ -31012,6 +31572,7 @@
       "CUSTOM:Springtrap"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:TiledWallHandle",
       "~CUSTOM:CutBlackEtchedBricks",
       "~CUSTOM:BlackEtchedBricks",
       "~CUSTOM:CutPurpleEtchedBricks",
@@ -31361,6 +31922,7 @@
       "CUSTOM:NightmareBB"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:TiledWallHandle",
       "~CUSTOM:CutBlackEtchedBricks",
       "~CUSTOM:BlackEtchedBricks",
       "~CUSTOM:CutPurpleEtchedBricks",
@@ -31779,7 +32341,10 @@
       "FluorescentLight",
       "RetroComputer",
       "FloodLights",
-      "ChangeMachine"
+      "ChangeMachine",
+      "TortureFreddy",
+      "TortureChair",
+      "IndustrialFan"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -32350,7 +32915,10 @@
       "StageWoodStairs",
       "StageWoodFence",
       "StageWoodFenceGate",
-      "GarageDoor"
+      "GarageDoor",
+      "AlternateGarageDoor",
+      "LargeIndustrialDoor",
+      "TiledWallHandle"
     ]
   },
   "language_map": {
@@ -32670,6 +33238,7 @@
       "item.fnaf_mod.toy_freddy_cut_out_spawn_egg": "Toy Freddy Cutout Spawn Egg",
       "block.fnaf_mod.chain_fence": "Chain Gate",
       "block.fnaf_mod.backstage_door": "Backstage Door",
+      "block.fnaf_mod.tiled_wall_handle": "Tiled Wall With Handle",
       "item_group.fnaf_mod.decorative_blocks": "Decorative Blocks",
       "item.fnaf_mod.nightmare_freddy_spawn_item": "Nightmare Freddy",
       "item.fnaf_mod.office_chair_spawn_egg": "Office Chair Spawn Egg",
@@ -32725,6 +33294,7 @@
       "block.fnaf_mod.lime_curtain": "Lime Curtain",
       "item.fnaf_mod.adventure_freddy_spawn_egg": "Adventure Freddy Spawn Egg",
       "entity.fnaf_mod.fredbear_cut_out": "Fredbear Cutout",
+      "block.fnaf_mod.torture_freddy.description_0": "Shreddy Fazchair",
       "block.fnaf_mod.ash_curtain.description_0": "§7(Light Gray Curtain)",
       "block.fnaf_mod.carrot_curtain.description_0": "§6(Orange Curtain)",
       "item.fnaf_mod.springlocked_fredbear_suit_boots": "Fredbear Spring Lock Boots",
@@ -32771,6 +33341,7 @@
       "block.fnaf_mod.yellow_wall_slab": "Yellow  Wall Slab",
       "item.fnaf_mod.yellow_bear_suit_helmet": "Yellowbear Head",
       "block.fnaf_mod.big_dark_buffet_wall": "Big Dark Buffet Wall",
+      "block.fnaf_mod.large_industrial_door": "Big Security Door",
       "block.fnaf_mod.diagonal_wall_top": "Diagonal Wall Top",
       "block.fnaf_mod.toy_telephone": "Toy Telephone",
       "item.fnaf_mod.unwithered_foxy_spawn_egg": "Un-Withered Foxy Spawn Egg",
@@ -32832,6 +33403,7 @@
       "block.fnaf_mod.poster_9": "Wall Poster 9",
       "item.fnaf_mod.passive_chica_spawn_egg": "Chica the Chicken Spawn Egg",
       "item.fnaf_mod.purple_plastic": "Purple Plastic",
+      "block.fnaf_mod.torture_freddy": "Torture Freddy",
       "entity.fnaf_mod.glitch_bonnie_animatronic": "Spring Bonnie?",
       "subtitles.c2alt": "Honk",
       "block.fnaf_mod.closet_right_open_bottom": "Closet Door Right",
@@ -33170,6 +33742,7 @@
       "item.fnaf_mod.evil_freddy_item_spawn": "Dark Remnant Infused Freddy",
       "block.fnaf_mod.un_withered_foxy_head": "Un-Withered Foxy Head",
       "item.fnaf_mod.withered_freddy_spawn_item": "Withered Freddy",
+      "block.fnaf_mod.alternate_garage_door": "Alternate Garage Door",
       "item.fnaf_mod.shadow_bonnie_spawn_item": "Shadow Bonnie",
       "item.fnaf_mod.springlocked_zombie_fredbear_spawn_egg": "Springlocked Zombie Fredbear Spawn Egg",
       "block.fnaf_mod.black_white_tile_cracked": "Cracked Black White Tile",
@@ -33279,6 +33852,7 @@
       "item.fnaf_mod.tameable_springtrap_spawn_egg": "Adventure Springtrap Spawn Egg",
       "block.fnaf_mod.center_big_white_purple_wall_tile": "Center Big White Purple Stripe Wall Tiles",
       "block.fnaf_mod.red_door_windowed": "Red Establishment Windowed Door",
+      "subtitles.garage_open": "Garage Door Opens",
       "block.fnaf_mod.bubblegum_curtain": "Bubblegum Curtain",
       "block.fnaf_mod.diagonal_tile": "Diagonal Tile",
       "block.fnaf_mod.endo_block": "Endo Block",
@@ -33343,6 +33917,7 @@
       "block.fnaf_mod.plushtrap_chair": "Tall Chair",
       "block.fnaf_mod.un_withered_freddy_head": "Un-Withered Freddy Head",
       "block.fnaf_mod.alternate_big_exterior_movie_wall_tile": "Alternate Big Movie Exterior Wall Tiles",
+      "block.fnaf_mod.torture_chair": "Torture Chair",
       "item.fnaf_mod.blue_fabric": "Blue Fabric",
       "entity.fnaf_mod.sitting_withered_chica": "Withered Chica",
       "block.fnaf_mod.colour_stars": "Rainbow Stars",
@@ -33619,6 +34194,7 @@
       "subtitles.c1alt": "Honk",
       "block.fnaf_mod.toy_chica_plushie": "Toy Chica Plushie",
       "entity.fnaf_mod.toy_chica_cut_out": "Toy Chica Cutout",
+      "subtitles.garage_close": "Garage Door Closes",
       "entity.fnaf_mod.nightmare_bb": "Nightmare Balloon Boy",
       "block.fnaf_mod.poster_3.description_0": "Poster of Chica the Chicken!",
       "block.fnaf_mod.vent": "Vent",
@@ -33648,6 +34224,7 @@
       "block.fnaf_mod.light_button_off.description_0": "If you have this item place and break it again",
       "block.fnaf_mod.green_blue_tile": "Green Blue Tile",
       "block.fnaf_mod.thin_fancy_avocado_curtain.description_1": "Clean",
+      "block.fnaf_mod.industrial_fan": "Industrial Fan",
       "block.fnaf_mod.center_light_dark_black_wall_tile": "Center White-Black Black Stripe Wall Tiles",
       "block.fnaf_mod.thin_fancy_avocado_curtain.description_0": "§2(Green Curtain)",
       "subtitles.movietheme": "",
@@ -33699,6 +34276,10 @@
               {
                 "name": "Carousel",
                 "children": []
+              },
+              {
+                "name": "Torture Freddy",
+                "children": []
               }
             ]
           },
@@ -33707,6 +34288,10 @@
             "children": [
               {
                 "name": "Lockers",
+                "children": []
+              },
+              {
+                "name": "Fan",
                 "children": []
               }
             ]

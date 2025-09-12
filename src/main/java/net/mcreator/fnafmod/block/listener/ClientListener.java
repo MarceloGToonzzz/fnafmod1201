@@ -16,6 +16,8 @@ import net.mcreator.fnafmod.block.renderer.UnWitheredBonnieHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.TrashCanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ToyFreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ToyFreddySignOffTileRenderer;
+import net.mcreator.fnafmod.block.renderer.TortureFreddyTileRenderer;
+import net.mcreator.fnafmod.block.renderer.TortureChairTileRenderer;
 import net.mcreator.fnafmod.block.renderer.StageLightRedTileRenderer;
 import net.mcreator.fnafmod.block.renderer.StageLightRedOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.StageLightPinkTileRenderer;
@@ -33,6 +35,8 @@ import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.LargeIndustrialDoorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.IndustrialFanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GarageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddysCupcakeBonanzaTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
@@ -76,6 +80,7 @@ import net.mcreator.fnafmod.block.renderer.BigCyanBackstageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigClosetDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigBackstageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BephDollTileRenderer;
+import net.mcreator.fnafmod.block.renderer.AlternateGarageDoorTileRenderer;
 import net.mcreator.fnafmod.FnafModMod;
 
 @Mod.EventBusSubscriber(modid = FnafModMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -152,5 +157,10 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_SECURITY_DOOR.get(), context -> new BigSecurityDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_HEAVY_DUTY_DOOR.get(), context -> new BigHeavyDutyDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GARAGE_DOOR.get(), context -> new GarageDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.ALTERNATE_GARAGE_DOOR.get(), context -> new AlternateGarageDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.TORTURE_FREDDY.get(), context -> new TortureFreddyTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.TORTURE_CHAIR.get(), context -> new TortureChairTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.LARGE_INDUSTRIAL_DOOR.get(), context -> new LargeIndustrialDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.INDUSTRIAL_FAN.get(), context -> new IndustrialFanTileRenderer());
 	}
 }
