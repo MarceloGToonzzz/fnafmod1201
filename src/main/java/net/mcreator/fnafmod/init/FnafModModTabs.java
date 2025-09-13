@@ -105,6 +105,10 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.RETRO_CELERBREATE_POSTER.get().asItem());
 				tabData.accept(FnafModModBlocks.BIRTHDAY_BANNER.get().asItem());
 				tabData.accept(FnafModModBlocks.PARTY_TIME_BANNER.get().asItem());
+				tabData.accept(FnafModModBlocks.BUFFET_BANNER_1.get().asItem());
+				tabData.accept(FnafModModBlocks.BUFFET_BANNER_2.get().asItem());
+				tabData.accept(FnafModModBlocks.BUFFET_BANNER_3.get().asItem());
+				tabData.accept(FnafModModBlocks.BUFFET_BANNER_4.get().asItem());
 			}).withTabsBefore(SUITS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> DECORATIVE_BLOCKS = REGISTRY.register("decorative_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.decorative_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PHONE.get())).displayItems((parameters, tabData) -> {
@@ -296,6 +300,8 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.FREDBEAR_ANIMATRONIC_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.SPRING_BONNIE_ANIMATRONIC_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.GLITCH_BONNIE_ANIMATRONIC_SPAWN_ITEM.get());
+				tabData.accept(FnafModModItems.BARRY_POLAR_SPAWN_ITEM.get());
+				tabData.accept(FnafModModItems.GUS_PUG_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.SPRINGLOCKED_ZOMBIE_FREDBEAR_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.SPRING_LOCKED_ZOMBIE_SPRING_BONNIE_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.FREDBEAR_CUT_OUT_SPAWN_EGG.get());

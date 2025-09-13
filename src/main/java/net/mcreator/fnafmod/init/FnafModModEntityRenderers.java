@@ -95,6 +95,7 @@ import net.mcreator.fnafmod.client.renderer.JackOChicaRenderer;
 import net.mcreator.fnafmod.client.renderer.JackOBonnieRenderer;
 import net.mcreator.fnafmod.client.renderer.JJRenderer;
 import net.mcreator.fnafmod.client.renderer.HangingCameraRenderer;
+import net.mcreator.fnafmod.client.renderer.GusPugRenderer;
 import net.mcreator.fnafmod.client.renderer.GoldenFreddyRenderer;
 import net.mcreator.fnafmod.client.renderer.GlitchBonnieCutOutRenderer;
 import net.mcreator.fnafmod.client.renderer.GlitchBonnieAnimatronicRenderer;
@@ -117,7 +118,9 @@ import net.mcreator.fnafmod.client.renderer.FoxyCutOutRenderer;
 import net.mcreator.fnafmod.client.renderer.EndoSkeletonRenderer;
 import net.mcreator.fnafmod.client.renderer.Endo02Renderer;
 import net.mcreator.fnafmod.client.renderer.DedWitheredFreddyRenderer;
+import net.mcreator.fnafmod.client.renderer.DaytimeGusPugRenderer;
 import net.mcreator.fnafmod.client.renderer.DaytimeChicaRenderer;
+import net.mcreator.fnafmod.client.renderer.DaytimeBarryPolarRenderer;
 import net.mcreator.fnafmod.client.renderer.DayTimeWitheredFoxyRenderer;
 import net.mcreator.fnafmod.client.renderer.DayTimeToyFreddyRenderer;
 import net.mcreator.fnafmod.client.renderer.DayTimeToyFoxyRenderer;
@@ -136,6 +139,7 @@ import net.mcreator.fnafmod.client.renderer.BooletProjectileRenderer;
 import net.mcreator.fnafmod.client.renderer.BonnieStandRenderer;
 import net.mcreator.fnafmod.client.renderer.BonnieCutOutRenderer;
 import net.mcreator.fnafmod.client.renderer.BonnieBunnyRenderer;
+import net.mcreator.fnafmod.client.renderer.BarryPolarRenderer;
 import net.mcreator.fnafmod.client.renderer.BBRenderer;
 import net.mcreator.fnafmod.client.renderer.AdventureWitheredChicaRenderer;
 import net.mcreator.fnafmod.client.renderer.AdventureSpringtrapRenderer;
@@ -282,5 +286,9 @@ public class FnafModModEntityRenderers {
 		event.registerEntityRenderer(FnafModModEntities.TOY_BONNIE_CUT_OUT.get(), ToyBonnieCutOutRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.TOY_CHICA_CUT_OUT.get(), ToyChicaCutOutRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.TOY_FOXY_CUT_OUT.get(), ToyFoxyCutOutRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.BARRY_POLAR.get(), BarryPolarRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.DAYTIME_BARRY_POLAR.get(), DaytimeBarryPolarRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.GUS_PUG.get(), GusPugRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.DAYTIME_GUS_PUG.get(), DaytimeGusPugRenderer::new);
 	}
 }

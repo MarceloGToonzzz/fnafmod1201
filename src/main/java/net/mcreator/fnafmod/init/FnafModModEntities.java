@@ -102,6 +102,7 @@ import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.JJEntity;
 import net.mcreator.fnafmod.entity.HangingCameraEntity;
+import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.fnafmod.entity.GlitchBonnieCutOutEntity;
 import net.mcreator.fnafmod.entity.GlitchBonnieAnimatronicEntity;
@@ -124,7 +125,9 @@ import net.mcreator.fnafmod.entity.FoxyCutOutEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.DaytimeGusPugEntity;
 import net.mcreator.fnafmod.entity.DaytimeChicaEntity;
+import net.mcreator.fnafmod.entity.DaytimeBarryPolarEntity;
 import net.mcreator.fnafmod.entity.DayTimeWitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.DayTimeToyFreddyEntity;
 import net.mcreator.fnafmod.entity.DayTimeToyFoxyEntity;
@@ -143,6 +146,7 @@ import net.mcreator.fnafmod.entity.BooletProjectileEntity;
 import net.mcreator.fnafmod.entity.BonnieStandEntity;
 import net.mcreator.fnafmod.entity.BonnieCutOutEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
+import net.mcreator.fnafmod.entity.BarryPolarEntity;
 import net.mcreator.fnafmod.entity.BBEntity;
 import net.mcreator.fnafmod.entity.AdventureWitheredChicaEntity;
 import net.mcreator.fnafmod.entity.AdventureSpringtrapEntity;
@@ -683,6 +687,22 @@ public class FnafModModEntities {
 			EntityType.Builder.<ToyFoxyCutOutEntity>of(ToyFoxyCutOutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToyFoxyCutOutEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BarryPolarEntity>> BARRY_POLAR = register("barry_polar",
+			EntityType.Builder.<BarryPolarEntity>of(BarryPolarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BarryPolarEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DaytimeBarryPolarEntity>> DAYTIME_BARRY_POLAR = register("daytime_barry_polar",
+			EntityType.Builder.<DaytimeBarryPolarEntity>of(DaytimeBarryPolarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimeBarryPolarEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GusPugEntity>> GUS_PUG = register("gus_pug",
+			EntityType.Builder.<GusPugEntity>of(GusPugEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GusPugEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DaytimeGusPugEntity>> DAYTIME_GUS_PUG = register("daytime_gus_pug",
+			EntityType.Builder.<DaytimeGusPugEntity>of(DaytimeGusPugEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimeGusPugEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -826,6 +846,10 @@ public class FnafModModEntities {
 			ToyBonnieCutOutEntity.init();
 			ToyChicaCutOutEntity.init();
 			ToyFoxyCutOutEntity.init();
+			BarryPolarEntity.init();
+			DaytimeBarryPolarEntity.init();
+			GusPugEntity.init();
+			DaytimeGusPugEntity.init();
 		});
 	}
 
@@ -964,5 +988,9 @@ public class FnafModModEntities {
 		event.put(TOY_BONNIE_CUT_OUT.get(), ToyBonnieCutOutEntity.createAttributes().build());
 		event.put(TOY_CHICA_CUT_OUT.get(), ToyChicaCutOutEntity.createAttributes().build());
 		event.put(TOY_FOXY_CUT_OUT.get(), ToyFoxyCutOutEntity.createAttributes().build());
+		event.put(BARRY_POLAR.get(), BarryPolarEntity.createAttributes().build());
+		event.put(DAYTIME_BARRY_POLAR.get(), DaytimeBarryPolarEntity.createAttributes().build());
+		event.put(GUS_PUG.get(), GusPugEntity.createAttributes().build());
+		event.put(DAYTIME_GUS_PUG.get(), DaytimeGusPugEntity.createAttributes().build());
 	}
 }

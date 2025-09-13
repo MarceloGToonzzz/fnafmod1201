@@ -477,6 +477,10 @@ import net.mcreator.fnafmod.block.BuffetFloorCleanBlock;
 import net.mcreator.fnafmod.block.BuffetFloorBlock;
 import net.mcreator.fnafmod.block.BuffetDoorEmptyBlock;
 import net.mcreator.fnafmod.block.BuffetDoorBlock;
+import net.mcreator.fnafmod.block.BuffetBanner4Block;
+import net.mcreator.fnafmod.block.BuffetBanner3Block;
+import net.mcreator.fnafmod.block.BuffetBanner2Block;
+import net.mcreator.fnafmod.block.BuffetBanner1Block;
 import net.mcreator.fnafmod.block.BubblegumCurtainBlock;
 import net.mcreator.fnafmod.block.BrownTanTileStairBlock;
 import net.mcreator.fnafmod.block.BrownTanTileSlabBlock;
@@ -1210,6 +1214,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> TILED_WALL_HANDLE = REGISTRY.register("tiled_wall_handle", () -> new TiledWallHandleBlock());
 	public static final RegistryObject<Block> PRIZE_HATCH = REGISTRY.register("prize_hatch", () -> new PrizeHatchBlock());
 	public static final RegistryObject<Block> DOOR_LIGHT = REGISTRY.register("door_light", () -> new DoorLightBlock());
+	public static final RegistryObject<Block> BUFFET_BANNER_1 = REGISTRY.register("buffet_banner_1", () -> new BuffetBanner1Block());
+	public static final RegistryObject<Block> BUFFET_BANNER_2 = REGISTRY.register("buffet_banner_2", () -> new BuffetBanner2Block());
+	public static final RegistryObject<Block> BUFFET_BANNER_3 = REGISTRY.register("buffet_banner_3", () -> new BuffetBanner3Block());
+	public static final RegistryObject<Block> BUFFET_BANNER_4 = REGISTRY.register("buffet_banner_4", () -> new BuffetBanner4Block());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

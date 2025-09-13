@@ -75,6 +75,7 @@ import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.JJEntity;
+import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.fnafmod.entity.GlitchBonnieAnimatronicEntity;
 import net.mcreator.fnafmod.entity.FullHostileFreddyEntity;
@@ -92,7 +93,9 @@ import net.mcreator.fnafmod.entity.FoxyPirateEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.DaytimeGusPugEntity;
 import net.mcreator.fnafmod.entity.DaytimeChicaEntity;
+import net.mcreator.fnafmod.entity.DaytimeBarryPolarEntity;
 import net.mcreator.fnafmod.entity.DayTimeWitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.DayTimeToyFreddyEntity;
 import net.mcreator.fnafmod.entity.DayTimeToyFoxyEntity;
@@ -106,6 +109,7 @@ import net.mcreator.fnafmod.entity.CryingChildEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.BreadbearEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
+import net.mcreator.fnafmod.entity.BarryPolarEntity;
 import net.mcreator.fnafmod.entity.BBEntity;
 import net.mcreator.fnafmod.entity.AdventureWitheredChicaEntity;
 import net.mcreator.fnafmod.entity.AdventureSpringtrapEntity;
@@ -876,6 +880,34 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof TameableFredbearEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BarryPolarEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DaytimeBarryPolarEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GusPugEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DaytimeGusPugEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

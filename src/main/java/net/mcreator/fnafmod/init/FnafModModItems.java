@@ -110,6 +110,7 @@ import net.mcreator.fnafmod.item.ItsBeenSoLongItem;
 import net.mcreator.fnafmod.item.HookItem;
 import net.mcreator.fnafmod.item.HardToSayGoodbyeItem;
 import net.mcreator.fnafmod.item.HappiestDayItem;
+import net.mcreator.fnafmod.item.GusPugSpawnItemItem;
 import net.mcreator.fnafmod.item.GuardHatItem;
 import net.mcreator.fnafmod.item.GreenPlasticItem;
 import net.mcreator.fnafmod.item.GreenFabricItem;
@@ -166,6 +167,7 @@ import net.mcreator.fnafmod.item.BlueFabricItem;
 import net.mcreator.fnafmod.item.BlackPlasticItem;
 import net.mcreator.fnafmod.item.BlackFabricItem;
 import net.mcreator.fnafmod.item.BatteryItem;
+import net.mcreator.fnafmod.item.BarryPolarSpawnItemItem;
 import net.mcreator.fnafmod.item.BanjoItem;
 import net.mcreator.fnafmod.item.BBSpawnItemItem;
 import net.mcreator.fnafmod.item.AdvWitheredChicaItem;
@@ -1201,6 +1203,16 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> TILED_WALL_HANDLE = block(FnafModModBlocks.TILED_WALL_HANDLE);
 	public static final RegistryObject<Item> PRIZE_HATCH = block(FnafModModBlocks.PRIZE_HATCH);
 	public static final RegistryObject<Item> DOOR_LIGHT = block(FnafModModBlocks.DOOR_LIGHT);
+	public static final RegistryObject<Item> BUFFET_BANNER_1 = block(FnafModModBlocks.BUFFET_BANNER_1);
+	public static final RegistryObject<Item> BUFFET_BANNER_2 = block(FnafModModBlocks.BUFFET_BANNER_2);
+	public static final RegistryObject<Item> BUFFET_BANNER_3 = block(FnafModModBlocks.BUFFET_BANNER_3);
+	public static final RegistryObject<Item> BUFFET_BANNER_4 = block(FnafModModBlocks.BUFFET_BANNER_4);
+	public static final RegistryObject<Item> BARRY_POLAR_SPAWN_EGG = REGISTRY.register("barry_polar_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.BARRY_POLAR, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> DAYTIME_BARRY_POLAR_SPAWN_EGG = REGISTRY.register("daytime_barry_polar_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAYTIME_BARRY_POLAR, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> BARRY_POLAR_SPAWN_ITEM = REGISTRY.register("barry_polar_spawn_item", () -> new BarryPolarSpawnItemItem());
+	public static final RegistryObject<Item> GUS_PUG_SPAWN_EGG = REGISTRY.register("gus_pug_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.GUS_PUG, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> DAYTIME_GUS_PUG_SPAWN_EGG = REGISTRY.register("daytime_gus_pug_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAYTIME_GUS_PUG, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> GUS_PUG_SPAWN_ITEM = REGISTRY.register("gus_pug_spawn_item", () -> new GusPugSpawnItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

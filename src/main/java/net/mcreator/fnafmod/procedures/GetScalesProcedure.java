@@ -68,6 +68,7 @@ import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.JJEntity;
+import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.fnafmod.entity.GlitchBonnieAnimatronicEntity;
 import net.mcreator.fnafmod.entity.FullHostileFreddyEntity;
@@ -86,7 +87,9 @@ import net.mcreator.fnafmod.entity.FoxyPirateEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.DaytimeGusPugEntity;
 import net.mcreator.fnafmod.entity.DaytimeChicaEntity;
+import net.mcreator.fnafmod.entity.DaytimeBarryPolarEntity;
 import net.mcreator.fnafmod.entity.DayTimeWitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.DayTimeToyFreddyEntity;
 import net.mcreator.fnafmod.entity.DayTimeToyFoxyEntity;
@@ -98,6 +101,7 @@ import net.mcreator.fnafmod.entity.DayTimeBBEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.BonnieStandEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
+import net.mcreator.fnafmod.entity.BarryPolarEntity;
 import net.mcreator.fnafmod.entity.BBEntity;
 import net.mcreator.fnafmod.configuration.FnafModConfigsConfiguration;
 
@@ -191,6 +195,11 @@ public class GetScalesProcedure {
 				result = 0.84;
 			} else if (entity instanceof NightmarionneEntity || entity instanceof NightmarioneStatueEntity) {
 				result = 0.91;
+			}
+			if (entity instanceof BarryPolarEntity || entity instanceof DaytimeBarryPolarEntity) {
+				result = 0.85;
+			} else if (entity instanceof GusPugEntity || entity instanceof DaytimeGusPugEntity) {
+				result = 1.015;
 			}
 		} else {
 			result = 1;

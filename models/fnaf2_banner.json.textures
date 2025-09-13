@@ -13,6 +13,34 @@
         "missing": "banner_party"
       },
       "name": "party"
+    },
+    "buffet1": {
+      "map": {
+        "0": "banner_buffet1",
+        "missing": "banner_buffet1"
+      },
+      "name": "buffet1"
+    },
+    "buffet2": {
+      "map": {
+        "0": "banner_buffet2",
+        "missing": "banner_buffet2"
+      },
+      "name": "buffet2"
+    },
+    "buffet3": {
+      "map": {
+        "0": "banner_buffet3",
+        "missing": "banner_buffet3"
+      },
+      "name": "buffet3"
+    },
+    "buffet4": {
+      "map": {
+        "0": "banner_buffet4",
+        "missing": "banner_buffet4"
+      },
+      "name": "buffet4"
     }
   }
 }

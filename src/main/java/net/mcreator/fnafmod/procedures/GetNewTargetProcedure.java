@@ -57,58 +57,61 @@ public class GetNewTargetProcedure {
 							|| 5 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z"))))
 									&& y != entity.getPersistentData().getDouble("target_y")) {
 						entity.getPersistentData().putBoolean("visited_targetspot", true);
-						entity.getPersistentData().putDouble("target_x", (entity.getX()));
-						entity.getPersistentData().putDouble("target_y", (entity.getY()));
-						entity.getPersistentData().putDouble("target_z", (entity.getZ()));
+						entity.getPersistentData().putBoolean("had_target", false);
 					}
 				}
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
-						stop = false;
-						if (entityiterator instanceof Player || entityiterator instanceof Villager) {
-							if (!IsEntityBeingLookedAtProcedure.execute(world, entityiterator, entity, entityiterator.getEyeHeight(), rangetest)) {
-								if (!(entityiterator.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D)) {
-									stop = true;
-								} else if (entityiterator.isShiftKeyDown() || entityiterator.isSwimming()) {
+						if (!(entityiterator == entity)) {
+							stop = false;
+							if (entityiterator instanceof Player || entityiterator instanceof Villager) {
+								if (!IsEntityBeingLookedAtProcedure.execute(world, entityiterator, entity, entityiterator.getEyeHeight(), rangetest)) {
+									if (!(entityiterator.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D)) {
+										stop = true;
+									} else if (entityiterator.isShiftKeyDown() || entityiterator.isSwimming()) {
+										stop = true;
+									}
+								}
+								if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-maskfoolers")))
+										&& (entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == FnafModModItems.FREDDY_MASK_HELMET.get()) {
 									stop = true;
 								}
-							}
-							if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-maskfoolers")))
-									&& (entityiterator instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == FnafModModItems.FREDDY_MASK_HELMET.get()) {
-								stop = true;
-							}
-							if (stop == false) {
-								if (!(new Object() {
-									public boolean checkGamemode(Entity _ent) {
-										if (_ent instanceof ServerPlayer _serverPlayer) {
-											return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-										} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-											return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-													&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+								if (stop == false) {
+									if (!(new Object() {
+										public boolean checkGamemode(Entity _ent) {
+											if (_ent instanceof ServerPlayer _serverPlayer) {
+												return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+											} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+												return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+														&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+											}
+											return false;
 										}
-										return false;
-									}
-								}.checkGamemode(entityiterator)) && !(new Object() {
-									public boolean checkGamemode(Entity _ent) {
-										if (_ent instanceof ServerPlayer _serverPlayer) {
-											return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
-										} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-											return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-													&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+									}.checkGamemode(entityiterator)) && !(new Object() {
+										public boolean checkGamemode(Entity _ent) {
+											if (_ent instanceof ServerPlayer _serverPlayer) {
+												return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+											} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+												return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+														&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+											}
+											return false;
 										}
-										return false;
+									}.checkGamemode(entityiterator))) {
+										if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
+											_entity.setTarget(_ent);
 									}
-								}.checkGamemode(entityiterator))) {
-									if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
-										_entity.setTarget(_ent);
 								}
 							}
 						}
 					}
 				}
 			} else if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
+				entity.getPersistentData().putDouble("target_x", ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX()));
+				entity.getPersistentData().putDouble("target_y", ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()));
+				entity.getPersistentData().putDouble("target_z", ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()));
 				entity.getPersistentData().putBoolean("had_target", true);
 				entity.getPersistentData().putBoolean("visited_targetspot", false);
 				if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-maskfoolers")))

@@ -20,6 +20,7 @@ public class DayTurnNightProcedure {
 		String command = "";
 		String ai = "";
 		if (!(world instanceof Level _lvl0 && _lvl0.isDay())) {
+			registry = (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("fnaf_mod:daytime_", "");
 			if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:day_time_freddy")) {
 				registry = "freddy_fazbear";
 			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:day_time_bonnie")) {
