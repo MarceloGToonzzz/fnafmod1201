@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "door_light_off"
+      },
+      "name": "default"
+    },
+    "on": {
+      "map": {
+        "0": "door_light_on"
+      },
+      "name": "on"
+    }
+  }
+}

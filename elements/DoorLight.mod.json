@@ -2,66 +2,75 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "interiorbricks",
-    "textureTop": "interiorbricks",
-    "textureLeft": "movie_handlebar",
-    "textureFront": "interiorbricks",
-    "textureRight": "dark_wall_tile",
-    "textureBack": "dark_wall_tile",
-    "renderType": 14,
-    "customModelName": "Grass block",
-    "rotationMode": 0,
-    "enablePitch": false,
+    "texture": "door_light_off",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "door_light:default",
+    "rotationMode": 1,
+    "enablePitch": true,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "interiorbricks",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 4.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 4.0,
+        "Mx": 12.0,
+        "My": 1.0,
+        "Mz": 12.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 1.0,
+        "mz": 5.0,
+        "Mx": 11.0,
+        "My": 3.0,
+        "Mz": 11.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Fancy Brick Wall With Handle",
+    "name": "Door Light",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.5,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:DecorativeBlocks"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "NONE"
     },
-    "tickRate": 10,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -81,10 +90,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GILDED_BLACKSTONE"
+      "value": "GLASS"
     },
     "breakSound": {
       "value": ""
@@ -103,7 +112,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "STONE",
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
@@ -121,20 +130,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRedstoneOn": {
+      "name": "PrizeHatchRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "PrizeHatchRedstoneOff"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.STONE#1"
-      },
-      {
-        "value": "Blocks.STONE#3"
-      },
-      {
-        "value": "Blocks.STONE#5"
+        "value": "TAG:stone_ore_replaceables"
       }
     ],
     "generationShape": "UNIFORM",

@@ -182,6 +182,7 @@ import net.mcreator.fnafmod.block.PurpleEtchedBricksBlock;
 import net.mcreator.fnafmod.block.PurpleCurtainBlock;
 import net.mcreator.fnafmod.block.PurpleCheckeredCurtainBlock;
 import net.mcreator.fnafmod.block.PuppetMaskBlock;
+import net.mcreator.fnafmod.block.PrizeHatchBlock;
 import net.mcreator.fnafmod.block.PrizeCounterBlock;
 import net.mcreator.fnafmod.block.PrizeCornerPosterBlock;
 import net.mcreator.fnafmod.block.PrinterBlock;
@@ -349,6 +350,7 @@ import net.mcreator.fnafmod.block.EmptyPizzaBoxBlock;
 import net.mcreator.fnafmod.block.DualColourEntranceDoorBlock;
 import net.mcreator.fnafmod.block.DrywallBlock;
 import net.mcreator.fnafmod.block.DrumsetBlock;
+import net.mcreator.fnafmod.block.DoorLightBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
 import net.mcreator.fnafmod.block.DoorBoarderBlock;
@@ -1206,6 +1208,8 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
 	public static final RegistryObject<Block> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> new IndustrialFanBlock());
 	public static final RegistryObject<Block> TILED_WALL_HANDLE = REGISTRY.register("tiled_wall_handle", () -> new TiledWallHandleBlock());
+	public static final RegistryObject<Block> PRIZE_HATCH = REGISTRY.register("prize_hatch", () -> new PrizeHatchBlock());
+	public static final RegistryObject<Block> DOOR_LIGHT = REGISTRY.register("door_light", () -> new DoorLightBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

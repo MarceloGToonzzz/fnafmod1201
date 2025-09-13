@@ -1199,6 +1199,8 @@ public class FnafModModItems {
 			() -> new LargeIndustrialDoorDisplayItem(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> INDUSTRIAL_FAN = REGISTRY.register(FnafModModBlocks.INDUSTRIAL_FAN.getId().getPath(), () -> new IndustrialFanDisplayItem(FnafModModBlocks.INDUSTRIAL_FAN.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TILED_WALL_HANDLE = block(FnafModModBlocks.TILED_WALL_HANDLE);
+	public static final RegistryObject<Item> PRIZE_HATCH = block(FnafModModBlocks.PRIZE_HATCH);
+	public static final RegistryObject<Item> DOOR_LIGHT = block(FnafModModBlocks.DOOR_LIGHT);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -163,6 +163,8 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.TORTURE_FREDDY.get().asItem());
 				tabData.accept(FnafModModBlocks.TORTURE_CHAIR.get().asItem());
 				tabData.accept(FnafModModBlocks.INDUSTRIAL_FAN.get().asItem());
+				tabData.accept(FnafModModBlocks.PRIZE_HATCH.get().asItem());
+				tabData.accept(FnafModModBlocks.DOOR_LIGHT.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {

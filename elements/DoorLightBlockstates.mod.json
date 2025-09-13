@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "DoorLight",
+    "blockstateList": [
+      {
+        "texture": "door_light_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "door_light:on",
+        "luminance": 12,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}
