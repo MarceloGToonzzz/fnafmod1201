@@ -6,7 +6,7 @@
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "fnaf_mod:retro",
+        "location": "fnaf_mod:fnaf2",
         "projection": "rigid",
         "processors": {
           "processors": [

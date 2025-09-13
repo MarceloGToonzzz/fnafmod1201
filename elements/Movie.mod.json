@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "structure",
   "definition": {
-    "structure": "fnaf1",
+    "structure": "movie",
     "projection": "rigid",
     "ignoredBlocks": [
       {
@@ -12,7 +12,7 @@
         "value": "Blocks.AIR"
       }
     ],
-    "spacing": 93,
+    "spacing": 127,
     "separation": 0,
     "restrictionBiomes": [
       {

@@ -1,12 +1,12 @@
 {
-  "name": "fnaf_mod:sams_pizzeria",
+  "name": "fnaf_mod:movie",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "fnaf_mod:sampizzeria",
+        "location": "fnaf_mod:movie",
         "projection": "rigid",
         "processors": {
           "processors": [

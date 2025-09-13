@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "structure",
   "definition": {
-    "structure": "attraction",
+    "structure": "fnaf3",
     "projection": "rigid",
     "ignoredBlocks": [
       {
