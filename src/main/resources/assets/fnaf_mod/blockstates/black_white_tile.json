@@ -1,10 +1,7 @@
 {
   "variants": {
-    "blockstate=0": {
+    "": {
       "model": "fnaf_mod:block/black_white_tile"
-    },
-    "blockstate=1": {
-      "model": "fnaf_mod:block/prize_hatch_blockstates_blockstate_0"
     }
   }
 }

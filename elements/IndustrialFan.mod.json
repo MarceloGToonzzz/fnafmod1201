@@ -60,7 +60,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -124,6 +124,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "IndustrialFanOnBlockRightClicked"
+    },
+    "onTickUpdate": {
+      "name": "IndustrialFanOnTickUpdate"
     },
     "onRedstoneOn": {
       "name": "IndustrialFanRedstoneOn"
