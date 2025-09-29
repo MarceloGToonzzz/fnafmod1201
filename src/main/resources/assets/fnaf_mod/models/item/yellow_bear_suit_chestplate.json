@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "fnaf_mod:custom/freddysuitchest",
   "textures": {
-    "layer0": "fnaf_mod:item/gftorso"
+    "0": "fnaf_mod:block/goldenfreddysuit",
+    "particle": "fnaf_mod:item/gftorso"
   }
 }

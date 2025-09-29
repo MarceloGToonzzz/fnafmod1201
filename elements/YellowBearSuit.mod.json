@@ -44,34 +44,58 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "ModelFreddyHead",
+    "helmetModelName": "ModelFreddyFazbearSuit",
     "helmetModelPart": "Head",
-    "helmetModelTexture": "golden_freddy_head.png",
-    "bodyModelName": "ModelSpringBonnieBody",
+    "helmetModelTexture": "goldenfreddysuit.png",
+    "bodyModelName": "ModelFreddyFazbearSuit",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
-    "bodyModelTexture": "golden_freddy_layer_1.png",
-    "leggingsModelName": "Default",
-    "leggingsModelPartL": "Leggings L",
-    "leggingsModelPartR": "Leggings R",
-    "leggingsModelTexture": "golden_freddy_layer_2.png",
-    "bootsModelName": "Default",
-    "bootsModelPartL": "Boots L",
-    "bootsModelPartR": "Boots R",
-    "bootsModelTexture": "golden_freddy_layer_1.png",
-    "helmetItemRenderType": 0,
-    "helmetItemCustomModelName": "Normal",
-    "bodyItemRenderType": 0,
-    "bodyItemCustomModelName": "Normal",
-    "leggingsItemRenderType": 0,
-    "leggingsItemCustomModelName": "Normal",
-    "bootsItemRenderType": 0,
-    "bootsItemCustomModelName": "Normal",
+    "bodyModelTexture": "goldenfreddysuit.png",
+    "leggingsModelName": "ModelFreddyFazbearSuit",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "goldenfreddysuit.png",
+    "bootsModelName": "ModelFreddyFazbearSuit",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "goldenfreddysuit.png",
+    "helmetItemRenderType": 1,
+    "helmetItemCustomModelName": "freddysuithead:golden",
+    "bodyItemRenderType": 1,
+    "bodyItemCustomModelName": "freddysuitchest:golden",
+    "leggingsItemRenderType": 1,
+    "leggingsItemCustomModelName": "freddysuitlegs:golden",
+    "bootsItemRenderType": 1,
+    "bootsItemCustomModelName": "freddysuitboots:golden",
     "helmetImmuneToFire": false,
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
     "maxDamage": 0,
     "damageValueHelmet": 0,
     "damageValueBody": 0,

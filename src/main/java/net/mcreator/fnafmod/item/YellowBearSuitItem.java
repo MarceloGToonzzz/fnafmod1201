@@ -22,8 +22,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.fnafmod.procedures.SpringlockedProcedure;
-import net.mcreator.fnafmod.client.model.ModelSpringBonnieBody;
-import net.mcreator.fnafmod.client.model.ModelFreddyHead;
+import net.mcreator.fnafmod.client.model.ModelFreddyFazbearSuit;
 
 import java.util.function.Consumer;
 import java.util.Map;
@@ -87,7 +86,7 @@ public abstract class YellowBearSuitItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new ModelFreddyHead(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyHead.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -101,7 +100,7 @@ public abstract class YellowBearSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/golden_freddy_head.png";
+			return "fnaf_mod:textures/entities/goldenfreddysuit.png";
 		}
 
 		@Override
@@ -124,9 +123,9 @@ public abstract class YellowBearSuitItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelSpringBonnieBody(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpringBonnieBody.LAYER_LOCATION)).Body,
-							"left_arm", new ModelSpringBonnieBody(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpringBonnieBody.LAYER_LOCATION)).LeftArm, "right_arm",
-							new ModelSpringBonnieBody(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpringBonnieBody.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).Body,
+							"left_arm", new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).LeftArm, "right_arm",
+							new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -138,7 +137,7 @@ public abstract class YellowBearSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/golden_freddy_layer_1.png";
+			return "fnaf_mod:textures/entities/goldenfreddysuit.png";
 		}
 
 		@Override
@@ -156,8 +155,27 @@ public abstract class YellowBearSuitItem extends ArmorItem {
 		}
 
 		@Override
+		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+			consumer.accept(new IClientItemExtensions() {
+				@Override
+				@OnlyIn(Dist.CLIENT)
+				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("left_leg", new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					armorModel.crouching = living.isShiftKeyDown();
+					armorModel.riding = defaultModel.riding;
+					armorModel.young = living.isBaby();
+					return armorModel;
+				}
+			});
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/golden_freddy_layer_2.png";
+			return "fnaf_mod:textures/entities/goldenfreddysuit.png";
 		}
 
 		@Override
@@ -175,8 +193,27 @@ public abstract class YellowBearSuitItem extends ArmorItem {
 		}
 
 		@Override
+		public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+			consumer.accept(new IClientItemExtensions() {
+				@Override
+				@OnlyIn(Dist.CLIENT)
+				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("left_leg", new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).LeftBoot, "right_leg",
+									new ModelFreddyFazbearSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelFreddyFazbearSuit.LAYER_LOCATION)).RightBoot, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					armorModel.crouching = living.isShiftKeyDown();
+					armorModel.riding = defaultModel.riding;
+					armorModel.young = living.isBaby();
+					return armorModel;
+				}
+			});
+		}
+
+		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/golden_freddy_layer_1.png";
+			return "fnaf_mod:textures/entities/goldenfreddysuit.png";
 		}
 
 		@Override

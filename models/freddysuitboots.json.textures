@@ -5,6 +5,30 @@
         "0": "freddyfazbearsuit"
       },
       "name": "default"
+    },
+    "bonnie": {
+      "map": {
+        "0": "bonniesuit"
+      },
+      "name": "bonnie"
+    },
+    "foxy": {
+      "map": {
+        "0": "foxysuit"
+      },
+      "name": "foxy"
+    },
+    "chica": {
+      "map": {
+        "0": "chicasuit"
+      },
+      "name": "chica"
+    },
+    "golden": {
+      "map": {
+        "0": "goldenfreddysuit"
+      },
+      "name": "golden"
     }
   }
 }

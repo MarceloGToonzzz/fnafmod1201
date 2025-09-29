@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "fnaf_mod:custom/chicasuitchest",
   "textures": {
-    "layer0": "fnaf_mod:item/chicatorso"
+    "0": "fnaf_mod:block/chicasuit",
+    "particle": "fnaf_mod:item/chicatorso"
   }
 }

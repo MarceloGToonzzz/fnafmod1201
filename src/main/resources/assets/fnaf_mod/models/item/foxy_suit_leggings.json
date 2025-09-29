@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "fnaf_mod:custom/freddysuitlegs",
   "textures": {
-    "layer0": "fnaf_mod:item/foxyshorts"
+    "0": "fnaf_mod:block/foxysuit",
+    "particle": "fnaf_mod:item/foxyshorts"
   }
 }

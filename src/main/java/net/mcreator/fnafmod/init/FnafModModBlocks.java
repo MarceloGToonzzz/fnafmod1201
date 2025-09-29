@@ -37,6 +37,8 @@ import net.mcreator.fnafmod.block.WallTileBlock;
 import net.mcreator.fnafmod.block.WallPizzaBlock;
 import net.mcreator.fnafmod.block.VisitNebraskaPosterBlock;
 import net.mcreator.fnafmod.block.VentHatchBlock;
+import net.mcreator.fnafmod.block.VentEntryBlock;
+import net.mcreator.fnafmod.block.VentEntranceBlock;
 import net.mcreator.fnafmod.block.VentBlock;
 import net.mcreator.fnafmod.block.VendingMachineBlock;
 import net.mcreator.fnafmod.block.VassDollBlock;
@@ -578,6 +580,7 @@ import net.mcreator.fnafmod.block.AwningBlueBlock;
 import net.mcreator.fnafmod.block.AvocadoCurtainBlock;
 import net.mcreator.fnafmod.block.AshCurtainBlock;
 import net.mcreator.fnafmod.block.ArcadeMachineShadowFreddyBlock;
+import net.mcreator.fnafmod.block.ArcadeMachineFreddyDeliveryBlock;
 import net.mcreator.fnafmod.block.ArcadeMachineFreddyBlock;
 import net.mcreator.fnafmod.block.ArcadeMachineFoxyBlock;
 import net.mcreator.fnafmod.block.ArcadeMachineFoxy2Block;
@@ -1218,6 +1221,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> BUFFET_BANNER_2 = REGISTRY.register("buffet_banner_2", () -> new BuffetBanner2Block());
 	public static final RegistryObject<Block> BUFFET_BANNER_3 = REGISTRY.register("buffet_banner_3", () -> new BuffetBanner3Block());
 	public static final RegistryObject<Block> BUFFET_BANNER_4 = REGISTRY.register("buffet_banner_4", () -> new BuffetBanner4Block());
+	public static final RegistryObject<Block> VENT_ENTRY = REGISTRY.register("vent_entry", () -> new VentEntryBlock());
+	public static final RegistryObject<Block> VENT_ENTRANCE = REGISTRY.register("vent_entrance", () -> new VentEntranceBlock());
+	public static final RegistryObject<Block> ARCADE_MACHINE_FREDDY_DELIVERY = REGISTRY.register("arcade_machine_freddy_delivery", () -> new ArcadeMachineFreddyDeliveryBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

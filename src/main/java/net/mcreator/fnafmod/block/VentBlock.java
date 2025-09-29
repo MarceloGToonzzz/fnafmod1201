@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class VentBlock extends Block {
 	public VentBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(3f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

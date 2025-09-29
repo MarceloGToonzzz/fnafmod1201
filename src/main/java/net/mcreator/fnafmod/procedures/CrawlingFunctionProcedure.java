@@ -20,7 +20,8 @@ public class CrawlingFunctionProcedure {
 			return;
 		boolean success = false;
 		String animationName = "";
-		if ((world.getBlockState(BlockPos.containing(x, entity.getY() - 1, z))).getBlock() == FnafModModBlocks.VENT.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, entity.getY() - 1, z))).getBlock() == FnafModModBlocks.VENT.get() || (world.getBlockState(BlockPos.containing(x, entity.getY(), z))).getBlock() == FnafModModBlocks.VENT_ENTRY.get()
+				|| (world.getBlockState(BlockPos.containing(x, entity.getY(), z))).getBlock() == FnafModModBlocks.VENT_ENTRANCE.get()) {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("fnaf_mod:animatronic-crawlers")))) {
 				success = true;
 			}

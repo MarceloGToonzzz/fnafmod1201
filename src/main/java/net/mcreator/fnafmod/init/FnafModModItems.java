@@ -1213,6 +1213,9 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> GUS_PUG_SPAWN_EGG = REGISTRY.register("gus_pug_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.GUS_PUG, -10994921, -16711423, new Item.Properties()));
 	public static final RegistryObject<Item> DAYTIME_GUS_PUG_SPAWN_EGG = REGISTRY.register("daytime_gus_pug_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAYTIME_GUS_PUG, -10994921, -16711423, new Item.Properties()));
 	public static final RegistryObject<Item> GUS_PUG_SPAWN_ITEM = REGISTRY.register("gus_pug_spawn_item", () -> new GusPugSpawnItemItem());
+	public static final RegistryObject<Item> VENT_ENTRY = block(FnafModModBlocks.VENT_ENTRY);
+	public static final RegistryObject<Item> VENT_ENTRANCE = block(FnafModModBlocks.VENT_ENTRANCE);
+	public static final RegistryObject<Item> ARCADE_MACHINE_FREDDY_DELIVERY = block(FnafModModBlocks.ARCADE_MACHINE_FREDDY_DELIVERY);
 
 	// Start of user code block custom items
 	// End of user code block custom items

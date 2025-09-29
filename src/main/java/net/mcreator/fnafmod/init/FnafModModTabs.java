@@ -748,6 +748,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.TILED_WALL_HANDLE.get().asItem());
+				tabData.accept(FnafModModBlocks.VENT_ENTRANCE.get().asItem());
+				tabData.accept(FnafModModBlocks.VENT_ENTRY.get().asItem());
+				tabData.accept(FnafModModBlocks.ARCADE_MACHINE_FREDDY_DELIVERY.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
