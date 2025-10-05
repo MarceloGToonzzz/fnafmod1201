@@ -30,6 +30,7 @@ import net.mcreator.fnafmod.client.model.ModelNightmare_Chica_Statue;
 import net.mcreator.fnafmod.client.model.ModelNightmare_Bonnie_Statue;
 import net.mcreator.fnafmod.client.model.ModelNightmareFredbear;
 import net.mcreator.fnafmod.client.model.ModelNighmare_Foxy_Statue;
+import net.mcreator.fnafmod.client.model.ModelMascot_Bonnie_Costume;
 import net.mcreator.fnafmod.client.model.ModelGuard_hat;
 import net.mcreator.fnafmod.client.model.ModelGlitchtrap_Mask;
 import net.mcreator.fnafmod.client.model.ModelFreddy_Mask;
@@ -89,6 +90,7 @@ public class FnafModModModels {
 		event.registerLayerDefinition(ModelNighmare_Foxy_Statue.LAYER_LOCATION, ModelNighmare_Foxy_Statue::createBodyLayer);
 		event.registerLayerDefinition(ModelFreddyHead.LAYER_LOCATION, ModelFreddyHead::createBodyLayer);
 		event.registerLayerDefinition(ModelGuard_hat.LAYER_LOCATION, ModelGuard_hat::createBodyLayer);
+		event.registerLayerDefinition(ModelMascot_Bonnie_Costume.LAYER_LOCATION, ModelMascot_Bonnie_Costume::createBodyLayer);
 		event.registerLayerDefinition(Modelcamera_hanging_Converted.LAYER_LOCATION, Modelcamera_hanging_Converted::createBodyLayer);
 		event.registerLayerDefinition(ModelFreddy_Mask.LAYER_LOCATION, ModelFreddy_Mask::createBodyLayer);
 		event.registerLayerDefinition(ModelStandFreddly.LAYER_LOCATION, ModelStandFreddly::createBodyLayer);

@@ -32,9 +32,9 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "ModelGlitchtrap_Mask",
+    "helmetModelName": "ModelMascot_Bonnie_Costume",
     "helmetModelPart": "Head",
-    "helmetModelTexture": "glitchtrap_mask.png",
+    "helmetModelTexture": "mascot_costume_bonnie.png",
     "bodyModelName": "Default",
     "bodyModelPart": "Body",
     "armsModelPartL": "Arms L",
@@ -44,10 +44,10 @@
     "leggingsModelPartL": "Leggings L",
     "leggingsModelPartR": "Leggings R",
     "leggingsModelTexture": "glitchtrap_2.png",
-    "bootsModelName": "Default",
-    "bootsModelPartL": "Boots L",
-    "bootsModelPartR": "Boots R",
-    "bootsModelTexture": "glitchtrap_1.png",
+    "bootsModelName": "ModelMascot_Bonnie_Costume",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "mascot_costume_bonnie.png",
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",
     "bodyItemRenderType": 0,
@@ -60,6 +60,18 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
     "helmetPiglinNeutral": {
       "fixedValue": false
     },

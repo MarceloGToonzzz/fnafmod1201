@@ -12133,11 +12133,11 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_helmet.json",
+          "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_leggings.json",
+          "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_chestplate.json",
           "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_boots.json",
           "src/main/java/net/mcreator/fnafmod/item/GlitchtrapSuitItem.java",
-          "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_leggings.json",
-          "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_chestplate.json"
+          "src/main/resources/assets/fnaf_mod/models/item/glitchtrap_suit_helmet.json"
         ]
       },
       "path": "~/Items/Suits"
@@ -18152,11 +18152,11 @@
       "registry_name": "foxy_suit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_leggings.json",
-          "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_boots.json",
           "src/main/java/net/mcreator/fnafmod/item/FoxySuitItem.java",
           "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_chestplate.json",
-          "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_helmet.json"
+          "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_helmet.json",
+          "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_boots.json",
+          "src/main/resources/assets/fnaf_mod/models/item/foxy_suit_leggings.json"
         ],
         "eh": true,
         "eb": true,

@@ -51,7 +51,7 @@
     "helmetItemRenderType": 0,
     "helmetItemCustomModelName": "Normal",
     "bodyItemRenderType": 1,
-    "bodyItemCustomModelName": "freddysuitchest:foxy",
+    "bodyItemCustomModelName": "foxysuitchest:default",
     "leggingsItemRenderType": 1,
     "leggingsItemCustomModelName": "freddysuitlegs:foxy",
     "bootsItemRenderType": 1,

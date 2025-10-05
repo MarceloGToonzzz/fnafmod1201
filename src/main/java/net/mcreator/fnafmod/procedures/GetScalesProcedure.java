@@ -31,7 +31,6 @@ import net.mcreator.fnafmod.entity.SittingFredbearEntity;
 import net.mcreator.fnafmod.entity.SittingDaytimeSpringtrapEntity;
 import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
-import net.mcreator.fnafmod.entity.SecretNightmareFredbearEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
 import net.mcreator.fnafmod.entity.PlushtrapToyEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
@@ -187,14 +186,12 @@ public class GetScalesProcedure {
 				result = 1.0195;
 			} else if (entity instanceof NightmareFredbearEntity || entity instanceof NightmareFredbearStatueEntity || entity instanceof NightmareEntity) {
 				result = 1.3;
-			} else if (entity instanceof SecretNightmareFredbearEntity) {
-				result = 1.02;
+			} else if (entity instanceof NightmarionneEntity || entity instanceof NightmarioneStatueEntity) {
+				result = 0.91;
 			} else if (entity instanceof PlushtrapEntity || entity instanceof SittingPlushtrapEntity || entity instanceof PlushtrapToyEntity) {
 				result = 0.87;
 			} else if (entity instanceof NightmareBBEntity || entity instanceof SittingNightmareBBEntity) {
 				result = 0.84;
-			} else if (entity instanceof NightmarionneEntity || entity instanceof NightmarioneStatueEntity) {
-				result = 0.91;
 			}
 			if (entity instanceof BarryPolarEntity || entity instanceof DaytimeBarryPolarEntity) {
 				result = 0.85;

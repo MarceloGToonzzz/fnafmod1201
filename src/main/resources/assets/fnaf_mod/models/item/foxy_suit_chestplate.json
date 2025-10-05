@@ -1,5 +1,5 @@
 {
-  "parent": "fnaf_mod:custom/freddysuitchest",
+  "parent": "fnaf_mod:custom/foxysuitchest",
   "textures": {
     "0": "fnaf_mod:block/foxysuit",
     "particle": "fnaf_mod:item/foxytorso"
