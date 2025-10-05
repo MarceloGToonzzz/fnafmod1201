@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "fnaf_mod:custom/freddysuitboots",
   "textures": {
-    "layer0": "fnaf_mod:item/bonniefeet"
+    "0": "fnaf_mod:block/sparkysuit",
+    "particle": "fnaf_mod:item/bonniefeet"
   }
 }

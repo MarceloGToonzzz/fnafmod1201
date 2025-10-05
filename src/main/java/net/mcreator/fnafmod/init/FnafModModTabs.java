@@ -806,6 +806,14 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.GLITCHED_LOG.get().asItem());
 			tabData.accept(FnafModModBlocks.GLITCHED_LEAVES.get().asItem());
 			tabData.accept(FnafModModBlocks.ROUND_BUSH.get().asItem());
+			tabData.accept(FnafModModBlocks.WORLD_DIRT.get().asItem());
+			tabData.accept(FnafModModBlocks.FAZBEAR_HILLS_GRASS.get().asItem());
+			tabData.accept(FnafModModBlocks.CHOPPYS_WOODS_GRASS.get().asItem());
+			tabData.accept(FnafModModBlocks.DUSTING_FIELDS_GRASS.get().asItem());
+			tabData.accept(FnafModModBlocks.LILYGEAR_LAKE_GRASS.get().asItem());
+			tabData.accept(FnafModModBlocks.BLACKTOMB_YARD_GRASS.get().asItem());
+			tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_GRASS.get().asItem());
+			tabData.accept(FnafModModBlocks.CAVE_GRASS.get().asItem());
 		}
 	}
 }

@@ -185,7 +185,7 @@ public class GetScalesProcedure {
 			} else if (entity instanceof NightmareFoxyEntity || entity instanceof NightmareFoxyStatueEntity || entity instanceof NightmareMangleEntity) {
 				result = 1.0195;
 			} else if (entity instanceof NightmareFredbearEntity || entity instanceof NightmareFredbearStatueEntity || entity instanceof NightmareEntity) {
-				result = 1.3;
+				result = 0.79;
 			} else if (entity instanceof NightmarionneEntity || entity instanceof NightmarioneStatueEntity) {
 				result = 0.91;
 			} else if (entity instanceof PlushtrapEntity || entity instanceof SittingPlushtrapEntity || entity instanceof PlushtrapToyEntity) {

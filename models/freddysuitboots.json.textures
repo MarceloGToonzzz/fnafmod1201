@@ -29,6 +29,12 @@
         "0": "goldenfreddysuit"
       },
       "name": "golden"
+    },
+    "sparky": {
+      "map": {
+        "0": "sparkysuit"
+      },
+      "name": "sparky"
     }
   }
 }

@@ -1216,6 +1216,14 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> VENT_ENTRY = block(FnafModModBlocks.VENT_ENTRY);
 	public static final RegistryObject<Item> VENT_ENTRANCE = block(FnafModModBlocks.VENT_ENTRANCE);
 	public static final RegistryObject<Item> ARCADE_MACHINE_FREDDY_DELIVERY = block(FnafModModBlocks.ARCADE_MACHINE_FREDDY_DELIVERY);
+	public static final RegistryObject<Item> WORLD_DIRT = block(FnafModModBlocks.WORLD_DIRT);
+	public static final RegistryObject<Item> FAZBEAR_HILLS_GRASS = block(FnafModModBlocks.FAZBEAR_HILLS_GRASS);
+	public static final RegistryObject<Item> CHOPPYS_WOODS_GRASS = block(FnafModModBlocks.CHOPPYS_WOODS_GRASS);
+	public static final RegistryObject<Item> DUSTING_FIELDS_GRASS = block(FnafModModBlocks.DUSTING_FIELDS_GRASS);
+	public static final RegistryObject<Item> LILYGEAR_LAKE_GRASS = block(FnafModModBlocks.LILYGEAR_LAKE_GRASS);
+	public static final RegistryObject<Item> BLACKTOMB_YARD_GRASS = block(FnafModModBlocks.BLACKTOMB_YARD_GRASS);
+	public static final RegistryObject<Item> PINWHEEL_CIRCUS_GRASS = block(FnafModModBlocks.PINWHEEL_CIRCUS_GRASS);
+	public static final RegistryObject<Item> CAVE_GRASS = block(FnafModModBlocks.CAVE_GRASS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

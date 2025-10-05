@@ -28018,7 +28018,7 @@
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/round_bush.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/FNAF World"
     },
     {
       "name": "CupcakeFlowerPink",
@@ -28038,7 +28038,7 @@
           "src/main/resources/assets/fnaf_mod/models/block/cupcake_flower_pink.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/FNAF World"
     },
     {
       "name": "CupcakeFlowerBlue",
@@ -28058,7 +28058,7 @@
           "src/main/resources/assets/fnaf_mod/models/block/cupcake_flower_blue.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/FNAF World"
     },
     {
       "name": "CupcakeFlowerGolden",
@@ -28078,7 +28078,7 @@
           "src/main/resources/data/fnaf_mod/worldgen/configured_feature/cupcake_flower_golden.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/FNAF World"
     },
     {
       "name": "BigWhiteDoor",
@@ -28763,11 +28763,11 @@
       "registry_name": "sparky_suit",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_leggings.json",
-          "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_helmet.json",
           "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_chestplate.json",
-          "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_boots.json",
-          "src/main/java/net/mcreator/fnafmod/item/SparkySuitItem.java"
+          "src/main/java/net/mcreator/fnafmod/item/SparkySuitItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_helmet.json",
+          "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_leggings.json",
+          "src/main/resources/assets/fnaf_mod/models/item/sparky_suit_boots.json"
         ],
         "eh": true,
         "eb": true,
@@ -31066,6 +31066,142 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "WorldDirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_dirt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/WorldDirtBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/world_dirt.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/world_dirt.json",
+          "src/main/resources/assets/fnaf_mod/models/block/world_dirt.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/world_dirt.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "FazbearHillsGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fazbear_hills_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/fazbear_hills_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/item/fazbear_hills_grass.json",
+          "src/main/java/net/mcreator/fnafmod/block/FazbearHillsGrassBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/fazbear_hills_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/block/fazbear_hills_grass.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "ChoppysWoodsGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choppys_woods_grass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/ChoppysWoodsGrassBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/choppys_woods_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/item/choppys_woods_grass.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/choppys_woods_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/block/choppys_woods_grass.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "DustingFieldsGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dusting_fields_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/dusting_fields_grass.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/dusting_fields_grass.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/dusting_fields_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/item/dusting_fields_grass.json",
+          "src/main/java/net/mcreator/fnafmod/block/DustingFieldsGrassBlock.java"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "LilygearLakeGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lilygear_lake_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/lilygear_lake_grass.json",
+          "src/main/java/net/mcreator/fnafmod/block/LilygearLakeGrassBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/lilygear_lake_grass.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/lilygear_lake_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/item/lilygear_lake_grass.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "BlacktombYardGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blacktomb_yard_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/blacktomb_yard_grass.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/blacktomb_yard_grass.json",
+          "src/main/java/net/mcreator/fnafmod/block/BlacktombYardGrassBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/blacktomb_yard_grass.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/blacktomb_yard_grass.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "PinwheelCircusGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinwheel_circus_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/pinwheel_circus_grass.json",
+          "src/main/java/net/mcreator/fnafmod/block/PinwheelCircusGrassBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/pinwheel_circus_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/item/pinwheel_circus_grass.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pinwheel_circus_grass.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "CaveGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cave_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/cave_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/block/cave_grass.json",
+          "src/main/java/net/mcreator/fnafmod/block/CaveGrassBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/cave_grass.json",
+          "src/main/resources/assets/fnaf_mod/models/item/cave_grass.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
     }
   ],
   "variable_elements": [
@@ -33379,8 +33515,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "block.fnaf_mod.red_white_tile_stair": "Red White Tile Stairs",
@@ -33388,12 +33524,12 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
@@ -33409,11 +33545,11 @@
       "block.fnaf_mod.fancy_bricks_slab": "Fancy Bricks Slab",
       "entity.fnaf_mod.golden_freddy": "Golden Freddy",
       "entity.fnaf_mod.unwithered_chica": "Un-Withered Chica",
-      "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
       "item.fnaf_mod.day_time_bonnie_spawn_egg": "DaytimeBonnie Spawn Egg",
+      "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
       "entity.fnaf_mod.the_groobler": "The Groobler",
-      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.balloon": "Red Balloon",
+      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.big_dual_colour_entrance_door": "Big Dual Coloured Entrance Door",
       "block.fnaf_mod.green_blue_diagonal_tile_stair": "Green Blue Diagonal Tile Stairs",
       "subtitles.blacktombyardtemp": "",
@@ -33428,11 +33564,11 @@
       "item.fnaf_mod.bonnie": "Drone Bonnie",
       "entity.fnaf_mod.withered_bonnie": "Withered Bonnie",
       "block.fnaf_mod.awning_yellow.description_0": "Yellow",
-      "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "entity.fnaf_mod.secret_nightmare_fredbear": "Nightmare Fredbear",
+      "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
-      "block.fnaf_mod.buffet_wall_dark": "Buffet Dark Wall",
       "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
+      "block.fnaf_mod.buffet_wall_dark": "Buffet Dark Wall",
       "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
       "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
@@ -33450,16 +33586,16 @@
       "block.fnaf_mod.thin_mint_curtain": "Thin Mint Curtain",
       "block.fnaf_mod.pin_ball_machine_1": "Pinball Machine",
       "block.fnaf_mod.center_big_black_purple_wall_tile": "Center Big Black Purple Stripe Wall Tiles",
-      "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "block.fnaf_mod.pin_ball_machine_3": "Pinball Machine Blacklight Cupcake",
+      "entity.fnaf_mod.springlocked_zombie_fredbear": "Springlocked Zombie Fredbear",
       "entity.fnaf_mod.puppet": "Puppet",
       "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
       "entity.fnaf_mod.bonnie_cut_out": "Bonnie Cutout",
-      "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
       "block.fnaf_mod.alternate_buffet_wall": "Alternate Buffet Wall",
-      "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
+      "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
       "block.fnaf_mod.speaker": "Speaker",
+      "block.fnaf_mod.spring_bonnie_plushie": "Spring Bonnie Plushie",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
       "item.fnaf_mod.tameable_mangle_spawn_egg": "Adventure Mangle Spawn Egg",
@@ -33689,6 +33825,7 @@
       "item.fnaf_mod.glitchtrap_suit_chestplate": "Spring Bonnie Costume Body",
       "block.fnaf_mod.purple_table_cloth": "Purple Table Cloth",
       "block.fnaf_mod.change_machine": "Change Machine",
+      "block.fnaf_mod.pinwheel_circus_grass": "Pinwheel Circus Grass",
       "item.fnaf_mod.shadow_freddy_standing_spawn_egg": "Shadow Freddy Spawn Egg",
       "subtitles.itsbeensolong": "",
       "item.fnaf_mod.nightmare_fredbear_spawn_egg": "Nightmare Fredbear Spawn Egg",
@@ -33756,6 +33893,7 @@
       "block.fnaf_mod.carrot_curtain.description_0": "§6(Orange Curtain)",
       "item.fnaf_mod.springlocked_fredbear_suit_boots": "Fredbear Spring Lock Boots",
       "block.fnaf_mod.error_tile_cracked": "Cracked Missing Texture Tile",
+      "block.fnaf_mod.choppys_woods_grass": "Choppy\u0027s Woods Grass",
       "block.fnaf_mod.arcade_machine_foxy": "Arcade Machine Foxy",
       "entity.fnaf_mod.nightmare_bonnie": "Nightmare Bonnie",
       "entity.fnaf_mod.day_time_bb": "DayTime BB",
@@ -34214,10 +34352,12 @@
       "block.fnaf_mod.prize_corner_poster": "Prize Counter Poster",
       "block.fnaf_mod.purple_stage_bricks": "Purple Stage Bricks",
       "item.fnaf_mod.movie_theme": "Music Disc",
+      "block.fnaf_mod.cave_grass": "Cave Grass",
       "item.fnaf_mod.passive_foxy_spawn_egg": "Foxy the Pirate Spawn Egg",
       "block.fnaf_mod.purple_fan": "Toy Fan",
       "block.fnaf_mod.center_big_black_red_wall_tile": "Center Big Wall Tiles",
       "item.fnaf_mod.toy_cupcake": "Cupcake",
+      "block.fnaf_mod.blacktomb_yard_grass": "Blacktomb Yard Grass",
       "entity.fnaf_mod.adventure_springtrap": "Adventure Springtrap",
       "block.fnaf_mod.rules_poster": "Rules Poster!",
       "block.fnaf_mod.door_light": "Door Light",
@@ -34268,6 +34408,7 @@
       "block.fnaf_mod.alternate_dark_buffet_wall": "Alternate Dark Buffet Wall",
       "subtitles.darkness_ahead": "",
       "block.fnaf_mod.green_blue_tile_stair": "Green Blue Tile Stairs",
+      "block.fnaf_mod.dusting_fields_grass": "Dusting Fields Grass",
       "item.fnaf_mod.fredbear_item": "Drone Fredbear",
       "item.fnaf_mod.endo_skeleton_spawn_egg": "Endoskeleton Spawn Egg",
       "entity.fnaf_mod.daytime_barry_polar": "Barry Polar (Daytime)",
@@ -34317,6 +34458,7 @@
       "item.fnaf_mod.phantom_freddy_spawn_egg": "Phantom Freddy Spawn Egg",
       "item.fnaf_mod.tameable_springtrap_spawn_egg": "Adventure Springtrap Spawn Egg",
       "block.fnaf_mod.center_big_white_purple_wall_tile": "Center Big White Purple Stripe Wall Tiles",
+      "block.fnaf_mod.fazbear_hills_grass": "Fazbear Hills Grass",
       "block.fnaf_mod.red_door_windowed": "Red Establishment Windowed Door",
       "subtitles.garage_open": "Garage Door Opens",
       "block.fnaf_mod.bubblegum_curtain": "Bubblegum Curtain",
@@ -34325,6 +34467,7 @@
       "block.fnaf_mod.pizzeria_trash_can": "Pizzeria Trash Can",
       "itemGroup.tabdrawings_posters": "Drawings and Posters",
       "block.fnaf_mod.sconce": "Sconce",
+      "block.fnaf_mod.world_dirt": "World Dirt",
       "item.fnaf_mod.day_time_freddy_spawn_egg": "DaytimeFreddy Spawn Egg",
       "item.fnaf_mod.phantom_puppet_spawn_egg": "Phantom Puppet Spawn Egg",
       "block.fnaf_mod.fnaf_3_posters.description_0": "Posters from Fazbear\u0027s Fright",
@@ -34599,6 +34742,7 @@
       "subtitles.happiest_day": "Happiest Day Music Disc",
       "item.fnaf_mod.fazbear_showtime.desc": "Fazbear Showtime - SomethingFunky",
       "entity.fnaf_mod.sitting_spring_bonnie": "Spring Bonnie (Sitting Prop Entity)",
+      "block.fnaf_mod.lilygear_lake_grass": "Lilygear Lake Grass",
       "block.fnaf_mod.brown_tan_tile": "Chess Tile",
       "block.fnaf_mod.blue_black_tile_cracked": "Cracked Blue Black Tile",
       "block.fnaf_mod.stars": "Stars",
@@ -34795,6 +34939,10 @@
           },
           {
             "name": "DoorBoarders",
+            "children": []
+          },
+          {
+            "name": "FNAF World",
             "children": []
           }
         ]
