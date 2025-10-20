@@ -9,6 +9,7 @@ import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.WitheredChicaEntity;
 import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
+import net.mcreator.fnafmod.entity.WallyWalrusEntity;
 import net.mcreator.fnafmod.entity.UnwitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredChicaEntity;
@@ -41,6 +42,7 @@ import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.fnafmod.entity.SecretNightmareFredbearEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
+import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
 import net.mcreator.fnafmod.entity.PhantomPuppetEntity;
 import net.mcreator.fnafmod.entity.PhantomMangleEntity;
@@ -75,6 +77,7 @@ import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.JJEntity;
+import net.mcreator.fnafmod.entity.HazyReindeerEntity;
 import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.fnafmod.entity.GlitchBonnieAnimatronicEntity;
@@ -93,6 +96,9 @@ import net.mcreator.fnafmod.entity.FoxyPirateEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.DaytimeWallyWalrusEntity;
+import net.mcreator.fnafmod.entity.DaytimePuffyPuffinsEntity;
+import net.mcreator.fnafmod.entity.DaytimeHazyReindeerEntity;
 import net.mcreator.fnafmod.entity.DaytimeGusPugEntity;
 import net.mcreator.fnafmod.entity.DaytimeChicaEntity;
 import net.mcreator.fnafmod.entity.DaytimeBarryPolarEntity;
@@ -908,6 +914,48 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof DaytimeGusPugEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WallyWalrusEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DaytimeWallyWalrusEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PuffyPuffinsEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DaytimePuffyPuffinsEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof HazyReindeerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DaytimeHazyReindeerEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

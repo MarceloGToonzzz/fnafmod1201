@@ -25,6 +25,7 @@ import net.mcreator.fnafmod.item.WitheredChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.WitheredBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.WhitePlasticItem;
 import net.mcreator.fnafmod.item.WhiteFabricItem;
+import net.mcreator.fnafmod.item.WallyWalrusSpawnItemItem;
 import net.mcreator.fnafmod.item.WaiterHatItem;
 import net.mcreator.fnafmod.item.UnwitheredFreddySpawnItemItem;
 import net.mcreator.fnafmod.item.UnwitheredFoxySpawnItemItem;
@@ -58,6 +59,7 @@ import net.mcreator.fnafmod.item.RedFabricItem;
 import net.mcreator.fnafmod.item.PurplePlasticItem;
 import net.mcreator.fnafmod.item.PurpleFabricItem;
 import net.mcreator.fnafmod.item.PuppetSpawnItemItem;
+import net.mcreator.fnafmod.item.PuffyPuffinsSpawnItemItem;
 import net.mcreator.fnafmod.item.PlushtrapToySpawnItemItem;
 import net.mcreator.fnafmod.item.PlushtrapSpawnItemItem;
 import net.mcreator.fnafmod.item.PizzaSliceItem;
@@ -108,6 +110,7 @@ import net.mcreator.fnafmod.item.JackOChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.JackOBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.ItsBeenSoLongItem;
 import net.mcreator.fnafmod.item.HookItem;
+import net.mcreator.fnafmod.item.HazyReindeerSpawnItemItem;
 import net.mcreator.fnafmod.item.HardToSayGoodbyeItem;
 import net.mcreator.fnafmod.item.HappiestDayItem;
 import net.mcreator.fnafmod.item.GusPugSpawnItemItem;
@@ -1224,6 +1227,15 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BLACKTOMB_YARD_GRASS = block(FnafModModBlocks.BLACKTOMB_YARD_GRASS);
 	public static final RegistryObject<Item> PINWHEEL_CIRCUS_GRASS = block(FnafModModBlocks.PINWHEEL_CIRCUS_GRASS);
 	public static final RegistryObject<Item> CAVE_GRASS = block(FnafModModBlocks.CAVE_GRASS);
+	public static final RegistryObject<Item> WALLY_WALRUS_SPAWN_EGG = REGISTRY.register("wally_walrus_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.WALLY_WALRUS, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> DAYTIME_WALLY_WALRUS_SPAWN_EGG = REGISTRY.register("daytime_wally_walrus_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAYTIME_WALLY_WALRUS, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> PUFFY_PUFFINS_SPAWN_EGG = REGISTRY.register("puffy_puffins_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.PUFFY_PUFFINS, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> DAYTIME_PUFFY_PUFFINS_SPAWN_EGG = REGISTRY.register("daytime_puffy_puffins_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAYTIME_PUFFY_PUFFINS, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> HAZY_REINDEER_SPAWN_EGG = REGISTRY.register("hazy_reindeer_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.HAZY_REINDEER, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> DAYTIME_HAZY_REINDEER_SPAWN_EGG = REGISTRY.register("daytime_hazy_reindeer_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.DAYTIME_HAZY_REINDEER, -10994921, -16711423, new Item.Properties()));
+	public static final RegistryObject<Item> PUFFY_PUFFINS_SPAWN_ITEM = REGISTRY.register("puffy_puffins_spawn_item", () -> new PuffyPuffinsSpawnItemItem());
+	public static final RegistryObject<Item> WALLY_WALRUS_SPAWN_ITEM = REGISTRY.register("wally_walrus_spawn_item", () -> new WallyWalrusSpawnItemItem());
+	public static final RegistryObject<Item> HAZY_REINDEER_SPAWN_ITEM = REGISTRY.register("hazy_reindeer_spawn_item", () -> new HazyReindeerSpawnItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

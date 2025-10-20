@@ -301,6 +301,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.SPRING_BONNIE_ANIMATRONIC_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.GLITCH_BONNIE_ANIMATRONIC_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.BARRY_POLAR_SPAWN_ITEM.get());
+				tabData.accept(FnafModModItems.WALLY_WALRUS_SPAWN_ITEM.get());
+				tabData.accept(FnafModModItems.PUFFY_PUFFINS_SPAWN_ITEM.get());
+				tabData.accept(FnafModModItems.HAZY_REINDEER_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.GUS_PUG_SPAWN_ITEM.get());
 				tabData.accept(FnafModModItems.SPRINGLOCKED_ZOMBIE_FREDBEAR_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.SPRING_LOCKED_ZOMBIE_SPRING_BONNIE_SPAWN_EGG.get());

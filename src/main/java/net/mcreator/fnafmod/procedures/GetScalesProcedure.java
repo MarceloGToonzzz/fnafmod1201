@@ -7,6 +7,7 @@ import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.WitheredChicaEntity;
 import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
+import net.mcreator.fnafmod.entity.WallyWalrusEntity;
 import net.mcreator.fnafmod.entity.UnwitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredChicaEntity;
@@ -32,6 +33,7 @@ import net.mcreator.fnafmod.entity.SittingDaytimeSpringtrapEntity;
 import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
+import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
 import net.mcreator.fnafmod.entity.PlushtrapToyEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
 import net.mcreator.fnafmod.entity.PhantomPuppetEntity;
@@ -67,6 +69,7 @@ import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.JJEntity;
+import net.mcreator.fnafmod.entity.HazyReindeerEntity;
 import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.fnafmod.entity.GlitchBonnieAnimatronicEntity;
@@ -86,6 +89,9 @@ import net.mcreator.fnafmod.entity.FoxyPirateEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.DaytimeWallyWalrusEntity;
+import net.mcreator.fnafmod.entity.DaytimePuffyPuffinsEntity;
+import net.mcreator.fnafmod.entity.DaytimeHazyReindeerEntity;
 import net.mcreator.fnafmod.entity.DaytimeGusPugEntity;
 import net.mcreator.fnafmod.entity.DaytimeChicaEntity;
 import net.mcreator.fnafmod.entity.DaytimeBarryPolarEntity;
@@ -195,6 +201,12 @@ public class GetScalesProcedure {
 			}
 			if (entity instanceof BarryPolarEntity || entity instanceof DaytimeBarryPolarEntity) {
 				result = 0.85;
+			} else if (entity instanceof WallyWalrusEntity || entity instanceof DaytimeWallyWalrusEntity) {
+				result = 0.875;
+			} else if (entity instanceof PuffyPuffinsEntity || entity instanceof DaytimePuffyPuffinsEntity) {
+				result = 0.77;
+			} else if (entity instanceof HazyReindeerEntity || entity instanceof DaytimeHazyReindeerEntity) {
+				result = 0.975;
 			} else if (entity instanceof GusPugEntity || entity instanceof DaytimeGusPugEntity) {
 				result = 1.015;
 			}

@@ -21,6 +21,7 @@ import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.WitheredChicaEntity;
 import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
+import net.mcreator.fnafmod.entity.WallyWalrusEntity;
 import net.mcreator.fnafmod.entity.UnwitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.UnwitheredChicaEntity;
@@ -63,6 +64,7 @@ import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.fnafmod.entity.SecretNightmareFredbearEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
+import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
 import net.mcreator.fnafmod.entity.PlushtrapToyEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
 import net.mcreator.fnafmod.entity.PhantomPuppetEntity;
@@ -101,6 +103,7 @@ import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
 import net.mcreator.fnafmod.entity.JackOBonnieEntity;
 import net.mcreator.fnafmod.entity.JJEntity;
+import net.mcreator.fnafmod.entity.HazyReindeerEntity;
 import net.mcreator.fnafmod.entity.HangingCameraEntity;
 import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.GoldenFreddyEntity;
@@ -125,6 +128,9 @@ import net.mcreator.fnafmod.entity.FoxyCutOutEntity;
 import net.mcreator.fnafmod.entity.EndoSkeletonEntity;
 import net.mcreator.fnafmod.entity.Endo02Entity;
 import net.mcreator.fnafmod.entity.DedWitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.DaytimeWallyWalrusEntity;
+import net.mcreator.fnafmod.entity.DaytimePuffyPuffinsEntity;
+import net.mcreator.fnafmod.entity.DaytimeHazyReindeerEntity;
 import net.mcreator.fnafmod.entity.DaytimeGusPugEntity;
 import net.mcreator.fnafmod.entity.DaytimeChicaEntity;
 import net.mcreator.fnafmod.entity.DaytimeBarryPolarEntity;
@@ -703,6 +709,30 @@ public class FnafModModEntities {
 			EntityType.Builder.<DaytimeGusPugEntity>of(DaytimeGusPugEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimeGusPugEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WallyWalrusEntity>> WALLY_WALRUS = register("wally_walrus",
+			EntityType.Builder.<WallyWalrusEntity>of(WallyWalrusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WallyWalrusEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DaytimeWallyWalrusEntity>> DAYTIME_WALLY_WALRUS = register("daytime_wally_walrus",
+			EntityType.Builder.<DaytimeWallyWalrusEntity>of(DaytimeWallyWalrusEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimeWallyWalrusEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PuffyPuffinsEntity>> PUFFY_PUFFINS = register("puffy_puffins",
+			EntityType.Builder.<PuffyPuffinsEntity>of(PuffyPuffinsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuffyPuffinsEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DaytimePuffyPuffinsEntity>> DAYTIME_PUFFY_PUFFINS = register("daytime_puffy_puffins",
+			EntityType.Builder.<DaytimePuffyPuffinsEntity>of(DaytimePuffyPuffinsEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimePuffyPuffinsEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HazyReindeerEntity>> HAZY_REINDEER = register("hazy_reindeer",
+			EntityType.Builder.<HazyReindeerEntity>of(HazyReindeerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HazyReindeerEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DaytimeHazyReindeerEntity>> DAYTIME_HAZY_REINDEER = register("daytime_hazy_reindeer",
+			EntityType.Builder.<DaytimeHazyReindeerEntity>of(DaytimeHazyReindeerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimeHazyReindeerEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -850,6 +880,12 @@ public class FnafModModEntities {
 			DaytimeBarryPolarEntity.init();
 			GusPugEntity.init();
 			DaytimeGusPugEntity.init();
+			WallyWalrusEntity.init();
+			DaytimeWallyWalrusEntity.init();
+			PuffyPuffinsEntity.init();
+			DaytimePuffyPuffinsEntity.init();
+			HazyReindeerEntity.init();
+			DaytimeHazyReindeerEntity.init();
 		});
 	}
 
@@ -992,5 +1028,11 @@ public class FnafModModEntities {
 		event.put(DAYTIME_BARRY_POLAR.get(), DaytimeBarryPolarEntity.createAttributes().build());
 		event.put(GUS_PUG.get(), GusPugEntity.createAttributes().build());
 		event.put(DAYTIME_GUS_PUG.get(), DaytimeGusPugEntity.createAttributes().build());
+		event.put(WALLY_WALRUS.get(), WallyWalrusEntity.createAttributes().build());
+		event.put(DAYTIME_WALLY_WALRUS.get(), DaytimeWallyWalrusEntity.createAttributes().build());
+		event.put(PUFFY_PUFFINS.get(), PuffyPuffinsEntity.createAttributes().build());
+		event.put(DAYTIME_PUFFY_PUFFINS.get(), DaytimePuffyPuffinsEntity.createAttributes().build());
+		event.put(HAZY_REINDEER.get(), HazyReindeerEntity.createAttributes().build());
+		event.put(DAYTIME_HAZY_REINDEER.get(), DaytimeHazyReindeerEntity.createAttributes().build());
 	}
 }
