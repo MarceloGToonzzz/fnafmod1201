@@ -181,19 +181,19 @@ public class GetScalesProcedure {
 				result = 0.85;
 			}
 			if (entity instanceof NightmareFreddyEntity || entity instanceof NightmareFreddyStatueEntity) {
-				result = 1.235;
+				result = 1;
 			} else if (entity instanceof FreddlesEntity) {
-				result = 0.868;
+				result = 1;
 			} else if (entity instanceof NightmareBonnieEntity || entity instanceof NightmareBonnieStatueEntity || entity instanceof JackOBonnieEntity) {
-				result = 1.2725;
+				result = 1;
 			} else if (entity instanceof NightmareChicaEntity || entity instanceof NightmareChicaStatueEntity || entity instanceof JackOChicaEntity) {
-				result = 1.1689;
+				result = 1;
 			} else if (entity instanceof NightmareFoxyEntity || entity instanceof NightmareFoxyStatueEntity || entity instanceof NightmareMangleEntity) {
-				result = 1.0195;
+				result = 1;
 			} else if (entity instanceof NightmareFredbearEntity || entity instanceof NightmareFredbearStatueEntity || entity instanceof NightmareEntity) {
 				result = 0.79;
 			} else if (entity instanceof NightmarionneEntity || entity instanceof NightmarioneStatueEntity) {
-				result = 0.91;
+				result = 1;
 			} else if (entity instanceof PlushtrapEntity || entity instanceof SittingPlushtrapEntity || entity instanceof PlushtrapToyEntity) {
 				result = 0.87;
 			} else if (entity instanceof NightmareBBEntity || entity instanceof SittingNightmareBBEntity) {
