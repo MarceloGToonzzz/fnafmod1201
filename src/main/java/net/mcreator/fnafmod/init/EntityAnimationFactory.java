@@ -40,7 +40,6 @@ import net.mcreator.fnafmod.entity.SittingDaytimeSpringtrapEntity;
 import net.mcreator.fnafmod.entity.ShadowFreddyStandingEntity;
 import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
-import net.mcreator.fnafmod.entity.SecretNightmareFredbearEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
 import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
@@ -844,13 +843,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof BreadbearEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof SecretNightmareFredbearEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -62,7 +62,6 @@ import net.mcreator.fnafmod.entity.SitEntityEntity;
 import net.mcreator.fnafmod.entity.ShadowFreddyStandingEntity;
 import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
-import net.mcreator.fnafmod.entity.SecretNightmareFredbearEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
 import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
 import net.mcreator.fnafmod.entity.PlushtrapToyEntity;
@@ -635,11 +634,6 @@ public class FnafModModEntities {
 					.sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<BreadbearEntity>> BREADBEAR = register("breadbear", EntityType.Builder.<BreadbearEntity>of(BreadbearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(BreadbearEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<SecretNightmareFredbearEntity>> SECRET_NIGHTMARE_FREDBEAR = register("secret_nightmare_fredbear",
-			EntityType.Builder.<SecretNightmareFredbearEntity>of(SecretNightmareFredbearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(SecretNightmareFredbearEntity::new)
-
-					.sized(0.6f, 2.8f));
 	public static final RegistryObject<EntityType<TameableAdventureFreddyEntity>> TAMEABLE_ADVENTURE_FREDDY = register("tameable_adventure_freddy",
 			EntityType.Builder.<TameableAdventureFreddyEntity>of(TameableAdventureFreddyEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(TameableAdventureFreddyEntity::new)
@@ -862,7 +856,6 @@ public class FnafModModEntities {
 			AdventureSpringtrapEntity.init();
 			AdventureNightmareFredbearEntity.init();
 			BreadbearEntity.init();
-			SecretNightmareFredbearEntity.init();
 			TameableAdventureFreddyEntity.init();
 			TameableMangleEntity.init();
 			TameableChicaEntity.init();
@@ -1010,7 +1003,6 @@ public class FnafModModEntities {
 		event.put(ADVENTURE_SPRINGTRAP.get(), AdventureSpringtrapEntity.createAttributes().build());
 		event.put(ADVENTURE_NIGHTMARE_FREDBEAR.get(), AdventureNightmareFredbearEntity.createAttributes().build());
 		event.put(BREADBEAR.get(), BreadbearEntity.createAttributes().build());
-		event.put(SECRET_NIGHTMARE_FREDBEAR.get(), SecretNightmareFredbearEntity.createAttributes().build());
 		event.put(TAMEABLE_ADVENTURE_FREDDY.get(), TameableAdventureFreddyEntity.createAttributes().build());
 		event.put(TAMEABLE_MANGLE.get(), TameableMangleEntity.createAttributes().build());
 		event.put(TAMEABLE_CHICA.get(), TameableChicaEntity.createAttributes().build());

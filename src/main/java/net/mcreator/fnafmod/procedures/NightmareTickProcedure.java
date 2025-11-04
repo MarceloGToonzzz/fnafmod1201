@@ -17,7 +17,6 @@ import net.mcreator.fnafmod.init.FnafModModEntities;
 import net.mcreator.fnafmod.init.FnafModModBlocks;
 import net.mcreator.fnafmod.entity.SittingPlushtrapEntity;
 import net.mcreator.fnafmod.entity.SittingNightmareBBEntity;
-import net.mcreator.fnafmod.entity.SecretNightmareFredbearEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
 import net.mcreator.fnafmod.entity.NightmarionneEntity;
 import net.mcreator.fnafmod.entity.NightmareMangleEntity;
@@ -293,16 +292,10 @@ public class NightmareTickProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 200, 1, false, false));
 				}
 			}
-		} else if (entity instanceof SecretNightmareFredbearEntity) {
-			if (world.getBlockState(BlockPos.containing(x, y + 3, z)).canOcclude()) {
-				entity.setShiftKeyDown(true);
-			} else {
-				entity.setShiftKeyDown(false);
-			}
 		} else if (entity instanceof NightmareFredbearEntity || entity instanceof NightmarionneEntity) {
 			rand = Mth.nextInt(RandomSource.create(), 1, 300);
 			rand2 = Mth.nextInt(RandomSource.create(), 1, 8);
-			if (world instanceof Level _lvl104 && _lvl104.isDay()) {
+			if (world instanceof Level _lvl100 && _lvl100.isDay()) {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			} else {
@@ -515,7 +508,7 @@ public class NightmareTickProcedure {
 						entity.setShiftKeyDown(false);
 					});
 				}
-				if (world instanceof Level _lvl183 && _lvl183.isDay()) {
+				if (world instanceof Level _lvl179 && _lvl179.isDay()) {
 					if (!entity.level().isClientSide())
 						entity.discard();
 					if (entity instanceof PlushtrapEntity) {
@@ -536,7 +529,7 @@ public class NightmareTickProcedure {
 				}
 			}
 			if (entity instanceof SittingNightmareBBEntity || entity instanceof SittingPlushtrapEntity) {
-				if (!(world instanceof Level _lvl191 && _lvl191.isDay())) {
+				if (!(world instanceof Level _lvl187 && _lvl187.isDay())) {
 					if (!entity.level().isClientSide())
 						entity.discard();
 					if (entity instanceof SittingPlushtrapEntity) {
