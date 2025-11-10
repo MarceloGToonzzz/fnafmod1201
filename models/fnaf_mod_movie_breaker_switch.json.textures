@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fnaf_mod_movie_breaker_switch"
+      },
+      "name": "default"
+    }
+  }
+}

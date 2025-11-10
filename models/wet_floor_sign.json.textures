@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "wet_floor_sign"
+      },
+      "name": "default"
+    }
+  }
+}

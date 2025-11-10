@@ -42,6 +42,7 @@ import net.mcreator.fnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.fnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
 import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
+import net.mcreator.fnafmod.entity.PlushtrapToyEntity;
 import net.mcreator.fnafmod.entity.PlushtrapEntity;
 import net.mcreator.fnafmod.entity.PhantomPuppetEntity;
 import net.mcreator.fnafmod.entity.PhantomMangleEntity;
@@ -948,6 +949,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof DaytimeHazyReindeerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PlushtrapToyEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

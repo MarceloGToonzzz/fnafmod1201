@@ -653,7 +653,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FREDBEARS_BONNIE_SPAWN_EGG = REGISTRY.register("fredbears_bonnie_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_BONNIE, -13490595, -10724730, new Item.Properties()));
 	public static final RegistryObject<Item> FREDBEARS_CHICA_SPAWN_EGG = REGISTRY.register("fredbears_chica_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_CHICA, -5209330, -6532331, new Item.Properties()));
 	public static final RegistryObject<Item> FREDBEARS_FOXY_SPAWN_EGG = REGISTRY.register("fredbears_foxy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_FOXY, -12184303, -6335661, new Item.Properties()));
-	public static final RegistryObject<Item> PLUSHTRAP_TOY_SPAWN_EGG = REGISTRY.register("plushtrap_toy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.PLUSHTRAP_TOY, -5010412, -4679615, new Item.Properties()));
 	public static final RegistryObject<Item> DIAGONAL_WALL_CONNECTOR_BOTTOM = block(FnafModModBlocks.DIAGONAL_WALL_CONNECTOR_BOTTOM);
 	public static final RegistryObject<Item> DIAGONAL_WALL_BOTTOM = block(FnafModModBlocks.DIAGONAL_WALL_BOTTOM);
 	public static final RegistryObject<Item> DIAGONAL_WALL_TOP = block(FnafModModBlocks.DIAGONAL_WALL_TOP);
@@ -1236,6 +1235,17 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PUFFY_PUFFINS_SPAWN_ITEM = REGISTRY.register("puffy_puffins_spawn_item", () -> new PuffyPuffinsSpawnItemItem());
 	public static final RegistryObject<Item> WALLY_WALRUS_SPAWN_ITEM = REGISTRY.register("wally_walrus_spawn_item", () -> new WallyWalrusSpawnItemItem());
 	public static final RegistryObject<Item> HAZY_REINDEER_SPAWN_ITEM = REGISTRY.register("hazy_reindeer_spawn_item", () -> new HazyReindeerSpawnItemItem());
+	public static final RegistryObject<Item> POLAR_BAR = block(FnafModModBlocks.POLAR_BAR);
+	public static final RegistryObject<Item> CASH_REGISTER = block(FnafModModBlocks.CASH_REGISTER);
+	public static final RegistryObject<Item> DECOR_STAR = block(FnafModModBlocks.DECOR_STAR);
+	public static final RegistryObject<Item> MINI_PUPPET_DECOR = block(FnafModModBlocks.MINI_PUPPET_DECOR);
+	public static final RegistryObject<Item> EMPLOYEE_BOARD = block(FnafModModBlocks.EMPLOYEE_BOARD);
+	public static final RegistryObject<Item> LETS_EAT_SIGN = block(FnafModModBlocks.LETS_EAT_SIGN);
+	public static final RegistryObject<Item> WET_FLOOR_SIGN = block(FnafModModBlocks.WET_FLOOR_SIGN);
+	public static final RegistryObject<Item> TOKEN_CATALOGUE = block(FnafModModBlocks.TOKEN_CATALOGUE);
+	public static final RegistryObject<Item> BACKSTAGE_ANIMATRONIC_PARTS = block(FnafModModBlocks.BACKSTAGE_ANIMATRONIC_PARTS);
+	public static final RegistryObject<Item> BREAKER = block(FnafModModBlocks.BREAKER);
+	public static final RegistryObject<Item> PLUSHTRAP_TOY_SPAWN_EGG = REGISTRY.register("plushtrap_toy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.PLUSHTRAP_TOY, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -11,6 +11,12 @@
         "1": "textureconfetti"
       },
       "name": "confetti"
+    },
+    "star": {
+      "map": {
+        "1": "star_movie"
+      },
+      "name": "star"
     }
   }
 }

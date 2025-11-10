@@ -107,10 +107,10 @@ public class BigBackstageDoorBlock extends BaseEntityBlock implements EntityBloc
 		}
 
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(15, -16, -1, 16, 32, 17), box(0, -16, 7, 16, 32, 9));
-			case NORTH -> Shapes.or(box(0, -16, -1, 1, 32, 17), box(0, -16, 7, 16, 32, 9));
-			case EAST -> Shapes.or(box(-1, -16, 0, 17, 32, 1), box(7, -16, 0, 9, 32, 16));
-			case WEST -> Shapes.or(box(-1, -16, 15, 17, 32, 16), box(7, -16, 0, 9, 32, 16));
+			default -> Shapes.or(box(15, -16, -1, 16, 32, 17), box(-16, -16, 7, 16, 32, 9));
+			case NORTH -> Shapes.or(box(0, -16, -1, 1, 32, 17), box(0, -16, 7, 32, 32, 9));
+			case EAST -> Shapes.or(box(-1, -16, 0, 17, 32, 1), box(7, -16, 0, 9, 32, 32));
+			case WEST -> Shapes.or(box(-1, -16, 15, 17, 32, 16), box(7, -16, -16, 9, 32, 16));
 		};
 	}
 

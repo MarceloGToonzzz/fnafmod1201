@@ -209,7 +209,6 @@ public class FnafModModEntityRenderers {
 		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_BONNIE.get(), FredbearsBonnieRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_CHICA.get(), FredbearsChicaRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_FOXY.get(), FredbearsFoxyRenderer::new);
-		event.registerEntityRenderer(FnafModModEntities.PLUSHTRAP_TOY.get(), PlushtrapToyRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.HANGING_CAMERA.get(), HangingCameraRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.FULL_HOSTILE_FREDDY.get(), FullHostileFreddyRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.FULL_HOSTILE_CHICA.get(), FullHostileChicaRenderer::new);
@@ -300,5 +299,6 @@ public class FnafModModEntityRenderers {
 		event.registerEntityRenderer(FnafModModEntities.DAYTIME_PUFFY_PUFFINS.get(), DaytimePuffyPuffinsRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.HAZY_REINDEER.get(), HazyReindeerRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.DAYTIME_HAZY_REINDEER.get(), DaytimeHazyReindeerRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.PLUSHTRAP_TOY.get(), PlushtrapToyRenderer::new);
 	}
 }

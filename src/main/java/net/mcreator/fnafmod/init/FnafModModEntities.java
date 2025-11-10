@@ -367,10 +367,6 @@ public class FnafModModEntities {
 			EntityType.Builder.<FredbearsFoxyEntity>of(FredbearsFoxyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FredbearsFoxyEntity::new)
 
 					.sized(0.6f, 1.9f));
-	public static final RegistryObject<EntityType<PlushtrapToyEntity>> PLUSHTRAP_TOY = register("plushtrap_toy",
-			EntityType.Builder.<PlushtrapToyEntity>of(PlushtrapToyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlushtrapToyEntity::new)
-
-					.sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<HangingCameraEntity>> HANGING_CAMERA = register("hanging_camera", EntityType.Builder.<HangingCameraEntity>of(HangingCameraEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HangingCameraEntity::new).fireImmune().sized(0.4f, 0.7f));
 	public static final RegistryObject<EntityType<FullHostileFreddyEntity>> FULL_HOSTILE_FREDDY = register("full_hostile_freddy",
@@ -727,6 +723,10 @@ public class FnafModModEntities {
 			EntityType.Builder.<DaytimeHazyReindeerEntity>of(DaytimeHazyReindeerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DaytimeHazyReindeerEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PlushtrapToyEntity>> PLUSHTRAP_TOY = register("plushtrap_toy",
+			EntityType.Builder.<PlushtrapToyEntity>of(PlushtrapToyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlushtrapToyEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -789,7 +789,6 @@ public class FnafModModEntities {
 			FredbearsBonnieEntity.init();
 			FredbearsChicaEntity.init();
 			FredbearsFoxyEntity.init();
-			PlushtrapToyEntity.init();
 			HangingCameraEntity.init();
 			FullHostileFreddyEntity.init();
 			FullHostileChicaEntity.init();
@@ -879,6 +878,7 @@ public class FnafModModEntities {
 			DaytimePuffyPuffinsEntity.init();
 			HazyReindeerEntity.init();
 			DaytimeHazyReindeerEntity.init();
+			PlushtrapToyEntity.init();
 		});
 	}
 
@@ -936,7 +936,6 @@ public class FnafModModEntities {
 		event.put(FREDBEARS_BONNIE.get(), FredbearsBonnieEntity.createAttributes().build());
 		event.put(FREDBEARS_CHICA.get(), FredbearsChicaEntity.createAttributes().build());
 		event.put(FREDBEARS_FOXY.get(), FredbearsFoxyEntity.createAttributes().build());
-		event.put(PLUSHTRAP_TOY.get(), PlushtrapToyEntity.createAttributes().build());
 		event.put(HANGING_CAMERA.get(), HangingCameraEntity.createAttributes().build());
 		event.put(FULL_HOSTILE_FREDDY.get(), FullHostileFreddyEntity.createAttributes().build());
 		event.put(FULL_HOSTILE_CHICA.get(), FullHostileChicaEntity.createAttributes().build());
@@ -1026,5 +1025,6 @@ public class FnafModModEntities {
 		event.put(DAYTIME_PUFFY_PUFFINS.get(), DaytimePuffyPuffinsEntity.createAttributes().build());
 		event.put(HAZY_REINDEER.get(), HazyReindeerEntity.createAttributes().build());
 		event.put(DAYTIME_HAZY_REINDEER.get(), DaytimeHazyReindeerEntity.createAttributes().build());
+		event.put(PLUSHTRAP_TOY.get(), PlushtrapToyEntity.createAttributes().build());
 	}
 }

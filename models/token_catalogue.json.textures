@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fnaf_mod_entrance_catalogue"
+      },
+      "name": "default"
+    }
+  }
+}

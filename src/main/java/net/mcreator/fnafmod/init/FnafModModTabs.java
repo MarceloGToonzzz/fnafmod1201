@@ -109,6 +109,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BUFFET_BANNER_2.get().asItem());
 				tabData.accept(FnafModModBlocks.BUFFET_BANNER_3.get().asItem());
 				tabData.accept(FnafModModBlocks.BUFFET_BANNER_4.get().asItem());
+				tabData.accept(FnafModModBlocks.TOKEN_CATALOGUE.get().asItem());
 			}).withTabsBefore(SUITS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> DECORATIVE_BLOCKS = REGISTRY.register("decorative_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.decorative_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PHONE.get())).displayItems((parameters, tabData) -> {
@@ -169,6 +170,12 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.INDUSTRIAL_FAN.get().asItem());
 				tabData.accept(FnafModModBlocks.PRIZE_HATCH.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_LIGHT.get().asItem());
+				tabData.accept(FnafModModBlocks.POLAR_BAR.get().asItem());
+				tabData.accept(FnafModModBlocks.CASH_REGISTER.get().asItem());
+				tabData.accept(FnafModModBlocks.MINI_PUPPET_DECOR.get().asItem());
+				tabData.accept(FnafModModBlocks.EMPLOYEE_BOARD.get().asItem());
+				tabData.accept(FnafModModBlocks.LETS_EAT_SIGN.get().asItem());
+				tabData.accept(FnafModModBlocks.WET_FLOOR_SIGN.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -754,6 +761,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.VENT_ENTRANCE.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRY.get().asItem());
 				tabData.accept(FnafModModBlocks.ARCADE_MACHINE_FREDDY_DELIVERY.get().asItem());
+				tabData.accept(FnafModModBlocks.DECOR_STAR.get().asItem());
+				tabData.accept(FnafModModBlocks.BACKSTAGE_ANIMATRONIC_PARTS.get().asItem());
+				tabData.accept(FnafModModBlocks.BREAKER.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {

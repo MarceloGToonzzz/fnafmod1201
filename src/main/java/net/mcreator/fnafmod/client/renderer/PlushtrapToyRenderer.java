@@ -1,34 +1,37 @@
 
 package net.mcreator.fnafmod.client.renderer;
 
-import net.minecraft.world.level.Level;
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.fnafmod.procedures.GetScalesProcedure;
+import net.mcreator.fnafmod.entity.model.PlushtrapToyModel;
 import net.mcreator.fnafmod.entity.PlushtrapToyEntity;
-import net.mcreator.fnafmod.client.model.ModelPlushtrapSit;
 
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class PlushtrapToyRenderer extends MobRenderer<PlushtrapToyEntity, ModelPlushtrapSit<PlushtrapToyEntity>> {
-	public PlushtrapToyRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelPlushtrapSit<PlushtrapToyEntity>(context.bakeLayer(ModelPlushtrapSit.LAYER_LOCATION)), 0.5f);
+public class PlushtrapToyRenderer extends GeoEntityRenderer<PlushtrapToyEntity> {
+	public PlushtrapToyRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new PlushtrapToyModel());
+		this.shadowRadius = 0.5f;
 	}
 
 	@Override
-	protected void scale(PlushtrapToyEntity entity, PoseStack poseStack, float f) {
-		Level world = entity.level();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		float scale = (float) GetScalesProcedure.execute(entity);
-		poseStack.scale(scale, scale, scale);
+	public RenderType getRenderType(PlushtrapToyEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(PlushtrapToyEntity entity) {
-		return new ResourceLocation("fnaf_mod:textures/entities/fixedplushtrap.png");
+	public void preRender(PoseStack poseStack, PlushtrapToyEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red, float green,
+			float blue, float alpha) {
+		float scale = 1f;
+		this.scaleHeight = scale;
+		this.scaleWidth = scale;
+		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

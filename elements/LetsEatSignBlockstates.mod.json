@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LetsEatSign",
+    "blockstateList": [
+      {
+        "texture": "lets_eat_sign",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "lets_eat_sign_angled:default",
+        "luminance": 13,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}
