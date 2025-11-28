@@ -112,6 +112,12 @@ import net.mcreator.fnafmod.block.StramerColourfulStarsBlock;
 import net.mcreator.fnafmod.block.Stool2Block;
 import net.mcreator.fnafmod.block.Stool1Block;
 import net.mcreator.fnafmod.block.StarsBlock;
+import net.mcreator.fnafmod.block.StanchionBlock;
+import net.mcreator.fnafmod.block.Stanchion6Block;
+import net.mcreator.fnafmod.block.Stanchion5Block;
+import net.mcreator.fnafmod.block.Stanchion4Block;
+import net.mcreator.fnafmod.block.Stanchion3Block;
+import net.mcreator.fnafmod.block.Stanchion2Block;
 import net.mcreator.fnafmod.block.StageWoodStairsBlock;
 import net.mcreator.fnafmod.block.StageWoodSlabBlock;
 import net.mcreator.fnafmod.block.StageWoodFenceGateBlock;
@@ -1260,6 +1266,12 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> TOKEN_CATALOGUE = REGISTRY.register("token_catalogue", () -> new TokenCatalogueBlock());
 	public static final RegistryObject<Block> BACKSTAGE_ANIMATRONIC_PARTS = REGISTRY.register("backstage_animatronic_parts", () -> new BackstageAnimatronicPartsBlock());
 	public static final RegistryObject<Block> BREAKER = REGISTRY.register("breaker", () -> new BreakerBlock());
+	public static final RegistryObject<Block> STANCHION = REGISTRY.register("stanchion", () -> new StanchionBlock());
+	public static final RegistryObject<Block> STANCHION_2 = REGISTRY.register("stanchion_2", () -> new Stanchion2Block());
+	public static final RegistryObject<Block> STANCHION_3 = REGISTRY.register("stanchion_3", () -> new Stanchion3Block());
+	public static final RegistryObject<Block> STANCHION_4 = REGISTRY.register("stanchion_4", () -> new Stanchion4Block());
+	public static final RegistryObject<Block> STANCHION_5 = REGISTRY.register("stanchion_5", () -> new Stanchion5Block());
+	public static final RegistryObject<Block> STANCHION_6 = REGISTRY.register("stanchion_6", () -> new Stanchion6Block());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

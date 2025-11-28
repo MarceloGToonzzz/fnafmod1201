@@ -1246,6 +1246,12 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BACKSTAGE_ANIMATRONIC_PARTS = block(FnafModModBlocks.BACKSTAGE_ANIMATRONIC_PARTS);
 	public static final RegistryObject<Item> BREAKER = block(FnafModModBlocks.BREAKER);
 	public static final RegistryObject<Item> PLUSHTRAP_TOY_SPAWN_EGG = REGISTRY.register("plushtrap_toy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.PLUSHTRAP_TOY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> STANCHION = block(FnafModModBlocks.STANCHION);
+	public static final RegistryObject<Item> STANCHION_2 = block(FnafModModBlocks.STANCHION_2);
+	public static final RegistryObject<Item> STANCHION_3 = block(FnafModModBlocks.STANCHION_3);
+	public static final RegistryObject<Item> STANCHION_4 = block(FnafModModBlocks.STANCHION_4);
+	public static final RegistryObject<Item> STANCHION_5 = block(FnafModModBlocks.STANCHION_5);
+	public static final RegistryObject<Item> STANCHION_6 = block(FnafModModBlocks.STANCHION_6);
 
 	// Start of user code block custom items
 	// End of user code block custom items
