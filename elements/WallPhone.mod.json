@@ -2,14 +2,14 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "stanchion",
+    "texture": "wall_phone",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "stanchions1:default",
+    "customModelName": "wall_phone:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -24,58 +24,40 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 5.0,
-        "my": 0.0,
-        "mz": 5.0,
-        "Mx": 11.0,
-        "My": 1.0,
-        "Mz": 11.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 16.0,
-        "mz": 7.0,
-        "Mx": 9.0,
-        "My": 18.0,
-        "Mz": 9.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
+        "mx": 2.5,
         "my": 1.0,
-        "mz": 7.0,
-        "Mx": 9.0,
+        "mz": 14.0,
+        "Mx": 13.5,
         "My": 15.0,
-        "Mz": 9.0,
+        "Mz": 16.0,
         "subtract": false
       },
       {
-        "mx": 7.0,
+        "mx": 9.5,
         "my": 15.0,
-        "mz": 8.0,
-        "Mx": 9.0,
-        "My": 16.0,
-        "Mz": 8.0,
+        "mz": 14.0,
+        "Mx": 12.5,
+        "My": 17.0,
+        "Mz": 16.0,
         "subtract": false
       },
       {
-        "mx": 8.0,
+        "mx": 3.5,
         "my": 15.0,
-        "mz": 7.0,
-        "Mx": 8.0,
-        "My": 16.0,
-        "Mz": 9.0,
+        "mz": 14.0,
+        "Mx": 6.5,
+        "My": 17.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Stanchion",
+    "name": "Wall Phone",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
-    "resistance": 10.0,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -83,7 +65,7 @@
         "value": "CUSTOM:DecorativeBlocks"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -120,7 +102,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "NETHERITE"
     },
     "breakSound": {
       "value": ""
@@ -157,12 +139,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "StanchionChanging"
-    },
-    "onNeighbourBlockChanges": {
-      "name": "StanchionChanging"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

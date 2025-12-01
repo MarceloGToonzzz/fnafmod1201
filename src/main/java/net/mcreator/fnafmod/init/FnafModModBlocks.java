@@ -37,6 +37,7 @@ import net.mcreator.fnafmod.block.WarningSignBlock;
 import net.mcreator.fnafmod.block.WallWiresBlock;
 import net.mcreator.fnafmod.block.WallTileBlock;
 import net.mcreator.fnafmod.block.WallPizzaBlock;
+import net.mcreator.fnafmod.block.WallPhoneBlock;
 import net.mcreator.fnafmod.block.VisitNebraskaPosterBlock;
 import net.mcreator.fnafmod.block.VentHatchBlock;
 import net.mcreator.fnafmod.block.VentEntryBlock;
@@ -153,6 +154,7 @@ import net.mcreator.fnafmod.block.RulesPosterBlock;
 import net.mcreator.fnafmod.block.RoundBushBlock;
 import net.mcreator.fnafmod.block.RoseCurtainBlock;
 import net.mcreator.fnafmod.block.RockCurtainBlock;
+import net.mcreator.fnafmod.block.RidingRocketBlock;
 import net.mcreator.fnafmod.block.RetroFreddySignOnBlock;
 import net.mcreator.fnafmod.block.RetroFreddySignBlock;
 import net.mcreator.fnafmod.block.RetroComputerBlock;
@@ -282,6 +284,7 @@ import net.mcreator.fnafmod.block.LetsEatSignBlock;
 import net.mcreator.fnafmod.block.LargeIndustrialDoorBlock;
 import net.mcreator.fnafmod.block.KitchenDoorBlock;
 import net.mcreator.fnafmod.block.IndustrialFanBlock;
+import net.mcreator.fnafmod.block.HeightChartBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileStairCrackedBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileStairBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileSlabCrackedBlock;
@@ -485,6 +488,7 @@ import net.mcreator.fnafmod.block.CenterBigDarkLightBlackWallTileBlock;
 import net.mcreator.fnafmod.block.CenterBigBlackRedWallTileBlock;
 import net.mcreator.fnafmod.block.CenterBigBlackPurpleWallTileBlock;
 import net.mcreator.fnafmod.block.CenterBigBlackBlackWallTileBlock;
+import net.mcreator.fnafmod.block.CelebrateFunBlock;
 import net.mcreator.fnafmod.block.CeilingLampBlock;
 import net.mcreator.fnafmod.block.CeilingBlockBlock;
 import net.mcreator.fnafmod.block.CaveGrassBlock;
@@ -1272,6 +1276,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> STANCHION_4 = REGISTRY.register("stanchion_4", () -> new Stanchion4Block());
 	public static final RegistryObject<Block> STANCHION_5 = REGISTRY.register("stanchion_5", () -> new Stanchion5Block());
 	public static final RegistryObject<Block> STANCHION_6 = REGISTRY.register("stanchion_6", () -> new Stanchion6Block());
+	public static final RegistryObject<Block> RIDING_ROCKET = REGISTRY.register("riding_rocket", () -> new RidingRocketBlock());
+	public static final RegistryObject<Block> HEIGHT_CHART = REGISTRY.register("height_chart", () -> new HeightChartBlock());
+	public static final RegistryObject<Block> WALL_PHONE = REGISTRY.register("wall_phone", () -> new WallPhoneBlock());
+	public static final RegistryObject<Block> CELEBRATE_FUN = REGISTRY.register("celebrate_fun", () -> new CelebrateFunBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

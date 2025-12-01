@@ -79,6 +79,7 @@ import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignOnTileEntity;
+import net.mcreator.fnafmod.block.entity.CelebrateFunTileEntity;
 import net.mcreator.fnafmod.block.entity.CeilingLampBlockEntity;
 import net.mcreator.fnafmod.block.entity.CarouselTileEntity;
 import net.mcreator.fnafmod.block.entity.BonnieHeadTileEntity;
@@ -246,6 +247,7 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<LargeIndustrialDoorTileEntity>> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door",
 			() -> BlockEntityType.Builder.of(LargeIndustrialDoorTileEntity::new, FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<IndustrialFanTileEntity>> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> BlockEntityType.Builder.of(IndustrialFanTileEntity::new, FnafModModBlocks.INDUSTRIAL_FAN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CelebrateFunTileEntity>> CELEBRATE_FUN = REGISTRY.register("celebrate_fun", () -> BlockEntityType.Builder.of(CelebrateFunTileEntity::new, FnafModModBlocks.CELEBRATE_FUN.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

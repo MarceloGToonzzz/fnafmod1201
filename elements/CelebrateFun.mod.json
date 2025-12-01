@@ -1,76 +1,39 @@
 {
   "_fv": 73,
-  "_type": "block",
+  "_type": "animatedblock",
   "definition": {
-    "texture": "stanchion",
+    "texture": "celebrate_fun",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "stanchions1:default",
+    "renderType": 0,
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "animateBlockItem": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "celebrate_fun",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 5.0,
+        "mx": -32.0,
         "my": 0.0,
-        "mz": 5.0,
-        "Mx": 11.0,
-        "My": 1.0,
-        "Mz": 11.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 16.0,
-        "mz": 7.0,
-        "Mx": 9.0,
-        "My": 18.0,
-        "Mz": 9.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 1.0,
-        "mz": 7.0,
-        "Mx": 9.0,
-        "My": 15.0,
-        "Mz": 9.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 15.0,
-        "mz": 8.0,
-        "Mx": 9.0,
-        "My": 16.0,
-        "Mz": 8.0,
-        "subtract": false
-      },
-      {
-        "mx": 8.0,
-        "my": 15.0,
-        "mz": 7.0,
-        "Mx": 8.0,
-        "My": 16.0,
-        "Mz": 9.0,
+        "mz": 15.0,
+        "Mx": 32.0,
+        "My": 17.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "customProperties": [],
-    "name": "Stanchion",
+    "name": "Celebrate Fun Stage Sign",
     "specialInformation": {
       "fixedValue": []
     },
@@ -83,19 +46,19 @@
         "value": "CUSTOM:DecorativeBlocks"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "NONE"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -116,11 +79,12 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
+    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "LANTERN"
     },
     "breakSound": {
       "value": ""
@@ -139,14 +103,15 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
-    "isBonemealable": false,
+    "breakHarvestLevel": 0,
     "hasInventory": false,
+    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
+    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -157,23 +122,19 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "StanchionChanging"
+    "onRedstoneOn": {
+      "name": "RetroFreddySignRedstoneOn"
     },
-    "onNeighbourBlockChanges": {
-      "name": "StanchionChanging"
-    },
-    "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 64,
+    "normal": "celebrate_fun.geo.json",
+    "displaySettings": "celebrate_fun.json",
+    "vanillaToolTier": "NONE",
+    "blockstateList": []
   }
 }

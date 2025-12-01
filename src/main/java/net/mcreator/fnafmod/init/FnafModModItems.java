@@ -231,6 +231,7 @@ import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignDisplayItem;
+import net.mcreator.fnafmod.block.display.CelebrateFunDisplayItem;
 import net.mcreator.fnafmod.block.display.CarouselDisplayItem;
 import net.mcreator.fnafmod.block.display.BonnieHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.BigWideRedWindowedDoorDisplayItem;
@@ -1252,6 +1253,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> STANCHION_4 = block(FnafModModBlocks.STANCHION_4);
 	public static final RegistryObject<Item> STANCHION_5 = block(FnafModModBlocks.STANCHION_5);
 	public static final RegistryObject<Item> STANCHION_6 = block(FnafModModBlocks.STANCHION_6);
+	public static final RegistryObject<Item> RIDING_ROCKET = block(FnafModModBlocks.RIDING_ROCKET);
+	public static final RegistryObject<Item> HEIGHT_CHART = block(FnafModModBlocks.HEIGHT_CHART);
+	public static final RegistryObject<Item> WALL_PHONE = block(FnafModModBlocks.WALL_PHONE);
+	public static final RegistryObject<Item> CELEBRATE_FUN = REGISTRY.register(FnafModModBlocks.CELEBRATE_FUN.getId().getPath(), () -> new CelebrateFunDisplayItem(FnafModModBlocks.CELEBRATE_FUN.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
