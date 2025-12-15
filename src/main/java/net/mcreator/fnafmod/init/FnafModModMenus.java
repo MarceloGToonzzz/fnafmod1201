@@ -19,6 +19,7 @@ import net.mcreator.fnafmod.world.inventory.PartySystemMenu;
 import net.mcreator.fnafmod.world.inventory.LolbitShopMenu;
 import net.mcreator.fnafmod.world.inventory.LockerMenu;
 import net.mcreator.fnafmod.world.inventory.JumpscareMenu;
+import net.mcreator.fnafmod.world.inventory.GeneratorBreakerSwitchesMenu;
 import net.mcreator.fnafmod.world.inventory.CameraGUIMenu;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -33,4 +34,5 @@ public class FnafModModMenus {
 	public static final RegistryObject<MenuType<JumpscareMenu>> JUMPSCARE = REGISTRY.register("jumpscare", () -> IForgeMenuType.create(JumpscareMenu::new));
 	public static final RegistryObject<MenuType<PartySystemMenu>> PARTY_SYSTEM = REGISTRY.register("party_system", () -> IForgeMenuType.create(PartySystemMenu::new));
 	public static final RegistryObject<MenuType<LolbitShopMenu>> LOLBIT_SHOP = REGISTRY.register("lolbit_shop", () -> IForgeMenuType.create(LolbitShopMenu::new));
+	public static final RegistryObject<MenuType<GeneratorBreakerSwitchesMenu>> GENERATOR_BREAKER_SWITCHES = REGISTRY.register("generator_breaker_switches", () -> IForgeMenuType.create(GeneratorBreakerSwitchesMenu::new));
 }

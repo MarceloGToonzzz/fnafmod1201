@@ -829,6 +829,9 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.CAVE_GRASS.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(FnafModModBlocks.STANCHION.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_LEFT_BREAKER.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_MIDDLE_POWER.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get().asItem());
 		}
 	}
 }

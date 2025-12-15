@@ -50,6 +50,9 @@ import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
 import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
+import net.mcreator.fnafmod.block.entity.GeneratorRightCreativeTileEntity;
+import net.mcreator.fnafmod.block.entity.GeneratorMiddlePowerTileEntity;
+import net.mcreator.fnafmod.block.entity.GeneratorLeftBreakerTileEntity;
 import net.mcreator.fnafmod.block.entity.GarageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
@@ -246,6 +249,12 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<LargeIndustrialDoorTileEntity>> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door",
 			() -> BlockEntityType.Builder.of(LargeIndustrialDoorTileEntity::new, FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<IndustrialFanTileEntity>> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> BlockEntityType.Builder.of(IndustrialFanTileEntity::new, FnafModModBlocks.INDUSTRIAL_FAN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GeneratorLeftBreakerTileEntity>> GENERATOR_LEFT_BREAKER = REGISTRY.register("generator_left_breaker",
+			() -> BlockEntityType.Builder.of(GeneratorLeftBreakerTileEntity::new, FnafModModBlocks.GENERATOR_LEFT_BREAKER.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GeneratorMiddlePowerTileEntity>> GENERATOR_MIDDLE_POWER = REGISTRY.register("generator_middle_power",
+			() -> BlockEntityType.Builder.of(GeneratorMiddlePowerTileEntity::new, FnafModModBlocks.GENERATOR_MIDDLE_POWER.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GeneratorRightCreativeTileEntity>> GENERATOR_RIGHT_CREATIVE = REGISTRY.register("generator_right_creative",
+			() -> BlockEntityType.Builder.of(GeneratorRightCreativeTileEntity::new, FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

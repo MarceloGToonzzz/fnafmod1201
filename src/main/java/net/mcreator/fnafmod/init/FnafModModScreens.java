@@ -19,6 +19,7 @@ import net.mcreator.fnafmod.client.gui.PartySystemScreen;
 import net.mcreator.fnafmod.client.gui.LolbitShopScreen;
 import net.mcreator.fnafmod.client.gui.LockerScreen;
 import net.mcreator.fnafmod.client.gui.JumpscareScreen;
+import net.mcreator.fnafmod.client.gui.GeneratorBreakerSwitchesScreen;
 import net.mcreator.fnafmod.client.gui.CameraGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -35,6 +36,7 @@ public class FnafModModScreens {
 			MenuScreens.register(FnafModModMenus.JUMPSCARE.get(), JumpscareScreen::new);
 			MenuScreens.register(FnafModModMenus.PARTY_SYSTEM.get(), PartySystemScreen::new);
 			MenuScreens.register(FnafModModMenus.LOLBIT_SHOP.get(), LolbitShopScreen::new);
+			MenuScreens.register(FnafModModMenus.GENERATOR_BREAKER_SWITCHES.get(), GeneratorBreakerSwitchesScreen::new);
 		});
 	}
 }

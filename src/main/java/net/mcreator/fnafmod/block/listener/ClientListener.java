@@ -37,6 +37,9 @@ import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LargeIndustrialDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.IndustrialFanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.GeneratorRightCreativeTileRenderer;
+import net.mcreator.fnafmod.block.renderer.GeneratorMiddlePowerTileRenderer;
+import net.mcreator.fnafmod.block.renderer.GeneratorLeftBreakerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GarageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddysCupcakeBonanzaTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
@@ -162,5 +165,8 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.TORTURE_CHAIR.get(), context -> new TortureChairTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LARGE_INDUSTRIAL_DOOR.get(), context -> new LargeIndustrialDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.INDUSTRIAL_FAN.get(), context -> new IndustrialFanTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_LEFT_BREAKER.get(), context -> new GeneratorLeftBreakerTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_MIDDLE_POWER.get(), context -> new GeneratorMiddlePowerTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_RIGHT_CREATIVE.get(), context -> new GeneratorRightCreativeTileRenderer());
 	}
 }

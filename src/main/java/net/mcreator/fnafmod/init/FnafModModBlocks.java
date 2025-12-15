@@ -296,6 +296,9 @@ import net.mcreator.fnafmod.block.GoldTokenBlockBlock;
 import net.mcreator.fnafmod.block.GlitchedLogBlock;
 import net.mcreator.fnafmod.block.GlitchedLeavesBlock;
 import net.mcreator.fnafmod.block.GlassDoorBlock;
+import net.mcreator.fnafmod.block.GeneratorRightCreativeBlock;
+import net.mcreator.fnafmod.block.GeneratorMiddlePowerBlock;
+import net.mcreator.fnafmod.block.GeneratorLeftBreakerBlock;
 import net.mcreator.fnafmod.block.GarageDoorBlock;
 import net.mcreator.fnafmod.block.FreddysCupcakeBonanzaBlock;
 import net.mcreator.fnafmod.block.FreddySignOnBlock;
@@ -1272,6 +1275,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> STANCHION_4 = REGISTRY.register("stanchion_4", () -> new Stanchion4Block());
 	public static final RegistryObject<Block> STANCHION_5 = REGISTRY.register("stanchion_5", () -> new Stanchion5Block());
 	public static final RegistryObject<Block> STANCHION_6 = REGISTRY.register("stanchion_6", () -> new Stanchion6Block());
+	public static final RegistryObject<Block> GENERATOR_LEFT_BREAKER = REGISTRY.register("generator_left_breaker", () -> new GeneratorLeftBreakerBlock());
+	public static final RegistryObject<Block> GENERATOR_MIDDLE_POWER = REGISTRY.register("generator_middle_power", () -> new GeneratorMiddlePowerBlock());
+	public static final RegistryObject<Block> GENERATOR_RIGHT_CREATIVE = REGISTRY.register("generator_right_creative", () -> new GeneratorRightCreativeBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
