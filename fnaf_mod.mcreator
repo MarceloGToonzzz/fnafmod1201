@@ -3132,8 +3132,8 @@
       "registry_name": "flash_light_on",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/item/FlashLightOnItem.java",
-          "src/main/resources/assets/fnaf_mod/models/item/flash_light_on.json"
+          "src/main/resources/assets/fnaf_mod/models/item/flash_light_on.json",
+          "src/main/java/net/mcreator/fnafmod/item/FlashLightOnItem.java"
         ]
       },
       "path": "~/Items"
@@ -12979,12 +12979,12 @@
       "registry_name": "flash_light_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/FlashLightLightBlockEntity.java",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/flash_light_light.json",
           "src/main/resources/assets/fnaf_mod/models/item/flash_light_light.json",
-          "src/main/java/net/mcreator/fnafmod/block/FlashLightLightBlock.java",
           "src/main/resources/assets/fnaf_mod/blockstates/flash_light_light.json",
-          "src/main/resources/assets/fnaf_mod/models/block/flash_light_light.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/flash_light_light.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/FlashLightLightBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/flash_light_light.json",
+          "src/main/java/net/mcreator/fnafmod/block/FlashLightLightBlock.java"
         ]
       },
       "path": "~/Flashlight Code"
@@ -31650,16 +31650,16 @@
       "registry_name": "generator_left_breaker",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/custom/generator_left_breaker_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/item/generator_left_breaker.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorLeftBreakerDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/GeneratorLeftBreakerBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/generator_left_breaker.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorLeftBreakerTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorLeftBreakerTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/display/GeneratorLeftBreakerDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerDisplayModel.java"
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorLeftBreakerTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/generator_left_breaker_particle.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/generator_left_breaker.json",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_left_breaker.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/GeneratorLeftBreakerBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorLeftBreakerDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -32941,6 +32941,66 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorLeftBreakerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_left_breaker_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorLeftBreakerOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorCreativeGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_creative_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorCreativeGUIMenu.java",
+          "src/main/java/net/mcreator/fnafmod/client/gui/GeneratorCreativeGUIScreen.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
+    },
+    {
+      "name": "GeneratorBreakerUnpaneled",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_breaker_unpaneled",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/network/GeneratorBreakerUnpaneledButtonMessage.java",
+          "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorBreakerUnpaneledMenu.java",
+          "src/main/java/net/mcreator/fnafmod/client/gui/GeneratorBreakerUnpaneledScreen.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
     }
   ],
   "variable_elements": [

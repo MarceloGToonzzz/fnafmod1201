@@ -1,0 +1,624 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "generatorbreakerswitches.png",
+          "use1Xscale": false,
+          "x": 141,
+          "y": 17,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck1"
+          },
+          "x": 165,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange1"
+          },
+          "x": 165,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 131,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 149,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 165,
+          "y": 167,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 131,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 149,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchoff.png",
+          "use1Xscale": false,
+          "x": 237,
+          "y": 167,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck2"
+          },
+          "x": 237,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck4"
+          },
+          "x": 237,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck3"
+          },
+          "x": 165,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck5"
+          },
+          "x": 165,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck6"
+          },
+          "x": 237,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck7"
+          },
+          "x": 165,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck9"
+          },
+          "x": 165,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck11"
+          },
+          "x": 165,
+          "y": 131,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck13"
+          },
+          "x": 165,
+          "y": 149,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck15"
+          },
+          "x": 165,
+          "y": 167,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck8"
+          },
+          "x": 237,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck10"
+          },
+          "x": 237,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck12"
+          },
+          "x": 237,
+          "y": 131,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck14"
+          },
+          "x": 237,
+          "y": 149,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerswitchon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheck16"
+          },
+          "x": 237,
+          "y": 167,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton1",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange2"
+          },
+          "x": 237,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton2",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange3"
+          },
+          "x": 165,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton3",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange4"
+          },
+          "x": 237,
+          "y": 59,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton4",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange5"
+          },
+          "x": 165,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton5",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange6"
+          },
+          "x": 237,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton6",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange8"
+          },
+          "x": 237,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton7",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange7"
+          },
+          "x": 165,
+          "y": 95,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton8",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange9"
+          },
+          "x": 165,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton9",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange10"
+          },
+          "x": 237,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton10",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange11"
+          },
+          "x": 165,
+          "y": 131,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton11",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange12"
+          },
+          "x": 237,
+          "y": 131,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton12",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange13"
+          },
+          "x": 165,
+          "y": 149,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton13",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange14"
+          },
+          "x": 237,
+          "y": 149,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton14",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange15"
+          },
+          "x": 165,
+          "y": 167,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_generatorswitchbutton15",
+          "image": "generatorswitchbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "BreakerChange16"
+          },
+          "x": 237,
+          "y": 167,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

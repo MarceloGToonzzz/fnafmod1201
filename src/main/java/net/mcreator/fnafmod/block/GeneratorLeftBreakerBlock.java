@@ -29,9 +29,12 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.procedures.GeneratorLeftBreakerOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.GeneratorBreakerPanelUseProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 import net.mcreator.fnafmod.block.entity.GeneratorLeftBreakerTileEntity;
@@ -113,6 +116,23 @@ public class GeneratorLeftBreakerBlock extends BaseEntityBlock implements Entity
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+
+		GeneratorLeftBreakerOnTickUpdateProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

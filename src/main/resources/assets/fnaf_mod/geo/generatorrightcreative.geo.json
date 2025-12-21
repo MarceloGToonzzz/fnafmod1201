@@ -12,7 +12,7 @@
 			},
 			"bones": [
 				{
-					"name": "IndustrialGenerator",
+					"name": "Industrial Generator",
 					"pivot": [-17, -16, 5.5],
 					"cubes": [
 						{
@@ -42,8 +42,8 @@
 					]
 				},
 				{
-					"name": "CreativeBox",
-					"parent": "IndustrialGenerator",
+					"name": "Creative Box",
+					"parent": "Industrial Generator",
 					"pivot": [-3.5, 5.5, 0],
 					"cubes": [
 						{
@@ -114,7 +114,7 @@
 				},
 				{
 					"name": "CreativePanel",
-					"parent": "CreativeBox",
+					"parent": "Creative Box",
 					"pivot": [4, 5.5, -8.025],
 					"cubes": [
 						{
@@ -145,7 +145,7 @@
 				},
 				{
 					"name": "Shelf1",
-					"parent": "CreativeBox",
+					"parent": "Creative Box",
 					"pivot": [-3, 7.5, 0],
 					"cubes": [
 						{
@@ -288,8 +288,8 @@
 					]
 				},
 				{
-					"name": "IndustrialLever",
-					"parent": "CreativeBox",
+					"name": "Industrial Lever",
+					"parent": "Creative Box",
 					"pivot": [1.5, 3.5, -0.525],
 					"cubes": [
 						{
@@ -308,7 +308,7 @@
 				},
 				{
 					"name": "Lever",
-					"parent": "IndustrialLever",
+					"parent": "Industrial Lever",
 					"pivot": [1.975, 2.975, -0.075],
 					"rotation": [-50, 0, 0],
 					"cubes": [
@@ -356,7 +356,7 @@
 				},
 				{
 					"name": "Shelf2",
-					"parent": "CreativeBox",
+					"parent": "Creative Box",
 					"pivot": [-3, -3.5, 0],
 					"cubes": [
 						{
@@ -574,7 +574,7 @@
 				},
 				{
 					"name": "CreativeCube",
-					"parent": "CreativeBox",
+					"parent": "Creative Box",
 					"pivot": [-3.9142, 3.5, 4]
 				},
 				{
@@ -597,8 +597,8 @@
 					]
 				},
 				{
-					"name": "MainCurrent",
-					"parent": "CreativeBox",
+					"name": "Main Current",
+					"parent": "Creative Box",
 					"pivot": [-4, 3.5, 3.95],
 					"cubes": [
 						{
@@ -647,7 +647,7 @@
 				},
 				{
 					"name": "CurrentL",
-					"parent": "CreativeBox",
+					"parent": "Creative Box",
 					"pivot": [1, 16, 4],
 					"cubes": [
 						{
@@ -681,7 +681,7 @@
 				},
 				{
 					"name": "CurrentR",
-					"parent": "CreativeBox",
+					"parent": "Creative Box",
 					"pivot": [-9, -5, 4],
 					"cubes": [
 						{
@@ -715,7 +715,7 @@
 				},
 				{
 					"name": "VentsT",
-					"parent": "IndustrialGenerator",
+					"parent": "Industrial Generator",
 					"pivot": [-23.5, 26, -8],
 					"cubes": [
 						{
@@ -734,8 +734,62 @@
 				},
 				{
 					"name": "VentL",
-					"parent": "IndustrialGenerator",
-					"pivot": [-17, -15, 0]
+					"parent": "Industrial Generator",
+					"pivot": [-17, -15, 0],
+					"cubes": [
+						{
+							"origin": [7, 20, -5],
+							"size": [5, 12, 21],
+							"uv": {
+								"north": {"uv": [146.9, 180.1], "uv_size": [-4.8, 11.8]},
+								"east": {"uv": [163.1, 56.1], "uv_size": [20.8, 11.8]},
+								"south": {"uv": [142.1, 180.1], "uv_size": [4.8, 11.8]},
+								"west": {"uv": [163.1, 69.1], "uv_size": [20.8, 11.8]},
+								"up": {"uv": [39.1, 142.1], "uv_size": [4.8, 20.8]},
+								"down": {"uv": [157.1, 48.9], "uv_size": [4.8, -20.8]}
+							}
+						},
+						{
+							"origin": [7, 19.999, -5],
+							"size": [13, 0, 21],
+							"pivot": [7, 20, 5],
+							"rotation": [0, 0, -67.5],
+							"uv": {
+								"north": {"uv": [204.1, 176.1], "uv_size": [6.8, 0]},
+								"east": {"uv": [204.1, 177.1], "uv_size": [20.8, 0]},
+								"south": {"uv": [204.1, 182.1], "uv_size": [6.8, 0]},
+								"west": {"uv": [204.1, 183.1], "uv_size": [20.8, 0]},
+								"up": {"uv": [145.1, 0.1], "uv_size": [6.8, 20.8]},
+								"down": {"uv": [0.1, 227.9], "uv_size": [12.8, -20.8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "Redstone Port",
+					"parent": "Industrial Generator",
+					"pivot": [-17, -7, 19]
+				},
+				{
+					"name": "RSpanel",
+					"parent": "Redstone Port",
+					"pivot": [-17, -5, 19]
+				},
+				{
+					"name": "RedstoneCable",
+					"parent": "Redstone Port",
+					"pivot": [-17, -7, 13],
+					"rotation": [1.25, 0, 0]
+				},
+				{
+					"name": "Deactivated",
+					"parent": "RedstoneCable",
+					"pivot": [-17, -11.98469, 15.3244]
+				},
+				{
+					"name": "Activated",
+					"parent": "RedstoneCable",
+					"pivot": [-17, -11.98469, 15.3244]
 				}
 			]
 		}

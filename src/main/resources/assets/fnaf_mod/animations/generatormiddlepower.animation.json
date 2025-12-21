@@ -29,7 +29,7 @@
 						"vector": [0, -130, 0]
 					}
 				},
-				"Hand Crank": {
+				"HandCrank": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
