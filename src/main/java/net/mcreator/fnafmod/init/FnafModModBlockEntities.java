@@ -83,6 +83,7 @@ import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignOnTileEntity;
+import net.mcreator.fnafmod.block.entity.CelebrateFunTileEntity;
 import net.mcreator.fnafmod.block.entity.CeilingLampBlockEntity;
 import net.mcreator.fnafmod.block.entity.CarouselTileEntity;
 import net.mcreator.fnafmod.block.entity.BonnieHeadTileEntity;
@@ -257,6 +258,7 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<GeneratorRightCreativeTileEntity>> GENERATOR_RIGHT_CREATIVE = REGISTRY.register("generator_right_creative",
 			() -> BlockEntityType.Builder.of(GeneratorRightCreativeTileEntity::new, FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> GENERATOR_OUTLET = register("generator_outlet", FnafModModBlocks.GENERATOR_OUTLET, GeneratorOutletBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<CelebrateFunTileEntity>> CELEBRATE_FUN = REGISTRY.register("celebrate_fun", () -> BlockEntityType.Builder.of(CelebrateFunTileEntity::new, FnafModModBlocks.CELEBRATE_FUN.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

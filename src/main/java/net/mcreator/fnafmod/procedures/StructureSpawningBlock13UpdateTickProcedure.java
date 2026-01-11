@@ -16,7 +16,7 @@ public class StructureSpawningBlock13UpdateTickProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "aftonhouse"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 2, z), BlockPos.containing(x, y - 2, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 1, z), BlockPos.containing(x, y - 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
 		}
 	}

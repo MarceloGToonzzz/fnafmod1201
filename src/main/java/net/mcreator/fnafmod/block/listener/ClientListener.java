@@ -63,6 +63,7 @@ import net.mcreator.fnafmod.block.renderer.ChicaHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ChicaHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CenteredFreddySignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CenteredFreddySignOnTileRenderer;
+import net.mcreator.fnafmod.block.renderer.CelebrateFunTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CarouselTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BonnieHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigWideRedWindowedDoorTileRenderer;
@@ -168,5 +169,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_LEFT_BREAKER.get(), context -> new GeneratorLeftBreakerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_MIDDLE_POWER.get(), context -> new GeneratorMiddlePowerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_RIGHT_CREATIVE.get(), context -> new GeneratorRightCreativeTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CELEBRATE_FUN.get(), context -> new CelebrateFunTileRenderer());
 	}
 }

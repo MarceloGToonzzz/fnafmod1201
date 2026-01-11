@@ -143,7 +143,7 @@ public class CelebrateFunTileEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Celebrate Fun Stage Sign");
+		return Component.literal("Celebrate Fun");
 	}
 
 	@Override

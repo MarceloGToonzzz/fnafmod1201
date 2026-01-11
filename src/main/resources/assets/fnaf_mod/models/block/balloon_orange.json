@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/balloon",
+  "textures": {
+    "all": "fnaf_mod:block/orange_balloon",
+    "particle": "fnaf_mod:block/orange_balloon",
+    "balloon": "fnaf_mod:block/orange_balloon"
+  },
+  "render_type": "cutout"
+}

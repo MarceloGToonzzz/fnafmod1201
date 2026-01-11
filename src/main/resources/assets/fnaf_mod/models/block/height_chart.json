@@ -5,5 +5,5 @@
     "particle": "fnaf_mod:block/height_chart",
     "0": "fnaf_mod:block/height_chart"
   },
-  "render_type": "solid"
+  "render_type": "translucent"
 }

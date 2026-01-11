@@ -15,25 +15,25 @@
     "displayFluidOverlay": false,
     "animateBlockItem": false,
     "itemTexture": "",
-    "particleTexture": "celebrate_fun",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -32.0,
+        "mx": -16.0,
         "my": 0.0,
-        "mz": 15.0,
-        "Mx": 32.0,
+        "mz": 0.0,
+        "Mx": 48.0,
         "My": 17.0,
-        "Mz": 16.0,
+        "Mz": 1.0,
         "subtract": false
       }
     ],
-    "name": "Celebrate Fun Stage Sign",
+    "name": "Celebrate Fun",
     "specialInformation": {
       "fixedValue": []
     },
@@ -46,19 +46,19 @@
         "value": "CUSTOM:DecorativeBlocks"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": true,
+    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -84,7 +84,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "LANTERN"
+      "value": "FLOWERING_AZALEA"
     },
     "breakSound": {
       "value": ""
@@ -122,11 +122,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRedstoneOn": {
-      "name": "RetroFreddySignRedstoneOn"
-    },
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,

@@ -61,12 +61,12 @@
       }
     ],
     "customProperties": [],
-    "name": "Riding Rocket Ship",
+    "name": "Riding Rocket",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.6,
-    "resistance": 0.6,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -111,7 +111,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "ANVIL"
     },
     "breakSound": {
       "value": ""
@@ -148,6 +148,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ChairRightClick"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

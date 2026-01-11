@@ -5029,10 +5029,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block.json",
-          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block.json",
-          "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlockBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block.json",
           "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block.json"
+          "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlockBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block.json"
         ]
       },
       "path": "~/Structure Spawners"
@@ -5093,11 +5093,11 @@
       "registry_name": "structure_spawning_block_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_3.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block_3.json",
-          "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block_3.json",
           "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block_3.json",
-          "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlock3Block.java"
+          "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlock3Block.java",
+          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block_3.json"
         ]
       },
       "path": "~/Structure Spawners"
@@ -5110,11 +5110,11 @@
       "registry_name": "structure_spawning_block_4",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlock4Block.java",
+          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_4.json",
           "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block_4.json",
-          "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block_4.json",
+          "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlock4Block.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block_4.json",
-          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_4.json"
+          "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block_4.json"
         ]
       },
       "path": "~/Structure Spawners"
@@ -6075,11 +6075,11 @@
       "registry_name": "balloon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/balloon.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/balloon.json",
           "src/main/resources/assets/fnaf_mod/models/block/balloon.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon.json",
+          "src/main/resources/assets/fnaf_mod/models/item/balloon.json",
           "src/main/java/net/mcreator/fnafmod/block/BalloonBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/balloon.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -9005,10 +9005,10 @@
       "registry_name": "balloon_blue",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/BalloonBlueBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/balloon_blue.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon_blue.json",
           "src/main/resources/assets/fnaf_mod/models/item/balloon_blue.json",
+          "src/main/java/net/mcreator/fnafmod/block/BalloonBlueBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/balloon_blue.json",
           "src/main/resources/assets/fnaf_mod/models/block/balloon_blue.json"
         ]
       },
@@ -9022,11 +9022,11 @@
       "registry_name": "balloon_yellow",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/BalloonYellowBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/balloon_yellow.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon_yellow.json",
           "src/main/resources/assets/fnaf_mod/models/item/balloon_yellow.json",
+          "src/main/java/net/mcreator/fnafmod/block/BalloonYellowBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/balloon_yellow.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon_yellow.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/balloon_yellow.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -9039,10 +9039,10 @@
       "registry_name": "balloon_green",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/balloon_green.json",
+          "src/main/java/net/mcreator/fnafmod/block/BalloonGreenBlock.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon_green.json",
           "src/main/resources/assets/fnaf_mod/blockstates/balloon_green.json",
-          "src/main/java/net/mcreator/fnafmod/block/BalloonGreenBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/balloon_green.json",
           "src/main/resources/assets/fnaf_mod/models/item/balloon_green.json"
         ]
       },
@@ -11356,11 +11356,11 @@
       "registry_name": "structure_spawning_block_7",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block_7.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block_7.json",
           "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block_7.json",
           "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlock7Block.java",
-          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_7.json"
+          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_7.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block_7.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block_7.json"
         ]
       },
       "path": "~/Structure Spawners"
@@ -15510,11 +15510,11 @@
       "registry_name": "balloon_purple",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/balloon_purple.json",
+          "src/main/java/net/mcreator/fnafmod/block/BalloonPurpleBlock.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon_purple.json",
           "src/main/resources/assets/fnaf_mod/models/item/balloon_purple.json",
-          "src/main/resources/assets/fnaf_mod/models/block/balloon_purple.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/balloon_purple.json",
-          "src/main/java/net/mcreator/fnafmod/block/BalloonPurpleBlock.java"
+          "src/main/resources/assets/fnaf_mod/blockstates/balloon_purple.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -17632,10 +17632,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/block/StructureSpawningBlock13Block.java",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block_13.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block_13.json",
           "src/main/resources/assets/fnaf_mod/models/block/structure_spawning_block_13.json",
-          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_13.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/structure_spawning_block_13.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/structure_spawning_block_13.json",
+          "src/main/resources/assets/fnaf_mod/models/item/structure_spawning_block_13.json"
         ]
       },
       "path": "~/Structure Spawners"
@@ -26911,16 +26911,16 @@
       "registry_name": "clownful_doll",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/clownful_doll.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/clownful_doll_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ClownfulDollTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/clownful_doll.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ClownfulDollBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/model/ClownfulDollDisplayModel.java",
           "src/main/java/net/mcreator/fnafmod/block/ClownfulDollBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/clownful_doll.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ClownfulDollTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/clownful_doll.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/ClownfulDollTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/ClownfulDollDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/ClownfulDollDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/ClownfulDollBlockModel.java"
+          "src/main/java/net/mcreator/fnafmod/block/display/ClownfulDollDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/clownful_doll_particle.json"
         ]
       },
       "path": "~/Blocks"
@@ -31651,15 +31651,15 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorLeftBreakerTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorLeftBreakerDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorLeftBreakerTileEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/generator_left_breaker_particle.json",
           "src/main/resources/assets/fnaf_mod/blockstates/generator_left_breaker.json",
-          "src/main/resources/assets/fnaf_mod/models/item/generator_left_breaker.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorLeftBreakerDisplayItemRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/GeneratorLeftBreakerBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorLeftBreakerDisplayItemRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorLeftBreakerTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/generator_left_breaker_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorLeftBreakerDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorLeftBreakerBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_left_breaker.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -31672,16 +31672,16 @@
       "registry_name": "generator_middle_power",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorMiddlePowerDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_middle_power.json",
+          "src/main/java/net/mcreator/fnafmod/block/GeneratorMiddlePowerBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorMiddlePowerTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/generator_middle_power.json",
           "src/main/resources/assets/fnaf_mod/models/custom/generator_middle_power_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/item/generator_middle_power.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/GeneratorMiddlePowerBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorMiddlePowerTileEntity.java"
+          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorMiddlePowerDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -31694,16 +31694,16 @@
       "registry_name": "generator_right_creative",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/generator_right_creative.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorRightCreativeTileEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorRightCreativeDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/generator_right_creative.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorRightCreativeTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorRightCreativeDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/generator_right_creative.json",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_right_creative.json",
+          "src/main/java/net/mcreator/fnafmod/block/GeneratorRightCreativeBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorRightCreativeTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/custom/generator_right_creative_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/GeneratorRightCreativeBlock.java"
+          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorRightCreativeDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorRightCreativeTileRenderer.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -33303,6 +33303,156 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
+    },
+    {
+      "name": "CelebrateFun",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "celebrate_fun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/entity/CelebrateFunTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/celebrate_fun.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/celebrate_fun.json",
+          "src/main/java/net/mcreator/fnafmod/block/CelebrateFunBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CelebrateFunDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/CelebrateFunBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/CelebrateFunDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/CelebrateFunTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/CelebrateFunDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/celebrate_fun_particle.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "WallPhone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wall_phone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/wall_phone.json",
+          "src/main/resources/assets/fnaf_mod/models/block/wall_phone.json",
+          "src/main/resources/assets/fnaf_mod/models/item/wall_phone.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/wall_phone.json",
+          "src/main/java/net/mcreator/fnafmod/block/WallPhoneBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "RidingRocket",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "riding_rocket",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/riding_rocket.json",
+          "src/main/resources/assets/fnaf_mod/models/item/riding_rocket.json",
+          "src/main/resources/assets/fnaf_mod/models/block/riding_rocket.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/riding_rocket.json",
+          "src/main/java/net/mcreator/fnafmod/block/RidingRocketBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "HeightChart",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "height_chart",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/height_chart.json",
+          "src/main/resources/assets/fnaf_mod/models/block/height_chart.json",
+          "src/main/java/net/mcreator/fnafmod/block/HeightChartBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/height_chart.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/height_chart.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "GeneratorPlacedBy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_placed_by",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorPlacedByProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "GeneratorSpawnBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_spawn_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/generator_spawn_block.json",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_spawn_block.json",
+          "src/main/java/net/mcreator/fnafmod/block/GeneratorSpawnBlockBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/generator_spawn_block.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/generator_spawn_block.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "BalloonOrange",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balloon_orange",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/balloon_orange.json",
+          "src/main/resources/assets/fnaf_mod/models/item/balloon_orange.json",
+          "src/main/java/net/mcreator/fnafmod/block/BalloonOrangeBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/balloon_orange.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/balloon_orange.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -34970,7 +35120,8 @@
       "BuffetBanner2",
       "BuffetBanner3",
       "BuffetBanner4",
-      "TokenCatalogue"
+      "TokenCatalogue",
+      "HeightChart"
     ],
     "CUSTOM:DecorativeBlocks": [
       "Speaker",
@@ -35035,7 +35186,10 @@
       "MiniPuppetDecor",
       "EmployeeBoard",
       "LetsEatSign",
-      "WetFloorSign"
+      "WetFloorSign",
+      "CelebrateFun",
+      "WallPhone",
+      "RidingRocket"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -35620,7 +35774,9 @@
       "ArcadeMachineFreddyDelivery",
       "DecorStar",
       "BackstageAnimatronicParts",
-      "Breaker"
+      "Breaker",
+      "GeneratorSpawnBlock",
+      "BalloonOrange"
     ]
   },
   "language_map": {
@@ -35641,8 +35797,8 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "block.fnaf_mod.movie_wall": "Movie Wall",
+      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
@@ -35709,6 +35865,7 @@
       "entity.fnaf_mod.puppet": "Puppet",
       "effect.fnaf_mod.bleeding": "Bleeding",
       "entity.fnaf_mod.shadow_freddy_standing": "Shadow Freddy",
+      "block.fnaf_mod.riding_rocket": "Riding Rocket",
       "entity.fnaf_mod.bonnie_cut_out": "Bonnie Cutout",
       "block.fnaf_mod.alternate_buffet_wall": "Alternate Buffet Wall",
       "block.fnaf_mod.white_purple_wall_tile": "White Purple Wall Tiles",
@@ -35935,6 +36092,7 @@
       "item.fnaf_mod.fredbears_foxy_spawn_egg": "Fredbear\u0027s Family Diner Foxy Spawn Egg",
       "item.fnaf_mod.endo_02_spawn_item": "Endo-02",
       "item.fnaf_mod.phantom_mangle_spawn_egg": "Phantom Mangle Spawn Egg",
+      "block.fnaf_mod.height_chart": "Height Chart",
       "item.fnaf_mod.foxy": "Drone Foxy",
       "item.fnaf_mod.jack_o_bonnie_spawn_item": "Jack-o-Bonnie",
       "item.fnaf_mod.toy_chica_spawn_item": "Toy Chica",
@@ -36448,6 +36606,7 @@
       "item.fnaf_mod.unwithered_freddy_spawn_item": "Unwithered Freddy",
       "entity.fnaf_mod.withered_freddy": "Withered Freddy",
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
+      "block.fnaf_mod.balloon_orange": "Orange Balloon",
       "block.fnaf_mod.closet_right_top": "Closet Door",
       "block.fnaf_mod.big_white_checkered_wall": "Big White Checkered Wall",
       "block.fnaf_mod.beph_doll": "Beph Doll",
@@ -36610,6 +36769,7 @@
       "block.fnaf_mod.diagonal_tile": "Diagonal Tile",
       "block.fnaf_mod.endo_block": "Endo Block",
       "block.fnaf_mod.pizzeria_trash_can": "Pizzeria Trash Can",
+      "block.fnaf_mod.generator_spawn_block": "Generator",
       "itemGroup.tabdrawings_posters": "Drawings and Posters",
       "block.fnaf_mod.sconce": "Sconce",
       "block.fnaf_mod.world_dirt": "World Dirt",
@@ -36832,6 +36992,7 @@
       "entity.fnaf_mod.fredbears_freddy": "Fredbear\u0027s Family Diner Freddy",
       "item.fnaf_mod.withered_bonnie_spawn_egg": "Withered Bonnie Spawn Egg",
       "block.fnaf_mod.cactus_curtain.description_0": "§2(Green Curtain)",
+      "block.fnaf_mod.celebrate_fun": "Celebrate Fun",
       "block.fnaf_mod.awning_green": "Awning",
       "block.fnaf_mod.thin_licorice_curtain.description_0": "§7(Black Curtain)",
       "item.fnaf_mod.orange_fabric": "Orange Fabric",
@@ -36930,6 +37091,7 @@
       "block.fnaf_mod.thin_candy_curtain": "Thin Candy Curtain",
       "item.fnaf_mod.puppet_spawn_item": "Puppet",
       "gui.fnaf_mod.party_system.button_reset": "Reset",
+      "block.fnaf_mod.wall_phone": "Wall Phone",
       "block.fnaf_mod.balloon_purple": "Purple  Balloon",
       "block.fnaf_mod.prize_counter": "Prize Counter",
       "item.fnaf_mod.withered_foxy_spawn_item": "Withered Foxy",

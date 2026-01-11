@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fnaf_mod:item/beph_doll"
+    "layer0": "fnaf_mod:item/clown_doll_item"
   }
 }

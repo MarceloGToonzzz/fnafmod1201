@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "beph_doll",
+    "itemTexture": "clown_doll_item",
     "particleTexture": "chibiclownfull",
     "tintType": "No tint",
     "isItemTinted": false,

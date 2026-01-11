@@ -17,9 +17,9 @@ public class StructureSpawningBlockUpdateTickProcedure {
 		double Random = 0;
 		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "pizzeria_1"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "sampizzeria"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 4, z), BlockPos.containing(x, y - 4, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 8, z), BlockPos.containing(x, y - 8, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
 		}
 	}

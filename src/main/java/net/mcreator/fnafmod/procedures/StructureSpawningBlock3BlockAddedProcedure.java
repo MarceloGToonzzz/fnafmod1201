@@ -14,9 +14,9 @@ public class StructureSpawningBlock3BlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "pizzeria_3"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf1"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 3, z), BlockPos.containing(x, y - 3, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 1, z), BlockPos.containing(x, y - 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
 		}
 	}
