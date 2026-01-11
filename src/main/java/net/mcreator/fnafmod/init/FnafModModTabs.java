@@ -110,7 +110,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BUFFET_BANNER_3.get().asItem());
 				tabData.accept(FnafModModBlocks.BUFFET_BANNER_4.get().asItem());
 				tabData.accept(FnafModModBlocks.TOKEN_CATALOGUE.get().asItem());
-				tabData.accept(FnafModModBlocks.HEIGHT_CHART.get().asItem());
 			}).withTabsBefore(SUITS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> DECORATIVE_BLOCKS = REGISTRY.register("decorative_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.decorative_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PHONE.get())).displayItems((parameters, tabData) -> {
@@ -177,10 +176,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.EMPLOYEE_BOARD.get().asItem());
 				tabData.accept(FnafModModBlocks.LETS_EAT_SIGN.get().asItem());
 				tabData.accept(FnafModModBlocks.WET_FLOOR_SIGN.get().asItem());
-				tabData.accept(FnafModModBlocks.RIDING_ROCKET.get().asItem());
-				tabData.accept(FnafModModBlocks.WALL_PHONE.get().asItem());
-				tabData.accept(FnafModModBlocks.CELEBRATE_FUN.get().asItem());
-				tabData.accept(FnafModModBlocks.STANCHION.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -832,6 +827,13 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.BLACKTOMB_YARD_GRASS.get().asItem());
 			tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_GRASS.get().asItem());
 			tabData.accept(FnafModModBlocks.CAVE_GRASS.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			tabData.accept(FnafModModBlocks.STANCHION.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_LEFT_BREAKER.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_MIDDLE_POWER.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_OUTLET.get().asItem());
+			tabData.accept(FnafModModItems.LINK_CABLE.get());
 		}
 	}
 }

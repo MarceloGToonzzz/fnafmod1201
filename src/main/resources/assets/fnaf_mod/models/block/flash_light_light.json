@@ -9,5 +9,5 @@
     "west": "fnaf_mod:block/notin",
     "particle": "fnaf_mod:block/notin"
   },
-  "render_type": "translucent"
+  "render_type": "cutout_mipped"
 }

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"PowerPanel": {
+					"rotation": {
+						"0.0": {
+							"post": {
+								"vector": [0, -130, 0]
+							},
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"2": {
+			"loop": true,
+			"animation_length": 2,
+			"override_previous_animation": true,
+			"bones": {
+				"PowerPanel": {
+					"rotation": {
+						"vector": [0, -130, 0]
+					}
+				},
+				"HandCrank": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, -367.5]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

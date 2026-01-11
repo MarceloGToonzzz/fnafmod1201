@@ -99,6 +99,7 @@ import net.mcreator.fnafmod.item.MangleSpawnItemItem;
 import net.mcreator.fnafmod.item.MagentaPlasticItem;
 import net.mcreator.fnafmod.item.MagentaFabricItem;
 import net.mcreator.fnafmod.item.MATItem;
+import net.mcreator.fnafmod.item.LinkCableItem;
 import net.mcreator.fnafmod.item.LimePlasticItem;
 import net.mcreator.fnafmod.item.LimeFabricItem;
 import net.mcreator.fnafmod.item.LightGrayPlasticItem;
@@ -208,6 +209,9 @@ import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
 import net.mcreator.fnafmod.block.display.LargeIndustrialDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.IndustrialFanDisplayItem;
+import net.mcreator.fnafmod.block.display.GeneratorRightCreativeDisplayItem;
+import net.mcreator.fnafmod.block.display.GeneratorMiddlePowerDisplayItem;
+import net.mcreator.fnafmod.block.display.GeneratorLeftBreakerDisplayItem;
 import net.mcreator.fnafmod.block.display.GarageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
@@ -231,7 +235,6 @@ import net.mcreator.fnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.ChicaHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.CenteredFreddySignDisplayItem;
-import net.mcreator.fnafmod.block.display.CelebrateFunDisplayItem;
 import net.mcreator.fnafmod.block.display.CarouselDisplayItem;
 import net.mcreator.fnafmod.block.display.BonnieHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.BigWideRedWindowedDoorDisplayItem;
@@ -1253,10 +1256,14 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> STANCHION_4 = block(FnafModModBlocks.STANCHION_4);
 	public static final RegistryObject<Item> STANCHION_5 = block(FnafModModBlocks.STANCHION_5);
 	public static final RegistryObject<Item> STANCHION_6 = block(FnafModModBlocks.STANCHION_6);
-	public static final RegistryObject<Item> RIDING_ROCKET = block(FnafModModBlocks.RIDING_ROCKET);
-	public static final RegistryObject<Item> HEIGHT_CHART = block(FnafModModBlocks.HEIGHT_CHART);
-	public static final RegistryObject<Item> WALL_PHONE = block(FnafModModBlocks.WALL_PHONE);
-	public static final RegistryObject<Item> CELEBRATE_FUN = REGISTRY.register(FnafModModBlocks.CELEBRATE_FUN.getId().getPath(), () -> new CelebrateFunDisplayItem(FnafModModBlocks.CELEBRATE_FUN.get(), new Item.Properties()));
+	public static final RegistryObject<Item> GENERATOR_LEFT_BREAKER = REGISTRY.register(FnafModModBlocks.GENERATOR_LEFT_BREAKER.getId().getPath(),
+			() -> new GeneratorLeftBreakerDisplayItem(FnafModModBlocks.GENERATOR_LEFT_BREAKER.get(), new Item.Properties()));
+	public static final RegistryObject<Item> GENERATOR_MIDDLE_POWER = REGISTRY.register(FnafModModBlocks.GENERATOR_MIDDLE_POWER.getId().getPath(),
+			() -> new GeneratorMiddlePowerDisplayItem(FnafModModBlocks.GENERATOR_MIDDLE_POWER.get(), new Item.Properties()));
+	public static final RegistryObject<Item> GENERATOR_RIGHT_CREATIVE = REGISTRY.register(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.getId().getPath(),
+			() -> new GeneratorRightCreativeDisplayItem(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> GENERATOR_OUTLET = block(FnafModModBlocks.GENERATOR_OUTLET);
+	public static final RegistryObject<Item> LINK_CABLE = REGISTRY.register("link_cable", () -> new LinkCableItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
