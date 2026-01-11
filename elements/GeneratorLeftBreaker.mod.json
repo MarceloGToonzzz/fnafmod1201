@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "generatoritem",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -63,9 +63,9 @@
     "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 0.0
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {

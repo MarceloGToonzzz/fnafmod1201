@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.fnafmod.world.inventory.GeneratorBreakerSwitchesMenu;
+import net.mcreator.fnafmod.procedures.BreakerCheckAllProcedure;
 import net.mcreator.fnafmod.procedures.BreakerCheck9Procedure;
 import net.mcreator.fnafmod.procedures.BreakerCheck8Procedure;
 import net.mcreator.fnafmod.procedures.BreakerCheck7Procedure;
@@ -161,6 +162,12 @@ public class GeneratorBreakerSwitchesScreen extends AbstractContainerScreen<Gene
 		}
 		if (BreakerCheck16Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/breakerswitchon.png"), this.leftPos + 111, this.topPos + 130, 0, 0, 24, 12, 24, 12);
+		}
+
+		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/breakerredstoneoff.png"), this.leftPos + 69, this.topPos + 118, 0, 0, 36, 18, 36, 18);
+
+		if (BreakerCheckAllProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/breakerredstoneon.png"), this.leftPos + 69, this.topPos + 118, 0, 0, 36, 18, 36, 18);
 		}
 		RenderSystem.disableBlend();
 	}

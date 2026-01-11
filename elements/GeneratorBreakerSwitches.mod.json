@@ -611,6 +611,29 @@
           "y": 167,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerredstoneoff.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 155,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "breakerredstoneon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "BreakerCheckAll"
+          },
+          "x": 195,
+          "y": 155,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

@@ -832,6 +832,8 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.GENERATOR_LEFT_BREAKER.get().asItem());
 			tabData.accept(FnafModModBlocks.GENERATOR_MIDDLE_POWER.get().asItem());
 			tabData.accept(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get().asItem());
+			tabData.accept(FnafModModBlocks.GENERATOR_OUTLET.get().asItem());
+			tabData.accept(FnafModModItems.LINK_CABLE.get());
 		}
 	}
 }

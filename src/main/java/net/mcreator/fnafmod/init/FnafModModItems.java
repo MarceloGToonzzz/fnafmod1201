@@ -99,6 +99,7 @@ import net.mcreator.fnafmod.item.MangleSpawnItemItem;
 import net.mcreator.fnafmod.item.MagentaPlasticItem;
 import net.mcreator.fnafmod.item.MagentaFabricItem;
 import net.mcreator.fnafmod.item.MATItem;
+import net.mcreator.fnafmod.item.LinkCableItem;
 import net.mcreator.fnafmod.item.LimePlasticItem;
 import net.mcreator.fnafmod.item.LimeFabricItem;
 import net.mcreator.fnafmod.item.LightGrayPlasticItem;
@@ -1261,6 +1262,8 @@ public class FnafModModItems {
 			() -> new GeneratorMiddlePowerDisplayItem(FnafModModBlocks.GENERATOR_MIDDLE_POWER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> GENERATOR_RIGHT_CREATIVE = REGISTRY.register(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.getId().getPath(),
 			() -> new GeneratorRightCreativeDisplayItem(FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> GENERATOR_OUTLET = block(FnafModModBlocks.GENERATOR_OUTLET);
+	public static final RegistryObject<Item> LINK_CABLE = REGISTRY.register("link_cable", () -> new LinkCableItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

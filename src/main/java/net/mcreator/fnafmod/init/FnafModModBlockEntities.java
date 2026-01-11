@@ -51,6 +51,7 @@ import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
 import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorRightCreativeTileEntity;
+import net.mcreator.fnafmod.block.entity.GeneratorOutletBlockEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorMiddlePowerTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorLeftBreakerTileEntity;
 import net.mcreator.fnafmod.block.entity.GarageDoorTileEntity;
@@ -255,6 +256,7 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(GeneratorMiddlePowerTileEntity::new, FnafModModBlocks.GENERATOR_MIDDLE_POWER.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GeneratorRightCreativeTileEntity>> GENERATOR_RIGHT_CREATIVE = REGISTRY.register("generator_right_creative",
 			() -> BlockEntityType.Builder.of(GeneratorRightCreativeTileEntity::new, FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> GENERATOR_OUTLET = register("generator_outlet", FnafModModBlocks.GENERATOR_OUTLET, GeneratorOutletBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

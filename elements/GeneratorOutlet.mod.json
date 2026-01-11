@@ -1,26 +1,26 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "industrial_generator",
+    "texture": "minecraft:blast_furnace_front_on",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
-    "rotationMode": 1,
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
-    "itemTexture": "generatoritem",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -28,14 +28,18 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 32.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Generator Right Creative",
+    "customProperties": [],
+    "name": "Generator Outlet",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Connect to a generator via Link Cable",
+        "Dont connect redstone straight to it, use a comparator"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -56,16 +60,17 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": true,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
       "value": "NONE"
     },
     "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 15.0,
+      "name": "GeneratorOutletStrength"
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -79,7 +84,6 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -103,15 +107,14 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -123,11 +126,12 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "GeneratorCreativeRightClick"
+      "name": "GeneratorOutletOnBlockRightClicked"
     },
     "onTickUpdate": {
-      "name": "GeneratorRightCreativeOnTickUpdate"
+      "name": "GeneratorOutletOnTickUpdate"
     },
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -138,10 +142,6 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "generatorrightcreative.geo.json",
-    "displaySettings": "nightmare_bonnie.geo.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "maxGenerateHeight": 64
   }
 }

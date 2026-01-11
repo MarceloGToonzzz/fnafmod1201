@@ -31672,16 +31672,16 @@
       "registry_name": "generator_middle_power",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorMiddlePowerDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerTileRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/generator_middle_power_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorMiddlePowerTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/generator_middle_power.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/GeneratorMiddlePowerDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/blockstates/generator_middle_power.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/generator_middle_power_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_middle_power.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorMiddlePowerDisplayItemRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/GeneratorMiddlePowerBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerDisplayModel.java"
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorMiddlePowerDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorMiddlePowerTileEntity.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -31694,16 +31694,16 @@
       "registry_name": "generator_right_creative",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/generator_right_creative.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/generator_right_creative_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorRightCreativeDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/GeneratorRightCreativeBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorRightCreativeTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/display/GeneratorRightCreativeDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/blockstates/generator_right_creative.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GeneratorRightCreativeBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorRightCreativeTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorRightCreativeTileEntity.java"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GeneratorRightCreativeDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/generator_right_creative_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/GeneratorRightCreativeBlock.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -32260,9 +32260,9 @@
       "registry_name": "generator_breaker_switches",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorBreakerSwitchesMenu.java",
+          "src/main/java/net/mcreator/fnafmod/network/GeneratorBreakerSwitchesButtonMessage.java",
           "src/main/java/net/mcreator/fnafmod/client/gui/GeneratorBreakerSwitchesScreen.java",
-          "src/main/java/net/mcreator/fnafmod/network/GeneratorBreakerSwitchesButtonMessage.java"
+          "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorBreakerSwitchesMenu.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
@@ -32998,6 +32998,308 @@
           "src/main/java/net/mcreator/fnafmod/network/GeneratorBreakerUnpaneledButtonMessage.java",
           "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorBreakerUnpaneledMenu.java",
           "src/main/java/net/mcreator/fnafmod/client/gui/GeneratorBreakerUnpaneledScreen.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
+    },
+    {
+      "name": "GeneratorRightCreativeOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_right_creative_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorRightCreativeOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "BreakerCheckAll",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breaker_check_all",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BreakerCheckAllProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures/BreakerChecks"
+    },
+    {
+      "name": "GeneratorLeftBreakerValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_left_breaker_value",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorLeftBreakerValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorOutletOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_outlet_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorOutletOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorOutlet",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_outlet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/generator_outlet.json",
+          "src/main/java/net/mcreator/fnafmod/block/GeneratorOutletBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/generator_outlet.json",
+          "src/main/resources/assets/fnaf_mod/models/item/generator_outlet.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/generator_outlet.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GeneratorOutletBlockEntity.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "LinkCable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "link_cable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/item/LinkCableItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/link_cable.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "GeneratorOutletOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_outlet_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorOutletOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "LinkCableSpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "link_cable_special_information",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LinkCableSpecialInformationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorOutletStrength",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_outlet_strength",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorOutletStrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorPowerDisplayNumber",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_power_display_number",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorPowerDisplayNumberProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorPowerDisplayShow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_power_display_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GeneratorPowerDisplayShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "GeneratorPowerDisplay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generator_power_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/client/screens/GeneratorPowerDisplayOverlay.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
@@ -35394,6 +35696,7 @@
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
       "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
+      "block.fnaf_mod.generator_outlet": "Generator Outlet",
       "block.fnaf_mod.center_white_black_wall_tile": "Center White Stripe Wall Tiles",
       "subtitles.ovdrhonk": "\"Honk\"",
       "gui.fnaf_mod.wall_change_2.label_opposing_each_other": " Opposing Each Other",
@@ -36059,6 +36362,7 @@
       "entity.fnaf_mod.full_hostile_foxy": "Foxy Pirate",
       "block.fnaf_mod.red_black_tile_cracked": "Cracked Red Black Tile",
       "entity.fnaf_mod.nightmare_mangle": "Nightmare Mangle",
+      "item.fnaf_mod.link_cable": "Link Cable",
       "block.fnaf_mod.red_blue_tile_slab_cracked": "Cracked Red Blue Tile Slab",
       "block.fnaf_mod.fnaf_2_celebrate": "Celebrate Poster Retro",
       "gui.fnaf_mod.wall_change_2.button_c": "C",
@@ -36286,7 +36590,9 @@
       "item.fnaf_mod.plushtrap_spawn_item": "Plushtrap",
       "item.fnaf_mod.theyll_find_you.desc": "They\u0027ll Find You - Lucas Burnett",
       "block.fnaf_mod.toy_freddy_sign_on": "Toy Freddy Sign",
+      "block.fnaf_mod.generator_outlet.description_1": "Dont connect redstone straight to it, use a comparator",
       "block.fnaf_mod.round_bush": "Bush",
+      "block.fnaf_mod.generator_outlet.description_0": "Connect to a generator via Link Cable",
       "item.fnaf_mod.microphone": "Microphone",
       "block.fnaf_mod.black_white_tile_slab": "Black White Tile Slab",
       "entity.minecraft.villager.fnaf_mod.prize_counter_teller": "Prize Counter Teller",

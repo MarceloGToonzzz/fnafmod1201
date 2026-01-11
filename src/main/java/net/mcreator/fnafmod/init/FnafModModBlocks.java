@@ -297,6 +297,7 @@ import net.mcreator.fnafmod.block.GlitchedLogBlock;
 import net.mcreator.fnafmod.block.GlitchedLeavesBlock;
 import net.mcreator.fnafmod.block.GlassDoorBlock;
 import net.mcreator.fnafmod.block.GeneratorRightCreativeBlock;
+import net.mcreator.fnafmod.block.GeneratorOutletBlock;
 import net.mcreator.fnafmod.block.GeneratorMiddlePowerBlock;
 import net.mcreator.fnafmod.block.GeneratorLeftBreakerBlock;
 import net.mcreator.fnafmod.block.GarageDoorBlock;
@@ -1278,6 +1279,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> GENERATOR_LEFT_BREAKER = REGISTRY.register("generator_left_breaker", () -> new GeneratorLeftBreakerBlock());
 	public static final RegistryObject<Block> GENERATOR_MIDDLE_POWER = REGISTRY.register("generator_middle_power", () -> new GeneratorMiddlePowerBlock());
 	public static final RegistryObject<Block> GENERATOR_RIGHT_CREATIVE = REGISTRY.register("generator_right_creative", () -> new GeneratorRightCreativeBlock());
+	public static final RegistryObject<Block> GENERATOR_OUTLET = REGISTRY.register("generator_outlet", () -> new GeneratorOutletBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
