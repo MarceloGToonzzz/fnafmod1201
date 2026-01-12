@@ -67,6 +67,7 @@ import net.mcreator.fnafmod.block.TortureFreddyBlock;
 import net.mcreator.fnafmod.block.TortureChairBlock;
 import net.mcreator.fnafmod.block.TopNormalBlock;
 import net.mcreator.fnafmod.block.TokenCatalogueBlock;
+import net.mcreator.fnafmod.block.ToiletBlock;
 import net.mcreator.fnafmod.block.TiledWallHandleBlock;
 import net.mcreator.fnafmod.block.ThinSwampCurtainBlock;
 import net.mcreator.fnafmod.block.ThinSkyCurtainBlock;
@@ -145,6 +146,7 @@ import net.mcreator.fnafmod.block.SpeakerBlock;
 import net.mcreator.fnafmod.block.SmallPipesBlock;
 import net.mcreator.fnafmod.block.SkyCurtainBlock;
 import net.mcreator.fnafmod.block.SkeeballBlock;
+import net.mcreator.fnafmod.block.SinkBlock;
 import net.mcreator.fnafmod.block.ShelfBlock;
 import net.mcreator.fnafmod.block.ShackRandomizerBlock;
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
@@ -1292,6 +1294,8 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> HEIGHT_CHART = REGISTRY.register("height_chart", () -> new HeightChartBlock());
 	public static final RegistryObject<Block> GENERATOR_SPAWN_BLOCK = REGISTRY.register("generator_spawn_block", () -> new GeneratorSpawnBlockBlock());
 	public static final RegistryObject<Block> BALLOON_ORANGE = REGISTRY.register("balloon_orange", () -> new BalloonOrangeBlock());
+	public static final RegistryObject<Block> TOILET = REGISTRY.register("toilet", () -> new ToiletBlock());
+	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

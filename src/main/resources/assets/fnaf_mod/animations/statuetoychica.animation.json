@@ -1,0 +1,101 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.toychica.pose": {
+			"loop": true,
+			"bones": {
+				"bone3": {
+					"rotation": {
+						"vector": [-81.95433, -25.83252, 51.99445]
+					}
+				},
+				"right_hand2": {
+					"rotation": {
+						"vector": [-145.98595, -103.65877, -121.18449]
+					}
+				},
+				"bone2": {
+					"rotation": {
+						"vector": [0, 0, -77.5]
+					}
+				},
+				"right_hand": {
+					"rotation": {
+						"vector": [0, 0, 47.5]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"vector": [0, 0, -5]
+					}
+				},
+				"bone12": {
+					"rotation": {
+						"vector": [1.29788, 6.58515, 4.90312]
+					}
+				},
+				"Body": {
+					"rotation": {
+						"vector": [1.45387, 1.51356, 2.22002]
+					}
+				},
+				"Head": {
+					"rotation": {
+						"vector": [0, 0, -5]
+					}
+				},
+				"Jaw2": {
+					"rotation": {
+						"vector": [17.5, 0, 0]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [-7.5, 0, -22.5]
+					}
+				},
+				"LeftLArm": {
+					"rotation": {
+						"vector": [-87.61766, 11.35212, 56.97996]
+					}
+				},
+				"LeftHand": {
+					"rotation": {
+						"vector": [-238.10504, -103.66134, 138.84848]
+					}
+				},
+				"Plate": {
+					"rotation": {
+						"vector": [30, 0, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [0, 0, 7.5]
+					}
+				},
+				"RightLArm": {
+					"rotation": {
+						"vector": [0, 0, -67.5]
+					}
+				},
+				"RightHand": {
+					"rotation": {
+						"vector": [0, 0, 55]
+					}
+				},
+				"RightLeg": {
+					"rotation": {
+						"vector": [0.55404, 4.98791, 2.56062]
+					}
+				},
+				"RightFoot": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

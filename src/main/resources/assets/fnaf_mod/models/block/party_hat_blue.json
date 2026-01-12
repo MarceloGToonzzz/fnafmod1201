@@ -1,9 +1,9 @@
 {
-  "parent": "fnaf_mod:custom/partyhat",
+  "parent": "fnaf_mod:custom/party_hat",
   "textures": {
-    "all": "fnaf_mod:block/partyhatblue",
-    "particle": "fnaf_mod:block/partyhatblue",
-    "0": "fnaf_mod:block/partyhatblue"
+    "all": "fnaf_mod:block/bluepartyhat",
+    "particle": "fnaf_mod:block/bluepartyhat",
+    "0": "fnaf_mod:block/bluepartyhat"
   },
   "render_type": "cutout"
 }

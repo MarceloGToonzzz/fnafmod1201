@@ -1271,6 +1271,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> HEIGHT_CHART = block(FnafModModBlocks.HEIGHT_CHART);
 	public static final RegistryObject<Item> GENERATOR_SPAWN_BLOCK = block(FnafModModBlocks.GENERATOR_SPAWN_BLOCK);
 	public static final RegistryObject<Item> BALLOON_ORANGE = block(FnafModModBlocks.BALLOON_ORANGE);
+	public static final RegistryObject<Item> TOILET = block(FnafModModBlocks.TOILET);
+	public static final RegistryObject<Item> SINK = block(FnafModModBlocks.SINK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

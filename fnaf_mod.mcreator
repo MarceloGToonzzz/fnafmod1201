@@ -16806,11 +16806,11 @@
       "registry_name": "party_hat_red",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/party_hat_red.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/party_hat_red.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_red.json",
           "src/main/java/net/mcreator/fnafmod/block/PartyHatRedBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/party_hat_red.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/party_hat_red.json",
+          "src/main/resources/assets/fnaf_mod/models/item/party_hat_red.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_red.json",
+          "src/main/resources/assets/fnaf_mod/models/block/party_hat_red.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -16823,11 +16823,11 @@
       "registry_name": "party_hat_blue",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/PartyHatBlueBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/party_hat_blue.json",
-          "src/main/resources/assets/fnaf_mod/models/block/party_hat_blue.json",
           "src/main/resources/assets/fnaf_mod/blockstates/party_hat_blue.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_blue.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_blue.json",
+          "src/main/resources/assets/fnaf_mod/models/item/party_hat_blue.json",
+          "src/main/java/net/mcreator/fnafmod/block/PartyHatBlueBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/party_hat_blue.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -16841,9 +16841,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/models/item/party_hat_purple.json",
-          "src/main/resources/assets/fnaf_mod/models/block/party_hat_purple.json",
           "src/main/resources/assets/fnaf_mod/blockstates/party_hat_purple.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_purple.json",
+          "src/main/resources/assets/fnaf_mod/models/block/party_hat_purple.json",
           "src/main/java/net/mcreator/fnafmod/block/PartyHatPurpleBlock.java"
         ],
         "dependencies": [
@@ -16879,11 +16879,11 @@
       "registry_name": "party_hat_green",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/PartyHatGreenBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/party_hat_green.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_green.json",
           "src/main/resources/assets/fnaf_mod/models/block/party_hat_green.json",
-          "src/main/resources/assets/fnaf_mod/models/item/party_hat_green.json"
+          "src/main/resources/assets/fnaf_mod/models/item/party_hat_green.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/party_hat_green.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/party_hat_green.json",
+          "src/main/java/net/mcreator/fnafmod/block/PartyHatGreenBlock.java"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -33452,7 +33452,41 @@
           "src/main/resources/assets/fnaf_mod/blockstates/balloon_orange.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Toilet",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toilet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toilet.json",
+          "src/main/resources/assets/fnaf_mod/models/block/toilet.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toilet.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToiletBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/toilet.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Sink",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/SinkBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/sink.json",
+          "src/main/resources/assets/fnaf_mod/models/block/sink.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/sink.json",
+          "src/main/resources/assets/fnaf_mod/models/item/sink.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
     }
   ],
   "variable_elements": [
@@ -35189,7 +35223,9 @@
       "WetFloorSign",
       "CelebrateFun",
       "WallPhone",
-      "RidingRocket"
+      "RidingRocket",
+      "Toilet",
+      "Sink"
     ],
     "CUSTOM:FNAFItems": [
       "MAT",
@@ -36189,6 +36225,7 @@
       "block.fnaf_mod.arcade_machine_foxy": "Arcade Machine Foxy",
       "entity.fnaf_mod.nightmare_bonnie": "Nightmare Bonnie",
       "entity.fnaf_mod.day_time_bb": "DayTime BB",
+      "block.fnaf_mod.toilet": "Toilet",
       "item.fnaf_mod.broken_flash_light": "Flashlight",
       "block.fnaf_mod.popgoes_plushie.description_0": "Thank You Kane Carter",
       "item.fnaf_mod.phantom_bb_spawn_item": "Phantom BB",
@@ -36649,6 +36686,7 @@
       "block.fnaf_mod.black_white_tile_cracked": "Cracked Black White Tile",
       "block.fnaf_mod.light_button_off": "Light Button Off",
       "block.fnaf_mod.white_tile": "White Tile",
+      "block.fnaf_mod.sink": "Sink",
       "block.fnaf_mod.streamer_stars.description_0": "Stars",
       "block.fnaf_mod.prize_corner_poster": "Prize Counter Poster",
       "block.fnaf_mod.purple_stage_bricks": "Purple Stage Bricks",
