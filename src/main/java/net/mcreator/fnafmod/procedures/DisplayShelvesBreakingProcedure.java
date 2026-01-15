@@ -15,7 +15,7 @@ import net.mcreator.fnafmod.FnafModMod;
 public class DisplayShelvesBreakingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		FnafModMod.queueServerWork(2, () -> {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FnafModModBlocks.DISPLAY_SHELVES.get()) {
+			if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FnafModModBlocks.DISPLAY_SHELVES.get())) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

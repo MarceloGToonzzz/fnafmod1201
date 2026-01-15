@@ -27095,23 +27095,23 @@
       "registry_name": "display_shelves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/custom/display_shelves_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/item/display_shelves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_2.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/DisplayShelvesDisplayItemRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/DisplayShelvesTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/DisplayShelvesBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/DisplayShelvesDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_6.json",
           "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_3.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/DisplayShelvesBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_2.json",
           "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_5.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/DisplayShelvesDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_1.json",
-          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_4.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/DisplayShelvesTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/display_shelves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_0.json",
           "src/main/resources/assets/fnaf_mod/blockstates/display_shelves.json",
-          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_6.json"
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/DisplayShelvesBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/display_shelves_blockstate_4.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/DisplayShelvesDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/DisplayShelvesBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/DisplayShelvesDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/display_shelves_particle.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
