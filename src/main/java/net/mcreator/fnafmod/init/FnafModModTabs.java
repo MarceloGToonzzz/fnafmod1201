@@ -678,7 +678,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.POPGOES_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.VASS_DOLL.get().asItem());
-				tabData.accept(FnafModModBlocks.BEPH_DOLL.get().asItem());
 				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
 				tabData.accept(FnafModModBlocks.PURPLE_STAR_TABLE_CLOTH.get().asItem());
 				tabData.accept(FnafModModBlocks.PURPLE_TABLE_CLOTH.get().asItem());

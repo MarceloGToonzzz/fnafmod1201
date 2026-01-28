@@ -596,7 +596,6 @@ import net.mcreator.fnafmod.block.BigBlackStripeDarkWallTileBlock;
 import net.mcreator.fnafmod.block.BigBlackPurpleWallTileBlock;
 import net.mcreator.fnafmod.block.BigBackstageDoorBlock;
 import net.mcreator.fnafmod.block.BerryCurtainBlock;
-import net.mcreator.fnafmod.block.BephDollBlock;
 import net.mcreator.fnafmod.block.BallpitBlock;
 import net.mcreator.fnafmod.block.BalloonsBlock;
 import net.mcreator.fnafmod.block.BalloonYellowBlock;
@@ -1034,7 +1033,6 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> STREAMER_STARS = REGISTRY.register("streamer_stars", () -> new StreamerStarsBlock());
 	public static final RegistryObject<Block> CENTERED_FREDDY_SIGN = REGISTRY.register("centered_freddy_sign", () -> new CenteredFreddySignBlock());
 	public static final RegistryObject<Block> CENTERED_FREDDY_SIGN_ON = REGISTRY.register("centered_freddy_sign_on", () -> new CenteredFreddySignOnBlock());
-	public static final RegistryObject<Block> BEPH_DOLL = REGISTRY.register("beph_doll", () -> new BephDollBlock());
 	public static final RegistryObject<Block> TOY_FREDDY_SIGN_OFF = REGISTRY.register("toy_freddy_sign_off", () -> new ToyFreddySignOffBlock());
 	public static final RegistryObject<Block> TOY_FREDDY_SIGN_ON = REGISTRY.register("toy_freddy_sign_on", () -> new ToyFreddySignOnBlock());
 	public static final RegistryObject<Block> RETRO_FREDDY_SIGN = REGISTRY.register("retro_freddy_sign", () -> new RetroFreddySignBlock());

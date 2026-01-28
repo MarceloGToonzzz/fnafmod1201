@@ -104,7 +104,6 @@ import net.mcreator.fnafmod.block.entity.BigCyanKitchenDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigCyanBackstageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigClosetDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigBackstageDoorTileEntity;
-import net.mcreator.fnafmod.block.entity.BephDollTileEntity;
 import net.mcreator.fnafmod.block.entity.AlternateGarageDoorTileEntity;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -151,7 +150,6 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(CenteredFreddySignTileEntity::new, FnafModModBlocks.CENTERED_FREDDY_SIGN.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CenteredFreddySignOnTileEntity>> CENTERED_FREDDY_SIGN_ON = REGISTRY.register("centered_freddy_sign_on",
 			() -> BlockEntityType.Builder.of(CenteredFreddySignOnTileEntity::new, FnafModModBlocks.CENTERED_FREDDY_SIGN_ON.get()).build(null));
-	public static final RegistryObject<BlockEntityType<BephDollTileEntity>> BEPH_DOLL = REGISTRY.register("beph_doll", () -> BlockEntityType.Builder.of(BephDollTileEntity::new, FnafModModBlocks.BEPH_DOLL.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ToyFreddySignOffTileEntity>> TOY_FREDDY_SIGN_OFF = REGISTRY.register("toy_freddy_sign_off",
 			() -> BlockEntityType.Builder.of(ToyFreddySignOffTileEntity::new, FnafModModBlocks.TOY_FREDDY_SIGN_OFF.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ToyFreddySignOnTileEntity>> TOY_FREDDY_SIGN_ON = REGISTRY.register("toy_freddy_sign_on",

@@ -105,9 +105,6 @@ public class FnafModModTrades {
 					new ItemStack(FnafModModBlocks.VASS_DOLL.get()), 10, 5, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 25),
 
-					new ItemStack(FnafModModBlocks.BEPH_DOLL.get()), 10, 5, 0.05f));
-			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 25),
-
 					new ItemStack(FnafModModBlocks.CLOWNFUL_DOLL.get()), 10, 5, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 64),
 

@@ -22184,59 +22184,6 @@
       "path": "~/Blocks/DecorativeBlocks"
     },
     {
-      "name": "BephDoll",
-      "type": "animatedblock",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beph_doll",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BephDollTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BephDollTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/beph_doll.json",
-          "src/main/resources/assets/fnaf_mod/models/item/beph_doll.json",
-          "src/main/java/net/mcreator/fnafmod/block/BephDollBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/beph_doll_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BephDollBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BephDollDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BephDollDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BephDollDisplayItem.java"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "BephDollOnBlockRightClicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beph_doll_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/BephDollOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
       "name": "ToyFreddySignOff",
       "type": "animatedblock",
       "compiles": true,
@@ -35719,7 +35666,6 @@
       "ToyChicaPlushie",
       "PopgoesPlushie",
       "VassDoll",
-      "BephDoll",
       "ClownfulDoll",
       "PurpleStarTableCloth",
       "PurpleTableCloth",
@@ -36646,7 +36592,6 @@
       "block.fnaf_mod.balloon_orange": "Orange Balloon",
       "block.fnaf_mod.closet_right_top": "Closet Door",
       "block.fnaf_mod.big_white_checkered_wall": "Big White Checkered Wall",
-      "block.fnaf_mod.beph_doll": "Beph Doll",
       "entity.fnaf_mod.spring_bonnie_cut_out": "Spring Bonnie Cutout",
       "gui.fnaf_mod.wall_change_1.label_two_room_and_hall_faces": "Two Room and Hall Faces ",
       "item.fnaf_mod.freddy_suit_boots": "Freddy Boots",

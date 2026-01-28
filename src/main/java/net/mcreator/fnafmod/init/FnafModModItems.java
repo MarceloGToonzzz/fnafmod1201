@@ -255,7 +255,6 @@ import net.mcreator.fnafmod.block.display.BigCyanKitchenDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigCyanBackstageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigClosetDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.BigBackstageDoorDisplayItem;
-import net.mcreator.fnafmod.block.display.BephDollDisplayItem;
 import net.mcreator.fnafmod.block.display.AlternateGarageDoorDisplayItem;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -879,7 +878,6 @@ public class FnafModModItems {
 			() -> new CenteredFreddySignDisplayItem(FnafModModBlocks.CENTERED_FREDDY_SIGN.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CENTERED_FREDDY_SIGN_ON = REGISTRY.register(FnafModModBlocks.CENTERED_FREDDY_SIGN_ON.getId().getPath(),
 			() -> new CenteredFreddySignOnDisplayItem(FnafModModBlocks.CENTERED_FREDDY_SIGN_ON.get(), new Item.Properties()));
-	public static final RegistryObject<Item> BEPH_DOLL = REGISTRY.register(FnafModModBlocks.BEPH_DOLL.getId().getPath(), () -> new BephDollDisplayItem(FnafModModBlocks.BEPH_DOLL.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TOY_FREDDY_SIGN_OFF = REGISTRY.register(FnafModModBlocks.TOY_FREDDY_SIGN_OFF.getId().getPath(), () -> new ToyFreddySignOffDisplayItem(FnafModModBlocks.TOY_FREDDY_SIGN_OFF.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TOY_FREDDY_SIGN_ON = REGISTRY.register(FnafModModBlocks.TOY_FREDDY_SIGN_ON.getId().getPath(), () -> new ToyFreddySignOnDisplayItem(FnafModModBlocks.TOY_FREDDY_SIGN_ON.get(), new Item.Properties()));
 	public static final RegistryObject<Item> RETRO_FREDDY_SIGN = REGISTRY.register(FnafModModBlocks.RETRO_FREDDY_SIGN.getId().getPath(), () -> new RetroFreddySignDisplayItem(FnafModModBlocks.RETRO_FREDDY_SIGN.get(), new Item.Properties()));

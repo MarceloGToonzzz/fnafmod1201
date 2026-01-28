@@ -83,7 +83,6 @@ import net.mcreator.fnafmod.block.renderer.BigCyanKitchenDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigCyanBackstageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigClosetDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.BigBackstageDoorTileRenderer;
-import net.mcreator.fnafmod.block.renderer.BephDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.AlternateGarageDoorTileRenderer;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -113,7 +112,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.VASS_DOLL.get(), context -> new VassDollTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CENTERED_FREDDY_SIGN.get(), context -> new CenteredFreddySignTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CENTERED_FREDDY_SIGN_ON.get(), context -> new CenteredFreddySignOnTileRenderer());
-		event.registerBlockEntityRenderer(FnafModModBlockEntities.BEPH_DOLL.get(), context -> new BephDollTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.TOY_FREDDY_SIGN_OFF.get(), context -> new ToyFreddySignOffTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.TOY_FREDDY_SIGN_ON.get(), context -> new ToyFreddySignOnTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.RETRO_FREDDY_SIGN.get(), context -> new RetroFreddySignTileRenderer());
