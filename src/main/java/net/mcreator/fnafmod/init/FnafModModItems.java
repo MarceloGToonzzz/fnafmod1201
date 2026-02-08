@@ -139,6 +139,7 @@ import net.mcreator.fnafmod.item.FoxySpawnItem;
 import net.mcreator.fnafmod.item.FoxyItem;
 import net.mcreator.fnafmod.item.FlashLightOnItem;
 import net.mcreator.fnafmod.item.FlashLightItem;
+import net.mcreator.fnafmod.item.FireAxeItem;
 import net.mcreator.fnafmod.item.FazbearShowtimeItem;
 import net.mcreator.fnafmod.item.FazCoinItem;
 import net.mcreator.fnafmod.item.EvilFreddyItemSpawnItem;
@@ -1271,6 +1272,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BALLOON_ORANGE = block(FnafModModBlocks.BALLOON_ORANGE);
 	public static final RegistryObject<Item> TOILET = block(FnafModModBlocks.TOILET);
 	public static final RegistryObject<Item> SINK = block(FnafModModBlocks.SINK);
+	public static final RegistryObject<Item> FIRE_AXE = REGISTRY.register("fire_axe", () -> new FireAxeItem());
+	public static final RegistryObject<Item> KNIFE = REGISTRY.register("knife", () -> new KnifeItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
