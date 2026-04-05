@@ -106,6 +106,7 @@ import net.mcreator.fnafmod.item.LightGrayPlasticItem;
 import net.mcreator.fnafmod.item.LightGrayFabricItem;
 import net.mcreator.fnafmod.item.LightBluePlasticItem;
 import net.mcreator.fnafmod.item.LightBlueFabricItem;
+import net.mcreator.fnafmod.item.KnifeItem;
 import net.mcreator.fnafmod.item.JjSpawnItemItem;
 import net.mcreator.fnafmod.item.JackOChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.JackOBonnieSpawnItemItem;
