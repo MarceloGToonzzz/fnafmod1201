@@ -182,6 +182,8 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.RIDING_ROCKET.get().asItem());
 				tabData.accept(FnafModModBlocks.TOILET.get().asItem());
 				tabData.accept(FnafModModBlocks.SINK.get().asItem());
+				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
+				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {

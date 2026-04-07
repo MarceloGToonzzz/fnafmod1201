@@ -45,9 +45,11 @@ import net.mcreator.fnafmod.block.entity.PlushFredbearBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushChicaBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
+import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
+import net.mcreator.fnafmod.block.entity.LightSwitchTileEntity;
 import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorRightCreativeTileEntity;
@@ -257,6 +259,8 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(GeneratorRightCreativeTileEntity::new, FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> GENERATOR_OUTLET = register("generator_outlet", FnafModModBlocks.GENERATOR_OUTLET, GeneratorOutletBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<CelebrateFunTileEntity>> CELEBRATE_FUN = REGISTRY.register("celebrate_fun", () -> BlockEntityType.Builder.of(CelebrateFunTileEntity::new, FnafModModBlocks.CELEBRATE_FUN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ModularLightTileEntity>> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> BlockEntityType.Builder.of(ModularLightTileEntity::new, FnafModModBlocks.MODULAR_LIGHT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<LightSwitchTileEntity>> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> BlockEntityType.Builder.of(LightSwitchTileEntity::new, FnafModModBlocks.LIGHT_SWITCH.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

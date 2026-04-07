@@ -208,7 +208,9 @@ import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
+import net.mcreator.fnafmod.block.display.ModularLightDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
+import net.mcreator.fnafmod.block.display.LightSwitchDisplayItem;
 import net.mcreator.fnafmod.block.display.LargeIndustrialDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.IndustrialFanDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorRightCreativeDisplayItem;
@@ -1275,6 +1277,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SINK = block(FnafModModBlocks.SINK);
 	public static final RegistryObject<Item> FIRE_AXE = REGISTRY.register("fire_axe", () -> new FireAxeItem());
 	public static final RegistryObject<Item> KNIFE = REGISTRY.register("knife", () -> new KnifeItem());
+	public static final RegistryObject<Item> MODULAR_LIGHT = REGISTRY.register(FnafModModBlocks.MODULAR_LIGHT.getId().getPath(), () -> new ModularLightDisplayItem(FnafModModBlocks.MODULAR_LIGHT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> LIGHT_SWITCH = REGISTRY.register(FnafModModBlocks.LIGHT_SWITCH.getId().getPath(), () -> new LightSwitchDisplayItem(FnafModModBlocks.LIGHT_SWITCH.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

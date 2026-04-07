@@ -34,7 +34,9 @@ import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
+import net.mcreator.fnafmod.block.renderer.ModularLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.LightSwitchTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LargeIndustrialDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.IndustrialFanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorRightCreativeTileRenderer;
@@ -168,5 +170,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_MIDDLE_POWER.get(), context -> new GeneratorMiddlePowerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_RIGHT_CREATIVE.get(), context -> new GeneratorRightCreativeTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CELEBRATE_FUN.get(), context -> new CelebrateFunTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT.get(), context -> new ModularLightTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_SWITCH.get(), context -> new LightSwitchTileRenderer());
 	}
 }

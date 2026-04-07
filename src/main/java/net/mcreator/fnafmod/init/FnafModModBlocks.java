@@ -267,6 +267,7 @@ import net.mcreator.fnafmod.block.MovieExteriorWallBlock;
 import net.mcreator.fnafmod.block.MovieExteriorTopBlock;
 import net.mcreator.fnafmod.block.MovieChairBlock;
 import net.mcreator.fnafmod.block.MonitorsBlock;
+import net.mcreator.fnafmod.block.ModularLightBlock;
 import net.mcreator.fnafmod.block.MintCurtainBlock;
 import net.mcreator.fnafmod.block.MiniRancidWallBlock;
 import net.mcreator.fnafmod.block.MiniPuppetDecorBlock;
@@ -278,6 +279,7 @@ import net.mcreator.fnafmod.block.LockerSilverBlock;
 import net.mcreator.fnafmod.block.LinedWallBlock;
 import net.mcreator.fnafmod.block.LimeCurtainBlock;
 import net.mcreator.fnafmod.block.LilygearLakeGrassBlock;
+import net.mcreator.fnafmod.block.LightSwitchBlock;
 import net.mcreator.fnafmod.block.LightButtonOnBlock;
 import net.mcreator.fnafmod.block.LightButtonOffBlock;
 import net.mcreator.fnafmod.block.LightButtonBlock;
@@ -1294,6 +1296,8 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> BALLOON_ORANGE = REGISTRY.register("balloon_orange", () -> new BalloonOrangeBlock());
 	public static final RegistryObject<Block> TOILET = REGISTRY.register("toilet", () -> new ToiletBlock());
 	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
+	public static final RegistryObject<Block> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> new ModularLightBlock());
+	public static final RegistryObject<Block> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> new LightSwitchBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
