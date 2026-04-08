@@ -236,11 +236,11 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"/kill @e[type=block_display,limit=1,sort=nearest,distance=..1]");
+								("/kill @e[type=item_display, limit=1, sort=nearest, distance=0..1.5, x=" + x + ", y=" + (y + 1) + ", z=" + z + "]"));
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"/kill @e[type=item_display,limit=1,sort=nearest,distance=..1]");
+								("/kill @e[type=block_display, limit=1, sort=nearest, distance=0..1.5, x=" + x + ", y=" + (y + 1) + ", z=" + z + "]"));
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = (new Object() {
 							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
