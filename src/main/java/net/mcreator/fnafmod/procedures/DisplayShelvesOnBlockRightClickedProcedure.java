@@ -233,37 +233,47 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 				});
 			} else {
 				if (entity.isShiftKeyDown()) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("/kill @e[type=item_display, limit=1, sort=nearest, distance=0..1.5, x=" + x + ", y=" + (y + 1) + ", z=" + z + "]"));
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("/kill @e[type=block_display, limit=1, sort=nearest, distance=0..1.5, x=" + x + ", y=" + (y + 1) + ", z=" + z + "]"));
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = (new Object() {
-							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								BlockEntity _ent = world.getBlockEntity(pos);
-								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-								return _retval.get();
+					if (!((new Object() {
+						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+							BlockEntity _ent = world.getBlockEntity(pos);
+							if (_ent != null)
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+							return _retval.get();
+						}
+					}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem())) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0), (y + 1.2), (z + 0)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									("/kill @e[type=item_display, limit=1, sort=nearest, distance=0..1, x=" + (x + 0.5) + ", y=" + (y + 1) + ", z=" + (z + 0.5) + "]"));
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0), (y + 1.2), (z + 0)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									("/kill @e[type=block_display, limit=1, sort=nearest, distance=0..1, x=" + (x + 0.5) + ", y=" + (y + 1) + ", z=" + (z + 0.5) + "]"));
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = (new Object() {
+								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+									BlockEntity _ent = world.getBlockEntity(pos);
+									if (_ent != null)
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									return _retval.get();
+								}
+							}.getItemStack(world, BlockPos.containing(x, y, z), 0)).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 0;
+								final ItemStack _setstack = ItemStack.EMPTY.copy();
+								_setstack.setCount(0);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
 							}
-						}.getItemStack(world, BlockPos.containing(x, y, z), 0)).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					{
-						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-						if (_ent != null) {
-							final int _slotid = 0;
-							final ItemStack _setstack = ItemStack.EMPTY.copy();
-							_setstack.setCount(0);
-							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable)
-									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
-							});
 						}
 					}
 				} else if (1 == new Object() {
