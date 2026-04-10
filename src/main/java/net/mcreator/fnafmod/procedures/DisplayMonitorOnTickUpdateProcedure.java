@@ -333,7 +333,7 @@ public class DisplayMonitorOnTickUpdateProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + (new Object() {
+								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + new java.text.DecimalFormat("##.#").format(new Object() {
 									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 										BlockEntity blockEntity = world.getBlockEntity(pos);
 										if (blockEntity != null)
@@ -442,7 +442,7 @@ public class DisplayMonitorOnTickUpdateProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + (new Object() {
+								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + new java.text.DecimalFormat("##.#").format(new Object() {
 									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 										BlockEntity blockEntity = world.getBlockEntity(pos);
 										if (blockEntity != null)
@@ -551,7 +551,7 @@ public class DisplayMonitorOnTickUpdateProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + (new Object() {
+								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + new java.text.DecimalFormat("##.#").format(new Object() {
 									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 										BlockEntity blockEntity = world.getBlockEntity(pos);
 										if (blockEntity != null)
@@ -660,7 +660,7 @@ public class DisplayMonitorOnTickUpdateProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + (new Object() {
+								("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:text_display\",text:\"{\\\"text\\\":\\\"" + "" + new java.text.DecimalFormat("##.#").format(new Object() {
 									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 										BlockEntity blockEntity = world.getBlockEntity(pos);
 										if (blockEntity != null)

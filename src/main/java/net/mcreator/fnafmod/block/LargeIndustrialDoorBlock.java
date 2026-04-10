@@ -5,6 +5,7 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -26,11 +27,14 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.procedures.SecurityDoorOnBlockRightClickedProcedure;
 import net.mcreator.fnafmod.procedures.LargeIndustrialDoorOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.LargeIndustrialDoorBlockDestroyedByPlayerProcedure;
 import net.mcreator.fnafmod.procedures.LargeIndustrialDoorBlockAddedProcedure;
@@ -140,5 +144,20 @@ public class LargeIndustrialDoorBlock extends BaseEntityBlock implements EntityB
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		LargeIndustrialDoorBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		return retval;
+	}
+
+	@Override
+	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
+		super.use(blockstate, world, pos, entity, hand, hit);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+
+		SecurityDoorOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		return InteractionResult.SUCCESS;
 	}
 }

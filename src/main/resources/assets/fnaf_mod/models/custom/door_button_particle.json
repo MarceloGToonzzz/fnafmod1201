@@ -2,6 +2,6 @@
 {
   "parent": "fnaf_mod:displaysettings/bigdoor",
   "textures": {
-    "particle": "fnaf_mod:block/large_industrial_door"
+    "particle": "fnaf_mod:block/door_button"
   }
 }

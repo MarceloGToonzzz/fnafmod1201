@@ -33993,7 +33993,7 @@
     {
       "name": "DoorButton",
       "type": "animatedblock",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "door_button",
       "metadata": {
@@ -34016,7 +34016,7 @@
     {
       "name": "LargeIndustrialDoor",
       "type": "animatedblock",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "large_industrial_door",
       "metadata": {
@@ -34032,6 +34032,76 @@
           "src/main/resources/assets/fnaf_mod/models/item/large_industrial_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/large_industrial_door_blockstate_0.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorDisplayItemRenderer.java"
+        ]
+      },
+      "path": "~/Blocks/Big Doors"
+    },
+    {
+      "name": "DoorButtonOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_button_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DoorButtonOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "SecurityDoorOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "security_door_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/SecurityDoorOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -36380,8 +36450,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
+      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "block.fnaf_mod.red_white_tile_stair": "Red White Tile Stairs",
@@ -36389,12 +36459,12 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "block.fnaf_mod.movie_wall": "Movie Wall",
+      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
+      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
@@ -36431,16 +36501,16 @@
       "block.fnaf_mod.awning_yellow.description_0": "Yellow",
       "block.fnaf_mod.bb_figure.description_0": "Thank You Kane Carter",
       "block.fnaf_mod.red_blue_tile": "Red Blue Tile",
-      "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
       "block.fnaf_mod.buffet_wall_dark": "Buffet Dark Wall",
+      "block.fnaf_mod.party_hat_purple": "Party Hat {Purple}",
       "block.fnaf_mod.thin_cactus_curtain.description_0": "§2(Green Curtain)",
       "entity.fnaf_mod.spring_bonnie_animatronic": "Spring Bonnie",
       "entity.fnaf_mod.sitting_plushtrap": "Plushtrap",
       "block.fnaf_mod.stage_light_orange": "Stage Light (Orange)",
       "block.fnaf_mod.alternate_black_purple_wall_tile": "Alternate Black Purple Wall Tiles",
       "entity.fnaf_mod.glitch_bonnie_cut_out": "Glitch Bonnie Cutout",
-      "item.fnaf_mod.puffy_puffins_spawn_item": "Puffy Puffins",
       "item.fnaf_mod.evil_bonnie": "Dark Remnant Infused Bonnie",
+      "item.fnaf_mod.puffy_puffins_spawn_item": "Puffy Puffins",
       "block.fnaf_mod.red_black_tile": "Red Black Tile",
       "block.fnaf_mod.center_light_dark_red_wall_tile": "Center White-Black Wall Tiles",
       "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
