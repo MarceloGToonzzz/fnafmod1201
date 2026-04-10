@@ -543,6 +543,7 @@
         "files": [
           "src/main/resources/assets/fnaf_mod/blockstates/security_door_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/security_door_open.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/SecurityDoorOpenBlockEntity.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/security_door_open.json",
           "src/main/java/net/mcreator/fnafmod/block/SecurityDoorOpenBlock.java",
           "src/main/resources/assets/fnaf_mod/models/item/security_door_open.json"

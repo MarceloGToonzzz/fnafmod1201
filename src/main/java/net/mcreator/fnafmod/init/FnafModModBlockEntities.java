@@ -34,6 +34,7 @@ import net.mcreator.fnafmod.block.entity.StageLightGreenOnTileEntity;
 import net.mcreator.fnafmod.block.entity.SpringBonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.SpringBonnieDecorTileEntity;
 import net.mcreator.fnafmod.block.entity.ShelfTileEntity;
+import net.mcreator.fnafmod.block.entity.SecurityDoorOpenBlockEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroComputerTileEntity;
@@ -116,6 +117,7 @@ public class FnafModModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FnafModMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> DESK = register("desk", FnafModModBlocks.DESK, DeskBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DOOR_BUTTON_ON = register("door_button_on", FnafModModBlocks.DOOR_BUTTON_ON, DoorButtonOnBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SECURITY_DOOR_OPEN = register("security_door_open", FnafModModBlocks.SECURITY_DOOR_OPEN, SecurityDoorOpenBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DESK_2 = register("desk_2", FnafModModBlocks.DESK_2, Desk2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DESK_3 = register("desk_3", FnafModModBlocks.DESK_3, Desk3BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> REMNANT_INFUSER = register("remnant_infuser", FnafModModBlocks.REMNANT_INFUSER, RemantInfuserBlockEntity::new);
