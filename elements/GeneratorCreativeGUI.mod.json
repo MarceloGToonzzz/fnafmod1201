@@ -15,9 +15,108 @@
         "data": {
           "image": "generatorcreativebase.png",
           "use1Xscale": false,
-          "x": 141,
-          "y": 17,
+          "x": 132,
+          "y": 8,
           "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sgygf",
+          "text": {
+            "fixedValue": "Power . . . . "
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 160,
+          "y": 40,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_drain",
+          "text": {
+            "fixedValue": "Usage . . "
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "x": 160,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_idk_yet",
+          "text": {
+            "fixedValue": "Drain . . ."
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 160,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gen_creative_power_return",
+          "text": {
+            "fixedValue": "",
+            "name": "GenCreativePowerReturn"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 40,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gen_creative_drain_rate_ret",
+          "text": {
+            "fixedValue": "",
+            "name": "GenCreativeDrainRateReturn"
+          },
+          "color": {
+            "value": -3381760,
+            "falpha": 0.0
+          },
+          "x": 206,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gen_creative_drain_frequenc",
+          "text": {
+            "fixedValue": "",
+            "name": "GenCreativeDrainFrequencyReturn"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "x": 209,
+          "y": 64,
+          "locked": false
         }
       }
     ],
@@ -26,7 +125,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

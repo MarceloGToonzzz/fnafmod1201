@@ -384,8 +384,10 @@ import net.mcreator.fnafmod.block.DrumsetBlock;
 import net.mcreator.fnafmod.block.DoorLightBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
+import net.mcreator.fnafmod.block.DoorButtonBlock;
 import net.mcreator.fnafmod.block.DoorBoarderBlock;
 import net.mcreator.fnafmod.block.DisplayShelvesBlock;
+import net.mcreator.fnafmod.block.DisplayMonitorBlock;
 import net.mcreator.fnafmod.block.DinerChairBlock;
 import net.mcreator.fnafmod.block.DinerChair5Block;
 import net.mcreator.fnafmod.block.DinerChair4Block;
@@ -1248,7 +1250,6 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> ALTERNATE_GARAGE_DOOR = REGISTRY.register("alternate_garage_door", () -> new AlternateGarageDoorBlock());
 	public static final RegistryObject<Block> TORTURE_FREDDY = REGISTRY.register("torture_freddy", () -> new TortureFreddyBlock());
 	public static final RegistryObject<Block> TORTURE_CHAIR = REGISTRY.register("torture_chair", () -> new TortureChairBlock());
-	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
 	public static final RegistryObject<Block> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> new IndustrialFanBlock());
 	public static final RegistryObject<Block> TILED_WALL_HANDLE = REGISTRY.register("tiled_wall_handle", () -> new TiledWallHandleBlock());
 	public static final RegistryObject<Block> PRIZE_HATCH = REGISTRY.register("prize_hatch", () -> new PrizeHatchBlock());
@@ -1298,6 +1299,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
 	public static final RegistryObject<Block> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> new ModularLightBlock());
 	public static final RegistryObject<Block> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> new LightSwitchBlock());
+	public static final RegistryObject<Block> DISPLAY_MONITOR = REGISTRY.register("display_monitor", () -> new DisplayMonitorBlock());
+	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
+	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

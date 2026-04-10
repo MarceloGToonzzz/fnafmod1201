@@ -128,9 +128,6 @@
     "onRightClicked": {
       "name": "GeneratorOutletOnBlockRightClicked"
     },
-    "onTickUpdate": {
-      "name": "GeneratorOutletOnTickUpdate"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -54,7 +54,9 @@ import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DoorButtonTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DisplayMonitorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ClownfulDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CinematicSignToysTileRenderer;
@@ -164,7 +166,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.ALTERNATE_GARAGE_DOOR.get(), context -> new AlternateGarageDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.TORTURE_FREDDY.get(), context -> new TortureFreddyTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.TORTURE_CHAIR.get(), context -> new TortureChairTileRenderer());
-		event.registerBlockEntityRenderer(FnafModModBlockEntities.LARGE_INDUSTRIAL_DOOR.get(), context -> new LargeIndustrialDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.INDUSTRIAL_FAN.get(), context -> new IndustrialFanTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_LEFT_BREAKER.get(), context -> new GeneratorLeftBreakerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_MIDDLE_POWER.get(), context -> new GeneratorMiddlePowerTileRenderer());
@@ -172,5 +173,8 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CELEBRATE_FUN.get(), context -> new CelebrateFunTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT.get(), context -> new ModularLightTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_SWITCH.get(), context -> new LightSwitchTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_MONITOR.get(), context -> new DisplayMonitorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON.get(), context -> new DoorButtonTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.LARGE_INDUSTRIAL_DOOR.get(), context -> new LargeIndustrialDoorTileRenderer());
 	}
 }

@@ -9,6 +9,9 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.fnafmod.world.inventory.GeneratorCreativeGUIMenu;
+import net.mcreator.fnafmod.procedures.GenCreativePowerReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeDrainRateReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeDrainFrequencyReturnProcedure;
 
 import java.util.HashMap;
 
@@ -44,7 +47,7 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/generatorcreativebase.png"), this.leftPos + 15, this.topPos + -20, 0, 0, 144, 192, 144, 192);
+		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/generatorcreativebase.png"), this.leftPos + 6, this.topPos + -29, 0, 0, 166, 214, 166, 214);
 
 		RenderSystem.disableBlend();
 	}
@@ -60,6 +63,18 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_sgygf"), 34, 3, -26368, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_drain"), 34, 15, -3381760, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_idk_yet"), 34, 27, -26368, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativePowerReturnProcedure.execute(world, x, y, z), 85, 3, -26368, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeDrainRateReturnProcedure.execute(world, x, y, z), 80, 15, -3381760, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeDrainFrequencyReturnProcedure.execute(world, x, y, z), 83, 27, -26368, false);
 	}
 
 	@Override
