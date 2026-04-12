@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fnaf_mod:block/raw_pizza_dough"
+    },
+    "type=top": {
+      "model": "fnaf_mod:block/raw_pizza_dough_top"
+    },
+    "type=double": {
+      "model": "fnaf_mod:block/raw_pizza_dough_full"
+    }
+  }
+}

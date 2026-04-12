@@ -13,6 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.fnafmod.procedures.HudTimeDisplayProcedure;
 import net.mcreator.fnafmod.procedures.GeneratorPowerDisplayShowProcedure;
 import net.mcreator.fnafmod.procedures.GeneratorPowerDisplayNumberProcedure;
 
@@ -38,6 +39,10 @@ public class GeneratorPowerDisplayOverlay {
 				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 						GeneratorPowerDisplayNumberProcedure.execute(world, entity), w / 2 + -207, h / 2 + 104, -1, false);
+			if (GeneratorPowerDisplayShowProcedure.execute(entity))
+				event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+						HudTimeDisplayProcedure.execute(world), w / 2 + -207, h / 2 + 86, -52225, false);
 		}
 	}
 }

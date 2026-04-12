@@ -1,0 +1,7 @@
+
+{
+  "parent": "fnaf_mod:displaysettings/nightmare_bonnie.geo",
+  "textures": {
+    "particle": "fnaf_mod:block/screen"
+  }
+}

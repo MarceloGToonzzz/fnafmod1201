@@ -182,6 +182,11 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.RIDING_ROCKET.get().asItem());
 				tabData.accept(FnafModModBlocks.TOILET.get().asItem());
 				tabData.accept(FnafModModBlocks.SINK.get().asItem());
+				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
+				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
+				tabData.accept(FnafModModBlocks.DISPLAY_MONITOR.get().asItem());
+				tabData.accept(FnafModModBlocks.STANCHION.get().asItem());
+				tabData.accept(FnafModModBlocks.DOOR_BUTTON.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_ITEMS = REGISTRY.register("fnaf_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_items")).icon(() -> new ItemStack(FnafModModItems.CUPCAKE.get())).displayItems((parameters, tabData) -> {
@@ -761,7 +766,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.STAGE_WOOD_FENCE_GATE.get().asItem());
 				tabData.accept(FnafModModBlocks.GARAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get().asItem());
-				tabData.accept(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.TILED_WALL_HANDLE.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRANCE.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRY.get().asItem());
@@ -771,6 +775,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BREAKER.get().asItem());
 				tabData.accept(FnafModModBlocks.GENERATOR_SPAWN_BLOCK.get().asItem());
 				tabData.accept(FnafModModBlocks.BALLOON_ORANGE.get().asItem());
+				tabData.accept(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get().asItem());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> STRUCTURE_SPAWNERS = REGISTRY.register("structure_spawners",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.structure_spawners")).icon(() -> new ItemStack(FnafModModBlocks.STRUCTURE_SPAWNING_BLOCK.get())).displayItems((parameters, tabData) -> {
