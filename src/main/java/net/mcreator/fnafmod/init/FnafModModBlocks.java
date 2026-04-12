@@ -19,6 +19,7 @@ import net.mcreator.fnafmod.block.YellowWallStairsBlock;
 import net.mcreator.fnafmod.block.YellowWallSlabBlock;
 import net.mcreator.fnafmod.block.YellowWallMiddleBlock;
 import net.mcreator.fnafmod.block.YellowWallBlock;
+import net.mcreator.fnafmod.block.WorldStoneBlock;
 import net.mcreator.fnafmod.block.WorldDirtBlock;
 import net.mcreator.fnafmod.block.WiresBlock;
 import net.mcreator.fnafmod.block.WindowedCyanDoorBlock;
@@ -1294,6 +1295,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> BALLOON_ORANGE = REGISTRY.register("balloon_orange", () -> new BalloonOrangeBlock());
 	public static final RegistryObject<Block> TOILET = REGISTRY.register("toilet", () -> new ToiletBlock());
 	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
+	public static final RegistryObject<Block> WORLD_STONE = REGISTRY.register("world_stone", () -> new WorldStoneBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

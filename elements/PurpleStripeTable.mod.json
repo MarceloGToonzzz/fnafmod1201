@@ -44,7 +44,7 @@
     "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ConnectingTable"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -118,9 +118,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "TableClothSwapping"
-    },
     "onBlockAdded": {
       "name": "PurpleStripedTableCode"
     },

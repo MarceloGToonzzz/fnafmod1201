@@ -38,18 +38,14 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.1,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:FNAFBlocks"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:TableClothItem"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -70,7 +66,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:TableClothItem"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

@@ -122,9 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "TableClothSwapping"
-    },
     "onBlockAdded": {
       "name": "PurpleStripedTableCode"
     },

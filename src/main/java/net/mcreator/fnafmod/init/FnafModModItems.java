@@ -38,6 +38,7 @@ import net.mcreator.fnafmod.item.ToyChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.ToyBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.ToreadorMarchItem;
 import net.mcreator.fnafmod.item.TheyllFindYouItem;
+import net.mcreator.fnafmod.item.TableClothItemItem;
 import net.mcreator.fnafmod.item.StatueFreddyItemItem;
 import net.mcreator.fnafmod.item.StatueFoxyItemItem;
 import net.mcreator.fnafmod.item.StatueChicaItemItem;
@@ -56,6 +57,8 @@ import net.mcreator.fnafmod.item.ShadowBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.RemnantItem;
 import net.mcreator.fnafmod.item.RedPlasticItem;
 import net.mcreator.fnafmod.item.RedFabricItem;
+import net.mcreator.fnafmod.item.PurpleTableClothItemItem;
+import net.mcreator.fnafmod.item.PurpleStarTableClothItemItem;
 import net.mcreator.fnafmod.item.PurplePlasticItem;
 import net.mcreator.fnafmod.item.PurpleFabricItem;
 import net.mcreator.fnafmod.item.PuppetSpawnItemItem;
@@ -106,6 +109,7 @@ import net.mcreator.fnafmod.item.LightGrayPlasticItem;
 import net.mcreator.fnafmod.item.LightGrayFabricItem;
 import net.mcreator.fnafmod.item.LightBluePlasticItem;
 import net.mcreator.fnafmod.item.LightBlueFabricItem;
+import net.mcreator.fnafmod.item.KnifeItem;
 import net.mcreator.fnafmod.item.JjSpawnItemItem;
 import net.mcreator.fnafmod.item.JackOChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.JackOBonnieSpawnItemItem;
@@ -1274,6 +1278,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SINK = block(FnafModModBlocks.SINK);
 	public static final RegistryObject<Item> FIRE_AXE = REGISTRY.register("fire_axe", () -> new FireAxeItem());
 	public static final RegistryObject<Item> KNIFE = REGISTRY.register("knife", () -> new KnifeItem());
+	public static final RegistryObject<Item> TABLE_CLOTH_ITEM = REGISTRY.register("table_cloth_item", () -> new TableClothItemItem());
+	public static final RegistryObject<Item> PURPLE_TABLE_CLOTH_ITEM = REGISTRY.register("purple_table_cloth_item", () -> new PurpleTableClothItemItem());
+	public static final RegistryObject<Item> PURPLE_STAR_TABLE_CLOTH_ITEM = REGISTRY.register("purple_star_table_cloth_item", () -> new PurpleStarTableClothItemItem());
+	public static final RegistryObject<Item> WORLD_STONE = block(FnafModModBlocks.WORLD_STONE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
