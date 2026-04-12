@@ -60,7 +60,7 @@ public class GeneratorOutletOnBlockRightClickedProcedure {
 							+ " at X " + ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("LinkX")) + ", Y "
 							+ ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("LinkY")) + ", Z "
 							+ ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("LinkZ")))), true);
-				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FnafModModBlocks.GENERATOR_PERCENTAGE_BLOCK.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FnafModModBlocks.GENERATOR_OUTLET.get()) {
+				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FnafModModBlocks.GENERATOR_OUTLET.get()) {
 					if (!(((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDisplayName().getString()).equals("Link Cable"))) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);

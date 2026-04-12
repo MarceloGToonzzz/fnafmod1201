@@ -158,6 +158,138 @@
           "y": 104,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_doors",
+          "text": {
+            "fixedValue": "Doors"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 154,
+          "y": 168,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lights",
+          "text": {
+            "fixedValue": "Lights"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 154,
+          "y": 182,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_access",
+          "text": {
+            "fixedValue": "Access:"
+          },
+          "color": {
+            "value": -3407668,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 166,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_auto",
+          "text": {
+            "fixedValue": "Auto:"
+          },
+          "color": {
+            "value": -6750055,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_light_drain_return",
+          "text": {
+            "fixedValue": "",
+            "name": "LightDrainReturn"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 182,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_door_drain_return",
+          "text": {
+            "fixedValue": "",
+            "name": "DoorDrainReturn"
+          },
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 168,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gen_creative_lever_auto_ret",
+          "text": {
+            "fixedValue": "",
+            "name": "GenCreativeLeverAutoReturn"
+          },
+          "color": {
+            "value": -6750055,
+            "falpha": 0.0
+          },
+          "x": 235,
+          "y": 184,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gen_creative_access_level_r",
+          "text": {
+            "fixedValue": "",
+            "name": "GenCreativeAccessLevelReturn"
+          },
+          "color": {
+            "value": -3407668,
+            "falpha": 0.0
+          },
+          "x": 238,
+          "y": 173,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

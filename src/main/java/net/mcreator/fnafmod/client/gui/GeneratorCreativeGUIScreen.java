@@ -10,11 +10,15 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.fnafmod.world.inventory.GeneratorCreativeGUIMenu;
+import net.mcreator.fnafmod.procedures.LightDrainReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenLeverUpReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenLeverDownReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativePowerReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeLeverAutoReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativeDrainRateReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativeDrainFrequencyReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeAccessLevelReturnProcedure;
+import net.mcreator.fnafmod.procedures.DoorDrainReturnProcedure;
 import net.mcreator.fnafmod.network.GeneratorCreativeGUIButtonMessage;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -87,6 +91,22 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 		guiGraphics.drawString(this.font,
 
 				GenCreativeDrainFrequencyReturnProcedure.execute(world, x, y, z), 83, 27, -26368, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_doors"), 28, 131, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_lights"), 28, 145, -16724992, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_access"), 81, 129, -3407668, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_auto"), 81, 147, -6750055, false);
+		guiGraphics.drawString(this.font,
+
+				LightDrainReturnProcedure.execute(world, x, y, z), 61, 145, -16724992, false);
+		guiGraphics.drawString(this.font,
+
+				DoorDrainReturnProcedure.execute(world, x, y, z), 61, 131, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeLeverAutoReturnProcedure.execute(world, x, y, z), 109, 147, -6750055, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeAccessLevelReturnProcedure.execute(world, x, y, z), 112, 136, -3407668, false);
 	}
 
 	@Override

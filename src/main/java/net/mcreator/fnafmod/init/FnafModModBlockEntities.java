@@ -55,7 +55,6 @@ import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
 import net.mcreator.fnafmod.block.entity.GenpPercentTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorRightCreativeTileEntity;
-import net.mcreator.fnafmod.block.entity.GeneratorPercentageBlockBlockEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorOutletBlockEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorMiddlePowerTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorLeftBreakerTileEntity;
@@ -272,7 +271,6 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<DoorButtonTileEntity>> DOOR_BUTTON = REGISTRY.register("door_button", () -> BlockEntityType.Builder.of(DoorButtonTileEntity::new, FnafModModBlocks.DOOR_BUTTON.get()).build(null));
 	public static final RegistryObject<BlockEntityType<LargeIndustrialDoorTileEntity>> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door",
 			() -> BlockEntityType.Builder.of(LargeIndustrialDoorTileEntity::new, FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get()).build(null));
-	public static final RegistryObject<BlockEntityType<?>> GENERATOR_PERCENTAGE_BLOCK = register("generator_percentage_block", FnafModModBlocks.GENERATOR_PERCENTAGE_BLOCK, GeneratorPercentageBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<GenpPercentTileEntity>> GENP_PERCENT = REGISTRY.register("genp_percent", () -> BlockEntityType.Builder.of(GenpPercentTileEntity::new, FnafModModBlocks.GENP_PERCENT.get()).build(null));
 
 	// Start of user code block custom block entities

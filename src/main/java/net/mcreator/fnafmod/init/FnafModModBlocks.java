@@ -306,7 +306,6 @@ import net.mcreator.fnafmod.block.GlassDoorBlock;
 import net.mcreator.fnafmod.block.GenpPercentBlock;
 import net.mcreator.fnafmod.block.GeneratorSpawnBlockBlock;
 import net.mcreator.fnafmod.block.GeneratorRightCreativeBlock;
-import net.mcreator.fnafmod.block.GeneratorPercentageBlockBlock;
 import net.mcreator.fnafmod.block.GeneratorOutletBlock;
 import net.mcreator.fnafmod.block.GeneratorMiddlePowerBlock;
 import net.mcreator.fnafmod.block.GeneratorLeftBreakerBlock;
@@ -1304,7 +1303,6 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DISPLAY_MONITOR = REGISTRY.register("display_monitor", () -> new DisplayMonitorBlock());
 	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
 	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
-	public static final RegistryObject<Block> GENERATOR_PERCENTAGE_BLOCK = REGISTRY.register("generator_percentage_block", () -> new GeneratorPercentageBlockBlock());
 	public static final RegistryObject<Block> GENP_PERCENT = REGISTRY.register("genp_percent", () -> new GenpPercentBlock());
 
 	// Start of user code block custom blocks

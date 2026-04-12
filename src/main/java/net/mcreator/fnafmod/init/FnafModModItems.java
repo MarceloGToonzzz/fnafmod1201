@@ -1284,7 +1284,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> DOOR_BUTTON = REGISTRY.register(FnafModModBlocks.DOOR_BUTTON.getId().getPath(), () -> new DoorButtonDisplayItem(FnafModModBlocks.DOOR_BUTTON.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LARGE_INDUSTRIAL_DOOR = REGISTRY.register(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.getId().getPath(),
 			() -> new LargeIndustrialDoorDisplayItem(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get(), new Item.Properties()));
-	public static final RegistryObject<Item> GENERATOR_PERCENTAGE_BLOCK = block(FnafModModBlocks.GENERATOR_PERCENTAGE_BLOCK);
 	public static final RegistryObject<Item> GENP_PERCENT = REGISTRY.register(FnafModModBlocks.GENP_PERCENT.getId().getPath(), () -> new GenpPercentDisplayItem(FnafModModBlocks.GENP_PERCENT.get(), new Item.Properties()));
 
 	// Start of user code block custom items

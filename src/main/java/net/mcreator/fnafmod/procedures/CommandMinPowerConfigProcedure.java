@@ -43,34 +43,7 @@ public class CommandMinPowerConfigProcedure {
 					return 0;
 				}
 			}
-		}.getZ()))).getBlock() == FnafModModBlocks.GENP_PERCENT.get() || (world.getBlockState(BlockPos.containing(new Object() {
-			public double getX() {
-				try {
-					return BlockPosArgument.getLoadedBlockPos(arguments, "PowerBlock").getX();
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return 0;
-				}
-			}
-		}.getX(), new Object() {
-			public double getY() {
-				try {
-					return BlockPosArgument.getLoadedBlockPos(arguments, "PowerBlock").getY();
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return 0;
-				}
-			}
-		}.getY(), new Object() {
-			public double getZ() {
-				try {
-					return BlockPosArgument.getLoadedBlockPos(arguments, "PowerBlock").getZ();
-				} catch (CommandSyntaxException e) {
-					e.printStackTrace();
-					return 0;
-				}
-			}
-		}.getZ()))).getBlock() == FnafModModBlocks.GENERATOR_PERCENTAGE_BLOCK.get()) {
+		}.getZ()))).getBlock() == FnafModModBlocks.GENP_PERCENT.get()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(new Object() {
 					public double getX() {
