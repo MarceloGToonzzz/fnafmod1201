@@ -34651,6 +34651,181 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
+    },
+    {
+      "name": "PizzaToppingCheese",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_topping_cheese",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza_topping_cheese.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza_topping_cheese.json",
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_topping_cheese.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_topping_cheese.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaToppingCheeseBlock.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Ingredients"
+    },
+    {
+      "name": "PizzaToppingTomatoSauce",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_topping_tomato_sauce",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_topping_tomato_sauce.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza_topping_tomato_sauce.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaToppingTomatoSauceBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza_topping_tomato_sauce.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_topping_tomato_sauce.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Ingredients"
+    },
+    {
+      "name": "PizzaToppingMushroom",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_topping_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza_topping_mushroom.json",
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_topping_mushroom.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_topping_mushroom.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaToppingMushroomBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza_topping_mushroom.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Ingredients"
+    },
+    {
+      "name": "PizzaToppingSausage",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_topping_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_topping_sausage.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_topping_sausage.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza_topping_sausage.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaToppingSausageBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza_topping_sausage.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Ingredients"
+    },
+    {
+      "name": "PizzaToppingPepperoni",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_topping_pepperoni",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza_topping_pepperoni.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaToppingPepperoniBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_topping_pepperoni.json",
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_topping_pepperoni.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza_topping_pepperoni.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Ingredients"
+    },
+    {
+      "name": "PizzaDough",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_dough",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_dough.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_dough_top.json",
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_dough.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza_dough.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_dough_full.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaDoughBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/PizzaDoughBlockEntity.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza_dough.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Ingredients"
+    },
+    {
+      "name": "RawPizzaOnRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_pizza_on_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/RawPizzaOnRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Procedures"
+    },
+    {
+      "name": "RawPizzaOnBlockBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_pizza_on_block_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/RawPizzaOnBlockBreakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Pizza/Procedures"
     }
   ],
   "variable_elements": [
@@ -35565,6 +35740,7 @@
       "CUSTOM:Stanchion6"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:PizzaDough",
       "~CUSTOM:StageWoodSlab",
       "~CUSTOM:GreenBlueDiagonalTileSlab",
       "~CUSTOM:DiagonalTileSlab",
@@ -36996,8 +37172,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -37006,12 +37182,12 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
@@ -37030,8 +37206,8 @@
       "item.fnaf_mod.day_time_bonnie_spawn_egg": "DaytimeBonnie Spawn Egg",
       "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
       "entity.fnaf_mod.the_groobler": "The Groobler",
-      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.balloon": "Red Balloon",
+      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.big_dual_colour_entrance_door": "Big Dual Coloured Entrance Door",
       "block.fnaf_mod.green_blue_diagonal_tile_stair": "Green Blue Diagonal Tile Stairs",
       "subtitles.blacktombyardtemp": "",
@@ -37224,6 +37400,7 @@
       "subtitles.showtimebitemarkremixbysynoxsis": "",
       "entity.fnaf_mod.phantom_puppet": "Phantom Puppet",
       "item.fnaf_mod.mat.description_0": "Maintainance Assisting Tablet",
+      "block.fnaf_mod.pizza_topping_tomato_sauce": "Pizza Topping Sauce",
       "item.fnaf_mod.toy_bonnie_spawn_egg": "Toy Bonnie Spawn Egg",
       "block.fnaf_mod.buffet_door_empty": "Buffet Door Clean",
       "block.fnaf_mod.mural_freddys": "Mural",
@@ -37652,6 +37829,7 @@
       "block.fnaf_mod.blueprint_tile_slab": "Blueprint Tile Slab",
       "block.fnaf_mod.yellow_wall_middle.description_0": "Middle",
       "item.fnaf_mod.magenta_fabric": "Magenta Fabric",
+      "block.fnaf_mod.pizza_topping_sausage": "Pizza Topping Sausage",
       "item.fnaf_mod.toy_foxy_cut_out_spawn_egg": "Toy Foxy Cutout Spawn Egg",
       "block.fnaf_mod.center_big_white_black_green_wall_tile": "Center Big White Green Wall Tiles",
       "block.fnaf_mod.red_door": "Red Establishment Door",
@@ -37745,6 +37923,7 @@
       "block.fnaf_mod.big_white_purple_tile": "Big White Purple Wall Tiles",
       "block.fnaf_mod.center_big_stage_black_brick_tiles": "Center Big Etched Black Stripe Brick Tiles",
       "entity.fnaf_mod.full_hostile_foxy": "Foxy Pirate",
+      "block.fnaf_mod.pizza_topping_cheese": "Pizza Topping Cheese",
       "block.fnaf_mod.red_black_tile_cracked": "Cracked Red Black Tile",
       "entity.fnaf_mod.nightmare_mangle": "Nightmare Mangle",
       "item.fnaf_mod.link_cable": "Link Cable",
@@ -37994,6 +38173,7 @@
       "item.fnaf_mod.dont_go.desc": "Don\u0027t Go - LordSmugDread",
       "item.fnaf_mod.puffy_puffins_spawn_egg": "Puffy Puffins Spawn Egg",
       "block.fnaf_mod.error_tile_slab_cracked": "Cracked Missing Texture Tile Slab",
+      "block.fnaf_mod.pizza_dough": "Pizza Dough",
       "item.fnaf_mod.phantom_freddy_spawn_egg": "Phantom Freddy Spawn Egg",
       "item.fnaf_mod.tameable_springtrap_spawn_egg": "Adventure Springtrap Spawn Egg",
       "block.fnaf_mod.center_big_white_purple_wall_tile": "Center Big White Purple Stripe Wall Tiles",
@@ -38222,6 +38402,7 @@
       "block.fnaf_mod.center_big_light_dark_black_wall_tile": "Center Big White-Black Black Stripe Wall Tiles",
       "block.fnaf_mod.alternate_big_stage_brick_tiles": "Alternate Big Etched Brick Tiles",
       "item.fnaf_mod.nightmare_bb_spawn_egg": "Nightmare Balloon Boy Spawn Egg",
+      "block.fnaf_mod.pizza_topping_pepperoni": "Pizza Topping Pepperoni",
       "block.fnaf_mod.movie_poster_4.description_0": "Foxy Saves The Kingdom!",
       "block.fnaf_mod.stage_bricks": "Etched Bricks",
       "item.fnaf_mod.pizza_cutter": "Pizza Cutter",
@@ -38347,6 +38528,7 @@
       "block.fnaf_mod.black_white_tile": "Black White Tile",
       "block.fnaf_mod.freddy_plushie": "Freddy Plushie",
       "block.fnaf_mod.locker_yellow": "Locker",
+      "block.fnaf_mod.pizza_topping_mushroom": "Pizza Topping Mushroom",
       "entity.fnaf_mod.ded_withered_freddy": "Withered Freddy",
       "block.fnaf_mod.buffet_wall": "Buffet Wall",
       "entity.fnaf_mod.daytime_puffy_puffins": "Daytime Puffy Puffins",
@@ -38495,6 +38677,19 @@
                   },
                   {
                     "name": "DisplayMonitor",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Pizza",
+                "children": [
+                  {
+                    "name": "Ingredients",
+                    "children": []
+                  },
+                  {
+                    "name": "Procedures",
                     "children": []
                   }
                 ]

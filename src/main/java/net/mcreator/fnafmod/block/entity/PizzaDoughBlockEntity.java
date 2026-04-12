@@ -1,21 +1,11 @@
 package net.mcreator.fnafmod.block.entity;
 
-import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animatable.GeoBlockEntity;
-
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -32,67 +22,17 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
-import net.mcreator.fnafmod.block.PizzaToppingsBlock;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class PizzaToppingsTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
-	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+public class PizzaDoughBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-	public int blockstateNew = this.getBlockState().getValue(PizzaToppingsBlock.BLOCKSTATE);
-	private int blockstateOld = this.getBlockState().getValue(PizzaToppingsBlock.BLOCKSTATE);
 
-	public PizzaToppingsTileEntity(BlockPos pos, BlockState state) {
-		super(FnafModModBlockEntities.PIZZA_TOPPINGS.get(), pos, state);
-	}
-
-	private PlayState predicate(AnimationState event) {
-		blockstateNew = this.getBlockState().getValue(PizzaToppingsBlock.BLOCKSTATE);
-		if (blockstateOld != blockstateNew) {
-			event.getController().forceAnimationReset();
-			blockstateOld = blockstateNew;
-			return PlayState.STOP;
-		}
-		String animationprocedure = ("" + this.getBlockState().getValue(PizzaToppingsBlock.ANIMATION));
-		if (animationprocedure.equals("0")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));
-		}
-		return PlayState.STOP;
-	}
-
-	String prevAnim = "0";
-
-	private PlayState procedurePredicate(AnimationState event) {
-		String animationprocedure = ("" + this.getBlockState().getValue(PizzaToppingsBlock.ANIMATION));
-		if (!animationprocedure.equals("0") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!animationprocedure.equals(prevAnim) && !animationprocedure.equals("0"))) {
-			if (!animationprocedure.equals(prevAnim))
-				event.getController().forceAnimationReset();
-			event.getController().setAnimation(RawAnimation.begin().thenPlay(animationprocedure));
-			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
-				if (this.getBlockState().getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp)
-					level.setBlock(this.getBlockPos(), this.getBlockState().setValue(_integerProp, 0), 3);
-				event.getController().forceAnimationReset();
-			}
-		} else if (animationprocedure.equals("0")) {
-			prevAnim = "0";
-			return PlayState.STOP;
-		}
-		prevAnim = animationprocedure;
-		return PlayState.CONTINUE;
-	}
-
-	@Override
-	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
-		data.add(new AnimationController<PizzaToppingsTileEntity>(this, "controller", 0, this::predicate));
-		data.add(new AnimationController<PizzaToppingsTileEntity>(this, "procedurecontroller", 0, this::procedurePredicate));
-	}
-
-	@Override
-	public AnimatableInstanceCache getAnimatableInstanceCache() {
-		return this.cache;
+	public PizzaDoughBlockEntity(BlockPos position, BlockState state) {
+		super(FnafModModBlockEntities.PIZZA_DOUGH.get(), position, state);
 	}
 
 	@Override
@@ -136,7 +76,7 @@ public class PizzaToppingsTileEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("pizza_toppings");
+		return Component.literal("pizza_dough");
 	}
 
 	@Override
@@ -151,7 +91,7 @@ public class PizzaToppingsTileEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Pizza Toppings");
+		return Component.literal("Pizza Dough");
 	}
 
 	@Override

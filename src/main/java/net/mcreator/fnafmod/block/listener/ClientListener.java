@@ -34,7 +34,6 @@ import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
-import net.mcreator.fnafmod.block.renderer.PizzaToppingsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ModularLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LightSwitchTileRenderer;
@@ -179,6 +178,5 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON.get(), context -> new DoorButtonTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LARGE_INDUSTRIAL_DOOR.get(), context -> new LargeIndustrialDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENP_PERCENT.get(), context -> new GenpPercentTileRenderer());
-		event.registerBlockEntityRenderer(FnafModModBlockEntities.PIZZA_TOPPINGS.get(), context -> new PizzaToppingsTileRenderer());
 	}
 }
