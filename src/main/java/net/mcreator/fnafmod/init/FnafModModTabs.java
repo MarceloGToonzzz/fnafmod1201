@@ -842,6 +842,7 @@ public class FnafModModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(FnafModModBlocks.GENERATOR_OUTLET.get().asItem());
 			tabData.accept(FnafModModItems.LINK_CABLE.get());
+			tabData.accept(FnafModModBlocks.GENERATOR_PERCENTAGE_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(FnafModModItems.FIRE_AXE.get());
 			tabData.accept(FnafModModItems.KNIFE.get());

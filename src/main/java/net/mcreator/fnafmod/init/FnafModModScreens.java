@@ -22,6 +22,7 @@ import net.mcreator.fnafmod.client.gui.JumpscareScreen;
 import net.mcreator.fnafmod.client.gui.GeneratorCreativeGUIScreen;
 import net.mcreator.fnafmod.client.gui.GeneratorBreakerUnpaneledScreen;
 import net.mcreator.fnafmod.client.gui.GeneratorBreakerSwitchesScreen;
+import net.mcreator.fnafmod.client.gui.GenCreativeConfigPowerScreen;
 import net.mcreator.fnafmod.client.gui.CameraGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -41,6 +42,7 @@ public class FnafModModScreens {
 			MenuScreens.register(FnafModModMenus.GENERATOR_BREAKER_SWITCHES.get(), GeneratorBreakerSwitchesScreen::new);
 			MenuScreens.register(FnafModModMenus.GENERATOR_CREATIVE_GUI.get(), GeneratorCreativeGUIScreen::new);
 			MenuScreens.register(FnafModModMenus.GENERATOR_BREAKER_UNPANELED.get(), GeneratorBreakerUnpaneledScreen::new);
+			MenuScreens.register(FnafModModMenus.GEN_CREATIVE_CONFIG_POWER.get(), GenCreativeConfigPowerScreen::new);
 		});
 	}
 }

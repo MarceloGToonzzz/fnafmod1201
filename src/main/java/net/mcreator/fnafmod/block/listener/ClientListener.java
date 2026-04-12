@@ -39,6 +39,7 @@ import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LightSwitchTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LargeIndustrialDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.IndustrialFanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.GenpPercentTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorRightCreativeTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorMiddlePowerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorLeftBreakerTileRenderer;
@@ -176,5 +177,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_MONITOR.get(), context -> new DisplayMonitorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON.get(), context -> new DoorButtonTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LARGE_INDUSTRIAL_DOOR.get(), context -> new LargeIndustrialDoorTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENP_PERCENT.get(), context -> new GenpPercentTileRenderer());
 	}
 }

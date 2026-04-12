@@ -118,6 +118,46 @@
           "y": 64,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "genleverdown.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GenLeverUpReturn"
+          },
+          "x": 240,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "genleverup.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GenLeverDownReturn"
+          },
+          "x": 240,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_genleverbutton",
+          "image": "genleverbutton.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "GenLeverOnButtonClick"
+          },
+          "x": 240,
+          "y": 104,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

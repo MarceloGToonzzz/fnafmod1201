@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "fnaf_mod:block/generator_percentage_block"
+    },
+    "blockstate=1": {
+      "model": "fnaf_mod:block/gen_percent_blockstates_blockstate_0"
+    }
+  }
+}
