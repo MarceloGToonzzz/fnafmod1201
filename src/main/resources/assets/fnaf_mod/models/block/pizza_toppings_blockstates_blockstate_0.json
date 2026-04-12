@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/horn_coral_fan",
+    "up": "minecraft:block/horn_coral_fan",
+    "north": "minecraft:block/horn_coral_fan",
+    "east": "minecraft:block/horn_coral_fan",
+    "south": "minecraft:block/horn_coral_fan",
+    "west": "minecraft:block/horn_coral_fan",
+    "particle": "minecraft:block/nether_wart_block"
+  },
+  "render_type": "solid"
+}

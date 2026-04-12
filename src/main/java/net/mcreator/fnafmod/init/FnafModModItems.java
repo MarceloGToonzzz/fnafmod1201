@@ -208,6 +208,7 @@ import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
+import net.mcreator.fnafmod.block.display.PizzaToppingsDisplayItem;
 import net.mcreator.fnafmod.block.display.ModularLightDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
 import net.mcreator.fnafmod.block.display.LightSwitchDisplayItem;
@@ -1285,6 +1286,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> LARGE_INDUSTRIAL_DOOR = REGISTRY.register(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.getId().getPath(),
 			() -> new LargeIndustrialDoorDisplayItem(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> GENP_PERCENT = REGISTRY.register(FnafModModBlocks.GENP_PERCENT.getId().getPath(), () -> new GenpPercentDisplayItem(FnafModModBlocks.GENP_PERCENT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> RAW_PIZZA_DOUGH = block(FnafModModBlocks.RAW_PIZZA_DOUGH);
+	public static final RegistryObject<Item> PIZZA_TOPPINGS = REGISTRY.register(FnafModModBlocks.PIZZA_TOPPINGS.getId().getPath(), () -> new PizzaToppingsDisplayItem(FnafModModBlocks.PIZZA_TOPPINGS.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

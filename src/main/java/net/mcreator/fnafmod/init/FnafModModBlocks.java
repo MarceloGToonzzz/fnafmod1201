@@ -184,6 +184,7 @@ import net.mcreator.fnafmod.block.RedBlackTileSlabCrackedBlock;
 import net.mcreator.fnafmod.block.RedBlackTileSlabBlock;
 import net.mcreator.fnafmod.block.RedBlackTileCrackedBlock;
 import net.mcreator.fnafmod.block.RedBlackTileBlock;
+import net.mcreator.fnafmod.block.RawPizzaDoughBlock;
 import net.mcreator.fnafmod.block.RancidTilesBlock;
 import net.mcreator.fnafmod.block.RainbowBlock;
 import net.mcreator.fnafmod.block.PurpleTableClothBlock;
@@ -225,6 +226,7 @@ import net.mcreator.fnafmod.block.PlushFoxyBlock;
 import net.mcreator.fnafmod.block.PlushChicaBlock;
 import net.mcreator.fnafmod.block.PlushBonnieBlock;
 import net.mcreator.fnafmod.block.PizzeriaTrashCanBlock;
+import net.mcreator.fnafmod.block.PizzaToppingsBlock;
 import net.mcreator.fnafmod.block.PizzaOvenBlock;
 import net.mcreator.fnafmod.block.PizzaBoxOpenBlock;
 import net.mcreator.fnafmod.block.PizzaBoxClosedBlock;
@@ -1304,6 +1306,8 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
 	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
 	public static final RegistryObject<Block> GENP_PERCENT = REGISTRY.register("genp_percent", () -> new GenpPercentBlock());
+	public static final RegistryObject<Block> RAW_PIZZA_DOUGH = REGISTRY.register("raw_pizza_dough", () -> new RawPizzaDoughBlock());
+	public static final RegistryObject<Block> PIZZA_TOPPINGS = REGISTRY.register("pizza_toppings", () -> new PizzaToppingsBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
