@@ -33697,6 +33697,38 @@
         ]
       },
       "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "TPToFNAFWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_fnaf_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/TPToFNAFWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/FNAF World/WorldGen"
+    },
+    {
+      "name": "ToFNAFWorld",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "to_fnaf_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/command/ToFNAFWorldCommand.java"
+        ]
+      },
+      "path": "~/FNAF World/WorldGen"
     }
   ],
   "variable_elements": [

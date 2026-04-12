@@ -5,8 +5,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
+import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
@@ -37,9 +42,38 @@ public class GenerateFNAFWorldChunksProcedure {
 			for (int chuckX = (int) 0; chuckX < (int) (Minecraft.getInstance().options.renderDistance().get() * 2); chuckX++) {
 				for (int chuckZ = (int) 0; chuckZ < (int) (Minecraft.getInstance().options.renderDistance().get() * 2); chuckZ++) {
 					if (world.hasChunkAt(
-							BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 100, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48))) {
-						world.setBlock(BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 100, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-								FnafModModBlocks.ERROR_TILE.get().defaultBlockState(), 3);
+							BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 0, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48))) {
+						if (!(FnafModModBlocks.ERROR_TILE.get() == (world.getBlockState(
+								BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 0, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48)))
+								.getBlock())) {
+							world.setBlock(
+									BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 0, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
+									FnafModModBlocks.ERROR_TILE.get().defaultBlockState(), 3);
+							if (world instanceof ServerLevel _serverworld) {
+								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_cave_normal_0"));
+								if (template != null) {
+									template.placeInWorld(_serverworld,
+											BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 1,
+													(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
+											BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 1,
+													(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
+											new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+								}
+							}
+							if (Math.random() < (1) / ((float) 20)) {
+								if (world instanceof ServerLevel _serverworld) {
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_top_normal_0"));
+									if (template != null) {
+										template.placeInWorld(_serverworld,
+												BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 26,
+														(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
+												BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 26,
+														(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
+												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+									}
+								}
+							}
+						}
 					}
 				}
 			}

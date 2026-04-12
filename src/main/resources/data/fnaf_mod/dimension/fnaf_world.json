@@ -2,7 +2,7 @@
   "type": "fnaf_mod:fnaf_world",
   "generator": {
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld",
+    "settings": "fnaf_mod:island_flat",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
