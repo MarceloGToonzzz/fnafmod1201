@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "ModelStandBonnie",
     "mobModelTexture": "bonniestand.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": true
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
@@ -33,7 +45,7 @@
     },
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "isBoss": false,
@@ -70,6 +82,9 @@
     "health": 5,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -106,6 +121,9 @@
       "value": "entity.generic.death"
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],

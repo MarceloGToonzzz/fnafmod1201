@@ -2,9 +2,9 @@
   "_fv": 73,
   "_type": "tab",
   "definition": {
-    "name": "FNAF Items",
+    "name": "FNAF Decor",
     "icon": {
-      "value": "CUSTOM:Cupcake"
+      "value": "CUSTOM:BackstageAnimatronicParts"
     },
     "showSearch": false
   }
