@@ -44,7 +44,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "pickaxe",
@@ -59,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "IRON"
+      "value": "NONE"
     },
     "tickRate": 1,
     "tickRandomly": false,

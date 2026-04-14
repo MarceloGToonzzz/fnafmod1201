@@ -42,7 +42,11 @@
     "resistance": 0.8,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:FNAFDecor"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
