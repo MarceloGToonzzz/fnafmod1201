@@ -1290,6 +1290,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MODULAR_LIGHT = REGISTRY.register(FnafModModBlocks.MODULAR_LIGHT.getId().getPath(), () -> new ModularLightDisplayItem(FnafModModBlocks.MODULAR_LIGHT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LIGHT_SWITCH = REGISTRY.register(FnafModModBlocks.LIGHT_SWITCH.getId().getPath(), () -> new LightSwitchDisplayItem(FnafModModBlocks.LIGHT_SWITCH.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DISPLAY_MONITOR = REGISTRY.register(FnafModModBlocks.DISPLAY_MONITOR.getId().getPath(), () -> new DisplayMonitorDisplayItem(FnafModModBlocks.DISPLAY_MONITOR.get(), new Item.Properties()));
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<Item> DOOR_BUTTON = REGISTRY.register(FnafModModBlocks.DOOR_BUTTON.getId().getPath(), () -> new DoorButtonDisplayItem(FnafModModBlocks.DOOR_BUTTON.get(), new Item.Properties()));
+>>>>>>> Stashed changes
 
 	// Start of user code block custom items
 	// End of user code block custom items

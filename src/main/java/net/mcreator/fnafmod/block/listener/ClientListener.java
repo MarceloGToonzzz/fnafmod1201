@@ -176,5 +176,9 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT.get(), context -> new ModularLightTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_SWITCH.get(), context -> new LightSwitchTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_MONITOR.get(), context -> new DisplayMonitorTileRenderer());
+<<<<<<< Updated upstream
+=======
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON.get(), context -> new DoorButtonTileRenderer());
+>>>>>>> Stashed changes
 	}
 }
