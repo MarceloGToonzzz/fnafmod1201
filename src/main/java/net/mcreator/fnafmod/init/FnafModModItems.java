@@ -211,12 +211,15 @@ import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
+import net.mcreator.fnafmod.block.display.ModularLightDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
+import net.mcreator.fnafmod.block.display.LightSwitchDisplayItem;
 import net.mcreator.fnafmod.block.display.LargeIndustrialDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.IndustrialFanDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorRightCreativeDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorMiddlePowerDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorLeftBreakerDisplayItem;
+import net.mcreator.fnafmod.block.display.GenPercentDisplayItem;
 import net.mcreator.fnafmod.block.display.GarageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
@@ -230,6 +233,7 @@ import net.mcreator.fnafmod.block.display.FluorescentLightDisplayItem;
 import net.mcreator.fnafmod.block.display.FloodLightsDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
+import net.mcreator.fnafmod.block.display.DisplayMonitorDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ClownfulDollDisplayItem;
 import net.mcreator.fnafmod.block.display.CinematicSignToysDisplayItem;
@@ -1282,6 +1286,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE_CLOTH_ITEM = REGISTRY.register("purple_star_table_cloth_item", () -> new PurpleStarTableClothItemItem());
 	public static final RegistryObject<Item> WORLD_STONE = block(FnafModModBlocks.WORLD_STONE);
 	public static final RegistryObject<Item> JJ_FIGURE = block(FnafModModBlocks.JJ_FIGURE);
+	public static final RegistryObject<Item> GEN_PERCENT = REGISTRY.register(FnafModModBlocks.GEN_PERCENT.getId().getPath(), () -> new GenPercentDisplayItem(FnafModModBlocks.GEN_PERCENT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> MODULAR_LIGHT = REGISTRY.register(FnafModModBlocks.MODULAR_LIGHT.getId().getPath(), () -> new ModularLightDisplayItem(FnafModModBlocks.MODULAR_LIGHT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> LIGHT_SWITCH = REGISTRY.register(FnafModModBlocks.LIGHT_SWITCH.getId().getPath(), () -> new LightSwitchDisplayItem(FnafModModBlocks.LIGHT_SWITCH.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DISPLAY_MONITOR = REGISTRY.register(FnafModModBlocks.DISPLAY_MONITOR.getId().getPath(), () -> new DisplayMonitorDisplayItem(FnafModModBlocks.DISPLAY_MONITOR.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

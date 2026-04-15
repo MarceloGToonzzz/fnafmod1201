@@ -34,12 +34,15 @@ import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
+import net.mcreator.fnafmod.block.renderer.ModularLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
+import net.mcreator.fnafmod.block.renderer.LightSwitchTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LargeIndustrialDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.IndustrialFanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorRightCreativeTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorMiddlePowerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorLeftBreakerTileRenderer;
+import net.mcreator.fnafmod.block.renderer.GenPercentTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GarageDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddysCupcakeBonanzaTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
@@ -53,6 +56,7 @@ import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DisplayMonitorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ClownfulDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CinematicSignToysTileRenderer;
@@ -168,5 +172,9 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_MIDDLE_POWER.get(), context -> new GeneratorMiddlePowerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_RIGHT_CREATIVE.get(), context -> new GeneratorRightCreativeTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CELEBRATE_FUN.get(), context -> new CelebrateFunTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GEN_PERCENT.get(), context -> new GenPercentTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT.get(), context -> new ModularLightTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_SWITCH.get(), context -> new LightSwitchTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_MONITOR.get(), context -> new DisplayMonitorTileRenderer());
 	}
 }

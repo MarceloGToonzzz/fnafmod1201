@@ -45,15 +45,18 @@ import net.mcreator.fnafmod.block.entity.PlushFredbearBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushChicaBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
+import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
+import net.mcreator.fnafmod.block.entity.LightSwitchTileEntity;
 import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorRightCreativeTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorOutletBlockEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorMiddlePowerTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorLeftBreakerTileEntity;
+import net.mcreator.fnafmod.block.entity.GenPercentTileEntity;
 import net.mcreator.fnafmod.block.entity.GarageDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
@@ -70,6 +73,7 @@ import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorBoarderBlockEntity;
 import net.mcreator.fnafmod.block.entity.DisplayShelvesTileEntity;
+import net.mcreator.fnafmod.block.entity.DisplayMonitorTileEntity;
 import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
@@ -257,6 +261,11 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(GeneratorRightCreativeTileEntity::new, FnafModModBlocks.GENERATOR_RIGHT_CREATIVE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> GENERATOR_OUTLET = register("generator_outlet", FnafModModBlocks.GENERATOR_OUTLET, GeneratorOutletBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<CelebrateFunTileEntity>> CELEBRATE_FUN = REGISTRY.register("celebrate_fun", () -> BlockEntityType.Builder.of(CelebrateFunTileEntity::new, FnafModModBlocks.CELEBRATE_FUN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<GenPercentTileEntity>> GEN_PERCENT = REGISTRY.register("gen_percent", () -> BlockEntityType.Builder.of(GenPercentTileEntity::new, FnafModModBlocks.GEN_PERCENT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ModularLightTileEntity>> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> BlockEntityType.Builder.of(ModularLightTileEntity::new, FnafModModBlocks.MODULAR_LIGHT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<LightSwitchTileEntity>> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> BlockEntityType.Builder.of(LightSwitchTileEntity::new, FnafModModBlocks.LIGHT_SWITCH.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DisplayMonitorTileEntity>> DISPLAY_MONITOR = REGISTRY.register("display_monitor",
+			() -> BlockEntityType.Builder.of(DisplayMonitorTileEntity::new, FnafModModBlocks.DISPLAY_MONITOR.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -1,0 +1,7 @@
+{
+  "_fv": 73,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"192\" y=\"202\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_string\"><value name=\"return\"><block type=\"text_join\"><mutation items=\"9\"></mutation><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\">Auto Cycle:</field></block></value><value name=\"ADD1\"><block type=\"text_new_line\"></block></value><value name=\"ADD2\"><block type=\"text\"><field name=\"TEXT\">  0-OFF</field></block></value><value name=\"ADD3\"><block type=\"text_new_line\"></block></value><value name=\"ADD4\"><block type=\"text\"><field name=\"TEXT\">  1-Auto OFF</field></block></value><value name=\"ADD5\"><block type=\"text_new_line\"></block></value><value name=\"ADD6\"><block type=\"text\"><field name=\"TEXT\">  2-Both</field></block></value><value name=\"ADD7\"><block type=\"text_new_line\"></block></value><value name=\"ADD8\"><block type=\"text\"><field name=\"TEXT\">  3-Auto On</field></block></value></block></value></block></next></block></xml>"
+  }
+}

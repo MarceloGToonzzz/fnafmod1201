@@ -525,6 +525,9 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PRINTER.get().asItem());
 				tabData.accept(FnafModModBlocks.TOILET.get().asItem());
 				tabData.accept(FnafModModBlocks.SINK.get().asItem());
+				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
+				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
+				tabData.accept(FnafModModBlocks.DISPLAY_MONITOR.get().asItem());
 			}).withTabsBefore(FNAF_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_TOOLS_AND_ITEMS = REGISTRY.register("fnaf_tools_and_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_tools_and_items")).icon(() -> new ItemStack(FnafModModItems.MAT.get())).displayItems((parameters, tabData) -> {
@@ -845,6 +848,8 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_PINK.get().asItem());
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_BLUE.get().asItem());
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_GOLDEN.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			tabData.accept(FnafModModBlocks.GEN_PERCENT.get().asItem());
 		}
 	}
 }

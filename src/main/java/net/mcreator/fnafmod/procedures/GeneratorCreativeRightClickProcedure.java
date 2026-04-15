@@ -23,6 +23,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.fnafmod.world.inventory.GeneratorCreativeGUIMenu;
+import net.mcreator.fnafmod.world.inventory.GenCreativeConfigGUIMenu;
 import net.mcreator.fnafmod.init.FnafModModItems;
 
 import io.netty.buffer.Unpooled;

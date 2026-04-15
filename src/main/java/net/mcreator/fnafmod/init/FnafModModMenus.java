@@ -22,6 +22,7 @@ import net.mcreator.fnafmod.world.inventory.JumpscareMenu;
 import net.mcreator.fnafmod.world.inventory.GeneratorCreativeGUIMenu;
 import net.mcreator.fnafmod.world.inventory.GeneratorBreakerUnpaneledMenu;
 import net.mcreator.fnafmod.world.inventory.GeneratorBreakerSwitchesMenu;
+import net.mcreator.fnafmod.world.inventory.GenCreativeConfigGUIMenu;
 import net.mcreator.fnafmod.world.inventory.CameraGUIMenu;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -39,4 +40,5 @@ public class FnafModModMenus {
 	public static final RegistryObject<MenuType<GeneratorBreakerSwitchesMenu>> GENERATOR_BREAKER_SWITCHES = REGISTRY.register("generator_breaker_switches", () -> IForgeMenuType.create(GeneratorBreakerSwitchesMenu::new));
 	public static final RegistryObject<MenuType<GeneratorCreativeGUIMenu>> GENERATOR_CREATIVE_GUI = REGISTRY.register("generator_creative_gui", () -> IForgeMenuType.create(GeneratorCreativeGUIMenu::new));
 	public static final RegistryObject<MenuType<GeneratorBreakerUnpaneledMenu>> GENERATOR_BREAKER_UNPANELED = REGISTRY.register("generator_breaker_unpaneled", () -> IForgeMenuType.create(GeneratorBreakerUnpaneledMenu::new));
+	public static final RegistryObject<MenuType<GenCreativeConfigGUIMenu>> GEN_CREATIVE_CONFIG_GUI = REGISTRY.register("gen_creative_config_gui", () -> IForgeMenuType.create(GenCreativeConfigGUIMenu::new));
 }

@@ -268,6 +268,7 @@ import net.mcreator.fnafmod.block.MovieExteriorWallBlock;
 import net.mcreator.fnafmod.block.MovieExteriorTopBlock;
 import net.mcreator.fnafmod.block.MovieChairBlock;
 import net.mcreator.fnafmod.block.MonitorsBlock;
+import net.mcreator.fnafmod.block.ModularLightBlock;
 import net.mcreator.fnafmod.block.MintCurtainBlock;
 import net.mcreator.fnafmod.block.MiniRancidWallBlock;
 import net.mcreator.fnafmod.block.MiniPuppetDecorBlock;
@@ -279,6 +280,7 @@ import net.mcreator.fnafmod.block.LockerSilverBlock;
 import net.mcreator.fnafmod.block.LinedWallBlock;
 import net.mcreator.fnafmod.block.LimeCurtainBlock;
 import net.mcreator.fnafmod.block.LilygearLakeGrassBlock;
+import net.mcreator.fnafmod.block.LightSwitchBlock;
 import net.mcreator.fnafmod.block.LightButtonOnBlock;
 import net.mcreator.fnafmod.block.LightButtonOffBlock;
 import net.mcreator.fnafmod.block.LicoriceCurtainBlock;
@@ -307,6 +309,7 @@ import net.mcreator.fnafmod.block.GeneratorRightCreativeBlock;
 import net.mcreator.fnafmod.block.GeneratorOutletBlock;
 import net.mcreator.fnafmod.block.GeneratorMiddlePowerBlock;
 import net.mcreator.fnafmod.block.GeneratorLeftBreakerBlock;
+import net.mcreator.fnafmod.block.GenPercentBlock;
 import net.mcreator.fnafmod.block.GarageDoorBlock;
 import net.mcreator.fnafmod.block.FreddysCupcakeBonanzaBlock;
 import net.mcreator.fnafmod.block.FreddySignOnBlock;
@@ -385,6 +388,7 @@ import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
 import net.mcreator.fnafmod.block.DoorBoarderBlock;
 import net.mcreator.fnafmod.block.DisplayShelvesBlock;
+import net.mcreator.fnafmod.block.DisplayMonitorBlock;
 import net.mcreator.fnafmod.block.DinerChairBlock;
 import net.mcreator.fnafmod.block.DinerChair5Block;
 import net.mcreator.fnafmod.block.DinerChair4Block;
@@ -1296,6 +1300,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
 	public static final RegistryObject<Block> WORLD_STONE = REGISTRY.register("world_stone", () -> new WorldStoneBlock());
 	public static final RegistryObject<Block> JJ_FIGURE = REGISTRY.register("jj_figure", () -> new JJFigureBlock());
+	public static final RegistryObject<Block> GEN_PERCENT = REGISTRY.register("gen_percent", () -> new GenPercentBlock());
+	public static final RegistryObject<Block> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> new ModularLightBlock());
+	public static final RegistryObject<Block> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> new LightSwitchBlock());
+	public static final RegistryObject<Block> DISPLAY_MONITOR = REGISTRY.register("display_monitor", () -> new DisplayMonitorBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
