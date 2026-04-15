@@ -32609,8 +32609,9 @@
       "registry_name": "generator_creative_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorCreativeGUIMenu.java",
           "src/main/java/net/mcreator/fnafmod/client/gui/GeneratorCreativeGUIScreen.java",
-          "src/main/java/net/mcreator/fnafmod/world/inventory/GeneratorCreativeGUIMenu.java"
+          "src/main/java/net/mcreator/fnafmod/network/GeneratorCreativeGUIButtonMessage.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/GUI"
@@ -33959,6 +33960,29 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "gen_creative_access_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GenCreativeAccessButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
       "path": "~/Blocks/FunctionalBlocks/Generator/Procedures"
     }
   ],
@@ -36553,6 +36577,7 @@
       "entity.fnaf_mod.plushtrap": "Plushtrap",
       "item.fnaf_mod.phantom_freddy_spawn_item": "Phantom Freddy",
       "block.fnaf_mod.center_big_dark_light_purple_wall_tile": "Center Big Black-White Purple Stripe Wall Tiles",
+      "gui.fnaf_mod.generator_creative_gui.label_lights": "Lights",
       "item.fnaf_mod.barry_polar_spawn_egg": "Barry Polar Spawn Egg",
       "block.fnaf_mod.big_rancid_wall_tiles": "Big Rancid Wall Tiles",
       "block.fnaf_mod.movie_wall_tile": "Movie Wall Tiles",
@@ -36818,6 +36843,7 @@
       "block.fnaf_mod.error_tile": "Missing Texture Tile",
       "item.fnaf_mod.bonnie_suit_leggings": "Bonnie Legs",
       "gui.fnaf_mod.camera_gui.button_camera_2": "Camera 2",
+      "gui.fnaf_mod.generator_creative_gui.label_drain": "Drain . . .",
       "gui.fnaf_mod.camera_gui.button_camera_1": "Camera 1",
       "biome.fnaf_mod.pinwheel_circus": "Fazbear Hills",
       "gui.fnaf_mod.camera_gui.button_camera_4": "Camera 4",
@@ -36896,6 +36922,7 @@
       "block.fnaf_mod.stage_light_green_on": "Stage Light (Green)",
       "block.fnaf_mod.thin_rose_curtain": "Thin Rose Curtain",
       "entity.fnaf_mod.withered_foxy": "Withered Foxy",
+      "gui.fnaf_mod.generator_creative_gui.label_power": "Power . . . .",
       "block.fnaf_mod.big_wide_red_entrance_door": "Wide Red Entrance Door",
       "block.fnaf_mod.wires": "Wires",
       "entity.fnaf_mod.toy_chica": "DayTime Toy Chica",
@@ -37034,6 +37061,7 @@
       "block.fnaf_mod.freddys_cupcake_bonanza": "Freddy\u0027s Cupcake Bonanza",
       "block.fnaf_mod.red_blue_tile_cracked": "Cracked Red Blue Tile",
       "block.fnaf_mod.alternate_movie_wall_tile": "Alternate Movie Wall Tiles",
+      "gui.fnaf_mod.generator_creative_gui.label_auto": "Auto:",
       "item.fnaf_mod.cyan_plastic": "Cyan Plastic",
       "gui.fnaf_mod.locker.label_locker": "Locker",
       "gui.fnaf_mod.wall_change_2.label_two_room_and_hall_faces": "Two Room and Hall Faces ",
@@ -37254,6 +37282,7 @@
       "block.fnaf_mod.cinematic_sign_freddy": "Cinematic Freddy Decoration",
       "block.fnaf_mod.door_button_off": "Door Button",
       "block.fnaf_mod.green_blue_tile_cracked": "Cracked Green Blue Tile",
+      "gui.fnaf_mod.generator_creative_gui.label_doors": "Doors",
       "entity.fnaf_mod.tameable_mangle": "Adventure Mangle",
       "block.fnaf_mod.oak_curtain.description_0": "§6(Brown Curtain)",
       "block.fnaf_mod.big_backstage_door": "Big Backstage Door",
@@ -37309,6 +37338,7 @@
       "block.fnaf_mod.glitched_log": "Glitched Log",
       "block.fnaf_mod.toy_foxy_plushie": "Toy Foxy Plushie",
       "block.fnaf_mod.rules_poster.description_0": "Poster of Bonnie the Bunny!",
+      "gui.fnaf_mod.generator_creative_gui.label_usage": "Usage . .",
       "block.fnaf_mod.buffet_door": "Buffet Door",
       "block.fnaf_mod.big_door_hitbox": "Big Door Hitbox",
       "block.fnaf_mod.center_light_dark_purple_wall_tile": "Center White-Black Purple Stripe Wall Tiles",
@@ -37331,6 +37361,7 @@
       "item.fnaf_mod.foxy_pirate_spawn_egg": "Foxy the Pirate Spawn Egg",
       "item.fnaf_mod.plushtrap_spawn_item": "Plushtrap",
       "item.fnaf_mod.theyll_find_you.desc": "They\u0027ll Find You - Lucas Burnett",
+      "gui.fnaf_mod.generator_creative_gui.label_access": "Access:",
       "block.fnaf_mod.toy_freddy_sign_on": "Toy Freddy Sign",
       "block.fnaf_mod.generator_outlet.description_1": "Dont connect redstone straight to it, use a comparator",
       "block.fnaf_mod.round_bush": "Bush",

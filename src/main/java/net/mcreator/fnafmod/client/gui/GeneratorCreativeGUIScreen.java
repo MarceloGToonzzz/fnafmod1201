@@ -6,9 +6,20 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.fnafmod.world.inventory.GeneratorCreativeGUIMenu;
+import net.mcreator.fnafmod.procedures.LightDrainReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenLeverUpReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenLeverDownReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeRateReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativePowerReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeLeverAutoReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeAccessLevelReturnProcedure;
+import net.mcreator.fnafmod.procedures.DoorDrainReturnProcedure;
+import net.mcreator.fnafmod.network.GeneratorCreativeGUIButtonMessage;
+import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.HashMap;
 
@@ -19,6 +30,7 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	ImageButton imagebutton_genleverbutton;
 
 	public GeneratorCreativeGUIScreen(GeneratorCreativeGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -44,8 +56,14 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/generatorcreativebase.png"), this.leftPos + 15, this.topPos + -20, 0, 0, 144, 192, 144, 192);
+		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/generatorcreativebase.png"), this.leftPos + 6, this.topPos + -29, 0, 0, 166, 214, 166, 214);
 
+		if (GenLeverUpReturnProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/genleverdown.png"), this.leftPos + 114, this.topPos + 67, 0, 0, 32, 44, 32, 44);
+		}
+		if (GenLeverDownReturnProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/genleverup.png"), this.leftPos + 114, this.topPos + 67, 0, 0, 32, 44, 32, 44);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -60,10 +78,46 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_power"), 34, 3, -26368, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_usage"), 34, 15, -3381760, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_drain"), 34, 27, -26368, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativePowerReturnProcedure.execute(world, x, y, z), 85, 3, -26368, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeRateReturnProcedure.execute(world, x, y, z), 80, 15, -3381760, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeRateReturnProcedure.execute(world, x, y, z), 83, 27, -26368, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_doors"), 28, 132, -16711936, false);
+		guiGraphics.drawString(this.font,
+
+				DoorDrainReturnProcedure.execute(world, x, y, z), 61, 132, -16711936, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_lights"), 28, 146, -16724992, false);
+		guiGraphics.drawString(this.font,
+
+				LightDrainReturnProcedure.execute(world, x, y, z), 61, 146, -16724992, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_access"), 80, 129, -3407668, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_auto"), 81, 148, -6750055, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeLeverAutoReturnProcedure.execute(world, x, y, z), 109, 148, -6750055, false);
+		guiGraphics.drawString(this.font,
+
+				GenCreativeAccessLevelReturnProcedure.execute(world, x, y, z), 112, 137, -3407668, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
+		imagebutton_genleverbutton = new ImageButton(this.leftPos + 114, this.topPos + 67, 32, 44, 0, 0, 44, new ResourceLocation("fnaf_mod:textures/screens/atlas/imagebutton_genleverbutton.png"), 32, 88, e -> {
+			if (true) {
+				FnafModMod.PACKET_HANDLER.sendToServer(new GeneratorCreativeGUIButtonMessage(0, x, y, z));
+				GeneratorCreativeGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_genleverbutton", imagebutton_genleverbutton);
+		this.addRenderableWidget(imagebutton_genleverbutton);
 	}
 }
