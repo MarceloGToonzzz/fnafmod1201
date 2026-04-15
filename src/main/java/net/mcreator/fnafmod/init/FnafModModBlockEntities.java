@@ -39,7 +39,6 @@ import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroComputerTileEntity;
 import net.mcreator.fnafmod.block.entity.RemantInfuserBlockEntity;
-import net.mcreator.fnafmod.block.entity.RawPizzaDoughBlockEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStripeTableTileEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStarTableTileEntity;
 import net.mcreator.fnafmod.block.entity.PlushFreddyBlockEntity;
@@ -47,7 +46,7 @@ import net.mcreator.fnafmod.block.entity.PlushFredbearBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushChicaBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
-import net.mcreator.fnafmod.block.entity.PizzaToppingsTileEntity;
+import net.mcreator.fnafmod.block.entity.PizzaDoughBlockEntity;
 import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
@@ -274,8 +273,7 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<LargeIndustrialDoorTileEntity>> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door",
 			() -> BlockEntityType.Builder.of(LargeIndustrialDoorTileEntity::new, FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GenpPercentTileEntity>> GENP_PERCENT = REGISTRY.register("genp_percent", () -> BlockEntityType.Builder.of(GenpPercentTileEntity::new, FnafModModBlocks.GENP_PERCENT.get()).build(null));
-	public static final RegistryObject<BlockEntityType<?>> RAW_PIZZA_DOUGH = register("raw_pizza_dough", FnafModModBlocks.RAW_PIZZA_DOUGH, RawPizzaDoughBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<PizzaToppingsTileEntity>> PIZZA_TOPPINGS = REGISTRY.register("pizza_toppings", () -> BlockEntityType.Builder.of(PizzaToppingsTileEntity::new, FnafModModBlocks.PIZZA_TOPPINGS.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> PIZZA_DOUGH = register("pizza_dough", FnafModModBlocks.PIZZA_DOUGH, PizzaDoughBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"4": "shredded_cheese",
+		"particle": "tomato_sauce"
+	},
+	"elements": [
+		{
+			"from": [2, 0.002, 2],
+			"to": [14, 0.002, 14],
+			"faces": {
+				"north": {"uv": [3, 2, 13, 2], "texture": "#4"},
+				"east": {"uv": [3, 2, 13, 2], "texture": "#4"},
+				"south": {"uv": [3, 2, 13, 2], "texture": "#4"},
+				"west": {"uv": [3, 2, 13, 2], "texture": "#4"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#4"},
+				"down": {"uv": [16, 16, 16, 16], "texture": "#4"}
+			}
+		}
+	]
+}

@@ -184,7 +184,6 @@ import net.mcreator.fnafmod.block.RedBlackTileSlabCrackedBlock;
 import net.mcreator.fnafmod.block.RedBlackTileSlabBlock;
 import net.mcreator.fnafmod.block.RedBlackTileCrackedBlock;
 import net.mcreator.fnafmod.block.RedBlackTileBlock;
-import net.mcreator.fnafmod.block.RawPizzaDoughBlock;
 import net.mcreator.fnafmod.block.RancidTilesBlock;
 import net.mcreator.fnafmod.block.RainbowBlock;
 import net.mcreator.fnafmod.block.PurpleTableClothBlock;
@@ -226,8 +225,13 @@ import net.mcreator.fnafmod.block.PlushFoxyBlock;
 import net.mcreator.fnafmod.block.PlushChicaBlock;
 import net.mcreator.fnafmod.block.PlushBonnieBlock;
 import net.mcreator.fnafmod.block.PizzeriaTrashCanBlock;
-import net.mcreator.fnafmod.block.PizzaToppingsBlock;
+import net.mcreator.fnafmod.block.PizzaToppingTomatoSauceBlock;
+import net.mcreator.fnafmod.block.PizzaToppingSausageBlock;
+import net.mcreator.fnafmod.block.PizzaToppingPepperoniBlock;
+import net.mcreator.fnafmod.block.PizzaToppingMushroomBlock;
+import net.mcreator.fnafmod.block.PizzaToppingCheeseBlock;
 import net.mcreator.fnafmod.block.PizzaOvenBlock;
+import net.mcreator.fnafmod.block.PizzaDoughBlock;
 import net.mcreator.fnafmod.block.PizzaBoxOpenBlock;
 import net.mcreator.fnafmod.block.PizzaBoxClosedBlock;
 import net.mcreator.fnafmod.block.PinwheelCircusGrassBlock;
@@ -1306,8 +1310,12 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
 	public static final RegistryObject<Block> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door", () -> new LargeIndustrialDoorBlock());
 	public static final RegistryObject<Block> GENP_PERCENT = REGISTRY.register("genp_percent", () -> new GenpPercentBlock());
-	public static final RegistryObject<Block> RAW_PIZZA_DOUGH = REGISTRY.register("raw_pizza_dough", () -> new RawPizzaDoughBlock());
-	public static final RegistryObject<Block> PIZZA_TOPPINGS = REGISTRY.register("pizza_toppings", () -> new PizzaToppingsBlock());
+	public static final RegistryObject<Block> PIZZA_TOPPING_CHEESE = REGISTRY.register("pizza_topping_cheese", () -> new PizzaToppingCheeseBlock());
+	public static final RegistryObject<Block> PIZZA_TOPPING_TOMATO_SAUCE = REGISTRY.register("pizza_topping_tomato_sauce", () -> new PizzaToppingTomatoSauceBlock());
+	public static final RegistryObject<Block> PIZZA_TOPPING_MUSHROOM = REGISTRY.register("pizza_topping_mushroom", () -> new PizzaToppingMushroomBlock());
+	public static final RegistryObject<Block> PIZZA_TOPPING_SAUSAGE = REGISTRY.register("pizza_topping_sausage", () -> new PizzaToppingSausageBlock());
+	public static final RegistryObject<Block> PIZZA_TOPPING_PEPPERONI = REGISTRY.register("pizza_topping_pepperoni", () -> new PizzaToppingPepperoniBlock());
+	public static final RegistryObject<Block> PIZZA_DOUGH = REGISTRY.register("pizza_dough", () -> new PizzaDoughBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

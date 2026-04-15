@@ -1,19 +1,19 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "foxyhead",
+    "texture": "shredded_cheese",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
+    "renderType": 2,
+    "customModelName": "pizzatopping:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -28,12 +28,13 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
+        "My": 0.1,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Pizza Toppings",
+    "customProperties": [],
+    "name": "Pizza Topping Cheese",
     "specialInformation": {
       "fixedValue": []
     },
@@ -75,7 +76,6 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -99,15 +99,14 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -118,6 +117,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -128,19 +128,6 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "foxyhead.geo.json",
-    "displaySettings": "freddyhead.item.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "chicahead",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "chicahead.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "maxGenerateHeight": 64
   }
 }
