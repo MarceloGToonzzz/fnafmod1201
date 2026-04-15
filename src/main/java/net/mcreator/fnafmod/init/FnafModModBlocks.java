@@ -1304,6 +1304,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> new ModularLightBlock());
 	public static final RegistryObject<Block> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> new LightSwitchBlock());
 	public static final RegistryObject<Block> DISPLAY_MONITOR = REGISTRY.register("display_monitor", () -> new DisplayMonitorBlock());
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
+>>>>>>> Stashed changes
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

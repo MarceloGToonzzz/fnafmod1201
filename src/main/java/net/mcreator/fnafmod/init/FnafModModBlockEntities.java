@@ -266,6 +266,10 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<LightSwitchTileEntity>> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> BlockEntityType.Builder.of(LightSwitchTileEntity::new, FnafModModBlocks.LIGHT_SWITCH.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DisplayMonitorTileEntity>> DISPLAY_MONITOR = REGISTRY.register("display_monitor",
 			() -> BlockEntityType.Builder.of(DisplayMonitorTileEntity::new, FnafModModBlocks.DISPLAY_MONITOR.get()).build(null));
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<BlockEntityType<DoorButtonTileEntity>> DOOR_BUTTON = REGISTRY.register("door_button", () -> BlockEntityType.Builder.of(DoorButtonTileEntity::new, FnafModModBlocks.DOOR_BUTTON.get()).build(null));
+>>>>>>> Stashed changes
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

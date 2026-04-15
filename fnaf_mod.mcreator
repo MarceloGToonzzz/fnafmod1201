@@ -34408,6 +34408,67 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/DisplayMonitor"
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "name": "DoorButtonOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_button_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DoorButtonOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "DoorButton",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/model/DoorButtonDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/DoorButtonBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/DoorButtonTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/door_button_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/DoorButtonDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/door_button.json",
+          "src/main/resources/assets/fnaf_mod/models/item/door_button.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/door_button_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/DoorButtonTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/DoorButtonDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/DoorButtonBlock.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [
@@ -36542,7 +36603,12 @@
       "Sink",
       "ModularLight",
       "LightSwitch",
+<<<<<<< Updated upstream
       "DisplayMonitor"
+=======
+      "DisplayMonitor",
+      "DoorButton"
+>>>>>>> Stashed changes
     ],
     "CUSTOM:FNAFToolsAndItems": [
       "MAT",

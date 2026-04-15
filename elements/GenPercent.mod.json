@@ -43,7 +43,11 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
+<<<<<<< Updated upstream:elements/GenPercent.mod.json
         "value": "REDSTONE"
+=======
+        "value": "CUSTOM:FNAFDecor"
+>>>>>>> Stashed changes:elements/DoorButton.mod.json
       }
     ],
     "destroyTool": "Not specified",
