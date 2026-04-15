@@ -2,50 +2,49 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "light_button",
+    "texture": "jj_figure",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
-    "rotationMode": 0,
+    "renderType": 2,
+    "customModelName": "jjfigure:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Button",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 6.5,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 6.5,
+        "Mx": 9.5,
+        "My": 5.0,
+        "Mz": 9.5,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Light Button",
+    "name": "Balloon Boy Figure",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.8,
+    "resistance": 0.8,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",
@@ -60,9 +59,9 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
-    "tickRate": 0,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -81,11 +80,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "reactionToPushing": "DESTROY",
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "LANTERN"
+      "value": "SCAFFOLDING"
     },
     "breakSound": {
       "value": ""
@@ -122,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "PopgoesPlushieOnBlockRightClicked"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

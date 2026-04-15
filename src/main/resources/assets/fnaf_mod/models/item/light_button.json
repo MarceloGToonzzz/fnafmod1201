@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "fnaf_mod:item/light_button"
-  },
-  "render_type": "translucent"
-}

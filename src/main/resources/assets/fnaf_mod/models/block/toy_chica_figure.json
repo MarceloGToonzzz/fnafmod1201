@@ -1,5 +1,5 @@
 {
-  "parent": "fnaf_mod:custom/figure_toy-chica",
+  "parent": "fnaf_mod:custom/toychicafigure",
   "textures": {
     "all": "fnaf_mod:block/figure_toy-chica",
     "particle": "fnaf_mod:block/figure_toy-chica",

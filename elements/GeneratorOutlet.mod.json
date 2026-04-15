@@ -47,7 +47,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "REDSTONE"
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "destroyTool": "Not specified",

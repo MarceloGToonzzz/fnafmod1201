@@ -1,5 +1,5 @@
 {
-  "parent": "fnaf_mod:custom/figure_balloon-boy",
+  "parent": "fnaf_mod:custom/bbfigure",
   "textures": {
     "all": "fnaf_mod:block/figure_balloon-boy",
     "particle": "fnaf_mod:block/figure_balloon-boy",

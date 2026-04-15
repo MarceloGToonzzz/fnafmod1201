@@ -1,5 +1,5 @@
 {
-  "parent": "fnaf_mod:custom/figure_marionette",
+  "parent": "fnaf_mod:custom/puppet...puppet",
   "textures": {
     "all": "fnaf_mod:block/figure_marionette",
     "particle": "fnaf_mod:block/figure_marionette",

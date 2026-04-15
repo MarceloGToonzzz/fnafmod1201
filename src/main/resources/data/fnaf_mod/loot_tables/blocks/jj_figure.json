@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "fnaf_mod:blocks/light_button",
+  "random_sequence": "fnaf_mod:blocks/jj_figure",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fnaf_mod:light_button"
+          "name": "fnaf_mod:jj_figure"
         }
       ]
     }

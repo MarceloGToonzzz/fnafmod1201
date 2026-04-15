@@ -161,7 +161,6 @@ import net.mcreator.fnafmod.item.CircuitBoardItem;
 import net.mcreator.fnafmod.item.ChicaSuitItem;
 import net.mcreator.fnafmod.item.ChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.ChicaItem;
-import net.mcreator.fnafmod.item.CameraPanelTestItem;
 import net.mcreator.fnafmod.item.CameraMonitorItem;
 import net.mcreator.fnafmod.item.BrownPlasticItem;
 import net.mcreator.fnafmod.item.BrownFabricItem;
@@ -639,7 +638,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SPRING_BONNIE_HEAD = REGISTRY.register(FnafModModBlocks.SPRING_BONNIE_HEAD.getId().getPath(), () -> new SpringBonnieHeadDisplayItem(FnafModModBlocks.SPRING_BONNIE_HEAD.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SITTING_FREDBEAR_SPAWN_EGG = REGISTRY.register("sitting_fredbear_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.SITTING_FREDBEAR, -7052775, -12253365, new Item.Properties()));
 	public static final RegistryObject<Item> ENDO_BLOCK = REGISTRY.register(FnafModModBlocks.ENDO_BLOCK.getId().getPath(), () -> new EndoBlockDisplayItem(FnafModModBlocks.ENDO_BLOCK.get(), new Item.Properties()));
-	public static final RegistryObject<Item> LIGHT_BUTTON = block(FnafModModBlocks.LIGHT_BUTTON);
 	public static final RegistryObject<Item> TOY_TELEPHONE = block(FnafModModBlocks.TOY_TELEPHONE);
 	public static final RegistryObject<Item> TOY_CATERPILLAR = block(FnafModModBlocks.TOY_CATERPILLAR);
 	public static final RegistryObject<Item> TOY_ROBOT = block(FnafModModBlocks.TOY_ROBOT);
@@ -1283,7 +1281,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_TABLE_CLOTH_ITEM = REGISTRY.register("purple_table_cloth_item", () -> new PurpleTableClothItemItem());
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE_CLOTH_ITEM = REGISTRY.register("purple_star_table_cloth_item", () -> new PurpleStarTableClothItemItem());
 	public static final RegistryObject<Item> WORLD_STONE = block(FnafModModBlocks.WORLD_STONE);
-	public static final RegistryObject<Item> CAMERA_PANEL_TEST = REGISTRY.register("camera_panel_test", () -> new CameraPanelTestItem());
+	public static final RegistryObject<Item> JJ_FIGURE = block(FnafModModBlocks.JJ_FIGURE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

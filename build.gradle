@@ -1,7 +1,6 @@
 plugins {
     id 'eclipse'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
-    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = '1.0'
@@ -43,15 +42,8 @@ minecraft {
     }
 }
 
-mixin {
-    add sourceSets.main, 'mixins.fnaf_mod.refmap.json'
-
-    config 'mixins.fnaf_mod.json'
-}
-
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 tasks.withType(JavaCompile).configureEach {

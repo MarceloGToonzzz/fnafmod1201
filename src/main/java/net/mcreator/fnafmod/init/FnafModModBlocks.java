@@ -281,11 +281,11 @@ import net.mcreator.fnafmod.block.LimeCurtainBlock;
 import net.mcreator.fnafmod.block.LilygearLakeGrassBlock;
 import net.mcreator.fnafmod.block.LightButtonOnBlock;
 import net.mcreator.fnafmod.block.LightButtonOffBlock;
-import net.mcreator.fnafmod.block.LightButtonBlock;
 import net.mcreator.fnafmod.block.LicoriceCurtainBlock;
 import net.mcreator.fnafmod.block.LetsEatSignBlock;
 import net.mcreator.fnafmod.block.LargeIndustrialDoorBlock;
 import net.mcreator.fnafmod.block.KitchenDoorBlock;
+import net.mcreator.fnafmod.block.JJFigureBlock;
 import net.mcreator.fnafmod.block.IndustrialFanBlock;
 import net.mcreator.fnafmod.block.HeightChartBlock;
 import net.mcreator.fnafmod.block.GreenBlueTileStairCrackedBlock;
@@ -910,7 +910,6 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> FREDBEAR_HEAD = REGISTRY.register("fredbear_head", () -> new FredbearHeadBlock());
 	public static final RegistryObject<Block> SPRING_BONNIE_HEAD = REGISTRY.register("spring_bonnie_head", () -> new SpringBonnieHeadBlock());
 	public static final RegistryObject<Block> ENDO_BLOCK = REGISTRY.register("endo_block", () -> new EndoBlockBlock());
-	public static final RegistryObject<Block> LIGHT_BUTTON = REGISTRY.register("light_button", () -> new LightButtonBlock());
 	public static final RegistryObject<Block> TOY_TELEPHONE = REGISTRY.register("toy_telephone", () -> new ToyTelephoneBlock());
 	public static final RegistryObject<Block> TOY_CATERPILLAR = REGISTRY.register("toy_caterpillar", () -> new ToyCaterpillarBlock());
 	public static final RegistryObject<Block> TOY_ROBOT = REGISTRY.register("toy_robot", () -> new ToyRobotBlock());
@@ -1296,6 +1295,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> TOILET = REGISTRY.register("toilet", () -> new ToiletBlock());
 	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
 	public static final RegistryObject<Block> WORLD_STONE = REGISTRY.register("world_stone", () -> new WorldStoneBlock());
+	public static final RegistryObject<Block> JJ_FIGURE = REGISTRY.register("jj_figure", () -> new JJFigureBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
