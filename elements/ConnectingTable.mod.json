@@ -43,7 +43,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:DecorativeBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",
@@ -122,9 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "TableClothSwapping"
-    },
     "onBlockAdded": {
       "name": "PurpleStripedTableCode"
     },

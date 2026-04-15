@@ -13,7 +13,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.fnafmod.procedures.LinkCableSpecialInformationProcedure;
-import net.mcreator.fnafmod.procedures.LinkCableRightclickedProcedure;
+import net.mcreator.fnafmod.procedures.GenPercentageBlockTickUpdateProcedure;
 
 import java.util.List;
 
@@ -37,7 +37,7 @@ public class LinkCableItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		LinkCableRightclickedProcedure.execute(world, entity, ar.getObject());
+		GenPercentageBlockTickUpdateProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
 		return ar;
 	}
 }

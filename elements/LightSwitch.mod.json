@@ -43,7 +43,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:DecorativeBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",
@@ -122,9 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "LightSwitchLinking"
-    },
     "onTickUpdate": {
       "name": "LightSwitchOnTickUpdate"
     },
@@ -140,7 +137,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "lightswitch.geo.json",
-    "displaySettings": "freddyhead.item.json",
+    "displaySettings": "nightmare_bonnie.geo.json",
     "vanillaToolTier": "NONE",
     "blockstateList": []
   }

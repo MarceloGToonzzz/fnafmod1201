@@ -28,7 +28,7 @@
         "my": 0.0,
         "mz": 2.0,
         "Mx": 14.0,
-        "My": 11.0,
+        "My": 1.0,
         "Mz": 14.0,
         "subtract": false
       }
@@ -43,7 +43,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:DecorativeBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",
@@ -129,10 +129,10 @@
       "name": "DisplayMonitorOnTickUpdate"
     },
     "onDestroyedByPlayer": {
-      "name": "DisplayMonitorBlockDestroy"
+      "name": "DisplayMonitorBlockDestroyedByPlayer"
     },
     "onDestroyedByExplosion": {
-      "name": "DisplayMonitorBlockDestroy"
+      "name": "DisplayMonitorBlockDestroyedByPlayer"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [

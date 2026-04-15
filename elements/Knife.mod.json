@@ -3,10 +3,10 @@
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
-    "renderType": 0,
+    "renderType": 1,
     "blockingRenderType": 0,
     "texture": "knife",
-    "customModelName": "Normal",
+    "customModelName": "knife_handheld:default",
     "blockingModelName": "Normal blocking",
     "name": "Knife",
     "specialInformation": {
@@ -14,7 +14,7 @@
     },
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:FNAFToolsAndItems"
       }
     ],
     "efficiency": 6.0,

@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Purple  Balloon",
+    "name": "Purple Balloon",
     "specialInformation": {
       "fixedValue": []
     },
@@ -44,7 +44,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",

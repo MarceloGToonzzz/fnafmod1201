@@ -38,6 +38,7 @@ import net.mcreator.fnafmod.item.ToyChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.ToyBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.ToreadorMarchItem;
 import net.mcreator.fnafmod.item.TheyllFindYouItem;
+import net.mcreator.fnafmod.item.TableClothItemItem;
 import net.mcreator.fnafmod.item.StatueFreddyItemItem;
 import net.mcreator.fnafmod.item.StatueFoxyItemItem;
 import net.mcreator.fnafmod.item.StatueChicaItemItem;
@@ -56,6 +57,8 @@ import net.mcreator.fnafmod.item.ShadowBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.RemnantItem;
 import net.mcreator.fnafmod.item.RedPlasticItem;
 import net.mcreator.fnafmod.item.RedFabricItem;
+import net.mcreator.fnafmod.item.PurpleTableClothItemItem;
+import net.mcreator.fnafmod.item.PurpleStarTableClothItemItem;
 import net.mcreator.fnafmod.item.PurplePlasticItem;
 import net.mcreator.fnafmod.item.PurpleFabricItem;
 import net.mcreator.fnafmod.item.PuppetSpawnItemItem;
@@ -213,10 +216,10 @@ import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
 import net.mcreator.fnafmod.block.display.LightSwitchDisplayItem;
 import net.mcreator.fnafmod.block.display.LargeIndustrialDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.IndustrialFanDisplayItem;
-import net.mcreator.fnafmod.block.display.GenpPercentDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorRightCreativeDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorMiddlePowerDisplayItem;
 import net.mcreator.fnafmod.block.display.GeneratorLeftBreakerDisplayItem;
+import net.mcreator.fnafmod.block.display.GenPercentDisplayItem;
 import net.mcreator.fnafmod.block.display.GarageDoorDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
@@ -229,7 +232,6 @@ import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.FluorescentLightDisplayItem;
 import net.mcreator.fnafmod.block.display.FloodLightsDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
-import net.mcreator.fnafmod.block.display.DoorButtonDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayMonitorDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
@@ -640,7 +642,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SPRING_BONNIE_HEAD = REGISTRY.register(FnafModModBlocks.SPRING_BONNIE_HEAD.getId().getPath(), () -> new SpringBonnieHeadDisplayItem(FnafModModBlocks.SPRING_BONNIE_HEAD.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SITTING_FREDBEAR_SPAWN_EGG = REGISTRY.register("sitting_fredbear_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.SITTING_FREDBEAR, -7052775, -12253365, new Item.Properties()));
 	public static final RegistryObject<Item> ENDO_BLOCK = REGISTRY.register(FnafModModBlocks.ENDO_BLOCK.getId().getPath(), () -> new EndoBlockDisplayItem(FnafModModBlocks.ENDO_BLOCK.get(), new Item.Properties()));
-	public static final RegistryObject<Item> LIGHT_BUTTON = block(FnafModModBlocks.LIGHT_BUTTON);
 	public static final RegistryObject<Item> TOY_TELEPHONE = block(FnafModModBlocks.TOY_TELEPHONE);
 	public static final RegistryObject<Item> TOY_CATERPILLAR = block(FnafModModBlocks.TOY_CATERPILLAR);
 	public static final RegistryObject<Item> TOY_ROBOT = block(FnafModModBlocks.TOY_ROBOT);
@@ -1209,6 +1210,8 @@ public class FnafModModItems {
 			() -> new AlternateGarageDoorDisplayItem(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TORTURE_FREDDY = REGISTRY.register(FnafModModBlocks.TORTURE_FREDDY.getId().getPath(), () -> new TortureFreddyDisplayItem(FnafModModBlocks.TORTURE_FREDDY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TORTURE_CHAIR = REGISTRY.register(FnafModModBlocks.TORTURE_CHAIR.getId().getPath(), () -> new TortureChairDisplayItem(FnafModModBlocks.TORTURE_CHAIR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> LARGE_INDUSTRIAL_DOOR = REGISTRY.register(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.getId().getPath(),
+			() -> new LargeIndustrialDoorDisplayItem(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> INDUSTRIAL_FAN = REGISTRY.register(FnafModModBlocks.INDUSTRIAL_FAN.getId().getPath(), () -> new IndustrialFanDisplayItem(FnafModModBlocks.INDUSTRIAL_FAN.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TILED_WALL_HANDLE = block(FnafModModBlocks.TILED_WALL_HANDLE);
 	public static final RegistryObject<Item> PRIZE_HATCH = block(FnafModModBlocks.PRIZE_HATCH);
@@ -1278,19 +1281,15 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SINK = block(FnafModModBlocks.SINK);
 	public static final RegistryObject<Item> FIRE_AXE = REGISTRY.register("fire_axe", () -> new FireAxeItem());
 	public static final RegistryObject<Item> KNIFE = REGISTRY.register("knife", () -> new KnifeItem());
+	public static final RegistryObject<Item> TABLE_CLOTH_ITEM = REGISTRY.register("table_cloth_item", () -> new TableClothItemItem());
+	public static final RegistryObject<Item> PURPLE_TABLE_CLOTH_ITEM = REGISTRY.register("purple_table_cloth_item", () -> new PurpleTableClothItemItem());
+	public static final RegistryObject<Item> PURPLE_STAR_TABLE_CLOTH_ITEM = REGISTRY.register("purple_star_table_cloth_item", () -> new PurpleStarTableClothItemItem());
+	public static final RegistryObject<Item> WORLD_STONE = block(FnafModModBlocks.WORLD_STONE);
+	public static final RegistryObject<Item> JJ_FIGURE = block(FnafModModBlocks.JJ_FIGURE);
+	public static final RegistryObject<Item> GEN_PERCENT = REGISTRY.register(FnafModModBlocks.GEN_PERCENT.getId().getPath(), () -> new GenPercentDisplayItem(FnafModModBlocks.GEN_PERCENT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> MODULAR_LIGHT = REGISTRY.register(FnafModModBlocks.MODULAR_LIGHT.getId().getPath(), () -> new ModularLightDisplayItem(FnafModModBlocks.MODULAR_LIGHT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LIGHT_SWITCH = REGISTRY.register(FnafModModBlocks.LIGHT_SWITCH.getId().getPath(), () -> new LightSwitchDisplayItem(FnafModModBlocks.LIGHT_SWITCH.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DISPLAY_MONITOR = REGISTRY.register(FnafModModBlocks.DISPLAY_MONITOR.getId().getPath(), () -> new DisplayMonitorDisplayItem(FnafModModBlocks.DISPLAY_MONITOR.get(), new Item.Properties()));
-	public static final RegistryObject<Item> DOOR_BUTTON = REGISTRY.register(FnafModModBlocks.DOOR_BUTTON.getId().getPath(), () -> new DoorButtonDisplayItem(FnafModModBlocks.DOOR_BUTTON.get(), new Item.Properties()));
-	public static final RegistryObject<Item> LARGE_INDUSTRIAL_DOOR = REGISTRY.register(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.getId().getPath(),
-			() -> new LargeIndustrialDoorDisplayItem(FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get(), new Item.Properties()));
-	public static final RegistryObject<Item> GENP_PERCENT = REGISTRY.register(FnafModModBlocks.GENP_PERCENT.getId().getPath(), () -> new GenpPercentDisplayItem(FnafModModBlocks.GENP_PERCENT.get(), new Item.Properties()));
-	public static final RegistryObject<Item> PIZZA_TOPPING_CHEESE = block(FnafModModBlocks.PIZZA_TOPPING_CHEESE);
-	public static final RegistryObject<Item> PIZZA_TOPPING_TOMATO_SAUCE = block(FnafModModBlocks.PIZZA_TOPPING_TOMATO_SAUCE);
-	public static final RegistryObject<Item> PIZZA_TOPPING_MUSHROOM = block(FnafModModBlocks.PIZZA_TOPPING_MUSHROOM);
-	public static final RegistryObject<Item> PIZZA_TOPPING_SAUSAGE = block(FnafModModBlocks.PIZZA_TOPPING_SAUSAGE);
-	public static final RegistryObject<Item> PIZZA_TOPPING_PEPPERONI = block(FnafModModBlocks.PIZZA_TOPPING_PEPPERONI);
-	public static final RegistryObject<Item> PIZZA_DOUGH = block(FnafModModBlocks.PIZZA_DOUGH);
 
 	// Start of user code block custom items
 	// End of user code block custom items

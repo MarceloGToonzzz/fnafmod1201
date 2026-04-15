@@ -40,7 +40,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.DisplayMonitorOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.DisplayMonitorOnBlockRightClickedProcedure;
-import net.mcreator.fnafmod.procedures.DisplayMonitorBlockDestroyProcedure;
+import net.mcreator.fnafmod.procedures.DisplayMonitorBlockDestroyedByPlayerProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 import net.mcreator.fnafmod.block.entity.DisplayMonitorTileEntity;
 
@@ -100,10 +100,10 @@ public class DisplayMonitorBlock extends BaseEntityBlock implements EntityBlock 
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> box(2, 0, 2, 14, 11, 14);
-			case NORTH -> box(2, 0, 2, 14, 11, 14);
-			case EAST -> box(2, 0, 2, 14, 11, 14);
-			case WEST -> box(2, 0, 2, 14, 11, 14);
+			default -> box(2, 0, 2, 14, 1, 14);
+			case NORTH -> box(2, 0, 2, 14, 1, 14);
+			case EAST -> box(2, 0, 2, 14, 1, 14);
+			case WEST -> box(2, 0, 2, 14, 1, 14);
 		};
 	}
 
@@ -153,14 +153,14 @@ public class DisplayMonitorBlock extends BaseEntityBlock implements EntityBlock 
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		DisplayMonitorBlockDestroyProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		DisplayMonitorBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
 	}
 
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		DisplayMonitorBlockDestroyProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		DisplayMonitorBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

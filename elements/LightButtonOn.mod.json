@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:LightButton"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

@@ -27,12 +27,6 @@ import java.util.Comparator;
 
 public class DisplayMonitorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		double time = 0;
-		double result = 0;
-		double worldtime = 0;
-		double hour = 0;
-		double end_time = 0;
-		double minute = 0;
 		if ((new Object() {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);

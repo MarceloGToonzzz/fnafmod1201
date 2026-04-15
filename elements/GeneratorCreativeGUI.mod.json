@@ -23,9 +23,9 @@
       {
         "type": "label",
         "data": {
-          "name": "label_sgygf",
+          "name": "label_power",
           "text": {
-            "fixedValue": "Power . . . . "
+            "fixedValue": "Power . . . ."
           },
           "color": {
             "value": -26368,
@@ -39,9 +39,9 @@
       {
         "type": "label",
         "data": {
-          "name": "label_drain",
+          "name": "label_usage",
           "text": {
-            "fixedValue": "Usage . . "
+            "fixedValue": "Usage . ."
           },
           "color": {
             "value": -3381760,
@@ -55,7 +55,7 @@
       {
         "type": "label",
         "data": {
-          "name": "label_idk_yet",
+          "name": "label_drain",
           "text": {
             "fixedValue": "Drain . . ."
           },
@@ -88,10 +88,10 @@
       {
         "type": "label",
         "data": {
-          "name": "label_proc_gen_creative_drain_rate_ret",
+          "name": "label_proc_gen_creative_rate_return",
           "text": {
             "fixedValue": "",
-            "name": "GenCreativeDrainRateReturn"
+            "name": "GenCreativeRateReturn"
           },
           "color": {
             "value": -3381760,
@@ -105,10 +105,10 @@
       {
         "type": "label",
         "data": {
-          "name": "label_proc_gen_creative_drain_frequenc",
+          "name": "label_proc_gen_creative_rate_return1",
           "text": {
             "fixedValue": "",
-            "name": "GenCreativeDrainFrequencyReturn"
+            "name": "GenCreativeRateReturn"
           },
           "color": {
             "value": -26368,
@@ -171,72 +171,7 @@
             "falpha": 0.0
           },
           "x": 154,
-          "y": 168,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_lights",
-          "text": {
-            "fixedValue": "Lights"
-          },
-          "color": {
-            "value": -16724992,
-            "falpha": 0.0
-          },
-          "x": 154,
-          "y": 182,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_access",
-          "text": {
-            "fixedValue": "Access:"
-          },
-          "color": {
-            "value": -3407668,
-            "falpha": 0.0
-          },
-          "x": 207,
-          "y": 166,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_auto",
-          "text": {
-            "fixedValue": "Auto:"
-          },
-          "color": {
-            "value": -6750055,
-            "falpha": 0.0
-          },
-          "x": 207,
-          "y": 184,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_light_drain_return",
-          "text": {
-            "fixedValue": "",
-            "name": "LightDrainReturn"
-          },
-          "color": {
-            "value": -16724992,
-            "falpha": 0.0
-          },
-          "x": 187,
-          "y": 182,
+          "y": 169,
           "locked": false
         }
       },
@@ -253,7 +188,72 @@
             "falpha": 0.0
           },
           "x": 187,
-          "y": 168,
+          "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lights",
+          "text": {
+            "fixedValue": "Lights"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 154,
+          "y": 183,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_light_drain_return",
+          "text": {
+            "fixedValue": "",
+            "name": "LightDrainReturn"
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 183,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_access",
+          "text": {
+            "fixedValue": "Access:"
+          },
+          "color": {
+            "value": -3407668,
+            "falpha": 0.0
+          },
+          "x": 206,
+          "y": 166,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_auto",
+          "text": {
+            "fixedValue": "Auto:"
+          },
+          "color": {
+            "value": -6750055,
+            "falpha": 0.0
+          },
+          "x": 207,
+          "y": 185,
           "locked": false
         }
       },
@@ -270,7 +270,7 @@
             "falpha": 0.0
           },
           "x": 235,
-          "y": 184,
+          "y": 185,
           "locked": false
         }
       },
@@ -287,7 +287,7 @@
             "falpha": 0.0
           },
           "x": 238,
-          "y": 173,
+          "y": 174,
           "locked": false
         }
       }

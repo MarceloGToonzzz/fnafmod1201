@@ -27,13 +27,12 @@ public class GenCreativeConfigGUIScreen extends AbstractContainerScreen<GenCreat
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	EditBox PowerCycle;
-	EditBox BreakerDrain;
 	EditBox DoorDrainInput;
 	EditBox LightDrainInput;
-	Button button_apply;
+	EditBox PowerCycle;
+	EditBox BreakerDrain;
 	Button button_empty;
-	Button button_empty1;
+	Button button_apply;
 
 	public GenCreativeConfigGUIScreen(GenCreativeConfigGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -50,10 +49,10 @@ public class GenCreativeConfigGUIScreen extends AbstractContainerScreen<GenCreat
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		PowerCycle.render(guiGraphics, mouseX, mouseY, partialTicks);
-		BreakerDrain.render(guiGraphics, mouseX, mouseY, partialTicks);
 		DoorDrainInput.render(guiGraphics, mouseX, mouseY, partialTicks);
 		LightDrainInput.render(guiGraphics, mouseX, mouseY, partialTicks);
+		PowerCycle.render(guiGraphics, mouseX, mouseY, partialTicks);
+		BreakerDrain.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
@@ -77,104 +76,58 @@ public class GenCreativeConfigGUIScreen extends AbstractContainerScreen<GenCreat
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		if (PowerCycle.isFocused())
-			return PowerCycle.keyPressed(key, b, c);
-		if (BreakerDrain.isFocused())
-			return BreakerDrain.keyPressed(key, b, c);
 		if (DoorDrainInput.isFocused())
 			return DoorDrainInput.keyPressed(key, b, c);
 		if (LightDrainInput.isFocused())
 			return LightDrainInput.keyPressed(key, b, c);
+		if (PowerCycle.isFocused())
+			return PowerCycle.keyPressed(key, b, c);
+		if (BreakerDrain.isFocused())
+			return BreakerDrain.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void containerTick() {
 		super.containerTick();
-		PowerCycle.tick();
-		BreakerDrain.tick();
 		DoorDrainInput.tick();
 		LightDrainInput.tick();
+		PowerCycle.tick();
+		BreakerDrain.tick();
 	}
 
 	@Override
 	public void resize(Minecraft minecraft, int width, int height) {
-		String PowerCycleValue = PowerCycle.getValue();
-		String BreakerDrainValue = BreakerDrain.getValue();
 		String DoorDrainInputValue = DoorDrainInput.getValue();
 		String LightDrainInputValue = LightDrainInput.getValue();
+		String PowerCycleValue = PowerCycle.getValue();
+		String BreakerDrainValue = BreakerDrain.getValue();
 		super.resize(minecraft, width, height);
-		PowerCycle.setValue(PowerCycleValue);
-		BreakerDrain.setValue(BreakerDrainValue);
 		DoorDrainInput.setValue(DoorDrainInputValue);
 		LightDrainInput.setValue(LightDrainInputValue);
+		PowerCycle.setValue(PowerCycleValue);
+		BreakerDrain.setValue(BreakerDrainValue);
 	}
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_generator_auto_cycle"), 36, 62, -3407872, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_0off"), 42, 72, -3407872, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_1auto_off"), 42, 82, -3407872, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_2both"), 42, 92, -3407872, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_3auto_on"), 42, 102, -3407872, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_proc_long_form_text_return"), 36, 62, -65536, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_0off"), 41, 72, -3407872, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_1auto_off"), 41, 82, -3407872, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_2both"), 41, 92, -3407872, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_3auto_on"), 41, 102, -3407872, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_access_level"), 34, 112, -6750055, false);
 		guiGraphics.drawString(this.font,
 
-				GenCreativeLeverAutoReturnProcedure.execute(world, x, y, z), 93, 62, -52429, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.label_access_level"), 36, 115, -6750055, false);
+				GenCreativeAccessLevelReturnProcedure.execute(world, x, y, z), 102, 112, -6750055, false);
 		guiGraphics.drawString(this.font,
 
-				GenCreativeAccessLevelReturnProcedure.execute(world, x, y, z), 105, 115, -6750055, false);
+				GenCreativeLeverAutoReturnProcedure.execute(world, x, y, z), 93, 62, -65536, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		PowerCycle = new EditBox(this.font, this.leftPos + 34, this.topPos + -1, 118, 18, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle")) {
-			@Override
-			public void insertText(String text) {
-				super.insertText(text);
-				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle").getString());
-				else
-					setSuggestion(null);
-			}
-
-			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
-				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle").getString());
-				else
-					setSuggestion(null);
-			}
-		};
-		PowerCycle.setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle").getString());
-		PowerCycle.setMaxLength(32767);
-		guistate.put("text:PowerCycle", PowerCycle);
-		this.addWidget(this.PowerCycle);
-		BreakerDrain = new EditBox(this.font, this.leftPos + 34, this.topPos + 19, 118, 18, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain")) {
-			@Override
-			public void insertText(String text) {
-				super.insertText(text);
-				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain").getString());
-				else
-					setSuggestion(null);
-			}
-
-			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
-				if (getValue().isEmpty())
-					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain").getString());
-				else
-					setSuggestion(null);
-			}
-		};
-		BreakerDrain.setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain").getString());
-		BreakerDrain.setMaxLength(32767);
-		guistate.put("text:BreakerDrain", BreakerDrain);
-		this.addWidget(this.BreakerDrain);
 		DoorDrainInput = new EditBox(this.font, this.leftPos + 25, this.topPos + 128, 118, 18, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.DoorDrainInput")) {
 			@Override
 			public void insertText(String text) {
@@ -221,29 +174,67 @@ public class GenCreativeConfigGUIScreen extends AbstractContainerScreen<GenCreat
 		LightDrainInput.setMaxLength(32767);
 		guistate.put("text:LightDrainInput", LightDrainInput);
 		this.addWidget(this.LightDrainInput);
-		button_apply = Button.builder(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.button_apply"), e -> {
+		PowerCycle = new EditBox(this.font, this.leftPos + 34, this.topPos + 3, 118, 18, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		PowerCycle.setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.PowerCycle").getString());
+		PowerCycle.setMaxLength(32767);
+		guistate.put("text:PowerCycle", PowerCycle);
+		this.addWidget(this.PowerCycle);
+		BreakerDrain = new EditBox(this.font, this.leftPos + 34, this.topPos + 23, 118, 18, Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		BreakerDrain.setSuggestion(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.BreakerDrain").getString());
+		BreakerDrain.setMaxLength(32767);
+		guistate.put("text:BreakerDrain", BreakerDrain);
+		this.addWidget(this.BreakerDrain);
+		button_empty = Button.builder(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.button_empty"), e -> {
 			if (true) {
 				FnafModMod.PACKET_HANDLER.sendToServer(new GenCreativeConfigGUIButtonMessage(0, x, y, z));
 				GenCreativeConfigGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 65, this.topPos + 167, 51, 20).build();
-		guistate.put("button:button_apply", button_apply);
-		this.addRenderableWidget(button_apply);
-		button_empty = Button.builder(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.button_empty"), e -> {
+		}).bounds(this.leftPos + 115, this.topPos + 81, 30, 20).build();
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
+		button_apply = Button.builder(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.button_apply"), e -> {
 			if (true) {
 				FnafModMod.PACKET_HANDLER.sendToServer(new GenCreativeConfigGUIButtonMessage(1, x, y, z));
 				GenCreativeConfigGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 115, this.topPos + 80, 30, 20).build();
-		guistate.put("button:button_empty", button_empty);
-		this.addRenderableWidget(button_empty);
-		button_empty1 = Button.builder(Component.translatable("gui.fnaf_mod.gen_creative_config_gui.button_empty1"), e -> {
-			if (true) {
-				FnafModMod.PACKET_HANDLER.sendToServer(new GenCreativeConfigGUIButtonMessage(2, x, y, z));
-				GenCreativeConfigGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		}).bounds(this.leftPos + 115, this.topPos + 108, 30, 20).build();
-		guistate.put("button:button_empty1", button_empty1);
-		this.addRenderableWidget(button_empty1);
+		}).bounds(this.leftPos + 62, this.topPos + 167, 51, 20).build();
+		guistate.put("button:button_apply", button_apply);
+		this.addRenderableWidget(button_apply);
 	}
 }

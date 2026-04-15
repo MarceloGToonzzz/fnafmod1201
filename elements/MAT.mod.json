@@ -11,7 +11,7 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFItems"
+        "value": "CUSTOM:FNAFToolsAndItems"
       }
     ],
     "stackSize": 64,
@@ -33,6 +33,9 @@
         "Maintainance Assisting Tablet"
       ],
       "name": "MATSpecialInformation"
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "glowCondition": {
       "fixedValue": false

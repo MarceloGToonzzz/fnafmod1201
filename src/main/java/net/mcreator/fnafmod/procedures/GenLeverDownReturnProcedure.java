@@ -13,9 +13,9 @@ public class GenLeverDownReturnProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "GenLever")) == false) {
-			return true;
+		}.getValue(world, BlockPos.containing(x, y, z), "GenLever")) == true) {
+			return false;
 		}
-		return false;
+		return true;
 	}
 }

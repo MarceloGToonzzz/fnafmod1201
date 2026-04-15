@@ -80,7 +80,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "destroyTool": "Not specified",

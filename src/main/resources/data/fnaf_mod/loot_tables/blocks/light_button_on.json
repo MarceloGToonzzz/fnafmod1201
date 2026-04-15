@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "fnaf_mod:light_button"
+          "name": "fnaf_mod:light_button_on"
         }
       ]
     }

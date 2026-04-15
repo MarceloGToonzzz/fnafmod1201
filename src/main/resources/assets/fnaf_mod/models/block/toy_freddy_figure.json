@@ -1,5 +1,5 @@
 {
-  "parent": "fnaf_mod:custom/figure_toy-freddy",
+  "parent": "fnaf_mod:custom/toyfreddyfigure",
   "textures": {
     "all": "fnaf_mod:block/figure_toy-freddy",
     "particle": "fnaf_mod:block/figure_toy-freddy",

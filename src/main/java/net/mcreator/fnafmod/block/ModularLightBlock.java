@@ -34,7 +34,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.ModularLightOnTickUpdateProcedure;
-import net.mcreator.fnafmod.procedures.LightLinkingProcedure;
+import net.mcreator.fnafmod.procedures.ModularLightOnBlockRightClickedProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
 
@@ -53,17 +53,17 @@ public class ModularLightBlock extends BaseEntityBlock implements EntityBlock {
 				.sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> (new Object() {
 					public int getLightLevel() {
 						if (s.getValue(BLOCKSTATE) == 1)
-							return 0;
+							return 10;
 						if (s.getValue(BLOCKSTATE) == 2)
-							return 0;
+							return 10;
 						if (s.getValue(BLOCKSTATE) == 3)
-							return 0;
+							return 10;
 						if (s.getValue(BLOCKSTATE) == 4)
-							return 0;
+							return 10;
 						if (s.getValue(BLOCKSTATE) == 5)
-							return 0;
+							return 10;
 						if (s.getValue(BLOCKSTATE) == 6)
-							return 0;
+							return 10;
 						if (s.getValue(BLOCKSTATE) == 7)
 							return 10;
 						if (s.getValue(BLOCKSTATE) == 8)
@@ -106,24 +106,8 @@ public class ModularLightBlock extends BaseEntityBlock implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 2) {
 
-			return box(0, 0, 0, 16, 4, 16);
-		}
-		if (state.getValue(BLOCKSTATE) == 5) {
-
-			return box(0, 0, 0, 16, 4, 16);
-		}
-		if (state.getValue(BLOCKSTATE) == 9) {
-
-			return box(0, 0, 0, 16, 4, 16);
-		}
-		if (state.getValue(BLOCKSTATE) == 12) {
-
-			return box(0, 0, 0, 16, 4, 16);
-		}
-
-		return Shapes.or(box(0, 0, 0, 16, 4, 16), box(7, 0, 7, 9, 16, 9));
+		return Shapes.or(box(0, 0, 0, 16, 4, 16), box(6.5, 0, 6.5, 9.5, 16, 9.5));
 	}
 
 	@Override
@@ -172,7 +156,7 @@ public class ModularLightBlock extends BaseEntityBlock implements EntityBlock {
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		LightLinkingProcedure.execute(world, x, y, z, entity);
+		ModularLightOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

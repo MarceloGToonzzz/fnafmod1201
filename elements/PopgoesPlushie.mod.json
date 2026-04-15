@@ -37,7 +37,7 @@
     "name": "Popgoes Plushie",
     "specialInformation": {
       "fixedValue": [
-        "Thank You Kane Carter"
+        "§7Thank You Kane Carter"
       ]
     },
     "hardness": 0.8,
@@ -46,7 +46,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "destroyTool": "Not specified",

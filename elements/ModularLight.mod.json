@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "minecraft:light",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -33,12 +33,12 @@
         "subtract": false
       },
       {
-        "mx": 7.0,
+        "mx": 6.5,
         "my": 0.0,
-        "mz": 7.0,
-        "Mx": 9.0,
+        "mz": 6.5,
+        "Mx": 9.5,
         "My": 16.0,
-        "Mz": 9.0,
+        "Mz": 9.5,
         "subtract": false
       }
     ],
@@ -52,7 +52,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:DecorativeBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",
@@ -132,7 +132,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "LightLinking"
+      "name": "ModularLightOnBlockRightClicked"
     },
     "onTickUpdate": {
       "name": "ModularLightOnTickUpdate"
@@ -149,7 +149,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "modularlights.geo.json",
-    "displaySettings": "stagelight.item.json",
+    "displaySettings": "nightmare_bonnie.geo.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
@@ -157,7 +157,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
-        "luminance": 0,
+        "luminance": 10,
         "boundingBoxes": []
       },
       {
@@ -165,25 +165,15 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 4.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ]
+        "luminance": 10,
+        "boundingBoxes": []
       },
       {
         "texture": "modularlight3",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
-        "luminance": 0,
+        "luminance": 10,
         "boundingBoxes": []
       },
       {
@@ -191,7 +181,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
-        "luminance": 0,
+        "luminance": 10,
         "boundingBoxes": []
       },
       {
@@ -199,25 +189,15 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 4.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ]
+        "luminance": 10,
+        "boundingBoxes": []
       },
       {
         "texture": "modularlight6",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
-        "luminance": 0,
+        "luminance": 10,
         "boundingBoxes": []
       },
       {
@@ -242,17 +222,7 @@
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
         "luminance": 10,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 4.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ]
+        "boundingBoxes": []
       },
       {
         "texture": "modularlight10",
@@ -276,17 +246,7 @@
         "renderType": 0,
         "customModelName": "modularlights.geo.json",
         "luminance": 10,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 4.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ]
+        "boundingBoxes": []
       },
       {
         "texture": "modularlight13",

@@ -637,5 +637,14 @@
         "stream": false
       }
     ]
+  },
+  "change_machine_used": {
+    "subtitle": "subtitles.change_machine_used",
+    "sounds": [
+      {
+        "name": "fnaf_mod:buy",
+        "stream": false
+      }
+    ]
   }
 }

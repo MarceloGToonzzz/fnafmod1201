@@ -12,9 +12,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.world.inventory.GenCreativeConfigGUIMenu;
-import net.mcreator.fnafmod.procedures.GenCreativeConfigLeverButtonProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativeConfigApplyProcedure;
-import net.mcreator.fnafmod.procedures.GenCreativeAccessButtonProcedure;
+import net.mcreator.fnafmod.procedures.GenConfigLeverButtonProcedure;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.function.Supplier;
@@ -66,15 +65,11 @@ public class GenCreativeConfigGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			GenCreativeConfigApplyProcedure.execute(world, x, y, z, entity, guistate);
+			GenConfigLeverButtonProcedure.execute(world, x, y, z);
 		}
 		if (buttonID == 1) {
 
-			GenCreativeConfigLeverButtonProcedure.execute(world, x, y, z);
-		}
-		if (buttonID == 2) {
-
-			GenCreativeAccessButtonProcedure.execute(world, x, y, z);
+			GenCreativeConfigApplyProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 
