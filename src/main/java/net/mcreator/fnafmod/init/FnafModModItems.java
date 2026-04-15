@@ -161,6 +161,7 @@ import net.mcreator.fnafmod.item.CircuitBoardItem;
 import net.mcreator.fnafmod.item.ChicaSuitItem;
 import net.mcreator.fnafmod.item.ChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.ChicaItem;
+import net.mcreator.fnafmod.item.CameraPanelTestItem;
 import net.mcreator.fnafmod.item.CameraMonitorItem;
 import net.mcreator.fnafmod.item.BrownPlasticItem;
 import net.mcreator.fnafmod.item.BrownFabricItem;
@@ -1282,6 +1283,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_TABLE_CLOTH_ITEM = REGISTRY.register("purple_table_cloth_item", () -> new PurpleTableClothItemItem());
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE_CLOTH_ITEM = REGISTRY.register("purple_star_table_cloth_item", () -> new PurpleStarTableClothItemItem());
 	public static final RegistryObject<Item> WORLD_STONE = block(FnafModModBlocks.WORLD_STONE);
+	public static final RegistryObject<Item> CAMERA_PANEL_TEST = REGISTRY.register("camera_panel_test", () -> new CameraPanelTestItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

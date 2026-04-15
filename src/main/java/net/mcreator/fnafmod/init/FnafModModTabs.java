@@ -852,6 +852,10 @@ public class FnafModModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(FnafModModBlocks.GENERATOR_OUTLET.get().asItem());
 			tabData.accept(FnafModModItems.LINK_CABLE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+			if (tabData.hasPermissions()) {
+				tabData.accept(FnafModModItems.CAMERA_PANEL_TEST.get());
+			}
 		}
 	}
 }
