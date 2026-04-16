@@ -646,5 +646,14 @@
         "stream": false
       }
     ]
+  },
+  "protons_rat_noises": {
+    "subtitle": "subtitles.protons_rat_noises",
+    "sounds": [
+      {
+        "name": "fnaf_mod:rat_noises",
+        "stream": false
+      }
+    ]
   }
 }

@@ -83,4 +83,5 @@ public class FnafModModSounds {
 	public static final RegistryObject<SoundEvent> GARAGE_OPEN = REGISTRY.register("garage_open", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "garage_open")));
 	public static final RegistryObject<SoundEvent> GARAGE_CLOSE = REGISTRY.register("garage_close", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "garage_close")));
 	public static final RegistryObject<SoundEvent> CHANGE_MACHINE_USED = REGISTRY.register("change_machine_used", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "change_machine_used")));
+	public static final RegistryObject<SoundEvent> PROTONS_RAT_NOISES = REGISTRY.register("protons_rat_noises", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("fnaf_mod", "protons_rat_noises")));
 }

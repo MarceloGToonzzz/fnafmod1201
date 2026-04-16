@@ -2,50 +2,48 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "door_button",
+    "texture": "protons_rat",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 0,
-    "rotationMode": 3,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "door_button",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 4.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 12.0,
-        "Mx": 12.0,
-        "My": 9.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Door Button",
+    "name": "Protons Plush Rat",
     "specialInformation": {
-      "fixedValue": [
-        "§7Linkable"
-      ]
+      "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.2,
+    "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFDecor"
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "destroyTool": "Not specified",
@@ -62,7 +60,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 1,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -81,12 +79,12 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
+    "animationCount": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "CLOTH"
     },
     "breakSound": {
       "value": ""
@@ -106,7 +104,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 0,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -125,16 +123,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "DoorButtonOnBlockRightClicked"
-    },
-    "onTickUpdate": {
-      "name": "LightSwitchOnTickUpdate"
-    },
-    "onDestroyedByPlayer": {
-      "name": "DoorButtonOnBlockBreak"
-    },
-    "onDestroyedByExplosion": {
-      "name": "DoorButtonOnBlockBreak"
+      "name": "ProtonsPlushRatOnBlockRightClicked"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -147,18 +136,9 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "doorbutton.geo.json",
-    "displaySettings": "bigdoor.json",
+    "normal": "protons_rat.geo.json",
+    "displaySettings": "protons_rat.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "door_button_active2",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "doorbutton.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

@@ -198,6 +198,7 @@ import net.mcreator.fnafmod.block.PurpleEtchedBricksBlock;
 import net.mcreator.fnafmod.block.PurpleCurtainBlock;
 import net.mcreator.fnafmod.block.PurpleCheckeredCurtainBlock;
 import net.mcreator.fnafmod.block.PuppetMaskBlock;
+import net.mcreator.fnafmod.block.ProtonsPlushRatBlock;
 import net.mcreator.fnafmod.block.PrizeHatchBlock;
 import net.mcreator.fnafmod.block.PrizeCounterBlock;
 import net.mcreator.fnafmod.block.PrizeCornerPosterBlock;
@@ -1306,6 +1307,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DISPLAY_MONITOR = REGISTRY.register("display_monitor", () -> new DisplayMonitorBlock());
 	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
 	public static final RegistryObject<Block> GEN_PERCENT = REGISTRY.register("gen_percent", () -> new GenPercentBlock());
+	public static final RegistryObject<Block> PROTONS_PLUSH_RAT = REGISTRY.register("protons_plush_rat", () -> new ProtonsPlushRatBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

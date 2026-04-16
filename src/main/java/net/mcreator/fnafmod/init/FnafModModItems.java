@@ -211,6 +211,7 @@ import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
+import net.mcreator.fnafmod.block.display.ProtonsPlushRatDisplayItem;
 import net.mcreator.fnafmod.block.display.ModularLightDisplayItem;
 import net.mcreator.fnafmod.block.display.MeshTrashCanDisplayItem;
 import net.mcreator.fnafmod.block.display.LightSwitchDisplayItem;
@@ -1292,6 +1293,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> DISPLAY_MONITOR = REGISTRY.register(FnafModModBlocks.DISPLAY_MONITOR.getId().getPath(), () -> new DisplayMonitorDisplayItem(FnafModModBlocks.DISPLAY_MONITOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DOOR_BUTTON = REGISTRY.register(FnafModModBlocks.DOOR_BUTTON.getId().getPath(), () -> new DoorButtonDisplayItem(FnafModModBlocks.DOOR_BUTTON.get(), new Item.Properties()));
 	public static final RegistryObject<Item> GEN_PERCENT = REGISTRY.register(FnafModModBlocks.GEN_PERCENT.getId().getPath(), () -> new GenPercentDisplayItem(FnafModModBlocks.GEN_PERCENT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> PROTONS_PLUSH_RAT = REGISTRY.register(FnafModModBlocks.PROTONS_PLUSH_RAT.getId().getPath(), () -> new ProtonsPlushRatDisplayItem(FnafModModBlocks.PROTONS_PLUSH_RAT.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

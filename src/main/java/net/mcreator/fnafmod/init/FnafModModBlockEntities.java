@@ -41,6 +41,7 @@ import net.mcreator.fnafmod.block.entity.RetroComputerTileEntity;
 import net.mcreator.fnafmod.block.entity.RemantInfuserBlockEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStripeTableTileEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStarTableTileEntity;
+import net.mcreator.fnafmod.block.entity.ProtonsPlushRatTileEntity;
 import net.mcreator.fnafmod.block.entity.PlushFreddyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFredbearBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
@@ -272,6 +273,8 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(DisplayMonitorTileEntity::new, FnafModModBlocks.DISPLAY_MONITOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DoorButtonTileEntity>> DOOR_BUTTON = REGISTRY.register("door_button", () -> BlockEntityType.Builder.of(DoorButtonTileEntity::new, FnafModModBlocks.DOOR_BUTTON.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GenPercentTileEntity>> GEN_PERCENT = REGISTRY.register("gen_percent", () -> BlockEntityType.Builder.of(GenPercentTileEntity::new, FnafModModBlocks.GEN_PERCENT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ProtonsPlushRatTileEntity>> PROTONS_PLUSH_RAT = REGISTRY.register("protons_plush_rat",
+			() -> BlockEntityType.Builder.of(ProtonsPlushRatTileEntity::new, FnafModModBlocks.PROTONS_PLUSH_RAT.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
