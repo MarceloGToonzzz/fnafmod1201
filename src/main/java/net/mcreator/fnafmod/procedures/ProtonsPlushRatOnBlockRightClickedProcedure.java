@@ -14,9 +14,9 @@ public class ProtonsPlushRatOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:protons_rat_noises")), SoundSource.BLOCKS, 1, (float) (1 + Mth.nextInt(RandomSource.create(), -5, 5) / 5));
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:protons_rat_noises")), SoundSource.BLOCKS, 1, (float) (0.75 + Mth.nextInt(RandomSource.create(), -5, 5) / 10));
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:protons_rat_noises")), SoundSource.BLOCKS, 1, (float) (1 + Mth.nextInt(RandomSource.create(), -5, 5) / 5), false);
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:protons_rat_noises")), SoundSource.BLOCKS, 1, (float) (0.75 + Mth.nextInt(RandomSource.create(), -5, 5) / 10), false);
 			}
 		}
 	}

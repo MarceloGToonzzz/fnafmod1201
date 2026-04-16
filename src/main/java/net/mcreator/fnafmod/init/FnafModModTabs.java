@@ -669,14 +669,15 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.MOVIE_THEME.get());
 				tabData.accept(FnafModModItems.BONNIE_LULLABY.get());
 				tabData.accept(FnafModModItems.HARD_TO_SAY_GOODBYE.get());
-				tabData.accept(FnafModModBlocks.VASS_DOLL.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRANCE.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRY.get().asItem());
 				tabData.accept(FnafModModBlocks.GENERATOR_SPAWN_BLOCK.get().asItem());
 				tabData.accept(FnafModModBlocks.GENERATOR_OUTLET.get().asItem());
 				tabData.accept(FnafModModItems.LINK_CABLE.get());
 				tabData.accept(FnafModModBlocks.GEN_PERCENT.get().asItem());
+				tabData.accept(FnafModModBlocks.VASS_DOLL.get().asItem());
 				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
+				tabData.accept(FnafModModBlocks.PROTONS_PLUSH_RAT.get().asItem());
 				tabData.accept(FnafModModBlocks.POPGOES_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_FREDDY.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_BONNIE.get().asItem());
