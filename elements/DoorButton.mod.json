@@ -43,7 +43,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:DecorativeBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "Not specified",
@@ -127,6 +127,12 @@
     },
     "onTickUpdate": {
       "name": "LightSwitchOnTickUpdate"
+    },
+    "onDestroyedByPlayer": {
+      "name": "DoorButtonOnBlockBreak"
+    },
+    "onDestroyedByExplosion": {
+      "name": "DoorButtonOnBlockBreak"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [

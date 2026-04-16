@@ -55,6 +55,7 @@ import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DoorButtonTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayMonitorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
@@ -172,13 +173,10 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_MIDDLE_POWER.get(), context -> new GeneratorMiddlePowerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GENERATOR_RIGHT_CREATIVE.get(), context -> new GeneratorRightCreativeTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CELEBRATE_FUN.get(), context -> new CelebrateFunTileRenderer());
-		event.registerBlockEntityRenderer(FnafModModBlockEntities.GEN_PERCENT.get(), context -> new GenPercentTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT.get(), context -> new ModularLightTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_SWITCH.get(), context -> new LightSwitchTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DISPLAY_MONITOR.get(), context -> new DisplayMonitorTileRenderer());
-<<<<<<< Updated upstream
-=======
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON.get(), context -> new DoorButtonTileRenderer());
->>>>>>> Stashed changes
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.GEN_PERCENT.get(), context -> new GenPercentTileRenderer());
 	}
 }

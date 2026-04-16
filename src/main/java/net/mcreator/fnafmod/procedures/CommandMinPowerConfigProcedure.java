@@ -43,7 +43,7 @@ public class CommandMinPowerConfigProcedure {
 					return 0;
 				}
 			}
-		}.getZ()))).getBlock() == FnafModModBlocks.GENP_PERCENT.get()) {
+		}.getZ()))).getBlock() == FnafModModBlocks.GEN_PERCENT.get()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(new Object() {
 					public double getX() {

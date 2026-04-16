@@ -1,9 +1,0 @@
-{
-  "parent": "fnaf_mod:custom/pizzatopping",
-  "textures": {
-    "all": "fnaf_mod:block/shredded_cheese",
-    "particle": "fnaf_mod:block/shredded_cheese",
-    "4": "fnaf_mod:block/shredded_cheese"
-  },
-  "render_type": "solid"
-}

@@ -31,11 +31,7 @@
     "specialInformation": {
       "fixedValue": [
         "Maintainance Assisting Tablet"
-      ],
-      "name": "MATSpecialInformation"
-    },
-    "glowCondition": {
-      "fixedValue": false
+      ]
     },
     "glowCondition": {
       "fixedValue": false

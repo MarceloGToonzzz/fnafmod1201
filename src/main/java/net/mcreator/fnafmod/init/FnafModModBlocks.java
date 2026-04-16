@@ -386,6 +386,7 @@ import net.mcreator.fnafmod.block.DrumsetBlock;
 import net.mcreator.fnafmod.block.DoorLightBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
+import net.mcreator.fnafmod.block.DoorButtonBlock;
 import net.mcreator.fnafmod.block.DoorBoarderBlock;
 import net.mcreator.fnafmod.block.DisplayShelvesBlock;
 import net.mcreator.fnafmod.block.DisplayMonitorBlock;
@@ -1300,14 +1301,11 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SINK = REGISTRY.register("sink", () -> new SinkBlock());
 	public static final RegistryObject<Block> WORLD_STONE = REGISTRY.register("world_stone", () -> new WorldStoneBlock());
 	public static final RegistryObject<Block> JJ_FIGURE = REGISTRY.register("jj_figure", () -> new JJFigureBlock());
-	public static final RegistryObject<Block> GEN_PERCENT = REGISTRY.register("gen_percent", () -> new GenPercentBlock());
 	public static final RegistryObject<Block> MODULAR_LIGHT = REGISTRY.register("modular_light", () -> new ModularLightBlock());
 	public static final RegistryObject<Block> LIGHT_SWITCH = REGISTRY.register("light_switch", () -> new LightSwitchBlock());
 	public static final RegistryObject<Block> DISPLAY_MONITOR = REGISTRY.register("display_monitor", () -> new DisplayMonitorBlock());
-<<<<<<< Updated upstream
-=======
 	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
->>>>>>> Stashed changes
+	public static final RegistryObject<Block> GEN_PERCENT = REGISTRY.register("gen_percent", () -> new GenPercentBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

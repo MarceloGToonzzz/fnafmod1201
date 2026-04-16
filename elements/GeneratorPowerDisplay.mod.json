@@ -24,27 +24,6 @@
           "y": 224,
           "locked": false
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_hud_time_display",
-          "text": {
-            "fixedValue": "",
-            "name": "HudTimeDisplay"
-          },
-          "color": {
-            "value": -52225,
-            "falpha": 0.0
-          },
-          "displayCondition": {
-            "name": "GeneratorPowerDisplayShow"
-          },
-          "anchorPoint": "CENTER",
-          "x": 6,
-          "y": 206,
-          "locked": false
-        }
       }
     ],
     "baseTexture": "",

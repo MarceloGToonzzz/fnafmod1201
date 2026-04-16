@@ -528,6 +528,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
 				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
 				tabData.accept(FnafModModBlocks.DISPLAY_MONITOR.get().asItem());
+				tabData.accept(FnafModModBlocks.DOOR_BUTTON.get().asItem());
 			}).withTabsBefore(FNAF_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_TOOLS_AND_ITEMS = REGISTRY.register("fnaf_tools_and_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_tools_and_items")).icon(() -> new ItemStack(FnafModModItems.MAT.get())).displayItems((parameters, tabData) -> {
@@ -687,6 +688,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
 				tabData.accept(FnafModModItems.CAMERA_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.HANGING_CAMERA_SPAWN_EGG.get());
+				tabData.accept(FnafModModBlocks.GEN_PERCENT.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_MOBS = REGISTRY.register("fnaf_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_mobs")).icon(() -> new ItemStack(FnafModModItems.FREDDY.get())).displayItems((parameters, tabData) -> {
@@ -848,8 +850,6 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_PINK.get().asItem());
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_BLUE.get().asItem());
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_GOLDEN.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(FnafModModBlocks.GEN_PERCENT.get().asItem());
 		}
 	}
 }

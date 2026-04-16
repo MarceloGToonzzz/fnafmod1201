@@ -37,7 +37,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.fnafmod.procedures.SecurityDoorOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.SecurityDoorOnBlockRightClickProcedure;
 import net.mcreator.fnafmod.procedures.LargeIndustrialDoorOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.LargeIndustrialDoorBlockDestroyedByPlayerProcedure;
 import net.mcreator.fnafmod.procedures.LargeIndustrialDoorBlockAddedProcedure;
@@ -161,7 +161,7 @@ public class LargeIndustrialDoorBlock extends BaseEntityBlock implements EntityB
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		SecurityDoorOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		SecurityDoorOnBlockRightClickProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

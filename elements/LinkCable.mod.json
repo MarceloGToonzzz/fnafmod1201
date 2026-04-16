@@ -38,7 +38,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "GenPercentageBlockTickUpdate"
+      "name": "LinkCableRightClicked"
     },
     "enableRanged": false,
     "shootConstantly": false,

@@ -37,7 +37,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.fnafmod.procedures.SecurityDoorOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.SecurityDoorOnBlockRightClickProcedure;
 import net.mcreator.fnafmod.procedures.BigHeavyDutyDoorOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.BigHeavyDutyDoorBlockDestroyedByPlayerProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
@@ -159,7 +159,7 @@ public class BigHeavyDutyDoorBlock extends BaseEntityBlock implements EntityBloc
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		SecurityDoorOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		SecurityDoorOnBlockRightClickProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 

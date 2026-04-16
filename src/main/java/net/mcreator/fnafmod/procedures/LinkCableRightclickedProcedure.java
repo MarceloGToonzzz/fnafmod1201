@@ -14,7 +14,7 @@ import java.util.Map;
 
 import com.mojang.blaze3d.platform.InputConstants;
 
-public class LinkCableRightclickedProcedure {
+public class LinkCableRightClickedProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;

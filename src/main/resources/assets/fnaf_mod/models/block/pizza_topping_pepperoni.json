@@ -1,9 +1,0 @@
-{
-  "parent": "fnaf_mod:custom/pizzatopping",
-  "textures": {
-    "all": "fnaf_mod:block/pepperonis",
-    "particle": "fnaf_mod:block/pepperonis",
-    "4": "fnaf_mod:block/pepperonis"
-  },
-  "render_type": "solid"
-}

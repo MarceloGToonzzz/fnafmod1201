@@ -14,11 +14,11 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "remnant_item",
+    "itemTexture": "door_button",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -43,11 +43,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-<<<<<<< Updated upstream:elements/GenPercent.mod.json
-        "value": "REDSTONE"
-=======
-        "value": "CUSTOM:FNAFDecor"
->>>>>>> Stashed changes:elements/DoorButton.mod.json
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "destroyTool": "Not specified",
@@ -59,7 +55,7 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "NONE"
@@ -131,7 +127,7 @@
       "name": "GeneratorOutletOnBlockRightClicked"
     },
     "onTickUpdate": {
-      "name": "GeneratorOutletOnTickUpdate"
+      "name": "GenPercentOnTickUpdate"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [

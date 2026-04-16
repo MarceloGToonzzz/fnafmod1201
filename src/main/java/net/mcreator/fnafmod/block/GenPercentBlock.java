@@ -37,8 +37,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.GeneratorOutletStrengthProcedure;
-import net.mcreator.fnafmod.procedures.GeneratorOutletOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.GeneratorOutletOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.GenPercentOnTickUpdateProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 import net.mcreator.fnafmod.block.entity.GenPercentTileEntity;
 
@@ -61,7 +61,7 @@ public class GenPercentBlock extends BaseEntityBlock implements EntityBlock {
 							return 0;
 						return 0;
 					}
-				}.getLightLevel())));
+				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -130,11 +130,6 @@ public class GenPercentBlock extends BaseEntityBlock implements EntityBlock {
 	}
 
 	@Override
-	public boolean canConnectRedstone(BlockState state, BlockGetter world, BlockPos pos, Direction side) {
-		return true;
-	}
-
-	@Override
 	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
@@ -155,7 +150,7 @@ public class GenPercentBlock extends BaseEntityBlock implements EntityBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		GeneratorOutletOnTickUpdateProcedure.execute(world, x, y, z);
+		GenPercentOnTickUpdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}
 

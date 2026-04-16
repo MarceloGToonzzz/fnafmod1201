@@ -1,9 +1,0 @@
-{
-  "parent": "fnaf_mod:custom/pizzatopping",
-  "textures": {
-    "all": "fnaf_mod:block/sausage_bits",
-    "particle": "fnaf_mod:block/sausage_bits",
-    "4": "fnaf_mod:block/sausage_bits"
-  },
-  "render_type": "solid"
-}

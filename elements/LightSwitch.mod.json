@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "lightswitch",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

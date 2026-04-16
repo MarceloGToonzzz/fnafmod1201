@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "tab",
+  "definition": {
+    "name": "Music Discs",
+    "icon": {
+      "value": "CUSTOM:CornCurtain"
+    },
+    "showSearch": false
+  }
+}

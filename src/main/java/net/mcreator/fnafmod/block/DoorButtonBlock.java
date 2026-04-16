@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -22,6 +23,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
@@ -38,6 +40,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.LightSwitchOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.DoorButtonOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.DoorButtonOnBlockBreakProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 import net.mcreator.fnafmod.block.entity.DoorButtonTileEntity;
 
@@ -139,6 +142,19 @@ public class DoorButtonBlock extends BaseEntityBlock implements EntityBlock {
 
 		LightSwitchOnTickUpdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		DoorButtonOnBlockBreakProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
+	}
+
+	@Override
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		DoorButtonOnBlockBreakProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

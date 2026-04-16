@@ -232,6 +232,7 @@ import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.FluorescentLightDisplayItem;
 import net.mcreator.fnafmod.block.display.FloodLightsDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
+import net.mcreator.fnafmod.block.display.DoorButtonDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayMonitorDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
@@ -1286,14 +1287,11 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PURPLE_STAR_TABLE_CLOTH_ITEM = REGISTRY.register("purple_star_table_cloth_item", () -> new PurpleStarTableClothItemItem());
 	public static final RegistryObject<Item> WORLD_STONE = block(FnafModModBlocks.WORLD_STONE);
 	public static final RegistryObject<Item> JJ_FIGURE = block(FnafModModBlocks.JJ_FIGURE);
-	public static final RegistryObject<Item> GEN_PERCENT = REGISTRY.register(FnafModModBlocks.GEN_PERCENT.getId().getPath(), () -> new GenPercentDisplayItem(FnafModModBlocks.GEN_PERCENT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> MODULAR_LIGHT = REGISTRY.register(FnafModModBlocks.MODULAR_LIGHT.getId().getPath(), () -> new ModularLightDisplayItem(FnafModModBlocks.MODULAR_LIGHT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LIGHT_SWITCH = REGISTRY.register(FnafModModBlocks.LIGHT_SWITCH.getId().getPath(), () -> new LightSwitchDisplayItem(FnafModModBlocks.LIGHT_SWITCH.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DISPLAY_MONITOR = REGISTRY.register(FnafModModBlocks.DISPLAY_MONITOR.getId().getPath(), () -> new DisplayMonitorDisplayItem(FnafModModBlocks.DISPLAY_MONITOR.get(), new Item.Properties()));
-<<<<<<< Updated upstream
-=======
 	public static final RegistryObject<Item> DOOR_BUTTON = REGISTRY.register(FnafModModBlocks.DOOR_BUTTON.getId().getPath(), () -> new DoorButtonDisplayItem(FnafModModBlocks.DOOR_BUTTON.get(), new Item.Properties()));
->>>>>>> Stashed changes
+	public static final RegistryObject<Item> GEN_PERCENT = REGISTRY.register(FnafModModBlocks.GEN_PERCENT.getId().getPath(), () -> new GenPercentDisplayItem(FnafModModBlocks.GEN_PERCENT.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

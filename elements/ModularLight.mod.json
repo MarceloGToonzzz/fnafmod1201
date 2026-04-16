@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "minecraft:light",
+    "itemTexture": "modularlight",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
