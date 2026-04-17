@@ -388,6 +388,11 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.SECURITY_DOOR_OPEN.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BUTTON_OFF.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BUTTON.get().asItem());
+				tabData.accept(FnafModModBlocks.LIGHT_BUTTON_OFF.get().asItem());
+				tabData.accept(FnafModModBlocks.LIGHT_BUTTON.get().asItem());
+				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
+				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
+				tabData.accept(FnafModModBlocks.MODULAR_LIGHT_FLAT.get().asItem());
 				tabData.accept(FnafModModBlocks.SPEAKER.get().asItem());
 				tabData.accept(FnafModModBlocks.ORANGE_SPEAKER.get().asItem());
 				tabData.accept(FnafModModBlocks.FAN.get().asItem());
@@ -527,8 +532,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PRINTER.get().asItem());
 				tabData.accept(FnafModModBlocks.TOILET.get().asItem());
 				tabData.accept(FnafModModBlocks.SINK.get().asItem());
-				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
-				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
 			}).withTabsBefore(FNAF_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_TOOLS_AND_ITEMS = REGISTRY.register("fnaf_tools_and_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_tools_and_items")).icon(() -> new ItemStack(FnafModModItems.MAT.get())).displayItems((parameters, tabData) -> {

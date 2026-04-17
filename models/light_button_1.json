@@ -1,0 +1,44 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "fnaf_mod:block/light_button"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 23],
+			"to": [12, 2, 32],
+			"rotation": {"angle": -90, "axis": "x", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [8, 0, 12, 1], "texture": "#0"},
+				"east": {"uv": [8, 0, 12, 1], "texture": "#0"},
+				"south": {"uv": [8, 0, 12, 1], "texture": "#0"},
+				"west": {"uv": [8, 0, 12, 1], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 4.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [4, 0, 8, 4.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 2, 25],
+			"to": [11, 4, 31],
+			"rotation": {"angle": -90, "axis": "x", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [8, 1, 11, 2], "texture": "#0"},
+				"east": {"uv": [8, 1, 11, 2], "texture": "#0"},
+				"south": {"uv": [8, 1, 11, 2], "texture": "#0"},
+				"west": {"uv": [8, 1, 11, 2], "texture": "#0"},
+				"up": {"uv": [0, 4.5, 3, 7.5], "texture": "#0"},
+				"down": {"uv": [3, 4.5, 6, 7.5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

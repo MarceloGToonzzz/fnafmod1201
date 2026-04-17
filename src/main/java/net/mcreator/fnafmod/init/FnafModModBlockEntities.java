@@ -48,10 +48,13 @@ import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushChicaBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
 import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
+import net.mcreator.fnafmod.block.entity.ModularLightFlatTileEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
 import net.mcreator.fnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.fnafmod.block.entity.LockerSilverBlockEntity;
 import net.mcreator.fnafmod.block.entity.LightSwitchTileEntity;
+import net.mcreator.fnafmod.block.entity.LightButtonTileEntity;
+import net.mcreator.fnafmod.block.entity.LightButtonFlatTileEntity;
 import net.mcreator.fnafmod.block.entity.LargeIndustrialDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.IndustrialFanTileEntity;
 import net.mcreator.fnafmod.block.entity.GeneratorRightCreativeTileEntity;
@@ -75,6 +78,7 @@ import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonTileEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonOnBlockEntity;
+import net.mcreator.fnafmod.block.entity.DoorButtonFlatTileEntity;
 import net.mcreator.fnafmod.block.entity.DoorBoarderBlockEntity;
 import net.mcreator.fnafmod.block.entity.DisplayShelvesTileEntity;
 import net.mcreator.fnafmod.block.entity.DisplayMonitorTileEntity;
@@ -275,6 +279,13 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<GenPercentTileEntity>> GEN_PERCENT = REGISTRY.register("gen_percent", () -> BlockEntityType.Builder.of(GenPercentTileEntity::new, FnafModModBlocks.GEN_PERCENT.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ProtonsPlushRatTileEntity>> PROTONS_PLUSH_RAT = REGISTRY.register("protons_plush_rat",
 			() -> BlockEntityType.Builder.of(ProtonsPlushRatTileEntity::new, FnafModModBlocks.PROTONS_PLUSH_RAT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<LightButtonTileEntity>> LIGHT_BUTTON = REGISTRY.register("light_button", () -> BlockEntityType.Builder.of(LightButtonTileEntity::new, FnafModModBlocks.LIGHT_BUTTON.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DoorButtonFlatTileEntity>> DOOR_BUTTON_FLAT = REGISTRY.register("door_button_flat",
+			() -> BlockEntityType.Builder.of(DoorButtonFlatTileEntity::new, FnafModModBlocks.DOOR_BUTTON_FLAT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<LightButtonFlatTileEntity>> LIGHT_BUTTON_FLAT = REGISTRY.register("light_button_flat",
+			() -> BlockEntityType.Builder.of(LightButtonFlatTileEntity::new, FnafModModBlocks.LIGHT_BUTTON_FLAT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ModularLightFlatTileEntity>> MODULAR_LIGHT_FLAT = REGISTRY.register("modular_light_flat",
+			() -> BlockEntityType.Builder.of(ModularLightFlatTileEntity::new, FnafModModBlocks.MODULAR_LIGHT_FLAT.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

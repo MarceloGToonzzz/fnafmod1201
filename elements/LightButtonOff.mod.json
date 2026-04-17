@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "light_botton_off:default",
+    "customModelName": "light_button_1:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Light Button Off",
+    "name": "Light Button",
     "specialInformation": {
       "fixedValue": [
         "If you have this item place and break it again"

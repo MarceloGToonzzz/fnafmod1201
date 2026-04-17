@@ -59,7 +59,7 @@ public class RemnantInfuserScreen extends AbstractContainerScreen<RemnantInfuser
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/remnant_infuser_bbackground.png"), this.leftPos + -1, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/remnant_infuser_bbackground.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 
 		if (Remnant1Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/energy_low.png"), this.leftPos + 8, this.topPos + 9, 0, 0, 16, 64, 16, 64);

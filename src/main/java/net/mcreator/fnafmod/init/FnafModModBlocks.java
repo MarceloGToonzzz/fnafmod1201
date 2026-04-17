@@ -269,6 +269,7 @@ import net.mcreator.fnafmod.block.MovieExteriorWallBlock;
 import net.mcreator.fnafmod.block.MovieExteriorTopBlock;
 import net.mcreator.fnafmod.block.MovieChairBlock;
 import net.mcreator.fnafmod.block.MonitorsBlock;
+import net.mcreator.fnafmod.block.ModularLightFlatBlock;
 import net.mcreator.fnafmod.block.ModularLightBlock;
 import net.mcreator.fnafmod.block.MintCurtainBlock;
 import net.mcreator.fnafmod.block.MiniRancidWallBlock;
@@ -284,6 +285,8 @@ import net.mcreator.fnafmod.block.LilygearLakeGrassBlock;
 import net.mcreator.fnafmod.block.LightSwitchBlock;
 import net.mcreator.fnafmod.block.LightButtonOnBlock;
 import net.mcreator.fnafmod.block.LightButtonOffBlock;
+import net.mcreator.fnafmod.block.LightButtonFlatBlock;
+import net.mcreator.fnafmod.block.LightButtonBlock;
 import net.mcreator.fnafmod.block.LicoriceCurtainBlock;
 import net.mcreator.fnafmod.block.LetsEatSignBlock;
 import net.mcreator.fnafmod.block.LargeIndustrialDoorBlock;
@@ -387,6 +390,7 @@ import net.mcreator.fnafmod.block.DrumsetBlock;
 import net.mcreator.fnafmod.block.DoorLightBlock;
 import net.mcreator.fnafmod.block.DoorButtonOnBlock;
 import net.mcreator.fnafmod.block.DoorButtonOffBlock;
+import net.mcreator.fnafmod.block.DoorButtonFlatBlock;
 import net.mcreator.fnafmod.block.DoorButtonBlock;
 import net.mcreator.fnafmod.block.DoorBoarderBlock;
 import net.mcreator.fnafmod.block.DisplayShelvesBlock;
@@ -1308,6 +1312,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DOOR_BUTTON = REGISTRY.register("door_button", () -> new DoorButtonBlock());
 	public static final RegistryObject<Block> GEN_PERCENT = REGISTRY.register("gen_percent", () -> new GenPercentBlock());
 	public static final RegistryObject<Block> PROTONS_PLUSH_RAT = REGISTRY.register("protons_plush_rat", () -> new ProtonsPlushRatBlock());
+	public static final RegistryObject<Block> LIGHT_BUTTON = REGISTRY.register("light_button", () -> new LightButtonBlock());
+	public static final RegistryObject<Block> DOOR_BUTTON_FLAT = REGISTRY.register("door_button_flat", () -> new DoorButtonFlatBlock());
+	public static final RegistryObject<Block> LIGHT_BUTTON_FLAT = REGISTRY.register("light_button_flat", () -> new LightButtonFlatBlock());
+	public static final RegistryObject<Block> MODULAR_LIGHT_FLAT = REGISTRY.register("modular_light_flat", () -> new ModularLightFlatBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

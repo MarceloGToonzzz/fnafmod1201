@@ -61,7 +61,7 @@ public class GenPercentBlock extends BaseEntityBlock implements EntityBlock {
 							return 0;
 						return 0;
 					}
-				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				}.getLightLevel())));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

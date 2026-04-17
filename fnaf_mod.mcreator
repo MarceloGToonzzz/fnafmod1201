@@ -599,11 +599,11 @@
       "registry_name": "light_button_off",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/LightButtonOffBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/light_button_off.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/light_button_off.json",
           "src/main/resources/assets/fnaf_mod/models/item/light_button_off.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/light_button_off.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/light_button_off.json",
+          "src/main/java/net/mcreator/fnafmod/block/LightButtonOffBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/light_button_off.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -647,11 +647,11 @@
       "registry_name": "light_button_on",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/LightButtonOnBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/light_button_on.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/light_button_on.json",
           "src/main/resources/assets/fnaf_mod/blockstates/light_button_on.json",
-          "src/main/resources/assets/fnaf_mod/models/item/light_button_on.json"
+          "src/main/java/net/mcreator/fnafmod/block/LightButtonOnBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/light_button_on.json",
+          "src/main/resources/assets/fnaf_mod/models/item/light_button_on.json",
+          "src/main/resources/assets/fnaf_mod/models/block/light_button_on.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -8232,9 +8232,9 @@
       "registry_name": "remnant_infuser",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/world/inventory/RemnantInfuserMenu.java",
+          "src/main/java/net/mcreator/fnafmod/client/gui/RemnantInfuserScreen.java",
           "src/main/java/net/mcreator/fnafmod/network/RemnantInfuserSlotMessage.java",
-          "src/main/java/net/mcreator/fnafmod/client/gui/RemnantInfuserScreen.java"
+          "src/main/java/net/mcreator/fnafmod/world/inventory/RemnantInfuserMenu.java"
         ]
       },
       "path": "~/GUIs and Extras/RemnantInfuser"
@@ -28892,17 +28892,17 @@
       "registry_name": "big_security_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/custom/big_security_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_security_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/big_security_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_security_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_security_door.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_security_door_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/display/BigSecurityDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/BigSecurityDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/BigSecurityDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_security_door_blockstate_0.json"
+          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -28946,17 +28946,17 @@
       "registry_name": "big_heavy_duty_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_heavy_duty_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigHeavyDutyDoorDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigHeavyDutyDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_heavy_duty_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/BigHeavyDutyDoorBlock.java",
           "src/main/resources/assets/fnaf_mod/models/custom/big_heavy_duty_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_heavy_duty_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigHeavyDutyDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigHeavyDutyDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_heavy_duty_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/BigHeavyDutyDoorBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_heavy_duty_door.json"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_heavy_duty_door.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -29890,17 +29890,17 @@
       "registry_name": "large_industrial_door",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/block/entity/LargeIndustrialDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/large_industrial_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/large_industrial_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/LargeIndustrialDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorDisplayModel.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/display/LargeIndustrialDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/large_industrial_door.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/large_industrial_door_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/large_industrial_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/LargeIndustrialDoorTileEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/large_industrial_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/LargeIndustrialDoorBlock.java"
+          "src/main/resources/assets/fnaf_mod/models/block/large_industrial_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -34070,29 +34070,29 @@
       "registry_name": "modular_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_9.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_11.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/ModularLightBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_10.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_5.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_2.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_7.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_1.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_12.json",
           "src/main/java/net/mcreator/fnafmod/block/model/ModularLightDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_5.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_7.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_4.json",
           "src/main/resources/assets/fnaf_mod/blockstates/modular_light.json",
-          "src/main/resources/assets/fnaf_mod/models/item/modular_light.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/custom/modular_light_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_8.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_6.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_3.json"
+          "src/main/java/net/mcreator/fnafmod/block/ModularLightBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/modular_light.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
@@ -34578,17 +34578,17 @@
       "registry_name": "gen_percent",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/GenPercentTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/gen_percent.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/GenPercentDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/gen_percent_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/GenPercentDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GenPercentTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/GenPercentDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/gen_percent.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/GenPercentDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/gen_percent_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/gen_percent.json",
           "src/main/java/net/mcreator/fnafmod/block/GenPercentBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GenPercentBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/GenPercentDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/custom/gen_percent_particle.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/gen_percent.json"
+          "src/main/java/net/mcreator/fnafmod/block/entity/GenPercentTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GenPercentTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/GenPercentBlockModel.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator"
@@ -34722,6 +34722,188 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "LightButton",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/light_button.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/LightButtonDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LightButtonTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LightButtonDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/light_button_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/LightButtonBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/light_button_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/LightButtonTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/light_button.json",
+          "src/main/java/net/mcreator/fnafmod/block/LightButtonBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LightButtonDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "LightButtonOnBlockRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_button_on_block_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightButtonOnBlockRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "DoorButtonFlat",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_button_flat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/DoorButtonFlatDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/DoorButtonFlatTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/DoorButtonFlatBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/DoorButtonFlatBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/DoorButtonFlatDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/door_button_flat.json",
+          "src/main/resources/assets/fnaf_mod/models/block/door_button_flat_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/door_button_flat_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/item/door_button_flat.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/DoorButtonFlatTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/DoorButtonFlatDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "LightButtonFlat",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_button_flat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/custom/light_button_flat_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LightButtonFlatTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LightButtonFlatBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LightButtonFlatDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/LightButtonFlatBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LightButtonFlatDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/light_button_flat.json",
+          "src/main/resources/assets/fnaf_mod/models/block/light_button_flat_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/LightButtonFlatTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/LightButtonFlatDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/light_button_flat.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "ButtonTypeSwitching",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_type_switching",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ButtonTypeSwitchingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator"
+    },
+    {
+      "name": "ModularLightFlat",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modular_light_flat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_10.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_6.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/modular_light_flat_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/modular_light_flat.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_12.json",
+          "src/main/java/net/mcreator/fnafmod/block/ModularLightFlatBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_8.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightFlatTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_4.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightFlatDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/modular_light_flat.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_7.json"
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "LightButtonValue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_button_value",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightButtonValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
     }
   ],
   "variable_elements": [
@@ -36725,6 +36907,10 @@
       "SecurityDoorOpen",
       "DoorButtonOff",
       "DoorButton",
+      "LightButton",
+      "LightSwitch",
+      "ModularLight",
+      "ModularLightFlat",
       "Speaker",
       "OrangeSpeaker",
       "Fan",
@@ -36863,9 +37049,7 @@
       "CashRegister",
       "Printer",
       "Toilet",
-      "Sink",
-      "ModularLight",
-      "LightSwitch"
+      "Sink"
     ],
     "CUSTOM:FNAFToolsAndItems": [
       "MAT",
@@ -37143,8 +37327,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -37153,12 +37337,12 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
@@ -37174,11 +37358,11 @@
       "block.fnaf_mod.fancy_bricks_slab": "Fancy Bricks Slab",
       "entity.fnaf_mod.golden_freddy": "Golden Freddy",
       "entity.fnaf_mod.unwithered_chica": "Un-Withered Chica",
-      "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
       "item.fnaf_mod.day_time_bonnie_spawn_egg": "DaytimeBonnie Spawn Egg",
+      "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
       "entity.fnaf_mod.the_groobler": "The Groobler",
-      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.balloon": "Red Balloon",
+      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.big_dual_colour_entrance_door": "Big Dual Coloured Entrance Door",
       "block.fnaf_mod.green_blue_diagonal_tile_stair": "Green Blue Diagonal Tile Stairs",
       "subtitles.blacktombyardtemp": "",
@@ -37211,6 +37395,7 @@
       "block.fnaf_mod.white_black_stripe_wall_tile": "White Black Stripe Wall Tiles",
       "block.fnaf_mod.generator_outlet": "Generator Outlet",
       "block.fnaf_mod.center_white_black_wall_tile": "Center White Stripe Wall Tiles",
+      "block.fnaf_mod.door_button_flat.description_0": "§7Linkable",
       "subtitles.ovdrhonk": "\"Honk\"",
       "gui.fnaf_mod.wall_change_2.label_opposing_each_other": " Opposing Each Other",
       "block.fnaf_mod.pin_ball_machine_2": "Pinball Machine Cupcake",
@@ -37446,8 +37631,8 @@
       "block.fnaf_mod.fredbear_floor_clean": "Fredbear\u0027s Floor",
       "item.fnaf_mod.circuit_board": "Circuit Board",
       "entity.fnaf_mod.freddy_cut_out": "Freddy Cutout",
-      "entity.fnaf_mod.passive_goldie": "YellowBear",
       "item.fnaf_mod.nightmare_foxy_statue_spawn_item": "Nightmare Foxy (Statue)",
+      "entity.fnaf_mod.passive_goldie": "YellowBear",
       "subtitles.f1": "Honk",
       "block.fnaf_mod.white_tiled_wall": "White Tiled Wall",
       "item.fnaf_mod.chica_suit_boots": "Chica Boots",
@@ -37477,9 +37662,11 @@
       "block.fnaf_mod.black_tile": "Black Tile",
       "block.fnaf_mod.fan": "Fan",
       "block.fnaf_mod.stage_wood_fence": "Stage Wood Fence",
+      "block.fnaf_mod.modular_light_flat": "Modular Light Flat",
       "entity.fnaf_mod.sit_entity": "Sit Entity",
       "item.fnaf_mod.glitchtrap_suit_chestplate": "Spring Bonnie Costume Body",
       "block.fnaf_mod.purple_table_cloth": "Purple Table Cloth",
+      "block.fnaf_mod.light_button_flat": "Light Button (flat)",
       "block.fnaf_mod.change_machine": "Change Machine",
       "block.fnaf_mod.pinwheel_circus_grass": "Pinwheel Circus Grass",
       "item.fnaf_mod.shadow_freddy_standing_spawn_egg": "Shadow Freddy Spawn Egg",
@@ -37578,6 +37765,7 @@
       "block.fnaf_mod.big_black_purple_wall_tile": "Big Black Purple Wall Tiles",
       "block.fnaf_mod.stage_light_pink": "Stage Light (Pink)",
       "subtitles.nightmare": "",
+      "block.fnaf_mod.door_button_flat": "Door Button (flat)",
       "subtitles.protons_rat_noises": "Rat Noises",
       "item.fnaf_mod.freddles_spawn_egg": "Freddles Spawn Egg",
       "block.fnaf_mod.diagonal_wall_connector_bottom": "Diagonal Wall Connector Bottom",
@@ -37922,8 +38110,8 @@
       "block.fnaf_mod.thin_cloud_curtain": "Thin Cloud Curtain",
       "block.fnaf_mod.poster_12.description_0": "Poster of Toy Foxy!",
       "gui.fnaf_mod.gen_creative_config_gui.label_drain": "Drain . . .",
-      "item.fnaf_mod.freddy_suit_leggings": "Freddy Legs",
       "block.fnaf_mod.door_button.description_0": "§7Linkable",
+      "item.fnaf_mod.freddy_suit_leggings": "Freddy Legs",
       "block.fnaf_mod.entrance_carpet": "Entrance Floor",
       "item.fnaf_mod.sitting_spring_bonnie_spawn_egg": "Spring Bonnie (Sitting Prop Entity) Spawn Egg",
       "gui.fnaf_mod.party_system.label_select_a_party_member": "Select a party member!",
@@ -38027,7 +38215,7 @@
       "item.fnaf_mod.springlocked_zombie_fredbear_spawn_egg": "Springlocked Zombie Fredbear Spawn Egg",
       "item.fnaf_mod.table_cloth_item": "Table Cloth",
       "block.fnaf_mod.black_white_tile_cracked": "Cracked Black \u0026 White Tile",
-      "block.fnaf_mod.light_button_off": "Light Button Off",
+      "block.fnaf_mod.light_button_off": "Light Button",
       "block.fnaf_mod.white_tile": "White Tile",
       "block.fnaf_mod.sink": "Sink",
       "block.fnaf_mod.streamer_stars.description_0": "Stars",
@@ -38050,6 +38238,7 @@
       "entity.fnaf_mod.plushtrap_toy": "Plushtrap Toy",
       "block.fnaf_mod.blue_black_tile_stairs_cracked": "Cracked Blue Black Tile Stairs",
       "block.fnaf_mod.cinematic_sign_freddy": "Cinematic Freddy Decoration",
+      "block.fnaf_mod.light_button": "Light Button",
       "block.fnaf_mod.door_button_off": "Door Button",
       "block.fnaf_mod.green_blue_tile_cracked": "Cracked Green Blue Tile",
       "gui.fnaf_mod.generator_creative_gui.label_doors": "Doors",
@@ -38333,6 +38522,7 @@
       "block.fnaf_mod.fredbear_poster_2.description_0": "Poster of Fredbear\u0027s Head!",
       "block.fnaf_mod.black_white_tile_slab_cracked": "Cracked Black \u0026 White Tile Slab",
       "entity.fnaf_mod.toy_freddy": "Toy Freddy ",
+      "block.fnaf_mod.light_button_flat.description_0": "§7Linkable",
       "item.fnaf_mod.standing_daytime_springtrap_spawn_egg": "DayTime Springtrap Standing Spawn Egg",
       "block.fnaf_mod.avocado_curtain.description_0": "§2(Green Curtain)",
       "item.fnaf_mod.chica": "Drone Chica",
@@ -38523,6 +38713,7 @@
       "block.fnaf_mod.vent": "Vent",
       "item.fnaf_mod.bonnie_guitar": "Bonnie\u0027s Guitar",
       "block.fnaf_mod.fnaf_3_wall_tile": "Rancid Wall Tiles",
+      "block.fnaf_mod.light_button.description_0": "§7Linkable",
       "block.fnaf_mod.thin_corn_curtain.description_0": "§e(Yellow Curtain)",
       "item.fnaf_mod.withered_bonnie_spawn_item": "Withered Bonnie",
       "block.fnaf_mod.structure_spawning_block.description_0": "Sam\u0027s Pizzeria",

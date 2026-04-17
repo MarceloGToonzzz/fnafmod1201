@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "door_button",
+    "texture": "diagonal_tiles",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -14,11 +14,11 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "door_button",
+    "itemTexture": "plastic_scrap_white",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -140,15 +140,15 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "doorbutton.geo.json",
+    "normal": "genpercentage.geo.json",
     "displaySettings": "nightmare_bonnie.geo.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "door_button_active2",
+        "texture": "blueprint_tiles",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "doorbutton.geo.json",
+        "customModelName": "genpercentage.geo.json",
         "luminance": 0,
         "boundingBoxes": []
       }

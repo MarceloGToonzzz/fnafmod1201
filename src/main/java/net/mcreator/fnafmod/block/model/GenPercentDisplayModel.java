@@ -9,16 +9,16 @@ import net.mcreator.fnafmod.block.display.GenPercentDisplayItem;
 public class GenPercentDisplayModel extends GeoModel<GenPercentDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(GenPercentDisplayItem animatable) {
-		return new ResourceLocation("fnaf_mod", "animations/doorbutton.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/genpercentage.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GenPercentDisplayItem animatable) {
-		return new ResourceLocation("fnaf_mod", "geo/doorbutton.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/genpercentage.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(GenPercentDisplayItem entity) {
-		return new ResourceLocation("fnaf_mod", "textures/block/door_button.png");
+		return new ResourceLocation("fnaf_mod", "textures/block/diagonal_tiles.png");
 	}
 }

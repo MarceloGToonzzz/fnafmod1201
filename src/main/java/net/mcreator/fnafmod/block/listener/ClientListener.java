@@ -36,8 +36,11 @@ import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ProtonsPlushRatTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ModularLightTileRenderer;
+import net.mcreator.fnafmod.block.renderer.ModularLightFlatTileRenderer;
 import net.mcreator.fnafmod.block.renderer.MeshTrashCanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LightSwitchTileRenderer;
+import net.mcreator.fnafmod.block.renderer.LightButtonTileRenderer;
+import net.mcreator.fnafmod.block.renderer.LightButtonFlatTileRenderer;
 import net.mcreator.fnafmod.block.renderer.LargeIndustrialDoorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.IndustrialFanTileRenderer;
 import net.mcreator.fnafmod.block.renderer.GeneratorRightCreativeTileRenderer;
@@ -57,6 +60,7 @@ import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DoorButtonTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DoorButtonFlatTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayMonitorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
@@ -180,5 +184,9 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON.get(), context -> new DoorButtonTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.GEN_PERCENT.get(), context -> new GenPercentTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.PROTONS_PLUSH_RAT.get(), context -> new ProtonsPlushRatTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_BUTTON.get(), context -> new LightButtonTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON_FLAT.get(), context -> new DoorButtonFlatTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_BUTTON_FLAT.get(), context -> new LightButtonFlatTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT_FLAT.get(), context -> new ModularLightFlatTileRenderer());
 	}
 }

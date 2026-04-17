@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "light_button_on:default",
+    "customModelName": "light_button_2:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:LightButtonOff"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -66,7 +66,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:LightButtonOff"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

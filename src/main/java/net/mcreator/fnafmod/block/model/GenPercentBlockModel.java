@@ -11,23 +11,23 @@ public class GenPercentBlockModel extends GeoModel<GenPercentTileEntity> {
 	public ResourceLocation getAnimationResource(GenPercentTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("fnaf_mod", "animations/doorbutton.animation.json");
-		return new ResourceLocation("fnaf_mod", "animations/doorbutton.animation.json");
+			return new ResourceLocation("fnaf_mod", "animations/genpercentage.animation.json");
+		return new ResourceLocation("fnaf_mod", "animations/genpercentage.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GenPercentTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("fnaf_mod", "geo/doorbutton.geo.json");
-		return new ResourceLocation("fnaf_mod", "geo/doorbutton.geo.json");
+			return new ResourceLocation("fnaf_mod", "geo/genpercentage.geo.json");
+		return new ResourceLocation("fnaf_mod", "geo/genpercentage.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(GenPercentTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("fnaf_mod", "textures/block/door_button_active2.png");
-		return new ResourceLocation("fnaf_mod", "textures/block/door_button.png");
+			return new ResourceLocation("fnaf_mod", "textures/block/blueprint_tiles.png");
+		return new ResourceLocation("fnaf_mod", "textures/block/diagonal_tiles.png");
 	}
 }
