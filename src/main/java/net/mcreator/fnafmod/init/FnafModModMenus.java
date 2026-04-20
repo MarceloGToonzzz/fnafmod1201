@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.mcreator.fnafmod.world.inventory.WallChange2Menu;
 import net.mcreator.fnafmod.world.inventory.WallChange1Menu;
 import net.mcreator.fnafmod.world.inventory.SodaMachineMenu;
+import net.mcreator.fnafmod.world.inventory.ServerPanelGUIMenu;
 import net.mcreator.fnafmod.world.inventory.RemnantInfuserMenu;
 import net.mcreator.fnafmod.world.inventory.PartySystemMenu;
 import net.mcreator.fnafmod.world.inventory.LolbitShopMenu;
@@ -23,6 +24,8 @@ import net.mcreator.fnafmod.world.inventory.GeneratorCreativeGUIMenu;
 import net.mcreator.fnafmod.world.inventory.GeneratorBreakerUnpaneledMenu;
 import net.mcreator.fnafmod.world.inventory.GeneratorBreakerSwitchesMenu;
 import net.mcreator.fnafmod.world.inventory.GenCreativeConfigGUIMenu;
+import net.mcreator.fnafmod.world.inventory.FireAxeDataMenu;
+import net.mcreator.fnafmod.world.inventory.CameraPanelGUIMenu;
 import net.mcreator.fnafmod.world.inventory.CameraGUIMenu;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -41,4 +44,7 @@ public class FnafModModMenus {
 	public static final RegistryObject<MenuType<GeneratorCreativeGUIMenu>> GENERATOR_CREATIVE_GUI = REGISTRY.register("generator_creative_gui", () -> IForgeMenuType.create(GeneratorCreativeGUIMenu::new));
 	public static final RegistryObject<MenuType<GeneratorBreakerUnpaneledMenu>> GENERATOR_BREAKER_UNPANELED = REGISTRY.register("generator_breaker_unpaneled", () -> IForgeMenuType.create(GeneratorBreakerUnpaneledMenu::new));
 	public static final RegistryObject<MenuType<GenCreativeConfigGUIMenu>> GEN_CREATIVE_CONFIG_GUI = REGISTRY.register("gen_creative_config_gui", () -> IForgeMenuType.create(GenCreativeConfigGUIMenu::new));
+	public static final RegistryObject<MenuType<CameraPanelGUIMenu>> CAMERA_PANEL_GUI = REGISTRY.register("camera_panel_gui", () -> IForgeMenuType.create(CameraPanelGUIMenu::new));
+	public static final RegistryObject<MenuType<ServerPanelGUIMenu>> SERVER_PANEL_GUI = REGISTRY.register("server_panel_gui", () -> IForgeMenuType.create(ServerPanelGUIMenu::new));
+	public static final RegistryObject<MenuType<FireAxeDataMenu>> FIRE_AXE_DATA = REGISTRY.register("fire_axe_data", () -> IForgeMenuType.create(FireAxeDataMenu::new));
 }

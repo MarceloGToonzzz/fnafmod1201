@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.mcreator.fnafmod.client.gui.WallChange2Screen;
 import net.mcreator.fnafmod.client.gui.WallChange1Screen;
 import net.mcreator.fnafmod.client.gui.SodaMachineScreen;
+import net.mcreator.fnafmod.client.gui.ServerPanelGUIScreen;
 import net.mcreator.fnafmod.client.gui.RemnantInfuserScreen;
 import net.mcreator.fnafmod.client.gui.PartySystemScreen;
 import net.mcreator.fnafmod.client.gui.LolbitShopScreen;
@@ -23,6 +24,8 @@ import net.mcreator.fnafmod.client.gui.GeneratorCreativeGUIScreen;
 import net.mcreator.fnafmod.client.gui.GeneratorBreakerUnpaneledScreen;
 import net.mcreator.fnafmod.client.gui.GeneratorBreakerSwitchesScreen;
 import net.mcreator.fnafmod.client.gui.GenCreativeConfigGUIScreen;
+import net.mcreator.fnafmod.client.gui.FireAxeDataScreen;
+import net.mcreator.fnafmod.client.gui.CameraPanelGUIScreen;
 import net.mcreator.fnafmod.client.gui.CameraGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -43,6 +46,9 @@ public class FnafModModScreens {
 			MenuScreens.register(FnafModModMenus.GENERATOR_CREATIVE_GUI.get(), GeneratorCreativeGUIScreen::new);
 			MenuScreens.register(FnafModModMenus.GENERATOR_BREAKER_UNPANELED.get(), GeneratorBreakerUnpaneledScreen::new);
 			MenuScreens.register(FnafModModMenus.GEN_CREATIVE_CONFIG_GUI.get(), GenCreativeConfigGUIScreen::new);
+			MenuScreens.register(FnafModModMenus.CAMERA_PANEL_GUI.get(), CameraPanelGUIScreen::new);
+			MenuScreens.register(FnafModModMenus.SERVER_PANEL_GUI.get(), ServerPanelGUIScreen::new);
+			MenuScreens.register(FnafModModMenus.FIRE_AXE_DATA.get(), FireAxeDataScreen::new);
 		});
 	}
 }

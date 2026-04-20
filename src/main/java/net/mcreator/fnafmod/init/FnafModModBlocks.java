@@ -150,6 +150,7 @@ import net.mcreator.fnafmod.block.SkeeballBlock;
 import net.mcreator.fnafmod.block.SinkBlock;
 import net.mcreator.fnafmod.block.ShelfBlock;
 import net.mcreator.fnafmod.block.ShackRandomizerBlock;
+import net.mcreator.fnafmod.block.ServerBlock;
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
 import net.mcreator.fnafmod.block.ScreenBlock;
 import net.mcreator.fnafmod.block.SconceBlock;
@@ -338,6 +339,7 @@ import net.mcreator.fnafmod.block.Fnaf4DoorBlock;
 import net.mcreator.fnafmod.block.FluorescentLightBlock;
 import net.mcreator.fnafmod.block.FloodLightsBlock;
 import net.mcreator.fnafmod.block.FlashLightLightBlock;
+import net.mcreator.fnafmod.block.FireAxeBlockBlock;
 import net.mcreator.fnafmod.block.FazeerramicsControlPanelBlock;
 import net.mcreator.fnafmod.block.FazbearHillsGrassBlock;
 import net.mcreator.fnafmod.block.FancyCandyCurtainCleanBlock;
@@ -514,6 +516,8 @@ import net.mcreator.fnafmod.block.CashRegisterBlock;
 import net.mcreator.fnafmod.block.CarrotCurtainBlock;
 import net.mcreator.fnafmod.block.CarouselBlock;
 import net.mcreator.fnafmod.block.CandyCurtainBlock;
+import net.mcreator.fnafmod.block.CameraHeadBlockBlock;
+import net.mcreator.fnafmod.block.CameraBlockBlock;
 import net.mcreator.fnafmod.block.CactusCurtainBlock;
 import net.mcreator.fnafmod.block.BuffetWallLightBlock;
 import net.mcreator.fnafmod.block.BuffetWallDarkBlock;
@@ -1316,6 +1320,10 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> DOOR_BUTTON_FLAT = REGISTRY.register("door_button_flat", () -> new DoorButtonFlatBlock());
 	public static final RegistryObject<Block> LIGHT_BUTTON_FLAT = REGISTRY.register("light_button_flat", () -> new LightButtonFlatBlock());
 	public static final RegistryObject<Block> MODULAR_LIGHT_FLAT = REGISTRY.register("modular_light_flat", () -> new ModularLightFlatBlock());
+	public static final RegistryObject<Block> SERVER = REGISTRY.register("server", () -> new ServerBlock());
+	public static final RegistryObject<Block> CAMERA_BLOCK = REGISTRY.register("camera_block", () -> new CameraBlockBlock());
+	public static final RegistryObject<Block> CAMERA_HEAD_BLOCK = REGISTRY.register("camera_head_block", () -> new CameraHeadBlockBlock());
+	public static final RegistryObject<Block> FIRE_AXE_BLOCK = REGISTRY.register("fire_axe_block", () -> new FireAxeBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

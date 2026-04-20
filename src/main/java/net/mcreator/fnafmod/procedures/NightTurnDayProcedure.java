@@ -1,81 +1,558 @@
 package net.mcreator.fnafmod.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.fnafmod.init.FnafModModEntities;
+import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
+import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
+import net.mcreator.fnafmod.entity.WitheredChicaEntity;
+import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
+import net.mcreator.fnafmod.entity.ToyFreddyEntity;
+import net.mcreator.fnafmod.entity.ToyFoxyEntity;
+import net.mcreator.fnafmod.entity.ToyBonnieEntity;
+import net.mcreator.fnafmod.entity.SpringtrapEntity;
+import net.mcreator.fnafmod.entity.PuppetEntity;
+import net.mcreator.fnafmod.entity.NightimeToyChicaEntity;
+import net.mcreator.fnafmod.entity.MangleEntity;
+import net.mcreator.fnafmod.entity.FreddyFazbearEntity;
+import net.mcreator.fnafmod.entity.FoxyPirateEntity;
+import net.mcreator.fnafmod.entity.ChicaChickenEntity;
+import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
+import net.mcreator.fnafmod.entity.BBEntity;
 
 public class NightTurnDayProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		String registry = "";
 		String ai = "";
 		String command = "";
 		String thing = "";
-		ai = "1";
 		if (world instanceof Level _lvl0 && _lvl0.isDay()) {
-			registry = "daytime_" + (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("fnaf_mod:", "");
-			if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:freddy_fazbear")) {
-				registry = "day_time_freddy";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:bonnie_bunny")) {
-				registry = "day_time_bonnie";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:chica_chicken")) {
-				registry = "daytime_chica";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:foxy_pirate")) {
-				registry = "day_time_foxy";
-			}
-			if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:toy_freddy")) {
-				registry = "day_time_toy_freddy";
-				ai = "0";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:toy_bonnie") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:crawling_toy_bonnie")) {
-				registry = "day_time_toy_bonnie";
-				ai = "0";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:nightime_toy_chica") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:crawling_toy_chica")) {
-				registry = "toy_chica";
-				ai = "0";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:toy_foxy") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:crawling_toy_foxy")) {
-				registry = "day_time_toy_foxy";
-				ai = "0";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:mangle") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:crawling_mangle")) {
-				registry = "mangle_sitting";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:bb")) {
-				registry = "day_time_bb";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:puppet")) {
-				registry = "day_time_puppet";
-			}
-			if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:withered_freddy")) {
-				registry = "ded_withered_freddy";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:withered_bonnie")) {
-				registry = "sitting_withered_bonnie";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:withered_chica")) {
-				registry = "sitting_withered_chica";
-			} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:withered_foxy")) {
-				registry = "day_time_withered_foxy";
-			}
-			if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:springtrap") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).equals("fnaf_mod:crawling_springtrap")) {
-				if (Mth.nextInt(RandomSource.create(), 1, 3) != 2) {
-					registry = "sitting_daytime_springtrap";
-				} else {
-					registry = "standing_daytime_springtrap";
-					ai = "0";
+			if (entity instanceof FreddyFazbearEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_FREDDY.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof BonnieBunnyEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_BONNIE.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof ChicaChickenEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAYTIME_CHICA.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof FoxyPirateEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_FOXY.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
 				}
 			}
-			command = ((((((("summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd,fnafmod-skin: SKINNY},NoAI:move,Rotation:[YAWf]}".replace("SKINNY",
-					"" + entity.getPersistentData().getDouble("fnafmod-skin"))).replace("ZEZ", entity.getPersistentData().getDouble("z") + "d")).replace("ZEY", entity.getPersistentData().getDouble("y") + "d"))
-					.replace("ZEX", entity.getPersistentData().getDouble("x") + "d")).replace("move", ai + "b")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-					.replace("XYZ", (entity.getPersistentData().getDouble("x") + " ") + "" + (entity.getPersistentData().getDouble("y") + " ") + ("" + entity.getPersistentData().getDouble("z")))).replace("REGISTRY", "fnaf_mod:" + registry);
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
+			if (entity instanceof ToyFreddyEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_TOY_FREDDY.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof ToyBonnieEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_TOY_BONNIE.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof NightimeToyChicaEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.TOY_CHICA.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof ToyFoxyEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_TOY_FOXY.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			}
+			if (entity instanceof MangleEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.MANGLE_SITTING.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof BBEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_BB.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof PuppetEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_PUPPET.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			}
+			if (entity instanceof WitheredFreddyEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DED_WITHERED_FREDDY.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof WitheredBonnieEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.SITTING_WITHERED_BONNIE.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof WitheredChicaEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.SITTING_WITHERED_CHICA.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof WitheredFoxyEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAY_TIME_WITHERED_FOXY.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putBoolean("got_coords", true);
+						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+						{
+							Entity _ent = entityinstance;
+							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+							_ent.setXRot(0);
+							_ent.setYBodyRot(_ent.getYRot());
+							_ent.setYHeadRot(_ent.getYRot());
+							_ent.yRotO = _ent.getYRot();
+							_ent.xRotO = _ent.getXRot();
+							if (_ent instanceof LivingEntity _entity) {
+								_entity.yBodyRotO = _entity.getYRot();
+								_entity.yHeadRotO = _entity.getYRot();
+							}
+						}
+						if (entityinstance instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			}
+			if (entity instanceof SpringtrapEntity) {
+				if (Math.random() < (2) / ((float) 3)) {
+					if (world instanceof ServerLevel _serverLevel) {
+						Entity entityinstance = FnafModModEntities.SITTING_DAYTIME_SPRINGTRAP.get().create(_serverLevel, null, null,
+								BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+						if (entityinstance != null) {
+							entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+							entityinstance.getPersistentData().putBoolean("got_coords", true);
+							entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+							entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+							entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+							entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+							{
+								Entity _ent = entityinstance;
+								_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+								_ent.setXRot(0);
+								_ent.setYBodyRot(_ent.getYRot());
+								_ent.setYHeadRot(_ent.getYRot());
+								_ent.yRotO = _ent.getYRot();
+								_ent.xRotO = _ent.getXRot();
+								if (_ent instanceof LivingEntity _entity) {
+									_entity.yBodyRotO = _entity.getYRot();
+									_entity.yHeadRotO = _entity.getYRot();
+								}
+							}
+							if (entityinstance instanceof Mob _mobSetNoAi) {
+								_mobSetNoAi.setNoAi(true);
+							}
+							_serverLevel.addFreshEntity(entityinstance);
+						}
+					}
+				} else {
+					if (world instanceof ServerLevel _serverLevel) {
+						Entity entityinstance = FnafModModEntities.STANDING_DAYTIME_SPRINGTRAP.get().create(_serverLevel, null, null,
+								BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+						if (entityinstance != null) {
+							entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+							entityinstance.getPersistentData().putBoolean("got_coords", true);
+							entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
+							entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
+							entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
+							entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
+							{
+								Entity _ent = entityinstance;
+								_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
+								_ent.setXRot(0);
+								_ent.setYBodyRot(_ent.getYRot());
+								_ent.setYHeadRot(_ent.getYRot());
+								_ent.yRotO = _ent.getYRot();
+								_ent.xRotO = _ent.getXRot();
+								if (_ent instanceof LivingEntity _entity) {
+									_entity.yBodyRotO = _entity.getYRot();
+									_entity.yHeadRotO = _entity.getYRot();
+								}
+							}
+							if (entityinstance instanceof Mob _mobSetNoAi) {
+								_mobSetNoAi.setNoAi(false);
+							}
+							_serverLevel.addFreshEntity(entityinstance);
+						}
+					}
+				}
+			}
 			if (!entity.level().isClientSide())
 				entity.discard();
 		}

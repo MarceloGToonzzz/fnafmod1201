@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/camera_base",
+  "textures": {
+    "all": "fnaf_mod:block/black_tile",
+    "particle": "fnaf_mod:block/black_tile",
+    "0": "fnaf_mod:block/camera_base"
+  },
+  "render_type": "solid"
+}

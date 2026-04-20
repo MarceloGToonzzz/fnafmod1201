@@ -19,6 +19,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -38,6 +39,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
+		String TagStorage = "";
 		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem())) {
 			if (0 == new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -48,8 +50,10 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 					return _retval.get();
 				}
 			}.getAmount(world, BlockPos.containing(x, y, z), 0)) {
-				if (!(ForgeRegistries.BLOCKS.getValue(
-						new ResourceLocation(((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())).toLowerCase(java.util.Locale.ENGLISH))) == Blocks.AIR)) {
+				TagStorage = "x" + x + "y" + y + "z" + z;
+				if (!(ForgeRegistries.BLOCKS
+						.getValue(new ResourceLocation(((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())).toLowerCase(java.util.Locale.ENGLISH))) == Blocks.AIR
+						|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("fnaf_mod:item_display"))))) {
 					if ((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("head")) {
 						if ((ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).contains("minecraft:")) {
 							if (world instanceof ServerLevel _level)
@@ -57,14 +61,16 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 										new CommandSourceStack(CommandSource.NULL, new Vec3((x + 1), (y + 1.5), (z + 1)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:item_display\",item:{id:\"" + ""
 												+ (ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())
-												+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}"));
+												+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:[\"DisplayShelf\",\""
+												+ TagStorage + "\"]}]}"));
 						} else {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(
 										new CommandSourceStack(CommandSource.NULL, new Vec3((x + 1), (y + 1), (z + 1)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:item_display\",item:{id:\"" + ""
 												+ (ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())
-												+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}"));
+												+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:[\"DisplayShelf\",\""
+												+ TagStorage + "\"]}]}"));
 						}
 					} else {
 						if (world instanceof ServerLevel _level)
@@ -72,7 +78,8 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 1), (y + 1.5), (z + 1)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									("/summon item_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:block_display\",block_state:{Name:\"" + ""
 											+ (ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())
-											+ "\",Properties:{}},transformation:[1.0000f,0.0000f,0.0000f,-0.5000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,-0.5000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}"));
+											+ "\",Properties:{}},transformation:[1.0000f,0.0000f,0.0000f,-0.5000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,-0.5000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:[\"DisplayShelf\",\""
+											+ TagStorage + "\"]}]}"));
 					}
 				} else {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == FnafModModItems.FLASH_LIGHT.get()
@@ -83,14 +90,16 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 1), (y + 1.3), (z + 1)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:item_display\",item:{id:\"" + ""
 											+ (ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())
-											+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}"));
+											+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:[\"DisplayShelf\",\""
+											+ TagStorage + "\"]}]}"));
 					} else {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(
 									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 1), (y + 1.5), (z + 1)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									("/summon block_display ~-0.5 ~-0.5 ~-0.5 {Passengers:[{id:\"minecraft:item_display\",item:{id:\"" + ""
 											+ (ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString())
-											+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}]}"));
+											+ "\",Count:1},item_display:\"none\",transformation:[1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f,0.0000f,0.5000f,0.0000f,0.0000f,1.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:[\"DisplayShelf\",\""
+											+ TagStorage + "\"]}]}"));
 					}
 				}
 				{
@@ -136,7 +145,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip44 ? blockstate.getValue(_getip44) : -1) == 1) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip46 ? blockstate.getValue(_getip46) : -1) == 1) {
 					{
 						int _value = 7;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -153,7 +162,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip48 ? blockstate.getValue(_getip48) : -1) == 2) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip50 ? blockstate.getValue(_getip50) : -1) == 2) {
 					{
 						int _value = 6;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -170,7 +179,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip52 ? blockstate.getValue(_getip52) : -1) == 4) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip54 ? blockstate.getValue(_getip54) : -1) == 4) {
 					{
 						int _value = 5;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -187,7 +196,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip56 ? blockstate.getValue(_getip56) : -1) == 7) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip58 ? blockstate.getValue(_getip58) : -1) == 7) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -204,7 +213,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip60 ? blockstate.getValue(_getip60) : -1) == 6) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip62 ? blockstate.getValue(_getip62) : -1) == 6) {
 					{
 						int _value = 2;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -221,7 +230,7 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip64 ? blockstate.getValue(_getip64) : -1) == 5) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip66 ? blockstate.getValue(_getip66) : -1) == 5) {
 					{
 						int _value = 4;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -307,11 +316,11 @@ public class DisplayShelvesOnBlockRightClickedProcedure {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"execute as @e[type=item_display,distance=..1,limit=1,sort=nearest] run execute at @s run teleport @s ~ ~ ~ facing ^1 ^ ^1");
+								"execute as @e[type=item_display,distance=..1,limit=1,sort=nearest] run execute at @s run teleport @s ~ ~ ~ ~22.5 ~");
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.3), (y + 1), (z + 0.3)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"execute as @e[type=block_display,distance=..1,limit=1,sort=nearest] run execute at @s run teleport @s ~ ~ ~ facing ^1 ^ ^1");
+								"execute as @e[type=block_display,distance=..1,limit=1,sort=nearest] run execute at @s run teleport @s ~ ~ ~ ~22.5 ~");
 				}
 			}
 		}

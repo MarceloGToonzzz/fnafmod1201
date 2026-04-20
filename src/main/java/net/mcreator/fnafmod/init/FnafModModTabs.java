@@ -388,7 +388,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.SECURITY_DOOR_OPEN.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BUTTON_OFF.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BUTTON.get().asItem());
-				tabData.accept(FnafModModBlocks.LIGHT_BUTTON_OFF.get().asItem());
 				tabData.accept(FnafModModBlocks.LIGHT_BUTTON.get().asItem());
 				tabData.accept(FnafModModBlocks.LIGHT_SWITCH.get().asItem());
 				tabData.accept(FnafModModBlocks.MODULAR_LIGHT.get().asItem());
@@ -693,6 +692,8 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
 				tabData.accept(FnafModModItems.CAMERA_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.HANGING_CAMERA_SPAWN_EGG.get());
+				tabData.accept(FnafModModBlocks.SERVER.get().asItem());
+				tabData.accept(FnafModModBlocks.CAMERA_BLOCK.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_MOBS = REGISTRY.register("fnaf_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_mobs")).icon(() -> new ItemStack(FnafModModItems.FREDDY.get())).displayItems((parameters, tabData) -> {
@@ -854,6 +855,10 @@ public class FnafModModTabs {
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_PINK.get().asItem());
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_BLUE.get().asItem());
 			tabData.accept(FnafModModBlocks.CUPCAKE_FLOWER_GOLDEN.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+			if (tabData.hasPermissions()) {
+				tabData.accept(FnafModModBlocks.CAMERA_HEAD_BLOCK.get().asItem());
+			}
 		}
 	}
 }

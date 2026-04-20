@@ -34,6 +34,7 @@ import net.mcreator.fnafmod.block.entity.StageLightGreenOnTileEntity;
 import net.mcreator.fnafmod.block.entity.SpringBonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.SpringBonnieDecorTileEntity;
 import net.mcreator.fnafmod.block.entity.ShelfTileEntity;
+import net.mcreator.fnafmod.block.entity.ServerBlockEntity;
 import net.mcreator.fnafmod.block.entity.SecurityDoorOpenBlockEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
@@ -74,6 +75,7 @@ import net.mcreator.fnafmod.block.entity.FoxyHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.FluorescentLightTileEntity;
 import net.mcreator.fnafmod.block.entity.FloodLightsTileEntity;
 import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
+import net.mcreator.fnafmod.block.entity.FireAxeBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonTileEntity;
@@ -98,6 +100,8 @@ import net.mcreator.fnafmod.block.entity.CenteredFreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.CelebrateFunTileEntity;
 import net.mcreator.fnafmod.block.entity.CeilingLampBlockEntity;
 import net.mcreator.fnafmod.block.entity.CarouselTileEntity;
+import net.mcreator.fnafmod.block.entity.CameraHeadBlockBlockEntity;
+import net.mcreator.fnafmod.block.entity.CameraBlockBlockEntity;
 import net.mcreator.fnafmod.block.entity.BonnieHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.BigWideRedWindowedDoorTileEntity;
 import net.mcreator.fnafmod.block.entity.BigWideRedEntranceDoorTileEntity;
@@ -286,6 +290,10 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(LightButtonFlatTileEntity::new, FnafModModBlocks.LIGHT_BUTTON_FLAT.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ModularLightFlatTileEntity>> MODULAR_LIGHT_FLAT = REGISTRY.register("modular_light_flat",
 			() -> BlockEntityType.Builder.of(ModularLightFlatTileEntity::new, FnafModModBlocks.MODULAR_LIGHT_FLAT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> SERVER = register("server", FnafModModBlocks.SERVER, ServerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CAMERA_BLOCK = register("camera_block", FnafModModBlocks.CAMERA_BLOCK, CameraBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CAMERA_HEAD_BLOCK = register("camera_head_block", FnafModModBlocks.CAMERA_HEAD_BLOCK, CameraHeadBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<FireAxeBlockTileEntity>> FIRE_AXE_BLOCK = REGISTRY.register("fire_axe_block", () -> BlockEntityType.Builder.of(FireAxeBlockTileEntity::new, FnafModModBlocks.FIRE_AXE_BLOCK.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

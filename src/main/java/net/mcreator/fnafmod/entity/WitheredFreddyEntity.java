@@ -203,7 +203,7 @@ public class WitheredFreddyEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		NighttimeTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		NighttimeTickProcedure.execute(this.level(), this.getX(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

@@ -29,20 +29,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "GetCameraMonitorDiscription"
     },
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "CameraGUI",
     "inventorySize": 0,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "CameraMonitorRightclicked"
-    },
-    "onRightClickedOnBlock": {
-      "name": "CameraMonitorRightclicked"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

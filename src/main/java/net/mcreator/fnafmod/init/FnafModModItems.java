@@ -235,6 +235,7 @@ import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDecorationDisplayItem;
 import net.mcreator.fnafmod.block.display.FluorescentLightDisplayItem;
 import net.mcreator.fnafmod.block.display.FloodLightsDisplayItem;
+import net.mcreator.fnafmod.block.display.FireAxeBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.DoorButtonFlatDisplayItem;
 import net.mcreator.fnafmod.block.display.DoorButtonDisplayItem;
@@ -1302,6 +1303,10 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> DOOR_BUTTON_FLAT = REGISTRY.register(FnafModModBlocks.DOOR_BUTTON_FLAT.getId().getPath(), () -> new DoorButtonFlatDisplayItem(FnafModModBlocks.DOOR_BUTTON_FLAT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LIGHT_BUTTON_FLAT = REGISTRY.register(FnafModModBlocks.LIGHT_BUTTON_FLAT.getId().getPath(), () -> new LightButtonFlatDisplayItem(FnafModModBlocks.LIGHT_BUTTON_FLAT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> MODULAR_LIGHT_FLAT = REGISTRY.register(FnafModModBlocks.MODULAR_LIGHT_FLAT.getId().getPath(), () -> new ModularLightFlatDisplayItem(FnafModModBlocks.MODULAR_LIGHT_FLAT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> SERVER = block(FnafModModBlocks.SERVER);
+	public static final RegistryObject<Item> CAMERA_BLOCK = block(FnafModModBlocks.CAMERA_BLOCK);
+	public static final RegistryObject<Item> CAMERA_HEAD_BLOCK = block(FnafModModBlocks.CAMERA_HEAD_BLOCK);
+	public static final RegistryObject<Item> FIRE_AXE_BLOCK = REGISTRY.register(FnafModModBlocks.FIRE_AXE_BLOCK.getId().getPath(), () -> new FireAxeBlockDisplayItem(FnafModModBlocks.FIRE_AXE_BLOCK.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -14,7 +14,7 @@
         "value": "CUSTOM:FNAFToolsAndItems"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "Maintainance Assisting Tablet"
+        "§7Maintainance Assisting Tablet"
       ]
     },
     "glowCondition": {

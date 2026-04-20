@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MATItem extends Item {
 	public MATItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

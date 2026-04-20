@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:camera_head_block",
+    "fnaf_mod:camera_block",
+    "fnaf_mod:server",
     "fnaf_mod:cash_register",
     "fnaf_mod:arcade_machine_freddy_delivery",
     "fnaf_mod:tiled_wall_handle",

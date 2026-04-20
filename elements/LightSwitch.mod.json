@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "LightSwitchLinking"
+    },
     "onTickUpdate": {
       "name": "LightSwitchOnTickUpdate"
     },

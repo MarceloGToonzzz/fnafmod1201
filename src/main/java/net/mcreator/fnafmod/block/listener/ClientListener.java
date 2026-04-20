@@ -58,6 +58,7 @@ import net.mcreator.fnafmod.block.renderer.FoxyHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadDecorationTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
+import net.mcreator.fnafmod.block.renderer.FireAxeBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DoorButtonTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DoorButtonFlatTileRenderer;
@@ -188,5 +189,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.DOOR_BUTTON_FLAT.get(), context -> new DoorButtonFlatTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_BUTTON_FLAT.get(), context -> new LightButtonFlatTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT_FLAT.get(), context -> new ModularLightFlatTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.FIRE_AXE_BLOCK.get(), context -> new FireAxeBlockTileRenderer());
 	}
 }
