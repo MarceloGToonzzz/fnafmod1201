@@ -1,6 +1,7 @@
 
 package net.mcreator.fnafmod.item;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
@@ -26,7 +27,7 @@ public class LinkCableItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		Entity entity = itemstack.getEntityRepresentation();
-		String hoverText = LinkCableSpecialInformationProcedure.execute(itemstack);
+		String hoverText = LinkCableSpecialInformationProcedure.execute(level instanceof Level ? (LevelAccessor) level : null, itemstack);
 		if (hoverText != null) {
 			for (String line : hoverText.split("\n")) {
 				list.add(Component.literal(line));
