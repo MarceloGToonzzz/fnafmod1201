@@ -16,7 +16,7 @@ import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -41,7 +41,6 @@ import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.fnafmod.procedures.NighttimeTickProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 public class PuppetEntity extends Monster implements GeoEntity {
@@ -90,56 +89,15 @@ public class PuppetEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = PuppetEntity.this.getX();
-				double y = PuppetEntity.this.getY();
-				double z = PuppetEntity.this.getZ();
-				Entity entity = PuppetEntity.this;
-				Level world = PuppetEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = PuppetEntity.this.getX();
-				double y = PuppetEntity.this.getY();
-				double z = PuppetEntity.this.getZ();
-				Entity entity = PuppetEntity.this;
-				Level world = PuppetEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = PuppetEntity.this.getX();
-				double y = PuppetEntity.this.getY();
-				double z = PuppetEntity.this.getZ();
-				Entity entity = PuppetEntity.this;
-				Level world = PuppetEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.3, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
-
-			@Override
-			public boolean canUse() {
-				double x = PuppetEntity.this.getX();
-				double y = PuppetEntity.this.getY();
-				double z = PuppetEntity.this.getZ();
-				Entity entity = PuppetEntity.this;
-				Level world = PuppetEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-
 		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 	}
 
 	@Override

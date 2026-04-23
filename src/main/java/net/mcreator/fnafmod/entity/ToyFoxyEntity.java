@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -45,9 +45,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.ToyFoxyEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.NighttimeTickProcedure;
-import net.mcreator.fnafmod.procedures.MaskProtectionTestForTickProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.FoxyPiratePlayerCollidesWithThisEntityProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
@@ -97,56 +95,15 @@ public class ToyFoxyEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = ToyFoxyEntity.this.getX();
-				double y = ToyFoxyEntity.this.getY();
-				double z = ToyFoxyEntity.this.getZ();
-				Entity entity = ToyFoxyEntity.this;
-				Level world = ToyFoxyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = ToyFoxyEntity.this.getX();
-				double y = ToyFoxyEntity.this.getY();
-				double z = ToyFoxyEntity.this.getZ();
-				Entity entity = ToyFoxyEntity.this;
-				Level world = ToyFoxyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = ToyFoxyEntity.this.getX();
-				double y = ToyFoxyEntity.this.getY();
-				double z = ToyFoxyEntity.this.getZ();
-				Entity entity = ToyFoxyEntity.this;
-				Level world = ToyFoxyEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.6, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.3, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
-
-			@Override
-			public boolean canUse() {
-				double x = ToyFoxyEntity.this.getX();
-				double y = ToyFoxyEntity.this.getY();
-				double z = ToyFoxyEntity.this.getZ();
-				Entity entity = ToyFoxyEntity.this;
-				Level world = ToyFoxyEntity.this.level();
-				return super.canUse() && MaskProtectionTestForTickProcedure.execute(world, x, y, z);
-			}
-
 		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 	}
 
 	@Override
@@ -232,7 +189,7 @@ public class ToyFoxyEntity extends Monster implements GeoEntity {
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		FoxyPiratePlayerCollidesWithThisEntityProcedure.execute(sourceentity);
+		FoxyPiratePlayerCollidesWithThisEntityProcedure.execute(this.getX(), this.getZ(), this, sourceentity);
 	}
 
 	public static void init() {

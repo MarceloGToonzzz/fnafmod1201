@@ -3,8 +3,6 @@ package net.mcreator.fnafmod.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
@@ -42,27 +40,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -72,27 +50,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -102,27 +60,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -132,27 +70,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -163,27 +81,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(false);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, false);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -193,27 +91,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(false);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, false);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -223,27 +101,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(false);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, false);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -253,27 +111,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(false);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, false);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -284,27 +122,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -314,27 +132,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -344,27 +142,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -375,27 +153,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -405,27 +163,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -435,27 +173,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -465,27 +183,7 @@ public class NightTurnDayProcedure {
 							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 					if (entityinstance != null) {
 						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-						entityinstance.getPersistentData().putBoolean("got_coords", true);
-						entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-						entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-						entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-						entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-						{
-							Entity _ent = entityinstance;
-							_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-							_ent.setXRot(0);
-							_ent.setYBodyRot(_ent.getYRot());
-							_ent.setYHeadRot(_ent.getYRot());
-							_ent.yRotO = _ent.getYRot();
-							_ent.xRotO = _ent.getXRot();
-							if (_ent instanceof LivingEntity _entity) {
-								_entity.yBodyRotO = _entity.getYRot();
-								_entity.yHeadRotO = _entity.getYRot();
-							}
-						}
-						if (entityinstance instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
@@ -497,27 +195,7 @@ public class NightTurnDayProcedure {
 								BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 						if (entityinstance != null) {
 							entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-							entityinstance.getPersistentData().putBoolean("got_coords", true);
-							entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-							entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-							entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-							entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-							{
-								Entity _ent = entityinstance;
-								_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-								_ent.setXRot(0);
-								_ent.setYBodyRot(_ent.getYRot());
-								_ent.setYHeadRot(_ent.getYRot());
-								_ent.yRotO = _ent.getYRot();
-								_ent.xRotO = _ent.getXRot();
-								if (_ent instanceof LivingEntity _entity) {
-									_entity.yBodyRotO = _entity.getYRot();
-									_entity.yHeadRotO = _entity.getYRot();
-								}
-							}
-							if (entityinstance instanceof Mob _mobSetNoAi) {
-								_mobSetNoAi.setNoAi(true);
-							}
+							SetCoreDataProcedure.execute(entity, entityinstance, true, true);
 							_serverLevel.addFreshEntity(entityinstance);
 						}
 					}
@@ -527,27 +205,7 @@ public class NightTurnDayProcedure {
 								BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
 						if (entityinstance != null) {
 							entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
-							entityinstance.getPersistentData().putBoolean("got_coords", true);
-							entityinstance.getPersistentData().putDouble("x", (entity.getPersistentData().getDouble("x")));
-							entityinstance.getPersistentData().putDouble("y", (entity.getPersistentData().getDouble("y")));
-							entityinstance.getPersistentData().putDouble("z", (entity.getPersistentData().getDouble("z")));
-							entityinstance.getPersistentData().putDouble("fnafmod-skin", (entity.getPersistentData().getDouble("fnafmod-skin")));
-							{
-								Entity _ent = entityinstance;
-								_ent.setYRot((float) entity.getPersistentData().getDouble("yaw"));
-								_ent.setXRot(0);
-								_ent.setYBodyRot(_ent.getYRot());
-								_ent.setYHeadRot(_ent.getYRot());
-								_ent.yRotO = _ent.getYRot();
-								_ent.xRotO = _ent.getXRot();
-								if (_ent instanceof LivingEntity _entity) {
-									_entity.yBodyRotO = _entity.getYRot();
-									_entity.yHeadRotO = _entity.getYRot();
-								}
-							}
-							if (entityinstance instanceof Mob _mobSetNoAi) {
-								_mobSetNoAi.setNoAi(false);
-							}
+							SetCoreDataProcedure.execute(entity, entityinstance, true, false);
 							_serverLevel.addFreshEntity(entityinstance);
 						}
 					}

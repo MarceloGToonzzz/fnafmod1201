@@ -209,7 +209,7 @@ public class DayTimeToyBonnieEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		DaytimeTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		DaytimeTickProcedure.execute(this.level(), this);
 		this.refreshDimensions();
 	}
 

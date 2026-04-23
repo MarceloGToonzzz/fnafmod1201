@@ -17,7 +17,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -45,7 +45,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.NighttimeTickProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
-import net.mcreator.fnafmod.procedures.FreddyFazbearOnEntityTickUpdateProcedure;
 import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
@@ -96,56 +95,15 @@ public class ChicaChickenEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = ChicaChickenEntity.this.getX();
-				double y = ChicaChickenEntity.this.getY();
-				double z = ChicaChickenEntity.this.getZ();
-				Entity entity = ChicaChickenEntity.this;
-				Level world = ChicaChickenEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = ChicaChickenEntity.this.getX();
-				double y = ChicaChickenEntity.this.getY();
-				double z = ChicaChickenEntity.this.getZ();
-				Entity entity = ChicaChickenEntity.this;
-				Level world = ChicaChickenEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 0.8) {
-			@Override
-			public boolean canUse() {
-				double x = ChicaChickenEntity.this.getX();
-				double y = ChicaChickenEntity.this.getY();
-				double z = ChicaChickenEntity.this.getZ();
-				Entity entity = ChicaChickenEntity.this;
-				Level world = ChicaChickenEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.3, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
-
-			@Override
-			public boolean canUse() {
-				double x = ChicaChickenEntity.this.getX();
-				double y = ChicaChickenEntity.this.getY();
-				double z = ChicaChickenEntity.this.getZ();
-				Entity entity = ChicaChickenEntity.this;
-				Level world = ChicaChickenEntity.this.level();
-				return super.canUse() && FreddyFazbearOnEntityTickUpdateProcedure.execute(world);
-			}
-
 		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 	}
 
 	@Override

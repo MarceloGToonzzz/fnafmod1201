@@ -7,11 +7,11 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.fnafmod.network.FnafModModVariables;
 
 public class DaytimeTickProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		SetSpawnNbtProcedure.execute(world, entity);
-		DayTurnNightProcedure.execute(world, x, y, z, entity);
+		DayTurnNightProcedure.execute(world, entity);
 		if (FnafModModVariables.MapVariables.get(world).SetNBTBuild == true) {
 			if (entity instanceof Mob _entity)
 				_entity.getNavigation().stop();

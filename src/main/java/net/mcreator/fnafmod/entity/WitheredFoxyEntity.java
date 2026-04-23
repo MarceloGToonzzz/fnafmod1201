@@ -196,7 +196,7 @@ public class WitheredFoxyEntity extends Monster implements GeoEntity {
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		FoxyPiratePlayerCollidesWithThisEntityProcedure.execute(sourceentity);
+		FoxyPiratePlayerCollidesWithThisEntityProcedure.execute(this.getX(), this.getZ(), this, sourceentity);
 	}
 
 	public static void init() {

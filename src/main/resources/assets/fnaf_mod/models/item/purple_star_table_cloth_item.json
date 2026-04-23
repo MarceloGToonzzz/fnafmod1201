@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fnaf_mod:item/purple_cloth"
+    "layer0": "fnaf_mod:item/purple_stared_table_cloth"
   }
 }
