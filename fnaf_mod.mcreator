@@ -440,6 +440,7 @@
           "src/main/java/net/mcreator/fnafmod/block/OfficeDoorBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/office_door.json",
           "src/main/resources/assets/fnaf_mod/blockstates/office_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/OfficeDoorBlockEntity.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/office_door.json",
           "src/main/resources/assets/fnaf_mod/models/item/office_door.json"
         ]
@@ -30294,7 +30295,8 @@
           "src/main/resources/assets/fnaf_mod/models/block/door_light.json",
           "src/main/resources/assets/fnaf_mod/models/item/door_light.json",
           "src/main/resources/assets/fnaf_mod/blockstates/door_light.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/door_light.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/door_light.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/DoorLightBlockEntity.java"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -34875,6 +34877,22 @@
           {
             "name": "blockstate",
             "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -35450,6 +35468,68 @@
         ]
       },
       "path": "~/Entities/Functions"
+    },
+    {
+      "name": "DoorLightOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "door_light_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DoorLightOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "OfficeDoorBlockTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "office_door_block_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/OfficeDoorBlockTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks"
     }
   ],
   "variable_elements": [

@@ -41,6 +41,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.LightSwitchOnTickUpdateProcedure;
+import net.mcreator.fnafmod.procedures.LightButtonValueProcedure;
 import net.mcreator.fnafmod.procedures.DoorButtonOnBlockRightClickedProcedure;
 import net.mcreator.fnafmod.procedures.DoorButtonOnBlockBreakProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
@@ -125,6 +126,20 @@ public class DoorButtonBlock extends BaseEntityBlock implements EntityBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+	}
+
+	@Override
+	public boolean isSignalSource(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getSignal(BlockState blockstate, BlockGetter blockAccess, BlockPos pos, Direction direction) {
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		Level world = (Level) blockAccess;
+		return (int) LightButtonValueProcedure.execute(world, x, y, z, blockstate);
 	}
 
 	@Override

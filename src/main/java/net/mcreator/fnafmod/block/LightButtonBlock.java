@@ -139,7 +139,7 @@ public class LightButtonBlock extends BaseEntityBlock implements EntityBlock {
 		int y = pos.getY();
 		int z = pos.getZ();
 		Level world = (Level) blockAccess;
-		return (int) LightButtonValueProcedure.execute(blockstate);
+		return (int) LightButtonValueProcedure.execute(world, x, y, z, blockstate);
 	}
 
 	@Override

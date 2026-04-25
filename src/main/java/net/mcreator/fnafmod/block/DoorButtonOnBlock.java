@@ -88,6 +88,16 @@ public class DoorButtonOnBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public boolean isSignalSource(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getSignal(BlockState blockstate, BlockGetter blockAccess, BlockPos pos, Direction direction) {
+		return 15;
+	}
+
+	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
 		return new ItemStack(FnafModModBlocks.DOOR_BUTTON_OFF.get());
 	}

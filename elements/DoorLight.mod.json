@@ -70,7 +70,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -114,7 +114,7 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -130,11 +130,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRedstoneOn": {
-      "name": "PrizeHatchRedstoneOn"
+    "onRightClicked": {
+      "name": "ModularLightOnBlockRightClicked"
     },
-    "onRedstoneOff": {
-      "name": "PrizeHatchRedstoneOff"
+    "onTickUpdate": {
+      "name": "DoorLightOnTickUpdate"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

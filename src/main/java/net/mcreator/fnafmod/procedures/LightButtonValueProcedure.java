@@ -2,11 +2,32 @@ package net.mcreator.fnafmod.procedures;
 
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
 
 public class LightButtonValueProcedure {
-	public static double execute(BlockState blockstate) {
+	public static double execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? blockstate.getValue(_getip1) : -1) == 1) {
-			return 15;
+			if (!(new Object() {
+				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getBoolean(tag);
+					return false;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "Linked"))) {
+				return 15;
+			} else if (new Object() {
+				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getBoolean(tag);
+					return false;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "Powered")) {
+				return 15;
+			}
 		}
 		return 0;
 	}

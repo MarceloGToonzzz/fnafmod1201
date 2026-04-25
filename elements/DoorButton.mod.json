@@ -65,9 +65,10 @@
     "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 15.0,
+      "name": "LightButtonValue"
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {

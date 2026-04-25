@@ -101,7 +101,7 @@
     "unbreakable": false,
     "vanillaToolTier": "IRON",
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -118,7 +118,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "OfficeDoorClientDisplayRandomTick"
+      "name": "OfficeDoorBlockTickUpdate"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

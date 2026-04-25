@@ -48,6 +48,7 @@ import net.mcreator.fnafmod.block.entity.PlushFredbearBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushFoxyBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushChicaBlockEntity;
 import net.mcreator.fnafmod.block.entity.PlushBonnieBlockEntity;
+import net.mcreator.fnafmod.block.entity.OfficeDoorBlockEntity;
 import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
 import net.mcreator.fnafmod.block.entity.ModularLightFlatTileEntity;
 import net.mcreator.fnafmod.block.entity.MeshTrashCanTileEntity;
@@ -78,6 +79,7 @@ import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.FireAxeBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
+import net.mcreator.fnafmod.block.entity.DoorLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonTileEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonOnBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonFlatTileEntity;
@@ -127,6 +129,7 @@ public class FnafModModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FnafModMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> DESK = register("desk", FnafModModBlocks.DESK, DeskBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DOOR_BUTTON_ON = register("door_button_on", FnafModModBlocks.DOOR_BUTTON_ON, DoorButtonOnBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> OFFICE_DOOR = register("office_door", FnafModModBlocks.OFFICE_DOOR, OfficeDoorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SECURITY_DOOR_OPEN = register("security_door_open", FnafModModBlocks.SECURITY_DOOR_OPEN, SecurityDoorOpenBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DESK_2 = register("desk_2", FnafModModBlocks.DESK_2, Desk2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DESK_3 = register("desk_3", FnafModModBlocks.DESK_3, Desk3BlockEntity::new);
@@ -267,6 +270,7 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<LargeIndustrialDoorTileEntity>> LARGE_INDUSTRIAL_DOOR = REGISTRY.register("large_industrial_door",
 			() -> BlockEntityType.Builder.of(LargeIndustrialDoorTileEntity::new, FnafModModBlocks.LARGE_INDUSTRIAL_DOOR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<IndustrialFanTileEntity>> INDUSTRIAL_FAN = REGISTRY.register("industrial_fan", () -> BlockEntityType.Builder.of(IndustrialFanTileEntity::new, FnafModModBlocks.INDUSTRIAL_FAN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> DOOR_LIGHT = register("door_light", FnafModModBlocks.DOOR_LIGHT, DoorLightBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<GeneratorLeftBreakerTileEntity>> GENERATOR_LEFT_BREAKER = REGISTRY.register("generator_left_breaker",
 			() -> BlockEntityType.Builder.of(GeneratorLeftBreakerTileEntity::new, FnafModModBlocks.GENERATOR_LEFT_BREAKER.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GeneratorMiddlePowerTileEntity>> GENERATOR_MIDDLE_POWER = REGISTRY.register("generator_middle_power",

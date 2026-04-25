@@ -27,7 +27,7 @@ public class GenPercentBlockModel extends GeoModel<GenPercentTileEntity> {
 	public ResourceLocation getTextureResource(GenPercentTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("fnaf_mod", "textures/block/blueprint_tiles.png");
-		return new ResourceLocation("fnaf_mod", "textures/block/diagonal_tiles.png");
+			return new ResourceLocation("fnaf_mod", "textures/block/genpercenton.png");
+		return new ResourceLocation("fnaf_mod", "textures/block/genpercentoff.png");
 	}
 }

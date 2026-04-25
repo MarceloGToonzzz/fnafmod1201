@@ -23,166 +23,150 @@ public class OfficeDoorClientDisplayRandomTickProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		sx = -1;
-		found = false;
-		if ((new Object() {
-			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getBoolean(tag);
-				return false;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "Linked")) == false) {
-			for (int index0 = 0; index0 < 4; index0++) {
-				sy = -1;
-				for (int index1 = 0; index1 < 4; index1++) {
-					sz = -1;
-					for (int index2 = 0; index2 < 4; index2++) {
-						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == FnafModModBlocks.DOOR_BUTTON_OFF.get()) {
-							found = true;
-						}
-						sz = sz + 1;
-					}
-					sy = sy + 1;
-				}
-				sx = sx + 1;
-			}
-		} else if ((new Object() {
-			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getBoolean(tag);
-				return false;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "Linked")) == true) {
-			if (new Object() {
-				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, BlockPos.containing(new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "LinkX"), new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "LinkY"), new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "LinkZ")), "Powered") && new Object() {
-				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, BlockPos.containing(new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "LinkX"), new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "LinkY"), new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "LinkZ")), "Active")) {
-				found = true;
-			} else {
-				found = false;
-			}
-		}
-		if (found == false) {
-			{
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = FnafModModBlocks.SECURITY_DOOR_OPEN.get().defaultBlockState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.getValue(_property) != null)
-						try {
-							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
-				}
-				BlockEntity _be = world.getBlockEntity(_bp);
-				CompoundTag _bnbt = null;
-				if (_be != null) {
-					_bnbt = _be.saveWithFullMetadata();
-					_be.setRemoved();
-				}
-				world.setBlock(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_be = world.getBlockEntity(_bp);
-					if (_be != null) {
-						try {
-							_be.load(_bnbt);
-						} catch (Exception ignored) {
-						}
-					}
-				}
-			}
-			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.BARRIER) {
-				{
-					BlockPos _bp = BlockPos.containing(x, y + 1, z);
-					BlockState _bs = Blocks.AIR.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
+		int horizontalRadiusSquare = (int) 1 - 1;
+		int verticalRadiusSquare = (int) 3 - 1;
+		int yIterationsSquare = verticalRadiusSquare;
+		for (int i = -yIterationsSquare; i <= yIterationsSquare; i++) {
+			for (int xi = -horizontalRadiusSquare; xi <= horizontalRadiusSquare; xi++) {
+				for (int zi = -horizontalRadiusSquare; zi <= horizontalRadiusSquare; zi++) {
+					// Execute the desired statements within the square/cube
+					if ((world.getBlockState(BlockPos.containing(x + xi, y + i, z + zi))).getBlock() == FnafModModBlocks.DOOR_BUTTON_ON.get()) {
+						{
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockState _bs = FnafModModBlocks.OFFICE_DOOR.get().defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.getValue(_property) != null)
+									try {
+										_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
 							}
-					}
-					BlockEntity _be = world.getBlockEntity(_bp);
-					CompoundTag _bnbt = null;
-					if (_be != null) {
-						_bnbt = _be.saveWithFullMetadata();
-						_be.setRemoved();
-					}
-					world.setBlock(_bp, _bs, 3);
-					if (_bnbt != null) {
-						_be = world.getBlockEntity(_bp);
-						if (_be != null) {
-							try {
-								_be.load(_bnbt);
-							} catch (Exception ignored) {
+							BlockEntity _be = world.getBlockEntity(_bp);
+							CompoundTag _bnbt = null;
+							if (_be != null) {
+								_bnbt = _be.saveWithFullMetadata();
+								_be.setRemoved();
+							}
+							world.setBlock(_bp, _bs, 3);
+							if (_bnbt != null) {
+								_be = world.getBlockEntity(_bp);
+								if (_be != null) {
+									try {
+										_be.load(_bnbt);
+									} catch (Exception ignored) {
+									}
+								}
+							}
+						}
+						if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR) {
+							{
+								BlockPos _bp = BlockPos.containing(x, y + 1, z);
+								BlockState _bs = Blocks.BARRIER.defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								BlockEntity _be = world.getBlockEntity(_bp);
+								CompoundTag _bnbt = null;
+								if (_be != null) {
+									_bnbt = _be.saveWithFullMetadata();
+									_be.setRemoved();
+								}
+								world.setBlock(_bp, _bs, 3);
+								if (_bnbt != null) {
+									_be = world.getBlockEntity(_bp);
+									if (_be != null) {
+										try {
+											_be.load(_bnbt);
+										} catch (Exception ignored) {
+										}
+									}
+								}
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:door_close")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:door_close")), SoundSource.NEUTRAL, 1, 1, false);
+							}
+						}
+					} else {
+						{
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockState _bs = FnafModModBlocks.SECURITY_DOOR_OPEN.get().defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.getValue(_property) != null)
+									try {
+										_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
+							}
+							BlockEntity _be = world.getBlockEntity(_bp);
+							CompoundTag _bnbt = null;
+							if (_be != null) {
+								_bnbt = _be.saveWithFullMetadata();
+								_be.setRemoved();
+							}
+							world.setBlock(_bp, _bs, 3);
+							if (_bnbt != null) {
+								_be = world.getBlockEntity(_bp);
+								if (_be != null) {
+									try {
+										_be.load(_bnbt);
+									} catch (Exception ignored) {
+									}
+								}
+							}
+						}
+						if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.BARRIER) {
+							{
+								BlockPos _bp = BlockPos.containing(x, y + 1, z);
+								BlockState _bs = Blocks.AIR.defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								BlockEntity _be = world.getBlockEntity(_bp);
+								CompoundTag _bnbt = null;
+								if (_be != null) {
+									_bnbt = _be.saveWithFullMetadata();
+									_be.setRemoved();
+								}
+								world.setBlock(_bp, _bs, 3);
+								if (_bnbt != null) {
+									_be = world.getBlockEntity(_bp);
+									if (_be != null) {
+										try {
+											_be.load(_bnbt);
+										} catch (Exception ignored) {
+										}
+									}
+								}
+							}
+						}
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:door_close")), SoundSource.NEUTRAL, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:door_close")), SoundSource.NEUTRAL, 1, 1, false);
 							}
 						}
 					}
-				}
-			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:door_close")), SoundSource.NEUTRAL, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("fnaf_mod:door_close")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 		}

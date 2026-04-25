@@ -19,6 +19,6 @@ public class GenPercentDisplayModel extends GeoModel<GenPercentDisplayItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(GenPercentDisplayItem entity) {
-		return new ResourceLocation("fnaf_mod", "textures/block/diagonal_tiles.png");
+		return new ResourceLocation("fnaf_mod", "textures/block/genpercentoff.png");
 	}
 }

@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "diagonal_tiles",
+    "texture": "genpercentoff",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -145,7 +145,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "blueprint_tiles",
+        "texture": "genpercenton",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "genpercentage.geo.json",
