@@ -16,6 +16,7 @@ import net.mcreator.fnafmod.procedures.GenLeverDownReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativeRateReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativePowerReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativeLeverAutoReturnProcedure;
+import net.mcreator.fnafmod.procedures.GenCreativeDrainReturnProcedure;
 import net.mcreator.fnafmod.procedures.GenCreativeAccessLevelReturnProcedure;
 import net.mcreator.fnafmod.procedures.DoorDrainReturnProcedure;
 import net.mcreator.fnafmod.network.GeneratorCreativeGUIButtonMessage;
@@ -89,7 +90,7 @@ public class GeneratorCreativeGUIScreen extends AbstractContainerScreen<Generato
 				GenCreativeRateReturnProcedure.execute(world, x, y, z), 80, 15, -3381760, false);
 		guiGraphics.drawString(this.font,
 
-				GenCreativeRateReturnProcedure.execute(world, x, y, z), 83, 27, -26368, false);
+				GenCreativeDrainReturnProcedure.execute(world, x, y, z), 83, 27, -26368, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.fnaf_mod.generator_creative_gui.label_doors"), 28, 132, -16711936, false);
 		guiGraphics.drawString(this.font,
 

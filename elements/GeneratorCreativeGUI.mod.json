@@ -108,7 +108,7 @@
           "name": "label_proc_gen_creative_rate_return1",
           "text": {
             "fixedValue": "",
-            "name": "GenCreativeRateReturn"
+            "name": "GenCreativeDrainReturn"
           },
           "color": {
             "value": -26368,
