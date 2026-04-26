@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "fnaf_mod:freddy_mask_helmet"
+    },
+    "title": {
+      "translate": "advancements.mask_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.mask_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mask_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "fnaf_mod:weee_advancement"
+}

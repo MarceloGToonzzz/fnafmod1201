@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "fnaf_mod:cupcake"
+    },
+    "title": {
+      "translate": "advancements.cupcake_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.cupcake_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cupcake_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fnaf_mod:cupcake"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "fnaf_mod:fnaf_mod"
+}

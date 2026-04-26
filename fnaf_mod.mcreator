@@ -35530,6 +35530,106 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
+    },
+    {
+      "name": "FNAFMod",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fnaf_mod",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/fnaf_mod.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MATAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mat_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/mat_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "WeeeAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weee_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/weee_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "OfficeChairAdvancement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "office_chair_advancement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/OfficeChairAdvancementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "MaskAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mask_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/mask_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "CupcakeAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cupcake_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/cupcake_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "CustomSnippets",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "custom_snippets",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/CustomSnippets.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -36814,6 +36914,14 @@
       "~CUSTOM:VentHatch",
       "~CUSTOM:Vent"
     ],
+    "ENTITIES:mod:phantoms": [
+      "CUSTOM:PhantomBB",
+      "CUSTOM:PhantomChica",
+      "CUSTOM:PhantomFoxy",
+      "CUSTOM:PhantomFreddy",
+      "CUSTOM:PhantomMangle",
+      "CUSTOM:PhantomPuppet"
+    ],
     "BLOCKS:mod:override_mat_mode": [
       "CUSTOM:CameraBlock"
     ],
@@ -37964,8 +38072,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -37974,12 +38082,12 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
@@ -37993,13 +38101,13 @@
       "entity.fnaf_mod.daytime_gus_pug": "Daytime Gus The Pug",
       "gui.fnaf_mod.soda_machine.label_inventory": "Inventory",
       "block.fnaf_mod.fancy_bricks_slab": "Fancy Bricks Slab",
-      "entity.fnaf_mod.unwithered_chica": "Un-Withered Chica",
       "entity.fnaf_mod.golden_freddy": "Golden Freddy",
-      "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
+      "entity.fnaf_mod.unwithered_chica": "Un-Withered Chica",
       "item.fnaf_mod.day_time_bonnie_spawn_egg": "DaytimeBonnie Spawn Egg",
+      "biome.fnaf_mod.blacktomb_yard": "Blacktomb Yard",
       "entity.fnaf_mod.the_groobler": "The Groobler",
-      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.balloon": "Red Balloon",
+      "entity.fnaf_mod.statue_freddy": "Freddy Statue",
       "block.fnaf_mod.big_dual_colour_entrance_door": "Big Dual Coloured Entrance Door",
       "block.fnaf_mod.green_blue_diagonal_tile_stair": "Green Blue Diagonal Tile Stairs",
       "subtitles.blacktombyardtemp": "",
@@ -38164,6 +38272,7 @@
       "block.fnaf_mod.movie_wall_tile": "Movie Wall Tiles",
       "item.fnaf_mod.phantom_bb_spawn_egg": "Phantom Balloon Boy Spawn Egg",
       "block.fnaf_mod.bonnie_head": "Bonnie Head",
+      "advancements.mask_advancement.descr": "Wear a mask",
       "block.fnaf_mod.oak_curtain": "Oak Curtain",
       "entity.fnaf_mod.daytime_hazy_reindeer": "Daytime Hazy Reindeer",
       "item.fnaf_mod.flash_light": "Flashlight",
@@ -38199,6 +38308,7 @@
       "block.fnaf_mod.buffet_door_empty": "Buffet Door Clean",
       "block.fnaf_mod.mural_freddys": "Mural",
       "subtitles.neverbealone": "Never Be Alone Funky Mix",
+      "advancements.weee_advancement.descr": "Sit in a office chair",
       "block.fnaf_mod.speaker_left": "Speaker",
       "block.fnaf_mod.movie_poster_1": "Movie Poster 1",
       "block.fnaf_mod.thin_berry_curtain": "Thin Berry Curtain",
@@ -38277,6 +38387,7 @@
       "item.fnaf_mod.chica_suit_boots": "Chica Boots",
       "itemGroup.tabfnaf_mobs": "FNAF Mobs",
       "block.fnaf_mod.white_wall_stairs": "White Wall Stairs",
+      "advancements.mat_advancement.title": "Maintainance Assisting Tablet",
       "item.fnaf_mod.fredbears_foxy_spawn_egg": "Fredbear\u0027s Family Diner Foxy Spawn Egg",
       "item.fnaf_mod.endo_02_spawn_item": "Endo-02",
       "item.fnaf_mod.phantom_mangle_spawn_egg": "Phantom Mangle Spawn Egg",
@@ -38358,6 +38469,7 @@
       "subtitles.nosehonk": "Honk",
       "itemGroup.tabstructure_spawners": "Structure Spawners",
       "block.fnaf_mod.fnaf_3_wall_slab": "Rancid Wall Slab",
+      "advancements.cupcake_advancement.descr": "Obtain a Cupcake",
       "gui.fnaf_mod.camera_gui.label_shift_click": "With shift-click",
       "block.fnaf_mod.fazeerramics_control_panel": "Fazeerramics Control Panel",
       "item.fnaf_mod.phantom_mangle_spawn_item": "Phantom Mangle",
@@ -38389,6 +38501,7 @@
       "item.fnaf_mod.phantom_bb_spawn_item": "Phantom BB",
       "gui.fnaf_mod.camera_gui.label_swap_pages_for_each_set_of_5": "Swap Pages for Each Set of 5",
       "subtitles.a2alt": "Honk",
+      "advancements.mask_advancement.title": "Hot in here!",
       "item.fnaf_mod.glitchtrap_suit_boots": "Spring Bonnie Costume Boots",
       "item.fnaf_mod.full_hostile_foxy_spawn_egg": "Foxy Pirate Spawn Egg",
       "block.fnaf_mod.pizza_oven": "Pizza Oven",
@@ -38703,6 +38816,7 @@
       "entity.fnaf_mod.foxy_cut_out": "Foxy Cutout",
       "item.fnaf_mod.white_plastic": "White Plastic",
       "block.fnaf_mod.black_light_bonnie_plushie": "Blacklight Bonnie Plushie",
+      "advancements.weee_advancement.title": "Weee!",
       "item.fnaf_mod.happiest_day.desc": "Bad Ending - _ShadowDest_",
       "subtitles.breathing": "Breathing",
       "block.fnaf_mod.arcade_machine_shadow_freddy": "Arcade Machine ???",
@@ -38733,6 +38847,7 @@
       "item.fnaf_mod.link_cable": "Link Cable",
       "block.fnaf_mod.red_blue_tile_slab_cracked": "Cracked Red Blue Tile Slab",
       "block.fnaf_mod.fnaf_2_celebrate": "Celebrate Poster Retro",
+      "advancements.cupcake_advancement.title": "It is Creepy and Grotest,",
       "gui.fnaf_mod.wall_change_2.button_c": "C",
       "block.fnaf_mod.music_box": "Music Box",
       "gui.fnaf_mod.wall_change_2.button_b": "B",
@@ -39071,6 +39186,7 @@
       "entity.fnaf_mod.pat_pat": "PatPat",
       "block.fnaf_mod.checkered_wall": "Checkered Wall",
       "item.fnaf_mod.statue_bonnie_spawn": "Bonnie (Statue)",
+      "advancements.mat_advancement.descr": "Obtain a M. A. T.",
       "entity.fnaf_mod.gus_pug": "Gus The Pug",
       "item.fnaf_mod.nightmare_chica_statue_spawn_item": "Nightmare Chica (Statue)",
       "item.fnaf_mod.black_plastic": "Black Plastic",
@@ -39247,6 +39363,7 @@
       "block.fnaf_mod.structure_spawning_block_11": "Structure Spawning Block (Arcade B)",
       "block.fnaf_mod.structure_spawning_block_10": "Structure Spawning Block (Arcade A)",
       "item.fnaf_mod.cyan_fabric": "Cyan Fabric",
+      "advancements.fnaf_mod.descr": "Hello, hello?",
       "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.stage_wood_fence_gate": "Stage Wood Fence Gate",
       "block.fnaf_mod.ballpit": "Ball Pit",
@@ -39378,6 +39495,7 @@
       "itemGroup.tabmusic_discs": "Music Discs",
       "item.fnaf_mod.daytime_gus_pug_spawn_egg": "Daytime Gus The Pug Spawn Egg",
       "gui.fnaf_mod.gen_creative_config_gui.label_lights": "Lights",
+      "advancements.fnaf_mod.title": "FNAF Mod",
       "entity.fnaf_mod.freddy_stand": "Freddy Stand",
       "block.fnaf_mod.fredbear_head": "Fredbear Head",
       "block.fnaf_mod.big_checkered_tiles": "Big Checkered Tile",
@@ -39769,6 +39887,10 @@
       },
       {
         "name": "Commands",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       }
     ]

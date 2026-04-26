@@ -14,7 +14,7 @@ public class StructureSpawningBlock10UpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "arcadea"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fazcade1"));
 			if (template != null) {
 				template.placeInWorld(_serverworld, BlockPos.containing(x, y - 1, z), BlockPos.containing(x, y - 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
