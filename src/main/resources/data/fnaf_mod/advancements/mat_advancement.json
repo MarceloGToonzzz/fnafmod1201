@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "fnaf_mod:mat"
+    },
+    "title": {
+      "translate": "advancements.mat_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.mat_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mat_advancement_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "fnaf_mod:mat"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "fnaf_mod:fnaf_mod"
+}

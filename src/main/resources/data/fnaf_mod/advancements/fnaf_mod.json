@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "fnaf_mod:textures/screens/normal_tile.png",
+    "icon": {
+      "item": "fnaf_mod:fredbears_freddy_spawn_item"
+    },
+    "title": {
+      "translate": "advancements.fnaf_mod.title"
+    },
+    "description": {
+      "translate": "advancements.fnaf_mod.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fnaf_mod_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
