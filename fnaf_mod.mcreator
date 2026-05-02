@@ -12216,7 +12216,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/camera_monitor.json"
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "RedWoodDoor",
@@ -34082,16 +34082,16 @@
       "registry_name": "light_switch",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/block/model/LightSwitchBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/LightSwitchDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/LightSwitchTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/display/LightSwitchDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/LightSwitchBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/light_switch_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LightSwitchTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/light_switch.json",
           "src/main/resources/assets/fnaf_mod/models/item/light_switch.json",
           "src/main/java/net/mcreator/fnafmod/block/model/LightSwitchDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/LightSwitchBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/light_switch_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/LightSwitchTileEntity.java"
+          "src/main/java/net/mcreator/fnafmod/block/entity/LightSwitchTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/LightSwitchBlock.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
@@ -34914,7 +34914,7 @@
           "src/main/java/net/mcreator/fnafmod/block/ServerBlock.java"
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "CameraBlock",
@@ -34932,7 +34932,7 @@
           "src/main/java/net/mcreator/fnafmod/block/CameraBlockBlock.java"
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "CameraHeadBlock",
@@ -34950,7 +34950,7 @@
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/camera_head_block.json"
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnCameraDestroyed",
@@ -34981,7 +34981,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnCameraAdded",
@@ -35012,7 +35012,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnCameraRightClicked",
@@ -35059,7 +35059,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "GetCameraMonitorDiscription",
@@ -35079,7 +35079,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnLinkCameraToCable",
@@ -35126,7 +35126,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnCameraMonitorConnect",
@@ -35173,7 +35173,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnConnectCamera",
@@ -35220,7 +35220,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "CameraPanelGUI",
@@ -35234,7 +35234,7 @@
           "src/main/java/net/mcreator/fnafmod/world/inventory/CameraPanelGUIMenu.java"
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "ServerPanelGUI",
@@ -35248,7 +35248,7 @@
           "src/main/java/net/mcreator/fnafmod/client/gui/ServerPanelGUIScreen.java"
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "OnServerRightClicked",
@@ -35295,7 +35295,7 @@
           }
         ]
       },
-      "path": "~/New Cameras"
+      "path": "~/Blocks/New Cameras"
     },
     {
       "name": "FireAxeBlock",
@@ -35664,6 +35664,79 @@
         ]
       },
       "path": "~/Items/M. A. T."
+    },
+    {
+      "name": "RenderConnections",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_connections",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/RenderConnectionsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Client/Connections"
+    },
+    {
+      "name": "RemoveConnectionOnBlockRemoved",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_connection_on_block_removed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/RemoveConnectionOnBlockRemovedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Client/Connections"
+    },
+    {
+      "name": "DataClient",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "data_client",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DataClientProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -35920,16 +35993,10 @@
       "value": "false"
     },
     {
-      "name": "PanTick",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "PanLeft",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
+      "name": "Connections",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -38106,8 +38173,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -38116,12 +38183,12 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
@@ -39683,6 +39750,10 @@
           {
             "name": "FNAF World",
             "children": []
+          },
+          {
+            "name": "New Cameras",
+            "children": []
           }
         ]
       },
@@ -39916,10 +39987,6 @@
         "children": []
       },
       {
-        "name": "New Cameras",
-        "children": []
-      },
-      {
         "name": "Commands",
         "children": []
       },
@@ -39933,7 +40000,12 @@
       },
       {
         "name": "Client",
-        "children": []
+        "children": [
+          {
+            "name": "Connections",
+            "children": []
+          }
+        ]
       }
     ]
   },

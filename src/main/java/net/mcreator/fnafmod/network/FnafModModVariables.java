@@ -93,7 +93,6 @@ public class FnafModModVariables {
 			clone.PartyAmount = original.PartyAmount;
 			clone.Spawned = original.Spawned;
 			clone.CanFightScott = original.CanFightScott;
-			clone.PanTick = original.PanTick;
 			if (!event.isWasDeath()) {
 				clone.goldenkill = original.goldenkill;
 				clone.WitheredGoldenFreddyJumpscare = original.WitheredGoldenFreddyJumpscare;
@@ -141,6 +140,7 @@ public class FnafModModVariables {
 		public boolean bonniekill = false;
 		public double PlayerFacing = 0;
 		public boolean TimeDay = false;
+		public String Connections = "\"\"";
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -154,6 +154,7 @@ public class FnafModModVariables {
 			bonniekill = nbt.getBoolean("bonniekill");
 			PlayerFacing = nbt.getDouble("PlayerFacing");
 			TimeDay = nbt.getBoolean("TimeDay");
+			Connections = nbt.getString("Connections");
 		}
 
 		@Override
@@ -163,6 +164,7 @@ public class FnafModModVariables {
 			nbt.putBoolean("bonniekill", bonniekill);
 			nbt.putDouble("PlayerFacing", PlayerFacing);
 			nbt.putBoolean("TimeDay", TimeDay);
+			nbt.putString("Connections", Connections);
 			return nbt;
 		}
 
@@ -188,7 +190,6 @@ public class FnafModModVariables {
 		public double Rand1 = 0;
 		public boolean IsItDay = false;
 		public boolean SetNBTBuild = false;
-		public boolean PanLeft = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -200,7 +201,6 @@ public class FnafModModVariables {
 			Rand1 = nbt.getDouble("Rand1");
 			IsItDay = nbt.getBoolean("IsItDay");
 			SetNBTBuild = nbt.getBoolean("SetNBTBuild");
-			PanLeft = nbt.getBoolean("PanLeft");
 		}
 
 		@Override
@@ -208,7 +208,6 @@ public class FnafModModVariables {
 			nbt.putDouble("Rand1", Rand1);
 			nbt.putBoolean("IsItDay", IsItDay);
 			nbt.putBoolean("SetNBTBuild", SetNBTBuild);
-			nbt.putBoolean("PanLeft", PanLeft);
 			return nbt;
 		}
 
@@ -331,7 +330,6 @@ public class FnafModModVariables {
 		public double PartyAmount = 0;
 		public boolean Spawned = false;
 		public boolean CanFightScott = false;
-		public double PanTick = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -370,7 +368,6 @@ public class FnafModModVariables {
 			nbt.putDouble("PartyAmount", PartyAmount);
 			nbt.putBoolean("Spawned", Spawned);
 			nbt.putBoolean("CanFightScott", CanFightScott);
-			nbt.putDouble("PanTick", PanTick);
 			return nbt;
 		}
 
@@ -406,7 +403,6 @@ public class FnafModModVariables {
 			PartyAmount = nbt.getDouble("PartyAmount");
 			Spawned = nbt.getBoolean("Spawned");
 			CanFightScott = nbt.getBoolean("CanFightScott");
-			PanTick = nbt.getDouble("PanTick");
 		}
 	}
 
@@ -461,7 +457,6 @@ public class FnafModModVariables {
 					variables.PartyAmount = message.data.PartyAmount;
 					variables.Spawned = message.data.Spawned;
 					variables.CanFightScott = message.data.CanFightScott;
-					variables.PanTick = message.data.PanTick;
 				}
 			});
 			context.setPacketHandled(true);
