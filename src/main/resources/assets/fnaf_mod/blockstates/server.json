@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "fnaf_mod:block/server"
+    },
+    "blockstate=1": {
+      "model": "fnaf_mod:block/server_blockstates_blockstate_0"
     }
   }
 }

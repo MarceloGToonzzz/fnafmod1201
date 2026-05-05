@@ -45,7 +45,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFBlocks"
+        "value": "CUSTOM:FNAFDecor"
       }
     ],
     "destroyTool": "axe",

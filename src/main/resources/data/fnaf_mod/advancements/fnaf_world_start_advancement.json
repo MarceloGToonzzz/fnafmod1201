@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "fnaf_mod:fazbear_hills_grass"
+    },
+    "title": {
+      "translate": "advancements.fnaf_world_start_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.fnaf_world_start_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fnaf_world_start_advancement_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "fnaf_mod:fnaf_world"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "fnaf_mod:fnaf_mod"
+}

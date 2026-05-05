@@ -4,8 +4,12 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.fnafmod.init.FnafModModEntities;
 import net.mcreator.fnafmod.entity.ToyChicaEntity;
@@ -26,6 +30,8 @@ import net.mcreator.fnafmod.entity.DayTimeFoxyEntity;
 import net.mcreator.fnafmod.entity.DayTimeBonnieEntity;
 import net.mcreator.fnafmod.entity.DayTimeBBEntity;
 
+import java.util.ArrayList;
+
 public class DayTurnNightProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
@@ -34,6 +40,18 @@ public class DayTurnNightProcedure {
 		String command = "";
 		String ai = "";
 		if (!(world instanceof Level _lvl0 && _lvl0.isDay())) {
+			for (Entity entityiterator : new ArrayList<>(world.players())) {
+				if ((entityiterator != null ? entity.distanceTo(entityiterator) : -1) < 25) {
+					if (entityiterator instanceof ServerPlayer _player) {
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("fnaf_mod:first_night_advancement"));
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
+				}
+			}
 			if (entity instanceof DayTimeFreddyEntity) {
 				if (world instanceof ServerLevel _serverLevel) {
 					Entity entityinstance = FnafModModEntities.FREDDY_FAZBEAR.get().create(_serverLevel, null, null,

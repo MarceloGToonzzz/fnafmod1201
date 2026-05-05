@@ -1307,6 +1307,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> CAMERA_BLOCK = block(FnafModModBlocks.CAMERA_BLOCK);
 	public static final RegistryObject<Item> CAMERA_HEAD_BLOCK = block(FnafModModBlocks.CAMERA_HEAD_BLOCK);
 	public static final RegistryObject<Item> FIRE_AXE_BLOCK = REGISTRY.register(FnafModModBlocks.FIRE_AXE_BLOCK.getId().getPath(), () -> new FireAxeBlockDisplayItem(FnafModModBlocks.FIRE_AXE_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> SHADOW_FREDDY_PLUSH = block(FnafModModBlocks.SHADOW_FREDDY_PLUSH);
+	public static final RegistryObject<Item> SHADOW_BONNIE_PLUSH = block(FnafModModBlocks.SHADOW_BONNIE_PLUSH);
 
 	// Start of user code block custom items
 	// End of user code block custom items

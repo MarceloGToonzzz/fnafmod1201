@@ -149,6 +149,8 @@ import net.mcreator.fnafmod.block.SkyCurtainBlock;
 import net.mcreator.fnafmod.block.SkeeballBlock;
 import net.mcreator.fnafmod.block.SinkBlock;
 import net.mcreator.fnafmod.block.ShelfBlock;
+import net.mcreator.fnafmod.block.ShadowFreddyPlushBlock;
+import net.mcreator.fnafmod.block.ShadowBonniePlushBlock;
 import net.mcreator.fnafmod.block.ShackRandomizerBlock;
 import net.mcreator.fnafmod.block.ServerBlock;
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
@@ -1324,6 +1326,8 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> CAMERA_BLOCK = REGISTRY.register("camera_block", () -> new CameraBlockBlock());
 	public static final RegistryObject<Block> CAMERA_HEAD_BLOCK = REGISTRY.register("camera_head_block", () -> new CameraHeadBlockBlock());
 	public static final RegistryObject<Block> FIRE_AXE_BLOCK = REGISTRY.register("fire_axe_block", () -> new FireAxeBlockBlock());
+	public static final RegistryObject<Block> SHADOW_FREDDY_PLUSH = REGISTRY.register("shadow_freddy_plush", () -> new ShadowFreddyPlushBlock());
+	public static final RegistryObject<Block> SHADOW_BONNIE_PLUSH = REGISTRY.register("shadow_bonnie_plush", () -> new ShadowBonniePlushBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

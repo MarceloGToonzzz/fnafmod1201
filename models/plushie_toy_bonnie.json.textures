@@ -5,6 +5,12 @@
         "1": "toy_bonnie_plushie"
       },
       "name": "default"
+    },
+    "shadow": {
+      "map": {
+        "1": "shadow_bonnie_plush"
+      },
+      "name": "shadow"
     }
   }
 }

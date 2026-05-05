@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fnaf_mod:block/remant_infuser_top",
+    "up": "fnaf_mod:block/vendingtop",
+    "north": "fnaf_mod:block/server_side_off",
+    "east": "fnaf_mod:block/server_side_off",
+    "south": "fnaf_mod:block/server_side_off",
+    "west": "fnaf_mod:block/server_side_off",
+    "particle": "fnaf_mod:block/remant_infuser_top"
+  },
+  "render_type": "solid"
+}

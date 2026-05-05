@@ -121,18 +121,18 @@
       "registry_name": "backstage_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_top_right_open.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/backstage_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_right_open.json",
+          "src/main/java/net/mcreator/fnafmod/block/BackstageDoorBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/backstage_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_top_left.json",
           "src/main/resources/assets/fnaf_mod/models/block/backstage_door_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/backstage_door_top_right.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/backstage_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_right.json",
-          "src/main/java/net/mcreator/fnafmod/block/BackstageDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/backstage_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_top_left.json"
+          "src/main/resources/assets/fnaf_mod/models/item/backstage_door.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/backstage_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/backstage_door_bottom_right.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -3216,18 +3216,18 @@
       "registry_name": "fnaf_4_door",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/block/Fnaf4DoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_bottom_left_open.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/fnaf_4_door.json",
           "src/main/resources/assets/fnaf_mod/models/item/fnaf_4_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/blockstates/fnaf_4_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_bottom_left.json",
           "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_bottom_right.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/fnaf_4_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_right.json",
-          "src/main/java/net/mcreator/fnafmod/block/Fnaf4DoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_left_open.json"
+          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/fnaf_4_door_bottom_right_open.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -3770,11 +3770,11 @@
       "registry_name": "closet_left_bottom",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ClosetLeftBottomBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/closet_left_bottom.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/closet_left_bottom.json",
+          "src/main/java/net/mcreator/fnafmod/block/ClosetLeftBottomBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/closet_left_bottom.json",
-          "src/main/resources/assets/fnaf_mod/models/item/closet_left_bottom.json"
+          "src/main/resources/assets/fnaf_mod/models/item/closet_left_bottom.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/closet_left_bottom.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -3901,11 +3901,11 @@
       "registry_name": "closet_right_bottom",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ClosetRightBottomBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/closet_right_bottom.json",
-          "src/main/resources/assets/fnaf_mod/models/block/closet_right_bottom.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/closet_right_bottom.json",
-          "src/main/resources/assets/fnaf_mod/models/item/closet_right_bottom.json"
+          "src/main/resources/assets/fnaf_mod/models/item/closet_right_bottom.json",
+          "src/main/resources/assets/fnaf_mod/models/block/closet_right_bottom.json",
+          "src/main/java/net/mcreator/fnafmod/block/ClosetRightBottomBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/closet_right_bottom.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -5602,11 +5602,11 @@
       "registry_name": "wall_pizza",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/wall_pizza.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/wall_pizza.json",
+          "src/main/java/net/mcreator/fnafmod/block/WallPizzaBlock.java",
           "src/main/resources/assets/fnaf_mod/models/item/wall_pizza.json",
-          "src/main/resources/assets/fnaf_mod/models/block/wall_pizza.json",
-          "src/main/java/net/mcreator/fnafmod/block/WallPizzaBlock.java"
+          "src/main/resources/assets/fnaf_mod/blockstates/wall_pizza.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/wall_pizza.json",
+          "src/main/resources/assets/fnaf_mod/models/block/wall_pizza.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -5619,11 +5619,11 @@
       "registry_name": "small_pipes",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/small_pipes.json",
           "src/main/resources/assets/fnaf_mod/models/item/small_pipes.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/small_pipes.json",
+          "src/main/java/net/mcreator/fnafmod/block/SmallPipesBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/small_pipes.json",
           "src/main/resources/assets/fnaf_mod/models/block/small_pipes.json",
-          "src/main/java/net/mcreator/fnafmod/block/SmallPipesBlock.java"
+          "src/main/resources/assets/fnaf_mod/blockstates/small_pipes.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -6256,11 +6256,11 @@
       "registry_name": "warning_sign",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/WarningSignBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/warning_sign.json",
           "src/main/resources/assets/fnaf_mod/models/block/warning_sign.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/warning_sign.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/warning_sign.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/warning_sign.json",
+          "src/main/java/net/mcreator/fnafmod/block/WarningSignBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/warning_sign.json"
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
@@ -8249,11 +8249,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/block/entity/RemantInfuserBlockEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/remnant_infuser.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/remnant_infuser.json",
-          "src/main/resources/assets/fnaf_mod/models/block/remnant_infuser.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/remnant_infuser.json",
           "src/main/java/net/mcreator/fnafmod/block/RemantInfuserBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/remnant_infuser.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/remnant_infuser.json",
+          "src/main/resources/assets/fnaf_mod/models/item/remnant_infuser.json",
+          "src/main/resources/assets/fnaf_mod/models/block/remnant_infuser.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -12226,18 +12226,18 @@
       "registry_name": "red_wood_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/red_wood_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_bottom_right.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_wood_door.json",
-          "src/main/resources/assets/fnaf_mod/models/item/red_wood_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_bottom_left.json",
-          "src/main/java/net/mcreator/fnafmod/block/RedWoodDoorBlock.java"
+          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_right.json",
+          "src/main/java/net/mcreator/fnafmod/block/RedWoodDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/red_wood_door.json",
+          "src/main/resources/assets/fnaf_mod/models/item/red_wood_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_wood_door_top_right_open.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_wood_door.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -18345,18 +18345,18 @@
       "registry_name": "glass_door",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/glass_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/glass_door_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/glass_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/glass_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/item/glass_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/glass_door_bottom_left.json",
           "src/main/resources/assets/fnaf_mod/models/block/glass_door_bottom_right.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/glass_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/glass_door_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/item/glass_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/glass_door_top_right.json",
-          "src/main/java/net/mcreator/fnafmod/block/GlassDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/glass_door_bottom_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/glass_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/glass_door.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/glass_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/glass_door_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/glass_door_top_right_open.json"
+          "src/main/java/net/mcreator/fnafmod/block/GlassDoorBlock.java"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -18421,18 +18421,18 @@
       "registry_name": "cyan_door",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/cyan_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_top_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/cyan_door_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/item/cyan_door.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/cyan_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/CyanDoorBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/cyan_door_top_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_bottom_right_open.json",
+          "src/main/java/net/mcreator/fnafmod/block/CyanDoorBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/cyan_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_bottom_left.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/cyan_door.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/cyan_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/cyan_door_bottom_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/cyan_door_top_right_open.json"
+          "src/main/resources/assets/fnaf_mod/models/item/cyan_door.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -20296,18 +20296,18 @@
       "registry_name": "kitchen_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left.json",
           "src/main/java/net/mcreator/fnafmod/block/KitchenDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/kitchen_door.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/kitchen_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/item/kitchen_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_right_open.json"
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/kitchen_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/kitchen_door.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/kitchen_door.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -23327,10 +23327,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/block/LockerYellowBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/LockerYellowBlockEntity.java",
           "src/main/resources/assets/fnaf_mod/models/block/locker_yellow.json",
           "src/main/resources/assets/fnaf_mod/blockstates/locker_yellow.json",
           "src/main/resources/assets/fnaf_mod/models/item/locker_yellow.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/LockerYellowBlockEntity.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/locker_yellow.json"
         ]
       },
@@ -23370,12 +23370,12 @@
       "registry_name": "locker_silver",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/LockerSilverBlockEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/LockerSilverBlock.java",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/locker_silver.json",
           "src/main/resources/assets/fnaf_mod/models/item/locker_silver.json",
+          "src/main/java/net/mcreator/fnafmod/block/LockerSilverBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/locker_silver.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/locker_silver.json",
           "src/main/resources/assets/fnaf_mod/models/block/locker_silver.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/locker_silver.json"
+          "src/main/java/net/mcreator/fnafmod/block/entity/LockerSilverBlockEntity.java"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Lockers"
@@ -23388,12 +23388,12 @@
       "registry_name": "vending_machine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/vending_machine.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/vending_machine.json",
-          "src/main/resources/assets/fnaf_mod/models/item/vending_machine.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/VendingMachineBlockEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/VendingMachineBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/vending_machine.json"
+          "src/main/java/net/mcreator/fnafmod/block/entity/VendingMachineBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/vending_machine.json",
+          "src/main/resources/assets/fnaf_mod/models/item/vending_machine.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/vending_machine.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Lockers"
@@ -25207,18 +25207,18 @@
       "registry_name": "dual_colour_entrance_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/dual_colour_entrance_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_right_open.json",
           "src/main/resources/assets/fnaf_mod/blockstates/dual_colour_entrance_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_left.json",
           "src/main/java/net/mcreator/fnafmod/block/DualColourEntranceDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_right_open.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/dual_colour_entrance_door.json"
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/item/dual_colour_entrance_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_bottom_left.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/dual_colour_entrance_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dual_colour_entrance_door_top_right.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -25231,18 +25231,18 @@
       "registry_name": "red_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_right_open.json",
-          "src/main/java/net/mcreator/fnafmod/block/RedDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/item/red_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/red_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_left.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_door_top_right.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_left_open.json"
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/red_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_top_right_open.json",
+          "src/main/java/net/mcreator/fnafmod/block/RedDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/red_door.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -25256,17 +25256,17 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door_windowed.json",
-          "src/main/resources/assets/fnaf_mod/models/item/red_door_windowed.json",
-          "src/main/java/net/mcreator/fnafmod/block/RedDoorWindowedBlock.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/red_door_windowed.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right_open.json"
+          "src/main/resources/assets/fnaf_mod/blockstates/red_door_windowed.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/item/red_door_windowed.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_top_left_open.json",
+          "src/main/java/net/mcreator/fnafmod/block/RedDoorWindowedBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/red_door_windowed_bottom_right.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/red_door_windowed.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -27273,18 +27273,18 @@
       "registry_name": "big_backstage_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/big_backstage_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigBackstageDoorTileEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigBackstageDoorDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigBackstageDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_backstage_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigBackstageDoorBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_backstage_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigBackstageDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_backstage_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigBackstageDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigBackstageDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigBackstageDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_backstage_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigBackstageDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_backstage_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigBackstageDoorTileRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/BigBackstageDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigBackstageDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_backstage_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigBackstageDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_backstage_door.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27388,18 +27388,18 @@
       "registry_name": "big_cyan_backstage_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigCyanBackstageDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigCyanBackstageDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigCyanBackstageDoorTileRenderer.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_cyan_backstage_door.json",
-          "src/main/resources/assets/fnaf_mod/models/item/big_cyan_backstage_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigCyanBackstageDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_cyan_backstage_door_blockstate_0.json",
           "src/main/resources/assets/fnaf_mod/models/block/big_cyan_backstage_door_blockstate_1.json",
           "src/main/java/net/mcreator/fnafmod/block/BigCyanBackstageDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_cyan_backstage_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigCyanBackstageDoorTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_cyan_backstage_door.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigCyanBackstageDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_cyan_backstage_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigCyanBackstageDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigCyanBackstageDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigCyanBackstageDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_cyan_backstage_door_blockstate_0.json"
+          "src/main/resources/assets/fnaf_mod/models/custom/big_cyan_backstage_door_particle.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27447,18 +27447,18 @@
       "registry_name": "big_glass_entrance_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigGlassEntranceDoorTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigGlassEntranceDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_glass_entrance_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigGlassEntranceDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_glass_entrance_door.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_glass_entrance_door_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_glass_entrance_door_blockstate_0.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigGlassEntranceDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_glass_entrance_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigGlassEntranceDoorDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigGlassEntranceDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigGlassEntranceDoorTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_glass_entrance_door_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_glass_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/BigGlassEntranceDoorBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigGlassEntranceDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_glass_entrance_door.json"
+          "src/main/resources/assets/fnaf_mod/models/block/big_glass_entrance_door_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigGlassEntranceDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_glass_entrance_door_particle.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27472,17 +27472,17 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedEntranceDoorTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigRedEntranceDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigRedEntranceDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_red_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/BigRedEntranceDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_red_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/entity/BigRedEntranceDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigRedEntranceDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/custom/big_red_entrance_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedEntranceDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_red_entrance_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigRedEntranceDoorBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_red_entrance_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigRedEntranceDoorDisplayItem.java"
+          "src/main/resources/assets/fnaf_mod/blockstates/big_red_entrance_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_red_entrance_door_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/item/big_red_entrance_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigRedEntranceDoorDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedEntranceDoorDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27495,18 +27495,18 @@
       "registry_name": "big_red_door",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_red_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigRedDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/BigRedDoorBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigRedDoorBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigRedDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_red_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigRedDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_red_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigRedDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_red_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigRedDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_red_door.json",
           "src/main/resources/assets/fnaf_mod/models/block/big_red_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedDoorTileRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigRedDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_red_door.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_red_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_red_door_blockstate_1.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27519,18 +27519,18 @@
       "registry_name": "big_red_windowed_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/model/BigRedWindowedDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_red_windowed_door_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_red_windowed_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigRedWindowedDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_red_windowed_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedWindowedDoorTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/big_red_windowed_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedWindowedDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigRedWindowedDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_red_windowed_door.json",
           "src/main/java/net/mcreator/fnafmod/block/BigRedWindowedDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigRedWindowedDoorDisplayItem.java"
+          "src/main/java/net/mcreator/fnafmod/block/display/BigRedWindowedDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigRedWindowedDoorDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigRedWindowedDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_red_windowed_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedWindowedDoorTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_red_windowed_door_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/item/big_red_windowed_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_red_windowed_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigRedWindowedDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigRedWindowedDoorBlockModel.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27544,17 +27544,17 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/block/BigDualColourEntranceDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigDualColourEntranceDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_dual_colour_entrance_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigDualColourEntranceDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigDualColourEntranceDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/custom/big_dual_colour_entrance_door_particle.json",
           "src/main/resources/assets/fnaf_mod/models/block/big_dual_colour_entrance_door_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigDualColourEntranceDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigDualColourEntranceDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigDualColourEntranceDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigDualColourEntranceDoorDisplayModel.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_dual_colour_entrance_door_blockstate_0.json",
           "src/main/resources/assets/fnaf_mod/models/item/big_dual_colour_entrance_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigDualColourEntranceDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigDualColourEntranceDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigDualColourEntranceDoorDisplayItem.java"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigDualColourEntranceDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_dual_colour_entrance_door.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27647,18 +27647,18 @@
       "registry_name": "big_white_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/big_white_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigWhiteDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigWhiteDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigWhiteDoorDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/BigWhiteDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWhiteDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/BigWhiteDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_white_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigWhiteDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_white_door_blockstate_1.json",
           "src/main/resources/assets/fnaf_mod/blockstates/big_white_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWhiteDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigWhiteDoorDisplayModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/big_white_door.json",
           "src/main/resources/assets/fnaf_mod/models/custom/big_white_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWhiteDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWhiteDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_white_door_blockstate_1.json"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWhiteDoorDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27671,17 +27671,17 @@
       "registry_name": "big_closet_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/big_closet_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigClosetDoorTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigClosetDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigClosetDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_closet_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigClosetDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_closet_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigClosetDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_closet_door.json",
           "src/main/java/net/mcreator/fnafmod/block/model/BigClosetDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigClosetDoorTileEntity.java"
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigClosetDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigClosetDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigClosetDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_closet_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_closet_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/BigClosetDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigClosetDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigClosetDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_closet_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_closet_door_blockstate_0.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27694,18 +27694,18 @@
       "registry_name": "big_cyan_kitchen_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigCyanKitchenDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_cyan_kitchen_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_cyan_kitchen_door_blockstate_0.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_cyan_kitchen_door_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/item/big_cyan_kitchen_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigCyanKitchenDoorDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigCyanKitchenDoorDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/BigCyanKitchenDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigCyanKitchenDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigCyanKitchenDoorDisplayModel.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigCyanKitchenDoorTileRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_cyan_kitchen_door_blockstate_1.json"
+          "src/main/java/net/mcreator/fnafmod/block/display/BigCyanKitchenDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_cyan_kitchen_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigCyanKitchenDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigCyanKitchenDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigCyanKitchenDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_cyan_kitchen_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_cyan_kitchen_door_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/BigCyanKitchenDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_cyan_kitchen_door.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_cyan_kitchen_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigCyanKitchenDoorDisplayItemRenderer.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27718,18 +27718,18 @@
       "registry_name": "big_wide_red_windowed_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideRedWindowedDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigWideRedWindowedDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/blockstates/big_wide_red_windowed_door.json",
           "src/main/resources/assets/fnaf_mod/models/item/big_wide_red_windowed_door.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_wide_red_windowed_door_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/BigWideRedWindowedDoorBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideRedWindowedDoorTileRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_windowed_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigWideRedWindowedDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideRedWindowedDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideRedWindowedDoorDisplayItemRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_windowed_door_blockstate_0.json",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWideRedWindowedDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigWideRedWindowedDoorDisplayModel.java"
+          "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_windowed_door_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigWideRedWindowedDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_wide_red_windowed_door_particle.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27742,17 +27742,17 @@
       "registry_name": "big_wide_dual_colour_entrance_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_dual_colour_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideDualColourEntranceDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_wide_dual_colour_entrance_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigWideDualColourEntranceDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/custom/big_wide_dual_colour_entrance_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_dual_colour_entrance_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/BigWideDualColourEntranceDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigWideDualColourEntranceDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/item/big_wide_dual_colour_entrance_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigWideDualColourEntranceDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideDualColourEntranceDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_wide_dual_colour_entrance_door_blockstate_0.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideDualColourEntranceDoorTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_wide_dual_colour_entrance_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigWideDualColourEntranceDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideDualColourEntranceDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigWideDualColourEntranceDoorBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWideDualColourEntranceDoorDisplayModel.java"
         ]
       },
@@ -27766,17 +27766,17 @@
       "registry_name": "big_wide_glass_entrance_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideGlassEntranceDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_glass_entrance_door.json",
           "src/main/resources/assets/fnaf_mod/models/custom/big_wide_glass_entrance_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigWideGlassEntranceDoorDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideGlassEntranceDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_wide_glass_entrance_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideGlassEntranceDoorTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_glass_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWideGlassEntranceDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_wide_glass_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWideGlassEntranceDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_wide_glass_entrance_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideGlassEntranceDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideGlassEntranceDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigWideGlassEntranceDoorDisplayItem.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_wide_glass_entrance_door_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideGlassEntranceDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_wide_glass_entrance_door_blockstate_0.json",
           "src/main/java/net/mcreator/fnafmod/block/BigWideGlassEntranceDoorBlock.java"
         ]
       },
@@ -27790,18 +27790,18 @@
       "registry_name": "big_wide_cyan_kitchen_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/display/BigWideCyanKitchenDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_wide_cyan_kitchen_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigWideCyanKitchenDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_cyan_kitchen_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideCyanKitchenDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWideCyanKitchenDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideCyanKitchenDoorTileEntity.java",
           "src/main/resources/assets/fnaf_mod/models/item/big_wide_cyan_kitchen_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_wide_cyan_kitchen_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigWideCyanKitchenDoorDisplayModel.java",
           "src/main/resources/assets/fnaf_mod/models/block/big_wide_cyan_kitchen_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigWideCyanKitchenDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideCyanKitchenDoorDisplayItemRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/custom/big_wide_cyan_kitchen_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideCyanKitchenDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_cyan_kitchen_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_wide_cyan_kitchen_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideCyanKitchenDoorTileRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigWideCyanKitchenDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigWideCyanKitchenDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/BigWideCyanKitchenDoorBlock.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -27814,18 +27814,18 @@
       "registry_name": "big_wide_red_entrance_door",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideRedEntranceDoorTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_wide_red_entrance_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigWideRedEntranceDoorDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_entrance_door_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideRedEntranceDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/BigWideRedEntranceDoorBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigWideRedEntranceDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_red_entrance_door.json",
           "src/main/java/net/mcreator/fnafmod/block/model/BigWideRedEntranceDoorBlockModel.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/BigWideRedEntranceDoorTileEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigWideRedEntranceDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigWideRedEntranceDoorDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/BigWideRedEntranceDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideRedEntranceDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_entrance_door_blockstate_0.json",
-          "src/main/resources/assets/fnaf_mod/models/item/big_wide_red_entrance_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_entrance_door_blockstate_1.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigWideRedEntranceDoorTileRenderer.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_wide_red_entrance_door.json",
-          "src/main/resources/assets/fnaf_mod/models/custom/big_wide_red_entrance_door_particle.json"
+          "src/main/resources/assets/fnaf_mod/models/custom/big_wide_red_entrance_door_particle.json",
+          "src/main/resources/assets/fnaf_mod/models/block/big_wide_red_entrance_door_blockstate_0.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -28054,12 +28054,12 @@
       "registry_name": "door_boarder",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/DoorBoarderBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/door_boarder.json",
           "src/main/resources/assets/fnaf_mod/models/block/door_boarder.json",
           "src/main/resources/assets/fnaf_mod/blockstates/door_boarder.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/door_boarder.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/DoorBoarderBlockEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/DoorBoarderBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/door_boarder.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/door_boarder.json"
         ]
       },
       "path": "~/Blocks/DoorBoarders"
@@ -28723,18 +28723,18 @@
       "registry_name": "windowed_cyan_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/windowed_cyan_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_right.json",
-          "src/main/java/net/mcreator/fnafmod/block/WindowedCyanDoorBlock.java",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/windowed_cyan_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_right.json",
           "src/main/resources/assets/fnaf_mod/models/item/windowed_cyan_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_left.json"
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_top_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_right_open.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/windowed_cyan_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/WindowedCyanDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/windowed_cyan_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/windowed_cyan_door_bottom_left_open.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -28747,18 +28747,18 @@
       "registry_name": "buffet_door",
       "metadata": {
         "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_left_open.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/buffet_door.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_right_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_right.json",
           "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_left_open.json",
-          "src/main/java/net/mcreator/fnafmod/block/BuffetDoorBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/item/buffet_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_top_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_left_open.json",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_door.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/buffet_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_bottom_right_open.json"
+          "src/main/java/net/mcreator/fnafmod/block/BuffetDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_door.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -28771,18 +28771,18 @@
       "registry_name": "buffet_door_empty",
       "metadata": {
         "files": [
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_door_empty.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_right.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_right_open.json",
           "src/main/java/net/mcreator/fnafmod/block/BuffetDoorEmptyBlock.java",
           "src/main/resources/assets/fnaf_mod/blockstates/buffet_door_empty.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_right_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_left_open.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_left.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/buffet_door_empty.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_left.json",
           "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_right_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_left_open.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_left.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_left_open.json",
           "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_right.json",
-          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_top_left.json",
-          "src/main/resources/assets/fnaf_mod/models/item/buffet_door_empty.json"
+          "src/main/resources/assets/fnaf_mod/models/item/buffet_door_empty.json",
+          "src/main/resources/assets/fnaf_mod/models/block/buffet_door_empty_bottom_right.json"
         ]
       },
       "path": "~/Blocks/BuildingBlockss"
@@ -28864,17 +28864,17 @@
       "registry_name": "big_security_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/big_security_door.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_security_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_security_door.json",
           "src/main/resources/assets/fnaf_mod/models/custom/big_security_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigSecurityDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_security_door.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_security_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigSecurityDoorDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/BigSecurityDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/BigSecurityDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorDisplayItemRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/renderer/BigSecurityDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigSecurityDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_security_door_blockstate_0.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -28918,17 +28918,17 @@
       "registry_name": "big_heavy_duty_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/custom/big_heavy_duty_door_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/big_heavy_duty_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/BigHeavyDutyDoorTileEntity.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorTileRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/block/display/BigHeavyDutyDoorDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/big_heavy_duty_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/BigHeavyDutyDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/big_heavy_duty_door_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/BigHeavyDutyDoorDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/BigHeavyDutyDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/big_heavy_duty_door.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/BigHeavyDutyDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/big_heavy_duty_door.json"
+          "src/main/java/net/mcreator/fnafmod/block/BigHeavyDutyDoorBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/custom/big_heavy_duty_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/BigHeavyDutyDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/big_heavy_duty_door.json"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -29465,16 +29465,16 @@
       "registry_name": "garage_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/GarageDoorTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/garage_door_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/garage_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/GarageDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/GarageDoorDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/garage_door.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/GarageDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/display/GarageDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/garage_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/GarageDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/garage_door_particle.json",
           "src/main/java/net/mcreator/fnafmod/block/model/GarageDoorDisplayModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/GarageDoorBlockModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/entity/GarageDoorTileEntity.java",
           "src/main/resources/assets/fnaf_mod/models/item/garage_door.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/garage_door.json",
           "src/main/java/net/mcreator/fnafmod/block/GarageDoorBlock.java"
         ]
       },
@@ -29655,17 +29655,17 @@
       "registry_name": "alternate_garage_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/model/AlternateGarageDoorDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/alternate_garage_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/AlternateGarageDoorDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/blockstates/alternate_garage_door.json",
           "src/main/java/net/mcreator/fnafmod/block/AlternateGarageDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/AlternateGarageDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/alternate_garage_door_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/alternate_garage_door_particle.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/AlternateGarageDoorDisplayModel.java",
           "src/main/java/net/mcreator/fnafmod/block/display/AlternateGarageDoorDisplayItem.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/AlternateGarageDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/alternate_garage_door_particle.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/AlternateGarageDoorTileRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/alternate_garage_door_blockstate_0.json"
+          "src/main/java/net/mcreator/fnafmod/block/model/AlternateGarageDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/alternate_garage_door.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/alternate_garage_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/AlternateGarageDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/AlternateGarageDoorTileRenderer.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -29862,17 +29862,17 @@
       "registry_name": "large_industrial_door",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/LargeIndustrialDoorTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/custom/large_industrial_door_particle.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/large_industrial_door.json",
-          "src/main/java/net/mcreator/fnafmod/block/LargeIndustrialDoorBlock.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorBlockModel.java",
-          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorDisplayModel.java",
           "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/display/LargeIndustrialDoorDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/item/large_industrial_door.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/large_industrial_door.json",
+          "src/main/resources/assets/fnaf_mod/models/custom/large_industrial_door_particle.json",
           "src/main/resources/assets/fnaf_mod/models/block/large_industrial_door_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorDisplayItemRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/block/entity/LargeIndustrialDoorTileEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorDisplayModel.java",
+          "src/main/java/net/mcreator/fnafmod/block/model/LargeIndustrialDoorBlockModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/large_industrial_door.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/LargeIndustrialDoorDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/block/LargeIndustrialDoorBlock.java"
         ]
       },
       "path": "~/Blocks/Big Doors"
@@ -34906,12 +34906,12 @@
       "registry_name": "server",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/server.json",
+          "src/main/java/net/mcreator/fnafmod/block/ServerBlock.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/server.json",
-          "src/main/resources/assets/fnaf_mod/models/item/server.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ServerBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/server.json",
           "src/main/resources/assets/fnaf_mod/blockstates/server.json",
-          "src/main/java/net/mcreator/fnafmod/block/ServerBlock.java"
+          "src/main/java/net/mcreator/fnafmod/block/entity/ServerBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/server.json"
         ]
       },
       "path": "~/Blocks/New Cameras"
@@ -34942,12 +34942,12 @@
       "registry_name": "camera_head_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/CameraHeadBlockBlock.java",
           "src/main/java/net/mcreator/fnafmod/block/entity/CameraHeadBlockBlockEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/CameraHeadBlockBlock.java",
           "src/main/resources/assets/fnaf_mod/models/item/camera_head_block.json",
-          "src/main/resources/assets/fnaf_mod/blockstates/camera_head_block.json",
           "src/main/resources/assets/fnaf_mod/models/block/camera_head_block.json",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/camera_head_block.json"
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/camera_head_block.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/camera_head_block.json"
         ]
       },
       "path": "~/Blocks/New Cameras"
@@ -35641,6 +35641,10 @@
           {
             "name": "usehand",
             "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -35675,16 +35679,7 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/RenderConnectionsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Client/Connections"
     },
@@ -35698,24 +35693,7 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/RemoveConnectionOnBlockRemovedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Client/Connections"
     },
@@ -35737,6 +35715,141 @@
         ]
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "ShadowFreddyPlush",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_freddy_plush",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/shadow_freddy_plush.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/shadow_freddy_plush.json",
+          "src/main/resources/assets/fnaf_mod/models/item/shadow_freddy_plush.json",
+          "src/main/resources/assets/fnaf_mod/models/block/shadow_freddy_plush.json",
+          "src/main/java/net/mcreator/fnafmod/block/ShadowFreddyPlushBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ShadowBonniePlush",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_bonnie_plush",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/shadow_bonnie_plush.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/shadow_bonnie_plush.json",
+          "src/main/resources/assets/fnaf_mod/models/block/shadow_bonnie_plush.json",
+          "src/main/java/net/mcreator/fnafmod/block/ShadowBonniePlushBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/shadow_bonnie_plush.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ServerBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "server_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/server_blockstates_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/New Cameras"
+    },
+    {
+      "name": "ServerRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "server_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ServerRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/New Cameras"
+    },
+    {
+      "name": "ServerRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "server_redstone_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ServerRedstoneOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/New Cameras"
+    },
+    {
+      "name": "FirstNightAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_night_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/first_night_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "FNAFWorldStartAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fnaf_world_start_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/advancements/fnaf_world_start_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -37387,6 +37500,29 @@
   },
   "tab_element_order": {
     "CUSTOM:FNAFBlocks": [
+      "FazbearHillsGrass",
+      "PinwheelCircusGrass",
+      "ChoppysWoodsGrass",
+      "CaveGrass",
+      "BlacktombYardGrass",
+      "LilygearLakeGrass",
+      "DustingFieldsGrass",
+      "WorldDirt",
+      "WorldStone",
+      "StageWood",
+      "StageWoodSlab",
+      "StageWoodStairs",
+      "StageWoodFence",
+      "StageWoodFenceGate",
+      "BuffetFloor",
+      "BuffetFloorClean",
+      "EntranceCarpet",
+      "FredbearFloor",
+      "FredbearFloorClean",
+      "BlackTile",
+      "WhiteTile",
+      "RedTile",
+      "BlueTile",
       "BlackWhiteTile",
       "BlackWhiteTileStair",
       "BlackWhiteTileSlab",
@@ -37395,6 +37531,9 @@
       "BlackWhiteTileSlabCracked",
       "CheckeredTile",
       "BigCheckeredTiles",
+      "DiagonalTile",
+      "DiagonalTileStair",
+      "DiagonalTileSlab",
       "RedBlueTile",
       "RedBlueTileStair",
       "RedBlueTileSlab",
@@ -37419,6 +37558,9 @@
       "GreenBlueTileCracked",
       "GreenBlueTileStairCracked",
       "GreenBlueTileSlabCracked",
+      "GreenBlueDiagonalTile",
+      "GreenBlueDiagonalTileStair",
+      "GreenBlueDiagonalTileSlab",
       "RedWhiteTile",
       "RedWhiteTileStair",
       "RedWhiteTileSlab",
@@ -37432,6 +37574,8 @@
       "BrownTanTileStair",
       "BrownTanTileSlab",
       "WhiteTiledWall",
+      "RancidTiles",
+      "BackstageWall",
       "BlackWall",
       "WallTile",
       "CenterBlackRedWallTile",
@@ -37524,6 +37668,14 @@
       "BigPurpleStageBrickTiles",
       "CenterBigStagePurpleBrickTile",
       "AlternateBigPurpleStageBrickTiles",
+      "BlueEtchedBricks",
+      "CutBlueEtchedBricks",
+      "PurpleEtchedBricks",
+      "CutPurpleEtchedBricks",
+      "BlackEtchedBricks",
+      "CutBlackEtchedBricks",
+      "TiledWallHandle",
+      "MoviePillarLines",
       "YellowWall",
       "YellowWallStairs",
       "YellowWallSlab",
@@ -37571,30 +37723,28 @@
       "AlternateBigRancidWallTiles",
       "FNAF3Floor",
       "Drywall",
+      "MiniRancidWall",
+      "BuffetWallLight",
+      "BuffetWall",
+      "AlternateBuffetWall",
+      "BigBuffetWall",
+      "AlternateBigBuffetWall",
+      "BuffetWallDark",
+      "DarkBuffetWall",
+      "AlternateDarkBuffetWall",
+      "BigDarkBuffetWall",
+      "AlternateBigDarkBuffetWall",
       "FNAF4WallTopRoom",
       "FNAF4WallRoomBottom",
       "FNAF4WallTopHall",
       "FNAF4WallBottomHall",
       "FNAFWallTopRotable",
       "FNAF4WallBottomRotable",
-      "FredbearFloorClean",
-      "FredbearFloor",
-      "EntranceCarpet",
-      "CeilingBlock",
-      "BackstageDoor",
-      "CyanDoor",
-      "KitchenDoor",
-      "GlassDoor",
-      "ClosetLeftBottom",
-      "ClosetRightBottom",
-      "Fnaf4Door",
-      "WallPizza",
-      "SmallPipes",
       "CandyCurtain",
       "ThinCandyCurtain",
       "FancyCandyCurtainClean",
-      "FancyCandyCurtain",
       "ThinFancyCandyCurtainClean",
+      "FancyCandyCurtain",
       "ThinFancyCurtain",
       "CarrotCurtain",
       "ThinCarrotCurtain",
@@ -37604,10 +37754,14 @@
       "ThinLimeCurtain",
       "CactusCurtain",
       "ThinCactusCurtain",
-      "SwampCurtain",
-      "ThinSwampCurtain",
+      "AvocadoCurtain",
+      "ThinAvocadoCurtain",
+      "FancyAvocadoCurtain",
+      "ThinFancyAvocadoCurtain",
       "MintCurtain",
       "ThinMintCurtain",
+      "SwampCurtain",
+      "ThinSwampCurtain",
       "SkyCurtain",
       "ThinSkyCurtain",
       "CobaltCurtain",
@@ -37632,91 +37786,9 @@
       "ThinLicoriceCurtain",
       "PurpleCheckeredCurtain",
       "ThinPurpleCheckeredCurtain",
-      "RemantInfuser",
       "Vent",
       "VentHatch",
-      "RedWoodDoor",
-      "RedDoor",
-      "RedDoorWindowed",
-      "DualColourEntranceDoor",
-      "DoorBoarder",
-      "LockerYellow",
-      "LockerSilver",
-      "VendingMachine",
-      "MoviePillarLines",
-      "BigBackstageDoor",
-      "BigCyanBackstageDoor",
-      "BigCyanKitchenDoor",
-      "BigGlassEntranceDoor",
-      "BigRedEntranceDoor",
-      "BigRedDoor",
-      "BigRedWindowedDoor",
-      "BigDualColourEntranceDoor",
-      "BigWhiteDoor",
-      "BigClosetDoor",
-      "BigWideCyanKitchenDoor",
-      "BigWideGlassEntranceDoor",
-      "BigWideRedEntranceDoor",
-      "BigWideRedWindowedDoor",
-      "BigWideDualColourEntranceDoor",
-      "DiagonalTile",
-      "DiagonalTileStair",
-      "DiagonalTileSlab",
-      "GreenBlueDiagonalTile",
-      "GreenBlueDiagonalTileStair",
-      "GreenBlueDiagonalTileSlab",
-      "BlackTile",
-      "WhiteTile",
-      "RedTile",
-      "BlueTile",
-      "BuffetFloor",
-      "BuffetFloorClean",
-      "BuffetWallLight",
-      "BuffetWallDark",
-      "WindowedCyanDoor",
-      "BuffetDoor",
-      "BuffetDoorEmpty",
-      "RancidTiles",
-      "MiniRancidWall",
-      "BigSecurityDoor",
-      "BigHeavyDutyDoor",
-      "BackstageWall",
-      "BuffetWall",
-      "AlternateBuffetWall",
-      "BigBuffetWall",
-      "AlternateBigBuffetWall",
-      "DarkBuffetWall",
-      "AlternateDarkBuffetWall",
-      "BigDarkBuffetWall",
-      "AlternateBigDarkBuffetWall",
-      "BlueEtchedBricks",
-      "CutBlueEtchedBricks",
-      "PurpleEtchedBricks",
-      "CutPurpleEtchedBricks",
-      "BlackEtchedBricks",
-      "CutBlackEtchedBricks",
-      "AvocadoCurtain",
-      "ThinAvocadoCurtain",
-      "FancyAvocadoCurtain",
-      "ThinFancyAvocadoCurtain",
-      "StageWood",
-      "StageWoodSlab",
-      "StageWoodStairs",
-      "StageWoodFence",
-      "StageWoodFenceGate",
-      "GarageDoor",
-      "AlternateGarageDoor",
-      "LargeIndustrialDoor",
-      "TiledWallHandle",
-      "WorldStone",
-      "FazbearHillsGrass",
-      "WorldDirt",
-      "ChoppysWoodsGrass",
-      "DustingFieldsGrass",
-      "LilygearLakeGrass",
-      "BlacktombYardGrass",
-      "PinwheelCircusGrass",
-      "CaveGrass"
+      "CeilingBlock"
     ],
     "CUSTOM:FNAFDecor": [
       "FredbearPlushie",
@@ -37749,6 +37821,9 @@
       "Desk2",
       "Desk3",
       "SecurityDoorOpen",
+      "BigSecurityDoor",
+      "BigHeavyDutyDoor",
+      "LargeIndustrialDoor",
       "DoorButtonOff",
       "DoorButton",
       "LightButton",
@@ -37776,11 +37851,11 @@
       "TableClothItem",
       "PurpleTableClothItem",
       "PurpleStarTableClothItem",
-      "Balloons",
       "AwningRed",
       "AwningYellow",
       "AwningGreen",
       "AwningBlue",
+      "Balloons",
       "Balloon",
       "BalloonOrange",
       "BalloonYellow",
@@ -37801,11 +37876,11 @@
       "StageLightGreen",
       "StageLightPink",
       "ArcadeMachineFreddy",
-      "ArcadeMachineFreddyDelivery",
       "ArcadeMachineBonnie",
       "ArcadeMachineChica",
-      "ArcadeMachineFoxy",
       "ArcadeMachineFoxy2",
+      "ArcadeMachineFoxy",
+      "ArcadeMachineFreddyDelivery",
       "FreddysCupcakeBonanza",
       "PinBallMachine1",
       "PinBallMachine2",
@@ -37817,7 +37892,6 @@
       "Carousel",
       "MeshTrashCan",
       "TrashCan",
-      "WarningSign",
       "FredbearHead",
       "SpringBonnieHead",
       "FreddyHead",
@@ -37834,12 +37908,15 @@
       "Sun",
       "Clouds",
       "Rainbow",
+      "WallPizza",
       "Sconce",
       "Phone",
       "WallPhone",
       "Screen",
       "Monitors",
       "DisplayMonitor",
+      "WarningSign",
+      "SmallPipes",
       "Lure",
       "ChangeMachine",
       "CeilingLamp",
@@ -37850,6 +37927,9 @@
       "ConnectingTable",
       "Shelf",
       "DisplayShelves",
+      "LockerYellow",
+      "LockerSilver",
+      "VendingMachine",
       "IndustrialFan",
       "ChainFence",
       "StreamerOval",
@@ -37893,7 +37973,39 @@
       "CashRegister",
       "Printer",
       "Toilet",
-      "Sink"
+      "Sink",
+      "GarageDoor",
+      "AlternateGarageDoor",
+      "DoorBoarder",
+      "BackstageDoor",
+      "BigBackstageDoor",
+      "BuffetDoor",
+      "BuffetDoorEmpty",
+      "CyanDoor",
+      "BigCyanBackstageDoor",
+      "KitchenDoor",
+      "BigCyanKitchenDoor",
+      "BigWideCyanKitchenDoor",
+      "WindowedCyanDoor",
+      "RedDoor",
+      "BigRedDoor",
+      "BigWideRedWindowedDoor",
+      "RedDoorWindowed",
+      "BigRedWindowedDoor",
+      "RedWoodDoor",
+      "BigRedEntranceDoor",
+      "BigWideRedEntranceDoor",
+      "Fnaf4Door",
+      "BigWhiteDoor",
+      "DualColourEntranceDoor",
+      "BigDualColourEntranceDoor",
+      "BigWideDualColourEntranceDoor",
+      "GlassDoor",
+      "BigGlassEntranceDoor",
+      "BigWideGlassEntranceDoor",
+      "ClosetLeftBottom",
+      "ClosetRightBottom",
+      "BigClosetDoor"
     ],
     "CUSTOM:FNAFToolsAndItems": [
       "MAT",
@@ -38033,6 +38145,9 @@
       "HardToSayGoodbye",
       "VentEntrance",
       "VentEntry",
+      "RemantInfuser",
+      "Server",
+      "CameraBlock",
       "GeneratorSpawnBlock",
       "GeneratorOutlet",
       "LinkCable",
@@ -38051,9 +38166,7 @@
       "ToyBox",
       "FazeerramicsControlPanel",
       "Camera",
-      "HangingCamera",
-      "Server",
-      "CameraBlock"
+      "HangingCamera"
     ],
     "CUSTOM:FNAFMobs": [
       "FreddySpawnItem",
@@ -38262,6 +38375,7 @@
       "gui.fnaf_mod.gen_creative_config_gui.button_empty": "Auto ",
       "block.fnaf_mod.fredbear_floor": "Fredbear\u0027s Floor",
       "item.fnaf_mod.light_blue_plastic": "Light Blue Plastic",
+      "advancements.fnaf_world_start_advancement.descr": "Enter FNAF WORLD",
       "item.fnaf_mod.tameable_mangle_spawn_egg": "Adventure Mangle Spawn Egg",
       "block.fnaf_mod.rock_curtain.description_0": "§7(Gray Curtain)",
       "block.fnaf_mod.stanchion_6": "Stanchion",
@@ -38526,6 +38640,7 @@
       "subtitles.itsbeensolong": "",
       "item.fnaf_mod.nightmare_fredbear_spawn_egg": "Nightmare Fredbear Spawn Egg",
       "item.fnaf_mod.toy_freddy_cut_out_spawn_egg": "Toy Freddy Cutout Spawn Egg",
+      "advancements.fnaf_world_start_advancement.title": "FNAF World",
       "block.fnaf_mod.chain_fence": "Chain Gate",
       "block.fnaf_mod.backstage_door": "Backstage Door",
       "block.fnaf_mod.tiled_wall_handle": "Fancy Brick Wall With Handle",
@@ -38863,6 +38978,7 @@
       "block.fnaf_mod.poster_2.description_0": "Poster of Freddy Fazbear!",
       "block.fnaf_mod.thin_fancy_candy_curtain_clean.description_0": "§c(Red Curtain)",
       "subtitles.fredbearlaugh": "laugh",
+      "block.fnaf_mod.shadow_freddy_plush": "Shadow Freddy Plushie",
       "block.fnaf_mod.poster_4.description_0": "Poster of Foxy the Pirate!",
       "subtitles.golden_freddy_scram": "Jumpscare",
       "item.fnaf_mod.foxy_suit_chestplate": "Foxy Body",
@@ -38994,6 +39110,7 @@
       "entity.fnaf_mod.statue_bonnie": "Bonnie Statue",
       "item.fnaf_mod.nightmarionne_spawn_egg": "Nightmarionne Spawn Egg",
       "item.fnaf_mod.day_time_withered_foxy_spawn_egg": "Withered Foxy Spawn Egg",
+      "block.fnaf_mod.shadow_bonnie_plush": "Shadow Bonnie Plushie",
       "block.fnaf_mod.foxy_head_decoration": "Foxy Head Prop",
       "entity.fnaf_mod.adventure_lolbit": "Adventure Lolbit",
       "block.fnaf_mod.big_white_door": "Big White Door",
@@ -39113,6 +39230,7 @@
       "item.fnaf_mod.freddy_stand_spawn_egg": "Freddy Stand Spawn Egg",
       "item.fnaf_mod.spring_lock_suit_helmet": "Spring Lock Suit Head",
       "block.fnaf_mod.sun": "Sun Decoration",
+      "advancements.first_night_advancement.descr": "Start your first night",
       "key.fnaf_mod.exit_camera": "Exit Camera",
       "block.fnaf_mod.big_glass_movie_yellow_wall_tiles": "Big Movie Glass Yellow Wall Tiles",
       "entity.fnaf_mod.phantom_mangle": "Phantom Mangle",
@@ -39366,6 +39484,7 @@
       "item.fnaf_mod.adventure_withered_chica_spawn_egg": "Adventure Withered Chica Spawn Egg",
       "item.fnaf_mod.statue_freddy_item": "Freddy (Statue)",
       "item.fnaf_mod.freddy_suit_helmet": "Freddy Head",
+      "advancements.first_night_advancement.title": "The First Night",
       "block.fnaf_mod.big_security_door": "Big Security Door",
       "entity.fnaf_mod.phantom_chica": "Phantom Chica",
       "item.fnaf_mod.sparky_suit_leggings": "Sparky Legs",
