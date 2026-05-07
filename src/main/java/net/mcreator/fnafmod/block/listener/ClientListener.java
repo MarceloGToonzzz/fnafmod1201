@@ -31,7 +31,6 @@ import net.mcreator.fnafmod.block.renderer.SpringBonnieDecorTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ShelfTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroFreddySignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.RetroFreddySignOnTileRenderer;
-import net.mcreator.fnafmod.block.renderer.RetroComputerTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStripeTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.PurpleStarTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ProtonsPlushRatTileRenderer;
@@ -165,7 +164,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_FREDDY.get(), context -> new CinematicSignFreddyTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.CINEMATIC_SIGN_TOYS.get(), context -> new CinematicSignToysTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLUORESCENT_LIGHT.get(), context -> new FluorescentLightTileRenderer());
-		event.registerBlockEntityRenderer(FnafModModBlockEntities.RETRO_COMPUTER.get(), context -> new RetroComputerTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FLOOD_LIGHTS.get(), context -> new FloodLightsTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_SECURITY_DOOR.get(), context -> new BigSecurityDoorTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.BIG_HEAVY_DUTY_DOOR.get(), context -> new BigHeavyDutyDoorTileRenderer());

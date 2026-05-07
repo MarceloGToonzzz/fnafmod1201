@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -19,10 +20,12 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.init.FnafModModBlocks;
+import net.mcreator.fnafmod.FnafModMod;
 
 import javax.annotation.Nullable;
 
 import java.util.regex.Pattern;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Mod.EventBusSubscriber
 public class OnCameraMonitorConnectProcedure {
@@ -92,108 +95,105 @@ public class OnCameraMonitorConnectProcedure {
 				}
 			}
 		} else if (FnafModModItems.CAMERA_MONITOR.get() == itemstack.getItem()) {
-			data = itemstack.getOrCreateTag().getString("servers");
+			data = itemstack.getOrCreateTag().getString("servers") + ";";
 			xA = 0;
 			while (data.contains(";")) {
 				if (xA == itemstack.getOrCreateTag().getDouble("selectedServer")) {
-					data2 = data.substring((int) (data.indexOf(";") + 1), (int) ((data.substring((int) (data.indexOf(";") + 0), (int) (data.indexOf(";") + 1))).strip().indexOf(";") - 1));
-					xB = 0;
-					while (data2.contains(",")) {
-						if (xB == 0) {
-							dX = new Object() {
-								double convert(String s) {
-									try {
-										return Double.parseDouble(s.trim());
-									} catch (Exception e) {
-									}
-									return 0;
-								}
-							}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) ((data2.substring((int) (data2.indexOf(",") + 0), (int) (data2.indexOf(",") + 1))).strip().indexOf(",") - 1)));
-						} else if (xB == 1) {
-							dY = new Object() {
-								double convert(String s) {
-									try {
-										return Double.parseDouble(s.trim());
-									} catch (Exception e) {
-									}
-									return 0;
-								}
-							}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) ((data2.substring((int) (data2.indexOf(",") + 0), (int) (data2.indexOf(",") + 1))).strip().indexOf(",") - 1)));
-						} else {
-							dZ = new Object() {
-								double convert(String s) {
-									try {
-										return Double.parseDouble(s.trim());
-									} catch (Exception e) {
-									}
-									return 0;
-								}
-							}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) ((data2.substring((int) (data2.indexOf(",") + 0), (int) (data2.indexOf(",") + 1))).strip().indexOf(",") - 1)));
+					FnafModMod.LOGGER.info(data);
+					FnafModMod.LOGGER.info(data.substring(0, (int) data.indexOf(";")));
+					data2 = data.substring(0, (int) data.indexOf(";"));
+					FnafModMod.LOGGER.info("Pos X: " + data2.substring(0, (int) data2.indexOf(",")));
+					FnafModMod.LOGGER.info("Pos Y: " + data2.substring((int) (data2.indexOf(",") + 1), (int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(","))));
+					FnafModMod.LOGGER.info("Pos Z: " + data2.substring((int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(",") + 1), (data2).length()));
+					dX = new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
 						}
-						data2 = data2.substring((int) (data2.indexOf(",") + 1), (data2).length());
-						xB = xB + 1;
+					}.convert(data2.substring(0, (int) data2.indexOf(",")));
+					dY = new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(","))));
+					dZ = new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(data2.substring((int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(",") + 1), (data2).length()));
+				}
+				if (FnafModModBlocks.SERVER.get() == (world.getBlockState(BlockPos.containing(dX, dY, dZ))).getBlock()) {
+					{
+						Entity _ent = entity;
+						_ent.teleportTo(((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+								return _retval.get();
+							}
+						}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkX")), ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+								return _retval.get();
+							}
+						}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkY")), ((new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+								return _retval.get();
+							}
+						}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkZ")));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport(((new Object() {
+								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+									BlockEntity _ent = world.getBlockEntity(pos);
+									if (_ent != null)
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									return _retval.get();
+								}
+							}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkX")), ((new Object() {
+								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+									BlockEntity _ent = world.getBlockEntity(pos);
+									if (_ent != null)
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									return _retval.get();
+								}
+							}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkY")), ((new Object() {
+								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+									BlockEntity _ent = world.getBlockEntity(pos);
+									if (_ent != null)
+										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+									return _retval.get();
+								}
+							}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkZ")), _ent.getYRot(), _ent.getXRot());
 					}
-					if (FnafModModBlocks.SERVER.get() == (world.getBlockState(BlockPos.containing(dX, dY, dZ))).getBlock()) {
-						data3 = new Object() {
-							public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getString(tag);
-								return "";
-							}
-						}.getValue(world, BlockPos.containing(dX, dY, dZ), "cameras");
-						xB = 0;
-						while (data3.contains(";")) {
-							if (xB == itemstack.getOrCreateTag().getDouble("selectedCamera")) {
-								data2 = data3.substring((int) (data3.indexOf(";") + 1), (int) ((data3.substring((int) (data3.indexOf(";") + 0), (int) (data3.indexOf(";") + 1))).strip().indexOf(";") - 1));
-								xC = 0;
-								while (data2.contains(",")) {
-									if (xC == 0) {
-										dX = new Object() {
-											double convert(String s) {
-												try {
-													return Double.parseDouble(s.trim());
-												} catch (Exception e) {
-												}
-												return 0;
-											}
-										}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) ((data2.substring((int) (data2.indexOf(",") + 0), (int) (data2.indexOf(",") + 1))).strip().indexOf(",") - 1)));
-									} else if (xC == 1) {
-										dY = new Object() {
-											double convert(String s) {
-												try {
-													return Double.parseDouble(s.trim());
-												} catch (Exception e) {
-												}
-												return 0;
-											}
-										}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) ((data2.substring((int) (data2.indexOf(",") + 0), (int) (data2.indexOf(",") + 1))).strip().indexOf(",") - 1)));
-									} else {
-										dZ = new Object() {
-											double convert(String s) {
-												try {
-													return Double.parseDouble(s.trim());
-												} catch (Exception e) {
-												}
-												return 0;
-											}
-										}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) ((data2.substring((int) (data2.indexOf(",") + 0), (int) (data2.indexOf(",") + 1))).strip().indexOf(",") - 1)));
-									}
-									data2 = data2.substring((int) (data2.indexOf(",") + 1), (data2).length());
-									xB = xB + 1;
-								}
-								if (FnafModModBlocks.CAMERA_BLOCK.get() == (world.getBlockState(BlockPos.containing(dX, dY, dZ))).getBlock()) {
-									{
-										Entity _ent = entity;
-										_ent.teleportTo(dX, dY, dZ);
-										if (_ent instanceof ServerPlayer _serverPlayer)
-											_serverPlayer.connection.teleport(dX, dY, dZ, _ent.getYRot(), _ent.getXRot());
-									}
-								}
-							}
-							data3 = data3.substring((int) (data3.indexOf(";") + 1), (data3).length());
-							xB = xB + 1;
-						}
+					if (usehand.equals("offhand")) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.OFF_HAND, true);
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.MAIN_HAND, true);
 					}
 				}
 				data = data.substring((int) (data.indexOf(";") + 1), (data).length());

@@ -80,6 +80,8 @@ public class ToggleMATModeProcedure {
 				} else if (("rotate_counter_clock").equals(itemstack.getOrCreateTag().getString("mode"))) {
 					itemstack.getOrCreateTag().putString("mode", "interface");
 				} else if (("interface").equals(itemstack.getOrCreateTag().getString("mode"))) {
+					itemstack.getOrCreateTag().putString("mode", "death");
+				} else if (("death").equals(itemstack.getOrCreateTag().getString("mode"))) {
 					itemstack.getOrCreateTag().putString("mode", "rotate_clock");
 					itemstack.getOrCreateTag().putString("settings", "y");
 				}

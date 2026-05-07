@@ -39,7 +39,7 @@ public class LinkCableRightClickedProcedure {
 			}
 			itemstack.setHoverName(Component.literal(("" + new java.text.DecimalFormat("##").format(itemstack.getOrCreateTag().getDouble("NameChange")))));
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("Now set to breaker:" + new java.text.DecimalFormat("##").format(itemstack.getOrCreateTag().getDouble("NameChange")))), true);
+				_player.displayClientMessage(Component.literal(("Now set to:" + new java.text.DecimalFormat("##").format(itemstack.getOrCreateTag().getDouble("NameChange")))), true);
 		}
 	}
 }

@@ -326,6 +326,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.TOY_BONNIE_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.BLACK_LIGHT_FREDBEAR_PLUSH.get().asItem());
 				tabData.accept(FnafModModBlocks.BLACK_LIGHT_GOLDEN_FREDDY_PLUSH.get().asItem());
 				tabData.accept(FnafModModBlocks.BLACK_LIGHT_SPRING_BONNIE_PLUSH.get().asItem());
 				tabData.accept(FnafModModBlocks.BLACK_LIGHT_FREDDY_PLUSHIE.get().asItem());
@@ -334,6 +335,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BLACK_LIGHT_FOXY_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.FREDBEAR_PLUSH.get().asItem());
 				tabData.accept(FnafModModBlocks.SPRING_BONNIE_PLUSH.get().asItem());
+				tabData.accept(FnafModModBlocks.POPGOES_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_FREDDY_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_BONNIE_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_CHICA_FIGURE.get().asItem());
@@ -439,6 +441,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.SCREEN.get().asItem());
 				tabData.accept(FnafModModBlocks.MONITORS.get().asItem());
 				tabData.accept(FnafModModBlocks.DISPLAY_MONITOR.get().asItem());
+				tabData.accept(FnafModModBlocks.RETRO_COMPUTER.get().asItem());
 				tabData.accept(FnafModModBlocks.WARNING_SIGN.get().asItem());
 				tabData.accept(FnafModModBlocks.SMALL_PIPES.get().asItem());
 				tabData.accept(FnafModModBlocks.LURE.get().asItem());
@@ -481,7 +484,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.DOOR_LIGHT.get().asItem());
 				tabData.accept(FnafModModBlocks.FLOOD_LIGHTS.get().asItem());
 				tabData.accept(FnafModModBlocks.FLUORESCENT_LIGHT.get().asItem());
-				tabData.accept(FnafModModBlocks.RETRO_COMPUTER.get().asItem());
 				tabData.accept(FnafModModBlocks.PIZZERIA_TRASH_CAN.get().asItem());
 				tabData.accept(FnafModModBlocks.POLAR_BAR.get().asItem());
 				tabData.accept(FnafModModBlocks.PRIZE_HATCH.get().asItem());
@@ -682,7 +684,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.VASS_DOLL.get().asItem());
 				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
 				tabData.accept(FnafModModBlocks.PROTONS_PLUSH_RAT.get().asItem());
-				tabData.accept(FnafModModBlocks.POPGOES_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_FREDDY.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_BONNIE.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_CHICA.get().asItem());

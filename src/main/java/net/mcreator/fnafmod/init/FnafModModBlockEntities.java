@@ -38,7 +38,6 @@ import net.mcreator.fnafmod.block.entity.ServerBlockEntity;
 import net.mcreator.fnafmod.block.entity.SecurityDoorOpenBlockEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignTileEntity;
 import net.mcreator.fnafmod.block.entity.RetroFreddySignOnTileEntity;
-import net.mcreator.fnafmod.block.entity.RetroComputerTileEntity;
 import net.mcreator.fnafmod.block.entity.RemantInfuserBlockEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStripeTableTileEntity;
 import net.mcreator.fnafmod.block.entity.PurpleStarTableTileEntity;
@@ -256,7 +255,6 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(CinematicSignToysTileEntity::new, FnafModModBlocks.CINEMATIC_SIGN_TOYS.get()).build(null));
 	public static final RegistryObject<BlockEntityType<FluorescentLightTileEntity>> FLUORESCENT_LIGHT = REGISTRY.register("fluorescent_light",
 			() -> BlockEntityType.Builder.of(FluorescentLightTileEntity::new, FnafModModBlocks.FLUORESCENT_LIGHT.get()).build(null));
-	public static final RegistryObject<BlockEntityType<RetroComputerTileEntity>> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> BlockEntityType.Builder.of(RetroComputerTileEntity::new, FnafModModBlocks.RETRO_COMPUTER.get()).build(null));
 	public static final RegistryObject<BlockEntityType<FloodLightsTileEntity>> FLOOD_LIGHTS = REGISTRY.register("flood_lights", () -> BlockEntityType.Builder.of(FloodLightsTileEntity::new, FnafModModBlocks.FLOOD_LIGHTS.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigSecurityDoorTileEntity>> BIG_SECURITY_DOOR = REGISTRY.register("big_security_door",
 			() -> BlockEntityType.Builder.of(BigSecurityDoorTileEntity::new, FnafModModBlocks.BIG_SECURITY_DOOR.get()).build(null));

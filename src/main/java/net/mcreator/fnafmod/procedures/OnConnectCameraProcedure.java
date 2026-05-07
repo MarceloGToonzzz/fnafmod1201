@@ -1,9 +1,11 @@
 package net.mcreator.fnafmod.procedures;
 
+import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -42,6 +44,7 @@ public class OnConnectCameraProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity, ItemStack itemstack, String usehand) {
 		if (entity == null || usehand == null)
 			return;
+		ItemStack stack = ItemStack.EMPTY;
 		if (FnafModModItems.LINK_CABLE.get() == itemstack.getItem() && FnafModModBlocks.SERVER.get() == blockstate.getBlock()) {
 			if (FnafModModBlocks.CAMERA_BLOCK.get() == (world.getBlockState(BlockPos.containing(itemstack.getOrCreateTag().getDouble("LinkX"), itemstack.getOrCreateTag().getDouble("LinkY"), itemstack.getOrCreateTag().getDouble("LinkZ"))))
 					.getBlock()) {
@@ -52,40 +55,35 @@ public class OnConnectCameraProcedure {
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 				}
-				if ((new Object() {
-					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getString(tag);
-						return "";
-					}
-				}.getValue(world, BlockPos.containing(x, y, z), "cameras")).isEmpty()) {
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putString("cameras", (itemstack.getOrCreateTag().getDouble("LinkX") + "," + itemstack.getOrCreateTag().getDouble("LinkY") + "," + itemstack.getOrCreateTag().getDouble("LinkZ")));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				stack = new ItemStack(FnafModModBlocks.CAMERA_HEAD_BLOCK.get()).copy();
+				stack.getOrCreateTag().putDouble("CameraLinkX", (itemstack.getOrCreateTag().getDouble("LinkX")));
+				stack.getOrCreateTag().putDouble("CameraLinkY", (itemstack.getOrCreateTag().getDouble("LinkY")));
+				stack.getOrCreateTag().putDouble("CameraLinkZ", (itemstack.getOrCreateTag().getDouble("LinkZ")));
+				if (0 == itemstack.getOrCreateTag().getDouble("NameChange")) {
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 1;
+							final ItemStack _setstack = stack.copy();
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
 					}
 				} else {
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putString("cameras", ((new Object() {
-								public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getString(tag);
-									return "";
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "cameras")) + ";" + itemstack.getOrCreateTag().getDouble("LinkX") + "," + itemstack.getOrCreateTag().getDouble("LinkY") + ","
-									+ itemstack.getOrCreateTag().getDouble("LinkZ")));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = (int) itemstack.getOrCreateTag().getDouble("NameChange");
+							final ItemStack _setstack = stack.copy();
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
 					}
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())

@@ -423,6 +423,8 @@ public class RenderMATPopupProcedure {
 						}
 					} else if (("interface").equals((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("mode"))) {
 						RenderSystem.setShaderTexture(0, new ResourceLocation(("fnaf_mod" + ":textures/" + "screens/mat_interface" + ".png")));
+					} else if (("death").equals((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("mode"))) {
+						RenderSystem.setShaderTexture(0, new ResourceLocation(("fnaf_mod" + ":textures/" + "screens/mat_death" + ".png")));
 					}
 				} else if (FnafModModItems.MAT.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem()) {
 					if (("rotate_clock").equals((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getString("mode"))) {
@@ -443,6 +445,8 @@ public class RenderMATPopupProcedure {
 						}
 					} else if (("interface").equals((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getString("mode"))) {
 						RenderSystem.setShaderTexture(0, new ResourceLocation(("fnaf_mod" + ":textures/" + "screens/mat_interface" + ".png")));
+					} else if (("death").equals((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getString("mode"))) {
+						RenderSystem.setShaderTexture(0, new ResourceLocation(("fnaf_mod" + ":textures/" + "screens/mat_death" + ".png")));
 					}
 				} else {
 					RenderSystem.setShaderTexture(0, new ResourceLocation(("fnaf_mod" + ":textures/" + "screens/mat" + ".png")));

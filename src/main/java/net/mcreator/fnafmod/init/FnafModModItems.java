@@ -208,7 +208,6 @@ import net.mcreator.fnafmod.block.display.SpringBonnieDecorDisplayItem;
 import net.mcreator.fnafmod.block.display.ShelfDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroFreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.RetroFreddySignDisplayItem;
-import net.mcreator.fnafmod.block.display.RetroComputerDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStripeTableDisplayItem;
 import net.mcreator.fnafmod.block.display.PurpleStarTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ProtonsPlushRatDisplayItem;
@@ -1178,7 +1177,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BUFFET_WALL_LIGHT = block(FnafModModBlocks.BUFFET_WALL_LIGHT);
 	public static final RegistryObject<Item> BUFFET_WALL_DARK = block(FnafModModBlocks.BUFFET_WALL_DARK);
 	public static final RegistryObject<Item> FLUORESCENT_LIGHT = REGISTRY.register(FnafModModBlocks.FLUORESCENT_LIGHT.getId().getPath(), () -> new FluorescentLightDisplayItem(FnafModModBlocks.FLUORESCENT_LIGHT.get(), new Item.Properties()));
-	public static final RegistryObject<Item> RETRO_COMPUTER = REGISTRY.register(FnafModModBlocks.RETRO_COMPUTER.getId().getPath(), () -> new RetroComputerDisplayItem(FnafModModBlocks.RETRO_COMPUTER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FLOOD_LIGHTS = REGISTRY.register(FnafModModBlocks.FLOOD_LIGHTS.getId().getPath(), () -> new FloodLightsDisplayItem(FnafModModBlocks.FLOOD_LIGHTS.get(), new Item.Properties()));
 	public static final RegistryObject<Item> WINDOWED_CYAN_DOOR = doubleBlock(FnafModModBlocks.WINDOWED_CYAN_DOOR);
 	public static final RegistryObject<Item> BUFFET_DOOR = doubleBlock(FnafModModBlocks.BUFFET_DOOR);
@@ -1309,6 +1307,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FIRE_AXE_BLOCK = REGISTRY.register(FnafModModBlocks.FIRE_AXE_BLOCK.getId().getPath(), () -> new FireAxeBlockDisplayItem(FnafModModBlocks.FIRE_AXE_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SHADOW_FREDDY_PLUSH = block(FnafModModBlocks.SHADOW_FREDDY_PLUSH);
 	public static final RegistryObject<Item> SHADOW_BONNIE_PLUSH = block(FnafModModBlocks.SHADOW_BONNIE_PLUSH);
+	public static final RegistryObject<Item> RETRO_COMPUTER = block(FnafModModBlocks.RETRO_COMPUTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

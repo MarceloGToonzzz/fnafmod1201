@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "fnaf_mod:custom/retro_computer_particle"
+      "model": "fnaf_mod:block/retro_computer"
     },
     "facing=east": {
-      "model": "fnaf_mod:custom/retro_computer_particle",
+      "model": "fnaf_mod:block/retro_computer",
       "y": 90
     },
     "facing=south": {
-      "model": "fnaf_mod:custom/retro_computer_particle",
+      "model": "fnaf_mod:block/retro_computer",
       "y": 180
     },
     "facing=west": {
-      "model": "fnaf_mod:custom/retro_computer_particle",
+      "model": "fnaf_mod:block/retro_computer",
       "y": 270
     }
   }
