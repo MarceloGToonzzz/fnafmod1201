@@ -16,7 +16,7 @@ import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -91,15 +91,15 @@ public class WallyWalrusEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(2, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(3, new WaterAvoidingRandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.3, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
+		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 	}
 
 	@Override

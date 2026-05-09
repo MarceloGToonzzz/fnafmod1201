@@ -35,6 +35,12 @@
         "1": "blacklight_golden_freddy_plush"
       },
       "name": "goldenblacklight"
+    },
+    "shadow": {
+      "map": {
+        "1": "shadow_freddy_plush"
+      },
+      "name": "shadow"
     }
   }
 }

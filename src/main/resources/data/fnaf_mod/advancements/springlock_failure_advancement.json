@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "fnaf_mod:spring_lock_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.springlock_failure_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.springlock_failure_advancement.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "springlock_failure_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 12000
+  },
+  "parent": "fnaf_mod:mask_advancement"
+}

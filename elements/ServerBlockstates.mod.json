@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Server",
+    "blockstateList": [
+      {
+        "texture": "remant_infuser_top",
+        "textureTop": "vendingtop",
+        "textureLeft": "server_side_off",
+        "textureFront": "server_side_off",
+        "textureRight": "server_side_off",
+        "textureBack": "server_side_off",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

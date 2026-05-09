@@ -1,0 +1,24 @@
+{
+  "_fv": 73,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "FNAF World",
+    "achievementDescription": "Enter FNAF WORLD",
+    "achievementIcon": {
+      "value": "CUSTOM:FazbearHillsGrass"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardXP": 20,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:FNAFMod"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"180\" y=\"83\"><next><block type=\"dimension_entered\"><field name=\"dimension\">CUSTOM:FNAFWorld</field></block></next></block></xml>"
+  }
+}

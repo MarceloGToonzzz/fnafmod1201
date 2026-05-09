@@ -12,17 +12,22 @@ import net.mcreator.fnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.fnafmod.entity.WitheredChicaEntity;
 import net.mcreator.fnafmod.entity.WitheredBonnieEntity;
+import net.mcreator.fnafmod.entity.WallyWalrusEntity;
 import net.mcreator.fnafmod.entity.ToyFreddyEntity;
 import net.mcreator.fnafmod.entity.ToyFoxyEntity;
 import net.mcreator.fnafmod.entity.ToyBonnieEntity;
 import net.mcreator.fnafmod.entity.SpringtrapEntity;
 import net.mcreator.fnafmod.entity.PuppetEntity;
+import net.mcreator.fnafmod.entity.PuffyPuffinsEntity;
 import net.mcreator.fnafmod.entity.NightimeToyChicaEntity;
 import net.mcreator.fnafmod.entity.MangleEntity;
+import net.mcreator.fnafmod.entity.HazyReindeerEntity;
+import net.mcreator.fnafmod.entity.GusPugEntity;
 import net.mcreator.fnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.fnafmod.entity.FoxyPirateEntity;
 import net.mcreator.fnafmod.entity.ChicaChickenEntity;
 import net.mcreator.fnafmod.entity.BonnieBunnyEntity;
+import net.mcreator.fnafmod.entity.BarryPolarEntity;
 import net.mcreator.fnafmod.entity.BBEntity;
 
 public class NightTurnDayProcedure {
@@ -208,6 +213,57 @@ public class NightTurnDayProcedure {
 							SetCoreDataProcedure.execute(entity, entityinstance, true, false);
 							_serverLevel.addFreshEntity(entityinstance);
 						}
+					}
+				}
+			}
+			if (entity instanceof BarryPolarEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAYTIME_BARRY_POLAR.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof GusPugEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAYTIME_GUS_PUG.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof PuffyPuffinsEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAYTIME_PUFFY_PUFFINS.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof HazyReindeerEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAYTIME_HAZY_REINDEER.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
+			} else if (entity instanceof WallyWalrusEntity) {
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = FnafModModEntities.DAYTIME_WALLY_WALRUS.get().create(_serverLevel, null, null,
+							BlockPos.containing(entity.getPersistentData().getDouble("x"), entity.getPersistentData().getDouble("y"), entity.getPersistentData().getDouble("z")), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						SetCoreDataProcedure.execute(entity, entityinstance, true, true);
+						_serverLevel.addFreshEntity(entityinstance);
 					}
 				}
 			}

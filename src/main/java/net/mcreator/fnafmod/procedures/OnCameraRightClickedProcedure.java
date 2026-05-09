@@ -27,7 +27,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.fnafmod.world.inventory.CameraPanelGUIMenu;
 import net.mcreator.fnafmod.init.FnafModModItems;
@@ -36,8 +35,6 @@ import net.mcreator.fnafmod.init.FnafModModBlocks;
 import javax.annotation.Nullable;
 
 import io.netty.buffer.Unpooled;
-
-import com.mojang.blaze3d.platform.InputConstants;
 
 @Mod.EventBusSubscriber
 public class OnCameraRightClickedProcedure {
@@ -82,7 +79,7 @@ public class OnCameraRightClickedProcedure {
 						}
 					}, _bpos);
 				}
-			} else if (("rotation").equals(itemstack.getOrCreateTag().getString("mode"))) {
+			} else if (("rotate_clock").equals(itemstack.getOrCreateTag().getString("mode"))) {
 				if (usehand.equals("offhand")) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.OFF_HAND, true);
@@ -90,107 +87,112 @@ public class OnCameraRightClickedProcedure {
 					if (entity instanceof LivingEntity _entity)
 						_entity.swing(InteractionHand.MAIN_HAND, true);
 				}
-				if (InputConstants.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), InputConstants.KEY_LCONTROL)) {
-					if (entity.isShiftKeyDown()) {
-						if (!(-36 > new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
-								}
-								return 0;
+				if (("y").equals(itemstack.getOrCreateTag().getString("settings"))) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~22.5 ~");
+				} else if (("x").equals(itemstack.getOrCreateTag().getString("settings"))) {
+					if (!(-36 > new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
 							}
-						}.convert(("a" + (new Object() {
-							public String getResult(LevelAccessor world, Vec3 pos, String _command) {
-								StringBuilder _result = new StringBuilder();
-								if (world instanceof ServerLevel _level) {
-									CommandSource _dataConsumer = new CommandSource() {
-										@Override
-										public void sendSystemMessage(Component message) {
-											_result.append(message.getString());
-										}
-
-										@Override
-										public boolean acceptsSuccess() {
-											return true;
-										}
-
-										@Override
-										public boolean acceptsFailure() {
-											return true;
-										}
-
-										@Override
-										public boolean shouldInformAdmins() {
-											return false;
-										}
-									};
-									_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
-								}
-								return _result.toString();
-							}
-						}.getResult(world, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), "data get entity @e[type=block_display,distance=..0.25,limit=1,sort=nearest] Rotation[1]"))).strip()))) {
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands().performPrefixedCommand(
-										new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-										"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~ ~-5");
+							return 0;
 						}
-					} else {
-						if (!(54 < new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
-								}
-								return 0;
+					}.convert(("a" + (new Object() {
+						public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+							StringBuilder _result = new StringBuilder();
+							if (world instanceof ServerLevel _level) {
+								CommandSource _dataConsumer = new CommandSource() {
+									@Override
+									public void sendSystemMessage(Component message) {
+										_result.append(message.getString());
+									}
+
+									@Override
+									public boolean acceptsSuccess() {
+										return true;
+									}
+
+									@Override
+									public boolean acceptsFailure() {
+										return true;
+									}
+
+									@Override
+									public boolean shouldInformAdmins() {
+										return false;
+									}
+								};
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
 							}
-						}.convert(("a" + (new Object() {
-							public String getResult(LevelAccessor world, Vec3 pos, String _command) {
-								StringBuilder _result = new StringBuilder();
-								if (world instanceof ServerLevel _level) {
-									CommandSource _dataConsumer = new CommandSource() {
-										@Override
-										public void sendSystemMessage(Component message) {
-											_result.append(message.getString());
-										}
-
-										@Override
-										public boolean acceptsSuccess() {
-											return true;
-										}
-
-										@Override
-										public boolean acceptsFailure() {
-											return true;
-										}
-
-										@Override
-										public boolean shouldInformAdmins() {
-											return false;
-										}
-									};
-									_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
-								}
-								return _result.toString();
-							}
-						}.getResult(world, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), "data get entity @e[type=block_display,distance=..0.25,limit=1,sort=nearest] Rotation[1]"))).strip()))) {
-							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands().performPrefixedCommand(
-										new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-										"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~ ~5");
+							return _result.toString();
 						}
+					}.getResult(world, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), "data get entity @e[type=block_display,distance=..0.25,limit=1,sort=nearest] Rotation[1]"))).strip()))) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~ ~-5");
 					}
+				}
+			} else if (("rotate_counter_clock").equals(itemstack.getOrCreateTag().getString("mode"))) {
+				if (usehand.equals("offhand")) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.OFF_HAND, true);
 				} else {
-					if (entity.isShiftKeyDown()) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+				}
+				if (("y").equals(itemstack.getOrCreateTag().getString("settings"))) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~-22.5 ~");
+				} else if (("x").equals(itemstack.getOrCreateTag().getString("settings"))) {
+					if (!(54 < new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(("a" + (new Object() {
+						public String getResult(LevelAccessor world, Vec3 pos, String _command) {
+							StringBuilder _result = new StringBuilder();
+							if (world instanceof ServerLevel _level) {
+								CommandSource _dataConsumer = new CommandSource() {
+									@Override
+									public void sendSystemMessage(Component message) {
+										_result.append(message.getString());
+									}
+
+									@Override
+									public boolean acceptsSuccess() {
+										return true;
+									}
+
+									@Override
+									public boolean acceptsFailure() {
+										return true;
+									}
+
+									@Override
+									public boolean shouldInformAdmins() {
+										return false;
+									}
+								};
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, pos, Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null), _command);
+							}
+							return _result.toString();
+						}
+					}.getResult(world, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), "data get entity @e[type=block_display,distance=..0.25,limit=1,sort=nearest] Rotation[1]"))).strip()))) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(
 									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~-22.5 ~");
-					} else {
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.5), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~22.5 ~");
+									"execute as @e[type=block_display,distance=..0.25] at @s run teleport @s ~ ~ ~ ~ ~5");
 					}
 				}
 			}

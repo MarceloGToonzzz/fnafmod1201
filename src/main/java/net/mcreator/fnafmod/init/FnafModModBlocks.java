@@ -149,6 +149,8 @@ import net.mcreator.fnafmod.block.SkyCurtainBlock;
 import net.mcreator.fnafmod.block.SkeeballBlock;
 import net.mcreator.fnafmod.block.SinkBlock;
 import net.mcreator.fnafmod.block.ShelfBlock;
+import net.mcreator.fnafmod.block.ShadowFreddyPlushBlock;
+import net.mcreator.fnafmod.block.ShadowBonniePlushBlock;
 import net.mcreator.fnafmod.block.ShackRandomizerBlock;
 import net.mcreator.fnafmod.block.ServerBlock;
 import net.mcreator.fnafmod.block.SecurityDoorOpenBlock;
@@ -1222,7 +1224,6 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> BUFFET_WALL_LIGHT = REGISTRY.register("buffet_wall_light", () -> new BuffetWallLightBlock());
 	public static final RegistryObject<Block> BUFFET_WALL_DARK = REGISTRY.register("buffet_wall_dark", () -> new BuffetWallDarkBlock());
 	public static final RegistryObject<Block> FLUORESCENT_LIGHT = REGISTRY.register("fluorescent_light", () -> new FluorescentLightBlock());
-	public static final RegistryObject<Block> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> new RetroComputerBlock());
 	public static final RegistryObject<Block> FLOOD_LIGHTS = REGISTRY.register("flood_lights", () -> new FloodLightsBlock());
 	public static final RegistryObject<Block> WINDOWED_CYAN_DOOR = REGISTRY.register("windowed_cyan_door", () -> new WindowedCyanDoorBlock());
 	public static final RegistryObject<Block> BUFFET_DOOR = REGISTRY.register("buffet_door", () -> new BuffetDoorBlock());
@@ -1324,6 +1325,9 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> CAMERA_BLOCK = REGISTRY.register("camera_block", () -> new CameraBlockBlock());
 	public static final RegistryObject<Block> CAMERA_HEAD_BLOCK = REGISTRY.register("camera_head_block", () -> new CameraHeadBlockBlock());
 	public static final RegistryObject<Block> FIRE_AXE_BLOCK = REGISTRY.register("fire_axe_block", () -> new FireAxeBlockBlock());
+	public static final RegistryObject<Block> SHADOW_FREDDY_PLUSH = REGISTRY.register("shadow_freddy_plush", () -> new ShadowFreddyPlushBlock());
+	public static final RegistryObject<Block> SHADOW_BONNIE_PLUSH = REGISTRY.register("shadow_bonnie_plush", () -> new ShadowBonniePlushBlock());
+	public static final RegistryObject<Block> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> new RetroComputerBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

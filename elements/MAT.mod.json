@@ -38,6 +38,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "MATTick"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

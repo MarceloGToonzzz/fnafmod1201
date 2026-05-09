@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "fnaf_mod:retro_computer",
     "fnaf_mod:camera_head_block",
     "fnaf_mod:camera_block",
     "fnaf_mod:server",

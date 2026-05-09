@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "fnaf_mod:spring_lock_suit_helmet",
+    "fnaf_mod:spring_lock_suit_chestplate",
+    "fnaf_mod:spring_lock_suit_leggings",
+    "fnaf_mod:spring_lock_suit_boots",
+    "fnaf_mod:fredbear_spring_lock_suit_helmet",
+    "fnaf_mod:fredbear_spring_lock_suit_chestplate",
+    "fnaf_mod:fredbear_spring_lock_suit_leggings",
+    "fnaf_mod:fredbear_spring_lock_suit_boots",
+    "fnaf_mod:springlocked_suit_helmet",
+    "fnaf_mod:springlocked_suit_chestplate",
+    "fnaf_mod:springlocked_suit_leggings",
+    "fnaf_mod:springlocked_suit_boots",
+    "fnaf_mod:springlocked_fredbear_suit_helmet",
+    "fnaf_mod:springlocked_fredbear_suit_chestplate",
+    "fnaf_mod:springlocked_fredbear_suit_leggings",
+    "fnaf_mod:springlocked_fredbear_suit_boots"
+  ]
+}

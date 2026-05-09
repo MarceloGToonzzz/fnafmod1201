@@ -18,6 +18,7 @@ import net.minecraft.commands.Commands;
 
 import net.mcreator.fnafmod.procedures.TPToFNAFWorldProcedure;
 import net.mcreator.fnafmod.procedures.OutletDrainResetProcedure;
+import net.mcreator.fnafmod.procedures.DataClientProcedure;
 import net.mcreator.fnafmod.procedures.CommandMinPowerConfigProcedure;
 import net.mcreator.fnafmod.procedures.CommandCleanupDisplayShelvesProcedure;
 import net.mcreator.fnafmod.procedures.CommandAccessChangeProcedure;
@@ -84,7 +85,21 @@ public class FnafModCommandsCommand {
 
 			OutletDrainResetProcedure.execute(world, arguments);
 			return 0;
-		}))))).then(Commands.literal("fnafworld").then(Commands.argument("target", EntityArgument.entities()).executes(arguments -> {
+		})))).then(Commands.literal("dataClient").executes(arguments -> {
+			Level world = arguments.getSource().getUnsidedLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null && world instanceof ServerLevel _servLevel)
+				entity = FakePlayerFactory.getMinecraft(_servLevel);
+			Direction direction = Direction.DOWN;
+			if (entity != null)
+				direction = entity.getDirection();
+
+			DataClientProcedure.execute(world);
+			return 0;
+		}))).then(Commands.literal("fnafworld").then(Commands.argument("target", EntityArgument.entities()).executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();

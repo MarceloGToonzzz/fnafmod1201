@@ -107,9 +107,9 @@
     "isBonemealable": false,
     "hasInventory": true,
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 12,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
+    "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
@@ -121,6 +121,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRedstoneOn": {
+      "name": "ServerRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "ServerRedstoneOff"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/retro_pc_1",
+  "textures": {
+    "all": "fnaf_mod:block/mpretterm",
+    "particle": "fnaf_mod:block/mpretterm",
+    "1": "fnaf_mod:block/mpretterm"
+  },
+  "render_type": "solid"
+}
