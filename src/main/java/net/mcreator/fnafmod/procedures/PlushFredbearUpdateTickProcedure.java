@@ -13,6 +13,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.init.FnafModModGameRules;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 import net.mcreator.fnafmod.entity.NightmarionneEntity;
 import net.mcreator.fnafmod.entity.NightmareFredbearEntity;
@@ -22,86 +23,88 @@ public class PlushFredbearUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double rand = 0;
 		double rand2 = 0;
-		if (!(world instanceof Level _lvl0 && _lvl0.isDay())) {
-			rand = Mth.nextInt(RandomSource.create(), 1, 100);
-			rand2 = Mth.nextInt(RandomSource.create(), 1, 2);
-			if (new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "FNAFTimer") == 0) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("FNAFTimer", 20);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-			} else {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("FNAFTimer", ((new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "FNAFTimer")) - 1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-			}
-			if (11 < world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z))) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("FNAFTimer", 20);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-			}
-			if (new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "FNAFTimer") == 0 && 10 >= world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z))) {
-				if (!(!world.getEntitiesOfClass(NightmarionneEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty())
-						&& !(!world.getEntitiesOfClass(NightmareFredbearEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty()) && 75 >= rand) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = FnafModModEntities.NIGHTMARE_FREDBEAR.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-						}
+		if (world.getLevelData().getGameRules().getBoolean(FnafModModGameRules.NIGHTMARE_SPAWNING_GAMERULE)) {
+			if (!(world instanceof Level _lvl1 && _lvl1.isDay())) {
+				rand = Mth.nextInt(RandomSource.create(), 1, 100);
+				rand2 = Mth.nextInt(RandomSource.create(), 1, 2);
+				if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
 					}
-				} else if (!(!world.getEntitiesOfClass(NightmarionneEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty())
-						&& !(!world.getEntitiesOfClass(NightmareFredbearEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty())
-						&& !(!world.getEntitiesOfClass(NightmareEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty()) && 75 < rand) {
-					if (rand2 == 1) {
+				}.getValue(world, BlockPos.containing(x, y, z), "FNAFTimer") == 0) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("FNAFTimer", 20);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				} else {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("FNAFTimer", ((new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "FNAFTimer")) - 1));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				}
+				if (11 < world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z))) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("FNAFTimer", 20);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				}
+				if (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "FNAFTimer") == 0 && 10 >= world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z))) {
+					if (!(!world.getEntitiesOfClass(NightmarionneEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty())
+							&& !(!world.getEntitiesOfClass(NightmareFredbearEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty()) && 75 >= rand) {
 						if (world instanceof ServerLevel _level) {
-							Entity entityToSpawn = FnafModModEntities.NIGHTMARIONNE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							Entity entityToSpawn = FnafModModEntities.NIGHTMARE_FREDBEAR.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 							if (entityToSpawn != null) {
 								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-					} else if (rand2 == 2) {
-						if (world instanceof ServerLevel _level) {
-							Entity entityToSpawn = FnafModModEntities.NIGHTMARE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-							if (entityToSpawn != null) {
-								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					} else if (!(!world.getEntitiesOfClass(NightmarionneEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty())
+							&& !(!world.getEntitiesOfClass(NightmareFredbearEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty())
+							&& !(!world.getEntitiesOfClass(NightmareEntity.class, AABB.ofSize(new Vec3(x, y, z), 50, 50, 50), e -> true).isEmpty()) && 75 < rand) {
+						if (rand2 == 1) {
+							if (world instanceof ServerLevel _level) {
+								Entity entityToSpawn = FnafModModEntities.NIGHTMARIONNE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+								if (entityToSpawn != null) {
+									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+								}
+							}
+						} else if (rand2 == 2) {
+							if (world instanceof ServerLevel _level) {
+								Entity entityToSpawn = FnafModModEntities.NIGHTMARE.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+								if (entityToSpawn != null) {
+									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+								}
 							}
 						}
 					}

@@ -13146,12 +13146,12 @@
       "registry_name": "plush_bonnie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/PlushBonnieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/plush_bonnie.json",
           "src/main/resources/assets/fnaf_mod/blockstates/plush_bonnie.json",
-          "src/main/resources/assets/fnaf_mod/models/block/plush_bonnie.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/PlushBonnieBlockEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/PlushBonnieBlock.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/plush_bonnie.json",
-          "src/main/resources/assets/fnaf_mod/models/item/plush_bonnie.json"
+          "src/main/java/net/mcreator/fnafmod/block/entity/PlushBonnieBlockEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/plush_bonnie.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -13164,12 +13164,12 @@
       "registry_name": "plush_chica",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/entity/PlushChicaBlockEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/PlushChicaBlock.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/plush_chica.json",
-          "src/main/resources/assets/fnaf_mod/models/block/plush_chica.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/PlushChicaBlockEntity.java",
           "src/main/resources/assets/fnaf_mod/blockstates/plush_chica.json",
           "src/main/resources/assets/fnaf_mod/models/item/plush_chica.json",
-          "src/main/java/net/mcreator/fnafmod/block/PlushChicaBlock.java"
+          "src/main/resources/assets/fnaf_mod/models/block/plush_chica.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -13182,12 +13182,12 @@
       "registry_name": "plush_foxy",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/blockstates/plush_foxy.json",
-          "src/main/java/net/mcreator/fnafmod/block/PlushFoxyBlock.java",
-          "src/main/resources/data/fnaf_mod/loot_tables/blocks/plush_foxy.json",
           "src/main/java/net/mcreator/fnafmod/block/entity/PlushFoxyBlockEntity.java",
           "src/main/resources/assets/fnaf_mod/models/block/plush_foxy.json",
-          "src/main/resources/assets/fnaf_mod/models/item/plush_foxy.json"
+          "src/main/java/net/mcreator/fnafmod/block/PlushFoxyBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/plush_foxy.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/plush_foxy.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/plush_foxy.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks"
@@ -13200,11 +13200,11 @@
       "registry_name": "plush_fredbear",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/block/plush_fredbear.json",
           "src/main/java/net/mcreator/fnafmod/block/entity/PlushFredbearBlockEntity.java",
-          "src/main/java/net/mcreator/fnafmod/block/PlushFredbearBlock.java",
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/plush_fredbear.json",
+          "src/main/resources/assets/fnaf_mod/models/block/plush_fredbear.json",
           "src/main/resources/assets/fnaf_mod/blockstates/plush_fredbear.json",
+          "src/main/java/net/mcreator/fnafmod/block/PlushFredbearBlock.java",
           "src/main/resources/assets/fnaf_mod/models/item/plush_fredbear.json"
         ]
       },
@@ -35879,6 +35879,18 @@
         ]
       },
       "path": "~/Advancements"
+    },
+    {
+      "name": "NightmareSpawningGamerule",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_spawning_gamerule",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -38335,8 +38347,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -38345,19 +38357,19 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
       "block.fnaf_mod.clownful_doll": "Clownfull Doll",
       "block.fnaf_mod.blueprint_tile": "Blueprint Tile",
-      "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
       "item.fnaf_mod.pizza_slice": "Pizza Slice",
+      "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -39277,6 +39289,7 @@
       "block.fnaf_mod.big_backstage_door": "Big Backstage Door",
       "block.fnaf_mod.red_blue_tile_stair": "Red Blue Tile Stairs",
       "entity.fnaf_mod.crying_child": "Crying Child",
+      "gamerule.nightmareSpawningGamerule.description": "Toggles nightmares spawning from plushes.",
       "item.fnaf_mod.freddy_stand_spawn_egg": "Freddy Stand Spawn Egg",
       "item.fnaf_mod.spring_lock_suit_helmet": "Spring Lock Suit Head",
       "block.fnaf_mod.sun": "Sun Decoration",
@@ -39303,6 +39316,7 @@
       "item.fnaf_mod.toy_box_spawn_egg": "Toy Box Spawn Egg",
       "block.fnaf_mod.booth_bench": "Booth Bench",
       "item.fnaf_mod.adventure_springtrap_spawn_egg": "Adventure Springtrap Spawn Egg",
+      "gamerule.nightmareSpawningGamerule": "Plush Functionality",
       "biome.fnaf_mod.liligear_lake": "Liligear Lake",
       "biome.fnaf_mod.dusting_fields": "Dusting Fields",
       "item.fnaf_mod.adv_freddy": "Freddy Fazbear",
