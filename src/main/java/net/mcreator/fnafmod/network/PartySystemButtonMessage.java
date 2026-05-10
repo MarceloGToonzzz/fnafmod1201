@@ -12,12 +12,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.world.inventory.PartySystemMenu;
-import net.mcreator.fnafmod.procedures.WChicaSelectProcedure;
-import net.mcreator.fnafmod.procedures.SpringtrapSelectProcedure;
-import net.mcreator.fnafmod.procedures.ResetButtonActionProcedure;
-import net.mcreator.fnafmod.procedures.MangleSelectProcedure;
-import net.mcreator.fnafmod.procedures.FreddySelectProcedure;
-import net.mcreator.fnafmod.procedures.FredbearSelectProcedure;
+import net.mcreator.fnafmod.procedures.PartySelectorSlotButtonPressedProcedure;
+import net.mcreator.fnafmod.procedures.PartySelectorResetButtonPressedProcedure;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.function.Supplier;
@@ -69,27 +65,11 @@ public class PartySystemButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ResetButtonActionProcedure.execute(entity);
-		}
-		if (buttonID == 1) {
-
-			WChicaSelectProcedure.execute(entity);
+			PartySelectorResetButtonPressedProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			FreddySelectProcedure.execute(entity);
-		}
-		if (buttonID == 3) {
-
-			MangleSelectProcedure.execute(entity);
-		}
-		if (buttonID == 4) {
-
-			SpringtrapSelectProcedure.execute(entity);
-		}
-		if (buttonID == 5) {
-
-			FredbearSelectProcedure.execute(entity);
+			PartySelectorSlotButtonPressedProcedure.execute(entity);
 		}
 	}
 

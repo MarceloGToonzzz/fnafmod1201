@@ -3,144 +3,59 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 122,
-    "height": 66,
+    "width": 294,
+    "height": 122,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
-        "type": "imagebutton",
+        "type": "image",
         "data": {
-          "name": "imagebutton_adventure_withered_chica_icon",
-          "image": "adventure_withered_chica_icon.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "WChicaSelect"
-          },
-          "displayCondition": {
-            "name": "AWChiGui"
-          },
-          "x": 186,
-          "y": 103,
-          "locked": false
+          "image": "party_selector_page_1.png",
+          "use1Xscale": false,
+          "x": 135,
+          "y": 59,
+          "locked": true
         }
       },
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_adventure_freddy_icon",
-          "image": "adventure__freddy_icon.png",
+          "name": "imagebutton_party_selector_reset_button",
+          "image": "party_selector_reset_button.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "FreddySelect"
+            "name": "PartySelectorResetButtonPressed"
           },
-          "displayCondition": {
-            "name": "AFredGui"
-          },
-          "x": 168,
-          "y": 103,
+          "x": 291,
+          "y": 133,
           "locked": false
         }
       },
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_adventure_mangle_icon",
-          "image": "adventure__mangle_icon.png",
+          "name": "imagebutton_party_selector_done_button",
+          "image": "party_selector_done_button.png",
           "hoveredImage": "",
-          "onClick": {
-            "name": "MangleSelect"
-          },
-          "displayCondition": {
-            "name": "AMangGUI"
-          },
-          "x": 204,
-          "y": 103,
+          "x": 291,
+          "y": 154,
           "locked": false
         }
       },
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_adventure_springtrap_icon",
-          "image": "adventure__springtrap_icon.png",
+          "name": "imagebutton_party_selector_slot_button",
+          "image": "party_selector_slot_button.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "SpringtrapSelect"
+            "name": "PartySelectorSlotButtonPressed"
           },
-          "displayCondition": {
-            "name": "ASprGui"
-          },
-          "x": 222,
-          "y": 103,
-          "locked": false
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_adventure_fredbear_icon",
-          "image": "adventure__fredbear_icon.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "FredbearSelect"
-          },
-          "displayCondition": {
-            "name": "AFredbGui"
-          },
-          "x": 240,
-          "y": 103,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_select_a_party_member",
-          "text": {
-            "fixedValue": "Select a party member!"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 157,
-          "y": 91,
-          "locked": false
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_reset",
-          "text": "Reset",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "ResetButtonAction"
-          },
-          "width": 51,
-          "height": 20,
-          "x": 157,
-          "y": 129,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_party_list",
-          "text": {
-            "fixedValue": "",
-            "name": "PartyList"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 219,
-          "y": 134,
+          "x": 142,
+          "y": 66,
           "locked": false
         }
       }

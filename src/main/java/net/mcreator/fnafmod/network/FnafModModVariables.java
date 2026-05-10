@@ -93,6 +93,14 @@ public class FnafModModVariables {
 			clone.PartyAmount = original.PartyAmount;
 			clone.Spawned = original.Spawned;
 			clone.CanFightScott = original.CanFightScott;
+			clone.partyMember0 = original.partyMember0;
+			clone.partyMember1 = original.partyMember1;
+			clone.partyMember2 = original.partyMember2;
+			clone.partyMember3 = original.partyMember3;
+			clone.partyMember4 = original.partyMember4;
+			clone.partyMember5 = original.partyMember5;
+			clone.partyMember6 = original.partyMember6;
+			clone.partyMember7 = original.partyMember7;
 			if (!event.isWasDeath()) {
 				clone.goldenkill = original.goldenkill;
 				clone.WitheredGoldenFreddyJumpscare = original.WitheredGoldenFreddyJumpscare;
@@ -330,6 +338,14 @@ public class FnafModModVariables {
 		public double PartyAmount = 0;
 		public boolean Spawned = false;
 		public boolean CanFightScott = false;
+		public double partyMember0 = -1.0;
+		public double partyMember1 = -1.0;
+		public double partyMember2 = -1.0;
+		public double partyMember3 = -1.0;
+		public double partyMember4 = -1.0;
+		public double partyMember5 = -1.0;
+		public double partyMember6 = -1.0;
+		public double partyMember7 = -1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -368,6 +384,14 @@ public class FnafModModVariables {
 			nbt.putDouble("PartyAmount", PartyAmount);
 			nbt.putBoolean("Spawned", Spawned);
 			nbt.putBoolean("CanFightScott", CanFightScott);
+			nbt.putDouble("partyMember0", partyMember0);
+			nbt.putDouble("partyMember1", partyMember1);
+			nbt.putDouble("partyMember2", partyMember2);
+			nbt.putDouble("partyMember3", partyMember3);
+			nbt.putDouble("partyMember4", partyMember4);
+			nbt.putDouble("partyMember5", partyMember5);
+			nbt.putDouble("partyMember6", partyMember6);
+			nbt.putDouble("partyMember7", partyMember7);
 			return nbt;
 		}
 
@@ -403,6 +427,14 @@ public class FnafModModVariables {
 			PartyAmount = nbt.getDouble("PartyAmount");
 			Spawned = nbt.getBoolean("Spawned");
 			CanFightScott = nbt.getBoolean("CanFightScott");
+			partyMember0 = nbt.getDouble("partyMember0");
+			partyMember1 = nbt.getDouble("partyMember1");
+			partyMember2 = nbt.getDouble("partyMember2");
+			partyMember3 = nbt.getDouble("partyMember3");
+			partyMember4 = nbt.getDouble("partyMember4");
+			partyMember5 = nbt.getDouble("partyMember5");
+			partyMember6 = nbt.getDouble("partyMember6");
+			partyMember7 = nbt.getDouble("partyMember7");
 		}
 	}
 
@@ -457,6 +489,14 @@ public class FnafModModVariables {
 					variables.PartyAmount = message.data.PartyAmount;
 					variables.Spawned = message.data.Spawned;
 					variables.CanFightScott = message.data.CanFightScott;
+					variables.partyMember0 = message.data.partyMember0;
+					variables.partyMember1 = message.data.partyMember1;
+					variables.partyMember2 = message.data.partyMember2;
+					variables.partyMember3 = message.data.partyMember3;
+					variables.partyMember4 = message.data.partyMember4;
+					variables.partyMember5 = message.data.partyMember5;
+					variables.partyMember6 = message.data.partyMember6;
+					variables.partyMember7 = message.data.partyMember7;
 				}
 			});
 			context.setPacketHandled(true);

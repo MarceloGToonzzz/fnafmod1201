@@ -35891,6 +35891,160 @@
         "type": "logic"
       },
       "path": "~/Commands"
+    },
+    {
+      "name": "GetPartySelectorTextureUVs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_party_selector_texture_u_vs",
+      "metadata": {
+        "return_type": "shape",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GetPartySelectorTextureUVsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "PartySelectorOverlays",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_selector_overlays",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PartySelectorOverlaysProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "PartySelectorSlotButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_selector_slot_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PartySelectorSlotButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "GetSelectPosition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_select_position",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GetSelectPositionProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "PartySelectorAddToList",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_selector_add_to_list",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PartySelectorAddToListProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "PartyIndexToXPosition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_index_to_x_position",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PartyIndexToXPositionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "PartyIndexToYPosition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_index_to_y_position",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PartyIndexToYPositionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "index",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "PartySelectorResetButtonPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "party_selector_reset_button_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/PartySelectorResetButtonPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Client/GUI/Party Selector"
     }
   ],
   "variable_elements": [
@@ -36151,6 +36305,54 @@
       "type": "string",
       "scope": "world",
       "value": "\"\""
+    },
+    {
+      "name": "partyMember0",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember3",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember4",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember5",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember6",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
+    },
+    {
+      "name": "partyMember7",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "-1.0"
     }
   ],
   "sound_elements": [
@@ -36720,6 +36922,14 @@
       ],
       "category": "block",
       "subtitle": "Rat Noises"
+    },
+    {
+      "name": "select",
+      "files": [
+        "select"
+      ],
+      "category": "master",
+      "subtitle": "Select"
     }
   ],
   "tag_elements": {
@@ -39401,6 +39611,7 @@
       "block.fnaf_mod.fnaf_3_posters.description_1": "(Right Click to Change)",
       "block.fnaf_mod.movie_exterior_top.description_0": "Top",
       "item.fnaf_mod.wally_walrus_spawn_egg": "Wally Walrus Spawn Egg",
+      "subtitles.select": "Select",
       "entity.fnaf_mod.withered_chica": "Withered Chica",
       "item.fnaf_mod.unwithered_bonnie_spawn_item": "Unwithered Bonnie",
       "block.fnaf_mod.carrot_curtain": "Carrot Curtain",
@@ -40192,6 +40403,15 @@
           {
             "name": "World",
             "children": []
+          },
+          {
+            "name": "GUI",
+            "children": [
+              {
+                "name": "Party Selector",
+                "children": []
+              }
+            ]
           }
         ]
       }
