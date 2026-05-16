@@ -3,6 +3,8 @@ package net.mcreator.fnafmod.procedures;
 import org.joml.Vector3f;
 import org.joml.Matrix4f;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -15,8 +17,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
@@ -36,6 +40,9 @@ import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.Minecraft;
+
+import net.mcreator.fnafmod.network.FnafModModVariables;
+import net.mcreator.fnafmod.init.FnafModModItems;
 
 import javax.annotation.Nullable;
 
@@ -229,7 +236,7 @@ public class RenderConnectionsProcedure {
 			ClientLevel level = Minecraft.getInstance().level;
 			Entity entity = provider.getCamera().getEntity();
 			Vec3 pos = entity.getPosition(provider.getPartialTick());
-			execute(provider);
+			execute(provider, level, entity);
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.disableBlend();
 			RenderSystem.enableCull();
@@ -238,11 +245,13 @@ public class RenderConnectionsProcedure {
 		}
 	}
 
-	public static void execute() {
-		execute(null);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+		if (entity == null)
+			return;
 		double xPosition = 0;
 		double yPosition = 0;
 		double zPosition = 0;
@@ -250,5 +259,68 @@ public class RenderConnectionsProcedure {
 		double zPosition2 = 0;
 		double xPosition2 = 0;
 		String connect = "";
+		if (!(FnafModModVariables.WorldVariables.get(world).Connections).isEmpty()) {
+			connect = FnafModModVariables.WorldVariables.get(world).Connections;
+			while (connect.contains("x")) {
+				xPosition = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(connect.substring((int) connect.indexOf("x") + "x".length(), (int) connect.indexOf("a")));
+				yPosition = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(connect.substring((int) connect.indexOf("y") + "y".length(), (int) connect.indexOf("b")));
+				zPosition = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(connect.substring((int) connect.indexOf("z") + "z".length(), (int) connect.indexOf("c")));
+				xPosition2 = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(connect.substring((int) connect.indexOf("u") + "u".length(), (int) connect.indexOf("d")));
+				yPosition2 = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(connect.substring((int) connect.indexOf("v") + "v".length(), (int) connect.indexOf("e")));
+				zPosition2 = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(connect.substring((int) connect.indexOf("w") + "w".length(), (int) connect.indexOf("f")));
+				if (FnafModModItems.LINK_CABLE.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+					renderLine((xPosition + 0.5), (yPosition + 0.5), (zPosition + 0.5), (xPosition2 + 0.5), (yPosition2 + 0.5), (zPosition2 + 0.5), 255 << 24 | 255 << 16 | 255 << 8 | 255);
+				}
+				connect = connect.substring((int) (connect.indexOf("f") + 1), (connect).length());
+			}
+		}
 	}
 }

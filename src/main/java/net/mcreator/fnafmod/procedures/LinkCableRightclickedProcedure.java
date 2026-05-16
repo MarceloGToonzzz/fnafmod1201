@@ -23,7 +23,7 @@ public class LinkCableRightClickedProcedure {
 			itemstack.getOrCreateTag().putDouble("LinkY", 0);
 			itemstack.getOrCreateTag().putDouble("LinkZ", 0);
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Cleared linking selections"), true);
+				_player.displayClientMessage(Component.literal((Component.translatable("item.fnaf_mod.link_cable.clear").getString())), true);
 			{
 				Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments(itemstack);
 				if (_enchantments.containsKey(Enchantments.BINDING_CURSE)) {
@@ -39,7 +39,7 @@ public class LinkCableRightClickedProcedure {
 			}
 			itemstack.setHoverName(Component.literal(("" + new java.text.DecimalFormat("##").format(itemstack.getOrCreateTag().getDouble("NameChange")))));
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("Now set to:" + new java.text.DecimalFormat("##").format(itemstack.getOrCreateTag().getDouble("NameChange")))), true);
+				_player.displayClientMessage(Component.literal((Component.translatable("item.fnaf_mod.link_cable.set").getString() + "" + new java.text.DecimalFormat("##").format(itemstack.getOrCreateTag().getDouble("NameChange")))), true);
 		}
 	}
 }

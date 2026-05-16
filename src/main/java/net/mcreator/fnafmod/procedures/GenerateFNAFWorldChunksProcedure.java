@@ -38,64 +38,72 @@ public class GenerateFNAFWorldChunksProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double xPos = 0;
+		double zPos = 0;
 		if (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("fnaf_mod:fnaf_world")) == (entity.level().dimension())) {
-			for (int chuckX = (int) 0; chuckX < (int) (Minecraft.getInstance().options.renderDistance().get() * 2); chuckX++) {
-				for (int chuckZ = (int) 0; chuckZ < (int) (Minecraft.getInstance().options.renderDistance().get() * 2); chuckZ++) {
-					if (world.hasChunkAt(
-							BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 0, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48))) {
-						if (!(FnafModModBlocks.ERROR_TILE.get() == (world.getBlockState(
-								BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 0, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48)))
-								.getBlock())) {
-							world.setBlock(
-									BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 0, (chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-									FnafModModBlocks.ERROR_TILE.get().defaultBlockState(), 3);
-							if (Math.random() < (1) / ((float) 30)) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_cave"));
-									if (template != null) {
-										template.placeInWorld(_serverworld,
-												BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 1,
-														(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-												BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 1,
-														(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							} else {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_cave_normal_0"));
-									if (template != null) {
-										template.placeInWorld(_serverworld,
-												BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 1,
-														(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-												BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 1,
-														(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-								if (Math.random() < (1) / ((float) 20)) {
+			if (24 < entity.getY()) {
+				for (int chuckX = (int) 0; chuckX < (int) (Minecraft.getInstance().options.renderDistance().get()); chuckX++) {
+					for (int chuckZ = (int) 0; chuckZ < (int) (Minecraft.getInstance().options.renderDistance().get()); chuckZ++) {
+						xPos = (chuckX - Minecraft.getInstance().options.renderDistance().get() / 2 + Math.floor(x / 48)) * 48;
+						zPos = (chuckZ - Minecraft.getInstance().options.renderDistance().get() / 2 + Math.floor(z / 48)) * 48;
+						if (world.hasChunkAt(BlockPos.containing(xPos, 0, zPos))) {
+							if (!(FnafModModBlocks.ERROR_TILE.get() == (world.getBlockState(BlockPos.containing(xPos, 0, zPos))).getBlock())) {
+								world.setBlock(BlockPos.containing(xPos, 0, zPos), FnafModModBlocks.ERROR_TILE.get().defaultBlockState(), 3);
+								if (Math.random() < (1) / ((float) 30) && !(FnafModModBlocks.ERROR_TILE.get() == (world.getBlockState(BlockPos.containing(xPos + 1, 0, zPos))).getBlock())) {
+									world.setBlock(BlockPos.containing(xPos + 1, 0, zPos), FnafModModBlocks.ERROR_TILE.get().defaultBlockState(), 3);
 									if (world instanceof ServerLevel _serverworld) {
-										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_top_mansion_0"));
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_cave"));
 										if (template != null) {
-											template.placeInWorld(_serverworld,
-													BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 25,
-															(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-													BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 25,
-															(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
+											template.placeInWorld(_serverworld, BlockPos.containing(xPos, 1, zPos), BlockPos.containing(xPos, 1, zPos),
 													new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 										}
 									}
 								} else {
-									if (world instanceof ServerLevel _serverworld) {
-										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_top_normal_0"));
-										if (template != null) {
-											template.placeInWorld(_serverworld,
-													BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 25,
-															(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-													BlockPos.containing((chuckX - Minecraft.getInstance().options.renderDistance().get() + Math.floor(x / 48)) * 48, 25,
-															(chuckZ - Minecraft.getInstance().options.renderDistance().get() + Math.floor(z / 48)) * 48),
-													new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+									if ((world.getLevelData().getGameTime()) % 5 == 0) {
+										if (world instanceof ServerLevel _serverworld) {
+											StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "choppys_woods_0"));
+											if (template != null) {
+												template.placeInWorld(_serverworld, BlockPos.containing(xPos, 25, zPos), BlockPos.containing(xPos, 25, zPos),
+														new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+											}
 										}
+									} else {
+										if (Math.random() < (1) / ((float) 20)) {
+											if (world instanceof ServerLevel _serverworld) {
+												StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_top_mansion_0"));
+												if (template != null) {
+													template.placeInWorld(_serverworld, BlockPos.containing(xPos, 25, zPos), BlockPos.containing(xPos, 25, zPos),
+															new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+												}
+											}
+										} else {
+											if (world instanceof ServerLevel _serverworld) {
+												StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_top_normal_0"));
+												if (template != null) {
+													template.placeInWorld(_serverworld, BlockPos.containing(xPos, 25, zPos), BlockPos.containing(xPos, 25, zPos),
+															new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			} else {
+				for (int chuckX = (int) 0; chuckX < (int) 3; chuckX++) {
+					for (int chuckZ = (int) 0; chuckZ < (int) 3; chuckZ++) {
+						xPos = (chuckX - 1 + Math.floor(x / 48)) * 48;
+						zPos = (chuckZ - 1 + Math.floor(z / 48)) * 48;
+						if (world.hasChunkAt(BlockPos.containing(xPos, 0, zPos))) {
+							if (!(FnafModModBlocks.ERROR_TILE.get() == (world.getBlockState(BlockPos.containing(xPos + 1, 0, zPos))).getBlock())) {
+								world.setBlock(BlockPos.containing(xPos + 1, 0, zPos), FnafModModBlocks.ERROR_TILE.get().defaultBlockState(), 3);
+								if (world instanceof ServerLevel _serverworld) {
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fnaf_world_cave_normal_0"));
+									if (template != null) {
+										template.placeInWorld(_serverworld, BlockPos.containing(xPos, 1, zPos), BlockPos.containing(xPos, 1, zPos),
+												new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 									}
 								}
 							}
