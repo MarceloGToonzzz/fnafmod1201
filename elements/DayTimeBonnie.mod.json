@@ -105,7 +105,7 @@
       "value": ""
     },
     "onRightClickedOn": {
-      "name": "MatPickup"
+      "name": "DaytimeClick"
     },
     "onMobTickUpdate": {
       "name": "DaytimeTick"

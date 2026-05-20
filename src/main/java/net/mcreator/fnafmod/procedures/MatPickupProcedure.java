@@ -34,57 +34,59 @@ public class MatPickupProcedure {
 		boolean success = false;
 		String item = "";
 		if (itemstack.getItem() == FnafModModItems.MAT.get()) {
-			if (!(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("passive") && !(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("full_hostile")
-					&& !(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("statue")) {
-				item = (((((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("fnaf_mod:", "")).replace("ded_", "")).replace("sitting_", "")).replace("daytime_", "")).replace("day_time_", "");
-				item = item + "_spawn_item";
-			} else {
-				if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("passive")) {
-					if (entity instanceof PassiveFreddyEntity) {
-						item = "freddy";
-					} else if (entity instanceof PassiveBonnieEntity) {
-						item = "bonnie";
-					} else if (entity instanceof PassiveChicaEntity) {
-						item = "chica";
-					} else if (entity instanceof PassiveFoxyEntity) {
-						item = "foxy";
-					} else if (entity instanceof PassiveFredbearEntity) {
-						item = "fredbear";
-					} else if (entity instanceof PassiveSpringBonnieEntity) {
-						item = "spring_bonnie";
-					} else if (entity instanceof PassiveGoldieEntity) {
-						item = "yellowbear";
-					}
-				} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("statue")) {
-					if (entity instanceof StatueFreddyEntity) {
-						item = "statue_freddy_item";
-					} else if (entity instanceof StatueBonnieEntity) {
-						item = "statue_bonnie_item";
-					} else if (entity instanceof StatueChicaEntity) {
-						item = "statue_chica_item";
-					} else if (entity instanceof StatueFoxyEntity) {
-						item = "statue_foxy_item";
-					}
-				} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("full_hostile")) {
-					if (entity instanceof FullHostileFreddyEntity) {
-						item = "evil_freddy_spawn";
-					} else if (entity instanceof FullHostileBonnieEntity) {
-						item = "evil_bonnie";
-					} else if (entity instanceof FullHostileChicaEntity) {
-						item = "evil_chica_item";
-					} else if (entity instanceof FullHostileFoxyEntity) {
-						item = "evil_foxy_item";
+			if (("death").equals(itemstack.getOrCreateTag().getString("mode"))) {
+				if (!(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("passive") && !(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("full_hostile")
+						&& !(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("statue")) {
+					item = (((((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("fnaf_mod:", "")).replace("ded_", "")).replace("sitting_", "")).replace("daytime_", "")).replace("day_time_", "");
+					item = item + "_spawn_item";
+				} else {
+					if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("passive")) {
+						if (entity instanceof PassiveFreddyEntity) {
+							item = "freddy";
+						} else if (entity instanceof PassiveBonnieEntity) {
+							item = "bonnie";
+						} else if (entity instanceof PassiveChicaEntity) {
+							item = "chica";
+						} else if (entity instanceof PassiveFoxyEntity) {
+							item = "foxy";
+						} else if (entity instanceof PassiveFredbearEntity) {
+							item = "fredbear";
+						} else if (entity instanceof PassiveSpringBonnieEntity) {
+							item = "spring_bonnie";
+						} else if (entity instanceof PassiveGoldieEntity) {
+							item = "yellowbear";
+						}
+					} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("statue")) {
+						if (entity instanceof StatueFreddyEntity) {
+							item = "statue_freddy_item";
+						} else if (entity instanceof StatueBonnieEntity) {
+							item = "statue_bonnie_item";
+						} else if (entity instanceof StatueChicaEntity) {
+							item = "statue_chica_item";
+						} else if (entity instanceof StatueFoxyEntity) {
+							item = "statue_foxy_item";
+						}
+					} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("full_hostile")) {
+						if (entity instanceof FullHostileFreddyEntity) {
+							item = "evil_freddy_spawn";
+						} else if (entity instanceof FullHostileBonnieEntity) {
+							item = "evil_bonnie";
+						} else if (entity instanceof FullHostileChicaEntity) {
+							item = "evil_chica_item";
+						} else if (entity instanceof FullHostileFoxyEntity) {
+							item = "evil_foxy_item";
+						}
 					}
 				}
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation((("fnaf_mod:" + item)).toLowerCase(java.util.Locale.ENGLISH)))));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				FnafModMod.LOGGER.info(item);
+				if (!entity.level().isClientSide())
+					entity.discard();
 			}
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation((("fnaf_mod:" + item)).toLowerCase(java.util.Locale.ENGLISH)))));
-				entityToSpawn.setPickUpDelay(10);
-				_level.addFreshEntity(entityToSpawn);
-			}
-			FnafModMod.LOGGER.info(item);
-			if (!entity.level().isClientSide())
-				entity.discard();
 		}
 	}
 }

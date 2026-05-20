@@ -108,7 +108,7 @@
       "name": "DayTimeWitheredFoxyEntityDies"
     },
     "onRightClickedOn": {
-      "name": "MatPickup"
+      "name": "DaytimeClick"
     },
     "onMobTickUpdate": {
       "name": "DaytimeTick"

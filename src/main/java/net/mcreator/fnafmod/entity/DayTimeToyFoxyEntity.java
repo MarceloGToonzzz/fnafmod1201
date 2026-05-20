@@ -52,10 +52,11 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.ToyFoxyEntityDiesProcedure;
-import net.mcreator.fnafmod.procedures.MatPickupProcedure;
+import net.mcreator.fnafmod.procedures.HasToyMovementToggleProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.DaytimeTickProcedure;
+import net.mcreator.fnafmod.procedures.DaytimeClickProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 import javax.annotation.Nullable;
@@ -112,7 +113,27 @@ public class DayTimeToyFoxyEntity extends PathfinderMob implements GeoEntity {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1) {
+			@Override
+			public boolean canUse() {
+				double x = DayTimeToyFoxyEntity.this.getX();
+				double y = DayTimeToyFoxyEntity.this.getY();
+				double z = DayTimeToyFoxyEntity.this.getZ();
+				Entity entity = DayTimeToyFoxyEntity.this;
+				Level world = DayTimeToyFoxyEntity.this.level();
+				return super.canUse() && HasToyMovementToggleProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = DayTimeToyFoxyEntity.this.getX();
+				double y = DayTimeToyFoxyEntity.this.getY();
+				double z = DayTimeToyFoxyEntity.this.getZ();
+				Entity entity = DayTimeToyFoxyEntity.this;
+				Level world = DayTimeToyFoxyEntity.this.level();
+				return super.canContinueToUse() && HasToyMovementToggleProcedure.execute(entity);
+			}
+		});
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
@@ -199,7 +220,7 @@ public class DayTimeToyFoxyEntity extends PathfinderMob implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		MatPickupProcedure.execute(world, x, y, z, entity, itemstack);
+		DaytimeClickProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 

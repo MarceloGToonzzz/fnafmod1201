@@ -107,6 +107,9 @@
     "whenMobDies": {
       "name": "SittingDaytimeSpringtrapEntityDies"
     },
+    "onRightClickedOn": {
+      "name": "DaytimeClick"
+    },
     "onMobTickUpdate": {
       "name": "DaytimeTick"
     },

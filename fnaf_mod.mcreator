@@ -18522,7 +18522,7 @@
           }
         ]
       },
-      "path": "~/Entities/DaytimeAnimatronics"
+      "path": "~/Entities"
     },
     {
       "name": "ToyFreddySpawnItem",
@@ -30442,7 +30442,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/daytime_barry_polar_spawn_egg.json"
         ]
       },
-      "path": "~/Entities/NighttimeAnimatronics/Polars"
+      "path": "~/Entities/DaytimeAnimatronics"
     },
     {
       "name": "BarryPolarSpawnItem",
@@ -30488,7 +30488,7 @@
           "src/main/java/net/mcreator/fnafmod/entity/DaytimeGusPugEntity.java"
         ]
       },
-      "path": "~/Entities/NighttimeAnimatronics/Polars"
+      "path": "~/Entities/DaytimeAnimatronics"
     },
     {
       "name": "GusPugSpawnItem",
@@ -30771,7 +30771,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/daytime_wally_walrus_spawn_egg.json"
         ]
       },
-      "path": "~/Entities/NighttimeAnimatronics/Polars"
+      "path": "~/Entities/DaytimeAnimatronics"
     },
     {
       "name": "PuffyPuffins",
@@ -30803,7 +30803,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/daytime_puffy_puffins_spawn_egg.json"
         ]
       },
-      "path": "~/Entities/NighttimeAnimatronics/Polars"
+      "path": "~/Entities/DaytimeAnimatronics"
     },
     {
       "name": "HazyReindeer",
@@ -30835,7 +30835,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/daytime_hazy_reindeer_spawn_egg.json"
         ]
       },
-      "path": "~/Entities/NighttimeAnimatronics/Polars"
+      "path": "~/Entities/DaytimeAnimatronics"
     },
     {
       "name": "PuffyPuffinsSpawnItem",
@@ -35659,16 +35659,7 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/RenderConnectionsProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Client/Connections"
     },
@@ -35682,24 +35673,7 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/RemoveConnectionOnBlockRemovedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Client/Connections"
     },
@@ -36071,6 +36045,288 @@
         ]
       },
       "path": "~/Client/GUI/Party Selector"
+    },
+    {
+      "name": "MatRotate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mat_rotate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/MatRotateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "DaytimeClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daytime_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/DaytimeClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "HasToyMovementToggle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_toy_movement_toggle",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/HasToyMovementToggleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "ToyMovement",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_movement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/world/inventory/ToyMovementMenu.java",
+          "src/main/java/net/mcreator/fnafmod/client/gui/ToyMovementScreen.java",
+          "src/main/java/net/mcreator/fnafmod/network/ToyMovementButtonMessage.java"
+        ]
+      },
+      "path": "~/Items/M. A. T."
+    },
+    {
+      "name": "ToyMovementOnButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_movement_on_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ToyMovementOnButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/M. A. T."
+    },
+    {
+      "name": "ToyMovementOffButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_movement_off_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ToyMovementOffButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/M. A. T."
+    },
+    {
+      "name": "MatToyGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mat_toy_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/MatToyGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "NotHasToyMovementToggleLook",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "not_has_toy_movement_toggle_look",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/NotHasToyMovementToggleLookProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "HasToyMovementToggleLook",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_toy_movement_toggle_look",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/HasToyMovementToggleLookProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "RenderLiveCamera",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "render_live_camera",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/RenderLiveCameraProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Client/LiveCameras"
+    },
+    {
+      "name": "CheckToyMovementEntityPos",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_toy_movement_entity_pos",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/CheckToyMovementEntityPosProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/M. A. T."
     }
   ],
   "variable_elements": [
@@ -37468,6 +37724,12 @@
       "CUSTOM:BB",
       "CUSTOM:JJ"
     ],
+    "ENTITIES:mod:has_toy_movement": [
+      "CUSTOM:DayTimeToyBonnie",
+      "CUSTOM:DayTimeToyFoxy",
+      "CUSTOM:DayTimeToyFreddy",
+      "CUSTOM:ToyChica"
+    ],
     "BLOCKS:mod:states1": [
       "CUSTOM:BoothTable"
     ],
@@ -38583,8 +38845,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
+      "item.fnaf_mod.its_been_so_long": "Music Disc",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -38593,19 +38855,19 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "block.fnaf_mod.movie_wall": "Movie Wall",
+      "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
+      "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
       "block.fnaf_mod.clownful_doll": "Clownfull Doll",
       "block.fnaf_mod.blueprint_tile": "Blueprint Tile",
-      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
+      "item.fnaf_mod.pizza_slice": "Pizza Slice",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -40440,6 +40702,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "LiveCameras",
+            "children": []
           }
         ]
       }

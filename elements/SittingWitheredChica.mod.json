@@ -108,7 +108,7 @@
       "name": "SittingWitheredChicaEntityDies"
     },
     "onRightClickedOn": {
-      "name": "MatPickup"
+      "name": "DaytimeClick"
     },
     "onMobTickUpdate": {
       "name": "DaytimeTick"

@@ -51,11 +51,11 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.fnafmod.procedures.MatPickupProcedure;
 import net.mcreator.fnafmod.procedures.MangleSittingOnInitialEntitySpawnProcedure;
 import net.mcreator.fnafmod.procedures.MangleSittingEntityDiesProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.procedures.DaytimeTickProcedure;
+import net.mcreator.fnafmod.procedures.DaytimeClickProcedure;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 import javax.annotation.Nullable;
@@ -203,7 +203,7 @@ public class MangleSittingEntity extends PathfinderMob implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		MatPickupProcedure.execute(world, x, y, z, entity, itemstack);
+		DaytimeClickProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 

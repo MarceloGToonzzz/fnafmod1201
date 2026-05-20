@@ -108,7 +108,7 @@
       "name": "DayTimeChicaEntityDies"
     },
     "onRightClickedOn": {
-      "name": "MatPickup"
+      "name": "DaytimeClick"
     },
     "onMobTickUpdate": {
       "name": "DaytimeTick"

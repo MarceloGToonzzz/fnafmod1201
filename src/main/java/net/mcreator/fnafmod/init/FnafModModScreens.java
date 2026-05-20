@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.fnafmod.client.gui.WallChange2Screen;
 import net.mcreator.fnafmod.client.gui.WallChange1Screen;
+import net.mcreator.fnafmod.client.gui.ToyMovementScreen;
 import net.mcreator.fnafmod.client.gui.SodaMachineScreen;
 import net.mcreator.fnafmod.client.gui.ServerPanelGUIScreen;
 import net.mcreator.fnafmod.client.gui.RemnantInfuserScreen;
@@ -49,6 +50,7 @@ public class FnafModModScreens {
 			MenuScreens.register(FnafModModMenus.CAMERA_PANEL_GUI.get(), CameraPanelGUIScreen::new);
 			MenuScreens.register(FnafModModMenus.SERVER_PANEL_GUI.get(), ServerPanelGUIScreen::new);
 			MenuScreens.register(FnafModModMenus.FIRE_AXE_DATA.get(), FireAxeDataScreen::new);
+			MenuScreens.register(FnafModModMenus.TOY_MOVEMENT.get(), ToyMovementScreen::new);
 		});
 	}
 }

@@ -108,7 +108,7 @@
       "name": "MangleSittingEntityDies"
     },
     "onRightClickedOn": {
-      "name": "MatPickup"
+      "name": "DaytimeClick"
     },
     "onMobTickUpdate": {
       "name": "DaytimeTick"

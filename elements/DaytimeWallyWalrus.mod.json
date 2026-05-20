@@ -104,6 +104,9 @@
     "raidCelebrationSound": {
       "value": ""
     },
+    "onRightClickedOn": {
+      "name": "DaytimeClick"
+    },
     "onMobTickUpdate": {
       "name": "DaytimeTick"
     },

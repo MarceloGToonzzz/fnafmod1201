@@ -40,9 +40,9 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.fnafmod.procedures.MatPickupProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.procedures.DaytimeTickProcedure;
+import net.mcreator.fnafmod.procedures.DaytimeClickProcedure;
 import net.mcreator.fnafmod.procedures.DayTimeChicaEntityDiesProcedure;
 import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.init.FnafModModEntities;
@@ -160,7 +160,7 @@ public class DaytimeChicaEntity extends Monster implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		MatPickupProcedure.execute(world, x, y, z, entity, itemstack);
+		DaytimeClickProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 
