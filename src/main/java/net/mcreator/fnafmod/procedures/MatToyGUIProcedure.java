@@ -14,6 +14,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.world.inventory.ToyMovementTrueMenu;
 import net.mcreator.fnafmod.world.inventory.ToyMovementMenu;
 import net.mcreator.fnafmod.init.FnafModModItems;
 
@@ -26,19 +27,36 @@ public class MatToyGUIProcedure {
 		if (FnafModModItems.MAT.get() == itemstack.getItem()) {
 			if (("interface").equals(itemstack.getOrCreateTag().getString("mode"))) {
 				sourceentity.getPersistentData().putString("guiTarget", (entity.getStringUUID()));
-				if (sourceentity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("ToyMovement");
-						}
+				if (entity.getPersistentData().getBoolean("hasToyMovementToggle")) {
+					if (sourceentity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("ToyMovementTrue");
+							}
 
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new ToyMovementMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new ToyMovementTrueMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				} else {
+					if (sourceentity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("ToyMovement");
+							}
+
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new ToyMovementMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
 				}
 			}
 		}

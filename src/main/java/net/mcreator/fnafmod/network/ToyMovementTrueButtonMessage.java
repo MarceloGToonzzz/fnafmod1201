@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.fnafmod.world.inventory.ToyMovementMenu;
+import net.mcreator.fnafmod.world.inventory.ToyMovementTrueMenu;
 import net.mcreator.fnafmod.procedures.ToyMovementButtonProcedure;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -19,31 +19,31 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ToyMovementButtonMessage {
+public class ToyMovementTrueButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public ToyMovementButtonMessage(FriendlyByteBuf buffer) {
+	public ToyMovementTrueButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public ToyMovementButtonMessage(int buttonID, int x, int y, int z) {
+	public ToyMovementTrueButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(ToyMovementButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(ToyMovementTrueButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(ToyMovementButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(ToyMovementTrueButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -58,7 +58,7 @@ public class ToyMovementButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = ToyMovementMenu.guistate;
+		HashMap guistate = ToyMovementTrueMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -70,6 +70,6 @@ public class ToyMovementButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		FnafModMod.addNetworkMessage(ToyMovementButtonMessage.class, ToyMovementButtonMessage::buffer, ToyMovementButtonMessage::new, ToyMovementButtonMessage::handler);
+		FnafModMod.addNetworkMessage(ToyMovementTrueButtonMessage.class, ToyMovementTrueButtonMessage::buffer, ToyMovementTrueButtonMessage::new, ToyMovementTrueButtonMessage::handler);
 	}
 }

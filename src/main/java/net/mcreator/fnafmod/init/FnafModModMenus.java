@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.fnafmod.world.inventory.WallChange2Menu;
 import net.mcreator.fnafmod.world.inventory.WallChange1Menu;
+import net.mcreator.fnafmod.world.inventory.ToyMovementTrueMenu;
 import net.mcreator.fnafmod.world.inventory.ToyMovementMenu;
 import net.mcreator.fnafmod.world.inventory.SodaMachineMenu;
 import net.mcreator.fnafmod.world.inventory.ServerPanelGUIMenu;
@@ -49,4 +50,5 @@ public class FnafModModMenus {
 	public static final RegistryObject<MenuType<ServerPanelGUIMenu>> SERVER_PANEL_GUI = REGISTRY.register("server_panel_gui", () -> IForgeMenuType.create(ServerPanelGUIMenu::new));
 	public static final RegistryObject<MenuType<FireAxeDataMenu>> FIRE_AXE_DATA = REGISTRY.register("fire_axe_data", () -> IForgeMenuType.create(FireAxeDataMenu::new));
 	public static final RegistryObject<MenuType<ToyMovementMenu>> TOY_MOVEMENT = REGISTRY.register("toy_movement", () -> IForgeMenuType.create(ToyMovementMenu::new));
+	public static final RegistryObject<MenuType<ToyMovementTrueMenu>> TOY_MOVEMENT_TRUE = REGISTRY.register("toy_movement_true", () -> IForgeMenuType.create(ToyMovementTrueMenu::new));
 }

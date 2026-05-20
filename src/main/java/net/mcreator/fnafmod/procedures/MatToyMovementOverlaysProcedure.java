@@ -439,18 +439,6 @@ public class MatToyMovementOverlaysProcedure {
 							RenderSystem.setShaderTexture(0, new ResourceLocation(("fnaf_mod" + ":textures/" + "screens/toy_movement_button_off" + ".png")));
 						}
 						renderTexture((float) (Minecraft.getInstance().getWindow().getGuiScaledWidth() / 2 + 2), (float) (Minecraft.getInstance().getWindow().getGuiScaledHeight() / 2 + 2), 0, 0, 1, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
-						renderTexts((((new BiFunction<LevelAccessor, String, Entity>() {
-							@Override
-							public Entity apply(LevelAccessor levelAccessor, String uuid) {
-								if (levelAccessor instanceof ServerLevel serverLevel) {
-									try {
-										return serverLevel.getEntity(UUID.fromString(uuid));
-									} catch (Exception e) {
-									}
-								}
-								return null;
-							}
-						}).apply(world, (entity.getPersistentData().getString("guiTarget")))).getDisplayName().getString()), 0, 0, 0, 0, 1, 255 << 24 | 255 << 16 | 255 << 8 | 255, 0);
 					}
 				}
 			}

@@ -54,6 +54,16 @@
           "y": 108,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "toy_movement_button_on.png",
+          "use1Xscale": false,
+          "x": 181,
+          "y": 108,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
