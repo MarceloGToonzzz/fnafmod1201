@@ -25,7 +25,7 @@ public class MatToyGUIProcedure {
 			return;
 		if (FnafModModItems.MAT.get() == itemstack.getItem()) {
 			if (("interface").equals(itemstack.getOrCreateTag().getString("mode"))) {
-				entity.getPersistentData().putBoolean("hasToyMovementToggle", true);
+				sourceentity.getPersistentData().putString("guiTarget", (entity.getStringUUID()));
 				if (sourceentity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);
 					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {

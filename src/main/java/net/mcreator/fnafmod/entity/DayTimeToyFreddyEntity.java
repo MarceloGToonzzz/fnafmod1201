@@ -52,10 +52,10 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.procedures.ToyDaytimeTickProcedure;
 import net.mcreator.fnafmod.procedures.HasToyMovementToggleProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
 import net.mcreator.fnafmod.procedures.FreddyFazbearOnInitialEntitySpawnProcedure;
-import net.mcreator.fnafmod.procedures.DaytimeTickProcedure;
 import net.mcreator.fnafmod.procedures.DaytimeClickProcedure;
 import net.mcreator.fnafmod.procedures.DayTimeToyFreddyEntityDiesProcedure;
 import net.mcreator.fnafmod.init.FnafModModItems;
@@ -138,7 +138,27 @@ public class DayTimeToyFreddyEntity extends PathfinderMob implements GeoEntity {
 			}
 		});
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this) {
+			@Override
+			public boolean canUse() {
+				double x = DayTimeToyFreddyEntity.this.getX();
+				double y = DayTimeToyFreddyEntity.this.getY();
+				double z = DayTimeToyFreddyEntity.this.getZ();
+				Entity entity = DayTimeToyFreddyEntity.this;
+				Level world = DayTimeToyFreddyEntity.this.level();
+				return super.canUse() && HasToyMovementToggleProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = DayTimeToyFreddyEntity.this.getX();
+				double y = DayTimeToyFreddyEntity.this.getY();
+				double z = DayTimeToyFreddyEntity.this.getZ();
+				Entity entity = DayTimeToyFreddyEntity.this;
+				Level world = DayTimeToyFreddyEntity.this.level();
+				return super.canContinueToUse() && HasToyMovementToggleProcedure.execute(entity);
+			}
+		});
 		this.goalSelector.addGoal(5, new FloatGoal(this));
 	}
 
@@ -230,7 +250,7 @@ public class DayTimeToyFreddyEntity extends PathfinderMob implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		DaytimeTickProcedure.execute(this.level(), this);
+		ToyDaytimeTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

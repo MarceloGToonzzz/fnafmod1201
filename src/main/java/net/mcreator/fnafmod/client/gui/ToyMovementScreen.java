@@ -10,7 +10,6 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.fnafmod.world.inventory.ToyMovementMenu;
-import net.mcreator.fnafmod.procedures.CheckToyMovementEntityPosProcedure;
 import net.mcreator.fnafmod.network.ToyMovementButtonMessage;
 import net.mcreator.fnafmod.FnafModMod;
 
@@ -24,8 +23,7 @@ public class ToyMovementScreen extends AbstractContainerScreen<ToyMovementMenu> 
 	private final int x, y, z;
 	private final Player entity;
 	ImageButton imagebutton_party_selector_done_button;
-	ImageButton imagebutton_toy_movement_button_off;
-	ImageButton imagebutton_toy_movement_button_on;
+	ImageButton imagebutton_toy_movement_button;
 
 	public ToyMovementScreen(ToyMovementMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -79,27 +77,13 @@ public class ToyMovementScreen extends AbstractContainerScreen<ToyMovementMenu> 
 		});
 		guistate.put("button:imagebutton_party_selector_done_button", imagebutton_party_selector_done_button);
 		this.addRenderableWidget(imagebutton_party_selector_done_button);
-		imagebutton_toy_movement_button_off = new ImageButton(this.leftPos + 76, this.topPos + 2, 65, 19, 0, 0, 19, new ResourceLocation("fnaf_mod:textures/screens/atlas/imagebutton_toy_movement_button_off.png"), 65, 38, e -> {
-			if (CheckToyMovementEntityPosProcedure.execute(world, x, y, z)) {
+		imagebutton_toy_movement_button = new ImageButton(this.leftPos + 5, this.topPos + 25, 65, 19, 0, 0, 19, new ResourceLocation("fnaf_mod:textures/screens/atlas/imagebutton_toy_movement_button.png"), 65, 38, e -> {
+			if (true) {
 				FnafModMod.PACKET_HANDLER.sendToServer(new ToyMovementButtonMessage(1, x, y, z));
 				ToyMovementButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}) {
-			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
-				this.visible = CheckToyMovementEntityPosProcedure.execute(world, x, y, z);
-				super.renderWidget(guiGraphics, gx, gy, ticks);
-			}
-		};
-		guistate.put("button:imagebutton_toy_movement_button_off", imagebutton_toy_movement_button_off);
-		this.addRenderableWidget(imagebutton_toy_movement_button_off);
-		imagebutton_toy_movement_button_on = new ImageButton(this.leftPos + 76, this.topPos + 22, 65, 19, 0, 0, 19, new ResourceLocation("fnaf_mod:textures/screens/atlas/imagebutton_toy_movement_button_on.png"), 65, 38, e -> {
-			if (true) {
-				FnafModMod.PACKET_HANDLER.sendToServer(new ToyMovementButtonMessage(2, x, y, z));
-				ToyMovementButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
 		});
-		guistate.put("button:imagebutton_toy_movement_button_on", imagebutton_toy_movement_button_on);
-		this.addRenderableWidget(imagebutton_toy_movement_button_on);
+		guistate.put("button:imagebutton_toy_movement_button", imagebutton_toy_movement_button);
+		this.addRenderableWidget(imagebutton_toy_movement_button);
 	}
 }

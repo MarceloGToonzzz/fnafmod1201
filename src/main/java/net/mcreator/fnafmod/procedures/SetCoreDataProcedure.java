@@ -10,6 +10,7 @@ public class SetCoreDataProcedure {
 		if (old == null || target == null)
 			return;
 		target.getPersistentData().putBoolean("got_coords", true);
+		target.getPersistentData().putBoolean("hasToyMovementToggle", (old.getPersistentData().getBoolean("hasToyMovementToggle")));
 		target.getPersistentData().putDouble("x", (old.getPersistentData().getDouble("x")));
 		target.getPersistentData().putDouble("y", (old.getPersistentData().getDouble("y")));
 		target.getPersistentData().putDouble("z", (old.getPersistentData().getDouble("z")));

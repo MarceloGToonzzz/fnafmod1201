@@ -12,8 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.world.inventory.ToyMovementMenu;
-import net.mcreator.fnafmod.procedures.ToyMovementOnButtonProcedure;
-import net.mcreator.fnafmod.procedures.ToyMovementOffButtonProcedure;
+import net.mcreator.fnafmod.procedures.ToyMovementButtonProcedure;
 import net.mcreator.fnafmod.FnafModMod;
 
 import java.util.function.Supplier;
@@ -65,11 +64,7 @@ public class ToyMovementButtonMessage {
 			return;
 		if (buttonID == 1) {
 
-			ToyMovementOffButtonProcedure.execute(world, x, y, z);
-		}
-		if (buttonID == 2) {
-
-			ToyMovementOnButtonProcedure.execute(world, x, y, z);
+			ToyMovementButtonProcedure.execute(world, entity);
 		}
 	}
 

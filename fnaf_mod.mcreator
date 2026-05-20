@@ -36148,68 +36148,6 @@
       "path": "~/Items/M. A. T."
     },
     {
-      "name": "ToyMovementOnButton",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toy_movement_on_button",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/ToyMovementOnButtonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/M. A. T."
-    },
-    {
-      "name": "ToyMovementOffButton",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "toy_movement_off_button",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/ToyMovementOffButtonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items/M. A. T."
-    },
-    {
       "name": "MatToyGUI",
       "type": "procedure",
       "compiles": true,
@@ -36253,36 +36191,6 @@
       "path": "~/Entities/Functions"
     },
     {
-      "name": "NotHasToyMovementToggleLook",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "not_has_toy_movement_toggle_look",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/NotHasToyMovementToggleLookProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Entities/Functions"
-    },
-    {
-      "name": "HasToyMovementToggleLook",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "has_toy_movement_toggle_look",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/HasToyMovementToggleLookProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Entities/Functions"
-    },
-    {
       "name": "RenderLiveCamera",
       "type": "procedure",
       "compiles": true,
@@ -36297,17 +36205,20 @@
       "path": "~/Client/LiveCameras"
     },
     {
-      "name": "CheckToyMovementEntityPos",
+      "name": "ToyDaytimeTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "check_toy_movement_entity_pos",
+      "registry_name": "toy_daytime_tick",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/CheckToyMovementEntityPosProcedure.java"
+          "src/main/java/net/mcreator/fnafmod/procedures/ToyDaytimeTickProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -36326,7 +36237,59 @@
           }
         ]
       },
+      "path": "~/Entities/Functions"
+    },
+    {
+      "name": "ToyMovementButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_movement_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ToyMovementButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
       "path": "~/Items/M. A. T."
+    },
+    {
+      "name": "MatToyMovementOverlays",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mat_toy_movement_overlays",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/MatToyMovementOverlaysProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Client/GUI/M. A. T. Toy Movement Selector"
+    },
+    {
+      "name": "GetMatToyMovementTextureUVs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mat_toy_movement_texture_u_vs",
+      "metadata": {
+        "return_type": "shape",
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GetMatToyMovementTextureUVsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Client/GUI/M. A. T. Toy Movement Selector"
     }
   ],
   "variable_elements": [
@@ -40699,6 +40662,10 @@
             "children": [
               {
                 "name": "Party Selector",
+                "children": []
+              },
+              {
+                "name": "M. A. T. Toy Movement Selector",
                 "children": []
               }
             ]

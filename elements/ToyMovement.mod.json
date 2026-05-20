@@ -34,31 +34,14 @@
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_toy_movement_button_off",
-          "image": "toy_movement_button_off.png",
+          "name": "imagebutton_toy_movement_button",
+          "image": "toy_movement_button.png",
           "hoveredImage": "",
           "onClick": {
-            "name": "ToyMovementOffButton"
+            "name": "ToyMovementButton"
           },
-          "displayCondition": {
-            "name": "CheckToyMovementEntityPos"
-          },
-          "x": 252,
-          "y": 85,
-          "locked": false
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_toy_movement_button_on",
-          "image": "toy_movement_button_on.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ToyMovementOnButton"
-          },
-          "x": 252,
-          "y": 105,
+          "x": 181,
+          "y": 108,
           "locked": false
         }
       }

@@ -13,6 +13,7 @@ public class MatRotateProcedure {
 		if (FnafModModItems.MAT.get() == itemstack.getItem()) {
 			if (("rotate_clock").equals(itemstack.getOrCreateTag().getString("mode"))) {
 				if (("y").equals(itemstack.getOrCreateTag().getString("settings"))) {
+					entity.getPersistentData().putDouble("yaw", (entity.getYRot() + 22.5));
 					{
 						Entity _ent = entity;
 						_ent.setYRot((float) (entity.getYRot() + 22.5));
@@ -29,6 +30,7 @@ public class MatRotateProcedure {
 				}
 			} else if (("rotate_counter_clock").equals(itemstack.getOrCreateTag().getString("mode"))) {
 				if (("y").equals(itemstack.getOrCreateTag().getString("settings"))) {
+					entity.getPersistentData().putDouble("yaw", (entity.getYRot() - 22.5));
 					{
 						Entity _ent = entity;
 						_ent.setYRot((float) (entity.getYRot() - 22.5));
