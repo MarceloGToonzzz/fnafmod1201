@@ -14037,11 +14037,11 @@
       "registry_name": "withered_foxy",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/WitheredFoxyModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/WitheredFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/WitheredFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/WitheredFoxyModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/layer/WitheredFoxyLayer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/withered_foxy_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/withered_foxy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/layer/WitheredFoxyLayer.java"
         ]
       },
       "path": "~/Entities/NighttimeAnimatronics/FNAF2/Withereds"
@@ -14232,9 +14232,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/FoxyPirateEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FoxyPirateRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FoxyPirateModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/foxy_pirate_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FoxyPirateModel.java"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FoxyPirateRenderer.java"
         ]
       },
       "path": "~/Entities/NighttimeAnimatronics/FNAF1"
@@ -16459,8 +16459,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/model/MangleModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/layer/MangleLayer.java",
           "src/main/java/net/mcreator/fnafmod/entity/MangleEntity.java",
+          "src/main/java/net/mcreator/fnafmod/entity/layer/MangleLayer.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/MangleRenderer.java"
         ]
       },
@@ -16506,9 +16506,9 @@
       "registry_name": "toy_foxy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/ToyFoxyModel.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/ToyFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyFoxyRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/ToyFoxyModel.java"
         ]
       },
       "path": "~/Entities/NighttimeAnimatronics/FNAF2/Toys"
