@@ -116,6 +116,7 @@ import net.mcreator.fnafmod.entity.FreddyStandEntity;
 import net.mcreator.fnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.fnafmod.entity.FreddyCutOutEntity;
 import net.mcreator.fnafmod.entity.FreddlesEntity;
+import net.mcreator.fnafmod.entity.FredbearsMontyEntity;
 import net.mcreator.fnafmod.entity.FredbearsFreddyEntity;
 import net.mcreator.fnafmod.entity.FredbearsFoxyEntity;
 import net.mcreator.fnafmod.entity.FredbearsChicaEntity;
@@ -727,6 +728,10 @@ public class FnafModModEntities {
 			EntityType.Builder.<PlushtrapToyEntity>of(PlushtrapToyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlushtrapToyEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FredbearsMontyEntity>> FREDBEARS_MONTY = register("fredbears_monty",
+			EntityType.Builder.<FredbearsMontyEntity>of(FredbearsMontyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FredbearsMontyEntity::new)
+
+					.sized(0.6f, 1.9f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -879,6 +884,7 @@ public class FnafModModEntities {
 			HazyReindeerEntity.init();
 			DaytimeHazyReindeerEntity.init();
 			PlushtrapToyEntity.init();
+			FredbearsMontyEntity.init();
 		});
 	}
 
@@ -1026,5 +1032,6 @@ public class FnafModModEntities {
 		event.put(HAZY_REINDEER.get(), HazyReindeerEntity.createAttributes().build());
 		event.put(DAYTIME_HAZY_REINDEER.get(), DaytimeHazyReindeerEntity.createAttributes().build());
 		event.put(PLUSHTRAP_TOY.get(), PlushtrapToyEntity.createAttributes().build());
+		event.put(FREDBEARS_MONTY.get(), FredbearsMontyEntity.createAttributes().build());
 	}
 }
