@@ -131,6 +131,7 @@ import net.mcreator.fnafmod.item.FreddySuitItem;
 import net.mcreator.fnafmod.item.FreddySpawnItemItem;
 import net.mcreator.fnafmod.item.FreddyMaskItem;
 import net.mcreator.fnafmod.item.FreddyItem;
+import net.mcreator.fnafmod.item.FredbearsMontySpawnItemItem;
 import net.mcreator.fnafmod.item.FredbearsFreddySpawnItemItem;
 import net.mcreator.fnafmod.item.FredbearsFoxySpawnItemItem;
 import net.mcreator.fnafmod.item.FredbearsChicaSpawnItemItem;
@@ -1308,6 +1309,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> SHADOW_FREDDY_PLUSH = block(FnafModModBlocks.SHADOW_FREDDY_PLUSH);
 	public static final RegistryObject<Item> SHADOW_BONNIE_PLUSH = block(FnafModModBlocks.SHADOW_BONNIE_PLUSH);
 	public static final RegistryObject<Item> RETRO_COMPUTER = block(FnafModModBlocks.RETRO_COMPUTER);
+	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_EGG = REGISTRY.register("fredbears_monty_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_MONTY, -13810131, -12498041, new Item.Properties()));
+	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_ITEM = REGISTRY.register("fredbears_monty_spawn_item", () -> new FredbearsMontySpawnItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -15,7 +15,8 @@ public class ToyDaytimeTickProcedure {
 		if (!entity.getPersistentData().getBoolean("hasToyMovementToggle")) {
 			if (entity instanceof Mob _entity)
 				_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z")), 1);
-			if (2 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))))) {
+			if (2 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))))
+					&& !(!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null))) {
 				{
 					Entity _ent = entity;
 					_ent.teleportTo((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z")));
