@@ -34027,29 +34027,29 @@
       "registry_name": "modular_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_9.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_11.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/ModularLightBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_10.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_5.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_2.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_7.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_1.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_12.json",
           "src/main/java/net/mcreator/fnafmod/block/model/ModularLightDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_5.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_7.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_4.json",
           "src/main/resources/assets/fnaf_mod/blockstates/modular_light.json",
-          "src/main/resources/assets/fnaf_mod/models/item/modular_light.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/custom/modular_light_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_8.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_6.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_3.json"
+          "src/main/java/net/mcreator/fnafmod/block/ModularLightBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/modular_light.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
@@ -34815,29 +34815,29 @@
       "registry_name": "modular_light_flat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ModularLightFlatBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_2.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_11.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightFlatDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightFlatTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_10.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_6.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatDisplayModel.java",
           "src/main/resources/assets/fnaf_mod/models/custom/modular_light_flat_particle.json",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_9.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_5.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/modular_light_flat.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_4.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_7.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_10.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_1.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_0.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_6.json",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_12.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_3.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/modular_light_flat.json",
+          "src/main/java/net/mcreator/fnafmod/block/ModularLightFlatBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_8.json"
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_8.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightFlatTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_4.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightFlatDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/modular_light_flat.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_7.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
@@ -36361,6 +36361,94 @@
         ]
       },
       "path": "~/Items/Spawn Items"
+    },
+    {
+      "name": "LightOverride",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_override",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightOverrideProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "LightLinkSharing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_link_sharing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightLinkSharingProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "LightModularity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_modularity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightModularityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
     }
   ],
   "variable_elements": [
@@ -37686,6 +37774,11 @@
       "~CUSTOM:Knife",
       "~CUSTOM:PizzaCutter",
       "~CUSTOM:Hook"
+    ],
+    "BLOCKS:mod:lights": [
+      "CUSTOM:CeilingLamp",
+      "CUSTOM:ModularLight",
+      "CUSTOM:ModularLightFlat"
     ],
     "ITEMS:mod:springlock_suit": [
       "CUSTOM:SpringLockSuit.helmet",

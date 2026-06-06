@@ -35,6 +35,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.procedures.ModularLightOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.ModularLightOnBlockRightClickedProcedure;
+import net.mcreator.fnafmod.procedures.LightModularityProcedure;
 import net.mcreator.fnafmod.init.FnafModModBlockEntities;
 import net.mcreator.fnafmod.block.entity.ModularLightTileEntity;
 
@@ -132,6 +133,13 @@ public class ModularLightBlock extends BaseEntityBlock implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+		LightModularityProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		LightModularityProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

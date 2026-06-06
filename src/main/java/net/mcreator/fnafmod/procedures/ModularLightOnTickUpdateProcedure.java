@@ -20,7 +20,14 @@ public class ModularLightOnTickUpdateProcedure {
 				return "";
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "StoredLight"))) {
-			if (world instanceof Level _level1 && _level1.hasNeighborSignal(BlockPos.containing(x, y, z)) || (new Object() {
+			if (new Object() {
+				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getBoolean(tag);
+					return false;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "Override") || world instanceof Level _level2 && _level2.hasNeighborSignal(BlockPos.containing(x, y, z)) || (new Object() {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
@@ -86,8 +93,8 @@ public class ModularLightOnTickUpdateProcedure {
 					}
 				}.getValue(world, BlockPos.containing(x, y, z), "Active")) == false) {
 					{
-						int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip12
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip12)
+						int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip13
+								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip13)
 								: -1) + 7);
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
@@ -702,8 +709,8 @@ public class ModularLightOnTickUpdateProcedure {
 				}
 			} else {
 				{
-					int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip70
-							? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip70)
+					int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip71
+							? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip71)
 							: -1) - 7);
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -913,6 +920,31 @@ public class ModularLightOnTickUpdateProcedure {
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
 					_blockEntity.getPersistentData().putString("StoredLight", "x0xy0yz0z");
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		}
+		if (0 < new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "Cooldown")) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("Cooldown", ((new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "Cooldown")) - 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
