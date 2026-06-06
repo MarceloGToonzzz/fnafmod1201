@@ -15506,10 +15506,10 @@
       "registry_name": "fredbears_freddy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFreddyEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFreddyRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFreddyEntity.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15522,10 +15522,10 @@
       "registry_name": "fredbears_bonnie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBonnieModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBonnieRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBonnieModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15539,8 +15539,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/models/item/fredbears_chica_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsChicaEntity.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsChicaModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsChicaEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsChicaRenderer.java"
         ]
       },
@@ -15554,10 +15554,10 @@
       "registry_name": "fredbears_foxy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFoxyModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/fredbears_foxy_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFoxyModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -36341,9 +36341,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsMontyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsMontyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsMontyModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_monty_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_monty_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsMontyRenderer.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -36449,6 +36449,22 @@
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "FredbearsBub",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fredbears_bub",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBubModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bub_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBubEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBubRenderer.java"
+        ]
+      },
+      "path": "~/Entities/Fredbears"
     }
   ],
   "variable_elements": [
@@ -38973,8 +38989,8 @@
       "item.fnaf_mod.foxy_suit_boots": "Foxy Boots",
       "block.fnaf_mod.rancid_tiles": "Rancid Tiles",
       "entity.fnaf_mod.shadow_freddy": "Shadow Freddy",
-      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "item.fnaf_mod.its_been_so_long": "Music Disc",
+      "block.fnaf_mod.stage_light_green": "Stage Light (Green)",
       "block.fnaf_mod.white_black_wall_tile": "White Wall Tiles",
       "item.fnaf_mod.spring_lock_suit_leggings": "Spring Lock Suit Legs",
       "gui.fnaf_mod.gen_creative_config_gui.label_2both": "2-Both",
@@ -38983,19 +38999,19 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
-      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.licorice_curtain": "Liquorice Curtain",
+      "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
       "block.fnaf_mod.alternate_purple_stage_brick_tiles": "Alternate Purple Etched Brick Tiles",
       "entity.fnaf_mod.day_time_toy_freddy": "DayTime Toy Freddy",
       "block.fnaf_mod.phone": "Phone",
       "block.fnaf_mod.clownful_doll": "Clownfull Doll",
       "block.fnaf_mod.blueprint_tile": "Blueprint Tile",
-      "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
       "item.fnaf_mod.pizza_slice": "Pizza Slice",
+      "block.fnaf_mod.thin_cloud_curtain.description_0": "(White Curtain)",
       "item.fnaf_mod.fredbear_animatronic_spawn_item": "Fredbear",
       "block.fnaf_mod.spring_bonnie_decor": "Spring Bonnie Prop",
       "item.fnaf_mod.toreador_march.desc": "Toreador March - LordSmugDread",
@@ -39658,6 +39674,7 @@
       "item.fnaf_mod.toy_foxy_cut_out_spawn_egg": "Toy Foxy Cutout Spawn Egg",
       "block.fnaf_mod.center_big_white_black_green_wall_tile": "Center Big White Green Wall Tiles",
       "block.fnaf_mod.red_door": "Red Establishment Door",
+      "entity.fnaf_mod.fredbears_bub": "Fredbear\u0027s Family Diner Bub",
       "item.fnaf_mod.pat_pat_spawn_egg": "PatPat Spawn Egg",
       "itemGroup.tabdecorative_blocks": "Decorative Blocks",
       "block.fnaf_mod.movie_exterior_top": "Exterior Wall",
@@ -39772,6 +39789,7 @@
       "block.fnaf_mod.cupcake_flower_golden": "Pink Cupcake Flower",
       "subtitles.akreload": "Reloading",
       "item.fnaf_mod.sitting_daytime_springtrap_spawn_egg": "DayTime SpringtrapSitting Spawn Egg",
+      "item.fnaf_mod.fredbears_bub_spawn_egg": "Fredbear\u0027s Family Diner Bub Spawn Egg",
       "block.fnaf_mod.movie_exterior_wall_tile": "Movie Exterior Wall Tiles",
       "gui.fnaf_mod.wall_change_1.label_one_room_face_rest_hall_faces": "One Room Face Rest Hall Faces",
       "gui.fnaf_mod.camera_panel_gui.button_save": "Apply",

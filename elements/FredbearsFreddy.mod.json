@@ -115,7 +115,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
     "model": "diner-freddy.geo.json",
     "groupName": "Head",
-    "animation1": "animation.freddy.perform",
+    "animation1": "PerformanceFinal",
     "animation2": "animation.witheredfreddy.walk",
     "animation3": "",
     "animation4": "",

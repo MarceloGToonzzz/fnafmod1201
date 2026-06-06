@@ -113,6 +113,7 @@ import net.mcreator.fnafmod.client.renderer.FredbearsMontyRenderer;
 import net.mcreator.fnafmod.client.renderer.FredbearsFreddyRenderer;
 import net.mcreator.fnafmod.client.renderer.FredbearsFoxyRenderer;
 import net.mcreator.fnafmod.client.renderer.FredbearsChicaRenderer;
+import net.mcreator.fnafmod.client.renderer.FredbearsBubRenderer;
 import net.mcreator.fnafmod.client.renderer.FredbearsBonnieRenderer;
 import net.mcreator.fnafmod.client.renderer.FredbearCutOutRenderer;
 import net.mcreator.fnafmod.client.renderer.FredbearAnimatronicRenderer;
@@ -302,5 +303,6 @@ public class FnafModModEntityRenderers {
 		event.registerEntityRenderer(FnafModModEntities.DAYTIME_HAZY_REINDEER.get(), DaytimeHazyReindeerRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.PLUSHTRAP_TOY.get(), PlushtrapToyRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_MONTY.get(), FredbearsMontyRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_BUB.get(), FredbearsBubRenderer::new);
 	}
 }

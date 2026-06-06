@@ -195,7 +195,7 @@ public class FredbearsBonnieEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.bonnie.perform"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("PerformFinal"));
 		}
 		return PlayState.STOP;
 	}

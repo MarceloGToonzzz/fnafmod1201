@@ -115,7 +115,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
     "model": "diner-chica.geo.json",
     "groupName": "Head",
-    "animation1": "animation.chica.perform",
+    "animation1": "PerformFinal",
     "animation2": "animation.unwitheredchica.walk",
     "animation3": "",
     "animation4": "",

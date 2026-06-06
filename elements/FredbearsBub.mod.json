@@ -2,9 +2,9 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Fredbear's Family Diner Foxy",
+    "mobName": "Fredbear's Family Diner Bub",
     "mobLabel": "",
-    "mobModelTexture": "diner-foxy.png",
+    "mobModelTexture": "diner-bub.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0,
@@ -22,11 +22,11 @@
     "stepHeight": 0.6,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -12184303,
+      "value": -13296120,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -6335661,
+      "value": -65332,
       "falpha": 0.0
     },
     "creativeTabs": [],
@@ -34,7 +34,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "CUSTOM:Microphone"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -113,10 +113,10 @@
     "hasAI": false,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
-    "model": "diner-foxy.geo.json",
+    "model": "diner-bub.geo.json",
     "groupName": "Head",
     "animation1": "animation",
-    "animation2": "animation.witheredfoxy.walk",
+    "animation2": "animation.witheredfreddy.walk",
     "animation3": "",
     "animation4": "",
     "animation5": "",
