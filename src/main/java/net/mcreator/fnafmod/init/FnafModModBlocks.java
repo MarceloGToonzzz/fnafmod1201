@@ -323,6 +323,7 @@ import net.mcreator.fnafmod.block.FreddySignOnBlock;
 import net.mcreator.fnafmod.block.FreddySignOffBlock;
 import net.mcreator.fnafmod.block.FreddyPlushieBlock;
 import net.mcreator.fnafmod.block.FreddyHeadBlock;
+import net.mcreator.fnafmod.block.FredbearsFetchBlock;
 import net.mcreator.fnafmod.block.FredbearSignBlock;
 import net.mcreator.fnafmod.block.FredbearPoster4Block;
 import net.mcreator.fnafmod.block.FredbearPoster3Block;
@@ -1328,6 +1329,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SHADOW_FREDDY_PLUSH = REGISTRY.register("shadow_freddy_plush", () -> new ShadowFreddyPlushBlock());
 	public static final RegistryObject<Block> SHADOW_BONNIE_PLUSH = REGISTRY.register("shadow_bonnie_plush", () -> new ShadowBonniePlushBlock());
 	public static final RegistryObject<Block> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> new RetroComputerBlock());
+	public static final RegistryObject<Block> FREDBEARS_FETCH = REGISTRY.register("fredbears_fetch", () -> new FredbearsFetchBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

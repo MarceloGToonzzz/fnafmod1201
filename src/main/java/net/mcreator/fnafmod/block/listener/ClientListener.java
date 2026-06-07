@@ -51,6 +51,7 @@ import net.mcreator.fnafmod.block.renderer.FreddysCupcakeBonanzaTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOnTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddySignOffTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FreddyHeadTileRenderer;
+import net.mcreator.fnafmod.block.renderer.FredbearsFetchTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FredbearSignTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FredbearHeadTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FoxyHeadTileRenderer;
@@ -188,5 +189,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.LIGHT_BUTTON_FLAT.get(), context -> new LightButtonFlatTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT_FLAT.get(), context -> new ModularLightFlatTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FIRE_AXE_BLOCK.get(), context -> new FireAxeBlockTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.FREDBEARS_FETCH.get(), context -> new FredbearsFetchTileRenderer());
 	}
 }

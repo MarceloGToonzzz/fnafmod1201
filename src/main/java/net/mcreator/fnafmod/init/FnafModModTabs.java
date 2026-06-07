@@ -794,6 +794,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.TOY_BONNIE_CUT_OUT_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.TOY_CHICA_CUT_OUT_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.TOY_FOXY_CUT_OUT_SPAWN_EGG.get());
+				tabData.accept(FnafModModBlocks.FREDBEARS_FETCH.get().asItem());
 			}).withTabsBefore(FNAF_UTILITIES.getId()).build());
 	public static final RegistryObject<CreativeModeTab> SUITS = REGISTRY.register("suits",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.suits")).icon(() -> new ItemStack(FnafModModItems.FREDDY_SUIT_HELMET.get())).displayItems((parameters, tabData) -> {

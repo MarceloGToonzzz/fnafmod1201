@@ -68,6 +68,7 @@ import net.mcreator.fnafmod.block.entity.FreddysCupcakeBonanzaTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOnTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddySignOffTileEntity;
 import net.mcreator.fnafmod.block.entity.FreddyHeadTileEntity;
+import net.mcreator.fnafmod.block.entity.FredbearsFetchTileEntity;
 import net.mcreator.fnafmod.block.entity.FredbearSignTileEntity;
 import net.mcreator.fnafmod.block.entity.FredbearHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadTileEntity;
@@ -296,6 +297,8 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CAMERA_BLOCK = register("camera_block", FnafModModBlocks.CAMERA_BLOCK, CameraBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CAMERA_HEAD_BLOCK = register("camera_head_block", FnafModModBlocks.CAMERA_HEAD_BLOCK, CameraHeadBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<FireAxeBlockTileEntity>> FIRE_AXE_BLOCK = REGISTRY.register("fire_axe_block", () -> BlockEntityType.Builder.of(FireAxeBlockTileEntity::new, FnafModModBlocks.FIRE_AXE_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FredbearsFetchTileEntity>> FREDBEARS_FETCH = REGISTRY.register("fredbears_fetch",
+			() -> BlockEntityType.Builder.of(FredbearsFetchTileEntity::new, FnafModModBlocks.FREDBEARS_FETCH.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

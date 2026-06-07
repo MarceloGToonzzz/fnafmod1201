@@ -87,6 +87,7 @@ import net.mcreator.fnafmod.entity.FullHostileChicaEntity;
 import net.mcreator.fnafmod.entity.FullHostileBonnieEntity;
 import net.mcreator.fnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.fnafmod.entity.FreddlesEntity;
+import net.mcreator.fnafmod.entity.FredbearsSparkyEntity;
 import net.mcreator.fnafmod.entity.FredbearsMontyEntity;
 import net.mcreator.fnafmod.entity.FredbearsFreddyEntity;
 import net.mcreator.fnafmod.entity.FredbearsFoxyEntity;
@@ -972,6 +973,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof FredbearsBubEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FredbearsSparkyEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -229,6 +229,7 @@ import net.mcreator.fnafmod.block.display.FreddysCupcakeBonanzaDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOnDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddySignOffDisplayItem;
 import net.mcreator.fnafmod.block.display.FreddyHeadDisplayItem;
+import net.mcreator.fnafmod.block.display.FredbearsFetchDisplayItem;
 import net.mcreator.fnafmod.block.display.FredbearSignDisplayItem;
 import net.mcreator.fnafmod.block.display.FredbearHeadDisplayItem;
 import net.mcreator.fnafmod.block.display.FoxyHeadDisplayItem;
@@ -1312,6 +1313,8 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_EGG = REGISTRY.register("fredbears_monty_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_MONTY, -13810131, -12498041, new Item.Properties()));
 	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_ITEM = REGISTRY.register("fredbears_monty_spawn_item", () -> new FredbearsMontySpawnItemItem());
 	public static final RegistryObject<Item> FREDBEARS_BUB_SPAWN_EGG = REGISTRY.register("fredbears_bub_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_BUB, -13296120, -65332, new Item.Properties()));
+	public static final RegistryObject<Item> FREDBEARS_SPARKY_SPAWN_EGG = REGISTRY.register("fredbears_sparky_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_SPARKY, -8569810, -11506999, new Item.Properties()));
+	public static final RegistryObject<Item> FREDBEARS_FETCH = REGISTRY.register(FnafModModBlocks.FREDBEARS_FETCH.getId().getPath(), () -> new FredbearsFetchDisplayItem(FnafModModBlocks.FREDBEARS_FETCH.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

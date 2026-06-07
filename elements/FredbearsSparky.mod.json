@@ -2,45 +2,39 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Breadbear",
+    "mobName": "Fredbear's Family Diner Sparky",
     "mobLabel": "",
-    "mobModelTexture": "breadbear.png",
+    "mobModelTexture": "diner_sparky.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "GetScales"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "GetBoundaryScales"
     },
-    "entityDataEntries": [
-      {
-        "min": -2147483648,
-        "max": 2147483647,
-        "name": "attack",
-        "type": "integer",
-        "value": 0
-      }
-    ],
+    "entityDataEntries": [],
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelHeight": 1.9000000000000001,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
-    "hasSpawnEgg": false,
+    "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -8569810,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -11506999,
       "falpha": 0.0
     },
     "creativeTabs": [],
-    "isBoss": true,
-    "bossBarColor": "YELLOW",
-    "bossBarType": "NOTCHED_20",
+    "isBoss": false,
+    "bossBarColor": "PINK",
+    "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:Microphone"
     },
     "equipmentOffHand": {
       "value": ""
@@ -57,17 +51,17 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 8,
+    "attackStrength": 20,
     "attackKnockback": 0.0,
-    "knockbackResistance": 1.0,
-    "movementSpeed": 0.30000000000000004,
-    "armorBaseValue": 1.0,
+    "knockbackResistance": 2.0,
+    "movementSpeed": 0.0,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 200,
-    "xpAmount": 69,
+    "health": 50,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -79,15 +73,15 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": true,
+    "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
@@ -99,54 +93,51 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "CUSTOM:breadhurt"
+      "value": "block.cloth.hit"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "block.anvil.destroy"
     },
     "stepSound": {
-      "value": ""
+      "value": "CUSTOM:animatronic_step"
     },
     "raidCelebrationSound": {
       "value": ""
     },
-    "whenMobDies": {
-      "name": "BreadbearEntityDies"
-    },
-    "onMobTickUpdate": {
-      "name": "BreadbearOnEntityTickUpdate"
+    "onRightClickedOn": {
+      "name": "MatPickup"
     },
     "onInitialSpawn": {
-      "name": "BreadbearOnInitialEntitySpawn"
+      "name": "StatueSpawn"
     },
-    "hasAI": true,
+    "hasAI": false,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"swim\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "breadbear.geo.json",
-    "groupName": "",
-    "animation1": "animation.breadbear.idle",
-    "animation2": "animation.breadbear.walk",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
+    "model": "diner_sparky.geo.json",
+    "groupName": "Head",
+    "animation1": "animation",
+    "animation2": "animation.diner_monty.walk",
     "animation3": "",
-    "animation4": "animation.breadbear.attack",
+    "animation4": "",
     "animation5": "",
     "animation6": "",
-    "animation7": "animation.breadbear.walk",
+    "animation7": "",
     "animation8": "",
     "animation9": "",
-    "animation10": "animation.breadbear.walk",
-    "enable2": true,
+    "animation10": "",
+    "enable2": false,
     "enable3": false,
     "enable4": false,
     "enable5": false,
     "enable6": false,
-    "enable7": true,
+    "enable7": false,
     "enable8": false,
     "enable9": false,
-    "enable10": true,
+    "enable10": false,
     "breedable": false,
     "tameable": false,
     "disableDeathRotation": false,
-    "headMovement": false,
+    "headMovement": true,
     "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,

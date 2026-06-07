@@ -132,7 +132,7 @@ public class BreadbearSpawnProcedure {
 						}
 						if (!world.isClientSide() && world.getServer() != null)
 							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You shall feel my wrath..."), false);
-						FnafModMod.queueServerWork(60, () -> {
+						FnafModMod.queueServerWork(55, () -> {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(x, y - 1, z), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
@@ -141,7 +141,7 @@ public class BreadbearSpawnProcedure {
 							}
 							if (!world.isClientSide() && world.getServer() != null)
 								world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You will know my name when im done with you.."), false);
-							FnafModMod.queueServerWork(40, () -> {
+							FnafModMod.queueServerWork(35, () -> {
 								if (world instanceof ServerLevel _level) {
 									Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 									if (entityToSpawn != null) {
@@ -150,14 +150,14 @@ public class BreadbearSpawnProcedure {
 								}
 								if (!world.isClientSide() && world.getServer() != null)
 									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("You will know the name..."), false);
-								FnafModMod.queueServerWork(40, () -> {
+								FnafModMod.queueServerWork(35, () -> {
 									if (world instanceof ServerLevel _level) {
 										Entity entityToSpawn = EntityType.LIGHTNING_BOLT.spawn(_level, BlockPos.containing(x, y - 1, z), MobSpawnType.MOB_SUMMONED);
 										if (entityToSpawn != null) {
 											entityToSpawn.setDeltaMovement(0, 0, 0);
 										}
 									}
-									FnafModMod.queueServerWork(40, () -> {
+									FnafModMod.queueServerWork(35, () -> {
 										if (!world.isClientSide() && world.getServer() != null)
 											world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("Breadbear, The Devourer of Virgins!"), false);
 										if (!world.isClientSide()) {
