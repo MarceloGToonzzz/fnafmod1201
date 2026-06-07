@@ -1,0 +1,115 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"vector": [10, 0, 0]
+					}
+				},
+				"Head": {
+					"rotation": {
+						"vector": [-15.4264, 14.6363, -3.3192]
+					}
+				},
+				"LeftPupil": {
+					"position": {
+						"vector": [0.4, -0.4, 0]
+					}
+				},
+				"RightPupil": {
+					"position": {
+						"vector": [0.4, -0.4, 0]
+					}
+				},
+				"Jaw": {
+					"rotation": {
+						"vector": [27.5, 0, 0]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [-23.651, -22.171, 52.1366]
+					}
+				},
+				"LeftForearm": {
+					"rotation": {
+						"vector": [-110, 0, 0]
+					}
+				},
+				"LeftHand": {
+					"rotation": {
+						"vector": [0, 0, -30]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [-23.651, 22.171, -52.1366]
+					}
+				},
+				"RightForearm": {
+					"rotation": {
+						"vector": [-110, 0, 0]
+					}
+				},
+				"RightHand": {
+					"rotation": {
+						"vector": [0, 0, 30]
+					}
+				},
+				"LeftLeg": {
+					"rotation": {
+						"vector": [-90, -25, 0]
+					}
+				},
+				"LeftKnee": {
+					"rotation": {
+						"vector": [107.5, 0, 0]
+					}
+				},
+				"LeftFoot": {
+					"rotation": {
+						"vector": [30, 0, 0]
+					}
+				},
+				"RightLeg": {
+					"rotation": {
+						"vector": [-90, 25, 0]
+					}
+				},
+				"RightKnee": {
+					"rotation": {
+						"vector": [107.5, 0, 0]
+					}
+				},
+				"RightFoot": {
+					"rotation": {
+						"vector": [30, 0, 0]
+					}
+				},
+				"right ear": {
+					"rotation": {
+						"vector": [0, 0, 17.5]
+					}
+				},
+				"left ear": {
+					"rotation": {
+						"vector": [0, 0, -17.5]
+					}
+				},
+				"drumset": {
+					"position": {
+						"vector": [0, 0, -1]
+					}
+				},
+				"skirt": {
+					"rotation": {
+						"vector": [-7.5, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

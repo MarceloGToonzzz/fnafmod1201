@@ -27,18 +27,18 @@ public class FoxyPiratePlayerCollidesWithThisEntityProcedure {
 		}.checkGamemode(sourceentity))) {
 			if (entity instanceof Mob _entity && sourceentity instanceof LivingEntity _ent)
 				_entity.setTarget(_ent);
-		}
-		{
-			Entity _ent = sourceentity;
-			_ent.setYRot((float) (Math.atan((x - sourceentity.getX()) / (z - sourceentity.getZ())) * (180 / 3.14159)));
-			_ent.setXRot(0);
-			_ent.setYBodyRot(_ent.getYRot());
-			_ent.setYHeadRot(_ent.getYRot());
-			_ent.yRotO = _ent.getYRot();
-			_ent.xRotO = _ent.getXRot();
-			if (_ent instanceof LivingEntity _entity) {
-				_entity.yBodyRotO = _entity.getYRot();
-				_entity.yHeadRotO = _entity.getYRot();
+			{
+				Entity _ent = sourceentity;
+				_ent.setYRot((float) ((-1) * Math.toDegrees(Math.atan2(x - sourceentity.getX(), z - sourceentity.getZ()))));
+				_ent.setXRot(0);
+				_ent.setYBodyRot(_ent.getYRot());
+				_ent.setYHeadRot(_ent.getYRot());
+				_ent.yRotO = _ent.getYRot();
+				_ent.xRotO = _ent.getXRot();
+				if (_ent instanceof LivingEntity _entity) {
+					_entity.yBodyRotO = _entity.getYRot();
+					_entity.yHeadRotO = _entity.getYRot();
+				}
 			}
 		}
 	}

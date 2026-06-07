@@ -125,6 +125,12 @@
     "onRightClicked": {
       "name": "ModularLightOnBlockRightClicked"
     },
+    "onBlockAdded": {
+      "name": "LightModularity"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "LightModularity"
+    },
     "onTickUpdate": {
       "name": "ModularLightOnTickUpdate"
     },

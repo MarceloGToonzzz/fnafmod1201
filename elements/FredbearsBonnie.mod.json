@@ -115,7 +115,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
     "model": "diner-bonnie.geo.json",
     "groupName": "Head",
-    "animation1": "animation.bonnie.perform",
+    "animation1": "PerformFinal",
     "animation2": "animation.unwitheredbonnie.walk",
     "animation3": "",
     "animation4": "",

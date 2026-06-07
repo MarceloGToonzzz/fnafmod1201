@@ -27,7 +27,6 @@ import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
@@ -48,32 +47,30 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.fnafmod.procedures.StatueSpawnProcedure;
 import net.mcreator.fnafmod.procedures.MatPickupProcedure;
 import net.mcreator.fnafmod.procedures.GetBoundaryScalesProcedure;
-import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
 import javax.annotation.Nullable;
 
-public class FredbearsChicaEntity extends PathfinderMob implements GeoEntity {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(FredbearsChicaEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(FredbearsChicaEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(FredbearsChicaEntity.class, EntityDataSerializers.STRING);
+public class FredbearsBubEntity extends PathfinderMob implements GeoEntity {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(FredbearsBubEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(FredbearsBubEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(FredbearsBubEntity.class, EntityDataSerializers.STRING);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public FredbearsChicaEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(FnafModModEntities.FREDBEARS_CHICA.get(), world);
+	public FredbearsBubEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(FnafModModEntities.FREDBEARS_BUB.get(), world);
 	}
 
-	public FredbearsChicaEntity(EntityType<FredbearsChicaEntity> type, Level world) {
+	public FredbearsBubEntity(EntityType<FredbearsBubEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(true);
 		setMaxUpStep(0.6f);
 		setPersistenceRequired();
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FnafModModItems.MICROPHONE.get()));
 	}
 
 	@Override
@@ -81,7 +78,7 @@ public class FredbearsChicaEntity extends PathfinderMob implements GeoEntity {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "diner-chica");
+		this.entityData.define(TEXTURE, "diner-bub");
 	}
 
 	public void setTexture(String texture) {
@@ -195,7 +192,7 @@ public class FredbearsChicaEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("PerformFinal"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation"));
 		}
 		return PlayState.STOP;
 	}
@@ -223,7 +220,7 @@ public class FredbearsChicaEntity extends PathfinderMob implements GeoEntity {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 20) {
-			this.remove(FredbearsChicaEntity.RemovalReason.KILLED);
+			this.remove(FredbearsBubEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

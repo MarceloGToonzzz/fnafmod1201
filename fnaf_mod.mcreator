@@ -14037,11 +14037,11 @@
       "registry_name": "withered_foxy",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/WitheredFoxyModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/WitheredFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/WitheredFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/WitheredFoxyModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/layer/WitheredFoxyLayer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/withered_foxy_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/withered_foxy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/layer/WitheredFoxyLayer.java"
         ]
       },
       "path": "~/Entities/NighttimeAnimatronics/FNAF2/Withereds"
@@ -14232,9 +14232,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/FoxyPirateEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FoxyPirateRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FoxyPirateModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/foxy_pirate_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FoxyPirateModel.java"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FoxyPirateRenderer.java"
         ]
       },
       "path": "~/Entities/NighttimeAnimatronics/FNAF1"
@@ -15506,10 +15506,10 @@
       "registry_name": "fredbears_freddy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFreddyEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFreddyRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFreddyEntity.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15522,10 +15522,10 @@
       "registry_name": "fredbears_bonnie",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBonnieModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBonnieRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBonnieModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15539,8 +15539,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/models/item/fredbears_chica_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsChicaEntity.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsChicaModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsChicaEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsChicaRenderer.java"
         ]
       },
@@ -15554,10 +15554,10 @@
       "registry_name": "fredbears_foxy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFoxyModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/fredbears_foxy_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFoxyModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -16459,8 +16459,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/model/MangleModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/layer/MangleLayer.java",
           "src/main/java/net/mcreator/fnafmod/entity/MangleEntity.java",
+          "src/main/java/net/mcreator/fnafmod/entity/layer/MangleLayer.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/MangleRenderer.java"
         ]
       },
@@ -16506,9 +16506,9 @@
       "registry_name": "toy_foxy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/ToyFoxyModel.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/ToyFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyFoxyRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/ToyFoxyModel.java"
         ]
       },
       "path": "~/Entities/NighttimeAnimatronics/FNAF2/Toys"
@@ -33271,7 +33271,24 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/GenerateFNAFWorldChunksProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/FNAF World/WorldGen"
     },
@@ -34010,29 +34027,29 @@
       "registry_name": "modular_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightDisplayItem.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_9.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_11.json",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightTileEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_0.json",
-          "src/main/java/net/mcreator/fnafmod/block/ModularLightBlock.java",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_10.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_5.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_2.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_7.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_1.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_12.json",
           "src/main/java/net/mcreator/fnafmod/block/model/ModularLightDisplayModel.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightTileRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_5.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_0.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightDisplayItem.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightDisplayItemRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_7.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightBlockModel.java",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_4.json",
           "src/main/resources/assets/fnaf_mod/blockstates/modular_light.json",
-          "src/main/resources/assets/fnaf_mod/models/item/modular_light.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/custom/modular_light_particle.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_8.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_6.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_blockstate_3.json"
+          "src/main/java/net/mcreator/fnafmod/block/ModularLightBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/modular_light.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
@@ -34798,29 +34815,29 @@
       "registry_name": "modular_light_flat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/block/ModularLightFlatBlock.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_2.json",
           "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatDisplayItemRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_11.json",
-          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightFlatDisplayItem.java",
-          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightFlatTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_10.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_6.json",
+          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatDisplayModel.java",
           "src/main/resources/assets/fnaf_mod/models/custom/modular_light_flat_particle.json",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_9.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_5.json",
-          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatTileRenderer.java",
           "src/main/resources/assets/fnaf_mod/blockstates/modular_light_flat.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_4.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_7.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_10.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_1.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_0.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_6.json",
           "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_12.json",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_3.json",
-          "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatDisplayModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/modular_light_flat.json",
+          "src/main/java/net/mcreator/fnafmod/block/ModularLightFlatBlock.java",
+          "src/main/java/net/mcreator/fnafmod/block/renderer/ModularLightFlatTileRenderer.java",
           "src/main/java/net/mcreator/fnafmod/block/model/ModularLightFlatBlockModel.java",
-          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_8.json"
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_8.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ModularLightFlatTileEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_4.json",
+          "src/main/java/net/mcreator/fnafmod/block/display/ModularLightFlatDisplayItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/modular_light_flat.json",
+          "src/main/resources/assets/fnaf_mod/models/block/modular_light_flat_blockstate_7.json"
         ]
       },
       "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
@@ -36324,9 +36341,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsMontyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsMontyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsMontyModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_monty_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_monty_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsMontyRenderer.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -36346,23 +36363,108 @@
       "path": "~/Items/Spawn Items"
     },
     {
-      "name": "GenerateFNAFWorld",
+      "name": "LightOverride",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "generate_fnaf_world",
+      "registry_name": "light_override",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/procedures/GenerateFNAFWorldProcedure.java"
+          "src/main/java/net/mcreator/fnafmod/procedures/LightOverrideProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"
           }
         ]
       },
-      "path": "~/FNAF World/WorldGen"
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "LightLinkSharing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_link_sharing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightLinkSharingProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "LightModularity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_modularity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/LightModularityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/FunctionalBlocks/Generator/Lights"
+    },
+    {
+      "name": "FredbearsBub",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fredbears_bub",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBubModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bub_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBubEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBubRenderer.java"
+        ]
+      },
+      "path": "~/Entities/Fredbears"
     }
   ],
   "variable_elements": [
@@ -37688,6 +37790,11 @@
       "~CUSTOM:Knife",
       "~CUSTOM:PizzaCutter",
       "~CUSTOM:Hook"
+    ],
+    "BLOCKS:mod:lights": [
+      "CUSTOM:CeilingLamp",
+      "CUSTOM:ModularLight",
+      "CUSTOM:ModularLightFlat"
     ],
     "ITEMS:mod:springlock_suit": [
       "CUSTOM:SpringLockSuit.helmet",
@@ -39567,6 +39674,7 @@
       "item.fnaf_mod.toy_foxy_cut_out_spawn_egg": "Toy Foxy Cutout Spawn Egg",
       "block.fnaf_mod.center_big_white_black_green_wall_tile": "Center Big White Green Wall Tiles",
       "block.fnaf_mod.red_door": "Red Establishment Door",
+      "entity.fnaf_mod.fredbears_bub": "Fredbear\u0027s Family Diner Bub",
       "item.fnaf_mod.pat_pat_spawn_egg": "PatPat Spawn Egg",
       "itemGroup.tabdecorative_blocks": "Decorative Blocks",
       "block.fnaf_mod.movie_exterior_top": "Exterior Wall",
@@ -39681,6 +39789,7 @@
       "block.fnaf_mod.cupcake_flower_golden": "Pink Cupcake Flower",
       "subtitles.akreload": "Reloading",
       "item.fnaf_mod.sitting_daytime_springtrap_spawn_egg": "DayTime SpringtrapSitting Spawn Egg",
+      "item.fnaf_mod.fredbears_bub_spawn_egg": "Fredbear\u0027s Family Diner Bub Spawn Egg",
       "block.fnaf_mod.movie_exterior_wall_tile": "Movie Exterior Wall Tiles",
       "gui.fnaf_mod.wall_change_1.label_one_room_face_rest_hall_faces": "One Room Face Rest Hall Faces",
       "gui.fnaf_mod.camera_panel_gui.button_save": "Apply",

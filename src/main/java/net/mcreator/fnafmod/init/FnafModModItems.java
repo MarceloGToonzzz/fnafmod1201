@@ -1311,6 +1311,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> RETRO_COMPUTER = block(FnafModModBlocks.RETRO_COMPUTER);
 	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_EGG = REGISTRY.register("fredbears_monty_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_MONTY, -13810131, -12498041, new Item.Properties()));
 	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_ITEM = REGISTRY.register("fredbears_monty_spawn_item", () -> new FredbearsMontySpawnItemItem());
+	public static final RegistryObject<Item> FREDBEARS_BUB_SPAWN_EGG = REGISTRY.register("fredbears_bub_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_BUB, -13296120, -65332, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items
