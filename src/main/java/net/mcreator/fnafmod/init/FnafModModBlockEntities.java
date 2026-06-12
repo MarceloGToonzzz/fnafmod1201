@@ -95,6 +95,7 @@ import net.mcreator.fnafmod.block.entity.CinematicSignToysTileEntity;
 import net.mcreator.fnafmod.block.entity.CinematicSignFreddyTileEntity;
 import net.mcreator.fnafmod.block.entity.CinematicSignBaseTileEntity;
 import net.mcreator.fnafmod.block.entity.CinematicSignBaseSequelTileEntity;
+import net.mcreator.fnafmod.block.entity.ChunkDataBlockBlockEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.ChicaHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.CenteredFreddySignTileEntity;
@@ -299,6 +300,7 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<FireAxeBlockTileEntity>> FIRE_AXE_BLOCK = REGISTRY.register("fire_axe_block", () -> BlockEntityType.Builder.of(FireAxeBlockTileEntity::new, FnafModModBlocks.FIRE_AXE_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<FredbearsFetchTileEntity>> FREDBEARS_FETCH = REGISTRY.register("fredbears_fetch",
 			() -> BlockEntityType.Builder.of(FredbearsFetchTileEntity::new, FnafModModBlocks.FREDBEARS_FETCH.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> CHUNK_DATA_BLOCK = register("chunk_data_block", FnafModModBlocks.CHUNK_DATA_BLOCK, ChunkDataBlockBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

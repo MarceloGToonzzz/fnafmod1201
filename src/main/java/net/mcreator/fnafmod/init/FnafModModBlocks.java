@@ -449,6 +449,7 @@ import net.mcreator.fnafmod.block.CinematicSignToysBlock;
 import net.mcreator.fnafmod.block.CinematicSignFreddyBlock;
 import net.mcreator.fnafmod.block.CinematicSignBaseSequelBlock;
 import net.mcreator.fnafmod.block.CinematicSignBaseBlock;
+import net.mcreator.fnafmod.block.ChunkDataBlockBlock;
 import net.mcreator.fnafmod.block.ChoppysWoodsGrassBlock;
 import net.mcreator.fnafmod.block.ChildrenDrawingsBlock;
 import net.mcreator.fnafmod.block.ChildrenDrawings7Block;
@@ -1330,6 +1331,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> SHADOW_BONNIE_PLUSH = REGISTRY.register("shadow_bonnie_plush", () -> new ShadowBonniePlushBlock());
 	public static final RegistryObject<Block> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> new RetroComputerBlock());
 	public static final RegistryObject<Block> FREDBEARS_FETCH = REGISTRY.register("fredbears_fetch", () -> new FredbearsFetchBlock());
+	public static final RegistryObject<Block> CHUNK_DATA_BLOCK = REGISTRY.register("chunk_data_block", () -> new ChunkDataBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

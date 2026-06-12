@@ -36534,6 +36534,49 @@
         ]
       },
       "path": "~/Entities/Fredbears"
+    },
+    {
+      "name": "WorldRock",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/worldgen/configured_feature/world_rock.json"
+        ],
+        "has_nbt_structure": true
+      }
+    },
+    {
+      "name": "GenerateFNAFWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_fnaf_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/GenerateFNAFWorldProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ChunkDataBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chunk_data_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/chunk_data_block.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/chunk_data_block.json",
+          "src/main/resources/assets/fnaf_mod/models/block/chunk_data_block.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/chunk_data_block.json",
+          "src/main/java/net/mcreator/fnafmod/block/entity/ChunkDataBlockBlockEntity.java",
+          "src/main/java/net/mcreator/fnafmod/block/ChunkDataBlockBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -37516,6 +37559,12 @@
       "CUSTOM:NightmareMangle",
       "CUSTOM:Plushtrap",
       "CUSTOM:SecretNightmareFredbear"
+    ],
+    "ITEMS:mod:flashlight": [
+      "CUSTOM:FlashLight",
+      "CUSTOM:FlashLightOn",
+      "CUSTOM:FlashLightLight",
+      "CUSTOM:BrokenFlashLight"
     ],
     "BLOCKS:mod:stanchion": [
       "CUSTOM:Stanchion",
@@ -39488,6 +39537,7 @@
       "block.fnaf_mod.choppys_woods_grass": "Choppy\u0027s Woods Grass",
       "block.fnaf_mod.arcade_machine_foxy": "Arcade Machine Foxy",
       "entity.fnaf_mod.nightmare_bonnie": "Nightmare Bonnie",
+      "block.fnaf_mod.chunk_data_block": "Chunk Data Block",
       "entity.fnaf_mod.day_time_bb": "DayTime BB",
       "block.fnaf_mod.toilet": "Toilet",
       "item.fnaf_mod.broken_flash_light": "Flashlight",

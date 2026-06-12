@@ -1,0 +1,29 @@
+{
+  "_fv": 73,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": true,
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:BlacktombYard"
+      },
+      {
+        "value": "CUSTOM:ChoppyWoods"
+      },
+      {
+        "value": "CUSTOM:DustingFields"
+      },
+      {
+        "value": "CUSTOM:FazbearHills"
+      },
+      {
+        "value": "CUSTOM:LiligearLake"
+      },
+      {
+        "value": "CUSTOM:PinwheelCircus"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"141\" y=\"65\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">world_rock</field><field name=\"x\">-2</field><field name=\"y\">-2</field><field name=\"z\">-2</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.AIR</field></block></value></block></value></block></xml>"
+  }
+}

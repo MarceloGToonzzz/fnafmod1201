@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.fnafmod.world.features.StructureFeature;
 import net.mcreator.fnafmod.init.FnafModModVillagerProfessions;
 import net.mcreator.fnafmod.init.FnafModModTabs;
 import net.mcreator.fnafmod.init.FnafModModSounds;
@@ -55,6 +56,7 @@ public class FnafModMod {
 
 		FnafModModTabs.REGISTRY.register(bus);
 
+		StructureFeature.REGISTRY.register(bus);
 		FnafModModMobEffects.REGISTRY.register(bus);
 
 		FnafModModParticleTypes.REGISTRY.register(bus);

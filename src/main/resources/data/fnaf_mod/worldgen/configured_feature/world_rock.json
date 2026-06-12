@@ -1,0 +1,14 @@
+{
+  "type": "fnaf_mod:structure_feature",
+  "config": {
+    "structure": "fnaf_mod:world_rock",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      -2,
+      -2,
+      -2
+    ]
+  }
+}
