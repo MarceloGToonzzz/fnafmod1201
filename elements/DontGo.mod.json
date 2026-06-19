@@ -56,8 +56,8 @@
     "musicDiscMusic": {
       "value": "CUSTOM:dont_go"
     },
-    "musicDiscDescription": "Don't Go - LordSmugDread",
-    "musicDiscLengthInTicks": 0,
-    "musicDiscAnalogOutput": 0
+    "musicDiscDescription": "LordSmugDread - Don't Go ",
+    "musicDiscLengthInTicks": 1420,
+    "musicDiscAnalogOutput": 1
   }
 }

@@ -2,9 +2,17 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "door-boarder-right-corner"
+        "0": "door_boarder",
+        "1": "door_boarder_decor"
       },
       "name": "default"
+    },
+    "fnaf_1_movie_welcome": {
+      "map": {
+        "0": "fnaf_1_welcome_door_boarder",
+        "1": "door_boarder_light"
+      },
+      "name": "fnaf_1_movie_welcome"
     }
   }
 }

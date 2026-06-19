@@ -5,7 +5,7 @@
     "block": "DoorBoarder",
     "blockstateList": [
       {
-        "texture": "door-boarder-left-corner",
+        "texture": "door_boarder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -37,7 +37,7 @@
         ]
       },
       {
-        "texture": "door-boarder-top",
+        "texture": "door_boarder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -60,7 +60,7 @@
         ]
       },
       {
-        "texture": "door-boarder-right-corner",
+        "texture": "door_boarder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -92,7 +92,7 @@
         ]
       },
       {
-        "texture": "door-boarder-left",
+        "texture": "door_boarder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -124,7 +124,7 @@
         ]
       },
       {
-        "texture": "door-boarder-right",
+        "texture": "door_boarder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -156,7 +156,7 @@
         ]
       },
       {
-        "texture": "door-boarder-single",
+        "texture": "door_boarder",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
@@ -164,7 +164,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "door-boarder-single:default",
+        "customModelName": "door-boarder-center:default",
         "luminance": 0,
         "boundingBoxes": [
           {

@@ -56,8 +56,8 @@
     "musicDiscMusic": {
       "value": "CUSTOM:toreador_march"
     },
-    "musicDiscDescription": "Toreador March - LordSmugDread",
-    "musicDiscLengthInTicks": 720,
+    "musicDiscDescription": "LordSmugDread - Toreador March",
+    "musicDiscLengthInTicks": 1720,
     "musicDiscAnalogOutput": 0
   }
 }

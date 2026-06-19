@@ -503,6 +503,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.GARAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BOARDER.get().asItem());
+				tabData.accept(FnafModModBlocks.FNAF_1_MOVIE_WELCOME_DOOR_BOARDER.get().asItem());
 				tabData.accept(FnafModModBlocks.BACKSTAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.BIG_BACKSTAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.BUFFET_DOOR.get().asItem());

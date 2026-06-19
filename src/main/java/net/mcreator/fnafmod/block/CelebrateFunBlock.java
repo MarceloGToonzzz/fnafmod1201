@@ -67,10 +67,10 @@ public class CelebrateFunBlock extends BaseEntityBlock implements EntityBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> box(-32, 0, 15, 32, 17, 16);
-			case NORTH -> box(-16, 0, 0, 48, 17, 1);
-			case EAST -> box(15, 0, -16, 16, 17, 48);
-			case WEST -> box(0, 0, -32, 1, 17, 32);
+			default -> box(-18, 0, 0, 34, 16, 2);
+			case NORTH -> box(-18, 0, 14, 34, 16, 16);
+			case EAST -> box(0, 0, -18, 2, 16, 34);
+			case WEST -> box(14, 0, -18, 16, 16, 34);
 		};
 	}
 

@@ -1,9 +1,10 @@
 {
   "parent": "fnaf_mod:custom/door-boarder-right",
   "textures": {
-    "all": "fnaf_mod:block/door-boarder-right",
-    "particle": "fnaf_mod:block/door-boarder",
-    "1": "fnaf_mod:block/door-boarder-right"
+    "all": "fnaf_mod:block/door_boarder",
+    "particle": "fnaf_mod:block/door_boarder",
+    "0": "fnaf_mod:block/door_boarder",
+    "1": "fnaf_mod:block/door_boarder_decor"
   },
   "render_type": "cutout_mipped"
 }

@@ -377,6 +377,7 @@ import net.mcreator.fnafmod.block.FNAF3Posters3Block;
 import net.mcreator.fnafmod.block.FNAF3Posters2Block;
 import net.mcreator.fnafmod.block.FNAF3FloorBlock;
 import net.mcreator.fnafmod.block.FNAF2CelebrateBlock;
+import net.mcreator.fnafmod.block.FNAF1MovieWelcomeDoorBoarderBlock;
 import net.mcreator.fnafmod.block.FNAF1CelebrateBlock;
 import net.mcreator.fnafmod.block.ErrorTileStairsCrackedBlock;
 import net.mcreator.fnafmod.block.ErrorTileStairBlock;
@@ -1332,6 +1333,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> RETRO_COMPUTER = REGISTRY.register("retro_computer", () -> new RetroComputerBlock());
 	public static final RegistryObject<Block> FREDBEARS_FETCH = REGISTRY.register("fredbears_fetch", () -> new FredbearsFetchBlock());
 	public static final RegistryObject<Block> CHUNK_DATA_BLOCK = REGISTRY.register("chunk_data_block", () -> new ChunkDataBlockBlock());
+	public static final RegistryObject<Block> FNAF_1_MOVIE_WELCOME_DOOR_BOARDER = REGISTRY.register("fnaf_1_movie_welcome_door_boarder", () -> new FNAF1MovieWelcomeDoorBoarderBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
