@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "plastic_scrap_white",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -141,7 +141,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "genpercentage.geo.json",
-    "displaySettings": "nightmare_bonnie.geo.json",
+    "displaySettings": "block_item.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {

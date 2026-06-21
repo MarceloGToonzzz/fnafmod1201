@@ -136,7 +136,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "table.geo.json",
-    "displaySettings": "freddyhead.item.json",
+    "displaySettings": "block_item.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {

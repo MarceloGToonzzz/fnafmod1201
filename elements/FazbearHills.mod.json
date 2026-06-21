@@ -63,7 +63,7 @@
       "min": -0.2,
       "max": 2.0
     },
-    "treesPerChunk": 9,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Mega pine trees",
     "treeType": 1,
     "minHeight": 6,

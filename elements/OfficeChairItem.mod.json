@@ -11,7 +11,7 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFToolsAndItems"
+        "value": "CUSTOM:FNAFUtilities"
       }
     ],
     "stackSize": 64,

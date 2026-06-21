@@ -1,5 +1,6 @@
+
 {
-  "parent": "fnaf_mod:displaysettings/nightmare_bonnie.geo",
+  "parent": "fnaf_mod:displaysettings/block_item",
   "textures": {
     "particle": "fnaf_mod:block/genpercentoff"
   }

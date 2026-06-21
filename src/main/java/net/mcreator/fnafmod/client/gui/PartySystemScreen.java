@@ -37,8 +37,6 @@ public class PartySystemScreen extends AbstractContainerScreen<PartySystemMenu> 
 		this.imageHeight = 122;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("fnaf_mod:textures/screens/party_system.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
@@ -51,7 +49,6 @@ public class PartySystemScreen extends AbstractContainerScreen<PartySystemMenu> 
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		guiGraphics.blit(new ResourceLocation("fnaf_mod:textures/screens/party_selector_page_1.png"), this.leftPos + 68, this.topPos + 0, 0, 0, 226, 122, 226, 122);
 
