@@ -1,0 +1,11 @@
+{
+  "parent": "fnaf_mod:custom/pizza_00110",
+  "textures": {
+    "all": "fnaf_mod:block/cooked_dough",
+    "particle": "fnaf_mod:block/dough",
+    "pepperonis": "fnaf_mod:block/cooked_pepperonis",
+    "sausage": "fnaf_mod:block/cooked_sausage_bits",
+    "dough": "fnaf_mod:block/cooked_dough"
+  },
+  "render_type": "cutout_mipped"
+}

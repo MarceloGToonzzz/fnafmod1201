@@ -233,6 +233,7 @@ import net.mcreator.fnafmod.block.PizzeriaTrashCanBlock;
 import net.mcreator.fnafmod.block.PizzaOvenBlock;
 import net.mcreator.fnafmod.block.PizzaBoxOpenBlock;
 import net.mcreator.fnafmod.block.PizzaBoxClosedBlock;
+import net.mcreator.fnafmod.block.PizzaBlock;
 import net.mcreator.fnafmod.block.PinwheelCircusGrassBlock;
 import net.mcreator.fnafmod.block.PinBallMachine3Block;
 import net.mcreator.fnafmod.block.PinBallMachine2Block;
@@ -1334,6 +1335,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> FREDBEARS_FETCH = REGISTRY.register("fredbears_fetch", () -> new FredbearsFetchBlock());
 	public static final RegistryObject<Block> CHUNK_DATA_BLOCK = REGISTRY.register("chunk_data_block", () -> new ChunkDataBlockBlock());
 	public static final RegistryObject<Block> FNAF_1_MOVIE_WELCOME_DOOR_BOARDER = REGISTRY.register("fnaf_1_movie_welcome_door_boarder", () -> new FNAF1MovieWelcomeDoorBoarderBlock());
+	public static final RegistryObject<Block> PIZZA = REGISTRY.register("pizza", () -> new PizzaBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -169,7 +169,33 @@ public class GenerateFNAFWorldProcedure {
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
-							if (Math.random() < (3) / ((float) 5)) {
+							for (int index0 = 0; index0 < 3; index0++) {
+								if (Math.random() < (1) / ((float) 5)) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "choppys_woods_core_small"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
+												public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+													BlockEntity blockEntity = world.getBlockEntity(pos);
+													if (blockEntity != null)
+														return blockEntity.getPersistentData().getDouble(tag);
+													return -1;
+												}
+											}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 5, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
+													BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
+														public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+															BlockEntity blockEntity = world.getBlockEntity(pos);
+															if (blockEntity != null)
+																return blockEntity.getPersistentData().getDouble(tag);
+															return -1;
+														}
+													}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 5, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								}
+							}
+							if (Math.random() < (1) / ((float) 5)) {
 								if (world instanceof ServerLevel _serverworld) {
 									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "choppys_woods_tree_stump_1"));
 									if (template != null) {
@@ -193,7 +219,7 @@ public class GenerateFNAFWorldProcedure {
 									}
 								}
 							}
-							if (Math.random() < (3) / ((float) 5)) {
+							if (Math.random() < (2) / ((float) 5)) {
 								if (world instanceof ServerLevel _serverworld) {
 									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "choppys_woods_tree_1"));
 									if (template != null) {
@@ -217,7 +243,7 @@ public class GenerateFNAFWorldProcedure {
 									}
 								}
 							}
-							if (Math.random() < (3) / ((float) 5)) {
+							if (Math.random() < (2) / ((float) 5)) {
 								if (world instanceof ServerLevel _serverworld) {
 									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "choppys_woods_tree_1"));
 									if (template != null) {
@@ -241,54 +267,81 @@ public class GenerateFNAFWorldProcedure {
 									}
 								}
 							}
-							if (Math.random() < (1) / ((float) 5)) {
-								if (world instanceof ServerLevel _serverworld) {
-									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fazbear_hills_tree_1"));
-									if (template != null) {
-										template.placeInWorld(_serverworld, BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
-											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-												BlockEntity blockEntity = world.getBlockEntity(pos);
-												if (blockEntity != null)
-													return blockEntity.getPersistentData().getDouble(tag);
-												return -1;
-											}
-										}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
-												BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
-													public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-														BlockEntity blockEntity = world.getBlockEntity(pos);
-														if (blockEntity != null)
-															return blockEntity.getPersistentData().getDouble(tag);
-														return -1;
-													}
-												}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
-												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
-									}
-								}
-							}
-						} else if (FnafModModBlocks.CHUNK_DATA_BLOCK.get() == (world.getBlockState(BlockPos.containing(chunkXPosition, 0, chunkYPosition))).getBlock()) {
-							if (world instanceof ServerLevel _serverworld) {
-								StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "world_rock"));
-								if (template != null) {
-									template.placeInWorld(_serverworld, BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2, new Object() {
-										public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getDouble(tag);
-											return -1;
-										}
-									}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2),
-											BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2, new Object() {
+							if (Math.random() < (1) / ((float) 7)) {
+								if (Math.random() < (3) / ((float) 5)) {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fazbear_hills_tree_1"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
 												public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 													BlockEntity blockEntity = world.getBlockEntity(pos);
 													if (blockEntity != null)
 														return blockEntity.getPersistentData().getDouble(tag);
 													return -1;
 												}
-											}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2),
-											new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
+											}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
+													BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
+														public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+															BlockEntity blockEntity = world.getBlockEntity(pos);
+															if (blockEntity != null)
+																return blockEntity.getPersistentData().getDouble(tag);
+															return -1;
+														}
+													}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
+								} else {
+									if (world instanceof ServerLevel _serverworld) {
+										StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "fazbear_hills_tree_fallen_1"));
+										if (template != null) {
+											template.placeInWorld(_serverworld, BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
+												public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+													BlockEntity blockEntity = world.getBlockEntity(pos);
+													if (blockEntity != null)
+														return blockEntity.getPersistentData().getDouble(tag);
+													return -1;
+												}
+											}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 7, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
+													BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3, new Object() {
+														public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+															BlockEntity blockEntity = world.getBlockEntity(pos);
+															if (blockEntity != null)
+																return blockEntity.getPersistentData().getDouble(tag);
+															return -1;
+														}
+													}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 7, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 10) + 3),
+													new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
+										}
+									}
 								}
 							}
-							for (int index0 = 0; index0 < 10; index0++) {
+						} else if (FnafModModBlocks.CHUNK_DATA_BLOCK.get() == (world.getBlockState(BlockPos.containing(chunkXPosition, 0, chunkYPosition))).getBlock()) {
+							if (Math.random() < (2) / ((float) 5)) {
+								if (world instanceof ServerLevel _serverworld) {
+									StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("fnaf_mod", "world_rock"));
+									if (template != null) {
+										template.placeInWorld(_serverworld, BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2, new Object() {
+											public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+												BlockEntity blockEntity = world.getBlockEntity(pos);
+												if (blockEntity != null)
+													return blockEntity.getPersistentData().getDouble(tag);
+												return -1;
+											}
+										}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2),
+												BlockPos.containing(chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2, new Object() {
+													public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+														BlockEntity blockEntity = world.getBlockEntity(pos);
+														if (blockEntity != null)
+															return blockEntity.getPersistentData().getDouble(tag);
+														return -1;
+													}
+												}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 6, chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 12) + 2),
+												new StructurePlaceSettings().setRotation(Rotation.getRandom(_serverworld.random)).setMirror(Mirror.values()[_serverworld.random.nextInt(2)]).setIgnoreEntities(false), _serverworld.random, 3);
+									}
+								}
+							}
+							for (int index1 = 0; index1 < 10; index1++) {
 								xD = chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 15) + 0;
 								zD = chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 15) + 0;
 								if ((world.getBlockState(BlockPos.containing(xD, new Object() {
@@ -317,7 +370,7 @@ public class GenerateFNAFWorldProcedure {
 									}.getValue(world, BlockPos.containing(chunkXPosition, 0, chunkYPosition), "y") + 8, zD), FnafModModBlocks.ROUND_BUSH.get().defaultBlockState(), 3);
 								}
 							}
-							for (int index1 = 0; index1 < 20; index1++) {
+							for (int index2 = 0; index2 < 20; index2++) {
 								xD = chunkXPosition + Mth.nextInt(RandomSource.create(), 0, 16) + 0;
 								zD = chunkYPosition + Mth.nextInt(RandomSource.create(), 0, 16) + 0;
 								if ((world.getBlockState(BlockPos.containing(xD, new Object() {

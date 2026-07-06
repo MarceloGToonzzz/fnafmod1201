@@ -6,14 +6,19 @@ package net.mcreator.fnafmod.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.fnafmod.FnafModMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FnafModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FnafModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> FNAF_BLOCKS = REGISTRY.register("fnaf_blocks",
@@ -846,4 +851,14 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.SPARKY_SUIT_LEGGINGS.get());
 				tabData.accept(FnafModModItems.SPARKY_SUIT_BOOTS.get());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+			if (tabData.hasPermissions()) {
+				tabData.accept(FnafModModBlocks.ARCADE_MACHINE_SHADOW_FREDDY.get().asItem());
+				tabData.accept(FnafModModBlocks.PIZZA.get().asItem());
+			}
+		}
+	}
 }

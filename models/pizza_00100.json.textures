@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "pepperonis": "pepperonis",
+        "dough": "dough"
+      },
+      "name": "default"
+    },
+    "cooked": {
+      "map": {
+        "pepperonis": "cooked_pepperonis",
+        "dough": "cooked_dough"
+      },
+      "name": "cooked"
+    }
+  }
+}

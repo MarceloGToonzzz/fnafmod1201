@@ -21,9 +21,12 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.fnafmod.procedures.ArcadeMachineShadowFreddyOnTickUpdateProcedure;
 import net.mcreator.fnafmod.procedures.ArcadeMachineShadowFreddyOnBlockRightClickedProcedure;
 
 public class ArcadeMachineShadowFreddyBlock extends Block {
@@ -79,6 +82,22 @@ public class ArcadeMachineShadowFreddyBlock extends Block {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 5);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		ArcadeMachineShadowFreddyOnTickUpdateProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 5);
+	}
+
+	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		int x = pos.getX();
@@ -88,7 +107,7 @@ public class ArcadeMachineShadowFreddyBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		ArcadeMachineShadowFreddyOnBlockRightClickedProcedure.execute(entity);
+		ArcadeMachineShadowFreddyOnBlockRightClickedProcedure.execute(world, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

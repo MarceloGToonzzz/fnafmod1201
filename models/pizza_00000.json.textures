@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "dough": "dough"
+      },
+      "name": "default"
+    },
+    "cooked": {
+      "map": {
+        "dough": "cooked_dough"
+      },
+      "name": "cooked"
+    }
+  }
+}

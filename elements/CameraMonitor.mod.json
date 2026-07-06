@@ -37,6 +37,9 @@
     },
     "inventorySize": 0,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "CameraMonitorRightclicked"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

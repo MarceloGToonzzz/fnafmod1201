@@ -95,74 +95,49 @@ public class OnCameraMonitorConnectProcedure {
 				}
 			}
 		} else if (FnafModModItems.CAMERA_MONITOR.get() == itemstack.getItem()) {
-			data = itemstack.getOrCreateTag().getString("servers") + ";";
-			xA = 0;
-			while (data.contains(";")) {
-				if (xA == itemstack.getOrCreateTag().getDouble("selectedServer")) {
-					FnafModMod.LOGGER.info(data);
-					FnafModMod.LOGGER.info(data.substring(0, (int) data.indexOf(";")));
-					data2 = data.substring(0, (int) data.indexOf(";"));
-					FnafModMod.LOGGER.info("Pos X: " + data2.substring(0, (int) data2.indexOf(",")));
-					FnafModMod.LOGGER.info("Pos Y: " + data2.substring((int) (data2.indexOf(",") + 1), (int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(","))));
-					FnafModMod.LOGGER.info("Pos Z: " + data2.substring((int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(",") + 1), (data2).length()));
-					dX = new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
+			if (!("").equals(itemstack.getOrCreateTag().getString("servers"))) {
+				data = itemstack.getOrCreateTag().getString("servers") + ";";
+				xA = 0;
+				while (data.contains(";")) {
+					if (xA == itemstack.getOrCreateTag().getDouble("selectedServer")) {
+						FnafModMod.LOGGER.info(data);
+						FnafModMod.LOGGER.info(data.substring(0, (int) data.indexOf(";")));
+						data2 = data.substring(0, (int) data.indexOf(";"));
+						FnafModMod.LOGGER.info("Pos X: " + data2.substring(0, (int) data2.indexOf(",")));
+						FnafModMod.LOGGER.info("Pos Y: " + data2.substring((int) (data2.indexOf(",") + 1), (int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(","))));
+						FnafModMod.LOGGER.info("Pos Z: " + data2.substring((int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(",") + 1), (data2).length()));
+						dX = new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
 							}
-							return 0;
-						}
-					}.convert(data2.substring(0, (int) data2.indexOf(",")));
-					dY = new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
+						}.convert(data2.substring(0, (int) data2.indexOf(",")));
+						dY = new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
 							}
-							return 0;
-						}
-					}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(","))));
-					dZ = new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
+						}.convert(data2.substring((int) (data2.indexOf(",") + 1), (int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(","))));
+						dZ = new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
 							}
-							return 0;
-						}
-					}.convert(data2.substring((int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(",") + 1), (data2).length()));
-				}
-				if (FnafModModBlocks.SERVER.get() == (world.getBlockState(BlockPos.containing(dX, dY, dZ))).getBlock()) {
-					{
-						Entity _ent = entity;
-						_ent.teleportTo(((new Object() {
-							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								BlockEntity _ent = world.getBlockEntity(pos);
-								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-								return _retval.get();
-							}
-						}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkX")), ((new Object() {
-							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								BlockEntity _ent = world.getBlockEntity(pos);
-								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-								return _retval.get();
-							}
-						}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkY")), ((new Object() {
-							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								BlockEntity _ent = world.getBlockEntity(pos);
-								if (_ent != null)
-									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-								return _retval.get();
-							}
-						}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkZ")));
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport(((new Object() {
+						}.convert(data2.substring((int) (data2.indexOf(",") + 1 + (data2.substring((int) (data2.indexOf(",") + 1), (data2).length())).indexOf(",") + 1), (data2).length()));
+					}
+					if (FnafModModBlocks.SERVER.get() == (world.getBlockState(BlockPos.containing(dX, dY, dZ))).getBlock()) {
+						{
+							Entity _ent = entity;
+							_ent.teleportTo(((new Object() {
 								public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 									BlockEntity _ent = world.getBlockEntity(pos);
@@ -186,18 +161,45 @@ public class OnCameraMonitorConnectProcedure {
 										_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 									return _retval.get();
 								}
-							}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkZ")), _ent.getYRot(), _ent.getXRot());
+							}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkZ")));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport(((new Object() {
+									public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+										AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+										BlockEntity _ent = world.getBlockEntity(pos);
+										if (_ent != null)
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+										return _retval.get();
+									}
+								}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkX")), ((new Object() {
+									public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+										AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+										BlockEntity _ent = world.getBlockEntity(pos);
+										if (_ent != null)
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+										return _retval.get();
+									}
+								}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkY")), ((new Object() {
+									public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+										AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+										BlockEntity _ent = world.getBlockEntity(pos);
+										if (_ent != null)
+											_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+										return _retval.get();
+									}
+								}.getItemStack(world, BlockPos.containing(dX, dY, dZ), 1)).getOrCreateTag().getDouble("CameraLinkZ")), _ent.getYRot(), _ent.getXRot());
+						}
+						if (usehand.equals("offhand")) {
+							if (entity instanceof LivingEntity _entity)
+								_entity.swing(InteractionHand.OFF_HAND, true);
+						} else {
+							if (entity instanceof LivingEntity _entity)
+								_entity.swing(InteractionHand.MAIN_HAND, true);
+						}
 					}
-					if (usehand.equals("offhand")) {
-						if (entity instanceof LivingEntity _entity)
-							_entity.swing(InteractionHand.OFF_HAND, true);
-					} else {
-						if (entity instanceof LivingEntity _entity)
-							_entity.swing(InteractionHand.MAIN_HAND, true);
-					}
+					data = data.substring((int) (data.indexOf(";") + 1), (data).length());
+					xA = xA + 1;
 				}
-				data = data.substring((int) (data.indexOf(";") + 1), (data).length());
-				xA = xA + 1;
 			}
 		}
 	}

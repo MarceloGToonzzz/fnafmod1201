@@ -19873,6 +19873,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -36615,6 +36619,79 @@
         ]
       },
       "path": "~/Blocks/DoorBoarders"
+    },
+    {
+      "name": "ArcadeMachineShadowFreddyOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arcade_machine_shadow_freddy_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ArcadeMachineShadowFreddyOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "Pizza",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/pizza.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza.json",
+          "src/main/java/net/mcreator/fnafmod/block/PizzaBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/pizza.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pizza.json"
+        ]
+      },
+      "path": "~/Blocks/Pizza"
+    },
+    {
+      "name": "PizzaStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_7.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_4.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pizza_states_blockstate_10.json"
+        ]
+      },
+      "path": "~/Blocks/Pizza"
     }
   ],
   "variable_elements": [
@@ -40512,6 +40589,7 @@
       "block.fnaf_mod.cactus_curtain": "Cactus Curtain",
       "item.fnaf_mod.nightmare_fredbear_statue_spawn_item": "Nightmare Fredbear (Statue)",
       "subtitles.happiest_day": "Happiest Day Music Disc",
+      "block.fnaf_mod.pizza": "Pizza",
       "item.fnaf_mod.fazbear_showtime.desc": "SomethingFunky - Fazbear Showtime",
       "entity.fnaf_mod.sitting_spring_bonnie": "Spring Bonnie (Sitting Prop Entity)",
       "block.fnaf_mod.lilygear_lake_grass": "Lilygear Lake Grass",
@@ -40764,6 +40842,10 @@
           },
           {
             "name": "New Cameras",
+            "children": []
+          },
+          {
+            "name": "Pizza",
             "children": []
           }
         ]

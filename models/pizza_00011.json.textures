@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "sausage": "sausage_bits",
+        "red_mushrooms": "red_mushrooms",
+        "dough": "dough"
+      },
+      "name": "default"
+    },
+    "cooked": {
+      "map": {
+        "sausage": "cooked_sausage_bits",
+        "red_mushrooms": "cooked_red_mushrooms",
+        "dough": "cooked_dough"
+      },
+      "name": "cooked"
+    }
+  }
+}
