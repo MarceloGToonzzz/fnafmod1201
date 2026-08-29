@@ -107,7 +107,7 @@ public class ArcadeMachineShadowFreddyBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		ArcadeMachineShadowFreddyOnBlockRightClickedProcedure.execute(world, entity);
+		ArcadeMachineShadowFreddyOnBlockRightClickedProcedure.execute();
 		return InteractionResult.SUCCESS;
 	}
 }

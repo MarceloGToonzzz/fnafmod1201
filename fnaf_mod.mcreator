@@ -19869,16 +19869,7 @@
         "files": [
           "src/main/java/net/mcreator/fnafmod/procedures/ArcadeMachineShadowFreddyOnBlockRightClickedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/FNAF World/Code"
     },
@@ -36692,6 +36683,169 @@
         ]
       },
       "path": "~/Blocks/Pizza"
+    },
+    {
+      "name": "PizzaCutterKnife",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pizza_cutter_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/pizza_cutter_knife.json",
+          "src/main/java/net/mcreator/fnafmod/item/PizzaCutterKnifeItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NightUnwitheredFreddy",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_unwithered_freddy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/NightUnwitheredFreddyEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/NightUnwitheredFreddyRenderer.java",
+          "src/main/resources/data/fnaf_mod/forge/biome_modifier/night_unwithered_freddy_biome_modifier.json",
+          "src/main/java/net/mcreator/fnafmod/entity/model/NightUnwitheredFreddyModel.java"
+        ]
+      },
+      "path": "~/Entities/NighttimeAnimatronics/Unwithereds"
+    },
+    {
+      "name": "FazTalker",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faz_talker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/item/FazTalkerItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/faz_talker.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FazbearHillsLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fazbear_hills_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/fazbear_hills_leaves.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/fazbear_hills_leaves.json",
+          "src/main/java/net/mcreator/fnafmod/block/FazbearHillsLeavesBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/fazbear_hills_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/item/fazbear_hills_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "ChoppysWoodsLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choppys_woods_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/choppys_woods_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/choppys_woods_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/item/choppys_woods_leaves.json",
+          "src/main/java/net/mcreator/fnafmod/block/ChoppysWoodsLeavesBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/choppys_woods_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "DustingFieldsLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dusting_fields_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/dusting_fields_leaves.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/dusting_fields_leaves.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/dusting_fields_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/dusting_fields_leaves.json",
+          "src/main/java/net/mcreator/fnafmod/block/DustingFieldsLeavesBlock.java"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "LilygearLakeLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lilygear_lake_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/lilygear_lake_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/lilygear_lake_leaves.json",
+          "src/main/java/net/mcreator/fnafmod/block/LilygearLakeLeavesBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/lilygear_lake_leaves.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/lilygear_lake_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "BlocktombYardLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocktomb_yard_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/blocktomb_yard_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/item/blocktomb_yard_leaves.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/blocktomb_yard_leaves.json",
+          "src/main/java/net/mcreator/fnafmod/block/BlocktombYardLeavesBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/blocktomb_yard_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "PinwheelCircusLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinwheel_circus_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/pinwheel_circus_leaves.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/pinwheel_circus_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/block/pinwheel_circus_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/item/pinwheel_circus_leaves.json",
+          "src/main/java/net/mcreator/fnafmod/block/PinwheelCircusLeavesBlock.java"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
+    },
+    {
+      "name": "CaveLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cave_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/CaveLeavesBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/cave_leaves.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/cave_leaves.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/cave_leaves.json",
+          "src/main/resources/assets/fnaf_mod/models/item/cave_leaves.json"
+        ]
+      },
+      "path": "~/Blocks/FNAF World"
     }
   ],
   "variable_elements": [
@@ -38020,6 +38174,7 @@
       "~CUSTOM:BlackWhiteTileStair"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:PizzaCutterKnife",
       "~CUSTOM:Knife",
       "~CUSTOM:PizzaCutter",
       "~CUSTOM:Hook"
@@ -38425,6 +38580,14 @@
       "~CUSTOM:Chair",
       "~CUSTOM:BackstageDoor"
     ],
+    "ITEMS:minecraft:leaves": [
+      "CUSTOM:ChoppysWoodsLeaves",
+      "CUSTOM:DustingFieldsLeaves",
+      "CUSTOM:LilygearLakeLeaves",
+      "CUSTOM:BlocktombYardLeaves",
+      "CUSTOM:PinwheelCircusLeaves",
+      "CUSTOM:CaveLeaves"
+    ],
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:StageWoodFence"
     ],
@@ -38435,12 +38598,19 @@
   "tab_element_order": {
     "CUSTOM:FNAFBlocks": [
       "FazbearHillsGrass",
+      "FazbearHillsLeaves",
       "PinwheelCircusGrass",
+      "PinwheelCircusLeaves",
       "ChoppysWoodsGrass",
+      "ChoppysWoodsLeaves",
       "CaveGrass",
+      "CaveLeaves",
       "BlacktombYardGrass",
+      "BlocktombYardLeaves",
       "LilygearLakeGrass",
+      "LilygearLakeLeaves",
       "DustingFieldsGrass",
+      "DustingFieldsLeaves",
       "WorldDirt",
       "WorldStone",
       "GlitchedLog",
@@ -38956,6 +39126,7 @@
       "LinkCable",
       "FreddyMask",
       "CameraMonitor",
+      "FazTalker",
       "FlashLight",
       "GuardHat",
       "WaiterHat",
@@ -38964,6 +39135,7 @@
       "BonnieGuitar",
       "FireAxe",
       "Knife",
+      "PizzaCutterKnife",
       "PizzaCutter",
       "Hook",
       "FazCoin",
@@ -39249,8 +39421,8 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
@@ -39464,6 +39636,7 @@
       "entity.fnaf_mod.endo_skeleton": "Endoskeleton",
       "subtitles.a2": "Honk",
       "item_group.fnaf_mod.fnaf_decor": "FNAF Decor",
+      "block.fnaf_mod.blocktomb_yard_leaves": "Blacktomb Yard Leaves",
       "block.fnaf_mod.awning_blue.description_0": "Blue",
       "item.fnaf_mod.nightmare_fredbear_spawn_item": "Nightmare Fredbear",
       "gui.fnaf_mod.camera_gui.button_previous_page": "Previous Page",
@@ -39560,6 +39733,7 @@
       "block.fnaf_mod.white_wall_stairs": "White Wall Stairs",
       "advancements.mat_advancement.title": "Maintainance Assisting Tablet",
       "item.fnaf_mod.fredbears_foxy_spawn_egg": "Fredbear\u0027s Family Diner Foxy Spawn Egg",
+      "block.fnaf_mod.pinwheel_circus_leaves": "Pinwheel Circus Leaves",
       "item.fnaf_mod.endo_02_spawn_item": "Endo-02",
       "item.fnaf_mod.phantom_mangle_spawn_egg": "Phantom Mangle Spawn Egg",
       "block.fnaf_mod.height_chart": "Height Chart",
@@ -39652,6 +39826,7 @@
       "block.fnaf_mod.center_big_light_dark_red_wall_tile": "Center Big White-Black Wall Tiles",
       "item.fnaf_mod.crying_child_spawn_egg": "Crying Child Spawn Egg",
       "block.fnaf_mod.wall_wires": "Wall Wires",
+      "item.fnaf_mod.night_unwithered_freddy_spawn_egg": "Un-Withered Freddy Spawn Egg",
       "block.fnaf_mod.chica_head_decoration": "Chica Head Prop",
       "item.fnaf_mod.golden_freddy_spawn_egg": "Golden Freddy Spawn Egg",
       "subtitles.icebiometemp": "",
@@ -39673,6 +39848,7 @@
       "entity.fnaf_mod.day_time_bb": "DayTime BB",
       "block.fnaf_mod.toilet": "Toilet",
       "item.fnaf_mod.broken_flash_light": "Flashlight",
+      "block.fnaf_mod.cave_leaves": "Pinwheel Circus Leaves",
       "block.fnaf_mod.popgoes_plushie.description_0": "§7Thank You Kane Carter",
       "item.fnaf_mod.phantom_bb_spawn_item": "Phantom BB",
       "gui.fnaf_mod.camera_gui.label_swap_pages_for_each_set_of_5": "Swap Pages for Each Set of 5",
@@ -39934,6 +40110,7 @@
       "block.fnaf_mod.movie_exterior_top": "Exterior Wall",
       "entity.fnaf_mod.springtrap": "Springtrap",
       "block.fnaf_mod.thin_fancy_candy_curtain_clean.description_1": "Clean",
+      "entity.fnaf_mod.night_unwithered_freddy": "Un-Withered Freddy",
       "block.fnaf_mod.fnaf_4_door": "White Wood Door",
       "item.fnaf_mod.shadow_bonnie_spawn_egg": "Shadow Bonnie Spawn Egg",
       "block.fnaf_mod.poster_2.description_0": "Poster of Freddy Fazbear!",
@@ -40177,6 +40354,7 @@
       "entity.fnaf_mod.adventure_springtrap": "Adventure Springtrap",
       "block.fnaf_mod.rules_poster": "Rules Poster!",
       "block.fnaf_mod.door_light": "Door Light",
+      "block.fnaf_mod.dusting_fields_leaves": "Dusting Fields Leaves",
       "block.fnaf_mod.desk": "Desk (Cupcake)",
       "block.fnaf_mod.alternate_white_red_wall_tile": "Alternate White Red Wall Tiles",
       "block.fnaf_mod.big_wide_red_windowed_door": "Wide Establishment Windowed Door",
@@ -40446,6 +40624,7 @@
       "block.fnaf_mod.door_button_on": "Door Button On",
       "item.fnaf_mod.withered_freddy_spawn_egg": "Withered Freddy Spawn Egg",
       "block.fnaf_mod.shack_randomizer": "Shack Randomizer",
+      "item.fnaf_mod.pizza_cutter_knife": "Pizza Cutter Knife",
       "item.fnaf_mod.glitchtrap_suit_leggings": "Spring Bonnie Costume Leggings",
       "entity.fnaf_mod.passive_chica": "Chica the Chicken",
       "entity.fnaf_mod.nightmare_freddy": "Nightmare Freddy",
@@ -40473,6 +40652,7 @@
       "entity.fnaf_mod.bb": "BB",
       "item.fnaf_mod.toy_foxy_spawn_egg": "Toy Foxy Spawn Egg",
       "block.fnaf_mod.fredbear_poster_2.description_0": "Poster of Fredbear\u0027s Head!",
+      "block.fnaf_mod.fazbear_hills_leaves": "Fazbear Hills Leaves",
       "block.fnaf_mod.black_white_tile_slab_cracked": "Cracked Black \u0026 White Tile Slab",
       "entity.fnaf_mod.toy_freddy": "Toy Freddy ",
       "block.fnaf_mod.light_button_flat.description_0": "§7Linkable",
@@ -40489,6 +40669,7 @@
       "block.fnaf_mod.children_drawings_6": "Pack of Children\u0027s Drawings 6",
       "block.fnaf_mod.buffet_floor_clean": "Buffet Floor Clean",
       "block.fnaf_mod.children_drawings_2": "Pack of Children\u0027s Drawings 2",
+      "block.fnaf_mod.choppys_woods_leaves": "Choppys Woods Leaves",
       "item.fnaf_mod.plushtrap_toy_spawn_egg": "Plushtrap Toy Spawn Egg",
       "block.fnaf_mod.brown_tan_tile_slab": "Chess Tile Slab",
       "block.fnaf_mod.children_drawings_7": "Pack of Children\u0027s Drawings 7",
@@ -40556,6 +40737,7 @@
       "item.fnaf_mod.freddy_fazbear_spawn_egg": "Freddy Fazbear Spawn Egg",
       "block.fnaf_mod.stage_wood_fence_gate": "Stage Wood Fence Gate",
       "block.fnaf_mod.ballpit": "Ball Pit",
+      "block.fnaf_mod.lilygear_lake_leaves": "Lilygear Lake Leaves",
       "block.fnaf_mod.foosball": "Foosball Machine",
       "block.fnaf_mod.poster_1.description_0": "Poster of Bonnie the Bunny!",
       "item.fnaf_mod.nightmare_bb_spawn_item": "Nightmare BB",
@@ -40642,6 +40824,7 @@
       "block.fnaf_mod.party_hat_green": "Party Hat {Green}",
       "block.fnaf_mod.thin_fancy_curtain.description_1": "Striped",
       "block.fnaf_mod.thin_fancy_curtain.description_0": "§c(Red Curtain)",
+      "item.fnaf_mod.faz_talker": "Faz Talker",
       "block.fnaf_mod.big_checkered_white_wall_tile": "Big Checkered White Wall Tile",
       "block.fnaf_mod.black_white_tile": "Black \u0026 White Tile",
       "block.fnaf_mod.freddy_plushie": "Freddy Plushie",
@@ -40974,6 +41157,10 @@
               },
               {
                 "name": "Polars",
+                "children": []
+              },
+              {
+                "name": "Unwithereds",
                 "children": []
               }
             ]

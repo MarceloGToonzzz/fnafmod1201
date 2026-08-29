@@ -1,0 +1,7 @@
+{
+  "parent": "fnaf_mod:custom/knife_handheld",
+  "textures": {
+    "layer0": "fnaf_mod:block/pizzaknife",
+    "particle": "fnaf_mod:item/pizzaknife"
+  }
+}

@@ -24,12 +24,19 @@ public class FnafModModTabs {
 	public static final RegistryObject<CreativeModeTab> FNAF_BLOCKS = REGISTRY.register("fnaf_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PURPLE_CURTAIN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModBlocks.FAZBEAR_HILLS_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.FAZBEAR_HILLS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.CHOPPYS_WOODS_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.CHOPPYS_WOODS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.CAVE_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.CAVE_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.BLACKTOMB_YARD_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.BLOCKTOMB_YARD_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.LILYGEAR_LAKE_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.LILYGEAR_LAKE_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.DUSTING_FIELDS_GRASS.get().asItem());
+				tabData.accept(FnafModModBlocks.DUSTING_FIELDS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.WORLD_DIRT.get().asItem());
 				tabData.accept(FnafModModBlocks.WORLD_STONE.get().asItem());
 				tabData.accept(FnafModModBlocks.GLITCHED_LOG.get().asItem());
@@ -547,6 +554,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.LINK_CABLE.get());
 				tabData.accept(FnafModModItems.FREDDY_MASK_HELMET.get());
 				tabData.accept(FnafModModItems.CAMERA_MONITOR.get());
+				tabData.accept(FnafModModItems.FAZ_TALKER.get());
 				tabData.accept(FnafModModItems.FLASH_LIGHT.get());
 				tabData.accept(FnafModModItems.GUARD_HAT_HELMET.get());
 				tabData.accept(FnafModModItems.WAITER_HAT_HELMET.get());
@@ -555,6 +563,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.BONNIE_GUITAR.get());
 				tabData.accept(FnafModModItems.FIRE_AXE.get());
 				tabData.accept(FnafModModItems.KNIFE.get());
+				tabData.accept(FnafModModItems.PIZZA_CUTTER_KNIFE.get());
 				tabData.accept(FnafModModItems.PIZZA_CUTTER.get());
 				tabData.accept(FnafModModItems.HOOK.get());
 				tabData.accept(FnafModModItems.FAZ_COIN.get());

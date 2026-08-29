@@ -97,6 +97,7 @@ import net.mcreator.fnafmod.entity.NightmareBonnieStatueEntity;
 import net.mcreator.fnafmod.entity.NightmareBonnieEntity;
 import net.mcreator.fnafmod.entity.NightmareBBEntity;
 import net.mcreator.fnafmod.entity.NightimeToyChicaEntity;
+import net.mcreator.fnafmod.entity.NightUnwitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.MangleSittingEntity;
 import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
@@ -742,6 +743,11 @@ public class FnafModModEntities {
 			EntityType.Builder.<FredbearsSparkyEntity>of(FredbearsSparkyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FredbearsSparkyEntity::new)
 
 					.sized(0.6f, 1.9f));
+	public static final RegistryObject<EntityType<NightUnwitheredFreddyEntity>> NIGHT_UNWITHERED_FREDDY = register("night_unwithered_freddy",
+			EntityType.Builder.<NightUnwitheredFreddyEntity>of(NightUnwitheredFreddyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(NightUnwitheredFreddyEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -897,6 +903,7 @@ public class FnafModModEntities {
 			FredbearsMontyEntity.init();
 			FredbearsBubEntity.init();
 			FredbearsSparkyEntity.init();
+			NightUnwitheredFreddyEntity.init();
 		});
 	}
 
@@ -1047,5 +1054,6 @@ public class FnafModModEntities {
 		event.put(FREDBEARS_MONTY.get(), FredbearsMontyEntity.createAttributes().build());
 		event.put(FREDBEARS_BUB.get(), FredbearsBubEntity.createAttributes().build());
 		event.put(FREDBEARS_SPARKY.get(), FredbearsSparkyEntity.createAttributes().build());
+		event.put(NIGHT_UNWITHERED_FREDDY.get(), NightUnwitheredFreddyEntity.createAttributes().build());
 	}
 }

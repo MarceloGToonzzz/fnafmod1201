@@ -5,6 +5,12 @@
         "layer0": "knife"
       },
       "name": "default"
+    },
+    "pizza": {
+      "map": {
+        "layer0": "pizzaknife"
+      },
+      "name": "pizza"
     }
   }
 }

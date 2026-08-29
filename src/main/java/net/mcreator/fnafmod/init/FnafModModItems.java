@@ -66,6 +66,7 @@ import net.mcreator.fnafmod.item.PuffyPuffinsSpawnItemItem;
 import net.mcreator.fnafmod.item.PlushtrapToySpawnItemItem;
 import net.mcreator.fnafmod.item.PlushtrapSpawnItemItem;
 import net.mcreator.fnafmod.item.PizzaSliceItem;
+import net.mcreator.fnafmod.item.PizzaCutterKnifeItem;
 import net.mcreator.fnafmod.item.PizzaCutterItem;
 import net.mcreator.fnafmod.item.PitBonnieSuitItem;
 import net.mcreator.fnafmod.item.PinkPlasticItem;
@@ -146,6 +147,7 @@ import net.mcreator.fnafmod.item.FlashLightOnItem;
 import net.mcreator.fnafmod.item.FlashLightItem;
 import net.mcreator.fnafmod.item.FireAxeItem;
 import net.mcreator.fnafmod.item.FazbearShowtimeItem;
+import net.mcreator.fnafmod.item.FazTalkerItem;
 import net.mcreator.fnafmod.item.FazCoinItem;
 import net.mcreator.fnafmod.item.EvilFreddyItemSpawnItem;
 import net.mcreator.fnafmod.item.EvilFoxyItemItem;
@@ -1318,6 +1320,15 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> CHUNK_DATA_BLOCK = block(FnafModModBlocks.CHUNK_DATA_BLOCK);
 	public static final RegistryObject<Item> FNAF_1_MOVIE_WELCOME_DOOR_BOARDER = block(FnafModModBlocks.FNAF_1_MOVIE_WELCOME_DOOR_BOARDER);
 	public static final RegistryObject<Item> PIZZA = block(FnafModModBlocks.PIZZA);
+	public static final RegistryObject<Item> PIZZA_CUTTER_KNIFE = REGISTRY.register("pizza_cutter_knife", () -> new PizzaCutterKnifeItem());
+	public static final RegistryObject<Item> FAZ_TALKER = REGISTRY.register("faz_talker", () -> new FazTalkerItem());
+	public static final RegistryObject<Item> FAZBEAR_HILLS_LEAVES = block(FnafModModBlocks.FAZBEAR_HILLS_LEAVES);
+	public static final RegistryObject<Item> CHOPPYS_WOODS_LEAVES = block(FnafModModBlocks.CHOPPYS_WOODS_LEAVES);
+	public static final RegistryObject<Item> DUSTING_FIELDS_LEAVES = block(FnafModModBlocks.DUSTING_FIELDS_LEAVES);
+	public static final RegistryObject<Item> LILYGEAR_LAKE_LEAVES = block(FnafModModBlocks.LILYGEAR_LAKE_LEAVES);
+	public static final RegistryObject<Item> BLOCKTOMB_YARD_LEAVES = block(FnafModModBlocks.BLOCKTOMB_YARD_LEAVES);
+	public static final RegistryObject<Item> PINWHEEL_CIRCUS_LEAVES = block(FnafModModBlocks.PINWHEEL_CIRCUS_LEAVES);
+	public static final RegistryObject<Item> CAVE_LEAVES = block(FnafModModBlocks.CAVE_LEAVES);
 
 	// Start of user code block custom items
 	// End of user code block custom items

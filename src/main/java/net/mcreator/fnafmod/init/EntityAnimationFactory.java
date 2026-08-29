@@ -72,6 +72,7 @@ import net.mcreator.fnafmod.entity.NightmareBonnieStatueEntity;
 import net.mcreator.fnafmod.entity.NightmareBonnieEntity;
 import net.mcreator.fnafmod.entity.NightmareBBEntity;
 import net.mcreator.fnafmod.entity.NightimeToyChicaEntity;
+import net.mcreator.fnafmod.entity.NightUnwitheredFreddyEntity;
 import net.mcreator.fnafmod.entity.MangleSittingEntity;
 import net.mcreator.fnafmod.entity.MangleEntity;
 import net.mcreator.fnafmod.entity.JackOChicaEntity;
@@ -980,6 +981,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof FredbearsSparkyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NightUnwitheredFreddyEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
