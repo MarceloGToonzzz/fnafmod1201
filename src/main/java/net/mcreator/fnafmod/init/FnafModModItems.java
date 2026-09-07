@@ -1329,6 +1329,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> BLOCKTOMB_YARD_LEAVES = block(FnafModModBlocks.BLOCKTOMB_YARD_LEAVES);
 	public static final RegistryObject<Item> PINWHEEL_CIRCUS_LEAVES = block(FnafModModBlocks.PINWHEEL_CIRCUS_LEAVES);
 	public static final RegistryObject<Item> CAVE_LEAVES = block(FnafModModBlocks.CAVE_LEAVES);
+	public static final RegistryObject<Item> AIR_HOCKEY = block(FnafModModBlocks.AIR_HOCKEY);
 
 	// Start of user code block custom items
 	// End of user code block custom items

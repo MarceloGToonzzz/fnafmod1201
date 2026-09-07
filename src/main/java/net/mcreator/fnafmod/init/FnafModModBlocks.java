@@ -680,6 +680,7 @@ import net.mcreator.fnafmod.block.AlternateBigBuffetWallBlock;
 import net.mcreator.fnafmod.block.AlternateBigBlackStripedStageBrickTilesBlock;
 import net.mcreator.fnafmod.block.AlternateBigBlackStripeDarkWallTileBlock;
 import net.mcreator.fnafmod.block.AlternateBigBlackPurpleWallTileBlock;
+import net.mcreator.fnafmod.block.AirHockeyBlock;
 import net.mcreator.fnafmod.FnafModMod;
 
 public class FnafModModBlocks {
@@ -1350,6 +1351,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> BLOCKTOMB_YARD_LEAVES = REGISTRY.register("blocktomb_yard_leaves", () -> new BlocktombYardLeavesBlock());
 	public static final RegistryObject<Block> PINWHEEL_CIRCUS_LEAVES = REGISTRY.register("pinwheel_circus_leaves", () -> new PinwheelCircusLeavesBlock());
 	public static final RegistryObject<Block> CAVE_LEAVES = REGISTRY.register("cave_leaves", () -> new CaveLeavesBlock());
+	public static final RegistryObject<Block> AIR_HOCKEY = REGISTRY.register("air_hockey", () -> new AirHockeyBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

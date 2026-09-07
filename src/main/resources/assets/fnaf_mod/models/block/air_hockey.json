@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/air_hockey",
+  "textures": {
+    "all": "fnaf_mod:block/air_hockey",
+    "particle": "fnaf_mod:block/air_hockey",
+    "0": "fnaf_mod:block/air_hockey"
+  },
+  "render_type": "solid"
+}

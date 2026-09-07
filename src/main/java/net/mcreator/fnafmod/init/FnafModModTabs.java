@@ -406,6 +406,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PARTY_HAT_BLUE.get().asItem());
 				tabData.accept(FnafModModBlocks.PARTY_HAT_PURPLE.get().asItem());
 				tabData.accept(FnafModModBlocks.BALLPIT.get().asItem());
+				tabData.accept(FnafModModBlocks.AIR_HOCKEY.get().asItem());
 				tabData.accept(FnafModModBlocks.PRESENTS.get().asItem());
 				tabData.accept(FnafModModBlocks.PUPPET_MASK.get().asItem());
 				tabData.accept(FnafModModBlocks.MUSIC_BOX.get().asItem());
