@@ -1,10 +1,10 @@
 {
   "mappings": {
-    "orange": {
+    "p": {
       "map": {
-        "balloon": "orange_balloon"
+        "balloon": "purple_balloon"
       },
-      "name": "orange"
+      "name": "p"
     },
     "default": {
       "map": {
@@ -12,29 +12,29 @@
       },
       "name": "default"
     },
-    "green": {
-      "map": {
-        "balloon": "green_balloon"
-      },
-      "name": "green"
-    },
-    "blue": {
+    "b": {
       "map": {
         "balloon": "blue_balloon"
       },
-      "name": "blue"
+      "name": "b"
     },
-    "yellow": {
+    "g": {
+      "map": {
+        "balloon": "green_balloon"
+      },
+      "name": "g"
+    },
+    "y": {
       "map": {
         "balloon": "yellow_balloon"
       },
-      "name": "yellow"
+      "name": "y"
     },
-    "purple": {
+    "o": {
       "map": {
-        "balloon": "purple_balloon"
+        "balloon": "orange_balloon"
       },
-      "name": "purple"
+      "name": "o"
     }
   }
 }

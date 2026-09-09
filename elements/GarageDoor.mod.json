@@ -152,7 +152,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "garagedoor_closed.geo.json",
-    "displaySettings": "bigdoor.json",
+    "displaySettings": "gdoor-display-alt.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {

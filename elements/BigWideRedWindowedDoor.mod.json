@@ -143,7 +143,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "bigwidedoor1_closed.geo.json",
-    "displaySettings": "bigdoor.json",
+    "displaySettings": "widedoor.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {

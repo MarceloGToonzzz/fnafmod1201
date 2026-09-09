@@ -5,5 +5,5 @@
     "particle": "fnaf_mod:block/air_hockey",
     "0": "fnaf_mod:block/air_hockey"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

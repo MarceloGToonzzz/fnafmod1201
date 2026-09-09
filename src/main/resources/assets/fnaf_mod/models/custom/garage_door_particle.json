@@ -1,5 +1,6 @@
+
 {
-  "parent": "fnaf_mod:displaysettings/bigdoor",
+  "parent": "fnaf_mod:displaysettings/gdoor-display-alt",
   "textures": {
     "particle": "fnaf_mod:block/garage_door"
   }

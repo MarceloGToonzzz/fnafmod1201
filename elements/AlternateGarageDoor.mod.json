@@ -152,7 +152,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "alt_garage_door_closed.geo.json",
-    "displaySettings": "bigdoor.json",
+    "displaySettings": "door-display.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {

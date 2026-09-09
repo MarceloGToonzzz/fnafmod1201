@@ -1,5 +1,6 @@
+
 {
-  "parent": "fnaf_mod:displaysettings/bigdoor",
+  "parent": "fnaf_mod:displaysettings/widedoor",
   "textures": {
     "particle": "fnaf_mod:block/bigwidedoor1_kitchen-cyan"
   }
