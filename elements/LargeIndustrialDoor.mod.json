@@ -146,7 +146,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "large_industrial_door_open.geo.json",
-    "displaySettings": "bigdoor.json",
+    "displaySettings": "heavy_i_big_door.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {

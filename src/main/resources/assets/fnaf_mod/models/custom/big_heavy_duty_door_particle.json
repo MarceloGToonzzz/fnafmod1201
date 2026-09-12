@@ -1,5 +1,6 @@
+
 {
-  "parent": "fnaf_mod:displaysettings/bigdoor",
+  "parent": "fnaf_mod:displaysettings/heavy_s_big_door",
   "textures": {
     "particle": "fnaf_mod:block/heavy_duty_door"
   }

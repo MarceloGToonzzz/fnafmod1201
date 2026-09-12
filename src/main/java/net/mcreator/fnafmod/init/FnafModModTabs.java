@@ -6,39 +6,34 @@ package net.mcreator.fnafmod.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.fnafmod.FnafModMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FnafModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FnafModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> FNAF_BLOCKS = REGISTRY.register("fnaf_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_blocks")).icon(() -> new ItemStack(FnafModModBlocks.PURPLE_CURTAIN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModBlocks.FAZBEAR_HILLS_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.FAZBEAR_HILLS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.CHOPPYS_WOODS_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.CHOPPYS_WOODS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.CAVE_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.CAVE_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.BLACKTOMB_YARD_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.BLOCKTOMB_YARD_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.LILYGEAR_LAKE_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.LILYGEAR_LAKE_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.DUSTING_FIELDS_GRASS.get().asItem());
-				tabData.accept(FnafModModBlocks.DUSTING_FIELDS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.WORLD_DIRT.get().asItem());
 				tabData.accept(FnafModModBlocks.WORLD_STONE.get().asItem());
+				tabData.accept(FnafModModBlocks.FAZBEAR_HILLS_LEAVES.get().asItem());
+				tabData.accept(FnafModModBlocks.PINWHEEL_CIRCUS_LEAVES.get().asItem());
+				tabData.accept(FnafModModBlocks.CHOPPYS_WOODS_LEAVES.get().asItem());
+				tabData.accept(FnafModModBlocks.CAVE_LEAVES.get().asItem());
+				tabData.accept(FnafModModBlocks.BLOCKTOMB_YARD_LEAVES.get().asItem());
+				tabData.accept(FnafModModBlocks.LILYGEAR_LAKE_LEAVES.get().asItem());
+				tabData.accept(FnafModModBlocks.DUSTING_FIELDS_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.GLITCHED_LOG.get().asItem());
 				tabData.accept(FnafModModBlocks.GLITCHED_LEAVES.get().asItem());
 				tabData.accept(FnafModModBlocks.ROUND_BUSH.get().asItem());
@@ -356,6 +351,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BB_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.JJ_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.MARIONETTE_FIGURE.get().asItem());
+				tabData.accept(FnafModModBlocks.MINI_PUPPET_DECOR.get().asItem());
 				tabData.accept(FnafModModBlocks.DESK.get().asItem());
 				tabData.accept(FnafModModBlocks.DESK_2.get().asItem());
 				tabData.accept(FnafModModBlocks.DESK_3.get().asItem());
@@ -494,7 +490,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.LETS_EAT_SIGN.get().asItem());
 				tabData.accept(FnafModModBlocks.DECOR_STAR.get().asItem());
 				tabData.accept(FnafModModBlocks.DRUMSET.get().asItem());
-				tabData.accept(FnafModModBlocks.MINI_PUPPET_DECOR.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_LIGHT.get().asItem());
 				tabData.accept(FnafModModBlocks.FLOOD_LIGHTS.get().asItem());
 				tabData.accept(FnafModModBlocks.FLUORESCENT_LIGHT.get().asItem());
@@ -514,10 +509,10 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PRINTER.get().asItem());
 				tabData.accept(FnafModModBlocks.TOILET.get().asItem());
 				tabData.accept(FnafModModBlocks.SINK.get().asItem());
-				tabData.accept(FnafModModBlocks.GARAGE_DOOR.get().asItem());
-				tabData.accept(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.DOOR_BOARDER.get().asItem());
 				tabData.accept(FnafModModBlocks.FNAF_1_MOVIE_WELCOME_DOOR_BOARDER.get().asItem());
+				tabData.accept(FnafModModBlocks.GARAGE_DOOR.get().asItem());
+				tabData.accept(FnafModModBlocks.ALTERNATE_GARAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.BACKSTAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.BIG_BACKSTAGE_DOOR.get().asItem());
 				tabData.accept(FnafModModBlocks.BUFFET_DOOR.get().asItem());
@@ -564,12 +559,14 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.BONNIE_GUITAR.get());
 				tabData.accept(FnafModModItems.FIRE_AXE.get());
 				tabData.accept(FnafModModItems.KNIFE.get());
+				tabData.accept(FnafModModItems.CAKE_KNIFE.get());
 				tabData.accept(FnafModModItems.PIZZA_CUTTER_KNIFE.get());
 				tabData.accept(FnafModModItems.PIZZA_CUTTER.get());
 				tabData.accept(FnafModModItems.HOOK.get());
 				tabData.accept(FnafModModItems.FAZ_COIN.get());
 				tabData.accept(FnafModModItems.BATTERY.get());
 				tabData.accept(FnafModModItems.PIZZA_SLICE.get());
+				tabData.accept(FnafModModItems.CAKE_SLICE.get());
 				tabData.accept(FnafModModItems.CUPCAKE.get());
 				tabData.accept(FnafModModItems.TOY_CUPCAKE.get());
 				tabData.accept(FnafModModItems.CIRCUIT_BOARD.get());
@@ -698,23 +695,23 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.GENERATOR_SPAWN_BLOCK.get().asItem());
 				tabData.accept(FnafModModBlocks.GENERATOR_OUTLET.get().asItem());
 				tabData.accept(FnafModModBlocks.GEN_PERCENT.get().asItem());
+				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
 				tabData.accept(FnafModModBlocks.SERVER.get().asItem());
 				tabData.accept(FnafModModBlocks.CAMERA_BLOCK.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRANCE.get().asItem());
 				tabData.accept(FnafModModBlocks.VENT_ENTRY.get().asItem());
-				tabData.accept(FnafModModBlocks.VASS_DOLL.get().asItem());
-				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
-				tabData.accept(FnafModModBlocks.PROTONS_PLUSH_RAT.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_FREDDY.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_BONNIE.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_CHICA.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_FOXY.get().asItem());
 				tabData.accept(FnafModModBlocks.PLUSH_FREDBEAR.get().asItem());
-				tabData.accept(FnafModModItems.FREDDY_STAND_SPAWN_EGG.get());
-				tabData.accept(FnafModModItems.BONNIE_STAND_SPAWN_EGG.get());
-				tabData.accept(FnafModModItems.TOY_BOX_SPAWN_EGG.get());
-				tabData.accept(FnafModModBlocks.FAZEERRAMICS_CONTROL_PANEL.get().asItem());
+				tabData.accept(FnafModModItems.FREDDY_STAND_ITEM.get());
+				tabData.accept(FnafModModItems.BONNIE_STAND_ITEM.get());
+				tabData.accept(FnafModModItems.TOY_BOX_ITEM.get());
 				tabData.accept(FnafModModItems.OFFICE_CHAIR_ITEM.get());
+				tabData.accept(FnafModModBlocks.VASS_DOLL.get().asItem());
+				tabData.accept(FnafModModBlocks.CLOWNFUL_DOLL.get().asItem());
+				tabData.accept(FnafModModBlocks.PROTONS_PLUSH_RAT.get().asItem());
 			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_MOBS = REGISTRY.register("fnaf_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_mobs")).icon(() -> new ItemStack(FnafModModItems.FREDDY.get())).displayItems((parameters, tabData) -> {
@@ -861,14 +858,4 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.SPARKY_SUIT_LEGGINGS.get());
 				tabData.accept(FnafModModItems.SPARKY_SUIT_BOOTS.get());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
-			if (tabData.hasPermissions()) {
-				tabData.accept(FnafModModBlocks.ARCADE_MACHINE_SHADOW_FREDDY.get().asItem());
-				tabData.accept(FnafModModBlocks.PIZZA.get().asItem());
-			}
-		}
-	}
 }

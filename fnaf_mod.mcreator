@@ -13938,9 +13938,9 @@
       "registry_name": "ded_withered_freddy",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/DedWitheredFreddyModel.java",
           "src/main/java/net/mcreator/fnafmod/entity/DedWitheredFreddyEntity.java",
           "src/main/resources/assets/fnaf_mod/models/item/ded_withered_freddy_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/DedWitheredFreddyModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/DedWitheredFreddyRenderer.java"
         ]
       },
@@ -14054,9 +14054,9 @@
       "registry_name": "day_time_withered_foxy",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeWitheredFoxyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/DayTimeWitheredFoxyEntity.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeWitheredFoxyModel.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeWitheredFoxyRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/item/day_time_withered_foxy_spawn_egg.json"
         ]
       },
@@ -14104,9 +14104,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/models/item/sitting_withered_bonnie_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/SittingWitheredBonnieEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/SittingWitheredBonnieRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/SittingWitheredBonnieModel.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/SittingWitheredBonnieModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/SittingWitheredBonnieEntity.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -14119,9 +14119,9 @@
       "registry_name": "sitting_withered_chica",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/SittingWitheredChicaEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/sitting_withered_chica_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/SittingWitheredChicaModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/sitting_withered_chica_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/SittingWitheredChicaEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/SittingWitheredChicaRenderer.java"
         ]
       },
@@ -14323,10 +14323,10 @@
       "registry_name": "day_time_freddy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeFreddyModel.java",
           "src/main/java/net/mcreator/fnafmod/entity/DayTimeFreddyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeFreddyRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/day_time_freddy_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeFreddyModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/day_time_freddy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeFreddyRenderer.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -14339,10 +14339,10 @@
       "registry_name": "daytime_chica",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/DaytimeChicaEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/daytime_chica_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimeChicaRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeChicaModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/daytime_chica_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/entity/DaytimeChicaEntity.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeChicaModel.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -14355,9 +14355,9 @@
       "registry_name": "day_time_bonnie",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeBonnieModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeBonnieRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/item/day_time_bonnie_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeBonnieModel.java",
           "src/main/java/net/mcreator/fnafmod/entity/DayTimeBonnieEntity.java"
         ]
       },
@@ -14371,10 +14371,10 @@
       "registry_name": "day_time_foxy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/DayTimeFoxyEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/day_time_foxy_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeFoxyModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeFoxyRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/day_time_foxy_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/entity/DayTimeFoxyEntity.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -15506,10 +15506,10 @@
       "registry_name": "fredbears_freddy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFreddyRenderer.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsFreddyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFreddyRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFreddyModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_freddy_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15522,10 +15522,10 @@
       "registry_name": "fredbears_bonnie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBonnieRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBonnieModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bonnie_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBonnieRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsBonnieEntity.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -15539,8 +15539,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/fnaf_mod/models/item/fredbears_chica_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsChicaModel.java",
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsChicaEntity.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsChicaModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsChicaRenderer.java"
         ]
       },
@@ -15554,10 +15554,10 @@
       "registry_name": "fredbears_foxy",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_foxy_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsFoxyModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_foxy_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsFoxyRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/FredbearsFoxyEntity.java"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -16425,11 +16425,11 @@
       "registry_name": "toy_chica",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/ToyChicaModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/ToyChicaEntity.java",
           "src/main/resources/assets/fnaf_mod/models/item/toy_chica_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/layer/ToyChicaLayer.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyChicaRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/ToyChicaEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/ToyChicaModel.java"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/ToyChicaRenderer.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -16587,10 +16587,10 @@
       "registry_name": "mangle_sitting",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/MangleSittingRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/MangleSittingEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/mangle_sitting_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/MangleSittingModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/mangle_sitting_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/MangleSittingRenderer.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -16603,10 +16603,10 @@
       "registry_name": "day_time_toy_freddy",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeToyFreddyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/DayTimeToyFreddyEntity.java",
-          "src/main/resources/assets/fnaf_mod/models/item/day_time_toy_freddy_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeToyFreddyModel.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeToyFreddyRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/day_time_toy_freddy_spawn_egg.json"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -16619,10 +16619,10 @@
       "registry_name": "day_time_toy_bonnie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeToyBonnieModel.java",
           "src/main/resources/assets/fnaf_mod/models/item/day_time_toy_bonnie_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeToyBonnieRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/DayTimeToyBonnieEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeToyBonnieRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeToyBonnieModel.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -16635,10 +16635,10 @@
       "registry_name": "day_time_toy_foxy",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeToyFoxyRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeToyFoxyModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/DayTimeToyFoxyEntity.java",
           "src/main/resources/assets/fnaf_mod/models/item/day_time_toy_foxy_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/DayTimeToyFoxyEntity.java"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeToyFoxyRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeToyFoxyModel.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -16668,10 +16668,10 @@
       "registry_name": "day_time_puppet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimePuppetRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/DayTimePuppetEntity.java",
-          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimePuppetModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/day_time_puppet_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/day_time_puppet_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimePuppetRenderer.java",
+          "src/main/java/net/mcreator/fnafmod/entity/model/DayTimePuppetModel.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -16684,10 +16684,10 @@
       "registry_name": "day_time_bb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/DayTimeBBEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeBBRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/DayTimeBBModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/day_time_bb_spawn_egg.json"
+          "src/main/resources/assets/fnaf_mod/models/item/day_time_bb_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/DayTimeBBEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DayTimeBBRenderer.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -17126,10 +17126,10 @@
       "registry_name": "sitting_daytime_springtrap",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/sitting_daytime_springtrap_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/SittingDaytimeSpringtrapModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/SittingDaytimeSpringtrapEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/SittingDaytimeSpringtrapRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/client/renderer/SittingDaytimeSpringtrapRenderer.java",
+          "src/main/resources/assets/fnaf_mod/models/item/sitting_daytime_springtrap_spawn_egg.json",
+          "src/main/java/net/mcreator/fnafmod/entity/SittingDaytimeSpringtrapEntity.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -17142,9 +17142,9 @@
       "registry_name": "standing_daytime_springtrap",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/model/StandingDaytimeSpringtrapModel.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/StandingDaytimeSpringtrapRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/item/standing_daytime_springtrap_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/StandingDaytimeSpringtrapModel.java",
           "src/main/java/net/mcreator/fnafmod/entity/StandingDaytimeSpringtrapEntity.java"
         ]
       },
@@ -30427,10 +30427,10 @@
       "registry_name": "daytime_barry_polar",
       "metadata": {
         "files": [
-          "src/main/resources/assets/fnaf_mod/models/item/daytime_barry_polar_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeBarryPolarModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/DaytimeBarryPolarEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimeBarryPolarRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/DaytimeBarryPolarEntity.java"
+          "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeBarryPolarModel.java",
+          "src/main/resources/assets/fnaf_mod/models/item/daytime_barry_polar_spawn_egg.json"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -30474,9 +30474,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimeGusPugRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/DaytimeGusPugEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/daytime_gus_pug_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeGusPugModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/daytime_gus_pug_spawn_egg.json"
+          "src/main/java/net/mcreator/fnafmod/entity/DaytimeGusPugEntity.java"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -30756,9 +30756,9 @@
       "registry_name": "daytime_wally_walrus",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/entity/DaytimeWallyWalrusEntity.java",
           "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimeWallyWalrusRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeWallyWalrusModel.java",
-          "src/main/java/net/mcreator/fnafmod/entity/DaytimeWallyWalrusEntity.java",
           "src/main/resources/assets/fnaf_mod/models/item/daytime_wally_walrus_spawn_egg.json"
         ]
       },
@@ -30788,10 +30788,10 @@
       "registry_name": "daytime_puffy_puffins",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/entity/DaytimePuffyPuffinsEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimePuffyPuffinsRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/DaytimePuffyPuffinsModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/daytime_puffy_puffins_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimePuffyPuffinsRenderer.java"
+          "src/main/java/net/mcreator/fnafmod/entity/DaytimePuffyPuffinsEntity.java",
+          "src/main/resources/assets/fnaf_mod/models/item/daytime_puffy_puffins_spawn_egg.json"
         ]
       },
       "path": "~/Entities/DaytimeAnimatronics"
@@ -30820,9 +30820,9 @@
       "registry_name": "daytime_hazy_reindeer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimeHazyReindeerRenderer.java",
-          "src/main/java/net/mcreator/fnafmod/entity/DaytimeHazyReindeerEntity.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/DaytimeHazyReindeerModel.java",
+          "src/main/java/net/mcreator/fnafmod/entity/DaytimeHazyReindeerEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/DaytimeHazyReindeerRenderer.java",
           "src/main/resources/assets/fnaf_mod/models/item/daytime_hazy_reindeer_spawn_egg.json"
         ]
       },
@@ -36321,9 +36321,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsMontyEntity.java",
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsMontyRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsMontyModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_monty_spawn_egg.json",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsMontyRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_monty_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -36438,10 +36438,10 @@
       "registry_name": "fredbears_bub",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBubRenderer.java",
           "src/main/java/net/mcreator/fnafmod/entity/model/FredbearsBubModel.java",
-          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bub_spawn_egg.json",
           "src/main/java/net/mcreator/fnafmod/entity/FredbearsBubEntity.java",
-          "src/main/java/net/mcreator/fnafmod/client/renderer/FredbearsBubRenderer.java"
+          "src/main/resources/assets/fnaf_mod/models/item/fredbears_bub_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Fredbears"
@@ -36863,6 +36863,205 @@
         ]
       },
       "path": "~/Blocks/DecorativeBlocks"
+    },
+    {
+      "name": "CakeKnife",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cake_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/item/CakeKnifeItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/cake_knife.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CakeSlice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cake_slice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/item/CakeSliceItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/cake_slice.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FreddyStandItemRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freddy_stand_item_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/FreddyStandItemRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Spawn Items/Decor"
+    },
+    {
+      "name": "FreddyStandItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freddy_stand_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/item/FreddyStandItemItem.java",
+          "src/main/resources/assets/fnaf_mod/models/item/freddy_stand_item.json"
+        ]
+      },
+      "path": "~/Items/Spawn Items/Decor"
+    },
+    {
+      "name": "BonnieStandItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonnie_stand_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/bonnie_stand_item.json",
+          "src/main/java/net/mcreator/fnafmod/item/BonnieStandItemItem.java"
+        ]
+      },
+      "path": "~/Items/Spawn Items/Decor"
+    },
+    {
+      "name": "BonnieStandItemRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonnie_stand_item_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/BonnieStandItemRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Spawn Items/Decor"
+    },
+    {
+      "name": "ToyBoxItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_box_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_box_item.json",
+          "src/main/java/net/mcreator/fnafmod/item/ToyBoxItemItem.java"
+        ]
+      },
+      "path": "~/Items/Spawn Items/Decor"
+    },
+    {
+      "name": "ToyBoxItemRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_box_item_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/ToyBoxItemRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items/Spawn Items/Decor"
     }
   ],
   "variable_elements": [
@@ -38191,6 +38390,7 @@
       "~CUSTOM:BlackWhiteTileStair"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:CakeKnife",
       "~CUSTOM:PizzaCutterKnife",
       "~CUSTOM:Knife",
       "~CUSTOM:PizzaCutter",
@@ -38615,21 +38815,21 @@
   "tab_element_order": {
     "CUSTOM:FNAFBlocks": [
       "FazbearHillsGrass",
-      "FazbearHillsLeaves",
       "PinwheelCircusGrass",
-      "PinwheelCircusLeaves",
       "ChoppysWoodsGrass",
-      "ChoppysWoodsLeaves",
       "CaveGrass",
-      "CaveLeaves",
       "BlacktombYardGrass",
-      "BlocktombYardLeaves",
       "LilygearLakeGrass",
-      "LilygearLakeLeaves",
       "DustingFieldsGrass",
-      "DustingFieldsLeaves",
       "WorldDirt",
       "WorldStone",
+      "FazbearHillsLeaves",
+      "PinwheelCircusLeaves",
+      "ChoppysWoodsLeaves",
+      "CaveLeaves",
+      "BlocktombYardLeaves",
+      "LilygearLakeLeaves",
+      "DustingFieldsLeaves",
       "GlitchedLog",
       "GlitchedLeaves",
       "RoundBush",
@@ -38946,6 +39146,7 @@
       "BBFigure",
       "JJFigure",
       "MarionetteFigure",
+      "MiniPuppetDecor",
       "Desk",
       "Desk2",
       "Desk3",
@@ -39084,7 +39285,6 @@
       "LetsEatSign",
       "DecorStar",
       "Drumset",
-      "MiniPuppetDecor",
       "DoorLight",
       "FloodLights",
       "FluorescentLight",
@@ -39104,10 +39304,10 @@
       "Printer",
       "Toilet",
       "Sink",
-      "GarageDoor",
-      "AlternateGarageDoor",
       "DoorBoarder",
       "FNAF1MovieWelcomeDoorBoarder",
+      "GarageDoor",
+      "AlternateGarageDoor",
       "BackstageDoor",
       "BigBackstageDoor",
       "BuffetDoor",
@@ -39153,12 +39353,14 @@
       "BonnieGuitar",
       "FireAxe",
       "Knife",
+      "CakeKnife",
       "PizzaCutterKnife",
       "PizzaCutter",
       "Hook",
       "FazCoin",
       "Battery",
       "PizzaSlice",
+      "CakeSlice",
       "Cupcake",
       "ToyCupcake",
       "CircuitBoard",
@@ -39285,23 +39487,23 @@
       "GeneratorSpawnBlock",
       "GeneratorOutlet",
       "GenPercent",
+      "FazeerramicsControlPanel",
       "Server",
       "CameraBlock",
       "VentEntrance",
       "VentEntry",
-      "VassDoll",
-      "ClownfulDoll",
-      "ProtonsPlushRat",
       "PlushFreddy",
       "PlushBonnie",
       "PlushChica",
       "PlushFoxy",
       "PlushFredbear",
-      "FreddyStand",
-      "BonnieStand",
-      "ToyBox",
-      "FazeerramicsControlPanel",
-      "OfficeChairItem"
+      "FreddyStandItem",
+      "BonnieStandItem",
+      "ToyBoxItem",
+      "OfficeChairItem",
+      "VassDoll",
+      "ClownfulDoll",
+      "ProtonsPlushRat"
     ],
     "CUSTOM:FNAFMobs": [
       "FredbearAnimatronicSpawnItem",
@@ -39439,8 +39641,8 @@
       "item.fnaf_mod.nightmare_bonnie_statue_spawn_egg": "Nightmare Bonnie Statue Spawn Egg",
       "entity.fnaf_mod.phantom_freddy": "Phantom Freddy",
       "subtitles.ohno": "Oh No!",
-      "block.fnaf_mod.movie_wall": "Movie Wall",
       "item.fnaf_mod.nightmarionne_spawn_item": "Nightmarionne",
+      "block.fnaf_mod.movie_wall": "Movie Wall",
       "subtitles.ventwalk": "Something In the Vents",
       "block.fnaf_mod.closet_left_bottom": "Closet Door Left",
       "block.fnaf_mod.poster_9.description_0": "Let\u0027s Party?",
@@ -39997,6 +40199,7 @@
       "item.fnaf_mod.daytime_hazy_reindeer_spawn_egg": "Daytime Hazy Reindeer Spawn Egg",
       "block.fnaf_mod.alternate_white_purple_wall_tiles": "Alternate White Purple Wall Tiles",
       "item.fnaf_mod.nightmare_bonnie_spawn_egg": "Nightmare Bonnie Spawn Egg",
+      "item.fnaf_mod.bonnie_stand_item": "Bonnie Stand",
       "block.fnaf_mod.stage_light_green_on": "Stage Light (Green)",
       "block.fnaf_mod.thin_rose_curtain": "Thin Rose Curtain",
       "entity.fnaf_mod.withered_foxy": "Withered Foxy",
@@ -40214,6 +40417,7 @@
       "subtitles.doorcreak": "Closet Sound",
       "block.fnaf_mod.center_big_movie_wall_tile": "Center Big Movie Wall Tiles",
       "block.fnaf_mod.big_white_purple_tile": "Big White Purple Wall Tiles",
+      "item.fnaf_mod.cake_knife": "Cake Knife",
       "block.fnaf_mod.center_big_stage_black_brick_tiles": "Center Big Etched Black Stripe Brick Tiles",
       "entity.fnaf_mod.full_hostile_foxy": "Foxy Pirate",
       "block.fnaf_mod.red_black_tile_cracked": "Cracked Red Black Tile",
@@ -40310,6 +40514,7 @@
       "block.fnaf_mod.orange_speake_right": "Speaker",
       "block.fnaf_mod.spring_bonnie_plush": "Spring Bonnie Plushie?",
       "block.fnaf_mod.red_tile": "Red Tile",
+      "item.fnaf_mod.toy_box_item": "Toy Box",
       "item.fnaf_mod.unwithered_freddy_spawn_item": "Unwithered Freddy",
       "entity.fnaf_mod.withered_freddy": "Withered Freddy",
       "item.fnaf_mod.chica_chicken_spawn_egg": "Chica the Chicken Spawn Egg",
@@ -40569,6 +40774,7 @@
       "entity.fnaf_mod.nightmare_foxy": "Nightmare Foxy",
       "entity.fnaf_mod.pat_pat": "PatPat",
       "block.fnaf_mod.checkered_wall": "Checkered Wall",
+      "item.fnaf_mod.cake_slice": "Cake Slice",
       "item.fnaf_mod.statue_bonnie_spawn": "Bonnie (Statue)",
       "advancements.mat_advancement.descr": "Obtain a M. A. T.",
       "entity.fnaf_mod.gus_pug": "Gus The Pug",
@@ -40585,6 +40791,7 @@
       "item.fnaf_mod.springlocked_suit_chestplate": "Springlocked Spring Lock Suit Body",
       "block.fnaf_mod.fredbear_poster_3": "Fredbear Poster 3",
       "item.fnaf_mod.adv_nightmare_fredbear": "Nightmare Fredbear",
+      "item.fnaf_mod.freddy_stand_item": "Freddy Stand",
       "block.fnaf_mod.structure_spawning_block_5": "Structure Spawning Block (Fancy)",
       "block.fnaf_mod.stage_light_orange_on": "Stage Light (Orange)",
       "block.fnaf_mod.structure_spawning_block_6": "Structure Spawning Block (Abandoned)",
@@ -41091,7 +41298,12 @@
           },
           {
             "name": "Spawn Items",
-            "children": []
+            "children": [
+              {
+                "name": "Decor",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Plastic",

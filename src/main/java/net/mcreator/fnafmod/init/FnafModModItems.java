@@ -35,6 +35,7 @@ import net.mcreator.fnafmod.item.ToyFreddySpawnItemItem;
 import net.mcreator.fnafmod.item.ToyFoxySpawnItemItem;
 import net.mcreator.fnafmod.item.ToyCupcakeItem;
 import net.mcreator.fnafmod.item.ToyChicaSpawnItemItem;
+import net.mcreator.fnafmod.item.ToyBoxItemItem;
 import net.mcreator.fnafmod.item.ToyBonnieSpawnItemItem;
 import net.mcreator.fnafmod.item.ToreadorMarchItem;
 import net.mcreator.fnafmod.item.TheyllFindYouItem;
@@ -129,6 +130,7 @@ import net.mcreator.fnafmod.item.GoldenFreddySpawnItemItem;
 import net.mcreator.fnafmod.item.GlitchtrapSuitItem;
 import net.mcreator.fnafmod.item.GlitchBonnieAnimatronicSpawnItemItem;
 import net.mcreator.fnafmod.item.FreddySuitItem;
+import net.mcreator.fnafmod.item.FreddyStandItemItem;
 import net.mcreator.fnafmod.item.FreddySpawnItemItem;
 import net.mcreator.fnafmod.item.FreddyMaskItem;
 import net.mcreator.fnafmod.item.FreddyItem;
@@ -165,11 +167,14 @@ import net.mcreator.fnafmod.item.ChicaSuitItem;
 import net.mcreator.fnafmod.item.ChicaSpawnItemItem;
 import net.mcreator.fnafmod.item.ChicaItem;
 import net.mcreator.fnafmod.item.CameraMonitorItem;
+import net.mcreator.fnafmod.item.CakeSliceItem;
+import net.mcreator.fnafmod.item.CakeKnifeItem;
 import net.mcreator.fnafmod.item.BrownPlasticItem;
 import net.mcreator.fnafmod.item.BrownFabricItem;
 import net.mcreator.fnafmod.item.BrokenFlashLightItem;
 import net.mcreator.fnafmod.item.BooletItem;
 import net.mcreator.fnafmod.item.BonnieSuitItem;
+import net.mcreator.fnafmod.item.BonnieStandItemItem;
 import net.mcreator.fnafmod.item.BonnieSpawnItem;
 import net.mcreator.fnafmod.item.BonnieLullabyItem;
 import net.mcreator.fnafmod.item.BonnieItem;
@@ -1330,6 +1335,11 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PINWHEEL_CIRCUS_LEAVES = block(FnafModModBlocks.PINWHEEL_CIRCUS_LEAVES);
 	public static final RegistryObject<Item> CAVE_LEAVES = block(FnafModModBlocks.CAVE_LEAVES);
 	public static final RegistryObject<Item> AIR_HOCKEY = block(FnafModModBlocks.AIR_HOCKEY);
+	public static final RegistryObject<Item> CAKE_KNIFE = REGISTRY.register("cake_knife", () -> new CakeKnifeItem());
+	public static final RegistryObject<Item> CAKE_SLICE = REGISTRY.register("cake_slice", () -> new CakeSliceItem());
+	public static final RegistryObject<Item> FREDDY_STAND_ITEM = REGISTRY.register("freddy_stand_item", () -> new FreddyStandItemItem());
+	public static final RegistryObject<Item> BONNIE_STAND_ITEM = REGISTRY.register("bonnie_stand_item", () -> new BonnieStandItemItem());
+	public static final RegistryObject<Item> TOY_BOX_ITEM = REGISTRY.register("toy_box_item", () -> new ToyBoxItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

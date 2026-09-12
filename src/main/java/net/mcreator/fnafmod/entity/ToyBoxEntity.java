@@ -29,7 +29,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.fnafmod.procedures.StatueSpawnProcedure;
-import net.mcreator.fnafmod.procedures.StatueFreddyRightClickedOnEntityProcedure;
+import net.mcreator.fnafmod.procedures.DaytimeClickProcedure;
 import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.init.FnafModModEntities;
 
@@ -65,7 +65,7 @@ public class ToyBoxEntity extends PathfinderMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(FnafModModItems.TOY_BOX_SPAWN_EGG.get()));
+		this.spawnAtLocation(new ItemStack(FnafModModItems.TOY_BOX_ITEM.get()));
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class ToyBoxEntity extends PathfinderMob {
 		Entity entity = this;
 		Level world = this.level();
 
-		StatueFreddyRightClickedOnEntityProcedure.execute(entity, sourceentity);
+		DaytimeClickProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 

@@ -36,11 +36,7 @@
       "value": -1,
       "falpha": 0.0
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:FNAFUtilities"
-      }
-    ],
+    "creativeTabs": [],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -102,7 +98,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:FreddyStand.spawn_egg"
+      "value": "CUSTOM:FreddyStandItem"
     },
     "livingSound": {
       "value": ""
@@ -121,7 +117,7 @@
     },
     "entityDataEntries": [],
     "onRightClickedOn": {
-      "name": "StatueFreddyRightClickedOnEntity"
+      "name": "DaytimeClick"
     },
     "onInitialSpawn": {
       "name": "StatueSpawn"

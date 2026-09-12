@@ -10,6 +10,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.fnafmod.init.FnafModModItems;
+import net.mcreator.fnafmod.entity.ToyBoxEntity;
 import net.mcreator.fnafmod.entity.StatueFreddyEntity;
 import net.mcreator.fnafmod.entity.StatueFoxyEntity;
 import net.mcreator.fnafmod.entity.StatueChicaEntity;
@@ -25,6 +26,8 @@ import net.mcreator.fnafmod.entity.FullHostileFreddyEntity;
 import net.mcreator.fnafmod.entity.FullHostileFoxyEntity;
 import net.mcreator.fnafmod.entity.FullHostileChicaEntity;
 import net.mcreator.fnafmod.entity.FullHostileBonnieEntity;
+import net.mcreator.fnafmod.entity.FreddyStandEntity;
+import net.mcreator.fnafmod.entity.BonnieStandEntity;
 import net.mcreator.fnafmod.FnafModMod;
 
 public class MatPickupProcedure {
@@ -39,6 +42,13 @@ public class MatPickupProcedure {
 						&& !(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("statue")) {
 					item = (((((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("fnaf_mod:", "")).replace("ded_", "")).replace("sitting_", "")).replace("daytime_", "")).replace("day_time_", "");
 					item = item + "_spawn_item";
+					if (entity instanceof FreddyStandEntity) {
+						item = "freddy_stand_item";
+					} else if (entity instanceof BonnieStandEntity) {
+						item = "bonnie_stand_item";
+					} else if (entity instanceof ToyBoxEntity) {
+						item = "toy_box_item";
+					}
 				} else {
 					if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("passive")) {
 						if (entity instanceof PassiveFreddyEntity) {
@@ -60,7 +70,7 @@ public class MatPickupProcedure {
 						if (entity instanceof StatueFreddyEntity) {
 							item = "statue_freddy_item";
 						} else if (entity instanceof StatueBonnieEntity) {
-							item = "statue_bonnie_item";
+							item = "statue_bonnie_spawn";
 						} else if (entity instanceof StatueChicaEntity) {
 							item = "statue_chica_item";
 						} else if (entity instanceof StatueFoxyEntity) {

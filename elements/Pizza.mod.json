@@ -42,11 +42,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [
-      {
-        "value": "OP_BLOCKS"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""

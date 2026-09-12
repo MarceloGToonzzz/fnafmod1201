@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plastic_scrap_chica",
+    "texture": "plastic_scrap_yellow",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

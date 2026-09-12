@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "toychicafigure"
+      },
+      "name": "default"
+    },
+    "alt": {
+      "map": {
+        "1": "toychicafigurealt"
+      },
+      "name": "alt"
+    }
+  }
+}
