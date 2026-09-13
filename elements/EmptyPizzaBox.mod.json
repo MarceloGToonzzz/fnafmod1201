@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "pizza_open",
+    "itemTexture": "pizza_empty",
     "particleTexture": "freddys_pizza_box",
     "tintType": "No tint",
     "isItemTinted": false,

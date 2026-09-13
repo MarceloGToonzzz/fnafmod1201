@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "shelf_item",
+    "itemTexture": "display_shelf_item",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fnaf_mod:item/pizza_open"
+    "layer0": "fnaf_mod:item/pizza_empty"
   },
   "render_type": "translucent"
 }

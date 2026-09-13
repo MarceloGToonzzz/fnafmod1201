@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "door_button",
+    "itemTexture": "door_button_av",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
