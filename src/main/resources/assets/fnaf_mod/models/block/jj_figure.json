@@ -1,9 +1,9 @@
 {
-  "parent": "fnaf_mod:custom/jjfigure",
+  "parent": "fnaf_mod:custom/bb_and_jj_figure",
   "textures": {
     "all": "fnaf_mod:block/jj_figure",
     "particle": "fnaf_mod:block/jj_figure",
-    "0": "fnaf_mod:block/jj_figure"
+    "1": "fnaf_mod:block/jj_figure"
   },
   "render_type": "cutout"
 }

@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "jj": {
+      "map": {
+        "1": "jj_figure"
+      },
+      "name": "jj"
+    },
+    "default": {
+      "map": {
+        "1": "bb_figure"
+      },
+      "name": "default"
+    }
+  }
+}
