@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/minigamemural",
+  "textures": {
+    "all": "fnaf_mod:block/mangles_quest_mural",
+    "particle": "fnaf_mod:block/mangles_quest_mural",
+    "0": "fnaf_mod:block/mangles_quest_mural"
+  },
+  "render_type": "cutout_mipped"
+}

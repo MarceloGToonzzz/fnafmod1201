@@ -1,0 +1,64 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bp10"
+      },
+      "name": "default"
+    },
+    "fafot": {
+      "map": {
+        "0": "fafot_mural"
+      },
+      "name": "fafot"
+    },
+    "van": {
+      "map": {
+        "0": "van_mural"
+      },
+      "name": "van"
+    },
+    "fredbears": {
+      "map": {
+        "0": "fredbears_mural"
+      },
+      "name": "fredbears"
+    },
+    "fredbears_alt": {
+      "map": {
+        "0": "fb_mural_alt"
+      },
+      "name": "fredbears_alt"
+    },
+    "circus_baby": {
+      "map": {
+        "0": "circus_baby_mural"
+      },
+      "name": "circus_baby"
+    },
+    "fnaf_world": {
+      "map": {
+        "0": "fnaf_world_mural"
+      },
+      "name": "fnaf_world"
+    },
+    "fredbears_ext": {
+      "map": {
+        "0": "fredbears_exterior_mural"
+      },
+      "name": "fredbears_ext"
+    },
+    "stage_01": {
+      "map": {
+        "0": "stage_01_mural"
+      },
+      "name": "stage_01"
+    },
+    "mangles_quest": {
+      "map": {
+        "0": "mangles_quest_mural"
+      },
+      "name": "mangles_quest"
+    }
+  }
+}

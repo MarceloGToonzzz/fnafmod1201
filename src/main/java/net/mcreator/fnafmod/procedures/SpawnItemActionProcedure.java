@@ -133,6 +133,9 @@ public class SpawnItemActionProcedure {
 		if (itemstack.getItem() == FnafModModItems.SPRINGTRAP_SPAWN_ITEM.get()) {
 			spawned = "sitting_daytime_springtrap";
 		}
+		if (itemstack.getItem() == FnafModModItems.CIRCUS_BABY_STATUE_SPAWN_ITEM.get()) {
+			spawned = "statue_circus_baby";
+		}
 		command = "summon REGISTRY XYZ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {got_coords: 1b, x: ZEX, y: ZEY, z: ZEZ, yaw: YAWd},NoAI:move,Rotation:[YAWf]}";
 		xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
 		if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:slabs")))) {

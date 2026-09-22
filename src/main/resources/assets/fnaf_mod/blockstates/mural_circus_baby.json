@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fnaf_mod:block/mural_circus_baby"
+    },
+    "facing=east": {
+      "model": "fnaf_mod:block/mural_circus_baby",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fnaf_mod:block/mural_circus_baby",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fnaf_mod:block/mural_circus_baby",
+      "y": 270
+    }
+  }
+}

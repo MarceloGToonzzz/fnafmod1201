@@ -254,9 +254,16 @@ import net.mcreator.fnafmod.block.OrangeSpeakeRightBlock;
 import net.mcreator.fnafmod.block.OfficeDoorBlock;
 import net.mcreator.fnafmod.block.OakCurtainBlock;
 import net.mcreator.fnafmod.block.MusicBoxBlock;
+import net.mcreator.fnafmod.block.MuralVanBlock;
 import net.mcreator.fnafmod.block.MuralStage01Block;
+import net.mcreator.fnafmod.block.MuralManglesQuestBlock;
 import net.mcreator.fnafmod.block.MuralFreddysBlock;
+import net.mcreator.fnafmod.block.MuralFredbearsExtBlock;
 import net.mcreator.fnafmod.block.MuralFredbearsBlock;
+import net.mcreator.fnafmod.block.MuralFredbearsAltBlock;
+import net.mcreator.fnafmod.block.MuralFnafWorldBlock;
+import net.mcreator.fnafmod.block.MuralFafotBlock;
+import net.mcreator.fnafmod.block.MuralCircusBabyBlock;
 import net.mcreator.fnafmod.block.MovieWallTileBlock;
 import net.mcreator.fnafmod.block.MovieWallStairsBlock;
 import net.mcreator.fnafmod.block.MovieWallSlabBlock;
@@ -1352,6 +1359,13 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> PINWHEEL_CIRCUS_LEAVES = REGISTRY.register("pinwheel_circus_leaves", () -> new PinwheelCircusLeavesBlock());
 	public static final RegistryObject<Block> CAVE_LEAVES = REGISTRY.register("cave_leaves", () -> new CaveLeavesBlock());
 	public static final RegistryObject<Block> AIR_HOCKEY = REGISTRY.register("air_hockey", () -> new AirHockeyBlock());
+	public static final RegistryObject<Block> MURAL_FAFOT = REGISTRY.register("mural_fafot", () -> new MuralFafotBlock());
+	public static final RegistryObject<Block> MURAL_VAN = REGISTRY.register("mural_van", () -> new MuralVanBlock());
+	public static final RegistryObject<Block> MURAL_FREDBEARS_ALT = REGISTRY.register("mural_fredbears_alt", () -> new MuralFredbearsAltBlock());
+	public static final RegistryObject<Block> MURAL_CIRCUS_BABY = REGISTRY.register("mural_circus_baby", () -> new MuralCircusBabyBlock());
+	public static final RegistryObject<Block> MURAL_FNAF_WORLD = REGISTRY.register("mural_fnaf_world", () -> new MuralFnafWorldBlock());
+	public static final RegistryObject<Block> MURAL_FREDBEARS_EXT = REGISTRY.register("mural_fredbears_ext", () -> new MuralFredbearsExtBlock());
+	public static final RegistryObject<Block> MURAL_MANGLES_QUEST = REGISTRY.register("mural_mangles_quest", () -> new MuralManglesQuestBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

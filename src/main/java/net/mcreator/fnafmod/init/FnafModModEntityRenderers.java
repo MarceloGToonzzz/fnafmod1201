@@ -36,6 +36,7 @@ import net.mcreator.fnafmod.client.renderer.TameableChicaRenderer;
 import net.mcreator.fnafmod.client.renderer.TameableAdventureFreddyRenderer;
 import net.mcreator.fnafmod.client.renderer.StatueFreddyRenderer;
 import net.mcreator.fnafmod.client.renderer.StatueFoxyRenderer;
+import net.mcreator.fnafmod.client.renderer.StatueCircusBabyRenderer;
 import net.mcreator.fnafmod.client.renderer.StatueChicaRenderer;
 import net.mcreator.fnafmod.client.renderer.StatueBonnieRenderer;
 import net.mcreator.fnafmod.client.renderer.StandingDaytimeSpringtrapRenderer;
@@ -308,5 +309,6 @@ public class FnafModModEntityRenderers {
 		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_BUB.get(), FredbearsBubRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.FREDBEARS_SPARKY.get(), FredbearsSparkyRenderer::new);
 		event.registerEntityRenderer(FnafModModEntities.NIGHT_UNWITHERED_FREDDY.get(), NightUnwitheredFreddyRenderer::new);
+		event.registerEntityRenderer(FnafModModEntities.STATUE_CIRCUS_BABY.get(), StatueCircusBabyRenderer::new);
 	}
 }

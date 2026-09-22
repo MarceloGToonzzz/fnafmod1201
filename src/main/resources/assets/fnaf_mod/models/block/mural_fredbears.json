@@ -1,10 +1,9 @@
 {
-  "parent": "fnaf_mod:custom/wall_framed_mural",
+  "parent": "fnaf_mod:custom/minigamemural",
   "textures": {
-    "all": "fnaf_mod:block/mural_fredbear",
-    "particle": "fnaf_mod:block/mural_fredbear",
-    "2": "fnaf_mod:block/mural_fredbear",
-    "missing": "fnaf_mod:block/mural_fredbear"
+    "all": "fnaf_mod:block/fredbears_mural",
+    "particle": "fnaf_mod:block/fredbears_mural",
+    "0": "fnaf_mod:block/fredbears_mural"
   },
   "render_type": "cutout_mipped"
 }

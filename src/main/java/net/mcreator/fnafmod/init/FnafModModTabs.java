@@ -661,6 +661,13 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.BUFFET_BANNER_4.get().asItem());
 				tabData.accept(FnafModModBlocks.HEIGHT_CHART.get().asItem());
 				tabData.accept(FnafModModBlocks.TOKEN_CATALOGUE.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_FAFOT.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_VAN.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_FREDBEARS_ALT.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_CIRCUS_BABY.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_FNAF_WORLD.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_FREDBEARS_EXT.get().asItem());
+				tabData.accept(FnafModModBlocks.MURAL_MANGLES_QUEST.get().asItem());
 			}).withTabsBefore(FNAF_TOOLS_AND_ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_UTILITIES = REGISTRY.register("fnaf_utilities",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_utilities")).icon(() -> new ItemStack(FnafModModBlocks.CAMERA_BLOCK.get())).displayItems((parameters, tabData) -> {
@@ -818,6 +825,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.ADVENTURE_SPRINGTRAP_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.ADVENTURE_NIGHTMARE_FREDBEAR_SPAWN_EGG.get());
 				tabData.accept(FnafModModItems.ADVENTURE_LOLBIT_SPAWN_EGG.get());
+				tabData.accept(FnafModModItems.CIRCUS_BABY_STATUE_SPAWN_ITEM.get());
 			}).withTabsBefore(FNAF_UTILITIES.getId()).build());
 	public static final RegistryObject<CreativeModeTab> SUITS = REGISTRY.register("suits",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.suits")).icon(() -> new ItemStack(FnafModModItems.FREDDY_SUIT_HELMET.get())).displayItems((parameters, tabData) -> {

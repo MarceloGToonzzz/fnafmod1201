@@ -43,6 +43,7 @@ import net.mcreator.fnafmod.entity.TameableChicaEntity;
 import net.mcreator.fnafmod.entity.TameableAdventureFreddyEntity;
 import net.mcreator.fnafmod.entity.StatueFreddyEntity;
 import net.mcreator.fnafmod.entity.StatueFoxyEntity;
+import net.mcreator.fnafmod.entity.StatueCircusBabyEntity;
 import net.mcreator.fnafmod.entity.StatueChicaEntity;
 import net.mcreator.fnafmod.entity.StatueBonnieEntity;
 import net.mcreator.fnafmod.entity.StandingDaytimeSpringtrapEntity;
@@ -748,6 +749,10 @@ public class FnafModModEntities {
 					.setCustomClientFactory(NightUnwitheredFreddyEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<StatueCircusBabyEntity>> STATUE_CIRCUS_BABY = register("statue_circus_baby",
+			EntityType.Builder.<StatueCircusBabyEntity>of(StatueCircusBabyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(65).setUpdateInterval(3).setCustomClientFactory(StatueCircusBabyEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -904,6 +909,7 @@ public class FnafModModEntities {
 			FredbearsBubEntity.init();
 			FredbearsSparkyEntity.init();
 			NightUnwitheredFreddyEntity.init();
+			StatueCircusBabyEntity.init();
 		});
 	}
 
@@ -1055,5 +1061,6 @@ public class FnafModModEntities {
 		event.put(FREDBEARS_BUB.get(), FredbearsBubEntity.createAttributes().build());
 		event.put(FREDBEARS_SPARKY.get(), FredbearsSparkyEntity.createAttributes().build());
 		event.put(NIGHT_UNWITHERED_FREDDY.get(), NightUnwitheredFreddyEntity.createAttributes().build());
+		event.put(STATUE_CIRCUS_BABY.get(), StatueCircusBabyEntity.createAttributes().build());
 	}
 }

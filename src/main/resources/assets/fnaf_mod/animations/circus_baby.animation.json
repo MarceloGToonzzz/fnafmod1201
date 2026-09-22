@@ -1,0 +1,229 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"Statue": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"head": {
+					"rotation": {
+						"vector": [0, -17.5, 0]
+					}
+				},
+				"rightuppereyelid": {
+					"rotation": {
+						"vector": [-12.5, 0, 0]
+					}
+				},
+				"rightpupil": {
+					"position": {
+						"vector": [0.4, 0, 0]
+					}
+				},
+				"rightlowereyelid": {
+					"rotation": {
+						"vector": [22.5, 0, 0]
+					}
+				},
+				"key pad": {
+					"position": {
+						"vector": [4, 0, 0]
+					}
+				},
+				"torso": {
+					"rotation": {
+						"vector": [0, 7.5, 0]
+					}
+				},
+				"right leg": {
+					"rotation": {
+						"vector": [0, -30, 0]
+					}
+				},
+				"right foot": {
+					"rotation": {
+						"vector": [1.67397, -10.83845, 0.55692]
+					}
+				},
+				"pelvis": {
+					"rotation": {
+						"vector": [0, -7.5, 0]
+					}
+				},
+				"right arm": {
+					"rotation": {
+						"vector": [-51.34838, 5.98207, 48.05149]
+					}
+				},
+				"fan": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, 360]
+						}
+					}
+				},
+				"right lower arm": {
+					"rotation": {
+						"vector": [0, 107.5, 0]
+					}
+				},
+				"right lower hand": {
+					"rotation": {
+						"vector": [-17.5, -17.5, 20]
+					}
+				},
+				"right pinky": {
+					"rotation": {
+						"vector": [0, 0, 115]
+					}
+				},
+				"right ring": {
+					"rotation": {
+						"vector": [0, 0, 107.5]
+					}
+				},
+				"right pointer": {
+					"rotation": {
+						"vector": [0, 0, 107.5]
+					}
+				},
+				"right thumb": {
+					"rotation": {
+						"vector": [87.53793, 0.43399, 9.99067]
+					}
+				},
+				"right middle": {
+					"rotation": {
+						"vector": [0, 0, 102.5]
+					}
+				},
+				"left arm": {
+					"rotation": {
+						"vector": [39.08861, -51.7337, -44.55708]
+					}
+				},
+				"left lower arm": {
+					"rotation": {
+						"vector": [-89.66144, -0.99729, 85.07054]
+					}
+				},
+				"left lower hand": {
+					"rotation": {
+						"vector": [-136.56337, -31.35991, -1.66785]
+					}
+				},
+				"left pinky": {
+					"rotation": {
+						"vector": [0, 0, -120]
+					}
+				},
+				"left ring": {
+					"rotation": {
+						"vector": [0, 0, -117.5]
+					}
+				},
+				"left middle": {
+					"rotation": {
+						"vector": [0, 0, -5]
+					}
+				},
+				"left pointer": {
+					"rotation": {
+						"vector": [1.68968, 1.84298, -137.47282]
+					}
+				},
+				"left thumb": {
+					"rotation": {
+						"vector": [25, 0, 0]
+					}
+				},
+				"left leg": {
+					"rotation": {
+						"vector": [0, 5, 0]
+					}
+				},
+				"left foot": {
+					"rotation": {
+						"vector": [0, 10, 0]
+					}
+				},
+				"upper right faceplate": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"endo jaw": {
+					"rotation": {
+						"vector": [7.5, 0, 0]
+					}
+				},
+				"leftuppereyelid": {
+					"rotation": {
+						"vector": [-12.5, 0, 0]
+					}
+				},
+				"leftpupil": {
+					"position": {
+						"vector": [0.4, 0, 0]
+					}
+				},
+				"leftlowereyelid": {
+					"rotation": {
+						"vector": [22.5, 0, 0]
+					}
+				},
+				"balloon": {
+					"rotation": {
+						"vector": [0, 2.5, 0]
+					},
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"right ear": {
+					"rotation": {
+						"vector": [0, 0, -35]
+					}
+				},
+				"left ear": {
+					"rotation": {
+						"vector": [0, 0, 35]
+					}
+				},
+				"lower_claw6": {
+					"rotation": {
+						"vector": [-187.5, 0, 0]
+					}
+				},
+				"lower_claw5": {
+					"rotation": {
+						"vector": [157.5, 0, 0]
+					}
+				},
+				"lower_claw4": {
+					"rotation": {
+						"vector": [-155, 0, 0]
+					}
+				},
+				"claw": {
+					"rotation": {
+						"vector": [12.5, 0, 0]
+					}
+				},
+				"right claw hand": {
+					"rotation": {
+						"vector": [0, 27.5, 0]
+					}
+				},
+				"left claw hand": {
+					"rotation": {
+						"vector": [0, -35, 0]
+					}
+				}
+			}
+		}
+	}
+}

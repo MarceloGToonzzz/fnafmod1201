@@ -25,6 +25,7 @@ import net.mcreator.fnafmod.entity.TameableChicaEntity;
 import net.mcreator.fnafmod.entity.TameableAdventureFreddyEntity;
 import net.mcreator.fnafmod.entity.StatueFreddyEntity;
 import net.mcreator.fnafmod.entity.StatueFoxyEntity;
+import net.mcreator.fnafmod.entity.StatueCircusBabyEntity;
 import net.mcreator.fnafmod.entity.StatueChicaEntity;
 import net.mcreator.fnafmod.entity.StatueBonnieEntity;
 import net.mcreator.fnafmod.entity.StandingDaytimeSpringtrapEntity;
@@ -988,6 +989,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof NightUnwitheredFreddyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StatueCircusBabyEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

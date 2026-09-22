@@ -13,6 +13,7 @@ import net.mcreator.fnafmod.init.FnafModModItems;
 import net.mcreator.fnafmod.entity.ToyBoxEntity;
 import net.mcreator.fnafmod.entity.StatueFreddyEntity;
 import net.mcreator.fnafmod.entity.StatueFoxyEntity;
+import net.mcreator.fnafmod.entity.StatueCircusBabyEntity;
 import net.mcreator.fnafmod.entity.StatueChicaEntity;
 import net.mcreator.fnafmod.entity.StatueBonnieEntity;
 import net.mcreator.fnafmod.entity.PassiveSpringBonnieEntity;
@@ -75,6 +76,8 @@ public class MatPickupProcedure {
 							item = "statue_chica_item";
 						} else if (entity instanceof StatueFoxyEntity) {
 							item = "statue_foxy_item";
+						} else if (entity instanceof StatueCircusBabyEntity) {
+							item = "circus_baby_statue_spawn_item";
 						}
 					} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("full_hostile")) {
 						if (entity instanceof FullHostileFreddyEntity) {
