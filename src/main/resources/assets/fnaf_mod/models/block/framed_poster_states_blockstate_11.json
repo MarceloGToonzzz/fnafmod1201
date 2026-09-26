@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/framedposters",
+  "textures": {
+    "all": "fnaf_mod:block/framed_poster_fnaf_3_freddy",
+    "particle": "fnaf_mod:block/framed_poster_empty",
+    "18": "fnaf_mod:block/framed_poster_fnaf_3_freddy"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -37211,6 +37211,93 @@
         ]
       },
       "path": "~/Items/Spawn Items"
+    },
+    {
+      "name": "FramedPoster",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "framed_poster",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/entity/FramedPosterBlockEntity.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/framed_poster.json",
+          "src/main/java/net/mcreator/fnafmod/block/FramedPosterBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/framed_poster.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster.json",
+          "src/main/resources/assets/fnaf_mod/models/item/framed_poster.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "FramedPosterStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "framed_poster_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_12.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_9.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_3.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_15.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_6.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_10.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_4.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_13.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_17.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_7.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_14.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_0.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_5.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_8.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_11.json",
+          "src/main/resources/assets/fnaf_mod/models/block/framed_poster_states_blockstate_16.json"
+        ]
+      },
+      "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "FramedPosterOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "framed_poster_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/procedures/FramedPosterOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Blocks/Posters"
     }
   ],
   "variable_elements": [
@@ -38630,6 +38717,42 @@
     "BLOCKS:mod:states1": [
       "CUSTOM:BoothTable"
     ],
+    "ITEMS:mod:poster": [
+      "CUSTOM:Poster1",
+      "CUSTOM:Poster2",
+      "CUSTOM:Poster3",
+      "CUSTOM:FNAF3Posters",
+      "CUSTOM:FNAF3Posters2",
+      "CUSTOM:FNAF3Posters3",
+      "CUSTOM:FNAF3Posters4",
+      "CUSTOM:FNAF3Posters5",
+      "CUSTOM:FNAF3Posters6",
+      "CUSTOM:FNAF3Posters7",
+      "CUSTOM:FNAF3Posters8",
+      "CUSTOM:PrizeCornerPoster",
+      "CUSTOM:Poster4",
+      "CUSTOM:Poster5",
+      "CUSTOM:Poster6",
+      "CUSTOM:Poster7",
+      "CUSTOM:FredbearPoster1",
+      "CUSTOM:FredbearPoster2",
+      "CUSTOM:FredbearPoster3",
+      "CUSTOM:FredbearPoster4",
+      "CUSTOM:MoviePoster1",
+      "CUSTOM:MoviePoster2",
+      "CUSTOM:MoviePoster3",
+      "CUSTOM:MoviePoster4",
+      "CUSTOM:MoviePoster5",
+      "CUSTOM:Poster8",
+      "CUSTOM:Poster9",
+      "CUSTOM:Poster10",
+      "CUSTOM:VisitNebraskaPoster",
+      "CUSTOM:RulesPoster",
+      "CUSTOM:RetroCelerbreatePoster",
+      "CUSTOM:Poster11",
+      "CUSTOM:Poster12",
+      "CUSTOM:Poster13"
+    ],
     "ENTITIES:mod:angels": [
       "CUSTOM:WitheredFoxy",
       "CUSTOM:Plushtrap",
@@ -39609,7 +39732,8 @@
       "MuralCircusBaby",
       "MuralFnafWorld",
       "MuralFredbearsExt",
-      "MuralManglesQuest"
+      "MuralManglesQuest",
+      "FramedPoster"
     ],
     "CUSTOM:FNAFUtilities": [
       "ShackRandomizer",
@@ -40518,6 +40642,7 @@
       "item.fnaf_mod.link_cable.clear": "Cleared linking selections",
       "gui.fnaf_mod.locker.label_locker": "Locker",
       "gui.fnaf_mod.wall_change_2.label_two_room_and_hall_faces": "Two Room and Hall Faces ",
+      "block.fnaf_mod.framed_poster": "Framed Poster",
       "item.fnaf_mod.day_time_toy_freddy_spawn_egg": "DayTime Toy Freddy Spawn Egg",
       "block.fnaf_mod.white_cloth_table": "White Cloth Table",
       "block.fnaf_mod.blue_black_tile": "Blue Black Tile",

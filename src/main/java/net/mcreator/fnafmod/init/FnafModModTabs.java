@@ -668,6 +668,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.MURAL_FNAF_WORLD.get().asItem());
 				tabData.accept(FnafModModBlocks.MURAL_FREDBEARS_EXT.get().asItem());
 				tabData.accept(FnafModModBlocks.MURAL_MANGLES_QUEST.get().asItem());
+				tabData.accept(FnafModModBlocks.FRAMED_POSTER.get().asItem());
 			}).withTabsBefore(FNAF_TOOLS_AND_ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_UTILITIES = REGISTRY.register("fnaf_utilities",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_utilities")).icon(() -> new ItemStack(FnafModModBlocks.CAMERA_BLOCK.get())).displayItems((parameters, tabData) -> {

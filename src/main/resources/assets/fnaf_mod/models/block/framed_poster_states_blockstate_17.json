@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/framedposters",
+  "textures": {
+    "all": "fnaf_mod:block/framed_poster_fnaf_3_spring_bonnie2",
+    "particle": "fnaf_mod:block/framed_poster_empty",
+    "18": "fnaf_mod:block/framed_poster_fnaf_3_spring_bonnie2"
+  },
+  "render_type": "cutout_mipped"
+}

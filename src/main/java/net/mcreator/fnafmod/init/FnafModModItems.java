@@ -1350,6 +1350,7 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MURAL_MANGLES_QUEST = block(FnafModModBlocks.MURAL_MANGLES_QUEST);
 	public static final RegistryObject<Item> STATUE_CIRCUS_BABY_SPAWN_EGG = REGISTRY.register("statue_circus_baby_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.STATUE_CIRCUS_BABY, -3407872, -1, new Item.Properties()));
 	public static final RegistryObject<Item> CIRCUS_BABY_STATUE_SPAWN_ITEM = REGISTRY.register("circus_baby_statue_spawn_item", () -> new CircusBabyStatueSpawnItemItem());
+	public static final RegistryObject<Item> FRAMED_POSTER = block(FnafModModBlocks.FRAMED_POSTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -71,6 +71,7 @@ import net.mcreator.fnafmod.block.entity.FreddyHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FredbearsFetchTileEntity;
 import net.mcreator.fnafmod.block.entity.FredbearSignTileEntity;
 import net.mcreator.fnafmod.block.entity.FredbearHeadTileEntity;
+import net.mcreator.fnafmod.block.entity.FramedPosterBlockEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadTileEntity;
 import net.mcreator.fnafmod.block.entity.FoxyHeadDecorationTileEntity;
 import net.mcreator.fnafmod.block.entity.FluorescentLightTileEntity;
@@ -303,6 +304,7 @@ public class FnafModModBlockEntities {
 			() -> BlockEntityType.Builder.of(FredbearsFetchTileEntity::new, FnafModModBlocks.FREDBEARS_FETCH.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> CHUNK_DATA_BLOCK = register("chunk_data_block", FnafModModBlocks.CHUNK_DATA_BLOCK, ChunkDataBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FNAF_1_MOVIE_WELCOME_DOOR_BOARDER = register("fnaf_1_movie_welcome_door_boarder", FnafModModBlocks.FNAF_1_MOVIE_WELCOME_DOOR_BOARDER, FNAF1MovieWelcomeDoorBoarderBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> FRAMED_POSTER = register("framed_poster", FnafModModBlocks.FRAMED_POSTER, FramedPosterBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -1,0 +1,118 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "18": "framed_poster_empty"
+      },
+      "name": "default"
+    },
+    "fred": {
+      "map": {
+        "18": "framed_poster_freddy"
+      },
+      "name": "fred"
+    },
+    "bon": {
+      "map": {
+        "18": "framed_poster_bonnie"
+      },
+      "name": "bon"
+    },
+    "chic": {
+      "map": {
+        "18": "framed_poster_chica"
+      },
+      "name": "chic"
+    },
+    "fox": {
+      "map": {
+        "18": "framed_poster_foxy"
+      },
+      "name": "fox"
+    },
+    "fredhal": {
+      "map": {
+        "18": "framed_poster_freddy_hall"
+      },
+      "name": "fredhal"
+    },
+    "tfpink": {
+      "map": {
+        "18": "framed_poster_toy_freddy_pink"
+      },
+      "name": "tfpink"
+    },
+    "tfblu": {
+      "map": {
+        "18": "framed_poster_toy_freddy_blue"
+      },
+      "name": "tfblu"
+    },
+    "tfgre": {
+      "map": {
+        "18": "framed_poster_toy_freddy_green"
+      },
+      "name": "tfgre"
+    },
+    "tb": {
+      "map": {
+        "18": "framed_poster_toy_bonnie"
+      },
+      "name": "tb"
+    },
+    "tc": {
+      "map": {
+        "18": "framed_poster_toy_chica"
+      },
+      "name": "tc"
+    },
+    "tfx": {
+      "map": {
+        "18": "framed_poster_toy_foxy"
+      },
+      "name": "tfx"
+    },
+    "f3fred": {
+      "map": {
+        "18": "framed_poster_fnaf_3_freddy"
+      },
+      "name": "f3fred"
+    },
+    "f3b": {
+      "map": {
+        "18": "framed_poster_fnaf_3_bonnie1"
+      },
+      "name": "f3b"
+    },
+    "f3b2": {
+      "map": {
+        "18": "framed_poster_fnaf_3_bonnie2"
+      },
+      "name": "f3b2"
+    },
+    "f3bonchi": {
+      "map": {
+        "18": "framed_poster_fnaf_3_bonnie_chica"
+      },
+      "name": "f3bonchi"
+    },
+    "f3bonfred": {
+      "map": {
+        "18": "framed_poster_fnaf_3_bonnie_freddy"
+      },
+      "name": "f3bonfred"
+    },
+    "f3springbon1": {
+      "map": {
+        "18": "framed_poster_fnaf_3_spring_bonnie1"
+      },
+      "name": "f3springbon1"
+    },
+    "f3springbon2": {
+      "map": {
+        "18": "framed_poster_fnaf_3_spring_bonnie2"
+      },
+      "name": "f3springbon2"
+    }
+  }
+}

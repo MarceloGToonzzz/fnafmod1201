@@ -344,6 +344,7 @@ import net.mcreator.fnafmod.block.FredbearPlushBlock;
 import net.mcreator.fnafmod.block.FredbearHeadBlock;
 import net.mcreator.fnafmod.block.FredbearFloorCleanBlock;
 import net.mcreator.fnafmod.block.FredbearFloorBlock;
+import net.mcreator.fnafmod.block.FramedPosterBlock;
 import net.mcreator.fnafmod.block.FoxyPlushieBlock;
 import net.mcreator.fnafmod.block.FoxyHeadDecorationBlock;
 import net.mcreator.fnafmod.block.FoxyHeadBlock;
@@ -1366,6 +1367,7 @@ public class FnafModModBlocks {
 	public static final RegistryObject<Block> MURAL_FNAF_WORLD = REGISTRY.register("mural_fnaf_world", () -> new MuralFnafWorldBlock());
 	public static final RegistryObject<Block> MURAL_FREDBEARS_EXT = REGISTRY.register("mural_fredbears_ext", () -> new MuralFredbearsExtBlock());
 	public static final RegistryObject<Block> MURAL_MANGLES_QUEST = REGISTRY.register("mural_mangles_quest", () -> new MuralManglesQuestBlock());
+	public static final RegistryObject<Block> FRAMED_POSTER = REGISTRY.register("framed_poster", () -> new FramedPosterBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
