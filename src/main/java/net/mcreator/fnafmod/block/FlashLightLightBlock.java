@@ -50,8 +50,13 @@ public class FlashLightLightBlock extends Block implements SimpleWaterloggedBloc
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return state.getFluidState().isEmpty();
+	}
+
+	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
 	}
 
 	@Override

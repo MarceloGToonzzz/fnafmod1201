@@ -8,31 +8,21 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": true,
-    "itemTexture": "nothing",
-    "particleTexture": "notin",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": true,
-    "transparencyType": "CUTOUT_MIPPED",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
-    "boundingBoxes": [
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 0.0,
-        "My": 0.0,
-        "Mz": 0.0,
-        "subtract": false
-      }
-    ],
+    "boundingBoxes": [],
     "customProperties": [],
     "name": "Flash Light Light",
     "specialInformation": {
@@ -53,7 +43,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "NONE"
     },
