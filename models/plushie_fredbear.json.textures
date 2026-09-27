@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "fredbear_plush_normal"
+      },
+      "name": "default"
+    },
+    "bunker": {
+      "map": {
+        "2": "fredbear_plush_bunker"
+      },
+      "name": "bunker"
+    },
+    "bl1": {
+      "map": {
+        "2": "fredbear_plush_blacklight"
+      },
+      "name": "bl1"
+    },
+    "night": {
+      "map": {
+        "2": "fredbear_plush_nightbear"
+      },
+      "name": "night"
+    }
+  }
+}

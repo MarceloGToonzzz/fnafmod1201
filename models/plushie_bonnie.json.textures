@@ -2,27 +2,33 @@
   "mappings": {
     "default": {
       "map": {
-        "2": "bonnie_plush"
+        "2": "fnaf-1-bonnie_plush"
       },
       "name": "default"
     },
-    "blacklightbonnie": {
+    "bl1": {
       "map": {
-        "2": "blacklight_bonnie_plush"
+        "2": "bl_fnaf-1-bonnie_plush_1"
       },
-      "name": "blacklightbonnie"
+      "name": "bl1"
     },
-    "springbonnie": {
+    "bl3": {
       "map": {
-        "2": "spring_bonnie_plush"
+        "2": "bl_fnaf-1-bonnie_plush_3"
       },
-      "name": "springbonnie"
+      "name": "bl3"
     },
-    "blacklightspringbonnie": {
+    "golden": {
       "map": {
-        "2": "blacklight_spring_bonnie_plush"
+        "2": "fnaf-1-golden_bonnie_plush"
       },
-      "name": "blacklightspringbonnie"
+      "name": "golden"
+    },
+    "bl2": {
+      "map": {
+        "2": "bl_fnaf-1-bonnie_plush_2"
+      },
+      "name": "bl2"
     }
   }
 }

@@ -6,41 +6,83 @@
       },
       "name": "default"
     },
-    "blacklightfreddy": {
+    "bl1": {
       "map": {
-        "1": "blacklight_freddy_plush"
+        "1": "bl_freddy_plush_1"
       },
-      "name": "blacklightfreddy"
+      "name": "bl1"
     },
-    "fredbear": {
+    "bl3": {
       "map": {
-        "1": "sanshee_fredbear_plush"
+        "1": "bl_freddy_plush_3"
       },
-      "name": "fredbear"
+      "name": "bl3"
     },
-    "goldenfreddy": {
+    "golden": {
       "map": {
         "1": "golden_freddy_plush"
       },
-      "name": "goldenfreddy"
+      "name": "golden"
     },
-    "blacklightfredbear": {
+    "bl2": {
       "map": {
-        "1": "blacklight_sanshee_fredbear_plush"
+        "1": "bl_freddy_plush_2"
       },
-      "name": "blacklightfredbear"
+      "name": "bl2"
     },
-    "goldenblacklight": {
+    "bl4": {
       "map": {
-        "1": "blacklight_golden_freddy_plush"
+        "1": "bl_freddy_plush_4"
       },
-      "name": "goldenblacklight"
+      "name": "bl4"
+    },
+    "bl6": {
+      "map": {
+        "1": "bl_freddy_plush_6"
+      },
+      "name": "bl6"
+    },
+    "golden_bl1": {
+      "map": {
+        "1": "bl_golden_freddy_plush"
+      },
+      "name": "golden_bl1"
+    },
+    "purple": {
+      "map": {
+        "1": "purple_freddy_plush"
+      },
+      "name": "purple"
     },
     "shadow": {
       "map": {
         "1": "shadow_freddy_plush"
       },
       "name": "shadow"
+    },
+    "redbear": {
+      "map": {
+        "1": "redbear_plush"
+      },
+      "name": "redbear"
+    },
+    "frost": {
+      "map": {
+        "1": "frost_bear_freddy_plush"
+      },
+      "name": "frost"
+    },
+    "sham": {
+      "map": {
+        "1": "shamrock_freddy_plush"
+      },
+      "name": "sham"
+    },
+    "bl5": {
+      "map": {
+        "1": "bl_freddy_plush_5"
+      },
+      "name": "bl5"
     }
   }
 }

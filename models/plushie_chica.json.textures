@@ -2,15 +2,21 @@
   "mappings": {
     "default": {
       "map": {
-        "2": "chica_plushie"
+        "3": "fnaf-1-chica_plush"
       },
       "name": "default"
     },
-    "blacklightchica": {
+    "bl1": {
       "map": {
-        "2": "blacklight_chica_plushie"
+        "3": "fnaf-1-blacklight_chica_plush"
       },
-      "name": "blacklightchica"
+      "name": "bl1"
+    },
+    "golden": {
+      "map": {
+        "3": "fnaf-1-golden_chica_plush"
+      },
+      "name": "golden"
     }
   }
 }

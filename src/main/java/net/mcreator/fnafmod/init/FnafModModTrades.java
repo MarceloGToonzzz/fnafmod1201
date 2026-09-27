@@ -76,24 +76,6 @@ public class FnafModModTrades {
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 12),
 
 					new ItemStack(FnafModModBlocks.MARIONETTE_FIGURE.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 19),
-
-					new ItemStack(FnafModModBlocks.BLACK_LIGHT_FREDDY_PLUSHIE.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 18),
-
-					new ItemStack(FnafModModBlocks.BLACK_LIGHT_BONNIE_PLUSHIE.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 18),
-
-					new ItemStack(FnafModModBlocks.BLACK_LIGHT_CHICA_PLUSHIE.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 16),
-
-					new ItemStack(FnafModModBlocks.BLACK_LIGHT_FOXY_PLUSHIE.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 21),
-
-					new ItemStack(FnafModModBlocks.BLACK_LIGHT_GOLDEN_FREDDY_PLUSH.get()), 10, 5, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 22),
-
-					new ItemStack(FnafModModBlocks.BLACK_LIGHT_FREDBEAR_PLUSH.get()), 10, 5, 0.05f));
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 21),
 
 					new ItemStack(FnafModModBlocks.BLACK_LIGHT_SPRING_BONNIE_PLUSH.get()), 10, 5, 0.05f));
@@ -106,9 +88,6 @@ public class FnafModModTrades {
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 25),
 
 					new ItemStack(FnafModModBlocks.CLOWNFUL_DOLL.get()), 10, 5, 0.05f));
-			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(FnafModModItems.FAZ_COIN.get(), 64),
-
-					new ItemStack(FnafModModBlocks.FREDBEAR_PLUSH.get()), 10, 5, 0.05f));
 		}
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fnaf_mod:block/foxy_plushie_alt"
+    },
+    "facing=east": {
+      "model": "fnaf_mod:block/foxy_plushie_alt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fnaf_mod:block/foxy_plushie_alt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fnaf_mod:block/foxy_plushie_alt",
+      "y": 270
+    }
+  }
+}

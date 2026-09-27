@@ -318,114 +318,6 @@
             "price1": {
               "value": "CUSTOM:FazCoin"
             },
-            "countPrice1": 19,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackLightFreddyPlushie"
-            },
-            "countOffer": 1,
-            "level": 4,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
-            "countPrice1": 18,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackLightBonniePlushie"
-            },
-            "countOffer": 1,
-            "level": 4,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
-            "countPrice1": 18,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackLightChicaPlushie"
-            },
-            "countOffer": 1,
-            "level": 4,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
-            "countPrice1": 16,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackLightFoxyPlushie"
-            },
-            "countOffer": 1,
-            "level": 4,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
-            "countPrice1": 21,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackLightGoldenFreddyPlush"
-            },
-            "countOffer": 1,
-            "level": 4,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
-            "countPrice1": 22,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:BlackLightFredbearPlush"
-            },
-            "countOffer": 1,
-            "level": 4,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
             "countPrice1": 21,
             "price2": {
               "value": ""
@@ -487,24 +379,6 @@
             "countPrice2": 1,
             "offer": {
               "value": "CUSTOM:ClownfulDoll"
-            },
-            "countOffer": 1,
-            "level": 5,
-            "maxTrades": 10,
-            "xp": 5,
-            "priceMultiplier": 0.05
-          },
-          {
-            "price1": {
-              "value": "CUSTOM:FazCoin"
-            },
-            "countPrice1": 64,
-            "price2": {
-              "value": ""
-            },
-            "countPrice2": 1,
-            "offer": {
-              "value": "CUSTOM:FredbearPlush"
             },
             "countOffer": 1,
             "level": 5,

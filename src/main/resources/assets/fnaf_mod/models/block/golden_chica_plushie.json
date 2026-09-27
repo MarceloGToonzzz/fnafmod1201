@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/plushie_chica",
+  "textures": {
+    "all": "fnaf_mod:block/fnaf-1-golden_chica_plush",
+    "particle": "fnaf_mod:block/fnaf-1-golden_chica_plush",
+    "3": "fnaf_mod:block/fnaf-1-golden_chica_plush"
+  },
+  "render_type": "cutout"
+}

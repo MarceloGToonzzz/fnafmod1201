@@ -1,9 +1,9 @@
 {
-  "parent": "fnaf_mod:custom/plushie_freddy",
+  "parent": "fnaf_mod:custom/plushie_fredbear",
   "textures": {
     "all": "fnaf_mod:block/sanshee_fredbear_plush",
     "particle": "fnaf_mod:block/sanshee_fredbear_plush",
-    "1": "fnaf_mod:block/sanshee_fredbear_plush"
+    "2": "fnaf_mod:block/fredbear_plush_normal"
   },
   "render_type": "cutout"
 }

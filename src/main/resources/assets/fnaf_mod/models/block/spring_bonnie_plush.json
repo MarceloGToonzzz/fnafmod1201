@@ -1,9 +1,9 @@
 {
-  "parent": "fnaf_mod:custom/plushie_glitchtrap",
+  "parent": "fnaf_mod:custom/plushie_spring_bonnie",
   "textures": {
-    "all": "fnaf_mod:block/glitchtrap_plush",
-    "particle": "fnaf_mod:block/glitchtrap_plush",
-    "2": "fnaf_mod:block/glitchtrap_plush"
+    "all": "fnaf_mod:block/plushie_spring_bonnie_glitchtrap",
+    "particle": "fnaf_mod:block/plushie_spring_bonnie_glitchtrap",
+    "2": "fnaf_mod:block/plushie_spring_bonnie_glitchtrap"
   },
   "render_type": "cutout"
 }

@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "plushie_spring_bonnie_normal"
+      },
+      "name": "default"
+    },
+    "glitch": {
+      "map": {
+        "2": "plushie_spring_bonnie_glitchtrap"
+      },
+      "name": "glitch"
+    },
+    "bl1": {
+      "map": {
+        "2": "plushie_spring_bonnie_blacklight"
+      },
+      "name": "bl1"
+    },
+    "night": {
+      "map": {
+        "2": "plushie_spring_bonnie_nighthare"
+      },
+      "name": "night"
+    }
+  }
+}

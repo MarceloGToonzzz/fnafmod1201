@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "plushie_freddy:fredbear",
+    "customModelName": "plushie_fredbear:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,

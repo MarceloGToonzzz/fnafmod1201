@@ -3,7 +3,7 @@
   "textures": {
     "all": "fnaf_mod:block/fredbears_mural",
     "particle": "fnaf_mod:block/fredbears_mural",
-    "0": "fnaf_mod:block/fredbears_mural"
+    "0": "fnaf_mod:block/bp10"
   },
   "render_type": "cutout_mipped"
 }

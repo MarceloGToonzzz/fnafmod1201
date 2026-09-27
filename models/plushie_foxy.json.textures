@@ -2,21 +2,39 @@
   "mappings": {
     "default": {
       "map": {
-        "2": "foxy_plushie"
+        "2": "fnaf-1-foxy_plush"
       },
       "name": "default"
     },
-    "blacklightfoxy": {
+    "bl1": {
       "map": {
-        "2": "blacklight_foxy_plushie"
+        "2": "fnaf-1-foxy_plush_blacklight_1"
       },
-      "name": "blacklightfoxy"
+      "name": "bl1"
     },
-    "toyfoxy": {
+    "bl3": {
       "map": {
-        "2": "toy_foxy_plushie"
+        "2": "fnaf-1-foxy_plush_blacklight_3"
       },
-      "name": "toyfoxy"
+      "name": "bl3"
+    },
+    "alt": {
+      "map": {
+        "2": "fnaf-1-foxy_plush_pant_alt"
+      },
+      "name": "alt"
+    },
+    "golden": {
+      "map": {
+        "2": "fnaf-1-golden_foxy_plush"
+      },
+      "name": "golden"
+    },
+    "bl2": {
+      "map": {
+        "2": "fnaf-1-foxy_plush_blacklight_2"
+      },
+      "name": "bl2"
     }
   }
 }

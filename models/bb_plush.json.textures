@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "jj": {
+      "map": {
+        "2": "bb_plush_forge_jj"
+      },
+      "name": "jj"
+    },
+    "default": {
+      "map": {
+        "2": "bb_plush_normal"
+      },
+      "name": "default"
+    }
+  }
+}

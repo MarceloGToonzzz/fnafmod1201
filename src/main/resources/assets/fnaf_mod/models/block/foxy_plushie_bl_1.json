@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/plushie_foxy",
+  "textures": {
+    "all": "fnaf_mod:block/fnaf-1-foxy_plush_blacklight_1",
+    "particle": "fnaf_mod:block/fnaf-1-foxy_plush_blacklight_1",
+    "2": "fnaf_mod:block/fnaf-1-foxy_plush_blacklight_1"
+  },
+  "render_type": "cutout"
+}

@@ -412,7 +412,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> PIT_BONNIE_SUIT_LEGGINGS = REGISTRY.register("pit_bonnie_suit_leggings", () -> new PitBonnieSuitItem.Leggings());
 	public static final RegistryObject<Item> PIT_BONNIE_SUIT_BOOTS = REGISTRY.register("pit_bonnie_suit_boots", () -> new PitBonnieSuitItem.Boots());
 	public static final RegistryObject<Item> ARCADE_MACHINE_BONNIE = block(FnafModModBlocks.ARCADE_MACHINE_BONNIE);
-	public static final RegistryObject<Item> FREDBEAR_PLUSH = block(FnafModModBlocks.FREDBEAR_PLUSH);
 	public static final RegistryObject<Item> SPRING_BONNIE_PLUSH = block(FnafModModBlocks.SPRING_BONNIE_PLUSH);
 	public static final RegistryObject<Item> ERROR_TILE = block(FnafModModBlocks.ERROR_TILE);
 	public static final RegistryObject<Item> ERROR_TILE_SLAB = block(FnafModModBlocks.ERROR_TILE_SLAB);
@@ -689,11 +688,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> MAT = REGISTRY.register("mat", () -> new MATItem());
 	public static final RegistryObject<Item> HANGING_CAMERA_SPAWN_EGG = REGISTRY.register("hanging_camera_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.HANGING_CAMERA, -10066330, -6710887, new Item.Properties()));
 	public static final RegistryObject<Item> SHELF = REGISTRY.register(FnafModModBlocks.SHELF.getId().getPath(), () -> new ShelfDisplayItem(FnafModModBlocks.SHELF.get(), new Item.Properties()));
-	public static final RegistryObject<Item> BLACK_LIGHT_FREDDY_PLUSHIE = block(FnafModModBlocks.BLACK_LIGHT_FREDDY_PLUSHIE);
-	public static final RegistryObject<Item> BLACK_LIGHT_GOLDEN_FREDDY_PLUSH = block(FnafModModBlocks.BLACK_LIGHT_GOLDEN_FREDDY_PLUSH);
-	public static final RegistryObject<Item> BLACK_LIGHT_BONNIE_PLUSHIE = block(FnafModModBlocks.BLACK_LIGHT_BONNIE_PLUSHIE);
-	public static final RegistryObject<Item> BLACK_LIGHT_CHICA_PLUSHIE = block(FnafModModBlocks.BLACK_LIGHT_CHICA_PLUSHIE);
-	public static final RegistryObject<Item> BLACK_LIGHT_FOXY_PLUSHIE = block(FnafModModBlocks.BLACK_LIGHT_FOXY_PLUSHIE);
 	public static final RegistryObject<Item> BLACK_LIGHT_SPRING_BONNIE_PLUSH = block(FnafModModBlocks.BLACK_LIGHT_SPRING_BONNIE_PLUSH);
 	public static final RegistryObject<Item> FULL_HOSTILE_FREDDY_SPAWN_EGG = REGISTRY.register("full_hostile_freddy_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FULL_HOSTILE_FREDDY, -9682156, -16777216, new Item.Properties()));
 	public static final RegistryObject<Item> FULL_HOSTILE_CHICA_SPAWN_EGG = REGISTRY.register("full_hostile_chica_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FULL_HOSTILE_CHICA, -3355648, -3407668, new Item.Properties()));
@@ -864,7 +858,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> ADVENTURE_NIGHTMARE_FREDBEAR_SPAWN_EGG = REGISTRY.register("adventure_nightmare_fredbear_spawn_egg",
 			() -> new ForgeSpawnEggItem(FnafModModEntities.ADVENTURE_NIGHTMARE_FREDBEAR, -2259419, -3407668, new Item.Properties()));
 	public static final RegistryObject<Item> KITCHEN_DOOR = doubleBlock(FnafModModBlocks.KITCHEN_DOOR);
-	public static final RegistryObject<Item> BLACK_LIGHT_FREDBEAR_PLUSH = block(FnafModModBlocks.BLACK_LIGHT_FREDBEAR_PLUSH);
 	public static final RegistryObject<Item> TOY_FREDDY_PLUSHIE = block(FnafModModBlocks.TOY_FREDDY_PLUSHIE);
 	public static final RegistryObject<Item> TOY_BONNIE_PLUSHIE = block(FnafModModBlocks.TOY_BONNIE_PLUSHIE);
 	public static final RegistryObject<Item> TOY_FOXY_PLUSHIE = block(FnafModModBlocks.TOY_FOXY_PLUSHIE);
@@ -1315,8 +1308,6 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> CAMERA_BLOCK = block(FnafModModBlocks.CAMERA_BLOCK);
 	public static final RegistryObject<Item> CAMERA_HEAD_BLOCK = block(FnafModModBlocks.CAMERA_HEAD_BLOCK);
 	public static final RegistryObject<Item> FIRE_AXE_BLOCK = REGISTRY.register(FnafModModBlocks.FIRE_AXE_BLOCK.getId().getPath(), () -> new FireAxeBlockDisplayItem(FnafModModBlocks.FIRE_AXE_BLOCK.get(), new Item.Properties()));
-	public static final RegistryObject<Item> SHADOW_FREDDY_PLUSH = block(FnafModModBlocks.SHADOW_FREDDY_PLUSH);
-	public static final RegistryObject<Item> SHADOW_BONNIE_PLUSH = block(FnafModModBlocks.SHADOW_BONNIE_PLUSH);
 	public static final RegistryObject<Item> RETRO_COMPUTER = block(FnafModModBlocks.RETRO_COMPUTER);
 	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_EGG = REGISTRY.register("fredbears_monty_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.FREDBEARS_MONTY, -13810131, -12498041, new Item.Properties()));
 	public static final RegistryObject<Item> FREDBEARS_MONTY_SPAWN_ITEM = REGISTRY.register("fredbears_monty_spawn_item", () -> new FredbearsMontySpawnItemItem());
@@ -1351,6 +1342,33 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> STATUE_CIRCUS_BABY_SPAWN_EGG = REGISTRY.register("statue_circus_baby_spawn_egg", () -> new ForgeSpawnEggItem(FnafModModEntities.STATUE_CIRCUS_BABY, -3407872, -1, new Item.Properties()));
 	public static final RegistryObject<Item> CIRCUS_BABY_STATUE_SPAWN_ITEM = REGISTRY.register("circus_baby_statue_spawn_item", () -> new CircusBabyStatueSpawnItemItem());
 	public static final RegistryObject<Item> FRAMED_POSTER = block(FnafModModBlocks.FRAMED_POSTER);
+	public static final RegistryObject<Item> BONNIE_PLUSHIE_BL_1 = block(FnafModModBlocks.BONNIE_PLUSHIE_BL_1);
+	public static final RegistryObject<Item> BONNIE_PLUSHIE_BL_2 = block(FnafModModBlocks.BONNIE_PLUSHIE_BL_2);
+	public static final RegistryObject<Item> BONNIE_PLUSHIE_BL_3 = block(FnafModModBlocks.BONNIE_PLUSHIE_BL_3);
+	public static final RegistryObject<Item> GOLDEN_BONNIE_PLUSHIE = block(FnafModModBlocks.GOLDEN_BONNIE_PLUSHIE);
+	public static final RegistryObject<Item> CHICA_PLUSHIE_BL_1 = block(FnafModModBlocks.CHICA_PLUSHIE_BL_1);
+	public static final RegistryObject<Item> GOLDEN_CHICA_PLUSHIE = block(FnafModModBlocks.GOLDEN_CHICA_PLUSHIE);
+	public static final RegistryObject<Item> PURPLE_FREDDY_PLUSHIE = block(FnafModModBlocks.PURPLE_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> SHADOW_FREDDY_PLUSHIE = block(FnafModModBlocks.SHADOW_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> REDBEAR_FREDDY_PLUSHIE = block(FnafModModBlocks.REDBEAR_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> FREDDY_FROSTBEAR_PLUSHIE = block(FnafModModBlocks.FREDDY_FROSTBEAR_PLUSHIE);
+	public static final RegistryObject<Item> SHAMROCK_FREDDY_PLUSHIE = block(FnafModModBlocks.SHAMROCK_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> FREDDY_PLUSH_BL_1 = block(FnafModModBlocks.FREDDY_PLUSH_BL_1);
+	public static final RegistryObject<Item> FREDDY_PLUSH_BL_2 = block(FnafModModBlocks.FREDDY_PLUSH_BL_2);
+	public static final RegistryObject<Item> FREDDY_PLUSH_BL_3 = block(FnafModModBlocks.FREDDY_PLUSH_BL_3);
+	public static final RegistryObject<Item> FREDDY_PLUSH_BL_4 = block(FnafModModBlocks.FREDDY_PLUSH_BL_4);
+	public static final RegistryObject<Item> FREDDY_PLUSH_BL_5 = block(FnafModModBlocks.FREDDY_PLUSH_BL_5);
+	public static final RegistryObject<Item> FREDDY_PLUSH_BL_6 = block(FnafModModBlocks.FREDDY_PLUSH_BL_6);
+	public static final RegistryObject<Item> GOLDEN_FREDDY_PLUSH_BL_1 = block(FnafModModBlocks.GOLDEN_FREDDY_PLUSH_BL_1);
+	public static final RegistryObject<Item> FOXY_PLUSHIE_ALT = block(FnafModModBlocks.FOXY_PLUSHIE_ALT);
+	public static final RegistryObject<Item> GOLDEN_FOXY_PLUSHIE = block(FnafModModBlocks.GOLDEN_FOXY_PLUSHIE);
+	public static final RegistryObject<Item> FOXY_PLUSHIE_BL_1 = block(FnafModModBlocks.FOXY_PLUSHIE_BL_1);
+	public static final RegistryObject<Item> FOXY_PLUSHIE_BL_2 = block(FnafModModBlocks.FOXY_PLUSHIE_BL_2);
+	public static final RegistryObject<Item> FOXY_PLUSHIE_BL_3 = block(FnafModModBlocks.FOXY_PLUSHIE_BL_3);
+	public static final RegistryObject<Item> BUNKER_FREDBEAR_PLUSHIE = block(FnafModModBlocks.BUNKER_FREDBEAR_PLUSHIE);
+	public static final RegistryObject<Item> FREDBEAR_PLUSHIE_BL_1 = block(FnafModModBlocks.FREDBEAR_PLUSHIE_BL_1);
+	public static final RegistryObject<Item> NIGHTBEAR_PLUSHIE = block(FnafModModBlocks.NIGHTBEAR_PLUSHIE);
+	public static final RegistryObject<Item> NIGHTHARE_PLUSHIE = block(FnafModModBlocks.NIGHTHARE_PLUSHIE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
