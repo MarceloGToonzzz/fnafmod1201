@@ -105,13 +105,9 @@ public class CreativeTabMixin {
             newDisplayItems.add(FnafModModItems.SPARKY_SUIT_CHESTPLATE.get().getDefaultInstance());
             newDisplayItems.add(FnafModModItems.SPARKY_SUIT_LEGGINGS.get().getDefaultInstance());
             newDisplayItems.add(FnafModModItems.SPARKY_SUIT_BOOTS.get().getDefaultInstance());
-        }
-        else {
-            newDisplayItems = displayItems;
-            newDisplayItemsSearchTab = displayItemsSearchTab;
-        }
 
-        displayItems = newDisplayItems;
-        displayItemsSearchTab = new HashSet<>(newDisplayItemsSearchTab);
+            displayItems = newDisplayItems;
+            displayItemsSearchTab = new HashSet<>(newDisplayItemsSearchTab);
+        }
     }
 }
