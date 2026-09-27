@@ -1,7 +1,6 @@
 {
-  "parent": "fnaf_mod:custom/freddysuitlegs",
+  "parent": "item/generated",
   "textures": {
-    "0": "fnaf_mod:block/chicasuit",
-    "particle": "fnaf_mod:item/chicapants"
+    "layer0": "fnaf_mod:item/chica_legs_icon"
   }
 }

@@ -3,7 +3,9 @@
   "package": "net.mcreator.fnafmod.mixins",
   "compatibilityLevel": "JAVA_17",
   "refmap": "mixins.fnaf_mod.refmap.json",
-  "mixins": [],
+  "mixins": [
+    "CreativeTabMixin"
+  ],
   "client": [],
   "minVersion": "0.8"
 }

@@ -1,7 +1,6 @@
 {
-  "parent": "fnaf_mod:custom/freddysuithead",
+  "parent": "item/generated",
   "textures": {
-    "0": "fnaf_mod:block/goldenfreddysuit",
-    "particle": "fnaf_mod:item/gfhelmet"
+    "layer0": "fnaf_mod:item/gfreddy_mask_icon"
   }
 }

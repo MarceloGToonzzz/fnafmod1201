@@ -37298,6 +37298,19 @@
         ]
       },
       "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "CreativeTabMixin",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "creative_tab_mixin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/CreativeTabMixin.java"
+        ]
+      },
+      "path": "~/Mixins"
     }
   ],
   "variable_elements": [
@@ -39892,15 +39905,15 @@
       "CircusBabyStatueSpawnItem"
     ],
     "CUSTOM:Suits": [
+      "FredbearSpringLockSuit",
+      "SpringLockSuit",
       "FreddySuit",
+      "YellowBearSuit",
       "BonnieSuit",
       "ChicaSuit",
       "FoxySuit",
-      "YellowBearSuit",
-      "FredbearSpringLockSuit",
-      "SpringLockSuit",
-      "GlitchtrapSuit",
-      "SparkySuit"
+      "SparkySuit",
+      "GlitchtrapSuit"
     ]
   },
   "language_map": {
@@ -41840,6 +41853,10 @@
       },
       {
         "name": "Player",
+        "children": []
+      },
+      {
+        "name": "Mixins",
         "children": []
       }
     ]

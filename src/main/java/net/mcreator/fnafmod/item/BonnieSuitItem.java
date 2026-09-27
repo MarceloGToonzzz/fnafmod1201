@@ -19,7 +19,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.fnafmod.client.model.ModelBonnieSuit;
+import net.mcreator.fnafmod.client.model.ModelBonnie_suit;
 
 import java.util.function.Consumer;
 import java.util.Map;
@@ -81,7 +81,7 @@ public abstract class BonnieSuitItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -95,7 +95,7 @@ public abstract class BonnieSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/bonniesuit.png";
+			return "fnaf_mod:textures/entities/bonnie_suit.png";
 		}
 	}
 
@@ -110,9 +110,9 @@ public abstract class BonnieSuitItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).Body, "left_arm",
-							new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).LeftArm, "right_arm",
-							new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).Torso, "left_arm",
+							new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).LeftArm, "right_arm",
+							new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -124,7 +124,7 @@ public abstract class BonnieSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/bonniesuit.png";
+			return "fnaf_mod:textures/entities/bonnie_suit.png";
 		}
 	}
 
@@ -140,8 +140,8 @@ public abstract class BonnieSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -154,7 +154,7 @@ public abstract class BonnieSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/bonniesuit.png";
+			return "fnaf_mod:textures/entities/bonnie_suit.png";
 		}
 	}
 
@@ -170,8 +170,8 @@ public abstract class BonnieSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).LeftBoot, "right_leg",
-									new ModelBonnieSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnieSuit.LAYER_LOCATION)).RightBoot, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).LeftBoot, "right_leg",
+									new ModelBonnie_suit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelBonnie_suit.LAYER_LOCATION)).RightBoot, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -184,7 +184,7 @@ public abstract class BonnieSuitItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "fnaf_mod:textures/entities/bonniesuit.png";
+			return "fnaf_mod:textures/entities/bonnie_suit.png";
 		}
 	}
 }

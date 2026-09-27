@@ -1,7 +1,6 @@
 {
-  "parent": "fnaf_mod:custom/bonniesuithead",
+  "parent": "item/generated",
   "textures": {
-    "0": "fnaf_mod:block/bonniesuit",
-    "particle": "fnaf_mod:item/bonniehelmet"
+    "layer0": "fnaf_mod:item/bonnie_mask_icon"
   }
 }

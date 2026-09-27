@@ -830,10 +830,22 @@ public class FnafModModTabs {
 			}).withTabsBefore(FNAF_UTILITIES.getId()).build());
 	public static final RegistryObject<CreativeModeTab> SUITS = REGISTRY.register("suits",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.suits")).icon(() -> new ItemStack(FnafModModItems.FREDDY_SUIT_HELMET.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_HELMET.get());
+				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_CHESTPLATE.get());
+				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_LEGGINGS.get());
+				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_BOOTS.get());
+				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_HELMET.get());
+				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_CHESTPLATE.get());
+				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_LEGGINGS.get());
+				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_BOOTS.get());
 				tabData.accept(FnafModModItems.FREDDY_SUIT_HELMET.get());
 				tabData.accept(FnafModModItems.FREDDY_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.FREDDY_SUIT_LEGGINGS.get());
 				tabData.accept(FnafModModItems.FREDDY_SUIT_BOOTS.get());
+				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_HELMET.get());
+				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_CHESTPLATE.get());
+				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_LEGGINGS.get());
+				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_BOOTS.get());
 				tabData.accept(FnafModModItems.BONNIE_SUIT_HELMET.get());
 				tabData.accept(FnafModModItems.BONNIE_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.BONNIE_SUIT_LEGGINGS.get());
@@ -846,25 +858,13 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModItems.FOXY_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.FOXY_SUIT_LEGGINGS.get());
 				tabData.accept(FnafModModItems.FOXY_SUIT_BOOTS.get());
-				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_HELMET.get());
-				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_CHESTPLATE.get());
-				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_LEGGINGS.get());
-				tabData.accept(FnafModModItems.YELLOW_BEAR_SUIT_BOOTS.get());
-				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_HELMET.get());
-				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_CHESTPLATE.get());
-				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_LEGGINGS.get());
-				tabData.accept(FnafModModItems.FREDBEAR_SPRING_LOCK_SUIT_BOOTS.get());
-				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_HELMET.get());
-				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_CHESTPLATE.get());
-				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_LEGGINGS.get());
-				tabData.accept(FnafModModItems.SPRING_LOCK_SUIT_BOOTS.get());
-				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_HELMET.get());
-				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_CHESTPLATE.get());
-				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_LEGGINGS.get());
-				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_BOOTS.get());
 				tabData.accept(FnafModModItems.SPARKY_SUIT_HELMET.get());
 				tabData.accept(FnafModModItems.SPARKY_SUIT_CHESTPLATE.get());
 				tabData.accept(FnafModModItems.SPARKY_SUIT_LEGGINGS.get());
 				tabData.accept(FnafModModItems.SPARKY_SUIT_BOOTS.get());
+				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_HELMET.get());
+				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_CHESTPLATE.get());
+				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_LEGGINGS.get());
+				tabData.accept(FnafModModItems.GLITCHTRAP_SUIT_BOOTS.get());
 			}).withTabsBefore(FNAF_MOBS.getId()).build());
 }
