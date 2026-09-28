@@ -154,7 +154,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlightsflat.geo.json",
-        "luminance": 10,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {
@@ -162,7 +162,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlightsflat.geo.json",
-        "luminance": 10,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {
@@ -170,7 +170,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlightsflat.geo.json",
-        "luminance": 10,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {
@@ -178,7 +178,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlightsflat.geo.json",
-        "luminance": 10,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {
@@ -186,7 +186,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlightsflat.geo.json",
-        "luminance": 10,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {
@@ -194,7 +194,7 @@
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "modularlightsflat.geo.json",
-        "luminance": 10,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {

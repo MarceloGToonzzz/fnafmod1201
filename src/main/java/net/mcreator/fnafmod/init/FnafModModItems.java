@@ -246,10 +246,12 @@ import net.mcreator.fnafmod.block.display.FluorescentLightDisplayItem;
 import net.mcreator.fnafmod.block.display.FloodLightsDisplayItem;
 import net.mcreator.fnafmod.block.display.FireAxeBlockDisplayItem;
 import net.mcreator.fnafmod.block.display.EndoBlockDisplayItem;
+import net.mcreator.fnafmod.block.display.DynamicCurtainDisplayItem;
 import net.mcreator.fnafmod.block.display.DoorButtonFlatDisplayItem;
 import net.mcreator.fnafmod.block.display.DoorButtonDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayShelvesDisplayItem;
 import net.mcreator.fnafmod.block.display.DisplayMonitorDisplayItem;
+import net.mcreator.fnafmod.block.display.CurtainRailDisplayItem;
 import net.mcreator.fnafmod.block.display.ConnectingTableDisplayItem;
 import net.mcreator.fnafmod.block.display.ClownfulDollDisplayItem;
 import net.mcreator.fnafmod.block.display.CinematicSignToysDisplayItem;
@@ -1369,6 +1371,31 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> FREDBEAR_PLUSHIE_BL_1 = block(FnafModModBlocks.FREDBEAR_PLUSHIE_BL_1);
 	public static final RegistryObject<Item> NIGHTBEAR_PLUSHIE = block(FnafModModBlocks.NIGHTBEAR_PLUSHIE);
 	public static final RegistryObject<Item> NIGHTHARE_PLUSHIE = block(FnafModModBlocks.NIGHTHARE_PLUSHIE);
+	public static final RegistryObject<Item> CURTAIN_RAIL = REGISTRY.register(FnafModModBlocks.CURTAIN_RAIL.getId().getPath(), () -> new CurtainRailDisplayItem(FnafModModBlocks.CURTAIN_RAIL.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DYNAMIC_CURTAIN = REGISTRY.register(FnafModModBlocks.DYNAMIC_CURTAIN.getId().getPath(), () -> new DynamicCurtainDisplayItem(FnafModModBlocks.DYNAMIC_CURTAIN.get(), new Item.Properties()));
+	public static final RegistryObject<Item> TM_FREDDY = block(FnafModModBlocks.TM_FREDDY);
+	public static final RegistryObject<Item> TM_BONNIE = block(FnafModModBlocks.TM_BONNIE);
+	public static final RegistryObject<Item> TM_CHICA = block(FnafModModBlocks.TM_CHICA);
+	public static final RegistryObject<Item> TM_FOXY = block(FnafModModBlocks.TM_FOXY);
+	public static final RegistryObject<Item> TM_YELLOW_BEAR = block(FnafModModBlocks.TM_YELLOW_BEAR);
+	public static final RegistryObject<Item> TM_THE_CHILDREN = block(FnafModModBlocks.TM_THE_CHILDREN);
+	public static final RegistryObject<Item> TM_FREDBEAR = block(FnafModModBlocks.TM_FREDBEAR);
+	public static final RegistryObject<Item> TM_SPRING_BONNIE = block(FnafModModBlocks.TM_SPRING_BONNIE);
+	public static final RegistryObject<Item> TM_VINTAGE_PUPPET = block(FnafModModBlocks.TM_VINTAGE_PUPPET);
+	public static final RegistryObject<Item> TM_DINER_FREDDY = block(FnafModModBlocks.TM_DINER_FREDDY);
+	public static final RegistryObject<Item> TM_DINER_BONNIE = block(FnafModModBlocks.TM_DINER_BONNIE);
+	public static final RegistryObject<Item> TM_DINER_CHICA = block(FnafModModBlocks.TM_DINER_CHICA);
+	public static final RegistryObject<Item> TM_DINER_FOXY = block(FnafModModBlocks.TM_DINER_FOXY);
+	public static final RegistryObject<Item> TM_FREDDY_IN_SPACE = block(FnafModModBlocks.TM_FREDDY_IN_SPACE);
+	public static final RegistryObject<Item> FREDDY_FAZCHAIR = block(FnafModModBlocks.FREDDY_FAZCHAIR);
+	public static final RegistryObject<Item> CHICA_CHAIRKEN = block(FnafModModBlocks.CHICA_CHAIRKEN);
+	public static final RegistryObject<Item> BONNIE_BUTTSEAT = block(FnafModModBlocks.BONNIE_BUTTSEAT);
+	public static final RegistryObject<Item> FOXY_CHAIR = block(FnafModModBlocks.FOXY_CHAIR);
+	public static final RegistryObject<Item> F_POSTER_1 = block(FnafModModBlocks.F_POSTER_1);
+	public static final RegistryObject<Item> F_POSTER_2 = block(FnafModModBlocks.F_POSTER_2);
+	public static final RegistryObject<Item> F_POSTER_3 = block(FnafModModBlocks.F_POSTER_3);
+	public static final RegistryObject<Item> F_POSTER_4 = block(FnafModModBlocks.F_POSTER_4);
+	public static final RegistryObject<Item> F_POSTER_5 = block(FnafModModBlocks.F_POSTER_5);
 
 	// Start of user code block custom items
 	// End of user code block custom items

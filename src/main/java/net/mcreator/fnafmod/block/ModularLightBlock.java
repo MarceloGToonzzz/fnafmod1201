@@ -54,17 +54,17 @@ public class ModularLightBlock extends BaseEntityBlock implements EntityBlock {
 				.sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> (new Object() {
 					public int getLightLevel() {
 						if (s.getValue(BLOCKSTATE) == 1)
-							return 10;
+							return 0;
 						if (s.getValue(BLOCKSTATE) == 2)
-							return 10;
+							return 0;
 						if (s.getValue(BLOCKSTATE) == 3)
-							return 10;
+							return 0;
 						if (s.getValue(BLOCKSTATE) == 4)
-							return 10;
+							return 0;
 						if (s.getValue(BLOCKSTATE) == 5)
-							return 10;
+							return 0;
 						if (s.getValue(BLOCKSTATE) == 6)
-							return 10;
+							return 0;
 						if (s.getValue(BLOCKSTATE) == 7)
 							return 10;
 						if (s.getValue(BLOCKSTATE) == 8)

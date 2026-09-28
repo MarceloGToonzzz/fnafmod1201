@@ -47,6 +47,24 @@
         "9": "gfreddyhallposter"
       },
       "name": "hallposter_gfreddy"
+    },
+    "fortnitetouchy": {
+      "map": {
+        "9": "no_touchy_poster"
+      },
+      "name": "fortnitetouchy"
+    },
+    "fortnitewelcome": {
+      "map": {
+        "9": "welcome_to_freddys_poster"
+      },
+      "name": "fortnitewelcome"
+    },
+    "fortnitechica": {
+      "map": {
+        "9": "freddy_fazbears_pizza_poster_chica"
+      },
+      "name": "fortnitechica"
     }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/mascotchairs",
+  "textures": {
+    "all": "fnaf_mod:block/foxy_chair",
+    "particle": "fnaf_mod:block/foxy_chair",
+    "0": "fnaf_mod:block/foxy_chair"
+  },
+  "render_type": "cutout"
+}

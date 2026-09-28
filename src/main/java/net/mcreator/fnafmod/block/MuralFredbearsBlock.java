@@ -63,10 +63,10 @@ public class MuralFredbearsBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(-7, 0, 0, 23, 23, 1);
-			case NORTH -> box(-7, 0, 15, 23, 23, 16);
-			case EAST -> box(0, 0, -7, 1, 23, 23);
-			case WEST -> box(15, 0, -7, 16, 23, 23);
+			default -> Shapes.or(box(-7, -2, 0.25, 23, 19, 1.25), box(-7.25, -2.25, 0, 23.25, 19.25, 1.5));
+			case NORTH -> Shapes.or(box(-7, -2, 14.75, 23, 19, 15.75), box(-7.25, -2.25, 14.5, 23.25, 19.25, 16));
+			case EAST -> Shapes.or(box(0.25, -2, -7, 1.25, 19, 23), box(0, -2.25, -7.25, 1.5, 19.25, 23.25));
+			case WEST -> Shapes.or(box(14.75, -2, -7, 15.75, 19, 23), box(14.5, -2.25, -7.25, 16, 19.25, 23.25));
 		};
 	}
 

@@ -60,10 +60,12 @@ import net.mcreator.fnafmod.block.renderer.FluorescentLightTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FloodLightsTileRenderer;
 import net.mcreator.fnafmod.block.renderer.FireAxeBlockTileRenderer;
 import net.mcreator.fnafmod.block.renderer.EndoBlockTileRenderer;
+import net.mcreator.fnafmod.block.renderer.DynamicCurtainTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DoorButtonTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DoorButtonFlatTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayShelvesTileRenderer;
 import net.mcreator.fnafmod.block.renderer.DisplayMonitorTileRenderer;
+import net.mcreator.fnafmod.block.renderer.CurtainRailTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ConnectingTableTileRenderer;
 import net.mcreator.fnafmod.block.renderer.ClownfulDollTileRenderer;
 import net.mcreator.fnafmod.block.renderer.CinematicSignToysTileRenderer;
@@ -190,5 +192,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.MODULAR_LIGHT_FLAT.get(), context -> new ModularLightFlatTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FIRE_AXE_BLOCK.get(), context -> new FireAxeBlockTileRenderer());
 		event.registerBlockEntityRenderer(FnafModModBlockEntities.FREDBEARS_FETCH.get(), context -> new FredbearsFetchTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.CURTAIN_RAIL.get(), context -> new CurtainRailTileRenderer());
+		event.registerBlockEntityRenderer(FnafModModBlockEntities.DYNAMIC_CURTAIN.get(), context -> new DynamicCurtainTileRenderer());
 	}
 }

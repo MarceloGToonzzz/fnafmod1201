@@ -80,6 +80,7 @@ import net.mcreator.fnafmod.block.entity.FlashLightLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.FireAxeBlockTileEntity;
 import net.mcreator.fnafmod.block.entity.FNAF1MovieWelcomeDoorBoarderBlockEntity;
 import net.mcreator.fnafmod.block.entity.EndoBlockTileEntity;
+import net.mcreator.fnafmod.block.entity.DynamicCurtainTileEntity;
 import net.mcreator.fnafmod.block.entity.DrumsetBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorLightBlockEntity;
 import net.mcreator.fnafmod.block.entity.DoorButtonTileEntity;
@@ -91,6 +92,7 @@ import net.mcreator.fnafmod.block.entity.DisplayMonitorTileEntity;
 import net.mcreator.fnafmod.block.entity.DeskBlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk3BlockEntity;
 import net.mcreator.fnafmod.block.entity.Desk2BlockEntity;
+import net.mcreator.fnafmod.block.entity.CurtainRailTileEntity;
 import net.mcreator.fnafmod.block.entity.ConnectingTableTileEntity;
 import net.mcreator.fnafmod.block.entity.ClownfulDollTileEntity;
 import net.mcreator.fnafmod.block.entity.CinematicSignToysTileEntity;
@@ -305,6 +307,9 @@ public class FnafModModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CHUNK_DATA_BLOCK = register("chunk_data_block", FnafModModBlocks.CHUNK_DATA_BLOCK, ChunkDataBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FNAF_1_MOVIE_WELCOME_DOOR_BOARDER = register("fnaf_1_movie_welcome_door_boarder", FnafModModBlocks.FNAF_1_MOVIE_WELCOME_DOOR_BOARDER, FNAF1MovieWelcomeDoorBoarderBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FRAMED_POSTER = register("framed_poster", FnafModModBlocks.FRAMED_POSTER, FramedPosterBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<CurtainRailTileEntity>> CURTAIN_RAIL = REGISTRY.register("curtain_rail", () -> BlockEntityType.Builder.of(CurtainRailTileEntity::new, FnafModModBlocks.CURTAIN_RAIL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DynamicCurtainTileEntity>> DYNAMIC_CURTAIN = REGISTRY.register("dynamic_curtain",
+			() -> BlockEntityType.Builder.of(DynamicCurtainTileEntity::new, FnafModModBlocks.DYNAMIC_CURTAIN.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

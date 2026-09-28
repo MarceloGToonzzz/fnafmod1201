@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "freddy_fazchair"
+      },
+      "name": "default"
+    },
+    "bonnie": {
+      "map": {
+        "0": "bonnie_chair"
+      },
+      "name": "bonnie"
+    },
+    "chica_chairken": {
+      "map": {
+        "0": "chica_chair"
+      },
+      "name": "chica_chairken"
+    },
+    "foxy": {
+      "map": {
+        "0": "foxy_chair"
+      },
+      "name": "foxy"
+    }
+  }
+}

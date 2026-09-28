@@ -4,7 +4,7 @@
 	"ambientocclusion": false,
 	"texture_size": [128, 128],
 	"textures": {
-		"2": "nightshift:blocks/mural_freddys"
+		"2": "fnaf_mod:blocks/mural_freddys"
 	},
 	"elements": [
 		{

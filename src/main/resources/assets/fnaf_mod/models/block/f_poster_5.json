@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/poster5",
+  "textures": {
+    "all": "fnaf_mod:block/freddy_fazbears_pizza_poster_chica",
+    "particle": "fnaf_mod:block/freddy_fazbears_pizza_poster_chica",
+    "9": "fnaf_mod:block/freddy_fazbears_pizza_poster_chica"
+  },
+  "render_type": "solid"
+}

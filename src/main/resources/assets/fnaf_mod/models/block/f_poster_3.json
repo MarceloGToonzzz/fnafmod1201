@@ -1,0 +1,9 @@
+{
+  "parent": "fnaf_mod:custom/celebrate_poster_1",
+  "textures": {
+    "all": "fnaf_mod:block/where_fantasy_meets_fun_poster",
+    "particle": "fnaf_mod:block/where_fantasy_meets_fun_poster",
+    "0": "fnaf_mod:block/where_fantasy_meets_fun_poster"
+  },
+  "render_type": "solid"
+}

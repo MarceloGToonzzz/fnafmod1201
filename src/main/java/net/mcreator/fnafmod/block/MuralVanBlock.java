@@ -63,10 +63,10 @@ public class MuralVanBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(-7, 0, 0, 23, 23, 1);
-			case NORTH -> box(-7, 0, 15, 23, 23, 16);
-			case EAST -> box(0, 0, -7, 1, 23, 23);
-			case WEST -> box(15, 0, -7, 16, 23, 23);
+			default -> box(-7, -2, 0.25, 23, 19, 1.25);
+			case NORTH -> box(-7, -2, 14.75, 23, 19, 15.75);
+			case EAST -> box(0.25, -2, -7, 1.25, 19, 23);
+			case WEST -> box(14.75, -2, -7, 15.75, 19, 23);
 		};
 	}
 

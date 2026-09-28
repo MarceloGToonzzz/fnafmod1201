@@ -5,6 +5,18 @@
         "0": "celebrateposterfnaf1"
       },
       "name": "default"
+    },
+    "fortnitefantasy": {
+      "map": {
+        "0": "where_fantasy_meets_fun_poster"
+      },
+      "name": "fortnitefantasy"
+    },
+    "hoponfortnite": {
+      "map": {
+        "0": "hop_on_we_going_to_freddys"
+      },
+      "name": "hoponfortnite"
     }
   }
 }

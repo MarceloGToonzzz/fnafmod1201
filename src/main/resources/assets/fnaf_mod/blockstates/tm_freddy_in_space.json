@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fnaf_mod:block/tm_freddy_in_space"
+    },
+    "facing=east": {
+      "model": "fnaf_mod:block/tm_freddy_in_space",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fnaf_mod:block/tm_freddy_in_space",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fnaf_mod:block/tm_freddy_in_space",
+      "y": 270
+    }
+  }
+}

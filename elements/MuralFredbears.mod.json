@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "minigamemural:fredbears_mural",
+    "customModelName": "minigamemural:fredbears",
     "rotationMode": 3,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -25,10 +25,19 @@
     "boundingBoxes": [
       {
         "mx": -7.0,
-        "my": 0.0,
-        "mz": 15.0,
+        "my": -2.0,
+        "mz": 14.75,
         "Mx": 23.0,
-        "My": 23.0,
+        "My": 19.0,
+        "Mz": 15.75,
+        "subtract": false
+      },
+      {
+        "mx": -7.25,
+        "my": -2.25,
+        "mz": 14.5,
+        "Mx": 23.25,
+        "My": 19.25,
         "Mz": 16.0,
         "subtract": false
       }

@@ -1,0 +1,88 @@
+{
+  "mappings": {
+    "chica": {
+      "map": {
+        "0": "chica_mural"
+      },
+      "name": "chica"
+    },
+    "bonnie": {
+      "map": {
+        "0": "bonnie_mural"
+      },
+      "name": "bonnie"
+    },
+    "dinerfreddy": {
+      "map": {
+        "0": "diner_freddy_mural"
+      },
+      "name": "dinerfreddy"
+    },
+    "dinerchica": {
+      "map": {
+        "0": "diner_chica_mural"
+      },
+      "name": "dinerchica"
+    },
+    "puppet": {
+      "map": {
+        "0": "vintage_puppet_mural"
+      },
+      "name": "puppet"
+    },
+    "freddyinspace": {
+      "map": {
+        "0": "freddy_in_space_mural"
+      },
+      "name": "freddyinspace"
+    },
+    "default": {
+      "map": {
+        "0": "freddy_mural"
+      },
+      "name": "default"
+    },
+    "yellowbear": {
+      "map": {
+        "0": "yellow_bear_mural"
+      },
+      "name": "yellowbear"
+    },
+    "dinerfoxy": {
+      "map": {
+        "0": "diner_foxy_mural"
+      },
+      "name": "dinerfoxy"
+    },
+    "children": {
+      "map": {
+        "0": "the_children_mural"
+      },
+      "name": "children"
+    },
+    "fredbear": {
+      "map": {
+        "0": "fredbear_mural"
+      },
+      "name": "fredbear"
+    },
+    "springbonnie": {
+      "map": {
+        "0": "spring_bonnie_mural"
+      },
+      "name": "springbonnie"
+    },
+    "foxy": {
+      "map": {
+        "0": "foxy_mural"
+      },
+      "name": "foxy"
+    },
+    "dinerbonnie": {
+      "map": {
+        "0": "diner_bonnie_mural"
+      },
+      "name": "dinerbonnie"
+    }
+  }
+}
