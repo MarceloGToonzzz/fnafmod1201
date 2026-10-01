@@ -1,8 +1,8 @@
 {
   "parent": "fnaf_mod:custom/plushie_bonnie",
   "textures": {
-    "all": "fnaf_mod:block/bonnie_plush",
-    "particle": "fnaf_mod:block/bonnie_plush",
+    "all": "fnaf_mod:block/fnaf-1-bonnie_plush",
+    "particle": "fnaf_mod:block/fnaf-1-bonnie_plush",
     "2": "fnaf_mod:block/fnaf-1-bonnie_plush"
   },
   "render_type": "cutout"

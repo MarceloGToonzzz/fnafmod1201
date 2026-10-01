@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "ucn": {
+      "map": {
+        "2": "ucn_toy_freddy_plush"
+      },
+      "name": "ucn"
+    },
+    "default": {
+      "map": {
+        "2": "toy_freddy_plush"
+      },
+      "name": "default"
+    },
+    "caso": {
+      "map": {
+        "2": "caso_toy_freddy_plush"
+      },
+      "name": "caso"
+    },
+    "bl1": {
+      "map": {
+        "2": "bl_toy_freddy_plush_1"
+      },
+      "name": "bl1"
+    },
+    "bl2": {
+      "map": {
+        "2": "bl_toy_freddy_plush_2"
+      },
+      "name": "bl2"
+    },
+    "hw": {
+      "map": {
+        "2": "hw_toy_freddy_plush"
+      },
+      "name": "hw"
+    },
+    "gold": {
+      "map": {
+        "2": "golden_toy_freddy_plush"
+      },
+      "name": "gold"
+    }
+  }
+}

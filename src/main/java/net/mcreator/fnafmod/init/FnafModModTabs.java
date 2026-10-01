@@ -323,47 +323,6 @@ public class FnafModModTabs {
 			}).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_DECOR = REGISTRY.register("fnaf_decor",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_decor")).icon(() -> new ItemStack(FnafModModBlocks.ARCADE_MACHINE_BONNIE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(FnafModModBlocks.FREDBEAR_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.BUNKER_FREDBEAR_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDBEAR_PLUSHIE_BL_1.get().asItem());
-				tabData.accept(FnafModModBlocks.NIGHTBEAR_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.SPRING_BONNIE_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.SPRING_BONNIE_PLUSH.get().asItem());
-				tabData.accept(FnafModModBlocks.BLACK_LIGHT_SPRING_BONNIE_PLUSH.get().asItem());
-				tabData.accept(FnafModModBlocks.NIGHTHARE_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.PURPLE_FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.SHADOW_FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.REDBEAR_FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_FROSTBEAR_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.SHAMROCK_FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_1.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_2.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_3.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_4.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_5.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_6.get().asItem());
-				tabData.accept(FnafModModBlocks.GOLDEN_FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.GOLDEN_FREDDY_PLUSH_BL_1.get().asItem());
-				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE_BL_2.get().asItem());
-				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE_BL_1.get().asItem());
-				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE_BL_3.get().asItem());
-				tabData.accept(FnafModModBlocks.GOLDEN_BONNIE_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.CHICA_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.CHICA_PLUSHIE_BL_1.get().asItem());
-				tabData.accept(FnafModModBlocks.GOLDEN_CHICA_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_ALT.get().asItem());
-				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_BL_1.get().asItem());
-				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_BL_2.get().asItem());
-				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_BL_3.get().asItem());
-				tabData.accept(FnafModModBlocks.GOLDEN_FOXY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.TOY_FREDDY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.TOY_BONNIE_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE.get().asItem());
-				tabData.accept(FnafModModBlocks.POPGOES_PLUSHIE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_FREDDY_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_BONNIE_FIGURE.get().asItem());
 				tabData.accept(FnafModModBlocks.TOY_CHICA_FIGURE.get().asItem());
@@ -410,6 +369,10 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.AWNING_YELLOW.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_GREEN.get().asItem());
 				tabData.accept(FnafModModBlocks.AWNING_BLUE.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_FAZCHAIR.get().asItem());
+				tabData.accept(FnafModModBlocks.CHICA_CHAIRKEN.get().asItem());
+				tabData.accept(FnafModModBlocks.BONNIE_BUTTSEAT.get().asItem());
+				tabData.accept(FnafModModBlocks.FOXY_CHAIR.get().asItem());
 				tabData.accept(FnafModModBlocks.BALLOONS.get().asItem());
 				tabData.accept(FnafModModBlocks.BALLOON.get().asItem());
 				tabData.accept(FnafModModBlocks.BALLOON_ORANGE.get().asItem());
@@ -562,10 +525,6 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.CLOSET_LEFT_BOTTOM.get().asItem());
 				tabData.accept(FnafModModBlocks.CLOSET_RIGHT_BOTTOM.get().asItem());
 				tabData.accept(FnafModModBlocks.BIG_CLOSET_DOOR.get().asItem());
-				tabData.accept(FnafModModBlocks.FREDDY_FAZCHAIR.get().asItem());
-				tabData.accept(FnafModModBlocks.CHICA_CHAIRKEN.get().asItem());
-				tabData.accept(FnafModModBlocks.BONNIE_BUTTSEAT.get().asItem());
-				tabData.accept(FnafModModBlocks.FOXY_CHAIR.get().asItem());
 			}).withTabsBefore(FNAF_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_TOOLS_AND_ITEMS = REGISTRY.register("fnaf_tools_and_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_tools_and_items")).icon(() -> new ItemStack(FnafModModItems.MAT.get())).displayItems((parameters, tabData) -> {
@@ -713,6 +672,73 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.F_POSTER_4.get().asItem());
 				tabData.accept(FnafModModBlocks.F_POSTER_5.get().asItem());
 			}).withTabsBefore(FNAF_TOOLS_AND_ITEMS.getId()).build());
+	public static final RegistryObject<CreativeModeTab> FNAF_PLUSHIES = REGISTRY.register("fnaf_plushies",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_plushies")).icon(() -> new ItemStack(FnafModModBlocks.GOLDEN_FREDDY_PLUSHIE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FnafModModBlocks.FREDBEAR_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.BUNKER_FREDBEAR_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDBEAR_PLUSHIE_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.NIGHTBEAR_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.SPRING_BONNIE_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.NIGHTHARE_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.SPRING_BONNIE_PLUSH.get().asItem());
+				tabData.accept(FnafModModBlocks.BLACK_LIGHT_SPRING_BONNIE_PLUSH.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.PURPLE_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.SHADOW_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.REDBEAR_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_FROSTBEAR_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.SHAMROCK_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_3.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_4.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_5.get().asItem());
+				tabData.accept(FnafModModBlocks.FREDDY_PLUSH_BL_6.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_FREDDY_PLUSH_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.BONNIE_PLUSHIE_BL_3.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_BONNIE_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.CHICA_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.CHICA_PLUSHIE_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_CHICA_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_ALT.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE_BUT_FOXY.get().asItem());
+				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.FOXY_PLUSHIE_BL_3.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.UCN_TOY_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.CASE_OH_TOY_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.HW_TOY_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FREDDY_PLUSHIE_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FREDDY_PLUSHIE_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_TOY_FREDDY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_BONNIE_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_BONNIE_PLUSH_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_BONNIE_PLUSH_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_BONNIE_PLUSH_BL_3.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_TOY_BONNIE_PLUSH.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSH_ALT.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSH_PURPLE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSH_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_CHICA_PLUSH_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_TOY_CHICA_PLUSH.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TANGLE_TOY_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.XANGLE_TOY_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.SHADOW_TOY_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE_BL_1.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE_BL_2.get().asItem());
+				tabData.accept(FnafModModBlocks.TOY_FOXY_PLUSHIE_BL_3.get().asItem());
+				tabData.accept(FnafModModBlocks.GOLDEN_TOY_FOXY_PLUSHIE.get().asItem());
+				tabData.accept(FnafModModBlocks.POPGOES_PLUSHIE.get().asItem());
+			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_UTILITIES = REGISTRY.register("fnaf_utilities",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_utilities")).icon(() -> new ItemStack(FnafModModBlocks.CAMERA_BLOCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModBlocks.SHACK_RANDOMIZER.get().asItem());
@@ -765,7 +791,7 @@ public class FnafModModTabs {
 				tabData.accept(FnafModModBlocks.PROTONS_PLUSH_RAT.get().asItem());
 				tabData.accept(FnafModModBlocks.CURTAIN_RAIL.get().asItem());
 				tabData.accept(FnafModModBlocks.DYNAMIC_CURTAIN.get().asItem());
-			}).withTabsBefore(DRAWINGS_POSTERS.getId()).build());
+			}).withTabsBefore(FNAF_PLUSHIES.getId()).build());
 	public static final RegistryObject<CreativeModeTab> FNAF_MOBS = REGISTRY.register("fnaf_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.fnaf_mod.fnaf_mobs")).icon(() -> new ItemStack(FnafModModItems.FREDDY.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FnafModModItems.FREDBEAR_ANIMATRONIC_SPAWN_ITEM.get());

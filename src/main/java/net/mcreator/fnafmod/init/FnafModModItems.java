@@ -1396,6 +1396,29 @@ public class FnafModModItems {
 	public static final RegistryObject<Item> F_POSTER_3 = block(FnafModModBlocks.F_POSTER_3);
 	public static final RegistryObject<Item> F_POSTER_4 = block(FnafModModBlocks.F_POSTER_4);
 	public static final RegistryObject<Item> F_POSTER_5 = block(FnafModModBlocks.F_POSTER_5);
+	public static final RegistryObject<Item> TOY_FREDDY_PLUSHIE_BL_1 = block(FnafModModBlocks.TOY_FREDDY_PLUSHIE_BL_1);
+	public static final RegistryObject<Item> TOY_FREDDY_PLUSHIE_BL_2 = block(FnafModModBlocks.TOY_FREDDY_PLUSHIE_BL_2);
+	public static final RegistryObject<Item> GOLDEN_TOY_FREDDY_PLUSHIE = block(FnafModModBlocks.GOLDEN_TOY_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> HW_TOY_FREDDY_PLUSHIE = block(FnafModModBlocks.HW_TOY_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> CASE_OH_TOY_FREDDY_PLUSHIE = block(FnafModModBlocks.CASE_OH_TOY_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> UCN_TOY_FREDDY_PLUSHIE = block(FnafModModBlocks.UCN_TOY_FREDDY_PLUSHIE);
+	public static final RegistryObject<Item> TOY_BONNIE_PLUSH_BL_1 = block(FnafModModBlocks.TOY_BONNIE_PLUSH_BL_1);
+	public static final RegistryObject<Item> TOY_BONNIE_PLUSH_BL_2 = block(FnafModModBlocks.TOY_BONNIE_PLUSH_BL_2);
+	public static final RegistryObject<Item> TOY_BONNIE_PLUSH_BL_3 = block(FnafModModBlocks.TOY_BONNIE_PLUSH_BL_3);
+	public static final RegistryObject<Item> GOLDEN_TOY_BONNIE_PLUSH = block(FnafModModBlocks.GOLDEN_TOY_BONNIE_PLUSH);
+	public static final RegistryObject<Item> TOY_CHICA_PLUSH_ALT = block(FnafModModBlocks.TOY_CHICA_PLUSH_ALT);
+	public static final RegistryObject<Item> TOY_CHICA_PLUSH_PURPLE = block(FnafModModBlocks.TOY_CHICA_PLUSH_PURPLE);
+	public static final RegistryObject<Item> TOY_CHICA_PLUSH_BL_1 = block(FnafModModBlocks.TOY_CHICA_PLUSH_BL_1);
+	public static final RegistryObject<Item> TOY_CHICA_PLUSH_BL_2 = block(FnafModModBlocks.TOY_CHICA_PLUSH_BL_2);
+	public static final RegistryObject<Item> GOLDEN_TOY_CHICA_PLUSH = block(FnafModModBlocks.GOLDEN_TOY_CHICA_PLUSH);
+	public static final RegistryObject<Item> SHADOW_TOY_FOXY_PLUSHIE = block(FnafModModBlocks.SHADOW_TOY_FOXY_PLUSHIE);
+	public static final RegistryObject<Item> TOY_FOXY_PLUSHIE_BUT_FOXY = block(FnafModModBlocks.TOY_FOXY_PLUSHIE_BUT_FOXY);
+	public static final RegistryObject<Item> TOY_FOXY_PLUSHIE_BL_1 = block(FnafModModBlocks.TOY_FOXY_PLUSHIE_BL_1);
+	public static final RegistryObject<Item> TOY_FOXY_PLUSHIE_BL_2 = block(FnafModModBlocks.TOY_FOXY_PLUSHIE_BL_2);
+	public static final RegistryObject<Item> TOY_FOXY_PLUSHIE_BL_3 = block(FnafModModBlocks.TOY_FOXY_PLUSHIE_BL_3);
+	public static final RegistryObject<Item> GOLDEN_TOY_FOXY_PLUSHIE = block(FnafModModBlocks.GOLDEN_TOY_FOXY_PLUSHIE);
+	public static final RegistryObject<Item> TANGLE_TOY_FOXY_PLUSHIE = block(FnafModModBlocks.TANGLE_TOY_FOXY_PLUSHIE);
+	public static final RegistryObject<Item> XANGLE_TOY_FOXY_PLUSHIE = block(FnafModModBlocks.XANGLE_TOY_FOXY_PLUSHIE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

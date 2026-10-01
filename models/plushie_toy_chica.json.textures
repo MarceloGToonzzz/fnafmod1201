@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "gold": {
+      "map": {
+        "3": "fnaf-2-golden_toy_chica_plush"
+      },
+      "name": "gold"
+    },
+    "default": {
+      "map": {
+        "3": "fnaf-2-toy_chica_plush"
+      },
+      "name": "default"
+    },
+    "will": {
+      "map": {
+        "3": "fnaf-2-toy_chica-will_plush"
+      },
+      "name": "will"
+    },
+    "bl1": {
+      "map": {
+        "3": "fnaf-2-bltoy_chica1_plush"
+      },
+      "name": "bl1"
+    },
+    "alt": {
+      "map": {
+        "3": "fnaf-2-toy_chica-alt_plush"
+      },
+      "name": "alt"
+    },
+    "bl2": {
+      "map": {
+        "3": "fnaf-2-bltoy_chica2_plush"
+      },
+      "name": "bl2"
+    }
+  }
+}

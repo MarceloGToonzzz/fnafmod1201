@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "bonnie_plush",
+    "texture": "fnaf-1-bonnie_plush",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -44,7 +44,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:FNAFDecor"
+        "value": "CUSTOM:FNAFPlushies"
       }
     ],
     "destroyTool": "Not specified",

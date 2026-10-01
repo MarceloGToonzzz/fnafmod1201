@@ -20216,7 +20216,7 @@
           "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_plushie.json"
         ]
       },
-      "path": "~/Blocks/DecorativeBlocks/Plushies"
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
     },
     {
       "name": "ToyFreddyPlushieOnBlockRightClicked",
@@ -20264,7 +20264,7 @@
           "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_plushie.json"
         ]
       },
-      "path": "~/Blocks/DecorativeBlocks/Plushies"
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Bonnie Plush"
     },
     {
       "name": "ToyBonniePlushieOnBlockRightClicked",
@@ -20312,7 +20312,7 @@
           "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_plushie.json"
         ]
       },
-      "path": "~/Blocks/DecorativeBlocks/Plushies"
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
     },
     {
       "name": "ToyFoxyPlushieOnBlockRightClicked",
@@ -20360,7 +20360,7 @@
           "src/main/resources/assets/fnaf_mod/models/item/toy_chica_plushie.json"
         ]
       },
-      "path": "~/Blocks/DecorativeBlocks/Plushies"
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Chica Plush"
     },
     {
       "name": "ToyChicaPlushieOnBlockRightClicked",
@@ -38103,6 +38103,421 @@
         ]
       },
       "path": "~/Blocks/Posters"
+    },
+    {
+      "name": "ToyFreddyPlushieBL1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_freddy_plushie_bl_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_freddy_plushie_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_plushie_bl_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFreddyPlushieBL1Block.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_freddy_plushie_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_plushie_bl_1.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
+    },
+    {
+      "name": "ToyFreddyPlushieBL2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_freddy_plushie_bl_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/ToyFreddyPlushieBL2Block.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_freddy_plushie_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_freddy_plushie_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_freddy_plushie_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_freddy_plushie_bl_2.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
+    },
+    {
+      "name": "GoldenToyFreddyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_toy_freddy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/GoldenToyFreddyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/golden_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/golden_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/block/golden_toy_freddy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/golden_toy_freddy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
+    },
+    {
+      "name": "HWToyFreddyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hw_toy_freddy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/HWToyFreddyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/hw_toy_freddy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/hw_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/item/hw_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/hw_toy_freddy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
+    },
+    {
+      "name": "CaseOhToyFreddyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "case_oh_toy_freddy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/CaseOhToyFreddyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/case_oh_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/case_oh_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/block/case_oh_toy_freddy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/case_oh_toy_freddy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
+    },
+    {
+      "name": "UCNToyFreddyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ucn_toy_freddy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/ucn_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/item/ucn_toy_freddy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/block/ucn_toy_freddy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/ucn_toy_freddy_plushie.json",
+          "src/main/java/net/mcreator/fnafmod/block/UCNToyFreddyPlushieBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Freddy Plush"
+    },
+    {
+      "name": "BuildCreativeTab",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "build_creative_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/mixins/BuildCreativeTabMixin.java"
+        ]
+      },
+      "path": "~/Mixins"
+    },
+    {
+      "name": "ToyBonniePlushBL1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_bonnie_plush_bl_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_plush_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_bonnie_plush_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_plush_bl_1.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_plush_bl_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyBonniePlushBL1Block.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Bonnie Plush"
+    },
+    {
+      "name": "ToyBonniePlushBL2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_bonnie_plush_bl_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_plush_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_bonnie_plush_bl_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyBonniePlushBL2Block.java",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_plush_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_plush_bl_2.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Bonnie Plush"
+    },
+    {
+      "name": "ToyBonniePlushBL3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_bonnie_plush_bl_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_bonnie_plush_bl_3.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyBonniePlushBL3Block.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_bonnie_plush_bl_3.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_bonnie_plush_bl_3.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_bonnie_plush_bl_3.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Bonnie Plush"
+    },
+    {
+      "name": "GoldenToyBonniePlush",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_toy_bonnie_plush",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/golden_toy_bonnie_plush.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/golden_toy_bonnie_plush.json",
+          "src/main/java/net/mcreator/fnafmod/block/GoldenToyBonniePlushBlock.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/golden_toy_bonnie_plush.json",
+          "src/main/resources/assets/fnaf_mod/models/block/golden_toy_bonnie_plush.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Bonnie Plush"
+    },
+    {
+      "name": "ToyChicaPlushAlt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_plush_alt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_plush_alt.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_chica_plush_alt.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_chica_plush_alt.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyChicaPlushAltBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_chica_plush_alt.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Chica Plush"
+    },
+    {
+      "name": "ToyChicaPlushPurple",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_plush_purple",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_chica_plush_purple.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_chica_plush_purple.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_plush_purple.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_chica_plush_purple.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyChicaPlushPurpleBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Chica Plush"
+    },
+    {
+      "name": "ToyChicaPlushBL1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_plush_bl_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/ToyChicaPlushBL1Block.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_chica_plush_bl_1.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_chica_plush_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_chica_plush_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_plush_bl_1.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Chica Plush"
+    },
+    {
+      "name": "ToyChicaPlushBL2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_chica_plush_bl_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_chica_plush_bl_2.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_chica_plush_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_chica_plush_bl_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyChicaPlushBL2Block.java",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_chica_plush_bl_2.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Chica Plush"
+    },
+    {
+      "name": "GoldenToyChicaPlush",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_toy_chica_plush",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/golden_toy_chica_plush.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/golden_toy_chica_plush.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/golden_toy_chica_plush.json",
+          "src/main/java/net/mcreator/fnafmod/block/GoldenToyChicaPlushBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/golden_toy_chica_plush.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Chica Plush"
+    },
+    {
+      "name": "FNAFPlushies",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fnaf_plushies",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies"
+    },
+    {
+      "name": "ShadowToyFoxyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_toy_foxy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/shadow_toy_foxy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/shadow_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/item/shadow_toy_foxy_plushie.json",
+          "src/main/java/net/mcreator/fnafmod/block/ShadowToyFoxyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/blockstates/shadow_toy_foxy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
+    },
+    {
+      "name": "ToyFoxyPlushieButFoxy",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_plushie_but_foxy",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_foxy_plushie_but_foxy.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_plushie_but_foxy.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_plushie_but_foxy.json",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_foxy_plushie_but_foxy.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFoxyPlushieButFoxyBlock.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Foxy Plush"
+    },
+    {
+      "name": "ToyFoxyPlushieBL1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_plushie_bl_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_plushie_bl_1.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFoxyPlushieBL1Block.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_foxy_plushie_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_plushie_bl_1.json",
+          "src/main/resources/assets/fnaf_mod/models/block/toy_foxy_plushie_bl_1.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
+    },
+    {
+      "name": "ToyFoxyPlushieBL2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_plushie_bl_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_foxy_plushie_bl_2.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_foxy_plushie_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_plushie_bl_2.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_plushie_bl_2.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFoxyPlushieBL2Block.java"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
+    },
+    {
+      "name": "ToyFoxyPlushieBL3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toy_foxy_plushie_bl_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/fnaf_mod/models/block/toy_foxy_plushie_bl_3.json",
+          "src/main/java/net/mcreator/fnafmod/block/ToyFoxyPlushieBL3Block.java",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/toy_foxy_plushie_bl_3.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/toy_foxy_plushie_bl_3.json",
+          "src/main/resources/assets/fnaf_mod/models/item/toy_foxy_plushie_bl_3.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
+    },
+    {
+      "name": "GoldenToyFoxyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_toy_foxy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/GoldenToyFoxyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/golden_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/golden_toy_foxy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/golden_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/item/golden_toy_foxy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
+    },
+    {
+      "name": "TangleToyFoxyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tangle_toy_foxy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/tangle_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/tangle_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/block/tangle_toy_foxy_plushie.json",
+          "src/main/java/net/mcreator/fnafmod/block/TangleToyFoxyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/item/tangle_toy_foxy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
+    },
+    {
+      "name": "XangleToyFoxyPlushie",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xangle_toy_foxy_plushie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/fnafmod/block/XangleToyFoxyPlushieBlock.java",
+          "src/main/resources/assets/fnaf_mod/models/block/xangle_toy_foxy_plushie.json",
+          "src/main/resources/data/fnaf_mod/loot_tables/blocks/xangle_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/blockstates/xangle_toy_foxy_plushie.json",
+          "src/main/resources/assets/fnaf_mod/models/item/xangle_toy_foxy_plushie.json"
+        ]
+      },
+      "path": "~/Blocks/DecorativeBlocks/Plushies/Toy Foxy Plushies"
     }
   ],
   "variable_elements": [
@@ -40195,47 +40610,6 @@
       "ThinRoseCurtain"
     ],
     "CUSTOM:FNAFDecor": [
-      "FredbearPlushie",
-      "BunkerFredbearPlushie",
-      "FredbearPlushieBL1",
-      "NightbearPlushie",
-      "SpringBonniePlushie",
-      "SpringBonniePlush",
-      "BlackLightSpringBonniePlush",
-      "NightharePlushie",
-      "FreddyPlushie",
-      "PurpleFreddyPlushie",
-      "ShadowFreddyPlushie",
-      "RedbearFreddyPlushie",
-      "FreddyFrostbearPlushie",
-      "ShamrockFreddyPlushie",
-      "FreddyPlushBL1",
-      "FreddyPlushBL2",
-      "FreddyPlushBL3",
-      "FreddyPlushBL4",
-      "FreddyPlushBL5",
-      "FreddyPlushBL6",
-      "GoldenFreddyPlushie",
-      "GoldenFreddyPlushBL1",
-      "BonniePlushie",
-      "BonniePlushieBL2",
-      "BonniePlushieBL1",
-      "BonniePlushieBL3",
-      "GoldenBonniePlushie",
-      "ChicaPlushie",
-      "ChicaPlushieBL1",
-      "GoldenChicaPlushie",
-      "FoxyPlushie",
-      "FoxyPlushieAlt",
-      "FoxyPlushieBL1",
-      "FoxyPlushieBL2",
-      "FoxyPlushieBL3",
-      "GoldenFoxyPlushie",
-      "ToyFreddyPlushie",
-      "ToyBonniePlushie",
-      "ToyChicaPlushie",
-      "ToyFoxyPlushie",
-      "PopgoesPlushie",
       "ToyFreddyFigure",
       "ToyBonnieFigure",
       "ToyChicaFigure",
@@ -40282,6 +40656,10 @@
       "AwningYellow",
       "AwningGreen",
       "AwningBlue",
+      "FreddyFazchair",
+      "ChicaChairken",
+      "BonnieButtseat",
+      "FoxyChair",
       "Balloons",
       "Balloon",
       "BalloonOrange",
@@ -40433,11 +40811,7 @@
       "BigWideGlassEntranceDoor",
       "ClosetLeftBottom",
       "ClosetRightBottom",
-      "BigClosetDoor",
-      "FreddyFazchair",
-      "ChicaChairken",
-      "BonnieButtseat",
-      "FoxyChair"
+      "BigClosetDoor"
     ],
     "CUSTOM:FNAFToolsAndItems": [
       "MAT",
@@ -40582,6 +40956,72 @@
       "FPoster3",
       "FPoster4",
       "FPoster5"
+    ],
+    "CUSTOM:FNAFPlushies": [
+      "FredbearPlushie",
+      "BunkerFredbearPlushie",
+      "FredbearPlushieBL1",
+      "NightbearPlushie",
+      "SpringBonniePlushie",
+      "NightharePlushie",
+      "SpringBonniePlush",
+      "BlackLightSpringBonniePlush",
+      "FreddyPlushie",
+      "PurpleFreddyPlushie",
+      "ShadowFreddyPlushie",
+      "RedbearFreddyPlushie",
+      "FreddyFrostbearPlushie",
+      "ShamrockFreddyPlushie",
+      "FreddyPlushBL1",
+      "FreddyPlushBL2",
+      "FreddyPlushBL3",
+      "FreddyPlushBL4",
+      "FreddyPlushBL5",
+      "FreddyPlushBL6",
+      "GoldenFreddyPlushBL1",
+      "GoldenFreddyPlushie",
+      "BonniePlushie",
+      "BonniePlushieBL1",
+      "BonniePlushieBL2",
+      "BonniePlushieBL3",
+      "GoldenBonniePlushie",
+      "ChicaPlushie",
+      "ChicaPlushieBL1",
+      "GoldenChicaPlushie",
+      "FoxyPlushie",
+      "FoxyPlushieAlt",
+      "ToyFoxyPlushieButFoxy",
+      "FoxyPlushieBL1",
+      "FoxyPlushieBL2",
+      "FoxyPlushieBL3",
+      "GoldenFoxyPlushie",
+      "ToyFreddyPlushie",
+      "UCNToyFreddyPlushie",
+      "CaseOhToyFreddyPlushie",
+      "HWToyFreddyPlushie",
+      "ToyFreddyPlushieBL1",
+      "ToyFreddyPlushieBL2",
+      "GoldenToyFreddyPlushie",
+      "ToyBonniePlushie",
+      "ToyBonniePlushBL1",
+      "ToyBonniePlushBL2",
+      "ToyBonniePlushBL3",
+      "GoldenToyBonniePlush",
+      "ToyChicaPlushie",
+      "ToyChicaPlushAlt",
+      "ToyChicaPlushPurple",
+      "ToyChicaPlushBL1",
+      "ToyChicaPlushBL2",
+      "GoldenToyChicaPlush",
+      "ToyFoxyPlushie",
+      "TangleToyFoxyPlushie",
+      "XangleToyFoxyPlushie",
+      "ShadowToyFoxyPlushie",
+      "ToyFoxyPlushieBL1",
+      "ToyFoxyPlushieBL2",
+      "ToyFoxyPlushieBL3",
+      "GoldenToyFoxyPlushie",
+      "PopgoesPlushie"
     ],
     "CUSTOM:FNAFUtilities": [
       "ShackRandomizer",
@@ -40908,6 +41348,7 @@
       "item.fnaf_mod.pit_bonnie_suit_leggings": "Into The Pit Bonnie Legs",
       "block.fnaf_mod.gold_token_block": "Gold Token Block",
       "block.fnaf_mod.center_black_purple_wall_tile": "Center Black Purple Stripe Wall Tiles",
+      "block.fnaf_mod.shadow_toy_foxy_plushie": "Shadow Toy Foxy Plushie",
       "subtitles.shop": "",
       "block.fnaf_mod.fredbear_floor_clean": "Fredbear\u0027s Floor",
       "item.fnaf_mod.circuit_board": "Circuit Board",
@@ -40971,6 +41412,7 @@
       "block.fnaf_mod.center_big_light_dark_purple_wall_tile": "Center Big White-Black Purple Stripe Wall Tiles",
       "item.fnaf_mod.red_fabric": "Red Fabric",
       "block.fnaf_mod.purple_star_table_cloth": "Purple Star Table Cloth",
+      "block.fnaf_mod.golden_toy_chica_plush": "Golden Toy Chica Plushie",
       "advancements.cupcake_advancement.descr": "Obtain a Cupcake",
       "block.fnaf_mod.fnaf_3_wall_slab": "Rancid Wall Slab",
       "block.fnaf_mod.fazeerramics_control_panel": "Fazeerramics Control Panel",
@@ -41076,6 +41518,7 @@
       "block.fnaf_mod.toy_chica_figure": "Toy Chica Figure",
       "block.fnaf_mod.awning_yellow": "Awning",
       "item.fnaf_mod.fredbears_chica_spawn_egg": "Fredbear\u0027s Family Diner Chica Spawn Egg",
+      "block.fnaf_mod.tangle_toy_foxy_plushie": "Tangle Plushie",
       "block.fnaf_mod.error_tile_stair": "Missing Texture Tile Stairs",
       "block.fnaf_mod.balloons": "Balloons",
       "block.fnaf_mod.mural_fafot": "Mural",
@@ -41177,8 +41620,8 @@
       "block.fnaf_mod.thin_cloud_curtain": "Thin Cloud Curtain",
       "item.fnaf_mod.freddy_suit_leggings": "Freddy Legs",
       "block.fnaf_mod.entrance_carpet": "Entrance Floor",
-      "item.fnaf_mod.sitting_spring_bonnie_spawn_egg": "Spring Bonnie (Sitting Prop Entity) Spawn Egg",
       "gui.fnaf_mod.party_system.label_select_a_party_member": "Select a party member!",
+      "item.fnaf_mod.sitting_spring_bonnie_spawn_egg": "Spring Bonnie (Sitting Prop Entity) Spawn Egg",
       "entity.fnaf_mod.fredbears_monty": "Fredbear\u0027s Family Diner Monty",
       "item.fnaf_mod.withered_foxy_spawn_egg": "Withered Foxy Spawn Egg",
       "block.fnaf_mod.avocado_curtain": "Avocado Curtain",
@@ -41236,10 +41679,13 @@
       "block.fnaf_mod.streamer_stars.description_0": "Stars",
       "block.fnaf_mod.prize_corner_poster": "Prize Counter Poster",
       "block.fnaf_mod.purple_stage_bricks": "Purple Stage Bricks",
+      "block.fnaf_mod.toy_bonnie_plush_bl_1": "Toy Bonnie Plushie BL1",
       "block.fnaf_mod.mural_fredbears_ext": "Mural",
       "block.fnaf_mod.mural_van.description_0": "Fredbear and Friends on The Road",
+      "block.fnaf_mod.toy_bonnie_plush_bl_3": "Toy Bonnie Plushie BL3",
       "block.fnaf_mod.purple_fan": "Toy Fan",
       "block.fnaf_mod.center_big_black_red_wall_tile": "Center Big Wall Tiles",
+      "block.fnaf_mod.toy_bonnie_plush_bl_2": "Toy Bonnie Plushie BL2",
       "block.fnaf_mod.blacktomb_yard_grass": "Blacktomb Yard Grass",
       "entity.fnaf_mod.adventure_springtrap": "Adventure Springtrap",
       "block.fnaf_mod.rules_poster": "Rules Poster!",
@@ -41248,6 +41694,7 @@
       "block.fnaf_mod.cinematic_sign_freddy": "Cinematic Freddy Decoration",
       "block.fnaf_mod.green_blue_tile_cracked": "Cracked Green Blue Tile",
       "entity.fnaf_mod.tameable_mangle": "Adventure Mangle",
+      "block.fnaf_mod.golden_toy_freddy_plushie": "Golden Toy Freddy Plushie",
       "gamerule.nightmareSpawningGamerule.description": "Toggles nightmares spawning from plushes.",
       "block.fnaf_mod.red_blue_tile_stair": "Red Blue Tile Stairs",
       "item.fnaf_mod.freddy_stand_spawn_egg": "Freddy Stand Spawn Egg",
@@ -41346,6 +41793,7 @@
       "block.fnaf_mod.plushtrap_chair": "Tall Chair",
       "block.fnaf_mod.alternate_big_exterior_movie_wall_tile": "Alternate Big Movie Exterior Wall Tiles",
       "block.fnaf_mod.torture_chair": "Torture Chair",
+      "block.fnaf_mod.golden_toy_foxy_plushie": "Golden Toy Foxy Plushie",
       "block.fnaf_mod.tm_fredbear.description_0": "I LOVE KIDS, BONNIE!!!",
       "item.fnaf_mod.shadow_freddy_spawn_item": "Shadow Bonnie",
       "subtitles.bonnielullaby": "",
@@ -41509,6 +41957,7 @@
       "subtitles.garage_close": "Garage Door Closes",
       "entity.fnaf_mod.nightmare_bb": "Nightmare Balloon Boy",
       "block.fnaf_mod.protons_plush_rat": "Protons Plush Rat",
+      "block.fnaf_mod.case_oh_toy_freddy_plushie": "CaseOh Toy Freddy Plushie",
       "block.fnaf_mod.poster_3.description_0": "Poster of Chica the Chicken!",
       "gui.fnaf_mod.gen_creative_config_gui.label_0off": "0-OFF",
       "block.fnaf_mod.fnaf_3_wall_tile": "Rancid Wall Tiles",
@@ -41694,6 +42143,7 @@
       "subtitles.c1": "Honk",
       "subtitles.c2": "Honk",
       "block.fnaf_mod.carousel": "Carousel",
+      "block.fnaf_mod.toy_foxy_plushie_but_foxy": "Toy Foxy Plushie",
       "subtitles.ice_cave": "",
       "item.fnaf_mod.full_hostile_freddy_spawn_egg": "Freddy Fazbear Spawn Egg",
       "item.fnaf_mod.black_fabric": "Black Fabric",
@@ -41714,6 +42164,7 @@
       "block.fnaf_mod.thin_cobalt_curtain": "Thin Cobalt Curtain",
       "block.fnaf_mod.arcade_machine_chica": "Arcade Machine Chica",
       "entity.fnaf_mod.nightime_toy_chica": "Toy Chica",
+      "block.fnaf_mod.toy_chica_plush_alt": "Toy Chica Plushie Alt",
       "subtitles.f1": "Honk",
       "block.fnaf_mod.white_tiled_wall": "White Tiled Wall",
       "item.fnaf_mod.chica_suit_boots": "Chica Boots",
@@ -41882,6 +42333,7 @@
       "entity.fnaf_mod.passive_fredbear": "Fredbear",
       "item.fnaf_mod.light_blue_fabric": "Light Blue Fabric",
       "item.fnaf_mod.springlocked_fredbear_suit_leggings": "Fredbear Spring Lock Legs",
+      "block.fnaf_mod.hw_toy_freddy_plushie": "Help Wanted Toy Freddy Plushie",
       "item.fnaf_mod.spring_lock_suit_boots": "Spring Lock Suit Boots",
       "entity.fnaf_mod.standing_daytime_springtrap": "DayTime Springtrap Standing",
       "item.fnaf_mod.nightmare_spawn_item": "Nightmare",
@@ -41999,6 +42451,9 @@
       "gui.fnaf_mod.gen_creative_config_gui.label_drain": "Drain . . .",
       "block.fnaf_mod.door_button.description_0": "§7Linkable",
       "block.fnaf_mod.freddy_plush_bl_1": "Freddy Plushie BL1",
+      "block.fnaf_mod.toy_chica_plush_purple": "Purple Toy Chica Plushie",
+      "block.fnaf_mod.toy_chica_plush_bl_1": "Toy Chica Plushie BL1",
+      "block.fnaf_mod.toy_chica_plush_bl_2": "Toy Chica Plushie BL2",
       "item.fnaf_mod.nightime_toy_chica_spawn_egg": "Toy Chica Spawn Egg",
       "block.fnaf_mod.fancy_bricks_stairs": "Fancy Brick Stairs",
       "item.fnaf_mod.fredbears_chica_spawn_item": "Diner Chica",
@@ -42048,6 +42503,7 @@
       "block.fnaf_mod.dual_colour_entrance_door": "Dual Coloured Entrance Door",
       "entity.fnaf_mod.full_hostile_chica": "Chica",
       "block.fnaf_mod.cobalt_curtain": "Cobalt Curtain",
+      "block.fnaf_mod.xangle_toy_foxy_plushie": "Xangle Plushie",
       "item.fnaf_mod.withered_freddy_spawn_item": "Withered Freddy",
       "block.fnaf_mod.alternate_garage_door": "Alternate Garage Door",
       "item.fnaf_mod.springlocked_zombie_fredbear_spawn_egg": "Springlocked Zombie Fredbear Spawn Egg",
@@ -42081,6 +42537,7 @@
       "item.fnaf_mod.toy_freddy_spawn_egg": "Toy Freddy  Spawn Egg",
       "block.fnaf_mod.mural_fredbears": "Mural",
       "item.fnaf_mod.gus_pug_spawn_egg": "Gus The Pug Spawn Egg",
+      "block.fnaf_mod.ucn_toy_freddy_plushie": "UCN Toy Freddy Plushie",
       "entity.fnaf_mod.day_time_freddy": "DaytimeFreddy",
       "block.fnaf_mod.thin_rose_curtain.description_0": "§d(Hot Pink Curtain)",
       "block.fnaf_mod.green_blue_tile_slab": "Green Blue Tile Slab",
@@ -42114,6 +42571,7 @@
       "gui.fnaf_mod.server_panel_gui.label_name": "Name",
       "block.fnaf_mod.awning_green.description_0": "Green",
       "block.fnaf_mod.big_red_entrance_door": "Big Red Entrance Door",
+      "item_group.fnaf_mod.fnaf_plushies": "FNAF Plushies",
       "item.fnaf_mod.plushtrap_spawn_item": "Plushtrap",
       "block.fnaf_mod.tm_diner_freddy.description_0": "A Magical Place",
       "block.fnaf_mod.toy_freddy_sign_on": "Toy Freddy Sign",
@@ -42228,7 +42686,10 @@
       "item.fnaf_mod.unwithered_freddy_spawn_egg": "Un-Withered Freddy Spawn Egg",
       "block.fnaf_mod.stage_light_red_on": "Stage Light (Orange)",
       "block.fnaf_mod.movie_poster_4.description_0": "Foxy Saves The Kingdom!",
+      "block.fnaf_mod.toy_foxy_plushie_bl_2": "Toy Foxy Plushie BL2",
+      "block.fnaf_mod.toy_foxy_plushie_bl_1": "Toy Foxy Plushie BL1",
       "block.fnaf_mod.stage_bricks": "Etched Bricks",
+      "block.fnaf_mod.toy_foxy_plushie_bl_3": "Toy Foxy Plushie BL3",
       "item.fnaf_mod.pizza_cutter": "Pizza Cutter",
       "gui.fnaf_mod.camera_gui.label_with_the_monitor": "for setup!",
       "block.fnaf_mod.green_blue_tile_stair_cracked": "Cracked Green Blue Tile Stairs",
@@ -42286,12 +42747,15 @@
       "death.attack.springlocked": "%s Bled out to Death",
       "block.fnaf_mod.thin_sky_curtain": "Thin Sky Curtain",
       "block.fnaf_mod.thin_avocado_curtain.description_0": "§2(Green Curtain)",
+      "block.fnaf_mod.golden_toy_bonnie_plush": "Golden Toy Bonnie Plushie",
       "block.fnaf_mod.green_blue_diagonal_tile": "Green Blue Diagonal Tile",
       "item.fnaf_mod.purple_table_cloth_item": "Purple Table Cloth",
       "item.fnaf_mod.nightmare_chica_spawn_egg": "Nightmare Chica Spawn Egg",
       "subtitles.pinwheeltemp": "",
       "block.fnaf_mod.poster_5.description_0": "Poster of Toy Bonnie!",
       "item.fnaf_mod.puppet_spawn_item": "Puppet",
+      "block.fnaf_mod.toy_freddy_plushie_bl_2": "Toy Freddy Plushie BL2",
+      "block.fnaf_mod.toy_freddy_plushie_bl_1": "Toy Freddy Plushie BL1",
       "block.fnaf_mod.balloon_purple": "Purple Balloon",
       "entity.fnaf_mod.toy_foxy": "Toy Foxy",
       "block.fnaf_mod.alternate_exterior_movie_wall_tile": "Alternate Movie Exterior Wall Tiles",
@@ -42375,6 +42839,22 @@
                   },
                   {
                     "name": "Spring Bonnie Plush",
+                    "children": []
+                  },
+                  {
+                    "name": "Toy Freddy Plush",
+                    "children": []
+                  },
+                  {
+                    "name": "Toy Bonnie Plush",
+                    "children": []
+                  },
+                  {
+                    "name": "Toy Foxy Plushies",
+                    "children": []
+                  },
+                  {
+                    "name": "Toy Chica Plush",
                     "children": []
                   }
                 ]

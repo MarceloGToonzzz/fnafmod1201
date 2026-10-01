@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "fnaf-2-toy_foxy_plush"
+      },
+      "name": "default"
+    },
+    "bl1": {
+      "map": {
+        "2": "fnaf-2-bltoy_foxy1_plush"
+      },
+      "name": "bl1"
+    },
+    "bl2": {
+      "map": {
+        "2": "fnaf-2-bltoy_foxy_plush2"
+      },
+      "name": "bl2"
+    },
+    "bl3": {
+      "map": {
+        "2": "fnaf-2-bltoy_foxy_plush3"
+      },
+      "name": "bl3"
+    },
+    "shadow": {
+      "map": {
+        "2": "fnaf-hw-shadow_toy_foxy_plush"
+      },
+      "name": "shadow"
+    },
+    "lol": {
+      "map": {
+        "2": "fnaf-w-lolbit_plush"
+      },
+      "name": "lol"
+    },
+    "tang": {
+      "map": {
+        "2": "fnaf-w-pre_tangle_plush"
+      },
+      "name": "tang"
+    },
+    "xangle": {
+      "map": {
+        "2": "fnaf-w-xangle_plush"
+      },
+      "name": "xangle"
+    },
+    "golden": {
+      "map": {
+        "2": "fnaf-2-golden_toy_foxy_plush"
+      },
+      "name": "golden"
+    }
+  }
+}

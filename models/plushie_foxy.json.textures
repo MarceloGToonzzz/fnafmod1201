@@ -35,6 +35,12 @@
         "2": "fnaf-1-foxy_plush_blacklight_2"
       },
       "name": "bl2"
+    },
+    "fnaf4": {
+      "map": {
+        "2": "fnaf-4-toy_foxy_plush"
+      },
+      "name": "fnaf4"
     }
   }
 }
