@@ -22,6 +22,7 @@ import net.mcreator.fnafmod.init.FnafModModVillagerProfessions;
 import net.mcreator.fnafmod.init.FnafModModTabs;
 import net.mcreator.fnafmod.init.FnafModModSounds;
 import net.mcreator.fnafmod.init.FnafModModParticleTypes;
+import net.mcreator.fnafmod.init.FnafModModPaintings;
 import net.mcreator.fnafmod.init.FnafModModMobEffects;
 import net.mcreator.fnafmod.init.FnafModModMenus;
 import net.mcreator.fnafmod.init.FnafModModItems;
@@ -59,6 +60,7 @@ public class FnafModMod {
 		StructureFeature.REGISTRY.register(bus);
 		FnafModModMobEffects.REGISTRY.register(bus);
 
+		FnafModModPaintings.REGISTRY.register(bus);
 		FnafModModParticleTypes.REGISTRY.register(bus);
 		FnafModModVillagerProfessions.PROFESSIONS.register(bus);
 		FnafModModMenus.REGISTRY.register(bus);

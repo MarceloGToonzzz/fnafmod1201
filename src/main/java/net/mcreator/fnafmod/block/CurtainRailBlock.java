@@ -139,7 +139,7 @@ public class CurtainRailBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		CurtainRailNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		CurtainRailNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

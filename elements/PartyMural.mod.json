@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "painting",
+  "definition": {
+    "texture": "partymuraltest",
+    "width": 96,
+    "height": 64,
+    "title": "Party Mural",
+    "author": "me"
+  }
+}

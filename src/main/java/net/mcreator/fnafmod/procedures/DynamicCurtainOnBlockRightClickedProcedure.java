@@ -6,12 +6,15 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.fnafmod.init.FnafModModBlocks;
+import net.mcreator.fnafmod.FnafModMod;
 
 public class DynamicCurtainOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Direction direction, double hitX, double hitZ) {
@@ -19,6 +22,7 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 			return;
 		double FaceX = 0;
 		double FaceY = 0;
+		double Ycoord = 0;
 		if (direction == (new Object() {
 			public Direction getDirection(BlockState _bs) {
 				Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -43,27 +47,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
 					if (x + 0.25 < Math.round(Math.pow(10, 2) * hitX) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -122,27 +127,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
 					if (z + 0.25 < Math.round(Math.pow(10, 2) * hitZ) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -201,27 +207,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 					if (x + 0.75 > Math.round(Math.pow(10, 2) * hitX) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -280,27 +287,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
 					if (z + 0.75 > Math.round(Math.pow(10, 2) * hitZ) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -346,7 +354,7 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 						}
 					}
 				}
-			} else if (1 == (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip130 ? blockstate.getValue(_getip130) : -1)) {
+			} else if (1 == (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip150 ? blockstate.getValue(_getip150) : -1)) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -466,7 +474,7 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 				return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 			}
 		}.getDirection(blockstate))) {
-			if (0 == (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip180 ? blockstate.getValue(_getip180) : -1)) {
+			if (0 == (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip200 ? blockstate.getValue(_getip200) : -1)) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -481,27 +489,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
 					if (x + 0.25 < Math.round(Math.pow(10, 2) * hitX) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -560,27 +569,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
 					if (z + 0.25 < Math.round(Math.pow(10, 2) * hitZ) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -639,27 +649,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 					if (x + 0.75 > Math.round(Math.pow(10, 2) * hitX) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x + direction.getStepZ(), y, z - direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -718,27 +729,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
 					if (z + 0.75 > Math.round(Math.pow(10, 2) * hitZ) / Math.pow(10, 2)) {
-						if ((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).canBeReplaced() || !((new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection(blockstate)) == (new Object() {
-							public Direction getDirection(BlockState _bs) {
-								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-								if (_prop instanceof DirectionProperty _dp)
-									return _bs.getValue(_dp);
-								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
-										? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
-										: Direction.NORTH;
-							}
-						}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
+						if (!(blockstate.getBlock() == (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).getBlock())
+								|| (world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))).canBeReplaced() || !((new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection(blockstate)) == (new Object() {
+									public Direction getDirection(BlockState _bs) {
+										Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+										if (_prop instanceof DirectionProperty _dp)
+											return _bs.getValue(_dp);
+										_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+										return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis
+												? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE)
+												: Direction.NORTH;
+									}
+								}.getDirection((world.getBlockState(BlockPos.containing(x - direction.getStepZ(), y, z + direction.getStepX()))))))) {
 							{
 								int _value = 1;
 								BlockPos _pos = BlockPos.containing(x, y, z);
@@ -784,7 +796,7 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 						}
 					}
 				}
-			} else if (1 == (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip306 ? blockstate.getValue(_getip306) : -1)) {
+			} else if (1 == (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip346 ? blockstate.getValue(_getip346) : -1)) {
 				if ((new Object() {
 					public Direction getDirection(BlockPos pos) {
 						BlockState _bs = world.getBlockState(pos);
@@ -895,6 +907,28 @@ public class DynamicCurtainOnBlockRightClickedProcedure {
 					}
 				}
 			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == FnafModModBlocks.CURTAIN_RAIL.get()) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y + 1, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putBoolean("Cooldown", true);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			FnafModMod.queueServerWork(5, () -> {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y + 1, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putBoolean("Cooldown", true);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			});
 		}
 	}
 }
